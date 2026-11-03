@@ -1,6 +1,6 @@
 # 第三方来源与许可证
 
-核对日期：2026-11-03。团队原创部分采用 [AGPL-3.0-only](LICENSE)，第三方材料依其原条款。版权声明和具体限制优先保留；本文不为训练图片或派生权重新增授权。
+核对日期：2026-11-03。团队原创部分采用 [AGPL-3.0-only](license)，第三方材料依其原条款。版权声明和具体限制优先保留；本文不为训练图片或派生权重新增授权。
 
 | 组成/来源 | 实际使用与依据 | 条款及当前处理 |
 | --- | --- | --- |
@@ -20,6 +20,6 @@
 - 顶面checkpoint：`9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93`。
 - 原冻结清单：`cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778`。
 
-AI PC端逐图许可和训练链补充见[专门核对报告](docs/aipc_license_20261103/README_CN.md)：74张LVIS/COCO原图中58张标NC、18张标ND（含验证、计数重合）；这些图片条件不在本报告中自动套用为权重许可。Office-Home和ImageNet初始化覆盖仍待确认，未发送对外授权请求。
+AI PC端逐图许可和训练链补充见[专门核对报告](docs/aipc_license_20261103/readme_cn.md)：74张LVIS/COCO原图中58张标NC、18张标ND（含验证、计数重合）；这些图片条件不在本报告中自动套用为权重许可。Office-Home和ImageNet初始化覆盖仍待确认，未发送对外授权请求。
 
 审计结论、来源与公开范围见 [docs/license_audit.md](docs/license_audit.md)。AGPL对应源码、网络交互源码提供义务和第三方材料权利是不同事项；不能用新增LICENSE宣称二者都已完成。

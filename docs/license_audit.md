@@ -2,15 +2,15 @@
 
 ## 2026-11-03 AI PC端限定核对
 
-用户明确仅负责AI PC端，不要求代办FPGA/队友授权。[AI PC详细报告](aipc_license_20261103/README_CN.md)补逐图许可、参数训练链和实际顶面采样范围；授权询问草稿由团队保管，尚未发送。Office-Home公开分发覆盖、MobileNetV3初始化权重条款与照片归属仍有缺口，不以元数据一致代替授权。下方原全项目审计保留作历史与整仓库范围参考，不将其其他模块事项指定给本用户。
+用户明确仅负责AI PC端，不要求代办FPGA/队友授权。[AI PC详细报告](aipc_license_20261103/readme_cn.md)补逐图许可、参数训练链和实际顶面采样范围；授权询问草稿由团队保管，尚未发送。Office-Home公开分发覆盖、MobileNetV3初始化权重条款与照片归属仍有缺口，不以元数据一致代替授权。下方原全项目审计保留作历史与整仓库范围参考，不将其其他模块事项指定给本用户。
 
 ## 2026-11-03更新（当前状态）
 
-用户已选择团队原创部分采用 **AGPL-3.0-only**。根目录[LICENSE](../LICENSE)保存未修改的完整文本，[NOTICE](../NOTICE)限定团队有权许可的范围，[THIRD_PARTY_NOTICES](../THIRD_PARTY_NOTICES.md)记录上游来源与排除项。
+用户已选择团队原创部分采用 **AGPL-3.0-only**。根目录[LICENSE](../license)保存未修改的完整文本，[NOTICE](../notice)限定团队有权许可的范围，[THIRD_PARTY_NOTICES](../third_party_notices.md)记录上游来源与排除项。
 
 本次已核对Ultralytics固定版本、TorchVision软件与预训练权重的区别、Office-Home fair-use说明、LVIS标注CC-BY-4.0与COCO逐图条款、RoARM上游MIT声明。Office-Home派生权重、ImageNet起点、精确CAD来源、PL图像权属及AMD工具/IP分发覆盖仍有缺口。权重/原图/CAD外部资产排除保持；AGPL不替这些材料重新授权。
 
-**旧分支曾包含实际权重。** 私有仓库直接切为公开会暴露可达分支与历史，不能只看main最新树。此次不切换可见性、不删除或重写历史。当前结论、原始条款快照、SHA和后续选择见[完整审计](open_source_audit_20261103/README_CN.md)。
+**旧分支曾包含实际权重。** 私有仓库直接切为公开会暴露可达分支与历史，不能只看main最新树。此次不切换可见性、不删除或重写历史。当前结论、原始条款快照、SHA和后续选择见[完整审计](open_source_audit_20261103/readme_cn.md)。
 
 ## 2026-11-01历史审计（保留原文，许可证未选择等表述已由上方更新取代）
 

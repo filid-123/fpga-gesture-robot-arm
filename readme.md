@@ -22,7 +22,7 @@ py -3.12 tools/restore_assets.py --archive C:/path/to/gesture_mode_ab_v0_1_0_202
 py -3.12 tools/check_repository.py --complete
 ```
 
-恢复工具验证整包 SHA256、CRC 和逐文件哈希，拒绝覆盖不同内容。恢复的外部资产受 Git 忽略规则保护，不获得新的再分发许可。原 ZIP 不随 Git 提交，详见 [源包清单](report/provenance/source_archive_inventory.json)。
+恢复工具验证整包 SHA256、CRC 和逐文件哈希，拒绝覆盖不同内容。开发者可用 `git config --local core.excludesFile git-excludes.txt` 启用本地排除规则，保护恢复的外部资产，不获得新的再分发许可。原 ZIP 不随 Git 提交，详见 [源包清单](report/provenance/source_archive_inventory.json)。
 
 ## 目录与赛题对照
 
@@ -30,7 +30,7 @@ py -3.12 tools/check_repository.py --complete
 
 | 赛题推荐路径 | 提交包中的对应位置 |
 |---|---|
-| `README.md` | 本页及 [从零复现步骤](docs/reproduction.md) |
+| `readme.md` | 本页及 [从零复现步骤](docs/reproduction.md) |
 | `docs/` | [系统架构与数据流](docs/architecture.md)、[接口定义](docs/interface.md)、[硬件与接线](docs/hardware_setup.md) |
 | `fpga/src/` | [RTL](project/native_motion/rtl/)、[约束](project/native_motion/constraints/)、[BD 与构建 Tcl](project/native_motion/scripts/) |
 | `fpga/build/` | [构建入口](tools/build_fpga.py)、[BIT、XSA、HWH 与 PS 初始化](project/hardware/) |
@@ -42,10 +42,10 @@ py -3.12 tools/check_repository.py --complete
 | `metrics/logs/` | [保存帧日志](metrics/logs/)、[封存板级记录](project/board_evidence/) |
 | `metrics/scripts/` | [指标复算脚本](metrics/scripts/)、[视觉评测工具](tools/vision_metrics/) |
 | `metrics/evidence/` | [指标证据](metrics/evidence/)、[封存工程证据](project/evidence/)、[实物验收](report/acceptance/) |
-| `skill/` | [三项可复用 Skill 与工作流](skill/README.md) |
+| `skill/` | [三项可复用 Skill 与工作流](skill/readme.md) |
 | `report/` | [技术报告 PDF](report/technical_report.pdf)、[工程设计说明](report/design_report.md)、[工程包索引](report/engineering_package.md)、[验收与交付状态](report/submission_status.md) |
 
-提交 ZIP 省略仓库根目录的内部协作说明和开发助手配置。开发与版本记录见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
+公开仓库与提交 ZIP 使用小写 ASCII 路径，文件扩展名以点分隔。Windows 克隆时请按复现说明禁用自动换行转换。开发与版本记录见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
 ## 已有证据与限制
 

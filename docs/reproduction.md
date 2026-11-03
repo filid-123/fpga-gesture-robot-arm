@@ -2,7 +2,7 @@
 
 ## 1. 源码和独立工具
 
-安装 Python3.12 x64，克隆本仓库。运行根 README 的源码检查与42项工具测试（含10项指标复算测试）；这部分只需标准库，不连接硬件，不需要第三方权重。`skill/` 的三个目录可独立复制；详见各 SKILL.md。
+安装 Python 3.12 x64。可直接解压源码 ZIP，或用 `git clone -c core.autocrlf=false https://github.com/filid-123/fpga-gesture-robot-arm.git` 克隆，保留封存文件的换行字节。运行根 README 的源码检查与42项工具测试（含10项指标复算测试）；这部分只需标准库，不连接硬件，不需要第三方权重。`skill/` 的三个目录可独立复制；详见各 skill.md。
 
 源码检查通过表示当前文件与源包或经记录的脱敏清单一致。`missing_external_assets` 和 `full_runtime_ready` 必须一起阅读。完整原包检查在缺失资产时应失败，不得通过删清单绕过。
 
@@ -60,7 +60,7 @@ python skill/fpga-artifact-check/scripts/verify_artifacts.py --root project --su
 
 按 `docs/hardware_setup.md` 和封存现场说明逐级执行。CheckOnly 是离线文件检查；MonitorOnly 会真实访问板卡，不能在本次离线授权下自动运行。
 
-先定义试验成功/失败/人工干预、计数和测量端点，再采集原始日志。传感到物理响应必须有可观察的执行器响应终点；通信单向测量要说明时钟同步。按 `skill/robotics-metrics/SKILL.md` 统计，填回 `metrics/metrics.csv` 的对应条件、次数和证据。原9张保存帧不能代替新的物理测量。
+先定义试验成功/失败/人工干预、计数和测量端点，再采集原始日志。传感到物理响应必须有可观察的执行器响应终点；通信单向测量要说明时钟同步。按 `skill/robotics-metrics/skill.md` 统计，填回 `metrics/metrics.csv` 的对应条件、次数和证据。原9张保存帧不能代替新的物理测量。
 
 ## 6. 回退
 

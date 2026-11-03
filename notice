@@ -4,7 +4,7 @@ Copyright (c) 2026 Gesture project contributors.
 Team-original source code, RTL, scripts, and original documentation in this
 repository are offered under GNU Affero General Public License version 3
 only (SPDX: AGPL-3.0-only), as confirmed by the project operator on 2026-11-03.
-The complete unmodified license text is in LICENSE.
+The complete unmodified license text is in license.
 
 This grant applies only to rights held by the project contributors. It does
 not replace existing third-party file headers or grant rights to upstream
@@ -22,7 +22,7 @@ educational fair-use access, not a blanket redistribution license.
 Xilinx PS7 initialization files retain their original MIT or GPL-2.0-or-later
 headers and texts under docs/third_party/.
 
-See THIRD_PARTY_NOTICES.md and docs/license_audit.md for exact scope, URLs,
+See third_party_notices.md and docs/license_audit.md for exact scope, URLs,
 weight hashes, evidence, and unresolved redistribution items. No university,
 AMD, Ultralytics, or upstream author's endorsement is implied.
 
