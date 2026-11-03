@@ -21,7 +21,7 @@
     "docs/field_acceptance.md": "df5545248f908bd13ae2a7ad98d6468eb12f87faaf50ecdc4cf5c10413f9eced",
     "docs/hardware_setup.md": "c892cdd9773ab947c51d307059cc4881ea269abc97a26a6c7a0583d2af1f2d86",
     "docs/interface.md": "fa921a5ea25e2496c99cffcbdbde3648589f3e9066a666f2e7fe99c4751a0867",
-    "docs/license_audit.md": "1cb43471b4c4d43071a82fcde551ba2aaa9fd7575b5afd6be97cb28703db6218",
+    "docs/license_audit.md": "0e04639de46cf47520edfa62045844c89c20a72ae9c375b66d9e5de332ca35f2",
     "docs/metrics_recovery_20261101.md": "6c88842336cb9b6058398513735580bc36afe869ec13b2f374c037cec6ded98d",
     "docs/model.md": "67ca7801b554b46b5b8b951f6e4ccade6bc49d0389e0d08998817b24c27c8d72",
     "docs/open_source_audit_20261103/README_CN.md": "c26caae9d17ff750fac6e377d9e6c2f7997ff039eeda9c41c07c903242bb46dc",
@@ -4453,7 +4453,7 @@
     "tools/vision_metrics/test_metrics.py": "89f0f1ca6fe630158739be2eba5139c744466ee516861dc0b7c991ab4c943c58",
     "tools/vision_metrics/verify_saved_vision.py": "edb04a4a2c6e82a11f53083ed1a837721aa5221ccc7e49d5cdddf02bf95fc117",
     "tools/vision_metrics/vision_report_metrics.py": "be6d97baf48d121c727beacc7604d98df2355af9990e9ffcdb6cef16736edf0c",
-    "sha256sums.txt": "851e7cc5aee45d168ffa6b9d6708af1ad50f7bd99338d9c4c5cb197775fa692f"
+    "sha256sums.txt": "708b41742e5966ef93f4b43584687d01ca176b1e1207401c368d5a611ff1561c"
   },
   "excludes": [
     "report/provenance/publication_manifest.json"
