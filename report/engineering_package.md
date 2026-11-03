@@ -1,6 +1,6 @@
 # 赛题 3.2.5.1 工程包索引
 
-交付基线为 p4.1，TASK ABI 0x340E，B 路径 RAM ABI 0xB001。当前发布版是 publication.9。
+交付基线为 p4.1，TASK ABI 0x340E，B 路径 RAM ABI 0xB001。当前发布版是 publication.9。[技术报告 PDF](technical_report.pdf) 与 [提交核对](final_submission_review.md) 随包提供。
 
 | 赛题条目 | 材料与核对依据 |
 |---|---|

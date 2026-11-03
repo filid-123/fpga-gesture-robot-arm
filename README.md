@@ -43,7 +43,7 @@ py -3.12 tools/check_repository.py --complete
 | `metrics/scripts/` | [指标复算脚本](metrics/scripts/)、[视觉评测工具](tools/vision_metrics/) |
 | `metrics/evidence/` | [指标证据](metrics/evidence/)、[封存工程证据](project/evidence/)、[实物验收](report/acceptance/) |
 | `skill/` | [三项可复用 Skill 与工作流](skill/README.md) |
-| `report/` | [设计报告](report/design_report.md)、[工程包索引](report/engineering_package.md)、[验收与交付状态](report/submission_status.md) |
+| `report/` | [技术报告 PDF](report/technical_report.pdf)、[工程设计说明](report/design_report.md)、[工程包索引](report/engineering_package.md)、[验收与交付状态](report/submission_status.md) |
 
 提交 ZIP 省略仓库根目录的内部协作说明和开发助手配置。开发与版本记录见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
@@ -68,7 +68,7 @@ py -3.12 tools/check_repository.py --complete
 
 B 模式开发评测已收录。模型和资产的合规获取方式、完整环境复现资料由团队补充。当前INT8成绩按DEV集原口径列示。
 
-本工程包从本地发布提交导出并脱敏。源提交与逐文件变更见 `report/provenance/public_review.json`。原始封存包用于完整原包复核，交付副本使用自己的发布校验清单。
+本工程包从发布提交导出。源提交与逐文件变更见 `report/provenance/public_review.json`。原始封存包用于完整原包复核，交付副本使用自己的发布校验清单。
 
 开发过程与历史版本见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
@@ -76,7 +76,7 @@ Giao 的冻结 B 模式模型评测已收录。38 张开发验证图的 mAP@0.5:
 
 ## 赛题工程包
 
-按 [3.2.5.1 工程包索引](report/engineering_package.md) 查阅四类提交材料。
+按 [3.2.5.1 工程包索引](report/engineering_package.md) 查阅四类提交材料。[技术报告 PDF](report/technical_report.pdf) 对应赛题 3.2.5.4，测试证据范围见 [提交核对](report/final_submission_review.md)。
 
 ## 公开 A/B 运行资产
 
