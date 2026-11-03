@@ -5,7 +5,7 @@
   "files_sha256": {
     "model_package/mode_b/detector_background_v2/model.json": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
     "config/ai_pc/mode_b_six_objects_v1.json": "038561eb1c4847ef444a6ae91f5de1a86c7d4f800560e71fce1e9f826416a031",
-    "artifacts/multiobject/six_objects_field_20261027/reviewed_camera_adjusted_exposure_profile.json": "1a5da1c452a85f8331e33806f93a59d20d3be65355b88b8ed21a8f429447c252",
+    "artifacts/multiobject/six_objects_field_20261027/reviewed_camera_adjusted_exposure_profile.json": "181c0313b20ed7af96f40e55ca091d2db5c5e78a3272d7b8893db0e0eba040c8",
     "model_package/mode_b/detector_background_v2/model.onnx": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
     "pc/mode_b/geometry.py": "9a614ff05e4a433151f4378449db9824a5ada47146120026a192b4ca192843ce",
     "pc/mode_b/perception.py": "1b1d02a27800568f53e6e332077710c2d9cc30bef09e020da6ac2e0a34259553",

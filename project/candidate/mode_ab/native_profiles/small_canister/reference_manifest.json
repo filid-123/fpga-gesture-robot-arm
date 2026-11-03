@@ -2,12 +2,12 @@
   "schema": "gesture.mode_ab.native_reference.v1",
   "giao_source": {
     "file": "docs/phase3c/mode_b_optimized_handoff_20261030/objects/small_canister/PLAN.json",
-    "sha256": "90f84f7b34cc351e8bff18e0197560b46207904cf389a1bfae8a4c02d5c02ff1"
+    "sha256": "17877e91be6e86305210c103aa7cb15be353772d5c690484899ab1315a7e2389"
   },
   "builder_sha256": "2dbcbea7f3f35e87ad09beea4cccef06b0c7287fa330d0d40ee1d44835e4f48a",
   "files": {
-    "native_bank0.json": "1fd59fda0984717d97236ac21f3fb80c4123c1d53021c792eafeebfbdc366b6f",
-    "native_bank1.json": "1091e5546e3237c29cbd9f43e000b28b4598e5c0910f60eff72445f01af46943",
-    "native_bank2.json": "39457601544b0b8e016b2bc17debaae34b82ccac4e851f073c5b32c5ee653a4e"
+    "native_bank0.json": "4e7ff67095ec988cf9631fd6def6694d8ddad10c63a3461070d2731a7c12e934",
+    "native_bank1.json": "eb6959e3378b87b174e810d7048821558ce47e01dbe7dc443a3edfd46b69f076",
+    "native_bank2.json": "e67dd67b242fb1d8a7c2cd590d7a0c0a65d302cafbad8ba9f39311a4559a46d3"
   }
 }

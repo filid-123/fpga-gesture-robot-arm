@@ -7,7 +7,7 @@
     },
     {
       "path": "artifacts/multiobject/eraser_top_repair_20261027/candidate_freeze_v2.json",
-      "sha256": "cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778"
+      "sha256": "699fa2e003bd9046c23a99634d0bf00afe8644701832dc236fce22b2af772661"
     },
     {
       "path": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json",
@@ -247,7 +247,7 @@
     },
     {
       "path": "config/ai_pc/mode_b_visual_current_20261029.json",
-      "sha256": "6a2cbb52a0861e052e7c3dea7d7142587b02bb0c30b39942b7a2adfda921deed"
+      "sha256": "59cbd447119e25e653cf4e1e76700b984f95fcf54a9c506e06e6e26c35791b38"
     },
     {
       "path": "docs/phase3b/calibration/RGB_INTRINSICS_CANDIDATE_20261014.json",

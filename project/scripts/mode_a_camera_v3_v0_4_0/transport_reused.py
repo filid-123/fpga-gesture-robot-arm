@@ -1,11 +1,12 @@
 """Reused JTAG transport and original telemetry helpers; no hardware on import."""
 from pathlib import Path
+import os
 import queue,subprocess,threading,time
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 PACKAGE=ROOT
 XSA=PACKAGE/'hardware/roarm_closed_loop.xsa'
-XSDB=Path('E:/Xilinx/2026.1/Vivado/bin/xsdb.bat')
+XSDB=Path(os.environ.get('GESTURE_XSDB', 'E:/Xilinx/2026.1/Vivado/bin/xsdb.bat'))
 BASE=0x43C60000
 
 def exposure_command(v):

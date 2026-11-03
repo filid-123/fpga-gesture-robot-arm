@@ -9,12 +9,12 @@
   "local_grasp_anchor_reference": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
   "metric_sample": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000000_raw.png",
   "bound_files_sha256": {
-    "artifacts/multiobject/eraser_top_repair_20261027/candidate_freeze_v2.json": "cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778",
+    "artifacts/multiobject/eraser_top_repair_20261027/candidate_freeze_v2.json": "699fa2e003bd9046c23a99634d0bf00afe8644701832dc236fce22b2af772661",
     "artifacts/phase3c/mode_b_ttl_20261028/coordinate_retake_v2/pose_candidate_v2_E2/WORKSPACE_CANDIDATE.json": "75e24034da57139df3b8a013dda3ead1aace086a58d271efda588624cdb153f1",
     "artifacts/phase3c/mode_b_ttl_20261028/coordinate_retake_v2/pose_candidate_v2_E2/RGB_DESKTOP_TRANSFORM_CANDIDATE.json": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
     "docs/phase3b/calibration/RGB_INTRINSICS_CANDIDATE_20261014.json": "15fd11a87bb39aec230a2bb5aa0bf2e7846390d76dd48fe5955becde3f634200",
     "artifacts/phase3c/mode_b_ttl_20261028/coordinate_retake_v2/pose_candidate_v2_E2/DIRECTION_CHECK.json": "6ac415e13ab2948ae16ff4e225af33973fbc7930e6b775a2a3b0dd5200a8b739",
-    "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/ACCEPTED_NATIVE_SOURCE_ANCHOR.json": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631"
+    "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/ACCEPTED_NATIVE_SOURCE_ANCHOR.json": "9df2edd025da0cd81e3f66e422d49bd31ef8dfdba9beda4ffc4b16fd269d2c22"
   },
   "localization_dimensions": {
     "red_cube": {

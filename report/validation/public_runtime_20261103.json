@@ -1,0 +1,10 @@
+{
+  "hardware_access": false,
+  "external_files_required": 9,
+  "original_archive_selective_restore": "PASS",
+  "public_runtime_check_only": "PASS",
+  "b_visual_binding": "PASS",
+  "three_planning_geometries_and_reference_banks": "PASS",
+  "legacy_gate_rejects_partial_archive": true,
+  "target_hardware_closed_loop": "NOT_RUN"
+}

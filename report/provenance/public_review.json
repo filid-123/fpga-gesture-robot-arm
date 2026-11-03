@@ -1671,12 +1671,12 @@
     },
     "project/file_manifest.json": {
       "source_sha256": "e35fe982dc7e357706abd6c44276d1a0f80640808f0155c6e37fdeee5cf06982",
-      "public_sha256": "931418cd6219769e2c929d1b53a992565736d0905263d692f54265bd3a18a731",
+      "public_sha256": "301176e85bb723a36a5aa6952bfdd49291678965582bb3779f9f88a2431e7438",
       "bytes": 39124
     },
     "project/mode_ab_manifest.json": {
       "source_sha256": "8981614372d2fce09e0c50bfb5ac8982b4a3ee105edb62267f6435fe54952087",
-      "public_sha256": "2a1d5e4ed46cbe5f5f7d693d5722db6fd19e58e1b43f9269c5f6ba9d310f68f2",
+      "public_sha256": "bbded47ac2edd1e5bc377be3f31c4fbf2765bed27b5e1df545cfaaa7e7e27063",
       "bytes": 766025
     },
     "project/native_motion/scripts/create_roarm_closed_loop_project.tcl": {
@@ -1756,7 +1756,7 @@
     },
     "project/sha256sums.txt": {
       "source_sha256": "b0f63131098ebe1b34ffe059716ece0fecdc6d0ac2ce235a5a422eae4ffe6a8e",
-      "public_sha256": "fed17f8e083f713f15b1d88d15bc6c25222916852af4e74994492e86d89280e0",
+      "public_sha256": "ef779a031bd29027af43cdafb909cea73b30a20296bc171c077b9b2144e4504e",
       "bytes": 724430
     },
     "project/sim/models/mode_b_roarm_nominal/provenance.json": {
@@ -1768,6 +1768,46 @@
       "source_sha256": "1eaf8170da2e8201ccf69faa0bc7111549d4c2b4a21d4c2ee6deb3e42ddb1c14",
       "public_sha256": "16dd0a0c3ecf68683ee80ec0fc8b700fd22e71e59d894f49c91759acead58b01",
       "bytes": 7418
+    },
+    "project/artifacts/multiobject/eraser_top_repair_20261027/candidate_freeze_v2.json": {
+      "source_sha256": "cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778",
+      "public_sha256": "699fa2e003bd9046c23a99634d0bf00afe8644701832dc236fce22b2af772661",
+      "bytes": 4544
+    },
+    "project/candidate/mode_ab/native_profiles/eraser/reference_manifest.json": {
+      "source_sha256": "f7d8904f32f7c7de426090c61f79187c06408ff2f3452ac68408af89a6aaa235",
+      "public_sha256": "c06b253ce79bac081a22726368d371e118cdee341d7e9fd74ff426000d86eb81",
+      "bytes": 643
+    },
+    "project/candidate/mode_ab/native_profiles/red_cube/reference_manifest.json": {
+      "source_sha256": "1d70033554cd6cf73ed7c35e33c555416596ca100fae96d358cd038382b76c3a",
+      "public_sha256": "bfb5b92d5df360475267ece646ce9d4c92d73ab3221eb84b8adc11148277eade",
+      "bytes": 645
+    },
+    "project/candidate/mode_ab/native_profiles/small_canister/reference_manifest.json": {
+      "source_sha256": "f6c6b504b6d850707c283a937a469099a53ff270cf99a4b1957b337015c470eb",
+      "public_sha256": "1d995e97f51fa4203b0fd39ead18a14512cdf5462e5f3791c7c0c08cf7bff3e3",
+      "bytes": 651
+    },
+    "project/config/ai_pc/mode_b_visual_current_20261029.json": {
+      "source_sha256": "6a2cbb52a0861e052e7c3dea7d7142587b02bb0c30b39942b7a2adfda921deed",
+      "public_sha256": "59cbd447119e25e653cf4e1e76700b984f95fcf54a9c506e06e6e26c35791b38",
+      "bytes": 91492
+    },
+    "project/scripts/mode_a_camera_v3_v0_4_0/transport_reused.py": {
+      "source_sha256": "4c27e2734377a9c77c4f64d83c25bd7a4af7d29a8e097ce00693193fb700af40",
+      "public_sha256": "c47c13c4dff9c247445e37bc389c3977ee6a4811b8c2b4267ccb78ee6a8e94c0",
+      "bytes": 7708
+    },
+    "project/scripts/run_mode_ab.py": {
+      "source_sha256": "2d6a81c0fafcaa03fd10ff834b120baf290166c740c2c68b22da1973a360c2c2",
+      "public_sha256": "74e5dc8a97215d245ed2077f11edd7f713dc7a62c7616a5ccde40af260bd09e0",
+      "bytes": 6806
+    },
+    "project/start_mode_ab.ps1": {
+      "source_sha256": "d78fb308a26067155ba70ecbc9cfcd01abf1d6b3f03de1dd683278ba75f1f278",
+      "public_sha256": "576a6ac8c60149726b10ce3981a2224ac90bcf19e6342846d39cda12765b3c55",
+      "bytes": 915
     }
   },
   "text_redaction_files": 351,

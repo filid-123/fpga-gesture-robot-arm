@@ -64,3 +64,7 @@ python skill/fpga-artifact-check/scripts/verify_artifacts.py --root project --su
 ## 6. 回退
 
 本次源码整理不改变原包。恢复完整旧版本须使用它自己的完整目录、模型和位流，不混用 p3 ABI340D 与 p4 ABI340E。历史 main 快照在 Git 提交 `964ee78c`，开发分支保持原状态。源码克隆中的外部资产缺口应通过合法资产恢复处理，不能用旧权重凑齐哈希。
+
+## 公开运行入口
+
+按 [运行资产获取说明](runtime_assets.md) 安装两份权重与七个 STL，再使用 `start_mode_ab.ps1 -CheckOnly -RuntimeOnly`。

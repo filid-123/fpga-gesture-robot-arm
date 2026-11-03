@@ -14,11 +14,30 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 PATCH_ID='native_giao_full_workspace_p4'
 
 
-def load(root):
+def runtime_inputs(root, manifest):
+    profile = json.loads((root/'ab_runtime_profile.json').read_bytes())
+    if (profile['schema'] != 'gesture.ab_public_runtime.v1'
+            or profile['task_abi'] != manifest['task_abi']
+            or profile['patch_id'] != manifest['patch_id']):
+        raise ValueError('Public runtime profile does not match the release')
+    inputs = manifest['inputs']
+    omitted = set(profile['omitted_archive_members'])
+    external = profile['external_assets']
+    if (not omitted <= inputs.keys() or omitted.intersection(external)
+            or any(inputs.get(name) != digest for name, digest in external.items())):
+        raise ValueError('Public runtime profile has inconsistent input bindings')
+    missing = [name for name in external if not (root/name).is_file()]
+    if missing:
+        raise ValueError('Missing approved runtime assets: '+', '.join(missing))
+    return {name: digest for name, digest in inputs.items() if name not in omitted}
+
+
+def load(root, runtime_only=False):
     manifest=json.loads((root/'mode_ab_manifest.json').read_bytes())
     if manifest['version']!='0.1.0' or manifest['task_abi']!=0x340e:raise ValueError('Wrong AB package ABI; use the matching ABI340E full package and BIT')
     if manifest.get('patch_id')!=PATCH_ID:raise ValueError('Wrong AB package patch; use the complete native_giao_full_workspace_p4 package')
-    for name,digest in manifest['inputs'].items():
+    selected = runtime_inputs(root, manifest) if runtime_only else manifest['inputs']
+    for name,digest in selected.items():
         path=(root/name).resolve()
         if not path.is_relative_to(root.resolve()) or hashlib.sha256(path.read_bytes()).hexdigest()!=digest:
             raise ValueError('Sealed package input changed: '+name)
@@ -35,6 +54,7 @@ def main():
     choice.add_argument('--run',action='store_true');choice.add_argument('--check-only',action='store_true')
     choice.add_argument('--preview',action='store_true',help='Disconnected HTML only; no camera/board opened automatically')
     ap.add_argument('--root',type=Path,default=ROOT);ap.add_argument('--out-dir',type=Path)
+    ap.add_argument('--runtime-only',action='store_true',help='Use the shipped public AB runtime profile')
     ap.add_argument('--port',type=int,default=8765);ap.add_argument('--no-browser',action='store_true')
     ap.add_argument('--monitor-only',action='store_true');ap.add_argument('--seconds',type=float,default=0)
     args=ap.parse_args()
@@ -43,7 +63,7 @@ def main():
     if args.monitor_only and not args.run:ap.error('--monitor-only requires --run')
     if args.root.resolve()!=ROOT.resolve():ap.error('Run the script inside the selected complete package')
     if args.check_only:
-        m,_,_,_=load(args.root);print(json.dumps(dict(result='SEALED_PACKAGE_INPUTS_PASS',version=m['version'],patch_id=m.get('patch_id','base'),hotfix_id=m.get('hotfix_id'),physical_access=False)));return 0
+        m,_,_,_=load(args.root,args.runtime_only);print(json.dumps(dict(result='PUBLIC_RUNTIME_INPUTS_PASS' if args.runtime_only else 'SEALED_PACKAGE_INPUTS_PASS',version=m['version'],patch_id=m.get('patch_id','base'),hotfix_id=m.get('hotfix_id'),physical_access=False)));return 0
     if args.out_dir is None:ap.error('Use a new --out-dir for each session')
     args.out_dir.mkdir(parents=True,exist_ok=False)
     from pc.mode_ab.control import Controller
@@ -55,7 +75,7 @@ def main():
         physical_success=None,execution='DISCONNECTED_PREVIEW' if args.preview else 'REAL_HARDWARE_SESSION')
     try:
         if args.run:
-            manifest,p,t,transitions=load(args.root)
+            manifest,p,t,transitions=load(args.root,args.runtime_only)
             result['hotfix_id']=manifest.get('hotfix_id')
             from pc.mode_ab.board import Board
             from pc.mode_ab.runtime import Runtime

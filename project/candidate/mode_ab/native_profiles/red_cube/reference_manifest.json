@@ -2,12 +2,12 @@
   "schema": "gesture.mode_ab.native_reference.v1",
   "giao_source": {
     "file": "docs/phase3c/mode_b_optimized_handoff_20261030/objects/red_cube/PLAN.json",
-    "sha256": "c792f634b467310403bf5674603e692ccece67e824ed3de398729851a6f86c26"
+    "sha256": "daf61f4742513c92668dedd186542b254e2c50124196041eac1c74c115aa3680"
   },
   "builder_sha256": "2dbcbea7f3f35e87ad09beea4cccef06b0c7287fa330d0d40ee1d44835e4f48a",
   "files": {
-    "native_bank0.json": "61ab2ba47dd2bdca44c19ecd812374db86b86b0bb02d5ebfebfe09681c6b691f",
-    "native_bank1.json": "c1aa0d4df372bd76906ec0c5e27bf6dd699d2491e427c700d571aecbf77229fc",
-    "native_bank2.json": "f4d9e91cb82a92c27f36ca1a5363b076fecc51e66d9ace9f87aa1f5cbd441c90"
+    "native_bank0.json": "ec9cc9ffb3fd01447cb1459738cb79952e7da8c5a0373395af830815a3288c86",
+    "native_bank1.json": "bbf5be352cdc55d00b29b52b462053d385d1d67740ef5d2293eb7695a23dab48",
+    "native_bank2.json": "ce52951d608af7e0f53e03b658fe2b01ff9f490ecc47e8636a771f0db0f30fbe"
   }
 }

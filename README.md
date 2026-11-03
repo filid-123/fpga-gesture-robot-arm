@@ -70,3 +70,7 @@ B 模式开发评测已收录。模型和资产的合规获取方式、完整环
 开发过程与历史版本见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
 Giao 的冻结 B 模式模型评测已收录。38 张开发验证图的 mAP@0.5:0.95 为 65.52%，GT 框内顶面二分类 mIoU 为 82.81%。历史单布局 20 帧分别为 83.28% 和 95.45%。两组均使用 CPU 离线评测和 AI 近似标注。原始图像与现有 B 模式权重由团队保管。
+
+## 公开 A/B 运行资产
+
+见 [运行资产获取说明](docs/runtime_assets.md) 和 [待补渠道清单](docs/runtime_asset_channels.csv)。
