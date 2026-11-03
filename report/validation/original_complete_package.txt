@@ -1,0 +1,13 @@
+{
+  "result": "COMPLETE_PACKAGE_HASH_BINDING_AND_ENTRY_PASS",
+  "patch_id": "native_giao_full_workspace_p4",
+  "hotfix_id": "startup_route_map_p4_1",
+  "task_abi": "340E",
+  "input_files": 4519,
+  "built_sources": 105,
+  "frozen_dependencies": 19,
+  "distinct_pc_tests": 78,
+  "ui_checks": 10,
+  "hardware_access": false,
+  "physical_test": "NOT_RUN"
+}

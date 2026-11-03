@@ -1,0 +1,47 @@
+{
+  "schema": "gesture.reproducible.build.v1",
+  "parameters": {
+    "ROARM_TIMED_WALKTHROUGH": "1",
+    "ROARM_HANDOVER_V2": "1",
+    "ROARM_HAND_ALIGN": "1",
+    "ROARM_HAND_ALIGN_REGIONS": "4",
+    "ROARM_HAND_ALIGN_LOCATOR": "1",
+    "ROARM_HDMI": "1",
+    "ROARM_UPGRADE": "1",
+    "ROARM_AUTO_RESTOCK": "1",
+    "ROARM_DYNAMIC_B": "1",
+    "ROARM_FAST_B": "1",
+    "ROARM_BUILD_DIR": "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\build_plan_not_executed\\vivado",
+    "ROARM_REPORT_DIR": "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\build_plan_not_executed\\reports",
+    "GESTURE_PYTHON": "D:\\FPGA_Projects\\Gesture\\deliverables\\gesture_mode_ab_v0_1_0_20261030_p4\\.venv-ab-rocm\\Scripts\\python.exe"
+  },
+  "commands": [
+    [
+      "E:\\Xilinx\\2026.1\\Vivado\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-notrace",
+      "-source",
+      "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\Gesture\\project\\native_motion\\scripts\\create_roarm_closed_loop_project.tcl",
+      "-log",
+      "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\build_plan_not_executed\\create.log",
+      "-journal",
+      "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\build_plan_not_executed\\create.jou"
+    ],
+    [
+      "E:\\Xilinx\\2026.1\\Vivado\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-notrace",
+      "-source",
+      "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\Gesture\\project\\native_motion\\scripts\\build_roarm_closed_loop.tcl",
+      "-log",
+      "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\build_plan_not_executed\\implement.log",
+      "-journal",
+      "C:\\redacted_user\\.codex\\worktrees\\competition-release-20261101\\build_plan_not_executed\\implement.jou"
+    ]
+  ],
+  "source_manifest_sha256": "bd99a46544c97d33b28ab49bc2670a192b5772862925e3411f6ac49e78eace9f",
+  "hardware_access": false,
+  "execution": "NOT_RUN"
+}

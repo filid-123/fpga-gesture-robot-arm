@@ -1,0 +1,40 @@
+{
+  "baseline_version": "0.12.0",
+  "baseline_bram": 72.5,
+  "bram_capacity": 140,
+  "hard_max_percent": 85,
+  "hard_max_bram": 119,
+  "baseline_lut": 22332,
+  "lut_capacity": 53200,
+  "hard_max_lut": 45220,
+  "baseline_ff": 20430,
+  "ff_capacity": 106400,
+  "hard_max_ff": 90440,
+  "baseline_dsp": 26,
+  "dsp_capacity": 220,
+  "hard_max_dsp": 187,
+  "display_bram_delta": 32,
+  "other_bram_reserve": [
+    3,
+    7
+  ],
+  "estimated_bram": [
+    107.5,
+    111.5
+  ],
+  "estimated_lut_range": [
+    29000,
+    37000
+  ],
+  "estimated_ff_range": [
+    23000,
+    34000
+  ],
+  "estimated_dsp_range": [
+    32,
+    50
+  ],
+  "implementation": "2 output channels share dual-read weight ROM; 4 display banks256x192; reuse3anchor motion banks; quintic scalar via existing sequential multiplier; bounded trace FIFO",
+  "estimate_only": true,
+  "release_requires_actual_whole_design_below85": true
+}

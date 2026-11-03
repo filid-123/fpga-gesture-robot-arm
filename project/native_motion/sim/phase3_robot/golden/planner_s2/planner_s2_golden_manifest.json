@@ -1,0 +1,58 @@
+{
+  "schema": "gesture.phase3.planner_s2_golden.v1",
+  "contract": "planner_p2p_q16_16_v1",
+  "generated_utc": "2026-09-24T15:35:36.642129+00:00",
+  "provenance": "ps/robot/planner_p2p_reference.py (S2) + unchanged S1 models (FIXTURE_NOT_OFFICIAL protocol)",
+  "min_period_cycles": 512,
+  "summary": {
+    "core": {
+      "cases": 26,
+      "names": [
+        "linear N=5",
+        "linear N=1 (single step = target)",
+        "linear N=1 jump of 2.5 rad: accel limit ch4",
+        "trapezoid N=40 Na=10",
+        "trapezoid N=16 Na=8 (no cruise)",
+        "trapezoid N=33 Na=1",
+        "full int32 range trapezoid N=1000",
+        "random trapezoid 0",
+        "random trapezoid 1",
+        "random trapezoid 2",
+        "random sink backpressure (late offers)",
+        "pause after 7, resume",
+        "estop with sample 10 pending",
+        "stall after 4 accepted",
+        "continuity ok",
+        "estop+clear during the D multiply of an Na=5 start, then start Na=2 (stale product guard)",
+        "N=0",
+        "linear with Na=1",
+        "trapezoid Na=0",
+        "trapezoid 2Na>N",
+        "period < MIN",
+        "stall timeout 0",
+        "start mismatch ch2",
+        "velocity limit ch3",
+        "velocity limit ch3 exact pass",
+        "accel limit ch5"
+      ],
+      "samples": 1263
+    },
+    "integration": {
+      "s1_segment": 2,
+      "s1_bytes": 3085,
+      "held_s1_bytes": 3104,
+      "s2_samples": 12,
+      "s2_bytes": 1176,
+      "period_cycles": 25000,
+      "n": 12,
+      "na": 3
+    }
+  },
+  "sha256": {
+    "integ_s2.mem": "6ba87d5b958fce6442507d0e8245e58ec1ab67bc05d73385fc394c3fe5fe6ca5",
+    "planner_core_cases.mem": "91960fa1d127b624eed953ee7646c527bf85e422ce6a80f8eb8effb276361b57"
+  },
+  "limitations": [
+    "vectors prove RTL == Python model, not that the model matches a real arm"
+  ]
+}

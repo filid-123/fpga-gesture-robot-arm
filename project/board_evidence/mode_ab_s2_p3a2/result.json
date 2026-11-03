@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "legs": 1253,
+  "samples": 48498,
+  "axes": 6,
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "inputs": {
+    "candidate/mode_ab/profiles/red_depth12/normal.json": "350ad05f2cedfcf17d0b74e2f586664ef5269e0f264edccb45887b85d091e934",
+    "candidate/mode_ab/profiles/red_depth12/restock.json": "490f1818e9b033b1ffb0349064d6f7b84f4ba8c07a042e61b7e0931aec354e8f",
+    "candidate/mode_ab/profiles/red_legacy/normal.json": "9f49bf64fe10d5a67bd27c02339c429daa7ce0c06c173cd5c1bb40134de212b4",
+    "candidate/mode_ab/profiles/red_legacy/restock.json": "1080d99cc3e71257a9fcf00422bc9f8ebd2c86e5e8559979f1f36b6aa194c57b",
+    "candidate/mode_ab/profiles/eraser/normal.json": "99b5af9bd78fd05a681ce0cef797e7c548a2d79ca1d2fdff1643e61f548debf4",
+    "candidate/mode_ab/profiles/eraser/restock.json": "5108e6e9c34623b380f5076781c93cc629e0a53061e61ce6fa68583bd54d5365",
+    "candidate/mode_ab/profiles/small_canister/normal.json": "3c02ee8ece6eda038dda8e393802a714e47d32b83b43603f33f2dd4578a56b10",
+    "candidate/mode_ab/profiles/small_canister/restock.json": "40be0415931fa2ca2aab0fecc042846237678a3f71ffe94a39ca7d0bd372f54a",
+    "candidate/mode_ab/shared_red/normal.json": "f67a40f2295c5ec8b336da8afae94f8560e222c47354730fb693482553020ac2",
+    "candidate/mode_ab/shared_red/restock.json": "65119a81efe520f5b8419da4fa57deaf39c57e441105c4294ea051bd59a5476d",
+    "candidate/mode_ab/home_transitions.json": "fb29949814b3f6d725f31020f5c44615415dac364fbdcf810d507a617edff35a"
+  },
+  "sources": {
+    "native_motion/rtl/robot/planner_p2p_core.v": "49ab9f85f799d592c07204d3316c57376c884233eba5b8dd06c5acbe4f80bcfc",
+    "native_motion/rtl/robot/planner_seq_div.v": "00cabf4882c87d69cc2e6cb43b5f5ad4f4c956cf0809ccaea24874756c8a09c3",
+    "native_motion/rtl/robot/planner_seq_mult.v": "bc018fb39b6f494176f04d77fa5497fa11432ef79dae10f2380dfaa7d58bd405",
+    "board_evidence/mode_ab_s2_p3a2/tb.sv": "cbf96a5bd746ce1cfe2c5ed887593cec97bd035e43951cb3d751016a13106e19"
+  },
+  "production_period_cycles": 2000000,
+  "testbench_period_cycles": 512,
+  "physical_execution": false
+}

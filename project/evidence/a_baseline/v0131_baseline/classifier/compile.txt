@@ -1,0 +1,122 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/cnn_core_7c.v" into library work
+INFO: [VRFC 10-311] analyzing module cnn_core_7c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/cnn_core_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module cnn_core_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/cnn_desc_mem.v" into library work
+INFO: [VRFC 10-311] analyzing module cnn_desc_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/generic_conv3x3.v" into library work
+INFO: [VRFC 10-311] analyzing module generic_conv3x3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/generic_maxpool2x2.v" into library work
+INFO: [VRFC 10-311] analyzing module generic_maxpool2x2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/generic_dense_7c.v" into library work
+INFO: [VRFC 10-311] analyzing module generic_dense_7c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/cnn_act_bram.v" into library work
+INFO: [VRFC 10-311] analyzing module cnn_act_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/cnn_weight_rom_compact.v" into library work
+INFO: [VRFC 10-311] analyzing module cnn_weight_rom_compact
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/mac_lane.v" into library work
+INFO: [VRFC 10-311] analyzing module mac_lane
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/requant_unit.v" into library work
+INFO: [VRFC 10-311] analyzing module requant_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/cnn/requant_fixed31_pipeline.v" into library work
+INFO: [VRFC 10-311] analyzing module requant_fixed31_pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/classifier_roi_bram.v" into library work
+INFO: [VRFC 10-311] analyzing module classifier_roi_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/ov5640_capture.v" into library work
+INFO: [VRFC 10-311] analyzing module ov5640_capture
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/cdc_async_fifo.v" into library work
+INFO: [VRFC 10-311] analyzing module cdc_async_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/preview_gray256.v" into library work
+INFO: [VRFC 10-311] analyzing module preview_gray256
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/pl_letterbox_640x480.v" into library work
+INFO: [VRFC 10-311] analyzing module pl_letterbox_640x480
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/same_frame_roi_128x128.v" into library work
+INFO: [VRFC 10-311] analyzing module same_frame_roi_128x128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/ov5640_phase2_frontend.v" into library work
+INFO: [VRFC 10-311] analyzing module ov5640_phase2_frontend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/camera_locator_input_bram.v" into library work
+INFO: [VRFC 10-311] analyzing module camera_locator_input_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/sccb_master_sync.v" into library work
+INFO: [VRFC 10-311] analyzing module sccb_master_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/camera_sccb_iobuf.v" into library work
+INFO: [VRFC 10-311] analyzing module camera_sccb_iobuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/ov5640_xclk_forward.v" into library work
+INFO: [VRFC 10-311] analyzing module ov5640_xclk_forward
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/locator/locator_act_bank_4k.v" into library work
+INFO: [VRFC 10-311] analyzing module locator_act_bank_4k
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/locator/locator_cnn_engine_context_8lane.v" into library work
+INFO: [VRFC 10-311] analyzing module locator_cnn_engine_context_8lane
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/locator/locator_top1_reducer.v" into library work
+INFO: [VRFC 10-311] analyzing module locator_top1_reducer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/locator_context_rom_8lane.v" into library work
+INFO: [VRFC 10-311] analyzing module locator_context_rom_8lane
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/locator_bbox_roi_black.v" into library work
+INFO: [VRFC 10-311] analyzing module locator_bbox_roi_black
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/gesture_time_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module gesture_time_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/ov5640_init_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module ov5640_init_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/autonomous_pipeline_ctrl_7c.v" into library work
+INFO: [VRFC 10-311] analyzing module autonomous_pipeline_ctrl_7c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/gesture_autonomous_top_black.v" into library work
+INFO: [VRFC 10-311] analyzing module gesture_autonomous_top_black
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_uart_tx.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_uart_rx.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_half_duplex_dir_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_half_duplex_dir_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_joint_unit_mapper.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_joint_unit_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_frame_formatter.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_frame_formatter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_json_feedback_parser.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_json_feedback_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_feedback_watchdog.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_feedback_watchdog
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_motion_permission_gate.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_motion_permission_gate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_backend_core.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_backend_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/arm_backend_axi_top.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_backend_axi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/planner_seq_mult.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_seq_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/planner_seq_div.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_seq_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/planner_p2p_core.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_p2p_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/planner_axi_top.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_axi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/motion_sample_mux.v" into library work
+INFO: [VRFC 10-311] analyzing module motion_sample_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/phase3_s2_motion_top.v" into library work
+INFO: [VRFC 10-311] analyzing module phase3_s2_motion_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/s4_axil_window.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_axil_window
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/s4_motion_link.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_motion_link
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/s4_task_regs.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/s4_task_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/phase3_s4_task_top.v" into library work
+INFO: [VRFC 10-311] analyzing module phase3_s4_task_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/autonomous/autonomous_overlap_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module autonomous_overlap_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/classifier_roi_pingpong.v" into library work
+INFO: [VRFC 10-311] analyzing module classifier_roi_pingpong
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/hand_align_region_lut.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_align_region_lut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/hand_y_step_map.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_y_step_map
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/hand_align_target_core.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_align_target_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/integration/mode_a_observer.v" into library work
+INFO: [VRFC 10-311] analyzing module mode_a_observer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/integration/s5_vision_event_adapter.v" into library work
+INFO: [VRFC 10-311] analyzing module s5_vision_event_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/integration/phase3_roarm_closed_loop_top.v" into library work
+INFO: [VRFC 10-311] analyzing module phase3_roarm_closed_loop_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_classifier_parallel.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_classifier_parallel

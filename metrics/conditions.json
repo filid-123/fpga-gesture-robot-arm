@@ -1,0 +1,55 @@
+{
+  "scope": "original saved-input measurements, not newly measured in publication work",
+  "hardware": "ROG Flow Z13 GZ302EA / Ryzen AI Max+395 / Radeon8060S; PYNQ-Z2 XC7Z020 (not part of saved frame inference)",
+  "memory": "approximately64GB",
+  "os": "Windows11 25H2",
+  "driver_version": "NOT_RECORDED_IN_THIS_EVIDENCE",
+  "detector": {
+    "framework": "torch",
+    "framework_version": "2.13.0+rocm10.0.0",
+    "hip_version": "7.15.26333",
+    "device": "AMD Radeon(TM) 8060S Graphics",
+    "requested_backend": "rocm",
+    "actual_backend": "rocm",
+    "cpu_fallback": false,
+    "role": "mode_b_detector",
+    "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+    "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+    "precision": "fp32",
+    "conversion": "onnx2torch",
+    "conversion_version": "1.5.15",
+    "classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "trained_classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ]
+  },
+  "surface": {
+    "actual_backend": "rocm",
+    "requested_backend": "rocm",
+    "framework": "torch",
+    "framework_version": "2.13.0+rocm10.0.0",
+    "hip_version": "7.15.26333",
+    "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+    "device": "AMD Radeon(TM) 8060S Graphics",
+    "hardware_acceptance": "PENDING",
+    "cpu_fallback": false,
+    "eval_conv_bn_pairs_fused": 34
+  },
+  "input": "9 saved1920x1080 RGB frames; detector512x512 spatial views; surface256x256; batch1",
+  "fpga_clock_mhz": 100,
+  "power_mode": "NOT_RECORDED_IN_THIS_EVIDENCE",
+  "timing_note": "Nine saved measured frames. First calls are recorded; pipeline measurements follow numerical comparisons and use warm models. Not live physical latency or task success rate",
+  "raw_evidence": "project/board_evidence/mode_ab_p4/gpu_final/result.json"
+}

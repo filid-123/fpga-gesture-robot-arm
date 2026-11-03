@@ -1,0 +1,13 @@
+{
+  "schema": "gesture.publication.check.v1",
+  "passed": true,
+  "scope": "published_source_subset",
+  "baseline_members_checked": 4331,
+  "baseline_members_total": 4521,
+  "missing_external_assets": 190,
+  "full_runtime_ready": false,
+  "archive_sha256": "c29a4f659c341646d2354006435401aa5458eb135630601a7b1077b9ba7b8adf",
+  "errors": [],
+  "hardware_access": false,
+  "physical_closed_loop": "NOT_RUN"
+}

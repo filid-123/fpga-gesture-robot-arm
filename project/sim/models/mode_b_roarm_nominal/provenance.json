@@ -1,0 +1,102 @@
+{
+  "source": "E:\\ERoArm_M3S_Sim\\models\\roarm_ws-ros2-humble\\src\\roarm_main\\roarm_description\\urdf\\roarm_m3\\roarm_m3.xacro",
+  "source_sha256": "b6333849d0e377008eee0a87a5b8cdcf44f7a73edf3d7600e95506a023a234b6",
+  "materials_sha256": "8aac8122cfb34520faf320fa03a02d05f70ab1eb268fec25eaf05b31a403d784",
+  "urdf_sha256": "d930ee35349b4727d3d348f16d9c729dd7ba5548978c6695077ea891e115104d",
+  "source_repository": "https://github.com/waveshareteam/roarm_ws/tree/ros2-humble",
+  "model_label": "Official generic RoArm-M3 geometry; M3-S variant not independently verified",
+  "links": 9,
+  "fixed_joints": 2,
+  "moving_joints": [
+    {
+      "name": "base_link_to_link1",
+      "type": "revolute",
+      "limit": {
+        "lower": "-3.1416",
+        "upper": "3.1416",
+        "effort": "0",
+        "velocity": "0"
+      }
+    },
+    {
+      "name": "link1_to_link2",
+      "type": "revolute",
+      "limit": {
+        "lower": "-1.5708",
+        "upper": "1.5708",
+        "effort": "0",
+        "velocity": "0"
+      }
+    },
+    {
+      "name": "link2_to_link3",
+      "type": "revolute",
+      "limit": {
+        "lower": "-1",
+        "upper": "2.95",
+        "effort": "0",
+        "velocity": "0"
+      }
+    },
+    {
+      "name": "link3_to_link4",
+      "type": "revolute",
+      "limit": {
+        "lower": "-1.5708",
+        "upper": "1.5708",
+        "effort": "0",
+        "velocity": "0"
+      }
+    },
+    {
+      "name": "link4_to_link5",
+      "type": "revolute",
+      "limit": {
+        "lower": "-3.1416",
+        "upper": "3.1416",
+        "effort": "0",
+        "velocity": "0"
+      }
+    },
+    {
+      "name": "link5_to_gripper_link",
+      "type": "revolute",
+      "limit": {
+        "lower": "0",
+        "upper": "1.5",
+        "effort": "0",
+        "velocity": "0"
+      }
+    }
+  ],
+  "mesh_files": {
+    "base_link.stl": "55cbfcc2cfb995ab11d8a6ce7c2132283721b9c69cd05b4c7b9d6404e9d8fded",
+    "gripper_link.stl": "7946a374e24a2f467a0581b4946e0ec41b1b86a92f070bc00aa9bced1bf65a56",
+    "link1.stl": "022fdd2df4fa57748f56337fb1b3b3cce81dd116e0f608ccab51d6f1eacb552c",
+    "link2.stl": "5acd32a9f662221deb58ea2ca338c5d6726cbcd7664e7dcdb93bac722820b025",
+    "link3.stl": "80c4e9b1084bf1c7d975398eb11e7ba4e7dc69e62ff4adefcac38a0e0f5a4069",
+    "link4.stl": "bb334cafafa5f5adeedb4d430b325b436eafa833fa851ea782d9c785698f8c09",
+    "link5.stl": "1d63f374a78c1419b21eec63fa8efeef40d0d42ca89c5de3ceb0d86476d9c7eb"
+  },
+  "checks": {
+    "all_meshes_present": true,
+    "mesh_hashes_match_source": true,
+    "source_links_and_joints_preserved": true,
+    "no_unresolved_macros": true,
+    "connected_single_root_tree": true
+  },
+  "removed_extensions": [
+    "Gazebo plugin settings",
+    "ROS transmissions"
+  ],
+  "limitations": [
+    "Source effort and velocity are zero; configure simulation controls before running.",
+    "Mass and inertia are preserved CAD values, not verified physical M3-S measurements.",
+    "This validates package structure only, not CoppeliaSim rendering or physics."
+  ],
+  "copied_for": "Mode B nominal offline planning and CoppeliaSim mesh validation",
+  "original_conversion_report_local": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能\\simulation\\roarm_m3s\\RoArm_M3_import_package\\conversion_report.json",
+  "upstream_commit": "NOT_AVAILABLE_IN_LOCAL_PACKAGE",
+  "license_status": "NO_LICENSE_FILE_IN_LOCAL_CONVERSION_PACKAGE_NOT_VERIFIED",
+  "physical_m3s_variant_verified": false
+}

@@ -1,0 +1,10 @@
+{
+  "commit": "480f3e600bc9465d9a1fec361e6781c2b2eb59a0",
+  "repo": "filid-123/Gesture",
+  "access": "AUTHENTICATED_READ_ONLY_GITHUB_API",
+  "files_sha256": {
+    "scripts/mode_a_upgrade_profile.py": "bbd86dd244e7d6079fecd627e4cd5b4e8d7a016a9f0f8bf5e24c8bdbb9799a84",
+    "scripts/mode_a_upgrade_config.py": "1d6d955566b39baec2a3515af694ddc218fa7c4f822630cf2412769fbdfaa042",
+    "scripts/mode_a_upgrade_backend.py": "1377455d708c26e370a309614e663163fa4f6856ad32bdea645b27bcc285ddf1"
+  }
+}

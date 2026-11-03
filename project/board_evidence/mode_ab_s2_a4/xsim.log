@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct 29 23:48:41 2026
+# Process ID         : 3348
+# Current directory  : C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_s2_a4
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/ab_s2/xsim_script.tcl}
+# Log file           : C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_s2_a4/xsim.log
+# Journal file       : C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_s2_a4\xsim.jou
+# Running On         : AlvinX
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD RYZEN AI MAX+ 395 w/ Radeon 8060S          
+# CPU Frequency      : 2994 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 68341 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72636 MB
+# Available Virtual  : 34992 MB
+#-----------------------------------------------------------
+source xsim.dir/ab_s2/xsim_script.tcl
+# xsim {ab_s2} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: quintic actual S2 RTL all 1200 legs, 47050 exact six-axis samples, production VMAX/AMAX and endpoints
+$finish called at time : 246980150 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_s2_a4/tb.sv" Line 48
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 228.680 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 22800 KB (Peak: 22800 KB), Simulation CPU Usage: 23093 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 23:49:06 2026...

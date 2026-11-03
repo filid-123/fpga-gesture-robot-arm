@@ -1,0 +1,17 @@
+{
+  "verification": {
+    "passed": true,
+    "files": 43,
+    "requests": 3835,
+    "motion_frames": 3831,
+    "gripper_events": 4,
+    "mesh_samples": 3873,
+    "actual_seconds": 130.6435419,
+    "operator_accepted": true,
+    "hardware_accessed": false,
+    "fpga_task_accepted": false
+  },
+  "archive_bytes": 1320326,
+  "archive_sha256": "afb745fc8583b77f8a91bfee2f1b8a675ceaedaf0d25d0c643cccc6b5b49ae25",
+  "zip_crc_and_all_manifest_sha256_passed": true
+}

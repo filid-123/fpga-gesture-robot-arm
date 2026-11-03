@@ -1,0 +1,284 @@
+{
+  "start_firmware_rad_b_s_e_t_r_g": [
+    0.013805827,
+    0.107378655,
+    2.583223647,
+    0.418776755,
+    0.010737866,
+    3.084835364
+  ],
+  "entry_limits_deg": [
+    2.5,
+    6.0,
+    5.0,
+    5.0,
+    2.5,
+    12.0
+  ],
+  "serial": {
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": "N",
+    "stop_bits": 1,
+    "dtr": false,
+    "rts": false
+  },
+  "query_period_ms": 100,
+  "feedback_timeout_ms": 2000,
+  "gripper_dwell_formula": "abs(target_g - fresh_observed_g)*4096/(2*pi)/spd +1 seconds",
+  "boundary_feedback": {
+    "samples": 3,
+    "spacing_ms": 100,
+    "residual_policy": "OBSERVE_ONLY"
+  },
+  "operations": [
+    {
+      "kind": "event",
+      "label": "HOME_OPEN",
+      "period_ms": 0,
+      "settle_ms": 0,
+      "target_g": 1.586,
+      "gripper_spd": 300,
+      "requests": 1,
+      "gripper_wire": "{\"T\":106,\"cmd\":1.586,\"spd\":300,\"acc\":20}"
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_INNER_OPEN",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        3.673194529787288e-06,
+        0.40568341297506655,
+        1.7689148418533336,
+        1.1157905351716133,
+        -0.07956372010225271,
+        1.586
+      ],
+      "requests": 93,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_BUFFER_OPEN",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        0.9097568311452072,
+        0.5236871998349752,
+        0.9894164701106333,
+        1.5609884562387792,
+        -0.07956372010225271,
+        1.586
+      ],
+      "requests": 1018,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_PUBLIC_HIGH",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        1.040983207746649,
+        0.8748844171797235,
+        0.750615457287696,
+        1.4938259036294854,
+        -0.02819895080054366,
+        1.586
+      ],
+      "requests": 338,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_PUBLIC_DESCEND",
+      "period_ms": 20.0,
+      "settle_ms": 800,
+      "target": [
+        1.040943122984916,
+        1.0453914722331035,
+        0.8463417594788851,
+        1.2974128262880111,
+        -0.05881329264343728,
+        1.586
+      ],
+      "requests": 27,
+      "gripper_wire": null
+    },
+    {
+      "kind": "event",
+      "label": "GRASP_PUBLIC",
+      "period_ms": 0,
+      "settle_ms": 0,
+      "target_g": 2.7,
+      "gripper_spd": 40,
+      "requests": 1,
+      "gripper_wire": "{\"T\":106,\"cmd\":2.7,\"spd\":40,\"acc\":5}"
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_PUBLIC_LIFT",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        1.040983207746649,
+        0.8748844171797235,
+        0.750615457287696,
+        1.4938259036294854,
+        -0.02819895080054366,
+        2.7
+      ],
+      "requests": 27,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_RETURN_BUFFER",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        0.9097568311452071,
+        0.5236871998349754,
+        0.9894164701106332,
+        1.5609884562387792,
+        -0.0795637201022527,
+        2.7
+      ],
+      "requests": 848,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_RETURN_INNER",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        3.673194529787832e-06,
+        0.40568341297506655,
+        1.7689148418533336,
+        1.115790535171613,
+        -0.07956372010225271,
+        2.7
+      ],
+      "requests": 942,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_SOURCE_HIGH",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        -0.15569850861266182,
+        0.6086292721352464,
+        1.2644672407728075,
+        1.4172922770919465,
+        -0.07956372010225271,
+        2.7
+      ],
+      "requests": 59,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_SOURCE_DESCEND",
+      "period_ms": 20.0,
+      "settle_ms": 800,
+      "target": [
+        -0.1366025484042002,
+        0.8486813191547243,
+        1.3703887393042673,
+        0.970075999541008,
+        -0.05881329264343601,
+        2.7
+      ],
+      "requests": 219,
+      "gripper_wire": null
+    },
+    {
+      "kind": "event",
+      "label": "RELEASE_SOURCE",
+      "period_ms": 0,
+      "settle_ms": 0,
+      "target_g": 1.586,
+      "gripper_spd": 300,
+      "requests": 1,
+      "gripper_wire": "{\"T\":106,\"cmd\":1.586,\"spd\":300,\"acc\":20}"
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_SOURCE_EXIT_CLEARANCE",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        -0.1090204896694643,
+        0.8466808794655087,
+        1.3756255267781516,
+        0.9668396517563395,
+        -0.05881329264343607,
+        1.586
+      ],
+      "requests": 14,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_SOURCE_EXIT_UP",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        -0.10905104448666435,
+        0.6915210269779052,
+        1.0607005111154506,
+        1.4614536787749748,
+        -0.07324892381494724,
+        1.586
+      ],
+      "requests": 59,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_SOURCE_EXIT_RECENTER",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        -0.13660254840382818,
+        0.6949020129429879,
+        1.0533846807406269,
+        1.4654030573163852,
+        -0.0590251399638546,
+        1.586
+      ],
+      "requests": 14,
+      "gripper_wire": null
+    },
+    {
+      "kind": "stream",
+      "label": "RESTOCK_HOME",
+      "period_ms": 20.0,
+      "settle_ms": 440,
+      "target": [
+        0.013805827,
+        0.107378655,
+        2.583223647,
+        0.41877675500000006,
+        0.010737866,
+        1.586
+      ],
+      "requests": 173,
+      "gripper_wire": null
+    },
+    {
+      "kind": "event",
+      "label": "PARK_CLOSE",
+      "period_ms": 0,
+      "settle_ms": 0,
+      "target_g": 3.1,
+      "gripper_spd": 100,
+      "requests": 1,
+      "gripper_wire": "{\"T\":106,\"cmd\":3.1,\"spd\":100,\"acc\":20}"
+    }
+  ]
+}

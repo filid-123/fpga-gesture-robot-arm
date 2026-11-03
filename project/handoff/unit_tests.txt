@@ -1,0 +1,14 @@
+test_archive_rejects_modified_bytes (__main__.DeploymentTests.test_archive_rejects_modified_bytes) ... ok
+test_calibration_cannot_be_validation_content (__main__.DeploymentTests.test_calibration_cannot_be_validation_content) ... ok
+test_comparison_reports_missing_extra_and_top_regression (__main__.DeploymentTests.test_comparison_reports_missing_extra_and_top_regression) ... ok
+test_missing_or_reordered_detector_frames_rejected (__main__.DeploymentTests.test_missing_or_reordered_detector_frames_rejected) ... ok
+test_paths_cannot_escape_package (__main__.DeploymentTests.test_paths_cannot_escape_package) ... ok
+test_recorded_detection_requires_same_original_pixels (__main__.DeploymentTests.test_recorded_detection_requires_same_original_pixels) ... ok
+test_replay_pixels_cannot_enter_calibration (__main__.DeploymentTests.test_replay_pixels_cannot_enter_calibration) ... ok
+test_source_session_cannot_cross_splits (__main__.DeploymentTests.test_source_session_cannot_cross_splits) ... ok
+test_valid_inputs_and_image_tampering (__main__.DeploymentTests.test_valid_inputs_and_image_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.132s
+
+OK

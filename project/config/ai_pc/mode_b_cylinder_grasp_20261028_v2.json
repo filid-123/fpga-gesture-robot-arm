@@ -1,0 +1,32 @@
+{
+  "schema": "gesture.mode_b.empirical_object_adapter.v1",
+  "object_class": "small_canister",
+  "shape": "cylinder",
+  "size_mm": [
+    25,
+    25,
+    46
+  ],
+  "dimensions_source": "EXISTING_REGISTERED_NOMINAL_DIMENSIONS_NOT_NEW_MEASUREMENT",
+  "open_rad": 1.586,
+  "closed_rad": 2.8,
+  "close_speed": 40,
+  "close_acceleration": 5,
+  "loaded_hand_command_bounds_rad": [
+    2.5,
+    2.9
+  ],
+  "gripper_width_force_mapping_calibrated": false,
+  "closure_note": "Commissioning position target; contact, grip and slip require operator observation. No torque limit increase.",
+  "pickup_height_policy": "KEEP_ACCEPTED_FINGERTIP_HEIGHT_AND_LIFT_CURVE; OBJECT_CENTRE_Z_IS23MM",
+  "closing_yaw_policy": "AXISYMMETRIC_OBJECT_KEEP_ACCEPTED_CLOSING_AXIS",
+  "physical_object_adapter_accepted": false,
+  "desk_command_correction_mm": [
+    10.0,
+    0.0,
+    0.0
+  ],
+  "operator_source_correction_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\cylinder_trial_v1\\OPERATOR_GRASP_OFFSET.json",
+  "operator_source_correction_sha256": "8d43f107f45cfaf7c70176372b4cd88be268c80815e158b088009bf204621b85",
+  "revision": "RIGHT10_FROM_CYLINDER_V1_OPERATOR_OBSERVATION"
+}

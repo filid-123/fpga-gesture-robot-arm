@@ -1,0 +1,44 @@
+{
+  "schema": "gesture.mode_b.motion_request.v1",
+  "frame": "desk_global_mm",
+  "task_id": "mode_b_red_sim_001",
+  "object_class": "red_cube",
+  "pickup": {
+    "centre_mm": [
+      540,
+      280,
+      15
+    ],
+    "yaw_deg": 0
+  },
+  "destination": {
+    "support_centre_mm": [
+      260,
+      160,
+      30
+    ],
+    "size_xy_mm": [
+      90,
+      90
+    ],
+    "rim_height_mm": 0
+  },
+  "obstacles": [],
+  "source": "SIMULATION_PICKUP_EXAMPLE_CURRENT_SIMULATION_DESTINATION",
+  "destination_approval": {
+    "status": "CURRENT_SIMULATION_TARGET_ON_USER_CONTINUATION",
+    "date": "2026-10-27",
+    "scope": "SIMULATION_AND_FPGA_OFFLINE_INTEGRATION_ONLY",
+    "may_adjust_later": true,
+    "support_dimensions_physically_verified": false,
+    "selection_context": "User asked whether260/160/30 is feasible and continued after all three tasks passed simulation.",
+    "replaces_support_centre_mm": [
+      230,
+      200,
+      120
+    ],
+    "trajectory_validation": "THREE_OBJECT_COMPLETE_TASKS_AND_NINE_CANCEL_BRANCHES_PASSED_NOMINAL_SIMULATION",
+    "validation_report": "docs/phase3c/mode_b_motion_20261027/continuity_v2_260_160_30/validation_summary.json",
+    "physical_execution_allowed": false
+  }
+}

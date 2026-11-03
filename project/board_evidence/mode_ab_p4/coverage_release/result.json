@@ -1,0 +1,1577 @@
+{
+  "passed": true,
+  "finite_grid_points": 75,
+  "rows": [
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        355,
+        15
+      ],
+      "method": "FULL_NATIVE_GEOMETRY",
+      "passed": true,
+      "points": 1436,
+      "geometry": {
+        "samples_checked": 8616,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 49.52535979999993
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        355,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1500,
+      "geometry": {
+        "samples_checked": 9000,
+        "minimum_model_clearance_mm": -0.008107191252159751
+      },
+      "seconds": 3.196503799999846
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        355,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1428,
+      "geometry": {
+        "samples_checked": 8568,
+        "minimum_model_clearance_mm": -0.02300349186150541
+      },
+      "seconds": 2.7133262999996077
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        540,
+        355,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1481,
+      "geometry": {
+        "samples_checked": 8886,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 3.0961514999999054
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        640,
+        355,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1425,
+      "geometry": {
+        "samples_checked": 8550,
+        "minimum_model_clearance_mm": -0.0077440631744689625
+      },
+      "seconds": 2.695861199999854
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        320,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1417,
+      "geometry": {
+        "samples_checked": 8502,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.2926215000006778
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        320,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1451,
+      "geometry": {
+        "samples_checked": 8706,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.391208099999858
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        320,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1303,
+      "geometry": {
+        "samples_checked": 7818,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.44268589999956
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        540,
+        320,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1452,
+      "geometry": {
+        "samples_checked": 8712,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.4330167999996775
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        640,
+        320,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1313,
+      "geometry": {
+        "samples_checked": 7878,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.300334899999143
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        285,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1311,
+      "geometry": {
+        "samples_checked": 7866,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.5655415000001085
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        285,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1286,
+      "geometry": {
+        "samples_checked": 7716,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.2219297000010556
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        285,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1278,
+      "geometry": {
+        "samples_checked": 7668,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.262760799998432
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        540,
+        285,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1286,
+      "geometry": {
+        "samples_checked": 7716,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.3789641999992455
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        640,
+        285,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1278,
+      "geometry": {
+        "samples_checked": 7668,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.1749424999998155
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        250,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1272,
+      "geometry": {
+        "samples_checked": 7632,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.407633499999065
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        250,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1259,
+      "geometry": {
+        "samples_checked": 7554,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.199911499999871
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        250,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1256,
+      "geometry": {
+        "samples_checked": 7536,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.375331400000505
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        540,
+        250,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1259,
+      "geometry": {
+        "samples_checked": 7554,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.343951599999855
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        640,
+        250,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1259,
+      "geometry": {
+        "samples_checked": 7554,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.0967640000017127
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        215,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.4487348000002385
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        215,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1256,
+      "geometry": {
+        "samples_checked": 7536,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.262745799998811
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        215,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1254,
+      "geometry": {
+        "samples_checked": 7524,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.2559134000002814
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        540,
+        215,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1254,
+      "geometry": {
+        "samples_checked": 7524,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.4241702999988775
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        640,
+        215,
+        15
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1255,
+      "geometry": {
+        "samples_checked": 7530,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 2.145013999999719
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        355,
+        7.5
+      ],
+      "method": "FULL_NATIVE_GEOMETRY",
+      "passed": true,
+      "points": 949,
+      "geometry": {
+        "samples_checked": 5694,
+        "minimum_model_clearance_mm": -0.0030580867846268234
+      },
+      "seconds": 46.842188100001295
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        355,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 954,
+      "geometry": {
+        "samples_checked": 5724,
+        "minimum_model_clearance_mm": -0.003900011656003066
+      },
+      "seconds": 5.540181099999245
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        355,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 945,
+      "geometry": {
+        "samples_checked": 5670,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 3.5196907999998075
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        540,
+        355,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 945,
+      "geometry": {
+        "samples_checked": 5670,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.4812286000014865
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        640,
+        355,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 950,
+      "geometry": {
+        "samples_checked": 5700,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.137962400000106
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        320,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1045,
+      "geometry": {
+        "samples_checked": 6270,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.4834652000008646
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        320,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1024,
+      "geometry": {
+        "samples_checked": 6144,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.5780883000006725
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        320,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1231,
+      "geometry": {
+        "samples_checked": 7386,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.7386347999999998
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        540,
+        320,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1058,
+      "geometry": {
+        "samples_checked": 6348,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.2424995000001218
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        640,
+        320,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1084,
+      "geometry": {
+        "samples_checked": 6504,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.289898999999423
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        285,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1063,
+      "geometry": {
+        "samples_checked": 6378,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.431776899999022
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        285,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1031,
+      "geometry": {
+        "samples_checked": 6186,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.34856740000032
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        285,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 993,
+      "geometry": {
+        "samples_checked": 5958,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 2.434616200000164
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        540,
+        285,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 985,
+      "geometry": {
+        "samples_checked": 5910,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.939649300000383
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        640,
+        285,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1002,
+      "geometry": {
+        "samples_checked": 6012,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.3314387999998871
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        250,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 963,
+      "geometry": {
+        "samples_checked": 5778,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.5577122000013333
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        250,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1011,
+      "geometry": {
+        "samples_checked": 6066,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.463274800000363
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        250,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 983,
+      "geometry": {
+        "samples_checked": 5898,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.3995466999986093
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        540,
+        250,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 971,
+      "geometry": {
+        "samples_checked": 5826,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.6222794000004797
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        640,
+        250,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 995,
+      "geometry": {
+        "samples_checked": 5970,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.4971182000008412
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        215,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 954,
+      "geometry": {
+        "samples_checked": 5724,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.4676149999995687
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        215,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1010,
+      "geometry": {
+        "samples_checked": 6060,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.5791466000009677
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        215,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 980,
+      "geometry": {
+        "samples_checked": 5880,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.5219125999992684
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        540,
+        215,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 965,
+      "geometry": {
+        "samples_checked": 5790,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.4307852999991155
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        640,
+        215,
+        7.5
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 994,
+      "geometry": {
+        "samples_checked": 5964,
+        "minimum_model_clearance_mm": 0.0
+      },
+      "seconds": 1.5210781999994651
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        355,
+        23
+      ],
+      "method": "FULL_NATIVE_GEOMETRY",
+      "passed": true,
+      "points": 1419,
+      "geometry": {
+        "samples_checked": 8514,
+        "minimum_model_clearance_mm": -0.013838977281078968
+      },
+      "seconds": 27.379358399999546
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        355,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1463,
+      "geometry": {
+        "samples_checked": 8778,
+        "minimum_model_clearance_mm": -0.002008695294765772
+      },
+      "seconds": 1.8112492999989627
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        355,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1402,
+      "geometry": {
+        "samples_checked": 8412,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.464503400000467
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        540,
+        355,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1441,
+      "geometry": {
+        "samples_checked": 8646,
+        "minimum_model_clearance_mm": -0.012610744148613406
+      },
+      "seconds": 1.7093241999991733
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        640,
+        355,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1416,
+      "geometry": {
+        "samples_checked": 8496,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.8820536999992328
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        320,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1414,
+      "geometry": {
+        "samples_checked": 8484,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.6445932000005996
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        320,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1341,
+      "geometry": {
+        "samples_checked": 8046,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.516469700000016
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        320,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1386,
+      "geometry": {
+        "samples_checked": 8316,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.5403391999989253
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        540,
+        320,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1408,
+      "geometry": {
+        "samples_checked": 8448,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.4346931999989465
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        640,
+        320,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1418,
+      "geometry": {
+        "samples_checked": 8508,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.6629401000009238
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        285,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1307,
+      "geometry": {
+        "samples_checked": 7842,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.6228104000001622
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        285,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1285,
+      "geometry": {
+        "samples_checked": 7710,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.587387099998523
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        285,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1278,
+      "geometry": {
+        "samples_checked": 7668,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.3880576000010478
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        540,
+        285,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1281,
+      "geometry": {
+        "samples_checked": 7686,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.6552142999989883
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        640,
+        285,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1280,
+      "geometry": {
+        "samples_checked": 7680,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.503196100000423
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        250,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1267,
+      "geometry": {
+        "samples_checked": 7602,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.3836028000005172
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        250,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.5027079999999842
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        250,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.2669449000004533
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        540,
+        250,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.526385000001028
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        640,
+        250,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.49708180000016
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        215,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.581518099999812
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        215,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.4790702000009333
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        215,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.2283685000002151
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        540,
+        215,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.3712469000001875
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        640,
+        215,
+        23
+      ],
+      "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+      "passed": true,
+      "points": 1264,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": 3.552713678800501e-15
+      },
+      "seconds": 1.4086919000001217
+    }
+  ],
+  "cold_cache_spot_checks": [
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        355,
+        15
+      ],
+      "planning_seconds": 2.5648729000004096,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.0,
+        "remaining_payload_margin_mm": 49.61933365193849,
+        "reference_model_samples": 989382,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        355,
+        15
+      ],
+      "planning_seconds": 1.712425700001404,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 4.524192254684145,
+        "remaining_payload_margin_mm": 45.095141397254345,
+        "reference_model_samples": 989382,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        355,
+        15
+      ],
+      "planning_seconds": 1.6497498000007909,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 5.147072998044994,
+        "remaining_payload_margin_mm": 44.4722606538935,
+        "reference_model_samples": 989382,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        590,
+        285,
+        15
+      ],
+      "planning_seconds": 1.2841846999999689,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.08918736276743293,
+        "remaining_payload_margin_mm": 46.81532747578845,
+        "reference_model_samples": 989382,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        490,
+        215,
+        15
+      ],
+      "planning_seconds": 1.4775372999993124,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.7624240119175927,
+        "remaining_payload_margin_mm": 46.14209082663829,
+        "reference_model_samples": 989382,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "red_cube",
+      "source": [
+        690,
+        215,
+        15
+      ],
+      "planning_seconds": 1.3181437000002916,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.5145073611338048,
+        "remaining_payload_margin_mm": 46.39000747742208,
+        "reference_model_samples": 989382,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        355,
+        7.5
+      ],
+      "planning_seconds": 2.400448000000324,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.0,
+        "remaining_payload_margin_mm": 45.332560481028736,
+        "reference_model_samples": 956910,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        355,
+        7.5
+      ],
+      "planning_seconds": 3.1499660999998014,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 5.253272473213738,
+        "remaining_payload_margin_mm": 40.079288007814995,
+        "reference_model_samples": 956910,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        355,
+        7.5
+      ],
+      "planning_seconds": 2.004384100000607,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 5.85533910475523,
+        "remaining_payload_margin_mm": 39.477221376273505,
+        "reference_model_samples": 956910,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        590,
+        285,
+        7.5
+      ],
+      "planning_seconds": 1.5451405000003433,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 1.6278939548846934,
+        "remaining_payload_margin_mm": 42.26227560619835,
+        "reference_model_samples": 956910,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        490,
+        215,
+        7.5
+      ],
+      "planning_seconds": 1.4338110000007873,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 1.3634694546082822,
+        "remaining_payload_margin_mm": 42.526700106474756,
+        "reference_model_samples": 956910,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "source": [
+        690,
+        215,
+        7.5
+      ],
+      "planning_seconds": 1.3308142999994743,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 1.656165487398099,
+        "remaining_payload_margin_mm": 42.23400407368494,
+        "reference_model_samples": 956910,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        355,
+        23
+      ],
+      "planning_seconds": 1.8029783000001771,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.0,
+        "remaining_payload_margin_mm": 47.51875071212507,
+        "reference_model_samples": 988206,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        355,
+        23
+      ],
+      "planning_seconds": 1.8428311000006943,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 3.2631703577547526,
+        "remaining_payload_margin_mm": 44.255580354370316,
+        "reference_model_samples": 988206,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        355,
+        23
+      ],
+      "planning_seconds": 1.3702315000009548,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 6.007413873765032,
+        "remaining_payload_margin_mm": 41.51133683836004,
+        "reference_model_samples": 988206,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        590,
+        285,
+        23
+      ],
+      "planning_seconds": 1.17437339999924,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.04082156717476864,
+        "remaining_payload_margin_mm": 45.7576370327971,
+        "reference_model_samples": 988206,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        490,
+        215,
+        23
+      ],
+      "planning_seconds": 1.3258609999993496,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.6147425695339348,
+        "remaining_payload_margin_mm": 45.18371603043793,
+        "reference_model_samples": 988206,
+        "physical_test": "NOT_RUN"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "source": [
+        690,
+        215,
+        23
+      ],
+      "planning_seconds": 1.3456483999998454,
+      "proof": {
+        "passed": true,
+        "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT_NATIVE",
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "payload_displacement_bound_mm": 0.6356437705279936,
+        "remaining_payload_margin_mm": 45.162814829443874,
+        "reference_model_samples": 988206,
+        "physical_test": "NOT_RUN"
+      }
+    }
+  ],
+  "runtime_always_checks_the_fresh_attachment": true,
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "pc/mode_ab/native_routes.py": "584c8d19be74908a42ded22cfc1e1a6c89cf3921ee04467494eb0f2bbcec539b",
+    "pc/mode_ab/native_family.py": "9886e22622f0d326d46f4ad5ad60333b99f1b57a36d5ed19d85354310ae25f25",
+    "pc/mode_ab/geometry.py": "83e31494324d42ade426466c6990e5d50287365fd84f0f34c2a623a4f07f4679",
+    "scripts/prepare_mode_ab_native_coverage.py": "9ff59d8a1f251a980b7cc6ee80a401ddec57a280200055c500029a8aa7aa8612"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "classes": [
+    {
+      "class_name": "red_cube",
+      "operations": 528,
+      "six_axis_samples": 18428
+    },
+    {
+      "class_name": "eraser",
+      "operations": 528,
+      "six_axis_samples": 12860
+    },
+    {
+      "class_name": "small_canister",
+      "operations": 528,
+      "six_axis_samples": 18252
+    }
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "inputs": {
+    "candidate/mode_ab/native_profiles/red_cube/normal.json": "5fdf67cc317ae736506454c34f884436e00499418a23a19965bfa6aa1df26f80",
+    "candidate/mode_ab/native_profiles/eraser/normal.json": "d3ed2b740d8b8ea53ad97dfd5b3383d4527e2727ce170b08a7db88bf1757ee5c",
+    "candidate/mode_ab/native_profiles/small_canister/normal.json": "9e5e908f5c1e2895c0d41ab0caa3561b620660b7345d44a499449332ca8b5853"
+  },
+  "checks": [
+    "PASS: real class program           0:         528 PL phases, all 65 hand positions,       18428 backend-accepted vectors",
+    "PASS: real class program           1:         528 PL phases, all 65 hand positions,       12860 backend-accepted vectors",
+    "PASS: real class program           2:         528 PL phases, all 65 hand positions,       18252 backend-accepted vectors"
+  ],
+  "test_period_cycles": 512,
+  "production_period_cycles": 2000000,
+  "period_ratios_preserved": true,
+  "hardware_access": false,
+  "source_hashes": {
+    "native_motion/rtl/robot/b_route_ram.v": "012d2e0b98415031d5a8bd7f3b291b83eae8006f4765e06095cd59c69e7a4488",
+    "native_motion/rtl/robot/b_route_player.v": "916f76a72587765565bfc35fb9b1178694d5be69b6a49f3d3bfb5bc1b5114156",
+    "board_evidence/mode_ab_p4/native_vectors_pipeline_final/tb.sv": "de9741fd396a1b52d3ceb449e7fe480adda11b6f1879b9d8478248d2f923fc0a"
+  },
+  "timing_scope": "T102 motion ratios preserved; T106 holds shortened only in this vector sweep and tested at full production width separately"
+}

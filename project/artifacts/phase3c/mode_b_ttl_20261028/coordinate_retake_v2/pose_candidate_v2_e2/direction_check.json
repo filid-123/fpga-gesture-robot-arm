@@ -1,0 +1,771 @@
+{
+  "schema": "gesture.mode_b.desktop_pose_check.v1",
+  "passed": false,
+  "status": "PHYSICAL_METRIC_RESIDUAL_REVIEW_REQUIRED",
+  "method": "FOUR_CORNER_PHYSICAL_CENTRES_SQPNP_FIXED_INTRINSICS",
+  "metric_criteria_passed": false,
+  "background_consistent": false,
+  "background_stability_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\BACKGROUND_STABILITY.json",
+  "background_stability_sha256": "16f70d5ce4b29299201189da6e2393be492e9aed2f27d4f1637ed3b3e364b736",
+  "manifest_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\POINT_MANIFEST_E2.json",
+  "manifest_sha256": "04a8c570b363d01048ef84e0e477f9e5c84b9d28d95d1f47069308b85ab93040",
+  "old_table_file": "docs\\phase3c\\table_reference_20261027\\desktop_registration\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "old_table_sha256": "9566d29ef6947c0771aaf8a7280d30cfd0623e7e3509b58c82467517e99a66cd",
+  "camera_origin_desktop_mm": [
+    616.1885027370136,
+    394.22484407946683,
+    414.2050533433347
+  ],
+  "points": [
+    {
+      "name": "A",
+      "role": "FIT",
+      "trial_directory": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\A_540_245",
+      "operator_xy_mm": [
+        540,
+        245
+      ],
+      "top_height_mm": 30,
+      "physical_point_definition": "30mm_RED_TOP_CENTRE_OVER_REQUESTED_DESK_XY",
+      "measurement_uncertainty_mm": null,
+      "old_projected_xy_mm": [
+        642.8122998496656,
+        310.5424290745762
+      ],
+      "maximum_burst_spread_mm": 0.34317239919032383,
+      "records": [
+        {
+          "old_projected_xyz_mm": [
+            642.9146230281763,
+            310.7300937032884,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\A_540_245\\perception\\00_observation.json",
+          "pixel_uv": [
+            1221.7399170750093,
+            280.24893651391955
+          ],
+          "quad_pixel_uv": [
+            [
+              1155.0,
+              211.0
+            ],
+            [
+              1152.0,
+              347.0
+            ],
+            [
+              1288.0,
+              349.0
+            ],
+            [
+              1292.0,
+              213.0
+            ]
+          ],
+          "observation_sha256": "a938ef58950ffb8425154c1968a013103db036da8cd14fc988b5aa5bc5a1ed44",
+          "image_sha256": "c452a874ed2045ee0245bdbddb195d83dbc143ab6dbedd8413ae82d22a67d224"
+        },
+        {
+          "old_projected_xyz_mm": [
+            642.7614030307514,
+            310.42302542430934,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\A_540_245\\perception\\01_observation.json",
+          "pixel_uv": [
+            1220.9447076118915,
+            282.98815746488077
+          ],
+          "quad_pixel_uv": [
+            [
+              1153.0,
+              213.0
+            ],
+            [
+              1153.0,
+              348.0
+            ],
+            [
+              1286.0,
+              350.0
+            ],
+            [
+              1292.0,
+              215.0
+            ]
+          ],
+          "observation_sha256": "a32c4d29793befdf8e74d0f17c672420dcc5e7dada6a554f3572f923fdb44286",
+          "image_sha256": "ceb3ce3f757ed3dcb5973f890e830f5af0ece88d5ac3712c68e13bee58633829"
+        },
+        {
+          "old_projected_xyz_mm": [
+            642.760873490069,
+            310.4741680961308,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\A_540_245\\perception\\02_observation.json",
+          "pixel_uv": [
+            1220.699579546996,
+            282.73565712735655
+          ],
+          "quad_pixel_uv": [
+            [
+              1153.0,
+              213.0
+            ],
+            [
+              1153.0,
+              348.0
+            ],
+            [
+              1286.0,
+              350.0
+            ],
+            [
+              1292.0,
+              214.0
+            ]
+          ],
+          "observation_sha256": "f99397d3522d5d8d5e72d2bef805254641b111d9bc6561fcba182ec1fb2759b7",
+          "image_sha256": "12940e781b531124d15477eba9fecac52bd1796452b563961cd5e288d8fc9e99"
+        }
+      ],
+      "corrected_xy_mm": [
+        539.3123830258104,
+        245.25803982075414
+      ],
+      "error_xy_mm": [
+        -0.6876169741896092,
+        0.258039820754135
+      ],
+      "error_norm_mm": 0.7344396859433046,
+      "new_projected_frame_centres_mm": [
+        [
+          539.1997994407205,
+          245.04983160937724,
+          30.0
+        ],
+        [
+          539.3696703818448,
+          245.39067042430085,
+          30.0
+        ],
+        [
+          539.3676792548658,
+          245.33361742858443,
+          30.0
+        ]
+      ],
+      "new_mean_opposite_edges_mm": [
+        30.543021009567052,
+        29.057103718320633
+      ],
+      "maximum_frame_error_mm": 0.8017506622163068
+    },
+    {
+      "name": "B",
+      "role": "FIT",
+      "trial_directory": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\B_640_245",
+      "operator_xy_mm": [
+        640,
+        245
+      ],
+      "top_height_mm": 30,
+      "physical_point_definition": "30mm_RED_TOP_CENTRE_OVER_REQUESTED_DESK_XY",
+      "measurement_uncertainty_mm": null,
+      "old_projected_xy_mm": [
+        544.371723829234,
+        312.3240766428612
+      ],
+      "maximum_burst_spread_mm": 0.11371427347698428,
+      "records": [
+        {
+          "old_projected_xyz_mm": [
+            544.405581756424,
+            312.29016217138945,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\B_640_245\\perception\\00_observation.json",
+          "pixel_uv": [
+            747.5397387763735,
+            272.0160488604516
+          ],
+          "quad_pixel_uv": [
+            [
+              680.0,
+              201.0
+            ],
+            [
+              677.0,
+              340.0
+            ],
+            [
+              816.0,
+              344.0
+            ],
+            [
+              815.0,
+              207.0
+            ]
+          ],
+          "observation_sha256": "c50c49d8741387c0bc5857b9f91cedcb3439ebc1114bb9162405d5205c2f5bf1",
+          "image_sha256": "30e2ece4ad9f78b20c8e982d5da7acd48cc9ac88515f1b011ce5e762d5e9a951"
+        },
+        {
+          "old_projected_xyz_mm": [
+            544.354460285718,
+            312.28999631085446,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\B_640_245\\perception\\01_observation.json",
+          "pixel_uv": [
+            746.7744638246298,
+            272.247984402171
+          ],
+          "quad_pixel_uv": [
+            [
+              679.0,
+              202.0
+            ],
+            [
+              677.0,
+              340.0
+            ],
+            [
+              816.0,
+              344.0
+            ],
+            [
+              815.0,
+              206.0
+            ]
+          ],
+          "observation_sha256": "507d7eccf6da125c89b482183e017a5efe870ac56c74e3bb0dd4b4b41092744b",
+          "image_sha256": "cd93d168704cd43319cf8a5d98d0bd9a82a7ceb1bda51320429427accf957b31"
+        },
+        {
+          "old_projected_xyz_mm": [
+            544.3551294455601,
+            312.39207144633974,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\B_640_245\\perception\\02_observation.json",
+          "pixel_uv": [
+            747.2853123838845,
+            271.2537820478794
+          ],
+          "quad_pixel_uv": [
+            [
+              680.0,
+              201.0
+            ],
+            [
+              677.0,
+              340.0
+            ],
+            [
+              816.0,
+              343.0
+            ],
+            [
+              814.0,
+              206.0
+            ]
+          ],
+          "observation_sha256": "f71e97c12a78e179ff5778bbe7d7397c8ec57d6ffc8c06b4b0fe2b943a20d291",
+          "image_sha256": "9aa4af0b7496bc4d1785dd3c7f8a39531788055086d4d26574573836420d4276"
+        }
+      ],
+      "corrected_xy_mm": [
+        640.3425256359965,
+        244.94631191295593
+      ],
+      "error_xy_mm": [
+        0.34252563599648056,
+        -0.05368808704406547
+      ],
+      "error_norm_mm": 0.34670768956751546,
+      "new_projected_frame_centres_mm": [
+        [
+          640.3070795325823,
+          244.98281330053868,
+          30.0
+        ],
+        [
+          640.3589410196411,
+          244.98389357793735,
+          30.0
+        ],
+        [
+          640.361556355766,
+          244.87222886039177,
+          30.0
+        ]
+      ],
+      "new_mean_opposite_edges_mm": [
+        30.77699235326321,
+        28.821277669542713
+      ],
+      "maximum_frame_error_mm": 0.383468985071223
+    },
+    {
+      "name": "C",
+      "role": "FIT",
+      "trial_directory": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\C_640_325",
+      "operator_xy_mm": [
+        640,
+        325
+      ],
+      "top_height_mm": 30,
+      "physical_point_definition": "30mm_RED_TOP_CENTRE_OVER_REQUESTED_DESK_XY",
+      "measurement_uncertainty_mm": null,
+      "old_projected_xy_mm": [
+        542.3643230705599,
+        234.88772164376496
+      ],
+      "maximum_burst_spread_mm": 0.11635537146726924,
+      "records": [
+        {
+          "old_projected_xyz_mm": [
+            542.415331261751,
+            234.8351122869583,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\C_640_325\\perception\\00_observation.json",
+          "pixel_uv": [
+            740.9945268315568,
+            648.5053558862624
+          ],
+          "quad_pixel_uv": [
+            [
+              672.0,
+              578.0
+            ],
+            [
+              671.0,
+              717.0
+            ],
+            [
+              809.0,
+              718.0
+            ],
+            [
+              811.0,
+              580.0
+            ]
+          ],
+          "observation_sha256": "9c840035d4966478194697e7dc3f546a1f519f95f0fb63b6aa16dd25ed90c08e",
+          "image_sha256": "84e4a3edf47ba969689470c1f2949ead2bd9167e66e1cff0ecff2256d6bffc84"
+        },
+        {
+          "old_projected_xyz_mm": [
+            542.3645055294628,
+            234.93977993910858,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\C_640_325\\perception\\01_observation.json",
+          "pixel_uv": [
+            740.741858411676,
+            647.2473900171402
+          ],
+          "quad_pixel_uv": [
+            [
+              671.0,
+              579.0
+            ],
+            [
+              671.0,
+              718.0
+            ],
+            [
+              811.0,
+              716.0
+            ],
+            [
+              809.0,
+              578.0
+            ]
+          ],
+          "observation_sha256": "b1fa80c76a4977f99ce8b7a63a1d821a9dfa81e020e8cb96c854d16635326a23",
+          "image_sha256": "149f9855ef6c8595eb086fd7793c5f5c473f1a4f3b2dcfde1f751cf2e1bf1125"
+        },
+        {
+          "old_projected_xyz_mm": [
+            542.3131324204661,
+            234.88827270522796,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\C_640_325\\perception\\02_observation.json",
+          "pixel_uv": [
+            740.2526945490176,
+            647.7509153731112
+          ],
+          "quad_pixel_uv": [
+            [
+              671.0,
+              578.0
+            ],
+            [
+              670.0,
+              717.0
+            ],
+            [
+              810.0,
+              718.0
+            ],
+            [
+              810.0,
+              579.0
+            ]
+          ],
+          "observation_sha256": "780acaf5be607ad9d5a9347bbc2166d31b07f6f48f40da79ea6c8d277a4ef4dc",
+          "image_sha256": "ce6c76c175817ac184c11e49ad26c94716684d5a6b0699eedc79b7201f0f07b0"
+        }
+      ],
+      "corrected_xy_mm": [
+        639.9444095234958,
+        325.34796493495446
+      ],
+      "error_xy_mm": [
+        -0.05559047650422144,
+        0.34796493495446157
+      ],
+      "error_norm_mm": 0.35237749223784015,
+      "new_projected_frame_centres_mm": [
+        [
+          639.8932263241566,
+          325.399371698511,
+          30.0
+        ],
+        [
+          639.9453154163641,
+          325.29700158419905,
+          30.0
+        ],
+        [
+          639.9946868299668,
+          325.3475215221533,
+          30.0
+        ]
+      ],
+      "new_mean_opposite_edges_mm": [
+        28.371660895998513,
+        27.947896705315298
+      ],
+      "maximum_frame_error_mm": 0.4133985624366452
+    },
+    {
+      "name": "D",
+      "role": "FIT",
+      "trial_directory": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\D_540_325",
+      "operator_xy_mm": [
+        540,
+        325
+      ],
+      "top_height_mm": 30,
+      "physical_point_definition": "30mm_RED_TOP_CENTRE_OVER_REQUESTED_DESK_XY",
+      "measurement_uncertainty_mm": null,
+      "old_projected_xy_mm": [
+        644.5950228023338,
+        234.84736491914404
+      ],
+      "maximum_burst_spread_mm": 0.16526285312941716,
+      "records": [
+        {
+          "old_projected_xyz_mm": [
+            644.5079072726032,
+            234.83010440564817,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\D_540_325\\perception\\00_observation.json",
+          "pixel_uv": [
+            1228.0143884892086,
+            644.9928057553957
+          ],
+          "quad_pixel_uv": [
+            [
+              1161.0,
+              575.0
+            ],
+            [
+              1161.0,
+              713.0
+            ],
+            [
+              1296.0,
+              716.0
+            ],
+            [
+              1296.0,
+              576.0
+            ]
+          ],
+          "observation_sha256": "de8ce2e41b3fb5dd10624e5e13db1091e2f3b1ecbaad572de794bd2a574036f9",
+          "image_sha256": "cf2dcdfcfaa6308fb1b91ff49463b54acc4f28a536b9f040ffdc9910e244e7b0"
+        },
+        {
+          "old_projected_xyz_mm": [
+            644.6123563632859,
+            234.82997269555278,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\D_540_325\\perception\\01_observation.json",
+          "pixel_uv": [
+            1228.9890510948906,
+            645.4997602429538
+          ],
+          "quad_pixel_uv": [
+            [
+              1160.0,
+              575.0
+            ],
+            [
+              1161.0,
+              712.0
+            ],
+            [
+              1297.0,
+              715.0
+            ],
+            [
+              1298.0,
+              578.0
+            ]
+          ],
+          "observation_sha256": "ab77b9378e888de6c6376252dbbfe6ad6af247b2f4277da3585416623c6455d7",
+          "image_sha256": "c4dd5d13f7d38c6a4e4308e1bde84f92f74ebaa604c9fdd6264eec87a87b863e"
+        },
+        {
+          "old_projected_xyz_mm": [
+            644.6648047711122,
+            234.88201765623114,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\D_540_325\\perception\\02_observation.json",
+          "pixel_uv": [
+            1229.0110294117646,
+            645.0110294117648
+          ],
+          "quad_pixel_uv": [
+            [
+              1296.0,
+              575.0
+            ],
+            [
+              1160.0,
+              576.0
+            ],
+            [
+              1163.0,
+              714.0
+            ],
+            [
+              1298.0,
+              714.0
+            ]
+          ],
+          "observation_sha256": "e0e84c4f5dcd9d8de2fdc30a92860a4aa59ebad6cb81810d18d6f485ee499525",
+          "image_sha256": "3638724833b5bf79cfc107fe19d2d989f1e30ac4e6c37ef3539788fb66854a02"
+        }
+      ],
+      "corrected_xy_mm": [
+        540.3287823204139,
+        323.92773853049016
+      ],
+      "error_xy_mm": [
+        0.3287823204138931,
+        -1.07226146950984
+      ],
+      "error_norm_mm": 1.121535765462763,
+      "new_projected_frame_centres_mm": [
+        [
+          540.4140717946638,
+          323.9443769513391,
+          30.0
+        ],
+        [
+          540.3131635145296,
+          323.9469600765113,
+          30.0
+        ],
+        [
+          540.2591116520482,
+          323.89187856362014,
+          30.0
+        ]
+      ],
+      "new_mean_opposite_edges_mm": [
+        28.23689166866551,
+        28.024453560271464
+      ],
+      "maximum_frame_error_mm": 1.1380122872762473
+    },
+    {
+      "name": "E2",
+      "role": "HOLDOUT",
+      "trial_directory": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\E2_590_285",
+      "operator_xy_mm": [
+        590,
+        285
+      ],
+      "top_height_mm": 30,
+      "physical_point_definition": "30mm_RED_TOP_CENTRE_OVER_REQUESTED_DESK_XY",
+      "measurement_uncertainty_mm": null,
+      "old_projected_xy_mm": [
+        588.7700509147788,
+        284.1145833135162
+      ],
+      "maximum_burst_spread_mm": 0.21547205389754331,
+      "records": [
+        {
+          "old_projected_xyz_mm": [
+            588.769762909068,
+            284.06286396675335,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\E2_590_285\\perception\\00_observation.json",
+          "pixel_uv": [
+            961.7694289976943,
+            409.7364709073647
+          ],
+          "quad_pixel_uv": [
+            [
+              896.0,
+              341.0
+            ],
+            [
+              893.0,
+              477.0
+            ],
+            [
+              1029.0,
+              480.0
+            ],
+            [
+              1030.0,
+              343.0
+            ]
+          ],
+          "observation_sha256": "d42a732f7aed353601242318d2f1d9922ac64a1a6aed5d4b938a3dc2855469e9",
+          "image_sha256": "cc8a4aa8ef7cc3950b970170706462ec294e6c419412b90d1490eefb45422bb7"
+        },
+        {
+          "old_projected_xyz_mm": [
+            588.6657359411183,
+            284.16681292675247,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\E2_590_285\\perception\\01_observation.json",
+          "pixel_uv": [
+            960.771242539338,
+            409.2253933803581
+          ],
+          "quad_pixel_uv": [
+            [
+              895.0,
+              341.0
+            ],
+            [
+              893.0,
+              476.0
+            ],
+            [
+              1029.0,
+              480.0
+            ],
+            [
+              1029.0,
+              342.0
+            ]
+          ],
+          "observation_sha256": "1931e02b2001c7920c43d916f29f7675078224c38cd3bbb971ef19c31c747d80",
+          "image_sha256": "3cc0ef31591a0d7ee1a1c4fe9bf90e3fff2dcb700cb00ed66f6720e417b0df7e"
+        },
+        {
+          "old_projected_xyz_mm": [
+            588.8746538941502,
+            284.1140730470429,
+            30.0
+          ],
+          "observation_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\E2_590_285\\perception\\02_observation.json",
+          "pixel_uv": [
+            962.5367007188801,
+            408.98600075671584
+          ],
+          "quad_pixel_uv": [
+            [
+              897.0,
+              340.0
+            ],
+            [
+              893.0,
+              477.0
+            ],
+            [
+              1030.0,
+              480.0
+            ],
+            [
+              1030.0,
+              343.0
+            ]
+          ],
+          "observation_sha256": "4dc21e822adbbcf99cfb20dcd109c224d8a46b925d243ee960e4b576a5098122",
+          "image_sha256": "6cb4bf2e113c83dbe4e1912f189175916d634644958e1ab7e390136376345460"
+        }
+      ],
+      "corrected_xy_mm": [
+        594.7876723510536,
+        274.50975349896726
+      ],
+      "error_xy_mm": [
+        4.787672351053629,
+        -10.490246501032743
+      ],
+      "error_norm_mm": 11.531135164998853,
+      "new_projected_frame_centres_mm": [
+        [
+          594.7874417399997,
+          274.5645907405626,
+          30.0
+        ],
+        [
+          594.8932446600987,
+          274.4567404195614,
+          30.0
+        ],
+        [
+          594.6823306530625,
+          274.50792933677775,
+          30.0
+        ]
+      ],
+      "new_mean_opposite_edges_mm": [
+        29.888305662030547,
+        28.451765968165166
+      ],
+      "maximum_frame_error_mm": 11.623431760202957
+    }
+  ],
+  "maximum_fit_error_mm": 1.121535765462763,
+  "maximum_independent_holdout_error_mm": 11.531135164998853,
+  "maximum_fit_frame_error_mm": 1.1380122872762473,
+  "maximum_holdout_frame_error_mm": 11.623431760202957,
+  "maximum_30mm_edge_relative_error": 0.08231018264467804,
+  "maximum_abs_adjacent_edge_cosine": 0.08073805909242586,
+  "criteria": {
+    "fit_each_frame_error_mm": 3,
+    "holdout_each_frame_error_mm": 5,
+    "opposite_edge_relative_error": 0.2,
+    "max_abs_adjacent_edge_cosine": 0.15
+  },
+  "frozen_vision_files_verified": 19,
+  "independent_point_not_used_in_pose_fit": true,
+  "measurement_uncertainty_mm": null,
+  "height_plane_checked_mm": 30,
+  "raw_pixels_rotated_or_flipped": false,
+  "intrinsics_or_vision_models_changed": false,
+  "global_mapping_accepted": false,
+  "hardware_motion_requests": 0
+}

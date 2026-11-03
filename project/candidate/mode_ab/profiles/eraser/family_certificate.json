@@ -1,0 +1,42 @@
+{
+  "schema": "gesture.mode_ab.family_certificate.v1",
+  "fingerprint": "9e7d418b5f3aa42e916830b5b7ac0b43e69ed4344c1e59eb6c0daf3046e73063",
+  "tcp_from_object": [
+    [
+      -0.008949521805390676,
+      0.9998987911557282,
+      -0.011059543605811724,
+      -0.4994547305323067
+    ],
+    [
+      0.9999599277610347,
+      0.00894652758111537,
+      -0.0003201818033358316,
+      -0.0039421438698354905
+    ],
+    [
+      -0.00022120488620144065,
+      -0.011061965899168151,
+      -0.9999387901160974,
+      2.3864531722622484
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "proof": {
+    "passed": true,
+    "method": "FULL_GEOMETRY",
+    "handover_steps": 65,
+    "ordered_retarget_pairs": 4160,
+    "model_samples_checked": 846444,
+    "payload_margin_mm": 43.89016956108304,
+    "loaded_tilt_margin_deg": 13.02560842212414,
+    "minimum_clearance_mm": 4.000512606669915,
+    "native_rounding_checked": true,
+    "physical_test": "NOT_RUN"
+  }
+}

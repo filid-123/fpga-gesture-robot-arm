@@ -1,0 +1,37 @@
+{
+  "object_class": "red_cube",
+  "mode_b_class_id": 1,
+  "operator_accepted": true,
+  "physically_tested_speed_multiplier": 2.0,
+  "source_centre_mm": [
+    651.879446649631,
+    257.80145957601377,
+    15.0
+  ],
+  "yaw_deg": 2.978087653032702,
+  "requests": 1789,
+  "motion_samples": 1785,
+  "nominal_motion_seconds": 43.74,
+  "close_command": {
+    "T": 106,
+    "cmd": 2.7,
+    "spd": 40,
+    "acc": 5
+  },
+  "local_transfer": {
+    "delta_desk_mm": [
+      44.454756077914,
+      -16.941619445129334,
+      0.0
+    ],
+    "yaw_delta_equivalent_deg": -0.4233526291487806,
+    "extra_outward_mm": 2.0,
+    "scope": "LOCAL_NATIVE_ENDPOINT_DIFFERENCES_FROM_OPERATOR_ACCEPTED_CURRENT_CAMERA_SOURCE",
+    "native_endpoint_delta_mm": [
+      -14.960250702305737,
+      -44.72711228761309,
+      0.0
+    ],
+    "maximum_native_pitch_adjustment_deg": 0.0
+  }
+}

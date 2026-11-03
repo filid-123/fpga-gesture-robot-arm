@@ -1,0 +1,176 @@
+{
+  "schema": "gesture.phase3.s4_golden.v1",
+  "generated_utc": "2026-09-25T17:15:17.499457+00:00",
+  "provenance": "S4 reference model + S2 v0.2.3 planner reference + S1 v0.1.1 backend model (bench profile, FIXTURE_NOT_OFFICIAL protocol)",
+  "words": 23211,
+  "common_offset": 18,
+  "arm_config_writes": 434,
+  "scenarios": [
+    {
+      "name": "a_happy",
+      "index": 0,
+      "description": "mode A, DRY_RUN: object 1 selected, delivered, back home",
+      "actions": 10,
+      "moves": 9,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_line_happy",
+      "index": 1,
+      "description": "mode A, LINE with TX->RX loopback feedback: arrival + feedback checks active; vision through the PS register VISION_SIM",
+      "actions": 10,
+      "moves": 9,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_cancel_approach",
+      "index": 2,
+      "description": "FIST_CANCEL during approach (STOP_ON_CANCEL): pause, clear, move back part-way, retrace to HOME",
+      "actions": 7,
+      "moves": 4,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_cancel_holding",
+      "index": 3,
+      "description": "FIST_CANCEL during lift (holding, no STOP flag): finish the segment, retrace, re-open the gripper at the grasp pose, back HOME",
+      "actions": 9,
+      "moves": 8,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_palm_timeout",
+      "index": 4,
+      "description": "no PALM_READY at PRE_DELIVERY: palm-wait timeout = cancel, object returned to its slot",
+      "actions": 11,
+      "moves": 10,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_blind_timeout",
+      "index": 5,
+      "description": "blind window shorter than the delivery move: stopped during DELIVER, no release, back to PRE_DELIVERY, then palm-wait timeout and return to slot",
+      "actions": 15,
+      "moves": 12,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_fault_estop",
+      "index": 6,
+      "description": "e-stop/motion-permission input drops during approach: FAULT, permission revoked, planner ESTOP, no further motion",
+      "actions": 4,
+      "moves": 2,
+      "state": "FAULT",
+      "fault": "ESTOP_INPUT",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_fault_comm",
+      "index": 7,
+      "description": "LINE: feedback stops during lift: COMM_TIMEOUT fault, permission revoked (S1 then latches ESTOP_EVENT)",
+      "actions": 6,
+      "moves": 4,
+      "state": "FAULT",
+      "fault": "COMM_TIMEOUT",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_fault_planner",
+      "index": 8,
+      "description": "segment exceeds the configured planner VMAX of channel 1: planner validation ERROR -> PLANNER_ERROR fault before any sample",
+      "actions": 3,
+      "moves": 1,
+      "state": "FAULT",
+      "fault": "PLANNER_ERROR",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_refuse_not_home",
+      "index": 9,
+      "description": "planner LAST_DELIVERED is not HOME: task refused, no motion",
+      "actions": 1,
+      "moves": 0,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NOT_AT_HOME"
+    },
+    {
+      "name": "a_ps_write_blocked",
+      "index": 10,
+      "description": "PS writes planner CONTROL=ESTOP and S1 MODE=OFF during the task: both dropped and flagged, task completes",
+      "actions": 10,
+      "moves": 9,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "b_happy",
+      "index": 11,
+      "description": "mode B: SELECTED, PS commits a 5-segment path, delivered, back home",
+      "actions": 10,
+      "moves": 9,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "b_cancel_hold",
+      "index": 12,
+      "description": "mode B, HOLD policy: FIST_CANCEL while holding -> stop and HALT, then PS RELEASE",
+      "actions": 8,
+      "moves": 4,
+      "state": "OFF",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_fault_recover",
+      "index": 13,
+      "description": "fault (ABORT during approach), PS RELEASE + FAULT_CLEAR, planner back HOME manually, ENABLE, second task completes",
+      "actions": 15,
+      "moves": 11,
+      "state": "IDLE",
+      "fault": "NONE",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_fault_s1_limit",
+      "index": 14,
+      "description": "object 3 approach to a keypoint outside the S1 soft limit (inside the S4 joint limits): the unchanged S1 latches LIMIT_VIOLATION, S4 -> S1_FAULT",
+      "actions": 3,
+      "moves": 1,
+      "state": "FAULT",
+      "fault": "S1_FAULT",
+      "refuse": "NONE"
+    },
+    {
+      "name": "a_fault_arrival",
+      "index": 15,
+      "description": "LINE: feedback stops during lift, arrival timeout shorter than the comm timeout: ARRIVAL_TIMEOUT fault",
+      "actions": 6,
+      "moves": 4,
+      "state": "FAULT",
+      "fault": "ARRIVAL_TIMEOUT",
+      "refuse": "NONE"
+    }
+  ],
+  "sha256": {
+    "s4_scenarios.mem": "6e583b1eb91942515a0c556b5d07b495d71e4721c9ac8f8cf033b81a5cd2961d"
+  },
+  "limitations": [
+    "vectors prove RTL == reference model on bench data, not behaviour on a real arm"
+  ]
+}

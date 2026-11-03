@@ -1,0 +1,42 @@
+{
+  "schema": "gesture.mode_b.motion_request.v1",
+  "frame": "desk_global_mm",
+  "task_id": "mode_b_ttl_eraser_20261028",
+  "object_class": "eraser",
+  "pickup": {
+    "centre_mm": [
+      636.2218269564645,
+      260.27831557772197,
+      7.5
+    ],
+    "yaw_deg": 96.79662769239283,
+    "yaw_source": "DETECTED_LONG_AXIS_CLOSING_PERPENDICULAR"
+  },
+  "destination": {
+    "support_centre_mm": [
+      285,
+      195,
+      150
+    ],
+    "size_xy_mm": [
+      80,
+      80
+    ],
+    "rim_height_mm": 0
+  },
+  "obstacles": [],
+  "source": "FRESH_FROZEN_ERASER_PC_COMMISSIONING_BURST",
+  "object_adapter_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\config\\ai_pc\\mode_b_eraser_grasp_20261028_v4.json",
+  "object_adapter_sha256": "43db7ec53e8c2f7143d9b975867d389b87cd8f50fa8940731de2e90613ceb76a",
+  "table_transform_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "table_transform_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "metric_file_sha256": "46453114180e64f6198664eedb00daa68e6771ae5ffb12b777df8b41d6b5ad3e",
+  "physical_general_mapping_calibrated": false,
+  "source_planning_strategy": {
+    "mode": "TODAY_SUCCESSFUL_NATIVE_RELATIVE_TRANSFER",
+    "anchor_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+    "anchor_sha256": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631",
+    "physical_cylinder_adapter_accepted": false,
+    "historical_wrong_camera_xy_not_reused": true
+  }
+}

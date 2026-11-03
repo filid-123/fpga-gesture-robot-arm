@@ -1,0 +1,23 @@
+{
+  "schema": "amd.pc.environment.v1",
+  "python": "3.12.10",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "requirements": [],
+  "models": [
+    {
+      "file": "example.bin",
+      "expected_sha256": "285732bcc404915ce805b61ac222187045448123555b006a892537c5998d1e6d",
+      "actual_sha256": "285732bcc404915ce805b61ac222187045448123555b006a892537c5998d1e6d",
+      "passed": true
+    }
+  ],
+  "hip": {
+    "status": "NOT_RUN"
+  },
+  "camera_access": false,
+  "robot_access": false,
+  "errors": [],
+  "passed": true,
+  "model_inference": "NOT_RUN"
+}

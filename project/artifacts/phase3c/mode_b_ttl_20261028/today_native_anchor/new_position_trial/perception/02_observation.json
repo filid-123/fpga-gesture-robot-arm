@@ -1,0 +1,360 @@
+{
+  "schema": "gesture.ai_pc.mode_b_observation.v1",
+  "profile_id": "mode_b_red_eraser_canister_v1",
+  "profile_sha256": "1d9217dd4e6b51d4819bc83a7f8ea65c209209cf622ae0bf82b2c005a6377762",
+  "frame_sha256": "20ef9857d437de02c212ab363f8ad97cf811e5ebfc7e4e856f6f2eee05dc02cd",
+  "frame_index": 2,
+  "offline_snapshot": true,
+  "recognitions": [
+    {
+      "class_id": 0,
+      "class_name": "red_cube",
+      "confidence": 0.8828803300857544,
+      "bbox_xyxy_raw": [
+        610.6282711029053,
+        248.0123233795166,
+        771.0398197174072,
+        416.8667507171631
+      ],
+      "model_role": "mode_b_detector",
+      "trained": true,
+      "detector_pass_index": 0,
+      "detector_roi_xywh_raw": null,
+      "task_id": 1,
+      "grasp_target": true,
+      "physical_grasp_enabled": false,
+      "frame_sha256": "20ef9857d437de02c212ab363f8ad97cf811e5ebfc7e4e856f6f2eee05dc02cd",
+      "frame_index": 2
+    }
+  ],
+  "localizations": [
+    {
+      "task_id": 1,
+      "class_name": "red_cube",
+      "instances": 1,
+      "status": "PIXEL_SURFACE_ONLY",
+      "pixel_surface": {
+        "quad_pixel_uv": [
+          [
+            620.0,
+            259.0
+          ],
+          [
+            621.0,
+            399.0
+          ],
+          [
+            762.0,
+            398.0
+          ],
+          [
+            760.0,
+            261.0
+          ]
+        ],
+        "pixel_uv": [
+          691.5090063468407,
+          328.9982526916258
+        ],
+        "mask_quad_iou": 0.9714991355890343,
+        "units": "raw_pixels",
+        "method": "NEURAL_TOP_MASK_QUADRILATERAL_DIAGONALS",
+        "metric_localization_verified": false,
+        "physical_execution": false,
+        "shape": "square"
+      },
+      "metric_surface": null,
+      "physical_execution": false,
+      "bbox_xyxy_raw": [
+        610.6282711029053,
+        248.0123233795166,
+        771.0398197174072,
+        416.8667507171631
+      ]
+    },
+    {
+      "task_id": 2,
+      "class_name": "eraser",
+      "instances": 0,
+      "status": "NOT_FOUND",
+      "pixel_surface": null,
+      "metric_surface": null,
+      "physical_execution": false
+    },
+    {
+      "task_id": 3,
+      "class_name": "small_canister",
+      "instances": 0,
+      "status": "NOT_FOUND",
+      "pixel_surface": null,
+      "metric_surface": null,
+      "physical_execution": false
+    }
+  ],
+  "backend": {
+    "requested_backend": "onnx_cpu",
+    "actual_backend": "onnx_cpu",
+    "role": "mode_b_detector",
+    "framework": "onnxruntime",
+    "framework_version": "1.31.0",
+    "actual_providers": [
+      "CPUExecutionProvider"
+    ],
+    "cpu_fallback": false,
+    "precision": "fp32",
+    "classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "trained_classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+    "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+    "npu_execution_verified": false,
+    "hardware_acceptance": "PENDING",
+    "spatial_inference_policy": {
+      "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+      "minimum_tile_overlap": 0.25,
+      "classwise_merge_iou": 0.5,
+      "interior_edge_margin_raw_px": 2,
+      "max_tiles": 16,
+      "thresholds_unchanged": true
+    },
+    "spatial_pass_count": 4,
+    "spatial_views": [
+      {
+        "roi_xywh_raw": null,
+        "timing_ms": {
+          "preprocess": 2.242,
+          "model": 50.242,
+          "decode_nms": 0.328
+        }
+      },
+      {
+        "roi_xywh_raw": [
+          0,
+          0,
+          1080,
+          1080
+        ],
+        "timing_ms": {
+          "preprocess": 2.0394,
+          "model": 45.2514,
+          "decode_nms": 0.4879
+        }
+      },
+      {
+        "roi_xywh_raw": [
+          420,
+          0,
+          1080,
+          1080
+        ],
+        "timing_ms": {
+          "preprocess": 2.309,
+          "model": 37.1829,
+          "decode_nms": 0.3305
+        }
+      },
+      {
+        "roi_xywh_raw": [
+          840,
+          0,
+          1080,
+          1080
+        ],
+        "timing_ms": {
+          "preprocess": 2.0709,
+          "model": 36.803,
+          "decode_nms": 0.2401
+        }
+      }
+    ],
+    "internal_edge_rejections": []
+  },
+  "surface_backend": {
+    "actual_backend": "torch_cpu",
+    "requested_backend": "torch_cpu",
+    "framework": "torch",
+    "framework_version": "2.14.1+cpu",
+    "hip_version": null,
+    "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+    "device": "cpu",
+    "hardware_acceptance": "PENDING",
+    "cpu_fallback": false,
+    "spatial_surface_policy": {
+      "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+      "relative_shift": 0.04,
+      "shifts_xy": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "uses_temporal_history": false,
+      "thresholds_unchanged": true
+    }
+  },
+  "surface_runs": [
+    {
+      "task_id": 1,
+      "backend": {
+        "actual_backend": "torch_cpu",
+        "requested_backend": "torch_cpu",
+        "framework": "torch",
+        "framework_version": "2.14.1+cpu",
+        "hip_version": null,
+        "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+        "device": "cpu",
+        "hardware_acceptance": "PENDING",
+        "cpu_fallback": false,
+        "spatial_surface_policy": {
+          "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+          "relative_shift": 0.04,
+          "shifts_xy": [
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "uses_temporal_history": false,
+          "thresholds_unchanged": true
+        }
+      },
+      "total_ms": 31.2091,
+      "spatial_surface_policy": {
+        "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+        "relative_shift": 0.04,
+        "shifts_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "uses_temporal_history": false,
+        "thresholds_unchanged": true
+      },
+      "passes": [
+        {
+          "roi_xyxy_raw": [
+            580,
+            217,
+            802,
+            448
+          ],
+          "total_ms": 7.4587
+        },
+        {
+          "roi_xyxy_raw": [
+            571,
+            208,
+            793,
+            439
+          ],
+          "total_ms": 5.529
+        },
+        {
+          "roi_xyxy_raw": [
+            571,
+            226,
+            793,
+            457
+          ],
+          "total_ms": 6.0299
+        },
+        {
+          "roi_xyxy_raw": [
+            589,
+            208,
+            811,
+            439
+          ],
+          "total_ms": 5.5452
+        },
+        {
+          "roi_xyxy_raw": [
+            589,
+            226,
+            811,
+            457
+          ],
+          "total_ms": 5.4406
+        }
+      ],
+      "mask_association": {
+        "method": "WHOLE_COMPONENT_TARGET_BOX_INTERSECTION_NO_PIXEL_CLIPPING",
+        "removed_components": [],
+        "registered_shape": "square",
+        "circle_component_gate": null,
+        "quad_component_gate": "CONTOUR_OR_INDEPENDENT_LINES_IOU_0_85",
+        "retained_significant_components": 1,
+        "mask_pixels_clipped_to_box": false
+      }
+    }
+  ],
+  "image_processing": "RAW",
+  "physical_execution": false,
+  "path_submissions": 0,
+  "total_ms": 216.5337,
+  "metric_localization_accepted": false,
+  "npu_acceptance": "NOT_ACCEPTED",
+  "rocm_acceptance": "NOT_ACCEPTED"
+}

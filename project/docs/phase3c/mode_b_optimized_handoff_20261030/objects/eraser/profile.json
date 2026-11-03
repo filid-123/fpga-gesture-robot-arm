@@ -1,0 +1,80 @@
+{
+  "object_class": "eraser",
+  "source_centre_mm": [
+    636.2218269564645,
+    260.27831557772197,
+    7.5
+  ],
+  "yaw_deg": 96.79662769239283,
+  "destination": {
+    "support_centre_mm": [
+      285,
+      195,
+      150
+    ],
+    "size_xy_mm": [
+      80,
+      80
+    ],
+    "rim_height_mm": 0
+  },
+  "origin_for_restock": {
+    "centre_mm": [
+      636.2218269564645,
+      260.27831557772197,
+      7.5
+    ],
+    "yaw_deg": 96.79662769239283,
+    "yaw_source": "DETECTED_LONG_AXIS_CLOSING_PERPENDICULAR"
+  },
+  "base_speed_multiplier": 3,
+  "nominal_motion_seconds": 15.0,
+  "requests": 505,
+  "motion_samples": 501,
+  "close_command": {
+    "T": 106,
+    "cmd": 2.95,
+    "spd": 60,
+    "acc": 5
+  },
+  "local_transfer": {
+    "delta_desk_mm": [
+      28.797136384747546,
+      -14.464763443421134,
+      -7.5
+    ],
+    "yaw_delta_equivalent_deg": 3.3951874102113493,
+    "extra_outward_mm": 2.0,
+    "scope": "LOCAL_NATIVE_ENDPOINT_DIFFERENCES_FROM_OPERATOR_ACCEPTED_CURRENT_CAMERA_SOURCE",
+    "native_endpoint_delta_mm": [
+      -3.0143951796417774,
+      -49.57151994801268,
+      -7.968870745682802
+    ],
+    "fixed_jaw_width_adjustment_native_mm": [
+      -0.5280441706252554,
+      -7.481323433951663,
+      0.031129254317198384
+    ],
+    "object_specific_source_correction_desk_mm": [
+      13.0,
+      10.0,
+      0.0
+    ],
+    "object_centre_height_change_mm": -7.5,
+    "maximum_native_pitch_adjustment_deg": 0.0,
+    "fingertip_height_adjustment_mm": -8.0,
+    "native_endpoint_delta_mm_is_initial_seed": true,
+    "maximum_relative_tcp_error_mm": 0.0008319658712695903,
+    "relative_canonical_tcp_translation_world_mm": [
+      42.09019651406101,
+      -2.4863510090165244,
+      -8.0
+    ],
+    "object_yaw_offset_from_closing_axis_deg": -90,
+    "closing_symmetry_deg": 180
+  },
+  "new_speed_physical_test_performed": false,
+  "physical_scope": "BASELINE_GRASP_ACCEPTED_NEW_TRANSIT_SPEED_UNTESTED",
+  "source_plan_sha256": "c0c35386a74b5601f805e0a4bb93430e7a97f22332fc5fe0032b3fd8c0ec83d2"
+}

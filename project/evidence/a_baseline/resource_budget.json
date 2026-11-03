@@ -1,0 +1,18 @@
+{
+  "status": "ESTIMATE_BEFORE_IMPLEMENTATION",
+  "baseline": "v0.13.1",
+  "resource_cap_percent": 85,
+  "baseline_util": {
+    "LUT": 26052,
+    "FF": 23024,
+    "BRAM": 113,
+    "DSP": 32
+  },
+  "estimated_upper": {
+    "LUT": 28000,
+    "FF": 24000,
+    "BRAM": 114,
+    "DSP": 32
+  },
+  "notes": "Reuse unused KP bank3; segment RAM grows128x32 to256x32 within same RAMB18. Three new glyphs fit existing128-glyph font ROM. Final whole routed gates required."
+}

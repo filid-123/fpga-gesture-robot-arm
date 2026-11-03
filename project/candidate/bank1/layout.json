@@ -1,0 +1,94 @@
+{
+  "schema": "gesture.mode_a.layout.v1",
+  "layout_id": "mode_a_follow_y_195",
+  "units": "mm",
+  "datum": "Original desk left-front corner; +X right, +Y inward, +Z up",
+  "desk_size_mm": [
+    800,
+    600
+  ],
+  "base_axis_D_xy_mm": [
+    585,
+    25
+  ],
+  "camera": {
+    "lens_D_mm": [
+      195,
+      195,
+      333
+    ],
+    "optical_axis_assumption_D": [
+      0,
+      0,
+      -1
+    ],
+    "reported_view_D_xy_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        390,
+        390
+      ]
+    ],
+    "reported_by_operator": true,
+    "height_dependent_pixel_mapping": "NOMINAL_PINHOLE_APPROXIMATION_NOT_PHYSICALLY_CALIBRATED",
+    "use": "Gesture selection and palm readiness; objects need not lie inside this view"
+  },
+  "slots_D_mm": [
+    [
+      530,
+      250,
+      15
+    ],
+    [
+      650,
+      250,
+      15
+    ],
+    [
+      590,
+      320,
+      15
+    ]
+  ],
+  "cube_size_mm": 30,
+  "common_D_mm": {
+    "INNER": [
+      585,
+      225,
+      90
+    ],
+    "B": [
+      360,
+      200,
+      160
+    ],
+    "PRE": [
+      350,
+      215,
+      180
+    ],
+    "H": [
+      285,
+      195,
+      175
+    ],
+    "H_CLEAR": [
+      285,
+      195,
+      195
+    ]
+  },
+  "palm_surface_candidate_z_mm": 150,
+  "delivery_pose": {
+    "type": "Radial tilt",
+    "held_H_deg": 40,
+    "clear_deg": 40,
+    "method": "CONSTANT"
+  },
+  "arrival_policy": "observe_all",
+  "operator_ready_timeout_s": null,
+  "physical_validated": false
+}

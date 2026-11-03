@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "restored_assets": 190,
+  "hardware_access": false,
+  "redistribution_permission": "UNCHANGED; local restoration grants no new rights"
+}

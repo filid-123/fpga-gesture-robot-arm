@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Xilinx/2026.1/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/tmds_serializer_7series.v" into library work
+INFO: [VRFC 10-311] analyzing module tmds_serializer_7series
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_hdmi/tb_serializer.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_serializer

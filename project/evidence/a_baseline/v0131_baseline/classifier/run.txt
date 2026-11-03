@@ -1,0 +1,1345 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 23:30:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/classifier/xsim_script.tcl
+# xsim {classifier} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[135000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[135000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[145000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[145000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[83235000] [CONV] Finished Output Channel     0
+[249415000] [CONV] Finished Output Channel     4
+[332505000] [CONV] ALL CHANNELS DONE. FINISHING.
+[332505000] [CONV] ALL CHANNELS DONE. FINISHING.
+[332525000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[332605000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[332605000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[440235000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[440315000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[440315000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[440325000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[440325000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[591365000] [CONV] Finished Output Channel     0
+[893445000] [CONV] Finished Output Channel     4
+[1195525000] [CONV] Finished Output Channel     8
+[1497605000] [CONV] Finished Output Channel    12
+[1648645000] [CONV] ALL CHANNELS DONE. FINISHING.
+[1648645000] [CONV] ALL CHANNELS DONE. FINISHING.
+[1648665000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[1648745000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[1648745000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[1705255000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[1705335000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[1705335000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[1705345000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[1705345000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[1785105000] [CONV] Finished Output Channel     0
+[1944625000] [CONV] Finished Output Channel     4
+[2104145000] [CONV] Finished Output Channel     8
+[2263665000] [CONV] Finished Output Channel    12
+[2423185000] [CONV] Finished Output Channel    16
+[2582705000] [CONV] Finished Output Channel    20
+[2742225000] [CONV] Finished Output Channel    24
+[2901745000] [CONV] Finished Output Channel    28
+[2981505000] [CONV] ALL CHANNELS DONE. FINISHING.
+[2981505000] [CONV] ALL CHANNELS DONE. FINISHING.
+[2981525000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[2981605000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[2981605000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[3012675000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[3012755000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[3012755000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[4664625000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[4664705000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[4664705000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[4684895000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=0 all 8 stages, six logits, margin; cycles=468486
+[4685045000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[4685045000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[4685055000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[4685055000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[4768145000] [CONV] Finished Output Channel     0
+[4934325000] [CONV] Finished Output Channel     4
+[5017415000] [CONV] ALL CHANNELS DONE. FINISHING.
+[5017415000] [CONV] ALL CHANNELS DONE. FINISHING.
+[5017435000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[5017515000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[5017515000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[5125145000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[5125225000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[5125225000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[5125235000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[5125235000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[5276275000] [CONV] Finished Output Channel     0
+[5578355000] [CONV] Finished Output Channel     4
+[5880435000] [CONV] Finished Output Channel     8
+[6182515000] [CONV] Finished Output Channel    12
+[6333555000] [CONV] ALL CHANNELS DONE. FINISHING.
+[6333555000] [CONV] ALL CHANNELS DONE. FINISHING.
+[6333575000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[6333655000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[6333655000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[6390165000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[6390245000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[6390245000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[6390255000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[6390255000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[6470015000] [CONV] Finished Output Channel     0
+[6629535000] [CONV] Finished Output Channel     4
+[6789055000] [CONV] Finished Output Channel     8
+[6948575000] [CONV] Finished Output Channel    12
+[7108095000] [CONV] Finished Output Channel    16
+[7267615000] [CONV] Finished Output Channel    20
+[7427135000] [CONV] Finished Output Channel    24
+[7586655000] [CONV] Finished Output Channel    28
+[7666415000] [CONV] ALL CHANNELS DONE. FINISHING.
+[7666415000] [CONV] ALL CHANNELS DONE. FINISHING.
+[7666435000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[7666515000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[7666515000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[7697585000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[7697665000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[7697665000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[9349535000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[9349615000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[9349615000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[9369805000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=1 all 8 stages, six logits, margin; cycles=468486
+[9369955000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[9369955000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[9369965000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[9369965000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[9453055000] [CONV] Finished Output Channel     0
+[9619235000] [CONV] Finished Output Channel     4
+[9702325000] [CONV] ALL CHANNELS DONE. FINISHING.
+[9702325000] [CONV] ALL CHANNELS DONE. FINISHING.
+[9702345000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[9702425000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[9702425000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[9810055000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[9810135000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[9810135000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[9810145000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[9810145000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[9961185000] [CONV] Finished Output Channel     0
+[10263265000] [CONV] Finished Output Channel     4
+[10565345000] [CONV] Finished Output Channel     8
+[10867425000] [CONV] Finished Output Channel    12
+[11018465000] [CONV] ALL CHANNELS DONE. FINISHING.
+[11018465000] [CONV] ALL CHANNELS DONE. FINISHING.
+[11018485000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[11018565000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[11018565000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[11075075000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[11075155000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[11075155000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[11075165000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[11075165000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[11154925000] [CONV] Finished Output Channel     0
+[11314445000] [CONV] Finished Output Channel     4
+[11473965000] [CONV] Finished Output Channel     8
+[11633485000] [CONV] Finished Output Channel    12
+[11793005000] [CONV] Finished Output Channel    16
+[11952525000] [CONV] Finished Output Channel    20
+[12112045000] [CONV] Finished Output Channel    24
+[12271565000] [CONV] Finished Output Channel    28
+[12351325000] [CONV] ALL CHANNELS DONE. FINISHING.
+[12351325000] [CONV] ALL CHANNELS DONE. FINISHING.
+[12351345000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[12351425000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[12351425000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[12382495000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[12382575000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[12382575000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[14034445000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[14034525000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[14034525000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[14054715000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=2 all 8 stages, six logits, margin; cycles=468486
+[14054865000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[14054865000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[14054875000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[14054875000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[14137965000] [CONV] Finished Output Channel     0
+[14304145000] [CONV] Finished Output Channel     4
+[14387235000] [CONV] ALL CHANNELS DONE. FINISHING.
+[14387235000] [CONV] ALL CHANNELS DONE. FINISHING.
+[14387255000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[14387335000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[14387335000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[14494965000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[14495045000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[14495045000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[14495055000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[14495055000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[14646095000] [CONV] Finished Output Channel     0
+[14948175000] [CONV] Finished Output Channel     4
+[15250255000] [CONV] Finished Output Channel     8
+[15552335000] [CONV] Finished Output Channel    12
+[15703375000] [CONV] ALL CHANNELS DONE. FINISHING.
+[15703375000] [CONV] ALL CHANNELS DONE. FINISHING.
+[15703395000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[15703475000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[15703475000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[15759985000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[15760065000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[15760065000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[15760075000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[15760075000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[15839835000] [CONV] Finished Output Channel     0
+[15999355000] [CONV] Finished Output Channel     4
+[16158875000] [CONV] Finished Output Channel     8
+[16318395000] [CONV] Finished Output Channel    12
+[16477915000] [CONV] Finished Output Channel    16
+[16637435000] [CONV] Finished Output Channel    20
+[16796955000] [CONV] Finished Output Channel    24
+[16956475000] [CONV] Finished Output Channel    28
+[17036235000] [CONV] ALL CHANNELS DONE. FINISHING.
+[17036235000] [CONV] ALL CHANNELS DONE. FINISHING.
+[17036255000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[17036335000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[17036335000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[17067405000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[17067485000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[17067485000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[18719355000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[18719435000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[18719435000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[18739625000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=3 all 8 stages, six logits, margin; cycles=468486
+[18739775000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[18739775000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[18739785000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[18739785000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[18822875000] [CONV] Finished Output Channel     0
+[18989055000] [CONV] Finished Output Channel     4
+[19072145000] [CONV] ALL CHANNELS DONE. FINISHING.
+[19072145000] [CONV] ALL CHANNELS DONE. FINISHING.
+[19072165000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[19072245000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[19072245000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[19179875000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[19179955000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[19179955000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[19179965000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[19179965000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[19331005000] [CONV] Finished Output Channel     0
+[19633085000] [CONV] Finished Output Channel     4
+[19935165000] [CONV] Finished Output Channel     8
+[20237245000] [CONV] Finished Output Channel    12
+[20388285000] [CONV] ALL CHANNELS DONE. FINISHING.
+[20388285000] [CONV] ALL CHANNELS DONE. FINISHING.
+[20388305000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[20388385000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[20388385000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[20444895000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[20444975000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[20444975000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[20444985000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[20444985000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[20524745000] [CONV] Finished Output Channel     0
+[20684265000] [CONV] Finished Output Channel     4
+[20843785000] [CONV] Finished Output Channel     8
+[21003305000] [CONV] Finished Output Channel    12
+[21162825000] [CONV] Finished Output Channel    16
+[21322345000] [CONV] Finished Output Channel    20
+[21481865000] [CONV] Finished Output Channel    24
+[21641385000] [CONV] Finished Output Channel    28
+[21721145000] [CONV] ALL CHANNELS DONE. FINISHING.
+[21721145000] [CONV] ALL CHANNELS DONE. FINISHING.
+[21721165000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[21721245000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[21721245000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[21752315000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[21752395000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[21752395000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[23404265000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[23404345000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[23404345000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[23424535000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=4 all 8 stages, six logits, margin; cycles=468486
+[23424685000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[23424685000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[23424695000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[23424695000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[23507785000] [CONV] Finished Output Channel     0
+[23673965000] [CONV] Finished Output Channel     4
+[23757055000] [CONV] ALL CHANNELS DONE. FINISHING.
+[23757055000] [CONV] ALL CHANNELS DONE. FINISHING.
+[23757075000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[23757155000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[23757155000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[23864785000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[23864865000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[23864865000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[23864875000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[23864875000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[24015915000] [CONV] Finished Output Channel     0
+[24317995000] [CONV] Finished Output Channel     4
+[24620075000] [CONV] Finished Output Channel     8
+[24922155000] [CONV] Finished Output Channel    12
+[25073195000] [CONV] ALL CHANNELS DONE. FINISHING.
+[25073195000] [CONV] ALL CHANNELS DONE. FINISHING.
+[25073215000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[25073295000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[25073295000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[25129805000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[25129885000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[25129885000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[25129895000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[25129895000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[25209655000] [CONV] Finished Output Channel     0
+[25369175000] [CONV] Finished Output Channel     4
+[25528695000] [CONV] Finished Output Channel     8
+[25688215000] [CONV] Finished Output Channel    12
+[25847735000] [CONV] Finished Output Channel    16
+[26007255000] [CONV] Finished Output Channel    20
+[26166775000] [CONV] Finished Output Channel    24
+[26326295000] [CONV] Finished Output Channel    28
+[26406055000] [CONV] ALL CHANNELS DONE. FINISHING.
+[26406055000] [CONV] ALL CHANNELS DONE. FINISHING.
+[26406075000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[26406155000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[26406155000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[26437225000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[26437305000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[26437305000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[28089175000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[28089255000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[28089255000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[28109445000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=5 all 8 stages, six logits, margin; cycles=468486
+[28109595000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[28109595000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[28109605000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[28109605000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[28192695000] [CONV] Finished Output Channel     0
+[28358875000] [CONV] Finished Output Channel     4
+[28441965000] [CONV] ALL CHANNELS DONE. FINISHING.
+[28441965000] [CONV] ALL CHANNELS DONE. FINISHING.
+[28441985000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[28442065000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[28442065000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[28549695000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[28549775000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[28549775000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[28549785000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[28549785000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[28700825000] [CONV] Finished Output Channel     0
+[29002905000] [CONV] Finished Output Channel     4
+[29304985000] [CONV] Finished Output Channel     8
+[29607065000] [CONV] Finished Output Channel    12
+[29758105000] [CONV] ALL CHANNELS DONE. FINISHING.
+[29758105000] [CONV] ALL CHANNELS DONE. FINISHING.
+[29758125000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[29758205000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[29758205000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[29814715000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[29814795000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[29814795000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[29814805000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[29814805000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[29894565000] [CONV] Finished Output Channel     0
+[30054085000] [CONV] Finished Output Channel     4
+[30213605000] [CONV] Finished Output Channel     8
+[30373125000] [CONV] Finished Output Channel    12
+[30532645000] [CONV] Finished Output Channel    16
+[30692165000] [CONV] Finished Output Channel    20
+[30851685000] [CONV] Finished Output Channel    24
+[31011205000] [CONV] Finished Output Channel    28
+[31090965000] [CONV] ALL CHANNELS DONE. FINISHING.
+[31090965000] [CONV] ALL CHANNELS DONE. FINISHING.
+[31090985000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[31091065000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[31091065000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[31122135000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[31122215000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[31122215000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[32774085000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[32774165000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[32774165000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[32794355000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=6 all 8 stages, six logits, margin; cycles=468486
+[32794505000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[32794505000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[32794515000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[32794515000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[32877605000] [CONV] Finished Output Channel     0
+[33043785000] [CONV] Finished Output Channel     4
+[33126875000] [CONV] ALL CHANNELS DONE. FINISHING.
+[33126875000] [CONV] ALL CHANNELS DONE. FINISHING.
+[33126895000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[33126975000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[33126975000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[33234605000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[33234685000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[33234685000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[33234695000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[33234695000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[33385735000] [CONV] Finished Output Channel     0
+[33687815000] [CONV] Finished Output Channel     4
+[33989895000] [CONV] Finished Output Channel     8
+[34291975000] [CONV] Finished Output Channel    12
+[34443015000] [CONV] ALL CHANNELS DONE. FINISHING.
+[34443015000] [CONV] ALL CHANNELS DONE. FINISHING.
+[34443035000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[34443115000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[34443115000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[34499625000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[34499705000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[34499705000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[34499715000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[34499715000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[34579475000] [CONV] Finished Output Channel     0
+[34738995000] [CONV] Finished Output Channel     4
+[34898515000] [CONV] Finished Output Channel     8
+[35058035000] [CONV] Finished Output Channel    12
+[35217555000] [CONV] Finished Output Channel    16
+[35377075000] [CONV] Finished Output Channel    20
+[35536595000] [CONV] Finished Output Channel    24
+[35696115000] [CONV] Finished Output Channel    28
+[35775875000] [CONV] ALL CHANNELS DONE. FINISHING.
+[35775875000] [CONV] ALL CHANNELS DONE. FINISHING.
+[35775895000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[35775975000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[35775975000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[35807045000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[35807125000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[35807125000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[37458995000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[37459075000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[37459075000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[37479265000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=7 all 8 stages, six logits, margin; cycles=468486
+[37479415000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[37479415000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[37479425000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[37479425000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[37562515000] [CONV] Finished Output Channel     0
+[37728695000] [CONV] Finished Output Channel     4
+[37811785000] [CONV] ALL CHANNELS DONE. FINISHING.
+[37811785000] [CONV] ALL CHANNELS DONE. FINISHING.
+[37811805000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[37811885000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[37811885000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[37919515000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[37919595000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[37919595000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[37919605000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[37919605000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[38070645000] [CONV] Finished Output Channel     0
+[38372725000] [CONV] Finished Output Channel     4
+[38674805000] [CONV] Finished Output Channel     8
+[38976885000] [CONV] Finished Output Channel    12
+[39127925000] [CONV] ALL CHANNELS DONE. FINISHING.
+[39127925000] [CONV] ALL CHANNELS DONE. FINISHING.
+[39127945000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[39128025000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[39128025000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[39184535000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[39184615000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[39184615000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[39184625000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[39184625000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[39264385000] [CONV] Finished Output Channel     0
+[39423905000] [CONV] Finished Output Channel     4
+[39583425000] [CONV] Finished Output Channel     8
+[39742945000] [CONV] Finished Output Channel    12
+[39902465000] [CONV] Finished Output Channel    16
+[40061985000] [CONV] Finished Output Channel    20
+[40221505000] [CONV] Finished Output Channel    24
+[40381025000] [CONV] Finished Output Channel    28
+[40460785000] [CONV] ALL CHANNELS DONE. FINISHING.
+[40460785000] [CONV] ALL CHANNELS DONE. FINISHING.
+[40460805000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[40460885000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[40460885000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[40491955000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[40492035000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[40492035000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[42143905000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[42143985000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[42143985000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[42164175000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=8 all 8 stages, six logits, margin; cycles=468486
+[42164325000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[42164325000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[42164335000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[42164335000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[42247425000] [CONV] Finished Output Channel     0
+[42413605000] [CONV] Finished Output Channel     4
+[42496695000] [CONV] ALL CHANNELS DONE. FINISHING.
+[42496695000] [CONV] ALL CHANNELS DONE. FINISHING.
+[42496715000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[42496795000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[42496795000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[42604425000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[42604505000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[42604505000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[42604515000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[42604515000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[42755555000] [CONV] Finished Output Channel     0
+[43057635000] [CONV] Finished Output Channel     4
+[43359715000] [CONV] Finished Output Channel     8
+[43661795000] [CONV] Finished Output Channel    12
+[43812835000] [CONV] ALL CHANNELS DONE. FINISHING.
+[43812835000] [CONV] ALL CHANNELS DONE. FINISHING.
+[43812855000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[43812935000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[43812935000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[43869445000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[43869525000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[43869525000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[43869535000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[43869535000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[43949295000] [CONV] Finished Output Channel     0
+[44108815000] [CONV] Finished Output Channel     4
+[44268335000] [CONV] Finished Output Channel     8
+[44427855000] [CONV] Finished Output Channel    12
+[44587375000] [CONV] Finished Output Channel    16
+[44746895000] [CONV] Finished Output Channel    20
+[44906415000] [CONV] Finished Output Channel    24
+[45065935000] [CONV] Finished Output Channel    28
+[45145695000] [CONV] ALL CHANNELS DONE. FINISHING.
+[45145695000] [CONV] ALL CHANNELS DONE. FINISHING.
+[45145715000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[45145795000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[45145795000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[45176865000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[45176945000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[45176945000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[46828815000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[46828895000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[46828895000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[46849085000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=9 all 8 stages, six logits, margin; cycles=468486
+[46849235000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[46849235000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[46849245000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[46849245000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[46932335000] [CONV] Finished Output Channel     0
+[47098515000] [CONV] Finished Output Channel     4
+[47181605000] [CONV] ALL CHANNELS DONE. FINISHING.
+[47181605000] [CONV] ALL CHANNELS DONE. FINISHING.
+[47181625000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[47181705000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[47181705000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[47289335000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[47289415000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[47289415000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[47289425000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[47289425000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[47440465000] [CONV] Finished Output Channel     0
+[47742545000] [CONV] Finished Output Channel     4
+[48044625000] [CONV] Finished Output Channel     8
+[48346705000] [CONV] Finished Output Channel    12
+[48497745000] [CONV] ALL CHANNELS DONE. FINISHING.
+[48497745000] [CONV] ALL CHANNELS DONE. FINISHING.
+[48497765000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[48497845000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[48497845000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[48554355000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[48554435000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[48554435000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[48554445000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[48554445000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[48634205000] [CONV] Finished Output Channel     0
+[48793725000] [CONV] Finished Output Channel     4
+[48953245000] [CONV] Finished Output Channel     8
+[49112765000] [CONV] Finished Output Channel    12
+[49272285000] [CONV] Finished Output Channel    16
+[49431805000] [CONV] Finished Output Channel    20
+[49591325000] [CONV] Finished Output Channel    24
+[49750845000] [CONV] Finished Output Channel    28
+[49830605000] [CONV] ALL CHANNELS DONE. FINISHING.
+[49830605000] [CONV] ALL CHANNELS DONE. FINISHING.
+[49830625000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[49830705000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[49830705000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[49861775000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[49861855000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[49861855000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[51513725000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[51513805000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[51513805000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[51533995000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=10 all 8 stages, six logits, margin; cycles=468486
+[51534145000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[51534145000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[51534155000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[51534155000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[51617245000] [CONV] Finished Output Channel     0
+[51783425000] [CONV] Finished Output Channel     4
+[51866515000] [CONV] ALL CHANNELS DONE. FINISHING.
+[51866515000] [CONV] ALL CHANNELS DONE. FINISHING.
+[51866535000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[51866615000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[51866615000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[51974245000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[51974325000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[51974325000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[51974335000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[51974335000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[52125375000] [CONV] Finished Output Channel     0
+[52427455000] [CONV] Finished Output Channel     4
+[52729535000] [CONV] Finished Output Channel     8
+[53031615000] [CONV] Finished Output Channel    12
+[53182655000] [CONV] ALL CHANNELS DONE. FINISHING.
+[53182655000] [CONV] ALL CHANNELS DONE. FINISHING.
+[53182675000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[53182755000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[53182755000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[53239265000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[53239345000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[53239345000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[53239355000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[53239355000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[53319115000] [CONV] Finished Output Channel     0
+[53478635000] [CONV] Finished Output Channel     4
+[53638155000] [CONV] Finished Output Channel     8
+[53797675000] [CONV] Finished Output Channel    12
+[53957195000] [CONV] Finished Output Channel    16
+[54116715000] [CONV] Finished Output Channel    20
+[54276235000] [CONV] Finished Output Channel    24
+[54435755000] [CONV] Finished Output Channel    28
+[54515515000] [CONV] ALL CHANNELS DONE. FINISHING.
+[54515515000] [CONV] ALL CHANNELS DONE. FINISHING.
+[54515535000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[54515615000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[54515615000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[54546685000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[54546765000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[54546765000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[56198635000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[56198715000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[56198715000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[56218905000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=11 all 8 stages, six logits, margin; cycles=468486
+[56219055000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[56219055000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[56219065000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[56219065000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[56302155000] [CONV] Finished Output Channel     0
+[56468335000] [CONV] Finished Output Channel     4
+[56551425000] [CONV] ALL CHANNELS DONE. FINISHING.
+[56551425000] [CONV] ALL CHANNELS DONE. FINISHING.
+[56551445000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[56551525000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[56551525000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[56659155000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[56659235000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[56659235000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[56659245000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[56659245000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[56810285000] [CONV] Finished Output Channel     0
+[57112365000] [CONV] Finished Output Channel     4
+[57414445000] [CONV] Finished Output Channel     8
+[57716525000] [CONV] Finished Output Channel    12
+[57867565000] [CONV] ALL CHANNELS DONE. FINISHING.
+[57867565000] [CONV] ALL CHANNELS DONE. FINISHING.
+[57867585000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[57867665000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[57867665000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[57924175000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[57924255000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[57924255000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[57924265000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[57924265000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[58004025000] [CONV] Finished Output Channel     0
+[58163545000] [CONV] Finished Output Channel     4
+[58323065000] [CONV] Finished Output Channel     8
+[58482585000] [CONV] Finished Output Channel    12
+[58642105000] [CONV] Finished Output Channel    16
+[58801625000] [CONV] Finished Output Channel    20
+[58961145000] [CONV] Finished Output Channel    24
+[59120665000] [CONV] Finished Output Channel    28
+[59200425000] [CONV] ALL CHANNELS DONE. FINISHING.
+[59200425000] [CONV] ALL CHANNELS DONE. FINISHING.
+[59200445000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[59200525000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[59200525000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[59231595000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[59231675000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[59231675000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[60883545000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[60883625000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[60883625000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[60903815000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=12 all 8 stages, six logits, margin; cycles=468486
+[60903965000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[60903965000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[60903975000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[60903975000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[60987065000] [CONV] Finished Output Channel     0
+[61153245000] [CONV] Finished Output Channel     4
+[61236335000] [CONV] ALL CHANNELS DONE. FINISHING.
+[61236335000] [CONV] ALL CHANNELS DONE. FINISHING.
+[61236355000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[61236435000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[61236435000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[61344065000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[61344145000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[61344145000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[61344155000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[61344155000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[61495195000] [CONV] Finished Output Channel     0
+[61797275000] [CONV] Finished Output Channel     4
+[62099355000] [CONV] Finished Output Channel     8
+[62401435000] [CONV] Finished Output Channel    12
+[62552475000] [CONV] ALL CHANNELS DONE. FINISHING.
+[62552475000] [CONV] ALL CHANNELS DONE. FINISHING.
+[62552495000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[62552575000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[62552575000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[62609085000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[62609165000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[62609165000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[62609175000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[62609175000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[62688935000] [CONV] Finished Output Channel     0
+[62848455000] [CONV] Finished Output Channel     4
+[63007975000] [CONV] Finished Output Channel     8
+[63167495000] [CONV] Finished Output Channel    12
+[63327015000] [CONV] Finished Output Channel    16
+[63486535000] [CONV] Finished Output Channel    20
+[63646055000] [CONV] Finished Output Channel    24
+[63805575000] [CONV] Finished Output Channel    28
+[63885335000] [CONV] ALL CHANNELS DONE. FINISHING.
+[63885335000] [CONV] ALL CHANNELS DONE. FINISHING.
+[63885355000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[63885435000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[63885435000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[63916505000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[63916585000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[63916585000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[65568455000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[65568535000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[65568535000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[65588725000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=13 all 8 stages, six logits, margin; cycles=468486
+[65588875000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[65588875000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[65588885000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[65588885000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[65671975000] [CONV] Finished Output Channel     0
+[65838155000] [CONV] Finished Output Channel     4
+[65921245000] [CONV] ALL CHANNELS DONE. FINISHING.
+[65921245000] [CONV] ALL CHANNELS DONE. FINISHING.
+[65921265000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[65921345000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[65921345000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[66028975000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[66029055000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[66029055000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[66029065000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[66029065000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[66180105000] [CONV] Finished Output Channel     0
+[66482185000] [CONV] Finished Output Channel     4
+[66784265000] [CONV] Finished Output Channel     8
+[67086345000] [CONV] Finished Output Channel    12
+[67237385000] [CONV] ALL CHANNELS DONE. FINISHING.
+[67237385000] [CONV] ALL CHANNELS DONE. FINISHING.
+[67237405000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[67237485000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[67237485000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[67293995000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[67294075000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[67294075000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[67294085000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[67294085000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[67373845000] [CONV] Finished Output Channel     0
+[67533365000] [CONV] Finished Output Channel     4
+[67692885000] [CONV] Finished Output Channel     8
+[67852405000] [CONV] Finished Output Channel    12
+[68011925000] [CONV] Finished Output Channel    16
+[68171445000] [CONV] Finished Output Channel    20
+[68330965000] [CONV] Finished Output Channel    24
+[68490485000] [CONV] Finished Output Channel    28
+[68570245000] [CONV] ALL CHANNELS DONE. FINISHING.
+[68570245000] [CONV] ALL CHANNELS DONE. FINISHING.
+[68570265000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[68570345000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[68570345000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[68601415000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[68601495000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[68601495000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[70253365000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[70253445000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[70253445000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[70273635000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=14 all 8 stages, six logits, margin; cycles=468486
+[70273785000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[70273785000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[70273795000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[70273795000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[70356885000] [CONV] Finished Output Channel     0
+[70523065000] [CONV] Finished Output Channel     4
+[70606155000] [CONV] ALL CHANNELS DONE. FINISHING.
+[70606155000] [CONV] ALL CHANNELS DONE. FINISHING.
+[70606175000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[70606255000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[70606255000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[70713885000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[70713965000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[70713965000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[70713975000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[70713975000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[70865015000] [CONV] Finished Output Channel     0
+[71167095000] [CONV] Finished Output Channel     4
+[71469175000] [CONV] Finished Output Channel     8
+[71771255000] [CONV] Finished Output Channel    12
+[71922295000] [CONV] ALL CHANNELS DONE. FINISHING.
+[71922295000] [CONV] ALL CHANNELS DONE. FINISHING.
+[71922315000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[71922395000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[71922395000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[71978905000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[71978985000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[71978985000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[71978995000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[71978995000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[72058755000] [CONV] Finished Output Channel     0
+[72218275000] [CONV] Finished Output Channel     4
+[72377795000] [CONV] Finished Output Channel     8
+[72537315000] [CONV] Finished Output Channel    12
+[72696835000] [CONV] Finished Output Channel    16
+[72856355000] [CONV] Finished Output Channel    20
+[73015875000] [CONV] Finished Output Channel    24
+[73175395000] [CONV] Finished Output Channel    28
+[73255155000] [CONV] ALL CHANNELS DONE. FINISHING.
+[73255155000] [CONV] ALL CHANNELS DONE. FINISHING.
+[73255175000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[73255255000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[73255255000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[73286325000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[73286405000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[73286405000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[74938275000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[74938355000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[74938355000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[74958545000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=15 all 8 stages, six logits, margin; cycles=468486
+[74958695000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[74958695000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[74958705000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[74958705000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[75041795000] [CONV] Finished Output Channel     0
+[75207975000] [CONV] Finished Output Channel     4
+[75291065000] [CONV] ALL CHANNELS DONE. FINISHING.
+[75291065000] [CONV] ALL CHANNELS DONE. FINISHING.
+[75291085000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[75291165000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[75291165000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[75398795000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[75398875000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[75398875000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[75398885000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[75398885000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[75549925000] [CONV] Finished Output Channel     0
+[75852005000] [CONV] Finished Output Channel     4
+[76154085000] [CONV] Finished Output Channel     8
+[76456165000] [CONV] Finished Output Channel    12
+[76607205000] [CONV] ALL CHANNELS DONE. FINISHING.
+[76607205000] [CONV] ALL CHANNELS DONE. FINISHING.
+[76607225000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[76607305000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[76607305000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[76663815000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[76663895000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[76663895000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[76663905000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[76663905000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[76743665000] [CONV] Finished Output Channel     0
+[76903185000] [CONV] Finished Output Channel     4
+[77062705000] [CONV] Finished Output Channel     8
+[77222225000] [CONV] Finished Output Channel    12
+[77381745000] [CONV] Finished Output Channel    16
+[77541265000] [CONV] Finished Output Channel    20
+[77700785000] [CONV] Finished Output Channel    24
+[77860305000] [CONV] Finished Output Channel    28
+[77940065000] [CONV] ALL CHANNELS DONE. FINISHING.
+[77940065000] [CONV] ALL CHANNELS DONE. FINISHING.
+[77940085000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[77940165000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[77940165000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[77971235000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[77971315000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[77971315000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[79623185000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[79623265000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[79623265000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[79643455000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=16 all 8 stages, six logits, margin; cycles=468486
+[79643605000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[79643605000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[79643615000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[79643615000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[79726705000] [CONV] Finished Output Channel     0
+[79892885000] [CONV] Finished Output Channel     4
+[79975975000] [CONV] ALL CHANNELS DONE. FINISHING.
+[79975975000] [CONV] ALL CHANNELS DONE. FINISHING.
+[79975995000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[79976075000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[79976075000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[80083705000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[80083785000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[80083785000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[80083795000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[80083795000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[80234835000] [CONV] Finished Output Channel     0
+[80536915000] [CONV] Finished Output Channel     4
+[80838995000] [CONV] Finished Output Channel     8
+[81141075000] [CONV] Finished Output Channel    12
+[81292115000] [CONV] ALL CHANNELS DONE. FINISHING.
+[81292115000] [CONV] ALL CHANNELS DONE. FINISHING.
+[81292135000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[81292215000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[81292215000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[81348725000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[81348805000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[81348805000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[81348815000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[81348815000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[81428575000] [CONV] Finished Output Channel     0
+[81588095000] [CONV] Finished Output Channel     4
+[81747615000] [CONV] Finished Output Channel     8
+[81907135000] [CONV] Finished Output Channel    12
+[82066655000] [CONV] Finished Output Channel    16
+[82226175000] [CONV] Finished Output Channel    20
+[82385695000] [CONV] Finished Output Channel    24
+[82545215000] [CONV] Finished Output Channel    28
+[82624975000] [CONV] ALL CHANNELS DONE. FINISHING.
+[82624975000] [CONV] ALL CHANNELS DONE. FINISHING.
+[82624995000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[82625075000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[82625075000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[82656145000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[82656225000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[82656225000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[84308095000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[84308175000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[84308175000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[84328365000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=17 all 8 stages, six logits, margin; cycles=468486
+[84328515000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[84328515000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[84328525000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[84328525000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[84411615000] [CONV] Finished Output Channel     0
+[84577795000] [CONV] Finished Output Channel     4
+[84660885000] [CONV] ALL CHANNELS DONE. FINISHING.
+[84660885000] [CONV] ALL CHANNELS DONE. FINISHING.
+[84660905000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[84660985000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[84660985000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[84768615000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[84768695000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[84768695000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[84768705000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[84768705000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[84919745000] [CONV] Finished Output Channel     0
+[85221825000] [CONV] Finished Output Channel     4
+[85523905000] [CONV] Finished Output Channel     8
+[85825985000] [CONV] Finished Output Channel    12
+[85977025000] [CONV] ALL CHANNELS DONE. FINISHING.
+[85977025000] [CONV] ALL CHANNELS DONE. FINISHING.
+[85977045000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[85977125000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[85977125000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[86033635000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[86033715000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[86033715000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[86033725000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[86033725000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[86113485000] [CONV] Finished Output Channel     0
+[86273005000] [CONV] Finished Output Channel     4
+[86432525000] [CONV] Finished Output Channel     8
+[86592045000] [CONV] Finished Output Channel    12
+[86751565000] [CONV] Finished Output Channel    16
+[86911085000] [CONV] Finished Output Channel    20
+[87070605000] [CONV] Finished Output Channel    24
+[87230125000] [CONV] Finished Output Channel    28
+[87309885000] [CONV] ALL CHANNELS DONE. FINISHING.
+[87309885000] [CONV] ALL CHANNELS DONE. FINISHING.
+[87309905000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[87309985000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[87309985000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[87341055000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[87341135000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[87341135000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[88993005000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[88993085000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[88993085000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[89013275000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=18 all 8 stages, six logits, margin; cycles=468486
+[89013425000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[89013425000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[89013435000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[89013435000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[89096525000] [CONV] Finished Output Channel     0
+[89262705000] [CONV] Finished Output Channel     4
+[89345795000] [CONV] ALL CHANNELS DONE. FINISHING.
+[89345795000] [CONV] ALL CHANNELS DONE. FINISHING.
+[89345815000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[89345895000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[89345895000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[89453525000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[89453605000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[89453605000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[89453615000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[89453615000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[89604655000] [CONV] Finished Output Channel     0
+[89906735000] [CONV] Finished Output Channel     4
+[90208815000] [CONV] Finished Output Channel     8
+[90510895000] [CONV] Finished Output Channel    12
+[90661935000] [CONV] ALL CHANNELS DONE. FINISHING.
+[90661935000] [CONV] ALL CHANNELS DONE. FINISHING.
+[90661955000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[90662035000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[90662035000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[90718545000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[90718625000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[90718625000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[90718635000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[90718635000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[90798395000] [CONV] Finished Output Channel     0
+[90957915000] [CONV] Finished Output Channel     4
+[91117435000] [CONV] Finished Output Channel     8
+[91276955000] [CONV] Finished Output Channel    12
+[91436475000] [CONV] Finished Output Channel    16
+[91595995000] [CONV] Finished Output Channel    20
+[91755515000] [CONV] Finished Output Channel    24
+[91915035000] [CONV] Finished Output Channel    28
+[91994795000] [CONV] ALL CHANNELS DONE. FINISHING.
+[91994795000] [CONV] ALL CHANNELS DONE. FINISHING.
+[91994815000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[91994895000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[91994895000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[92025965000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[92026045000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[92026045000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[93677915000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[93677995000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[93677995000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[93698185000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=19 all 8 stages, six logits, margin; cycles=468486
+[93698335000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[93698335000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[93698345000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[93698345000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[93781435000] [CONV] Finished Output Channel     0
+[93947615000] [CONV] Finished Output Channel     4
+[94030705000] [CONV] ALL CHANNELS DONE. FINISHING.
+[94030705000] [CONV] ALL CHANNELS DONE. FINISHING.
+[94030725000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[94030805000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[94030805000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[94138435000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[94138515000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[94138515000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[94138525000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[94138525000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[94289565000] [CONV] Finished Output Channel     0
+[94591645000] [CONV] Finished Output Channel     4
+[94893725000] [CONV] Finished Output Channel     8
+[95195805000] [CONV] Finished Output Channel    12
+[95346845000] [CONV] ALL CHANNELS DONE. FINISHING.
+[95346845000] [CONV] ALL CHANNELS DONE. FINISHING.
+[95346865000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[95346945000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[95346945000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[95403455000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[95403535000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[95403535000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[95403545000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[95403545000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[95483305000] [CONV] Finished Output Channel     0
+[95642825000] [CONV] Finished Output Channel     4
+[95802345000] [CONV] Finished Output Channel     8
+[95961865000] [CONV] Finished Output Channel    12
+[96121385000] [CONV] Finished Output Channel    16
+[96280905000] [CONV] Finished Output Channel    20
+[96440425000] [CONV] Finished Output Channel    24
+[96599945000] [CONV] Finished Output Channel    28
+[96679705000] [CONV] ALL CHANNELS DONE. FINISHING.
+[96679705000] [CONV] ALL CHANNELS DONE. FINISHING.
+[96679725000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[96679805000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[96679805000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[96710875000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[96710955000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[96710955000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[98362825000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[98362905000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[98362905000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[98383095000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=20 all 8 stages, six logits, margin; cycles=468486
+[98383245000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[98383245000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[98383255000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[98383255000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[98466345000] [CONV] Finished Output Channel     0
+[98632525000] [CONV] Finished Output Channel     4
+[98715615000] [CONV] ALL CHANNELS DONE. FINISHING.
+[98715615000] [CONV] ALL CHANNELS DONE. FINISHING.
+[98715635000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[98715715000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[98715715000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[98823345000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[98823425000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[98823425000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[98823435000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[98823435000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[98974475000] [CONV] Finished Output Channel     0
+[99276555000] [CONV] Finished Output Channel     4
+[99578635000] [CONV] Finished Output Channel     8
+[99880715000] [CONV] Finished Output Channel    12
+[100031755000] [CONV] ALL CHANNELS DONE. FINISHING.
+[100031755000] [CONV] ALL CHANNELS DONE. FINISHING.
+[100031775000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[100031855000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[100031855000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[100088365000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[100088445000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[100088445000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[100088455000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[100088455000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[100168215000] [CONV] Finished Output Channel     0
+[100327735000] [CONV] Finished Output Channel     4
+[100487255000] [CONV] Finished Output Channel     8
+[100646775000] [CONV] Finished Output Channel    12
+[100806295000] [CONV] Finished Output Channel    16
+[100965815000] [CONV] Finished Output Channel    20
+[101125335000] [CONV] Finished Output Channel    24
+[101284855000] [CONV] Finished Output Channel    28
+[101364615000] [CONV] ALL CHANNELS DONE. FINISHING.
+[101364615000] [CONV] ALL CHANNELS DONE. FINISHING.
+[101364635000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[101364715000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[101364715000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[101395785000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[101395865000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[101395865000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[103047735000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[103047815000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[103047815000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[103068005000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=21 all 8 stages, six logits, margin; cycles=468486
+[103068155000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[103068155000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[103068165000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[103068165000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[103151255000] [CONV] Finished Output Channel     0
+[103317435000] [CONV] Finished Output Channel     4
+[103400525000] [CONV] ALL CHANNELS DONE. FINISHING.
+[103400525000] [CONV] ALL CHANNELS DONE. FINISHING.
+[103400545000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[103400625000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[103400625000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[103508255000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[103508335000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[103508335000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[103508345000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[103508345000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[103659385000] [CONV] Finished Output Channel     0
+[103961465000] [CONV] Finished Output Channel     4
+[104263545000] [CONV] Finished Output Channel     8
+[104565625000] [CONV] Finished Output Channel    12
+[104716665000] [CONV] ALL CHANNELS DONE. FINISHING.
+[104716665000] [CONV] ALL CHANNELS DONE. FINISHING.
+[104716685000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[104716765000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[104716765000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[104773275000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[104773355000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[104773355000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[104773365000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[104773365000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[104853125000] [CONV] Finished Output Channel     0
+[105012645000] [CONV] Finished Output Channel     4
+[105172165000] [CONV] Finished Output Channel     8
+[105331685000] [CONV] Finished Output Channel    12
+[105491205000] [CONV] Finished Output Channel    16
+[105650725000] [CONV] Finished Output Channel    20
+[105810245000] [CONV] Finished Output Channel    24
+[105969765000] [CONV] Finished Output Channel    28
+[106049525000] [CONV] ALL CHANNELS DONE. FINISHING.
+[106049525000] [CONV] ALL CHANNELS DONE. FINISHING.
+[106049545000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[106049625000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[106049625000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[106080695000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[106080775000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[106080775000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[107732645000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[107732725000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[107732725000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[107752915000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=22 all 8 stages, six logits, margin; cycles=468486
+[107753065000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[107753065000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[107753075000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[107753075000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[107836165000] [CONV] Finished Output Channel     0
+[108002345000] [CONV] Finished Output Channel     4
+[108085435000] [CONV] ALL CHANNELS DONE. FINISHING.
+[108085435000] [CONV] ALL CHANNELS DONE. FINISHING.
+[108085455000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[108085535000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[108085535000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[108193165000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[108193245000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[108193245000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[108193255000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[108193255000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[108344295000] [CONV] Finished Output Channel     0
+[108646375000] [CONV] Finished Output Channel     4
+[108948455000] [CONV] Finished Output Channel     8
+[109250535000] [CONV] Finished Output Channel    12
+[109401575000] [CONV] ALL CHANNELS DONE. FINISHING.
+[109401575000] [CONV] ALL CHANNELS DONE. FINISHING.
+[109401595000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[109401675000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[109401675000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[109458185000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[109458265000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[109458265000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[109458275000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[109458275000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[109538035000] [CONV] Finished Output Channel     0
+[109697555000] [CONV] Finished Output Channel     4
+[109857075000] [CONV] Finished Output Channel     8
+[110016595000] [CONV] Finished Output Channel    12
+[110176115000] [CONV] Finished Output Channel    16
+[110335635000] [CONV] Finished Output Channel    20
+[110495155000] [CONV] Finished Output Channel    24
+[110654675000] [CONV] Finished Output Channel    28
+[110734435000] [CONV] ALL CHANNELS DONE. FINISHING.
+[110734435000] [CONV] ALL CHANNELS DONE. FINISHING.
+[110734455000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[110734535000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[110734535000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[110765605000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[110765685000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[110765685000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[112417555000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[112417635000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[112417635000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[112437825000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=23 all 8 stages, six logits, margin; cycles=468486
+[112437975000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[112437975000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[112437985000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[112437985000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[112521075000] [CONV] Finished Output Channel     0
+[112687255000] [CONV] Finished Output Channel     4
+[112770345000] [CONV] ALL CHANNELS DONE. FINISHING.
+[112770345000] [CONV] ALL CHANNELS DONE. FINISHING.
+[112770365000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[112770445000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[112770445000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[112878075000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[112878155000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[112878155000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[112878165000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[112878165000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[113029205000] [CONV] Finished Output Channel     0
+[113331285000] [CONV] Finished Output Channel     4
+[113633365000] [CONV] Finished Output Channel     8
+[113935445000] [CONV] Finished Output Channel    12
+[114086485000] [CONV] ALL CHANNELS DONE. FINISHING.
+[114086485000] [CONV] ALL CHANNELS DONE. FINISHING.
+[114086505000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[114086585000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[114086585000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[114143095000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[114143175000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[114143175000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[114143185000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[114143185000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[114222945000] [CONV] Finished Output Channel     0
+[114382465000] [CONV] Finished Output Channel     4
+[114541985000] [CONV] Finished Output Channel     8
+[114701505000] [CONV] Finished Output Channel    12
+[114861025000] [CONV] Finished Output Channel    16
+[115020545000] [CONV] Finished Output Channel    20
+[115180065000] [CONV] Finished Output Channel    24
+[115339585000] [CONV] Finished Output Channel    28
+[115419345000] [CONV] ALL CHANNELS DONE. FINISHING.
+[115419345000] [CONV] ALL CHANNELS DONE. FINISHING.
+[115419365000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[115419445000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[115419445000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[115450515000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[115450595000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[115450595000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[117102465000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[117102545000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[117102545000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[117122735000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=24 all 8 stages, six logits, margin; cycles=468486
+[117122885000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    1, layer_Cout=  8, InH=32, InW=32, Word5=0000021f
+[117122885000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[117122895000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[117122895000] [CONV] Layer Started! Cin=    1 Cout=  8 InW=32 InH=32
+[117205985000] [CONV] Finished Output Channel     0
+[117372165000] [CONV] Finished Output Channel     4
+[117455255000] [CONV] ALL CHANNELS DONE. FINISHING.
+[117455255000] [CONV] ALL CHANNELS DONE. FINISHING.
+[117455275000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[117455355000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=    8, layer_Cout=  8, InH=32, InW=32, Word5=00010000
+[117455355000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[117562985000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[117563065000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=    8, layer_Cout= 16, InH=16, InW=16, Word5=0000011f
+[117563065000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[117563075000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[117563075000] [CONV] Layer Started! Cin=    8 Cout= 16 InW=16 InH=16
+[117714115000] [CONV] Finished Output Channel     0
+[118016195000] [CONV] Finished Output Channel     4
+[118318275000] [CONV] Finished Output Channel     8
+[118620355000] [CONV] Finished Output Channel    12
+[118771395000] [CONV] ALL CHANNELS DONE. FINISHING.
+[118771395000] [CONV] ALL CHANNELS DONE. FINISHING.
+[118771415000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[118771495000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   16, layer_Cout= 16, InH=16, InW=16, Word5=00010000
+[118771495000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[118828005000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[118828085000] [CORE_FSM] S_WAIT_DESC5: layer_type=0, layer_Cin=   16, layer_Cout= 32, InH= 8, InW= 8, Word5=0000011f
+[118828085000] [CORE_FSM] Starting CONV Engine (layer_type=0)
+[118828095000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[118828095000] [CONV] Layer Started! Cin=   16 Cout= 32 InW= 8 InH= 8
+[118907855000] [CONV] Finished Output Channel     0
+[119067375000] [CONV] Finished Output Channel     4
+[119226895000] [CONV] Finished Output Channel     8
+[119386415000] [CONV] Finished Output Channel    12
+[119545935000] [CONV] Finished Output Channel    16
+[119705455000] [CONV] Finished Output Channel    20
+[119864975000] [CONV] Finished Output Channel    24
+[120024495000] [CONV] Finished Output Channel    28
+[120104255000] [CONV] ALL CHANNELS DONE. FINISHING.
+[120104255000] [CONV] ALL CHANNELS DONE. FINISHING.
+[120104275000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[120104355000] [CORE_FSM] S_WAIT_DESC5: layer_type=1, layer_Cin=   32, layer_Cout= 32, InH= 8, InW= 8, Word5=00010000
+[120104355000] [CORE_FSM] Starting POOL Engine (layer_type=1)
+[120135425000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[120135505000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=  512, layer_Cout= 64, InH= 1, InW= 1, Word5=0000011f
+[120135505000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[121787375000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=0)
+[121787455000] [CORE_FSM] S_WAIT_DESC5: layer_type=2, layer_Cin=   64, layer_Cout=  6, InH= 1, InW= 1, Word5=80000000
+[121787455000] [CORE_FSM] Starting DENSE Engine (layer_type=2)
+[121807645000] [CORE_FSM] Received Engine DONE. Moving to next layer or finishing. (is_final=1)
+PASS: real classifier sample=25 all 8 stages, six logits, margin; cycles=468486
+PASS: CLASSIFIER_PARALLEL all 26 frozen INT8 samples, trimmed RAM and 100 MHz cycle contract
+$finish called at time : 121807700 ns : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_classifier_parallel.sv" Line 84
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 228.906 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 23412 KB (Peak: 23412 KB), Simulation CPU Usage: 54702 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 23:31:08 2026...

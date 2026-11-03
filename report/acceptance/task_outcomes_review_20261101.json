@@ -1,0 +1,45 @@
+{
+  "schema": "gesture.operator_task_outcome_review.v1",
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "release": "0.1.0-p4.1",
+  "source": "OPERATOR_REVIEW_OF_RECORDED_FIELD_TEST",
+  "cohort_evidence": "report/acceptance/board_test_20261101.json",
+  "cohort_definition": "Retrospective operator review of the 17 program-completed task executions in the six recorded sessions. Rejected selections and dedicated cancellation tests are outside this cohort. This is not a claim about every requested selection or every future task.",
+  "groups": [
+    {
+      "mode": "A",
+      "kind": "DELIVERY",
+      "attempts": 5,
+      "successes": 5,
+      "failures": 0
+    },
+    {
+      "mode": "A",
+      "kind": "RESTOCK",
+      "attempts": 3,
+      "successes": 3,
+      "failures": 0
+    },
+    {
+      "mode": "B",
+      "kind": "DELIVERY",
+      "attempts": 6,
+      "successes": 5,
+      "failures": 1
+    },
+    {
+      "mode": "B",
+      "kind": "RESTOCK",
+      "attempts": 3,
+      "successes": 3,
+      "failures": 0
+    }
+  ],
+  "total_attempts": 17,
+  "total_successes": 16,
+  "total_failures": 1,
+  "failure_run_and_object_class": "NOT_IDENTIFIED_BY_OPERATOR; no per-run or per-object label is fabricated",
+  "raw_session_results_modified": false,
+  "new_hardware_test": false
+}

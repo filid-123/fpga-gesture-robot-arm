@@ -1,0 +1,64 @@
+[
+  {
+    "state": "RESTOCK_APPROACH_PUBLIC",
+    "labels": [
+      "HOME_OPEN",
+      "RESTOCK_INNER_OPEN",
+      "RESTOCK_BUFFER_OPEN",
+      "RESTOCK_PUBLIC_HIGH"
+    ]
+  },
+  {
+    "state": "RESTOCK_DESCEND_PUBLIC",
+    "labels": [
+      "RESTOCK_PUBLIC_DESCEND"
+    ]
+  },
+  {
+    "state": "RESTOCK_CLOSE_PUBLIC",
+    "labels": [
+      "GRASP_PUBLIC"
+    ]
+  },
+  {
+    "state": "RESTOCK_LIFT_PUBLIC",
+    "labels": [
+      "RESTOCK_PUBLIC_LIFT"
+    ]
+  },
+  {
+    "state": "RESTOCK_RETURN_SOURCE_HIGH",
+    "labels": [
+      "RESTOCK_RETURN_BUFFER",
+      "RESTOCK_RETURN_INNER",
+      "RESTOCK_SOURCE_HIGH"
+    ]
+  },
+  {
+    "state": "RESTOCK_DESCEND_SOURCE",
+    "labels": [
+      "RESTOCK_SOURCE_DESCEND"
+    ]
+  },
+  {
+    "state": "RESTOCK_RELEASE_SOURCE",
+    "labels": [
+      "RELEASE_SOURCE"
+    ]
+  },
+  {
+    "state": "RESTOCK_WITHDRAW_SOURCE",
+    "labels": [
+      "RESTOCK_SOURCE_EXIT_CLEARANCE",
+      "RESTOCK_SOURCE_EXIT_UP",
+      "RESTOCK_SOURCE_EXIT_RECENTER"
+    ]
+  },
+  {
+    "state": "RESTOCK_HOME",
+    "labels": [
+      "RESTOCK_HOME",
+      "PARK_CLOSE"
+    ]
+  }
+]

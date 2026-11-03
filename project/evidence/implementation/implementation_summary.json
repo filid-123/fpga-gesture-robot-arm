@@ -1,0 +1,74 @@
+{
+  "result": "IMPLEMENTATION_NETLIST_TIMING_CDC_SKEW_XSA_PASS",
+  "version": "0.1.0",
+  "task_abi": 13326,
+  "utilization": {
+    "LUT_TOTAL": 30657.0,
+    "LUT_LOGIC": 29053.0,
+    "LUT_MEMORY": 1604.0,
+    "FF": 25196.0,
+    "BRAM_TILE": 117.5,
+    "RAMB36": 110.0,
+    "RAMB18": 15.0,
+    "DSP": 56.0
+  },
+  "resource_percent": {
+    "LUT_TOTAL": 57.62593984962406,
+    "FF": 23.68045112781955,
+    "BRAM_TILE": 83.92857142857143,
+    "DSP": 25.454545454545453
+  },
+  "timing_ns": {
+    "WNS": 0.013,
+    "TNS": 0.0,
+    "TNS_FAILING": 0.0,
+    "WHS": 0.011,
+    "THS": 0.0,
+    "THS_FAILING": 0.0
+  },
+  "cdc_endpoints": 115,
+  "cdc_safe": 115,
+  "cdc_unsafe": 0,
+  "cdc_unknown": 0,
+  "gray_bus_skew_slacks_ns": [
+    9.059,
+    8.853
+  ],
+  "drc_errors": 0,
+  "drc_warning_count": 118,
+  "artifacts": {
+    "roarm_closed_loop.bit": {
+      "bytes": 4045780,
+      "sha256": "9510737174c11c236f7b30c3442da76f28aaabad45d08c98a37fd0a63427ae8d"
+    },
+    "roarm_closed_loop.hwh": {
+      "bytes": 298794,
+      "sha256": "a325b55e10ea0452cf3612281104797952b9fa760a3179fc1f93091b02c1f17f"
+    },
+    "roarm_closed_loop.xsa": {
+      "bytes": 2707976,
+      "sha256": "b4dbfcf059e34e10385cce20cb8e06ba441e8423c3a780dbfc3e9df68ccfbc9d"
+    }
+  },
+  "built_input_files": 105,
+  "source_binding_sha256": "bd99a46544c97d33b28ab49bc2670a192b5772862925e3411f6ac49e78eace9f",
+  "drc_warning_classes": {
+    "BUFC-1": 1,
+    "DPIP-1": 16,
+    "DPOP-1": 25,
+    "DPOP-2": 52,
+    "PLBUFGOPT-1": 4,
+    "REQP-1580": 8,
+    "REQP-1839": 12
+  },
+  "reset_warning_review": {
+    "rule": "REQP-1839",
+    "count": 12,
+    "proof": "board_evidence/mode_ab_p4/reset_warning_release/result.json",
+    "proof_sha256": "2583d75c9e051df479f0cd6dc517c3ee8ae46f07ed61b8bb2291a556c79cd1ca",
+    "reason": "Only native volatile-RAM WEA pins see the asynchronously cleared pending flag. COMMIT blocks RAM writes for a live image; reset invalidates committed/base/descriptor masks and backend enable. Interrupted configuration is discarded and fully reloaded/read back; the real-root reset test rejects motion before reload."
+  },
+  "warning_review": "SCCB input buffer and clock/serializer phase advisories retained; native blend DSP pipeline recommendations and the narrowly scoped volatile-RAM reset warning are explicitly reviewed. Routed setup/hold/CDC/skew gates must all pass.",
+  "hardware_test": "NOT_RUN",
+  "netlist_inspection": "a1"
+}

@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 23:22:40 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/speed15_s2/xsim_script.tcl
+# xsim {speed15_s2} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: quintic actual S2 RTL all 177 legs, 9423 exact six-axis samples, production VMAX/AMAX and endpoints
+$finish called at time : 49143300 ns : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/board_evidence/mode_a_upgrade_s2_xsim_a10/tb_speed15_s2.sv" Line 48
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 23:22:47 2026...

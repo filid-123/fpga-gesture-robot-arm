@@ -1,0 +1,25 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 23:26:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/task/xsim_script.tcl
+# xsim {task} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: all three colors in five continuous positions (0/16/32/48/64), PRE2s/PALM500ms, blind lock and HOME/inventory
+PASS: X movement leaves continuous Y unchanged
+PASS: all six directed transitions repeated with unqualified class7 do not accumulate stack; FIST returns held block via central PRE, original slot, HOME and restores stock
+PASS: FIST during offset delivery pauses/retraces partial delivery, rejoins central PRE, returns original slot and HOME
+PASS: FIST during alignment reverses its partial move before original-slot return
+PASS: independent Locator follows class7/unqualified positions; new coordinate PAUSE/drain/CLEAR retargets before old segment completes, then FIST returns HOME
+PASS: stale mapped frames cannot lock; D5 and COMM faults retained on offset return
+$finish called at time : 83575715 ns : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/board_evidence/mode_a_upgrade_task_a5/tb_continuous_task.sv" Line 186
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 229.820 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 21384 KB (Peak: 21384 KB), Simulation CPU Usage: 10515 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 23:26:24 2026...

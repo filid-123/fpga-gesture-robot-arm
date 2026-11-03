@@ -1,0 +1,18 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 17:26:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/native_backend/xsim_script.tcl
+# xsim {native_backend} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: byte-exact A1320/66 -> B2640/254 -> B3960/254 -> T10660/5 -> unchanged A1320/66
+PASS: speed/type b_ctx latched before MAP and stable through frame transmission despite upstream change
+$finish called at time : 244640 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/backend_final/tb.sv" Line 45
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 17:26:12 2026...

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: AXI complete-image commit, RAM readback and immutable writes",
+    "PASS: all 65 hand positions, unequal-count integer DDA, signed Q16 bank mixing, SPD/ACC",
+    "PASS: complete native trajectory reversed to exact previous start",
+    "PASS: FIST-style PAUSE, drain, CLEAR, partial reverse uses last accepted index",
+    "PASS: T106 reverse open profile and explicit previous grip target",
+    "PASS: native downstream backpressure timeout stops emission with a sticky hardware error",
+    "PASS: S4 lock rejects configuration mutation and preserves the program"
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes": {
+    "native_motion/rtl/robot/b_route_ram.v": "012d2e0b98415031d5a8bd7f3b291b83eae8006f4765e06095cd59c69e7a4488",
+    "native_motion/rtl/robot/b_route_player.v": "916f76a72587765565bfc35fb9b1178694d5be69b6a49f3d3bfb5bc1b5114156",
+    "board_evidence/mode_ab_p4/route_pipeline_release/tb.sv": "89bd12c2f1cf86aa7f0ca4143bc74e0fc92f6ed86377813cd6276f70c4358093"
+  },
+  "hardware_access": false
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "gesture.roarm.current_home.v1",
+  "home_id": "low_park_20261028_v1",
+  "client_date": "2026-10-28",
+  "scope": "SOFTWARE_TASK_START_AND_END_HOME",
+  "physical_pose_operator_accepted": true,
+  "operator_confirmation": "已收回，夹爪悬空，取物区无遮挡",
+  "gripper_empty_operator_confirmed": true,
+  "low_park_route_clear_operator_confirmed": true,
+  "pickup_view_clear_operator_confirmed": true,
+  "actual_fingertip_height_mm": null,
+  "height_is_only_visually_clear_not_measured": true,
+  "joint_order": [
+    "b",
+    "s",
+    "e",
+    "t",
+    "r",
+    "g"
+  ],
+  "firmware_joint_rad": {
+    "b": 0.006135923,
+    "s": 0.104310694,
+    "e": 2.587825589,
+    "t": 0.426446659,
+    "r": 0.004601942,
+    "g": 3.101709153
+  },
+  "firmware_joint_q16": [
+    402,
+    6836,
+    169596,
+    27948,
+    302,
+    203274
+  ],
+  "firmware_endpoint_xyz_mm": {
+    "x": 107.5337822,
+    "y": 0.659827305,
+    "z": -69.67014816
+  },
+  "endpoint_frame": "FIRMWARE_BASE_ENDPOINT_NOT_DESKTOP_HEIGHT_OR_GRASP_CENTRE",
+  "native_return_target": {
+    "T": 122,
+    "b": 0.3515624913172506,
+    "s": 5.976562524280599,
+    "e": 148.2714843656564,
+    "t": 24.433593748154603,
+    "r": 0.26367185416399314,
+    "h": 177.7148437439973,
+    "spd": 8,
+    "acc": 5
+  },
+  "native_return_target_route_validation_required": true,
+  "return_repeatability_physically_verified": false,
+  "arrival_tolerance_deg": {
+    "b": 1.5,
+    "s": 4.0,
+    "e": 3.0,
+    "t": 3.0,
+    "r": 1.5,
+    "g": 4.0
+  },
+  "capture_file": "artifacts/phase3c/low_home_20261028/accepted/LOW_HOME_ACCEPTED_20261027_184833_5668004/POSE_CAPTURE.json",
+  "capture_sha256": "c347665140d7bb409eca0fa89c61417419abdccf468f40621f2d149d4f2b3ed6",
+  "captured_at_utc": "2026-10-27T18:48:33.5898463+00:00",
+  "simulation_motion_config": "config/ai_pc/mode_b_motion_low_home_flexible_20261028.json",
+  "simulation_motion_config_sha256": "7a6def74c7e87494ad5170eb2b60fdeb718211790f0479506bc3c660994ddb98",
+  "simulation_arm_angle_mapping": "NOMINAL_IDENTITY_FIRST_FIVE_NOT_PHYSICALLY_CALIBRATED",
+  "simulation_closed_hand_angle_rad": 0.0,
+  "physical_general_motion_mapping_verified": false,
+  "firmware_power_on_home_changed": false,
+  "nvs_changes_sent": false,
+  "startup_parking_trial_script": "scripts/try_low_home.ps1",
+  "arbitrary_state_recovery_validated": false,
+  "full_task_routes_require_replanning": true,
+  "old_frozen_home_evidence": "docs/phase3c/mode1_red_fpga_handoff_20261027/HOME.json",
+  "current_motion_policy": "DIRECT_LOW_HOME_APPROACH; VERTICAL_GRASP_LIFT_CANCEL_PLACE; FREE_TILT_UP_TO_30DEG_OTHER_CONNECTORS"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "scope": "Project website, optional six-object CPU recognition preview, FPGA HTTP bridge contract",
+  "checks": {
+    "backend": 9,
+    "vision_frame_and_http": 5,
+    "selection_state": 6,
+    "browser": 14,
+    "vision_browser": 7
+  },
+  "total_checks": 41,
+  "all_passed": true,
+  "frozen_vision_sha256_unchanged": 19,
+  "recorded_sample_classes_detected": 6,
+  "browser_errors": [],
+  "hardware_accessed": false,
+  "camera_test_source": "CHROME_SYNTHETIC_DEVICE",
+  "fpga_ack_test_source": "PLAYWRIGHT_ROUTE_MOCK",
+  "recognition_backend": "onnx_cpu",
+  "npu_accepted": false,
+  "motion_requests": 0,
+  "known_limitations": [
+    "Frozen local model/source/sample dependencies are not included in this website commit. See SOURCES_CN.md.",
+    "FPGA mode-lock API is a bridge contract; real A/B configuration acknowledgments are not connected.",
+    "No real camera, FPGA, NPU or physical robot acceptance is claimed."
+  ],
+  "rerun_note": "One initial localhost authorization test returned Windows socket error10053; full14 backend/vision checks and both browser suites then passed. No retries or bypass were added to device operations.",
+  "commands": [
+    "python -B -m unittest scripts.test_project_console",
+    "node --test web/project-console/test-state.mjs",
+    ".venv-multiobject/Scripts/python.exe -B -m unittest scripts.test_project_console_vision",
+    "node web/project-console/test-browser.cjs",
+    "node web/project-console/test-vision-browser.cjs"
+  ]
+}

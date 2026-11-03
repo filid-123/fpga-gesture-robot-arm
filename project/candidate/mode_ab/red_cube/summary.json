@@ -1,0 +1,16 @@
+{
+  "class_name": "red_cube",
+  "normal_fifo": 43,
+  "table_segments": 35,
+  "restock_fifo": 59,
+  "normal_geometry": {
+    "samples_checked": 17868,
+    "minimum_model_clearance_mm": 1.7763568394002505e-15
+  },
+  "restock_geometry": {
+    "samples_checked": 5934,
+    "minimum_model_clearance_mm": -7.105427357601002e-15
+  },
+  "physical_test": "NOT_RUN",
+  "preparation_seconds": 14.728822900004161
+}

@@ -1,0 +1,8 @@
+{
+  "result": "FAILED_BEFORE_CONNECTOR_EXPORT_FIX",
+  "error": "ValueError: x must contain at least 2 elements",
+  "stage": "RESTOCK_SOURCE_HIGH",
+  "reason": "Cached connector exported a target-only stream; fixed by retaining start and target",
+  "superseded_by": "../scene_replay_a2/result.json",
+  "hardware_access": false
+}

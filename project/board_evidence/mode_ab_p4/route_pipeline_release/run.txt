@@ -1,0 +1,23 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 20:51:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/route/xsim_script.tcl
+# xsim {route} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: AXI complete-image commit, RAM readback and immutable writes
+PASS: all 65 hand positions, unequal-count integer DDA, signed Q16 bank mixing, SPD/ACC
+PASS: complete native trajectory reversed to exact previous start
+PASS: FIST-style PAUSE, drain, CLEAR, partial reverse uses last accepted index
+PASS: T106 reverse open profile and explicit previous grip target
+PASS: native downstream backpressure timeout stops emission with a sticky hardware error
+PASS: S4 lock rejects configuration mutation and preserves the program
+$finish called at time : 152420 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/route_pipeline_release/tb.sv" Line 101
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 20:51:32 2026...

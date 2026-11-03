@@ -1,0 +1,83 @@
+{
+  "result": "PASS_REAL_DVP_TO_CLASSIFIER_B_PIPELINE",
+  "samples": [
+    {
+      "sample": "sample_01",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 1
+    },
+    {
+      "sample": "sample_03",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 3
+    },
+    {
+      "sample": "sample_05",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 5
+    },
+    {
+      "sample": "sample_07",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 1
+    },
+    {
+      "sample": "sample_09",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 3
+    },
+    {
+      "sample": "sample_11",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 5
+    },
+    {
+      "sample": "sample_13",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 1
+    },
+    {
+      "sample": "sample_15",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 3
+    },
+    {
+      "sample": "sample_17",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 5
+    },
+    {
+      "sample": "sample_19",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 1
+    },
+    {
+      "sample": "sample_21",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 3
+    },
+    {
+      "sample": "sample_23",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 5
+    },
+    {
+      "sample": "sample_25",
+      "result": "PASS_ALL_STAGES_EXACT",
+      "detected": true,
+      "model_class": 2
+    }
+  ]
+}

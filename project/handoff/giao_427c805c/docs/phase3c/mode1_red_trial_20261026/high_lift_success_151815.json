@@ -1,0 +1,70 @@
+{
+  "schema": "gesture.mode_a.high_lift_physical_result.v1",
+  "date": "2026-10-26",
+  "journal": {
+    "path": "artifacts/phase3c/mode1_red_trial/20261026_151815_9484781/TRIAL_JOURNAL.json",
+    "sha256": "f8b5b4472470773ba0fb9e1a80203c9e7fbb9edc59e53d64e31f30667ac699d5"
+  },
+  "final_capture": {
+    "path": "artifacts/phase3c/mode1_red_trial/20261026_151815_9484781/capture_0005/HIGH_FINISH_20261026_151839_2402754/POSE_CAPTURE.json",
+    "sha256": "ff4143c79829b16317a011261ffd425ee799aa199a9c684e37902687d63d0b09"
+  },
+  "approach_journal": {
+    "path": "artifacts/phase3c/mode1_red_trial/20261026_144923_5840088/TRIAL_JOURNAL.json",
+    "sha256": "f881655d422d822ac90d2bddd3256babc7eed445cb4d1529f9dac805e04d472b"
+  },
+  "closure_journal": {
+    "path": "artifacts/phase3c/mode1_red_trial/20261026_145040_0937146/TRIAL_JOURNAL.json",
+    "sha256": "0d540088128b93e4e06187815dda1991bfbd4b48fde39d1a1e8b8668748f4cca"
+  },
+  "operator_observation": "成功抬升，可以把这段整合到刚才的完整路径中",
+  "operator_confirmed_cube_lifted": true,
+  "operator_confirmed_no_slip": null,
+  "final_joint_rad": {
+    "b": 0.220893233,
+    "s": 0.50621366,
+    "e": 1.211844822,
+    "t": 1.500233211,
+    "r": 0.010737866,
+    "g": 2.543340146
+  },
+  "final_endpoint_mm": {
+    "x": 250.9375897,
+    "y": 56.34992014,
+    "z": 1.256125686
+  },
+  "final_pitch_rad": 1.647495366,
+  "pickup_endpoint_mm": {
+    "x": 283.4397526544703,
+    "y": 63.64852476192425,
+    "z": -125.22302026629954
+  },
+  "observed_firmware_endpoint_rise_mm": 126.47914595229955,
+  "planned_endpoint_rise_mm": 145,
+  "planned_final_endpoint_mm": {
+    "x": 249.29017809962852,
+    "y": 55.97998137199004,
+    "z": 19.776979733700458
+  },
+  "final_minus_planned_endpoint_mm": {
+    "x": 1.6474116003714698,
+    "y": 0.36993876800995906,
+    "z": -18.520854047700457
+  },
+  "measured_cube_centre_D_mm": null,
+  "measured_cube_bottom_height_mm": null,
+  "nominal_Q_height_if_rigid_constant_orientation_mm": 141.47914595229955,
+  "grip_target_rad": 2.6,
+  "final_grip_feedback_rad": 2.543340146,
+  "grasp_and_lift_physically_observed": true,
+  "single_uninterrupted_initial_to_high_run_verified": false,
+  "buffer_transfer_executed": false,
+  "delivery_executed": false,
+  "release_executed": false,
+  "evidence_chain_motion_request_counts": [
+    4,
+    1,
+    2
+  ],
+  "scope": "Completed approach, closure and successful resumed lift linked to exact logs. No new motion issued while recording. Firmware rise is not an independent table height measurement; no global transform accepted."
+}

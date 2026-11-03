@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0-p4",
+  "patch_id": "native_giao_full_workspace_p4",
+  "task_abi": 13326,
+  "route_abi": 45057,
+  "release": "READY_FOR_STAGED_AB_BOARD_TEST",
+  "source_b": "3d66aeb8d33b42abf8d82da3c71b1e6276a9a32a",
+  "source_giao_fast_paths": "1d3fa84de81d05b846d2b9f30998e16a84f4eee3",
+  "completed": {
+    "distinct_pc_tests": 78,
+    "ui_checks": 10,
+    "real_gpu_frames": 9,
+    "s4_scenarios": 28,
+    "native_phase_operations": 1584,
+    "native_six_axis_vectors": 49540,
+    "production_gripper_timers": 12,
+    "workspace_grid_poses": 75,
+    "delivery_and_public_restock_cases": 7,
+    "vision_fixture_pipeline_cases": 26,
+    "hdmi_checks": 8,
+    "structural_wrappers": 12,
+    "leaf_instances_grouped": 34,
+    "handover_family": "65 targets / 4160 ordered retarget pairs per class and required attachment certificates",
+    "full_implementation": "IMPLEMENTATION_NETLIST_TIMING_CDC_SKEW_XSA_PASS",
+    "startup_map_checks": 3
+  },
+  "evidence_reuse": "See board_evidence/mode_ab_p4/release_scope.json: timing-only gripper fix retains checked geometric vectors and inactive cones are scoped explicitly",
+  "hardware_test": "NOT_RUN",
+  "physical_ab_closed_loop": "NOT_RUN",
+  "physical_full_workspace": "NOT_RUN",
+  "npu_execution": "FAILED_COMPILATION_GPU_DEFAULT_USER_ACCEPTED",
+  "uart_intermittent_issue": "OPEN",
+  "formal_detection_map": "NOT_RUN",
+  "formal_segmentation_miou": "NOT_RUN",
+  "artifact_hashes": {
+    "roarm_closed_loop.bit": {
+      "bytes": 4045780,
+      "sha256": "9510737174c11c236f7b30c3442da76f28aaabad45d08c98a37fd0a63427ae8d"
+    },
+    "roarm_closed_loop.hwh": {
+      "bytes": 298794,
+      "sha256": "a325b55e10ea0452cf3612281104797952b9fa760a3179fc1f93091b02c1f17f"
+    },
+    "roarm_closed_loop.xsa": {
+      "bytes": 2707976,
+      "sha256": "b4dbfcf059e34e10385cce20cb8e06ba441e8423c3a780dbfc3e9df68ccfbc9d"
+    }
+  },
+  "hotfix_id": "startup_route_map_p4_1",
+  "startup_fix_physical_test": "NOT_RUN"
+}

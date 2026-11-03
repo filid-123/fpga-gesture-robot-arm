@@ -1,0 +1,1 @@
+{"seconds": 22.993911300000036, "result": {"passed": true, "handover_steps": 65, "ordered_retarget_pairs": 4160, "model_samples_checked": 968904, "minimum_clearance_mm": 4.000512606669915, "native_rounding_checked": true, "physical_test": "NOT_RUN"}}

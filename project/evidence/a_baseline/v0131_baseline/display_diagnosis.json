@@ -1,0 +1,20 @@
+{
+  "version": "0.13.1",
+  "observation": "Global horizontal wrap of UI, camera and footer in user photo; vertical positions appear coherent",
+  "baseline_commit": "9077a54395fb3479100ec0111f2ef1936088f7d9",
+  "baseline_serial_raster_pass": true,
+  "baseline_serial_pixels": 307200,
+  "baseline_matched_clock_data_symbol_phase": false,
+  "mitigation": [
+    "1280x720/60 standard timing, centered aspect-preserving UI",
+    "Fixed clock word through fourth matched serializer"
+  ],
+  "root_cause": "NOT_CONFIRMED_ON_PHYSICAL_MONITOR",
+  "physical_monitor_test": "NOT_RUN",
+  "motion_model_path_changed": false,
+  "scope": "Display compatibility plus optional-label logger KeyError correction; no PALM or JTAG transport changes",
+  "final_attempt": "a2 registered ROM pipeline",
+  "failed_attempt": "a1 pure combinational scaling aborted after placed timing -11.309ns; preserved",
+  "pixel_pipeline_extra_cycles": 1,
+  "coordinate_rom_tile": 1.5
+}

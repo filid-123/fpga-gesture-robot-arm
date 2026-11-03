@@ -1,0 +1,55 @@
+{
+  "result": "V0131_HDMI720P_FULL_SERIAL_AND_INTEGRATION_PASS",
+  "version": "0.13.1",
+  "source_commit": "f0fab40eb8888707756fc243afec216ebd348943",
+  "parent_package_sha256": "805fc1da0383e9c99c2b02d22931c7eb3f4b70b3bb3ad2e0682a5ffae8089173",
+  "output": [
+    1280,
+    720,
+    60
+  ],
+  "logical_canvas": [
+    640,
+    480
+  ],
+  "physical_canvas": [
+    160,
+    0,
+    960,
+    720
+  ],
+  "model_changed": false,
+  "motion_rtl_changed": false,
+  "path_changed": false,
+  "resource_cap_percent": 85,
+  "resource_percent": {
+    "LUT_TOTAL": 48.97,
+    "FF": 21.639,
+    "BRAM_TILE": 80.714,
+    "DSP": 14.545
+  },
+  "utilization": {
+    "LUT_TOTAL": 26052.0,
+    "LUT_LOGIC": 25316.0,
+    "LUT_MEMORY": 736.0,
+    "FF": 23024.0,
+    "BRAM_TILE": 113.0,
+    "RAMB36": 105.0,
+    "RAMB18": 16.0,
+    "DSP": 32.0
+  },
+  "timing_ns": {
+    "WNS": 0.222,
+    "TNS": 0.0,
+    "TNS_FAILING": 0.0,
+    "WHS": 0.019,
+    "THS": 0.0,
+    "THS_FAILING": 0.0
+  },
+  "pc_tests": 46,
+  "terminal_tests": 13,
+  "serial_words": 1237500,
+  "serial_exact_rgb_pixels": 921600,
+  "display_test": "NOT_RUN_ON_PHYSICAL_MONITOR",
+  "physical_hardware_test": "NOT_RUN"
+}

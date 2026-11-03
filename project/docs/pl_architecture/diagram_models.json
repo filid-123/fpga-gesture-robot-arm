@@ -1,0 +1,505 @@
+[
+  {
+    "name": "01_pl_top",
+    "title": "PL integration \u2014 exact RTL children",
+    "parent": "phase3_roarm_closed_loop_top",
+    "nodes": [
+      [
+        "vision",
+        100,
+        180,
+        440,
+        230,
+        "u_vision",
+        "gesture_autonomous_top_black",
+        "DVP / CNN datapath + ROI memories",
+        "logic"
+      ],
+      [
+        "adapter",
+        650,
+        200,
+        380,
+        230,
+        "u_adapter",
+        "s5_vision_event_adapter",
+        "Event qualification + timestamp",
+        "control"
+      ],
+      [
+        "task",
+        1140,
+        180,
+        440,
+        230,
+        "u_task",
+        "phase3_s4_task_top",
+        "FSM / route RAM / P2P / UART",
+        "logic"
+      ],
+      [
+        "observer",
+        100,
+        525,
+        440,
+        230,
+        "g_observe.observer",
+        "mode_a_observer",
+        "Cycle counters + trace BRAM",
+        "memory"
+      ],
+      [
+        "display",
+        920,
+        525,
+        660,
+        230,
+        "g_hdmi.u_display",
+        "mode_a_hdmi_output",
+        "Frame memory / raster / TMDS PHY",
+        "phy"
+      ]
+    ],
+    "edges": [
+      [
+        "vision",
+        "adapter",
+        "v_frame_id / v_candidate / v_qualified",
+        false
+      ],
+      [
+        "adapter",
+        "task",
+        "e_class[2:0] / e_valid / e_changed",
+        false
+      ],
+      [
+        "vision",
+        "observer",
+        "frame / class / cycle telemetry",
+        true
+      ],
+      [
+        "vision",
+        "display",
+        "preview_data[31:0] / preview_addr[13:0]",
+        false
+      ],
+      [
+        "task",
+        "display",
+        "ui_task / ui_interaction / ui_arm",
+        true
+      ],
+      [
+        "task",
+        "observer",
+        "task / feedback / last-command trace",
+        true
+      ]
+    ],
+    "foot": "External: DVP + SCCB; AXI4-Lite route / arm / plan / task / vision; UART + D5; HDMI TMDS.\nClock domains: pclk (48 MHz constraint), clk_100mhz, clk_50mhz, HDMI pixel / 5x. Dashed = control or telemetry.",
+    "width": 1700,
+    "height": 1250
+  },
+  {
+    "name": "02_vision",
+    "title": "Vision datapath, memories and scheduling",
+    "parent": "u_vision : gesture_autonomous_top_black",
+    "nodes": [
+      [
+        "acq",
+        80,
+        190,
+        440,
+        230,
+        "u_acquisition",
+        "vision_acquisition_pipeline",
+        "SCCB FSM + DVP receiver + CDC FIFO",
+        "cdc"
+      ],
+      [
+        "roi",
+        620,
+        190,
+        440,
+        230,
+        "u_roi_memory",
+        "vision_roi_memory_pipeline",
+        "Ping-pong BRAM + ROI + input BRAM",
+        "memory"
+      ],
+      [
+        "loc",
+        1160,
+        190,
+        440,
+        230,
+        "u_locator_compute",
+        "vision_locator_compute",
+        "Model ROM + 8-lane CNN + Top-1",
+        "logic"
+      ],
+      [
+        "cls",
+        1160,
+        575,
+        440,
+        230,
+        "u_classifier_compute",
+        "vision_classifier_compute",
+        "Descriptor / weight ROM + CNN MACs",
+        "logic"
+      ],
+      [
+        "ctl",
+        480,
+        575,
+        540,
+        230,
+        "u_pipeline_control",
+        "vision_schedule_qualifier",
+        "BBox decode + scheduler FSM + filter",
+        "control"
+      ]
+    ],
+    "edges": [
+      [
+        "acq",
+        "roi",
+        "camera_mem_we / addr / data[31:0]",
+        false
+      ],
+      [
+        "roi",
+        "loc",
+        "camera_read_data[31:0] / locator address",
+        false
+      ],
+      [
+        "loc",
+        "ctl",
+        "Top-1 cell / box regression / done",
+        false
+      ],
+      [
+        "roi",
+        "cls",
+        "classifier_input_data[7:0]",
+        false
+      ],
+      [
+        "ctl",
+        "roi",
+        "ROI start / coordinates / frame ownership",
+        true
+      ],
+      [
+        "ctl",
+        "cls",
+        "classifier_start / classifier_done",
+        true
+      ],
+      [
+        "ctl",
+        "acq",
+        "capture_enable / buffer release",
+        true
+      ]
+    ],
+    "foot": "Every box is a real wrapper .v. Internal memory and compute instances are listed in hierarchy.csv.\nOriginal DVP CDC, frame ownership, ROM contents, arithmetic, registers and cycle sequencing are retained.",
+    "width": 1700,
+    "height": 1250
+  },
+  {
+    "name": "03_task",
+    "title": "Task control and bus ownership",
+    "parent": "u_task : phase3_s4_task_top",
+    "nodes": [
+      [
+        "bus",
+        80,
+        180,
+        480,
+        230,
+        "u_ownership_fabric",
+        "motion_axil_ownership_fabric",
+        "3 AXI windows / locks / timeouts",
+        "control"
+      ],
+      [
+        "fsm",
+        650,
+        180,
+        470,
+        230,
+        "u_task_control",
+        "motion_task_control",
+        "Register RAM + task FSM + native link",
+        "control"
+      ],
+      [
+        "hand",
+        1210,
+        180,
+        410,
+        230,
+        "g_handalign.u_hand_target",
+        "motion_hand_target_pipeline",
+        "Region LUT + stable-target FSM",
+        "memory"
+      ],
+      [
+        "step",
+        1210,
+        570,
+        410,
+        230,
+        "u_step_map",
+        "hand_y_step_map",
+        "Bounded 65-position mapping",
+        "logic"
+      ],
+      [
+        "motion",
+        360,
+        570,
+        700,
+        230,
+        "u_motion",
+        "phase3_s2_motion_top",
+        "Native program / quintic / backend pipeline",
+        "logic"
+      ]
+    ],
+    "edges": [
+      [
+        "bus",
+        "motion",
+        "guarded AXI arm / planner / B program",
+        false
+      ],
+      [
+        "fsm",
+        "motion",
+        "native_code[2:0] / target[191:0] / n / na",
+        false
+      ],
+      [
+        "hand",
+        "fsm",
+        "target cell / revision / delivery_ready",
+        true
+      ],
+      [
+        "step",
+        "fsm",
+        "continuous hand step[6:0]",
+        true
+      ],
+      [
+        "fsm",
+        "bus",
+        "owner_s4 / route_cfg_unlock",
+        true
+      ]
+    ],
+    "foot": "A: original P2P program and timing. B: PL-owned native route operation 7; host config only at stationary WAIT_PATH.\nD5, feedback watchdog, joint limits, inventory, PALM/FIST and cancellation remain in the hardware execution path.",
+    "width": 1700,
+    "height": 1250
+  },
+  {
+    "name": "04_motion",
+    "title": "Native B sample playback and shared actuator datapath",
+    "parent": "u_motion : phase3_s2_motion_top",
+    "nodes": [
+      [
+        "ram",
+        80,
+        170,
+        450,
+        230,
+        "channel_ram[0:5].u_ram",
+        "b_route_ram \u00d7 6",
+        "2048 \u00d7 18-bit TDP BRAM per channel",
+        "memory"
+      ],
+      [
+        "player",
+        640,
+        170,
+        480,
+        230,
+        "g_b_program.u_player",
+        "b_route_player",
+        "Descriptor LUTRAM / DDA / Q16 blend",
+        "logic"
+      ],
+      [
+        "p2p",
+        640,
+        545,
+        480,
+        230,
+        "u_planner",
+        "planner_axi_top",
+        "UQ32 quintic + sequential multiplier/divider",
+        "logic"
+      ],
+      [
+        "mux",
+        1240,
+        180,
+        350,
+        230,
+        "u_actuator.u_mux",
+        "motion_sample_mux",
+        "Elastic register / LAST_DELIVERED",
+        "control"
+      ],
+      [
+        "backend",
+        1200,
+        545,
+        430,
+        230,
+        "u_actuator.u_arm_backend",
+        "arm_backend_axi_top",
+        "Mapper / formatter RAM / UART / watchdog",
+        "phy"
+      ]
+    ],
+    "edges": [
+      [
+        "ram",
+        "player",
+        "2 \u00d7 6 \u00d7 signed18 offsets / bases[191:0]",
+        false
+      ],
+      [
+        "player",
+        "mux",
+        "Q16 samples[191:0] / valid / ready",
+        false
+      ],
+      [
+        "p2p",
+        "mux",
+        "Q16 P2P samples[191:0] / valid / ready",
+        false
+      ],
+      [
+        "mux",
+        "backend",
+        "arm_data[191:0] / arm_valid / arm_ready",
+        false
+      ],
+      [
+        "player",
+        "backend",
+        "latched B speed / acceleration / T106 type",
+        true
+      ]
+    ],
+    "foot": "The planner/route selection is local combinational logic in phase3_s2_motion_top, before u_actuator.\nNative data retain Q16 precision; 20/40 ms phase clocks and gripper events are autonomous. Six route RAMs are checked in the routed netlist.",
+    "width": 1700,
+    "height": 1250
+  },
+  {
+    "name": "05_hdmi",
+    "title": "Passive display memory, CDC and physical interface",
+    "parent": "g_hdmi.u_display : mode_a_hdmi_output",
+    "nodes": [
+      [
+        "frame",
+        80,
+        180,
+        470,
+        230,
+        "frame",
+        "mode_a_framebuffer",
+        "Four image banks + frame-ID ownership",
+        "memory"
+      ],
+      [
+        "scan",
+        650,
+        180,
+        450,
+        230,
+        "u_scan",
+        "display_scan_pipeline",
+        "Raster timing + coordinate ROMs",
+        "logic"
+      ],
+      [
+        "renderer",
+        650,
+        575,
+        450,
+        230,
+        "renderer",
+        "mode_a_renderer",
+        "Pixel datapath / font ROM / overlays",
+        "logic"
+      ],
+      [
+        "cdc",
+        80,
+        575,
+        470,
+        230,
+        "u_telemetry",
+        "display_telemetry_bridge",
+        "Unit conversion + held-payload CDC",
+        "cdc"
+      ],
+      [
+        "phy",
+        1210,
+        575,
+        410,
+        230,
+        "u_phy",
+        "hdmi_phy_pipeline",
+        "TMDS encoders + OSERDESE2",
+        "phy"
+      ]
+    ],
+    "edges": [
+      [
+        "scan",
+        "renderer",
+        "x / y / active / hsync / vsync",
+        false
+      ],
+      [
+        "frame",
+        "renderer",
+        "frame_word_data[31:0] / display metadata",
+        false
+      ],
+      [
+        "cdc",
+        "renderer",
+        "ui[93:0] held payload",
+        true
+      ],
+      [
+        "renderer",
+        "phy",
+        "RGB[23:0] / de / rhs / rvs",
+        false
+      ],
+      [
+        "scan",
+        "frame",
+        "frame_start / mapped read address",
+        true
+      ]
+    ],
+    "foot": "sys_clk = 100 MHz; pixel_clk = 74.25 MHz; pixel_clk_5x = 371.25 MHz.\nFrame and telemetry CDC are explicit; the HDMI branch observes inference and motion and does not gate either datapath.",
+    "width": 1700,
+    "height": 1250
+  }
+]

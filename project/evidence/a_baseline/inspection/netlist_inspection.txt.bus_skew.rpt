@@ -1,0 +1,227 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 10:21:16 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -file {C:\redacted_user\.codex\worktrees\mode-a-four-zone-20261028\Gesture\board_evidence\mode_a_restock_impl_a2\inspection_a1\NETLIST_INSPECTION.txt.bus_skew.rpt}
+| Design       : roarm_closed_loop_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   24        [get_cells -hier -quiet -filter {NAME =~ */u_fifo/wr_gray_reg* && IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -quiet -filter {NAME =~ */u_fifo/wr_gray_rd_sync1_reg* && IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       1.136      8.864
+2   25        [get_cells -hier -quiet -filter {NAME =~ */u_fifo/rd_gray_reg* && IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -quiet -filter {NAME =~ */u_fifo/rd_gray_wr_sync1_reg* && IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       1.218      8.782
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells -hier -quiet -filter {NAME =~ */u_fifo/wr_gray_reg* && IS_SEQUENTIAL == 1}] -to [get_cells -hier -quiet -filter {NAME =~ */u_fifo/wr_gray_rd_sync1_reg* && IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 11
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+ov5640_pclk           clk_fpga_1            roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/D
+                                                                            roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[0]/D
+                                                                                                            Slow         1.136      8.864
+
+
+Slack (MET) :             8.864ns  (requirement - actual skew)
+  Endpoint Source:        roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk)
+  Endpoint Destination:   roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1)
+  Reference Source:       roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk)
+  Reference Destination:  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    4.188ns
+  Reference Relative Delay:   2.629ns
+  Relative CRPR:              0.423ns
+  Actual Bus Skew:            1.136ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.845     5.649    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/pclk
+    SLICE_X36Y100        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y100        FDRE (Prop_fdre_C_Q)         0.478     6.127 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_reg[4]/Q
+                         net (fo=1, routed)           0.503     6.631    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray[4]
+    SLICE_X38Y99         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=24167, routed)       1.480     2.659    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/clk_100mhz
+    SLICE_X38Y99         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/C
+                         clock pessimism              0.000     2.659    <hidden>
+    SLICE_X38Y99         FDRE (Setup_fdre_C_D)       -0.216     2.443    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]
+  -------------------------------------------------------------------
+                         data arrival                           6.631    <hidden>
+                         clock arrival                          2.443    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         4.188    <hidden>
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.428     1.428 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.434    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     3.525 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.480     5.004    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/pclk
+    SLICE_X36Y98         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y98         FDRE (Prop_fdre_C_Q)         0.418     5.422 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_reg[0]/Q
+                         net (fo=1, routed)           0.515     5.937    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray[0]
+    SLICE_X39Y100        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=24167, routed)       1.845     3.139    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/clk_100mhz
+    SLICE_X39Y100        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[0]/C
+                         clock pessimism              0.000     3.139    <hidden>
+    SLICE_X39Y100        FDRE (Hold_fdre_C_D)         0.169     3.308    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[0]
+  -------------------------------------------------------------------
+                         data arrival                           5.937    <hidden>
+                         clock arrival                          3.308    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         2.629    <hidden>
+
+
+
+Id: 2
+set_bus_skew -from [get_cells -hier -quiet -filter {NAME =~ */u_fifo/rd_gray_reg* && IS_SEQUENTIAL == 1}] -to [get_cells -hier -quiet -filter {NAME =~ */u_fifo/rd_gray_wr_sync1_reg* && IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 11
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_1            ov5640_pclk           roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[3]/D
+                                                                            roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[8]/D
+                                                                                                            Slow         1.218      8.782
+
+
+Slack (MET) :             8.782ns  (requirement - actual skew)
+  Endpoint Source:        roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1)
+  Endpoint Destination:   roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk)
+  Reference Source:       roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1)
+  Reference Destination:  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:   -0.725ns
+  Reference Relative Delay:  -2.365ns
+  Relative CRPR:              0.423ns
+  Actual Bus Skew:            1.218ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=24167, routed)       1.653     2.947    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/clk_100mhz
+    SLICE_X37Y99         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y99         FDRE (Prop_fdre_C_Q)         0.419     3.366 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_reg[3]/Q
+                         net (fo=1, routed)           0.697     4.063    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray[3]
+    SLICE_X36Y97         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.428     1.428 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.434    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     3.525 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.480     5.004    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/pclk
+    SLICE_X36Y97         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[3]/C
+                         clock pessimism              0.000     5.004    <hidden>
+    SLICE_X36Y97         FDRE (Setup_fdre_C_D)       -0.217     4.787    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[3]
+  -------------------------------------------------------------------
+                         data arrival                           4.063    <hidden>
+                         clock arrival                          4.787    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                        -0.725    <hidden>
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=24167, routed)       1.654     2.833    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/clk_100mhz
+    SLICE_X39Y101        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y101        FDRE (Prop_fdre_C_Q)         0.367     3.200 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_reg[8]/Q
+                         net (fo=1, routed)           0.253     3.453    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray[8]
+    SLICE_X41Y101        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.844     5.648    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/pclk
+    SLICE_X41Y101        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[8]/C
+                         clock pessimism              0.000     5.648    <hidden>
+    SLICE_X41Y101        FDRE (Hold_fdre_C_D)         0.170     5.818    roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[8]
+  -------------------------------------------------------------------
+                         data arrival                           3.453    <hidden>
+                         clock arrival                          5.818    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                        -2.365    <hidden>
+
+
+

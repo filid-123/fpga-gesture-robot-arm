@@ -1,0 +1,30 @@
+{
+  "schema": "skill.reuse.validation.v1",
+  "date": "2026-11-01",
+  "passed": true,
+  "python": "3.12",
+  "stdlib_clean_environment": true,
+  "copied_outside_repository": true,
+  "focused_behavior_tests": 9,
+  "scope": "Saved nine-frame latency and inference component recomputation; independent synthetic task outcomes. No new physical measurement.",
+  "commands": [
+    {
+      "name": "standalone_task_metrics",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "failure_conditions_tested": [
+    "no observations",
+    "missing physical endpoints",
+    "NaN/Inf/negative timing",
+    "missing outcome",
+    "wrong batch",
+    "components exceed total"
+  ],
+  "second_physical_device": "NOT_RUN",
+  "whole_application_deployment": "NOT_RUN",
+  "hardware_access": false,
+  "script_sha256": "85c87e3853cb887e4a7cca8fd2cdba8acabd222b3f57d9a06d713663cb094561"
+}

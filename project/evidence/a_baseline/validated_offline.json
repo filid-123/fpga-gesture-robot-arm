@@ -1,0 +1,85 @@
+{
+  "result": "V014_SOURCE_TESTS_FSM_S2_COPPELIA_HDMI_AND_ROUTED_IMPLEMENTATION_PASS",
+  "version": "0.14.0",
+  "pickup_D_mm": [
+    300,
+    200,
+    15
+  ],
+  "task_abi": 13323,
+  "software_tests": 70,
+  "new_s4_checks": 7,
+  "legacy_s4_checks": 7,
+  "hdmi_checks": 7,
+  "production_vga_frames": 12,
+  "production_integration_checks": 15,
+  "s4_s2_replay": {
+    "legs": 176,
+    "samples": 8776,
+    "axes": 6,
+    "source_trace_sha256": "00d2bc0d3e89222ea3fddb951593a350e683712717856f0d9f8885356e472e59"
+  },
+  "geometry": {
+    "mode_a_restock_coppelia_exact_a1": {
+      "native_plan_sha256": "720257dbabc3ce85960e82a08e567d964935bd587a3a9d0bab0e4f761c8e7617",
+      "samples_checked": 68155,
+      "collision_samples": 0,
+      "actual_arm_meshes": 12,
+      "restore_max_joint_error_rad": 0.0,
+      "result_sha256": "fa4b299ee5ee5b8ca79c64b7f82e686903e3f10ac4f37bec7f95201ec976f469"
+    },
+    "mode_a_restock_coppelia_wire_a1": {
+      "native_plan_sha256": "720257dbabc3ce85960e82a08e567d964935bd587a3a9d0bab0e4f761c8e7617",
+      "samples_checked": 68155,
+      "collision_samples": 0,
+      "actual_arm_meshes": 12,
+      "restore_max_joint_error_rad": 0.0,
+      "result_sha256": "30c7f7939d9ba10e9810df75ccfd64c689d05e6e82fe55eb81b9f06bf214b490"
+    },
+    "mode_a_restock_replay_coppelia_exact_a1": {
+      "native_plan_sha256": "9fe3a28f0435fce30f0a7f72bb3d8864a4b567106aead298aa5c9e3ecee2488d",
+      "samples_checked": 8776,
+      "collision_samples": 0,
+      "actual_arm_meshes": 12,
+      "restore_max_joint_error_rad": 0.0,
+      "result_sha256": "2e557c6b3fe3d1378a012d7485ed727f33509b4d65326335b80e3276e70f7e0a"
+    },
+    "mode_a_restock_replay_coppelia_wire_a1": {
+      "native_plan_sha256": "9fe3a28f0435fce30f0a7f72bb3d8864a4b567106aead298aa5c9e3ecee2488d",
+      "samples_checked": 8776,
+      "collision_samples": 0,
+      "actual_arm_meshes": 12,
+      "restore_max_joint_error_rad": 0.0,
+      "result_sha256": "49c237dba1fcac3fe00ab8d9e4a847045b9489a49c72836f05a262923e565eee"
+    }
+  },
+  "hardware_summary_sha256": "f7ef720a41619aa838c8260d3777656f46e27f5c7998b15bf6b2a2daa222292c",
+  "source_binding_sha256": "81fc9b21c59afeb715d97de64413187071300bfd804e455dc28c22d2ad0e35e0",
+  "utilization": {
+    "LUT_TOTAL": 26568.0,
+    "LUT_LOGIC": 25832.0,
+    "LUT_MEMORY": 736.0,
+    "FF": 23188.0,
+    "BRAM_TILE": 113.0,
+    "RAMB36": 105.0,
+    "RAMB18": 16.0,
+    "DSP": 32.0
+  },
+  "resource_percent": {
+    "LUT_TOTAL": 49.94,
+    "FF": 21.793,
+    "BRAM_TILE": 80.714,
+    "DSP": 14.545
+  },
+  "timing_ns": {
+    "WNS": 0.302,
+    "TNS": 0.0,
+    "TNS_FAILING": 0.0,
+    "WHS": 0.009,
+    "THS": 0.0,
+    "THS_FAILING": 0.0
+  },
+  "cdc_safe": 114,
+  "physical_hardware_test": "NOT_RUN",
+  "preserved": "Rain model, normal trajectories,1320/66/50Hz quintic, arrival_mask0, PALM/FIST normal behavior, preconnected D5,720p canvas and serializer"
+}

@@ -1,0 +1,123 @@
+{
+  "bytes": 39488,
+  "layers": [
+    {
+      "layer": "conv1",
+      "weight_offset_bytes": 0,
+      "weight_size_bytes": 72,
+      "bias_offset_bytes": 72,
+      "bias_size_bytes": 32
+    },
+    {
+      "layer": "conv2",
+      "weight_offset_bytes": 104,
+      "weight_size_bytes": 1152,
+      "bias_offset_bytes": 1256,
+      "bias_size_bytes": 64
+    },
+    {
+      "layer": "conv3",
+      "weight_offset_bytes": 1320,
+      "weight_size_bytes": 4608,
+      "bias_offset_bytes": 5928,
+      "bias_size_bytes": 128
+    },
+    {
+      "layer": "fc1",
+      "weight_offset_bytes": 6056,
+      "weight_size_bytes": 32768,
+      "bias_offset_bytes": 38824,
+      "bias_size_bytes": 256
+    },
+    {
+      "layer": "fc2",
+      "weight_offset_bytes": 39080,
+      "weight_size_bytes": 384,
+      "bias_offset_bytes": 39464,
+      "bias_size_bytes": 24
+    }
+  ],
+  "descriptor_words": [
+    [
+      537395204,
+      32,
+      0,
+      72,
+      6687108,
+      543,
+      0,
+      0
+    ],
+    [
+      537395233,
+      32,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    [
+      269484064,
+      16,
+      104,
+      1256,
+      7503936,
+      287,
+      0,
+      0
+    ],
+    [
+      269484097,
+      16,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    [
+      136314944,
+      8,
+      1320,
+      5928,
+      8183873,
+      287,
+      0,
+      0
+    ],
+    [
+      136315009,
+      8,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    [
+      20973570,
+      1,
+      6056,
+      38824,
+      8281009,
+      287,
+      0,
+      0
+    ],
+    [
+      17170690,
+      1,
+      39080,
+      39464,
+      0,
+      2147483648,
+      0,
+      0
+    ]
+  ],
+  "final_Cout": 6
+}

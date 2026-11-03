@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: production pipelined imageY map all96 valid rows, exact bounds and invalid center rejection",
+    "PASS: pipelined cycle/ms conversion all256 bins, boundaries and full32-bit saturation",
+    "PASS: production two-port keypoint RAM all65 continuous positions and47 keypoints, raw precheck banks unchanged",
+    "PASS: stage cycle timers, trace collision accounting, overwrite wrap, six-axis LAST_DELIVERED and coherent freeze/read/unfreeze"
+  ],
+  "commands": [
+    {
+      "label": "compile",
+      "exit_code": 0
+    },
+    {
+      "label": "elab",
+      "exit_code": 0
+    },
+    {
+      "label": "run",
+      "exit_code": 0
+    }
+  ],
+  "hardware_access": false,
+  "source_hashes": {
+    "native_motion/rtl/hdmi/cycles_to_ms8.v": "12abce98be082e804bef63ad08776506d18f69bbb6ddb1c016ab91e835255fcb",
+    "native_motion/rtl/robot/hand_y_step_map.v": "c46974e7b89e07d0f0e1cb39f8c49401563777fb82ab1fca09016da3bed41de9",
+    "native_motion/rtl/robot/s4_task_regs.v": "30017f47e4047bbc3fec724560c1a0962c2cccaec73e191b6e84b3195f021721",
+    "native_motion/rtl/integration/mode_a_observer.v": "dc616d21421ec1ab3882e877265c25280e797fa759072672cdfec9e94556c628",
+    "native_motion/sim/mode_a_upgrade/tb_upgrade_units.sv": "7407da4dc5aecb2e27829a49ddcd9b1cad2720951657fc89ed6848cc3f0d1c8c"
+  }
+}

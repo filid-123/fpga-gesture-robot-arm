@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: real serialized TMDS receiver: 420000 words, 307200 exact RGB pixels, 480 rows, HS96/line800, DE and both sync signals aligned"
+  ],
+  "hardware_access": false,
+  "commands": [
+    {
+      "label": "compile",
+      "command": "cmd.exe /d /s /c \"\"E:/Xilinx/2026.1/Vivado/bin/xvlog.bat\" \"-sv\" \"-i\" \"C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\native_motion\\rtl\\hdmi\" \"E:/Xilinx/2026.1/Vivado/data/verilog/src/glbl.v\" \"C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\native_motion\\rtl\\hdmi\\video_timing_640x480.v\" \"C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\native_motion\\rtl\\hdmi\\mode_a_renderer.v\" \"C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\native_motion\\rtl\\hdmi\\tmds_encoder.v\" \"C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\native_motion\\rtl\\hdmi\\tmds_serializer_7series.v\" \"C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\native_motion\\sim\\mode_a_hdmi\\tb_tmds_raster.sv\"\"",
+      "exit_code": 0,
+      "wall_s": 1.437000000005355
+    },
+    {
+      "label": "elab",
+      "command": "cmd.exe /d /s /c \"\"E:/Xilinx/2026.1/Vivado/bin/xelab.bat\" \"tb_tmds_raster\" \"glbl\" \"-L\" \"unisims_ver\" \"-L\" \"secureip\" \"-s\" \"receiver\" \"-O0\" \"-mt\" \"off\"\"",
+      "exit_code": 0,
+      "wall_s": 5.26600000000326
+    },
+    {
+      "label": "run",
+      "command": "cmd.exe /d /s /c \"\"E:/Xilinx/2026.1/Vivado/bin/xsim.bat\" \"receiver\" \"-runall\"\"",
+      "exit_code": 0,
+      "wall_s": 275.01600000000326
+    }
+  ],
+  "source_hashes": {
+    "native_motion/rtl/hdmi/video_timing_640x480.v": "95b053fd04db18dc28229e41bc0cc17818ac3fcc309061ffd56939d4786e74cd",
+    "native_motion/rtl/hdmi/mode_a_renderer.v": "0acff660d27480c431ed073cf2b8d7aead5903a895eb4cbd62de63e166758e4f",
+    "native_motion/rtl/hdmi/tmds_encoder.v": "5f51f2d6fb7a2888fffe7840ad6282592ad1680b8f81373ca6a0c8d558609f45",
+    "native_motion/rtl/hdmi/tmds_serializer_7series.v": "3c90df583f5a2e954c5d8d0a4be2d8148de68e11a3ac88d15482f2826eee7772",
+    "native_motion/sim/mode_a_hdmi/tb_tmds_raster.sv": "3dcb8047e21d0116721ab50f3a0f14f17744adbede07eac7e0da30584d03f4db"
+  }
+}

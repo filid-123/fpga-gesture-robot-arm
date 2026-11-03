@@ -1,0 +1,19 @@
+{
+  "schema": "amd.pc.environment.v1",
+  "python": "3.12.10",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "requirements": [],
+  "models": [],
+  "hip": {
+    "status": "FAIL",
+    "error": "No module named 'torch'"
+  },
+  "camera_access": false,
+  "robot_access": false,
+  "errors": [
+    "HIP device probe failed"
+  ],
+  "passed": false,
+  "model_inference": "NOT_RUN"
+}

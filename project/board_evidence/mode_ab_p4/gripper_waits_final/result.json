@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "scope": "ONLY_T106_WAIT_PERIOD_AND_MATCHING_S4_DURATION_CHANGED",
+  "prior_native_routes_sha256": "584c8d19be74908a42ded22cfc1e1a6c89cf3921ee04467494eb0f2bbcec539b",
+  "results": [
+    {
+      "class_name": "red_cube",
+      "passed": true,
+      "old_sha256": "bb1f14127e1d5d01c033388e52445414d7bf64728ea7a449fe8dfd9a734d8391",
+      "new_sha256": "5fdf67cc317ae736506454c34f884436e00499418a23a19965bfa6aa1df26f80",
+      "all_motion_vectors_periods_and_profiles_unchanged": true,
+      "geometry_fingerprint_unchanged": true,
+      "gripper_waits_seconds": {
+        "OPEN_SOURCE": 10.76088746,
+        "GRASP_SOURCE": 19.15537732,
+        "RELEASE_HAND": 3.42071698,
+        "PARK_EMPTY": 10.86974551
+      },
+      "speed": {
+        "policy": "GIAO_PER_PHASE_NATIVE",
+        "nominal_motion_seconds": 22.62,
+        "nominal_with_gripper_waits_seconds": 66.82672726830224,
+        "periods_ms": [
+          20,
+          40
+        ],
+        "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+      }
+    },
+    {
+      "class_name": "eraser",
+      "passed": true,
+      "old_sha256": "4891250a3ff9972813b10ba72fbe82f1ac2a0c9e1ec16522ca0fb3673d6ad8f5",
+      "new_sha256": "d3ed2b740d8b8ea53ad97dfd5b3383d4527e2727ce170b08a7db88bf1757ee5c",
+      "all_motion_vectors_periods_and_profiles_unchanged": true,
+      "geometry_fingerprint_unchanged": true,
+      "gripper_waits_seconds": {
+        "OPEN_SOURCE": 10.77088746,
+        "GRASP_SOURCE": 15.81982924,
+        "RELEASE_HAND": 3.96396585,
+        "PARK_EMPTY": 10.86974551
+      },
+      "speed": {
+        "policy": "GIAO_PER_PHASE_NATIVE",
+        "nominal_motion_seconds": 15.0,
+        "nominal_with_gripper_waits_seconds": 56.42442805892548,
+        "periods_ms": [
+          20,
+          40
+        ],
+        "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+      }
+    },
+    {
+      "class_name": "small_canister",
+      "passed": true,
+      "old_sha256": "5a0ac4b428fb800e7ca1c29cec6ec79c3e654d5f4cddc10beb0c6e1815f67393",
+      "new_sha256": "9e5e908f5c1e2895c0d41ab0caa3561b620660b7345d44a499449332ca8b5853",
+      "all_motion_vectors_periods_and_profiles_unchanged": true,
+      "geometry_fingerprint_unchanged": true,
+      "gripper_waits_seconds": {
+        "OPEN_SOURCE": 10.77088746,
+        "GRASP_SOURCE": 20.78512393,
+        "RELEASE_HAND": 3.63801652,
+        "PARK_EMPTY": 10.86974551
+      },
+      "speed": {
+        "policy": "GIAO_PER_PHASE_NATIVE",
+        "nominal_motion_seconds": 23.1,
+        "nominal_with_gripper_waits_seconds": 69.16377342939515,
+        "periods_ms": [
+          20,
+          40
+        ],
+        "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+      }
+    }
+  ],
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "pc/mode_ab/native_routes.py": "2dbcbea7f3f35e87ad09beea4cccef06b0c7287fa330d0d40ee1d44835e4f48a",
+    "scripts/finalize_mode_ab_gripper_waits.py": "660da3e21fc9e5b65e459b8d33102ce4d768c486a4259dd878cbd54f07802695",
+    "docs/phase3c/mode_b_optimized_handoff_20261030/execution.json": "ec92da0b78b14084f34cd561dcec2df23f1ea5d24ab9ce832505fec65f7f4b35"
+  }
+}

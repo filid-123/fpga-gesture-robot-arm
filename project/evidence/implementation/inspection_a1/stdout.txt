@@ -1,0 +1,66 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 18-jul-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 21:33:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {C:\redacted_user\.codex\worktrees\mode-ab-integration-20261029\Gesture\scripts\inspect_mode_ab_p4_netlist.tcl} -notrace
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part 'tul.com.tw:pynq-z2:part0:1.0' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/2026.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design D:/FPGA_Projects/Gesture/builds/mode_ab_v0_1_0_a14/Gesture_Roarm_ClosedLoop.srcs/sources_1/bd/roarm_closed_loop/roarm_closed_loop.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ roarm_closed_loop_const_zero_1_0
+roarm_closed_loop_const_one_1_0
+roarm_closed_loop_irq_concat_0
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 689.195 ; gain = 288.438
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.388 . Memory (MB): peak = 1016.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 1168.430 ; gain = 12.105
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1845.484 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1845.484 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1845.484 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1901.629 ; gain = 56.145
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.629 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1907.902 ; gain = 6.273
+Read Physdb Files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1907.902 ; gain = 62.418
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1907.902 ; gain = 62.418
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1961.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 451 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 111 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 74 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 260 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1961.207 ; gain = 1272.012
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == IDELAYE2}'.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == IDELAYCTRL}'.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ *u_same_frame_roi* && REF_NAME =~ DSP*}'.
+get_timing_paths: Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 2104.203 ; gain = 142.996
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 40 -nworst 1 -delay_type min_max -sort_by slack.
+INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:35:08 2026...

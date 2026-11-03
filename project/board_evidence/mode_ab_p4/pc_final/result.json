@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "pc_tests": 74,
+  "ui_checks": 10,
+  "commands": [
+    {
+      "name": "control",
+      "exit_code": 0
+    },
+    {
+      "name": "http",
+      "exit_code": 0
+    },
+    {
+      "name": "shared_red",
+      "exit_code": 0
+    },
+    {
+      "name": "snapshot",
+      "exit_code": 0
+    },
+    {
+      "name": "planning",
+      "exit_code": 0
+    },
+    {
+      "name": "uploads",
+      "exit_code": 0
+    },
+    {
+      "name": "family",
+      "exit_code": 0
+    },
+    {
+      "name": "diagnostics",
+      "exit_code": 0
+    },
+    {
+      "name": "native",
+      "exit_code": 0
+    },
+    {
+      "name": "workspace",
+      "exit_code": 0
+    },
+    {
+      "name": "workspace_install",
+      "exit_code": 0
+    },
+    {
+      "name": "ui",
+      "exit_code": 0
+    }
+  ],
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "pc/mode_ab/board.py": "a41765ce2792a557923faae629fdfa105068a497d597a6d1b13c735d882ea266",
+    "pc/mode_ab/camera.py": "daf0d08af679d0320d5260a07da4e63eca62881aa5fea072799cbe274fc87239",
+    "pc/mode_ab/control.py": "145996f69b8bb048c19f92b22a7254fb5b2da862e4bdc2604498ff1dff238a89",
+    "pc/mode_ab/diagnostics.py": "519b95cdeeb4d028ef28eb7b065cbafdc639e9c8b3a2d443dddf4eda94576812",
+    "pc/mode_ab/family.py": "8dedbb55679dcd8fe089efeb6d534b5aa1529d9cf10544562d84c7549941df0f",
+    "pc/mode_ab/geometry.py": "83e31494324d42ade426466c6990e5d50287365fd84f0f34c2a623a4f07f4679",
+    "pc/mode_ab/gpu.py": "f1c02a333b56ea29b35c2efb36691442486d624436eb2991c40bae52ec918ffa",
+    "pc/mode_ab/http.py": "ecbd0d3cbf7e8898c896d8032d9f6a97ccb30f70383f5902b233700a81e9e54a",
+    "pc/mode_ab/motion.py": "3998de0fd6aeb27c7f194b8aa3d6d40fc0970912625ea1263104df24e995e1bc",
+    "pc/mode_ab/native_backend.py": "268166d4290df2ea74c4211df433c053f749356c5bfa42c26f79476022df9576",
+    "pc/mode_ab/native_family.py": "9886e22622f0d326d46f4ad5ad60333b99f1b57a36d5ed19d85354310ae25f25",
+    "pc/mode_ab/native_routes.py": "584c8d19be74908a42ded22cfc1e1a6c89cf3921ee04467494eb0f2bbcec539b",
+    "pc/mode_ab/native_upload.py": "723f0a5146f76f496a8109c5718b9fb356e39ac267b9c61c4650895e048fd4ac",
+    "pc/mode_ab/npu_detector.py": "ed248b37f2adc71db359222df905dae244ce9ff42ece6b2a680eebaf9cf6a5b1",
+    "pc/mode_ab/registers.py": "e696b557a767ca37fe691e89cd348f21edc769956ae9d3b5e8c0b220404a52d3",
+    "pc/mode_ab/runtime.py": "16f18c8c5c6f2f87c1ca4b8affba392a8ac60b54cfa3ab72842dfe62e4e1e3f2",
+    "pc/mode_ab/shared_red.py": "08b9d3e22c9fcb882081fcccf798d70e4255aafee5c2d3e10aa3c2dab602f695",
+    "pc/mode_ab/uploads.py": "e612cb3e9d4122c9cdb990c7c189b6d5102a55c12a222cea175c094fed1423de",
+    "pc/mode_ab/vision_workspace.py": "830ff85cb5ebf5c1ebb254b331afd8ce12db5a9bc9b8cabee260c88c3404404f",
+    "pc/mode_ab/winml.py": "3a5073d4dd5a9fb7c4d91503cd22a0ffc7a941fee7f513437758272af8581cf5",
+    "pc/mode_ab/workspace.py": "65adf284afea8c52a74811834c634256495117b00918da8dd22f7c1b2ef3796d",
+    "pc/mode_ab/__init__.py": "12f000667c92ceb17645691d7eb8f41b1eb566634a748714349d0f708b4b9193",
+    "web/mode-ab/app.js": "9728aaafde4bde0c4a5bfdcb6ff126e67a7837a3bb0a179b157df7fd6b89d70a",
+    "web/mode-ab/index.html": "4241b8e6ca85fe3b89796607a2b8bc2f946047db632abde026e6cc5b92f4eda2",
+    "web/mode-ab/styles.css": "c09b3fc7abd02cd12ee9f095ea73e3fa67bad63524fe5401c6bf5e8d3619d7ad",
+    "scripts/test_mode_ab_control.py": "c2ec20da260e6709b29023bc68aeafffd5463d7c2e36811f1c9664f476637fca",
+    "scripts/test_mode_ab_http.py": "c1de5f237bc7435e341ace928d90c4a77f9d8d393e8fe3900e14777a2c11102b",
+    "scripts/test_mode_ab_shared_red.py": "b217baba5f3abc418e968b0fdd8a643a7ea83a5b53fcf50848527cf15f6a5eb7",
+    "scripts/test_mode_ab_snapshot.py": "a153fcedef03563ea22a56e974b835a14971d52c885fed0e493a1ad804b2e9d7",
+    "scripts/test_mode_ab_planning.py": "c8cd36bcf9c51351e58628c23d397a84d78145a39239ebb1bd8412a12214e078",
+    "scripts/test_mode_ab_uploads.py": "93109da149b961567a35fc79e654a78d0041181e737274477d68b84df482284f",
+    "scripts/test_mode_ab_family.py": "9034b5ac941d5abcbaa7818ffedbadea9efce081e2e092d32acfd761e2639aa4",
+    "scripts/test_mode_ab_diagnostics.py": "fd3d4cf10739b814d52999b22819ee210c4340b5fb7d6c8185f68d961ed8c3cc",
+    "scripts/test_mode_ab_ui.cjs": "b0cd5c1710990762f533645712453f55fa0ec34de2ed40a7b80e936defb3e86b",
+    "scripts/test_mode_ab_native.py": "64e608a460ed8915b53eadd3a65e1b4fcac1d17f622c4c924a98f32591809c6a",
+    "scripts/test_mode_b_full_workspace.py": "bb8bf25718ae87dcb7b6c57ab17b86206a9e67ae044c0525c2891a7c0da95b80",
+    "scripts/test_mode_b_full_workspace_install.py": "a0c7a96c901cec3a416cc108aa884a3a72c6acb77cfbb05166bb12825ce42f54",
+    "scripts/apply_mode_b_full_workspace.py": "cafaaf4a90f3bd510f80bcab0f5fefbb6ad7097070891680d0294c09b88835cd",
+    "scripts/verify_mode_ab_pc.py": "efdaf1dd27971b3e0c9a5260a6785702e69fee4e9930c2967b8c606fdbed6e41"
+  }
+}

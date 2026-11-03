@@ -1,0 +1,365 @@
+{
+  "schema": "gesture.ai_pc.mode_b_observation.v1",
+  "profile_id": "mode_b_red_eraser_canister_v1",
+  "profile_sha256": "1d9217dd4e6b51d4819bc83a7f8ea65c209209cf622ae0bf82b2c005a6377762",
+  "frame_sha256": "b619c1630f85865d001bd2d334a5390557041204684e9bc1ef3aa597415549e3",
+  "frame_index": 2,
+  "offline_snapshot": true,
+  "recognitions": [
+    {
+      "class_id": 3,
+      "class_name": "eraser",
+      "confidence": 0.9060946702957153,
+      "bbox_xyxy_raw": [
+        711.6937458515167,
+        209.27513122558594,
+        824.0772521495819,
+        532.1858239173889
+      ],
+      "model_role": "mode_b_detector",
+      "trained": true,
+      "detector_pass_index": 1,
+      "detector_roi_xywh_raw": [
+        0,
+        0,
+        1080,
+        1080
+      ],
+      "task_id": 2,
+      "grasp_target": true,
+      "physical_grasp_enabled": false,
+      "frame_sha256": "b619c1630f85865d001bd2d334a5390557041204684e9bc1ef3aa597415549e3",
+      "frame_index": 2
+    }
+  ],
+  "localizations": [
+    {
+      "task_id": 1,
+      "class_name": "red_cube",
+      "instances": 0,
+      "status": "NOT_FOUND",
+      "pixel_surface": null,
+      "metric_surface": null,
+      "physical_execution": false
+    },
+    {
+      "task_id": 2,
+      "class_name": "eraser",
+      "instances": 1,
+      "status": "PIXEL_SURFACE_ONLY",
+      "pixel_surface": {
+        "quad_pixel_uv": [
+          [
+            783.0,
+            217.0
+          ],
+          [
+            720.0,
+            224.0
+          ],
+          [
+            757.0,
+            518.0
+          ],
+          [
+            816.0,
+            509.0
+          ]
+        ],
+        "pixel_uv": [
+          769.6605519748801,
+          371.42976367542553
+        ],
+        "mask_quad_iou": 0.9224271504973259,
+        "units": "raw_pixels",
+        "method": "NEURAL_TOP_MASK_QUADRILATERAL_DIAGONALS",
+        "metric_localization_verified": false,
+        "physical_execution": false,
+        "shape": "rectangle"
+      },
+      "metric_surface": null,
+      "physical_execution": false,
+      "bbox_xyxy_raw": [
+        711.6937458515167,
+        209.27513122558594,
+        824.0772521495819,
+        532.1858239173889
+      ]
+    },
+    {
+      "task_id": 3,
+      "class_name": "small_canister",
+      "instances": 0,
+      "status": "NOT_FOUND",
+      "pixel_surface": null,
+      "metric_surface": null,
+      "physical_execution": false
+    }
+  ],
+  "backend": {
+    "requested_backend": "onnx_cpu",
+    "actual_backend": "onnx_cpu",
+    "role": "mode_b_detector",
+    "framework": "onnxruntime",
+    "framework_version": "1.31.0",
+    "actual_providers": [
+      "CPUExecutionProvider"
+    ],
+    "cpu_fallback": false,
+    "precision": "fp32",
+    "classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "trained_classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+    "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+    "npu_execution_verified": false,
+    "hardware_acceptance": "PENDING",
+    "spatial_inference_policy": {
+      "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+      "minimum_tile_overlap": 0.25,
+      "classwise_merge_iou": 0.5,
+      "interior_edge_margin_raw_px": 2,
+      "max_tiles": 16,
+      "thresholds_unchanged": true
+    },
+    "spatial_pass_count": 4,
+    "spatial_views": [
+      {
+        "roi_xywh_raw": null,
+        "timing_ms": {
+          "preprocess": 1.976,
+          "model": 39.6317,
+          "decode_nms": 0.2243
+        }
+      },
+      {
+        "roi_xywh_raw": [
+          0,
+          0,
+          1080,
+          1080
+        ],
+        "timing_ms": {
+          "preprocess": 3.1868,
+          "model": 38.0065,
+          "decode_nms": 0.3334
+        }
+      },
+      {
+        "roi_xywh_raw": [
+          420,
+          0,
+          1080,
+          1080
+        ],
+        "timing_ms": {
+          "preprocess": 2.0424,
+          "model": 37.93,
+          "decode_nms": 0.3472
+        }
+      },
+      {
+        "roi_xywh_raw": [
+          840,
+          0,
+          1080,
+          1080
+        ],
+        "timing_ms": {
+          "preprocess": 2.2013,
+          "model": 37.3535,
+          "decode_nms": 0.3332
+        }
+      }
+    ],
+    "internal_edge_rejections": []
+  },
+  "surface_backend": {
+    "actual_backend": "torch_cpu",
+    "requested_backend": "torch_cpu",
+    "framework": "torch",
+    "framework_version": "2.14.1+cpu",
+    "hip_version": null,
+    "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+    "device": "cpu",
+    "hardware_acceptance": "PENDING",
+    "cpu_fallback": false,
+    "spatial_surface_policy": {
+      "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+      "relative_shift": 0.04,
+      "shifts_xy": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "uses_temporal_history": false,
+      "thresholds_unchanged": true
+    }
+  },
+  "surface_runs": [
+    {
+      "task_id": 2,
+      "backend": {
+        "actual_backend": "torch_cpu",
+        "requested_backend": "torch_cpu",
+        "framework": "torch",
+        "framework_version": "2.14.1+cpu",
+        "hip_version": null,
+        "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+        "device": "cpu",
+        "hardware_acceptance": "PENDING",
+        "cpu_fallback": false,
+        "spatial_surface_policy": {
+          "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+          "relative_shift": 0.04,
+          "shifts_xy": [
+            [
+              0,
+              0
+            ],
+            [
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "uses_temporal_history": false,
+          "thresholds_unchanged": true
+        }
+      },
+      "total_ms": 32.8149,
+      "spatial_surface_policy": {
+        "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+        "relative_shift": 0.04,
+        "shifts_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "uses_temporal_history": false,
+        "thresholds_unchanged": true
+      },
+      "passes": [
+        {
+          "roi_xyxy_raw": [
+            653,
+            151,
+            883,
+            591
+          ],
+          "total_ms": 6.8326
+        },
+        {
+          "roi_xyxy_raw": [
+            644,
+            133,
+            874,
+            573
+          ],
+          "total_ms": 5.8626
+        },
+        {
+          "roi_xyxy_raw": [
+            644,
+            169,
+            874,
+            609
+          ],
+          "total_ms": 6.5225
+        },
+        {
+          "roi_xyxy_raw": [
+            662,
+            133,
+            892,
+            573
+          ],
+          "total_ms": 5.5957
+        },
+        {
+          "roi_xyxy_raw": [
+            662,
+            169,
+            892,
+            609
+          ],
+          "total_ms": 6.2609
+        }
+      ],
+      "mask_association": {
+        "method": "WHOLE_COMPONENT_TARGET_BOX_INTERSECTION_NO_PIXEL_CLIPPING",
+        "removed_components": [],
+        "registered_shape": "rectangle",
+        "circle_component_gate": null,
+        "quad_component_gate": "CONTOUR_OR_INDEPENDENT_LINES_IOU_0_85",
+        "retained_significant_components": 1,
+        "mask_pixels_clipped_to_box": false
+      }
+    }
+  ],
+  "image_processing": "RAW",
+  "physical_execution": false,
+  "path_submissions": 0,
+  "total_ms": 203.3743,
+  "metric_localization_accepted": false,
+  "npu_acceptance": "NOT_ACCEPTED",
+  "rocm_acceptance": "NOT_ACCEPTED"
+}

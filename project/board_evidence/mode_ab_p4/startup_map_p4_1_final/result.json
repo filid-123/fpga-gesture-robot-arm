@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "tests": 3,
+  "scope": "Actual generated Tcl loadhw/ABI/bootstrap and first telemetry, with faithful restricted-map stub",
+  "old_four_page_fault_reproduced": true,
+  "hotfix_id": "startup_route_map_p4_1",
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "pc/mode_ab/native_upload.py": "246c08a5126c054ac63256be6e96ffd80516cc230411e24825e823aa25930f6b",
+    "pc/mode_ab/board.py": "a41765ce2792a557923faae629fdfa105068a497d597a6d1b13c735d882ea266",
+    "pc/mode_ab/registers.py": "e696b557a767ca37fe691e89cd348f21edc769956ae9d3b5e8c0b220404a52d3",
+    "scripts/test_mode_ab_startup_map.py": "5f3020fe54eb0d1e8ee2e8b90be45d41e8ac9e0443723f4fd129d8e6895220e1"
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "result": "PC_PREFLIGHT_PASS_NO_HARDWARE",
+  "input_hashes": {
+    "D:\\FPGA_Projects\\Gesture\\deliverables\\Gesture_ModeA_ClosedLoop_v0.4.0_20261027_ReviewCandidate\\hardware\\roarm_closed_loop.bit": "84fa1a5f32008e57e82876ed3c34f2f033295e49a72183dad0acbfe99afea893",
+    "D:\\FPGA_Projects\\Gesture\\deliverables\\Gesture_ModeA_ClosedLoop_v0.4.0_20261027_ReviewCandidate\\hardware\\roarm_closed_loop.hwh": "3ec4980566d237f44e9632f6533d75ef71961646cf7f050f0a552429e2ced4a8",
+    "D:\\FPGA_Projects\\Gesture\\deliverables\\Gesture_ModeA_ClosedLoop_v0.4.0_20261027_ReviewCandidate\\hardware\\roarm_closed_loop.xsa": "76551c882b2f3f963490792643e6d64e2a5fa367c5af931384cb14d467e20ba4"
+  },
+  "logic": {
+    "tcl_cases": [
+      {
+        "case": "check_only",
+        "result": "PASS_PC_TCL_NO_HARDWARE"
+      },
+      {
+        "case": "pass",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 0,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "legacy_model_id",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "first_id_timeout",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "snapshot_read_fault",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "malformed_word",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "reset_readback_fault",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 3,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "cpu_read_fault",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 3,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "id_mismatch",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "configuration_status_error",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "startup_incomplete",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "motion_write_denied",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "diagnostic_write_denied",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "diagnostic_read_denied",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "stream_without_owner",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      },
+      {
+        "case": "stream_overrun",
+        "result": "PASS_PC_TCL_SIMULATION",
+        "exit": 2,
+        "no_queries_after_fault": true
+      }
+    ],
+    "camera_host_cases": [
+      {
+        "case": "pass",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 138,
+        "clock_s": 0.9
+      },
+      {
+        "case": "bad_abi",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 1,
+        "clock_s": 0
+      },
+      {
+        "case": "legacy_model_id",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 2,
+        "clock_s": 0
+      },
+      {
+        "case": "snapshot_timeout",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 508,
+        "clock_s": 10.019999999999875
+      },
+      {
+        "case": "snapshot_dimensions",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 10,
+        "clock_s": 0
+      },
+      {
+        "case": "snapshot_identity",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 46,
+        "clock_s": 0
+      },
+      {
+        "case": "snapshot_axi_timeout",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 11,
+        "clock_s": 0
+      },
+      {
+        "case": "format_image",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 13,
+        "clock_s": 0
+      },
+      {
+        "case": "format_live",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 48,
+        "clock_s": 0
+      },
+      {
+        "case": "age251",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 48,
+        "clock_s": 0.3
+      },
+      {
+        "case": "no_fresh_frame",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 48,
+        "clock_s": 5.04999999999999
+      },
+      {
+        "case": "init_error",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 3,
+        "clock_s": 0
+      },
+      {
+        "case": "clock_lost",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 3,
+        "clock_s": 0
+      },
+      {
+        "case": "fatal",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 3,
+        "clock_s": 0
+      },
+      {
+        "case": "incoherent",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 3,
+        "clock_s": 0
+      },
+      {
+        "case": "padding_corrupt",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 47,
+        "clock_s": 0
+      },
+      {
+        "case": "D5_high",
+        "result": "PASS_PC_HOST_SIMULATION",
+        "requests": 0,
+        "clock_s": 0
+      }
+    ],
+    "exposure_cases": [
+      {
+        "case": "pass",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "nack",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "notready",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "restore",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "bounds",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "actions",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "seq_wrap",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "timeout",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "echo_mismatch",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "readback_mismatch",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "initial_result_wait",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "initial_result_timeout",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      },
+      {
+        "case": "initial_result_stale",
+        "result": "PASS_PC_EXPOSURE_NO_HARDWARE"
+      }
+    ],
+    "monitor_cases": [
+      {
+        "case": "all_stable_task_LED_codes_invalid_and_fatal",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "real_loop_operator_stop_three_streamed_samples_no_snapshot",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "cleanup_operator_stop",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "cleanup_startup_error",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "cleanup_sensor_command_error",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "cleanup_sensor_restore_error",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "cleanup_AXI_error",
+        "result": "PASS_PC_MONITOR"
+      },
+      {
+        "case": "actual_SIGINT_handler_requests_stop_cleanup_and_restores_handler",
+        "result": "PASS_PC_MONITOR"
+      }
+    ],
+    "v2_cases": [
+      {
+        "case": "label_one_model_task_mapping_dedup_and_windows",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "label_two_model_task_mapping_dedup_and_windows",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "label_three_model_task_mapping_dedup_and_windows",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "label_fist_model_task_mapping_dedup_and_windows",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "label_palm_model_task_mapping_dedup_and_windows",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "qualification_and_fresh_valid_both_required",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "empty_background_nondetection_and_false_gesture",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "unlabelled_never_reports_accuracy",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "frame_and_acquisition_wrap_kept_as_new_results",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "real_observer_duration",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "real_observer_images_before_counts",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "real_observer_wrong_model",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "real_observer_stalled",
+        "result": "PASS_PC_V2"
+      },
+      {
+        "case": "legacy_package_rejected_before_hardware",
+        "result": "PASS_PC_V2"
+      }
+    ]
+  },
+  "source_hashes": {
+    "monitor.py": "f8a0fb0f8eb4ee6adffe76bc4c0b1963ed36c8547c939fd6876a09f4298b9740",
+    "check_preflight.py": "ba221be42dcfa446cfff16fa0078467f57c129d8731df0867f8bbe9b89f621e8",
+    "pc_cases.py": "670b6d13042cc730d0b846e70ac5480e3c693a785cbdafd6f0bf42d7ecdd8dd1",
+    "service_owner.py": "efd417f104a6c5a8f8301dc682519570c2ba834434898a07d22211366c955a81",
+    "transport_reused.py": "4c27e2734377a9c77c4f64d83c25bd7a4af7d29a8e097ce00693193fb700af40",
+    "verify_camera.py": "4ddc3c59df0820ca5366260c7c8f368c6fff6aa7a98d446da05cd2bac13eac9d",
+    "verify_exposure.py": "68ff370fe2191a2f03fcc4cd578933d1fff6a7355dfaabdf54a63289251c3168",
+    "png_helper.py": "3e64cb8e790bcffdbdeba0aa5758922e33c47feb2a5f01cbeadcb13294a75baa",
+    "mock_xsdb.tcl": "f2fa3160012d32ce8447f3bda58af9b61a1b92f639fa3dbfc76403b3240392f0",
+    "jtag_bridge.tcl": "4fc30e426eb019f646deb100cb1790bbccab766f2aa5e63c2661314626d51c52",
+    "SOURCE_CHECKPOINT.json": "008346049326229e98b5cd98ff041e21ee74d7286f37116da1dfa786e75b5007",
+    "SELECTED_PROFILE.json": "0d1c25904dc3a85859f0557c8a22be3767ef10f2559ad81339873e802135828d",
+    "AUTHORIZATION.json": "2e78ef90500fc9704ecd62e46f2e01f47808b52fb584ad588bf00e340f189609",
+    "PS_STARTUP_BASELINE.tcl": "4fc30e426eb019f646deb100cb1790bbccab766f2aa5e63c2661314626d51c52"
+  },
+  "proven_PS_startup_restore_fault_dispatcher_identical_except_expected_model_ID": true,
+  "hardware_access": false,
+  "new_launcher_hardware_test": "NOT_RUN"
+}

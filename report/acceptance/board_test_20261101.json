@@ -1,0 +1,771 @@
+{
+  "schema": "gesture.mode_ab.operator_acceptance.v1",
+  "recorded_date_local": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "status": "USABLE_USER_ACCEPTED",
+  "source_revision_before_documentation": "e2e43d0276636df48eb09b6ab8a24bc98003d11e",
+  "operator_confirmation": {
+    "source": "OPERATOR_FIELD_ACCEPTANCE",
+    "physical_task_result": "PASS_USER_CONFIRMED",
+    "scope": "Current AB version accepted by the operator; physical success was observed by the operator, not inferred solely from PL counters.",
+    "summary": "Operator accepted p4.1 as the usable baseline after physical task testing."
+  },
+  "release": {
+    "version": "0.1.0-p4.1",
+    "directory": "D:\\FPGA_Projects\\Gesture\\deliverables\\gesture_mode_ab_v0_1_0_20261030_p4",
+    "patch_id": "native_giao_full_workspace_p4",
+    "hotfix_id": "startup_route_map_p4_1",
+    "task_abi": "0x340E",
+    "route_abi": "0xB001",
+    "hardware_build": "a14",
+    "archive_path": "D:\\FPGA_Projects\\Gesture\\deliverables\\gesture_mode_ab_v0_1_0_20261030_p4_1.zip",
+    "archive_sha256": "c29a4f659c341646d2354006435401aa5458eb135630601a7b1077b9ba7b8adf",
+    "archive_bytes": 231256847,
+    "archive_identity_source": "board_evidence/mode_ab_startup_p4_1/archive.json (existing seal; not regenerated)"
+  },
+  "log_scope": {
+    "root": "D:\\FPGA_Projects\\Gesture\\deliverables\\gesture_mode_ab_v0_1_0_20261030_p4\\runs",
+    "run_count": 6,
+    "telemetry_rows": 24446,
+    "completion_counts": {
+      "A/red_cube/DELIVERY": 2,
+      "A/blue_cube/DELIVERY": 3,
+      "A/blue_cube/RESTOCK": 3,
+      "B/small_canister/DELIVERY": 4,
+      "B/red_cube/DELIVERY": 2,
+      "B/small_canister/RESTOCK": 3
+    },
+    "count_semantics": "Positive PL done/restocked counter edges, attributed to mode and class using control task IDs. These are program completions; operator confirmation supplies physical acceptance. cancelled_counter also includes rejected selections, so it is not a physical return success count.",
+    "raw_logs_modified": false,
+    "raw_logs_published": false
+  },
+  "coverage_limits": [
+    "Logs contain completed A red/blue deliveries and blue restock, B red/canister deliveries and canister restock; eraser tasks were cancelled and no completed eraser delivery is recorded in these six sessions.",
+    "A/B fixed HOME transitions are recorded in both directions. Shared red inventory logic remains part of the accepted version; no independent exhaustive stock-consistency experiment is claimed.",
+    "Finite offline workspace coverage is not continuous physical workspace validation. No measured success-rate, latency percentile, grip/slip or stop-distance claim is added.",
+    "Original runtime physical_success fields remain null; no session result is rewritten."
+  ],
+  "open_issues": [
+    {
+      "id": "XSDB_INVALID_CONTEXT",
+      "status": "OPEN",
+      "runs": [
+        "ab_20261030_225113",
+        "ab_20261031_233419"
+      ],
+      "observation": "Both sessions completed tasks before later JTAG Invalid context termination; PS/PL restoration was not confirmed and logs require an operator power cycle. Cause not diagnosed or fixed in this documentation update."
+    },
+    {
+      "id": "UART_INTERMITTENT_HISTORICAL",
+      "status": "OPEN",
+      "observation": "No feedback_errors/timeouts or FPGA fault in the 24446 recorded telemetry rows. Historical intermittent UART issue is not declared fixed."
+    },
+    {
+      "id": "NPU_MODEL_COMPILATION",
+      "status": "NOT_PASSED",
+      "observation": "Accepted runtime remains Windows native ROCm GPU perception and CPU localization/planning; no NPU execution claimed."
+    }
+  ],
+  "documentation_update": {
+    "new_hardware_access": false,
+    "new_tests": "NOT_RUN_DOCUMENTATION_ONLY",
+    "runtime_rtl_models_paths_speed_modified": false,
+    "package_resealed_or_rebuilt": false
+  },
+  "sessions": [
+    {
+      "run": "ab_20261030_222822",
+      "execution": "REAL_HARDWARE_SESSION",
+      "patch_id": "native_giao_full_workspace_p4",
+      "hotfix_id": "startup_route_map_p4_1",
+      "started_utc": "2026-10-30T14:28:22.670250+00:00",
+      "finished_utc": "2026-10-30T14:49:52.461979+00:00",
+      "result": "OPERATOR_STOPPED",
+      "error": null,
+      "shutdown": {
+        "pl_trace": {
+          "file": "pl_trace.json",
+          "total": 71998,
+          "retained": 256
+        },
+        "PS_CPU_restore": "CONFIRMED"
+      },
+      "physical_success_field": null,
+      "telemetry_rows": 4258,
+      "fpga_modes": {
+        "A": 1102,
+        "B": 3156
+      },
+      "faults": {
+        "NONE": 4258
+      },
+      "maximum_counters": {
+        "done_counter": 3,
+        "cancelled_counter": 24,
+        "restocked_tasks": 1,
+        "feedback_errors": 0,
+        "feedback_timeouts": 0,
+        "native_route_error": 0
+      },
+      "completion_counts": {
+        "A/red_cube/DELIVERY": 1,
+        "A/blue_cube/DELIVERY": 1,
+        "A/blue_cube/RESTOCK": 1,
+        "B/small_canister/DELIVERY": 1
+      },
+      "completion_edges": [
+        {
+          "timestamp_utc": "2026-10-30T14:29:58.497875+00:00",
+          "mode": "A",
+          "class_name": "red_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 1,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-30T14:32:17.389447+00:00",
+          "mode": "A",
+          "class_name": "blue_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 2,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-30T14:32:52.084967+00:00",
+          "mode": "A",
+          "class_name": "blue_cube",
+          "kind": "RESTOCK",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 1,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-30T14:38:43.891424+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 10,
+          "counter": 3,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        }
+      ],
+      "task_events": {
+        "selection_rejected": 21,
+        "planning_started": 2,
+        "path_committed": 2,
+        "pl_completed": 1,
+        "pl_cancelled_returned": 1
+      },
+      "b_task_outcomes": {
+        "small_canister/DELIVERY/completed": 1,
+        "eraser/DELIVERY/cancelled": 1
+      },
+      "mode_transitions": [
+        {
+          "completed": true,
+          "to_mode": "B",
+          "from_mode": "A"
+        }
+      ],
+      "source_files": {
+        "session_result.json": {
+          "bytes": 493,
+          "sha256": "a9de7a29baf9d150a44d3f317b0bcbbf92dfa5da6d6514940330623e41abe1a4"
+        },
+        "shutdown.json": {
+          "bytes": 132,
+          "sha256": "6a32698e4fab529a9e21e665dcc4a49e72d43b2683717982d68e1cfdef199341"
+        },
+        "telemetry.jsonl": {
+          "bytes": 12474231,
+          "sha256": "cd96f5b6bf326bf28d2f523facbbc77fbb51ea4aef7082f206be47f0b65b236a"
+        },
+        "tasks.jsonl": {
+          "bytes": 142279,
+          "sha256": "e33ffe247b260be67b6c786a7a0a2c61208634138279ff4aed5c1e15d919495f"
+        },
+        "control.jsonl": {
+          "bytes": 56758,
+          "sha256": "7282e32389332f7302ee9b0bab1dd659a6fb9090a04a944845aa1b5d88d155c0"
+        },
+        "tools/jtag_actual.log": {
+          "bytes": 4331420,
+          "sha256": "a3dc2a0a00abfc8fd974d98579f795889d730e304f6a684ec4cc311929aa8e34"
+        },
+        "tools/jtag_bridge.tcl": {
+          "bytes": 21006,
+          "sha256": "19a1aaa28fe1d1b12ad420901ba896b594eb349d7fba64a6162bcb177d02fd76"
+        }
+      }
+    },
+    {
+      "run": "ab_20261030_225113",
+      "execution": "REAL_HARDWARE_SESSION",
+      "patch_id": "native_giao_full_workspace_p4",
+      "hotfix_id": "startup_route_map_p4_1",
+      "started_utc": "2026-10-30T14:51:14.431132+00:00",
+      "finished_utc": "2026-10-30T15:05:57.639954+00:00",
+      "result": "STOPPED_ERROR",
+      "error": "RuntimeError('JTAG_REPLY 7277 ERROR Code 16 Time 1793372748211 Format {Invalid context}')",
+      "shutdown": {
+        "shutdown_error": "RuntimeError('XSDB exit 0; restore completion not confirmed')",
+        "requires_operator_power_cycle": true
+      },
+      "physical_success_field": null,
+      "telemetry_rows": 2726,
+      "fpga_modes": {
+        "A": 32,
+        "B": 2694
+      },
+      "faults": {
+        "NONE": 2726
+      },
+      "maximum_counters": {
+        "done_counter": 1,
+        "cancelled_counter": 10,
+        "restocked_tasks": 0,
+        "feedback_errors": 0,
+        "feedback_timeouts": 0,
+        "native_route_error": 0
+      },
+      "completion_counts": {
+        "B/red_cube/DELIVERY": 1
+      },
+      "completion_edges": [
+        {
+          "timestamp_utc": "2026-10-30T14:56:54.211486+00:00",
+          "mode": "B",
+          "class_name": "red_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 8,
+          "counter": 1,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        }
+      ],
+      "task_events": {
+        "selection_rejected": 9,
+        "planning_started": 2,
+        "path_committed": 2,
+        "pl_completed": 1,
+        "pl_cancelled_returned": 1
+      },
+      "b_task_outcomes": {
+        "red_cube/DELIVERY/completed": 1,
+        "eraser/DELIVERY/cancelled": 1
+      },
+      "mode_transitions": [
+        {
+          "completed": true,
+          "to_mode": "B",
+          "from_mode": "A"
+        }
+      ],
+      "source_files": {
+        "session_result.json": {
+          "bytes": 586,
+          "sha256": "4eb94716749cf962379c315d525043412c8b68ad17fcf60ea9cf116f6fc5aabc"
+        },
+        "shutdown.json": {
+          "bytes": 131,
+          "sha256": "0d3fae78c2ad3a76ead89fe0141a5d46d8af115a50a2a763615f65d61d1e9820"
+        },
+        "telemetry.jsonl": {
+          "bytes": 7931272,
+          "sha256": "f48f6bef9079a14803b7ac5a46df31fdc7fe3491aeb5d9551369be141eb90c4b"
+        },
+        "tasks.jsonl": {
+          "bytes": 66992,
+          "sha256": "7cf58fd263888e8cc6d55c7ad0b3df895e760c0499135b845ce46df7733c2322"
+        },
+        "control.jsonl": {
+          "bytes": 26933,
+          "sha256": "eb996e6e0f9a593b0c50b58d07ab49998d9cc213b508b95addef74baf4e28153"
+        },
+        "tools/jtag_actual.log": {
+          "bytes": 2928412,
+          "sha256": "2394197b7bd1096221575ec9a8c0a18987dd3d9480dcd68e1baf2f232a9ab916"
+        },
+        "tools/jtag_bridge.tcl": {
+          "bytes": 21006,
+          "sha256": "19a1aaa28fe1d1b12ad420901ba896b594eb349d7fba64a6162bcb177d02fd76"
+        }
+      }
+    },
+    {
+      "run": "ab_20261030_233230",
+      "execution": "REAL_HARDWARE_SESSION",
+      "patch_id": "native_giao_full_workspace_p4",
+      "hotfix_id": "startup_route_map_p4_1",
+      "started_utc": "2026-10-30T15:32:31.082389+00:00",
+      "finished_utc": "2026-10-30T16:10:27.083388+00:00",
+      "result": "OPERATOR_STOPPED",
+      "error": null,
+      "shutdown": {
+        "pl_trace": {
+          "file": "pl_trace.json",
+          "total": 124564,
+          "retained": 256
+        },
+        "PS_CPU_restore": "CONFIRMED"
+      },
+      "physical_success_field": null,
+      "telemetry_rows": 7163,
+      "fpga_modes": {
+        "A": 1387,
+        "B": 5776
+      },
+      "faults": {
+        "NONE": 7163
+      },
+      "maximum_counters": {
+        "done_counter": 2,
+        "cancelled_counter": 34,
+        "restocked_tasks": 1,
+        "feedback_errors": 0,
+        "feedback_timeouts": 0,
+        "native_route_error": 0
+      },
+      "completion_counts": {
+        "B/small_canister/DELIVERY": 1,
+        "B/red_cube/DELIVERY": 1,
+        "B/small_canister/RESTOCK": 1
+      },
+      "completion_edges": [
+        {
+          "timestamp_utc": "2026-10-30T15:54:18.580856+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 10,
+          "counter": 1,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-30T16:03:27.748087+00:00",
+          "mode": "B",
+          "class_name": "red_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 33,
+          "counter": 2,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-30T16:04:34.522398+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "RESTOCK",
+          "counter_increment": 1,
+          "selected_task_id": 35,
+          "counter": 1,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        }
+      ],
+      "task_events": {
+        "selection_rejected": 30,
+        "planning_started": 7,
+        "path_committed": 7,
+        "pl_cancelled_returned": 4,
+        "pl_completed": 3
+      },
+      "b_task_outcomes": {
+        "small_canister/DELIVERY/cancelled": 3,
+        "red_cube/DELIVERY/cancelled": 1,
+        "small_canister/DELIVERY/completed": 1,
+        "red_cube/DELIVERY/completed": 1,
+        "small_canister/RESTOCK/completed": 1
+      },
+      "mode_transitions": [
+        {
+          "completed": true,
+          "to_mode": "B",
+          "from_mode": "A"
+        },
+        {
+          "completed": true,
+          "to_mode": "A",
+          "from_mode": "B"
+        },
+        {
+          "completed": true,
+          "to_mode": "B",
+          "from_mode": "A"
+        }
+      ],
+      "source_files": {
+        "session_result.json": {
+          "bytes": 494,
+          "sha256": "d2e937310eaf005c4b7dd2604a79be94d01c9f935003ee5254a17224f54736de"
+        },
+        "shutdown.json": {
+          "bytes": 133,
+          "sha256": "cabc4141a26aa5ee66a991e768c3e610b91a534b3a3c79e517a5ac9665911441"
+        },
+        "telemetry.jsonl": {
+          "bytes": 20904929,
+          "sha256": "a995b3939a1e237265f9d21790dbeb16921cfcab1840988922f01c5f77bae269"
+        },
+        "tasks.jsonl": {
+          "bytes": 351219,
+          "sha256": "0a0d3bf76fb8fec123c20e12e1e495b196702ebc4f7094fb74163e3f144a6ff8"
+        },
+        "control.jsonl": {
+          "bytes": 172399,
+          "sha256": "e011af40dc129763310800d9c7bc806401eb0ea662d35856c1faec0422c084fb"
+        },
+        "tools/jtag_actual.log": {
+          "bytes": 7906758,
+          "sha256": "06c293c40ec62407e2fdc8bdad7d5bf69e91f7889026c670ea7b6efa80b6f09f"
+        },
+        "tools/jtag_bridge.tcl": {
+          "bytes": 21006,
+          "sha256": "19a1aaa28fe1d1b12ad420901ba896b594eb349d7fba64a6162bcb177d02fd76"
+        }
+      }
+    },
+    {
+      "run": "ab_20261031_230338",
+      "execution": "REAL_HARDWARE_SESSION",
+      "patch_id": "native_giao_full_workspace_p4",
+      "hotfix_id": "startup_route_map_p4_1",
+      "started_utc": "2026-10-31T15:03:41.941121+00:00",
+      "finished_utc": "2026-10-31T15:04:05.616625+00:00",
+      "result": "STOPPED_ERROR",
+      "error": "RuntimeError('VERIFY_ERROR D5 not high at launch; exit and preconnect D5 before next run')",
+      "shutdown": {
+        "PS_CPU_restore": "CONFIRMED"
+      },
+      "physical_success_field": null,
+      "telemetry_rows": 0,
+      "fpga_modes": {},
+      "faults": {},
+      "maximum_counters": {
+        "done_counter": null,
+        "cancelled_counter": null,
+        "restocked_tasks": null,
+        "feedback_errors": null,
+        "feedback_timeouts": null,
+        "native_route_error": null
+      },
+      "completion_counts": {},
+      "completion_edges": [],
+      "task_events": {},
+      "b_task_outcomes": {},
+      "mode_transitions": [],
+      "source_files": {
+        "session_result.json": {
+          "bytes": 491,
+          "sha256": "056b1f2ce2c69a01d87f0198479769568f57ccb178d966827ac971490b198c24"
+        },
+        "shutdown.json": {
+          "bytes": 37,
+          "sha256": "d67ef0d17a073c1c617440a6e13df92643f09d8f65beed5f215ecb9beb9e8fe5"
+        },
+        "telemetry.jsonl": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "tasks.jsonl": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "tools/jtag_actual.log": {
+          "bytes": 5506,
+          "sha256": "958d81cd2122cea2fdcb48e0fa55a18153b34ab6caf7bfeb2f0d006b896d43a0"
+        },
+        "tools/jtag_bridge.tcl": {
+          "bytes": 21006,
+          "sha256": "19a1aaa28fe1d1b12ad420901ba896b594eb349d7fba64a6162bcb177d02fd76"
+        }
+      }
+    },
+    {
+      "run": "ab_20261031_230618",
+      "execution": "REAL_HARDWARE_SESSION",
+      "patch_id": "native_giao_full_workspace_p4",
+      "hotfix_id": "startup_route_map_p4_1",
+      "started_utc": "2026-10-31T15:06:19.271632+00:00",
+      "finished_utc": "2026-10-31T15:30:33.026650+00:00",
+      "result": "OPERATOR_STOPPED",
+      "error": null,
+      "shutdown": {
+        "pl_trace": {
+          "file": "pl_trace.json",
+          "total": 87878,
+          "retained": 256
+        },
+        "PS_CPU_restore": "CONFIRMED"
+      },
+      "physical_success_field": null,
+      "telemetry_rows": 5279,
+      "fpga_modes": {
+        "A": 5279
+      },
+      "faults": {
+        "NONE": 5279
+      },
+      "maximum_counters": {
+        "done_counter": 0,
+        "cancelled_counter": 0,
+        "restocked_tasks": 0,
+        "feedback_errors": 0,
+        "feedback_timeouts": 0,
+        "native_route_error": 0
+      },
+      "completion_counts": {},
+      "completion_edges": [],
+      "task_events": {},
+      "b_task_outcomes": {},
+      "mode_transitions": [],
+      "source_files": {
+        "session_result.json": {
+          "bytes": 493,
+          "sha256": "20022c344662fcd80db63b6bfd55b2d2340379653ed37f86be5e5f06a620824a"
+        },
+        "shutdown.json": {
+          "bytes": 132,
+          "sha256": "a6ef48515df8c6c523d4b3769e222b8e477e1f09515a9ff1004c9016e4f13856"
+        },
+        "telemetry.jsonl": {
+          "bytes": 15178525,
+          "sha256": "97a29731d18d76b37fd50955ae0b790600fb59ee031f54a6ad0cc37c08706275"
+        },
+        "tasks.jsonl": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "tools/jtag_actual.log": {
+          "bytes": 4587259,
+          "sha256": "a58de3aa76ae9fa53a54e10fbf628d3ba3c3571cbefb86c5f81804bcd3015655"
+        },
+        "tools/jtag_bridge.tcl": {
+          "bytes": 21006,
+          "sha256": "19a1aaa28fe1d1b12ad420901ba896b594eb349d7fba64a6162bcb177d02fd76"
+        }
+      }
+    },
+    {
+      "run": "ab_20261031_233419",
+      "execution": "REAL_HARDWARE_SESSION",
+      "patch_id": "native_giao_full_workspace_p4",
+      "hotfix_id": "startup_route_map_p4_1",
+      "started_utc": "2026-10-31T15:34:21.103048+00:00",
+      "finished_utc": "2026-10-31T16:00:48.289113+00:00",
+      "result": "STOPPED_ERROR",
+      "error": "RuntimeError('JTAG_REPLY 10144 ERROR Invalid context')",
+      "shutdown": {
+        "shutdown_error": "RuntimeError('XSDB exit 0; restore completion not confirmed')",
+        "requires_operator_power_cycle": true
+      },
+      "physical_success_field": null,
+      "telemetry_rows": 5020,
+      "fpga_modes": {
+        "A": 2162,
+        "B": 2858
+      },
+      "faults": {
+        "NONE": 5020
+      },
+      "maximum_counters": {
+        "done_counter": 5,
+        "cancelled_counter": 16,
+        "restocked_tasks": 4,
+        "feedback_errors": 0,
+        "feedback_timeouts": 0,
+        "native_route_error": 0
+      },
+      "completion_counts": {
+        "A/red_cube/DELIVERY": 1,
+        "A/blue_cube/DELIVERY": 2,
+        "A/blue_cube/RESTOCK": 2,
+        "B/small_canister/DELIVERY": 2,
+        "B/small_canister/RESTOCK": 2
+      },
+      "completion_edges": [
+        {
+          "timestamp_utc": "2026-10-31T15:38:33.685476+00:00",
+          "mode": "A",
+          "class_name": "red_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 1,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:40:32.631143+00:00",
+          "mode": "A",
+          "class_name": "blue_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 2,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:41:20.587698+00:00",
+          "mode": "A",
+          "class_name": "blue_cube",
+          "kind": "RESTOCK",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 1,
+          "state": "RUN",
+          "at_home": false,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:42:29.278810+00:00",
+          "mode": "A",
+          "class_name": "blue_cube",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 3,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:43:11.079055+00:00",
+          "mode": "A",
+          "class_name": "blue_cube",
+          "kind": "RESTOCK",
+          "counter_increment": 1,
+          "selected_task_id": 0,
+          "counter": 2,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:47:02.878640+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 1,
+          "counter": 4,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:54:45.324214+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "RESTOCK",
+          "counter_increment": 1,
+          "selected_task_id": 13,
+          "counter": 3,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:56:46.801813+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "DELIVERY",
+          "counter_increment": 1,
+          "selected_task_id": 15,
+          "counter": 5,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        },
+        {
+          "timestamp_utc": "2026-10-31T15:57:43.671215+00:00",
+          "mode": "B",
+          "class_name": "small_canister",
+          "kind": "RESTOCK",
+          "counter_increment": 1,
+          "selected_task_id": 16,
+          "counter": 4,
+          "state": "IDLE",
+          "at_home": true,
+          "fault": "NONE"
+        }
+      ],
+      "task_events": {
+        "planning_started": 10,
+        "path_committed": 7,
+        "pl_completed": 4,
+        "selection_rejected": 6,
+        "path_rejected": 3,
+        "pl_cancelled_returned": 3
+      },
+      "b_task_outcomes": {
+        "small_canister/DELIVERY/completed": 2,
+        "eraser/DELIVERY/cancelled": 1,
+        "small_canister/RESTOCK/cancelled": 5,
+        "small_canister/RESTOCK/completed": 2
+      },
+      "mode_transitions": [
+        {
+          "completed": true,
+          "to_mode": "B",
+          "from_mode": "A"
+        }
+      ],
+      "source_files": {
+        "session_result.json": {
+          "bytes": 551,
+          "sha256": "6ffef86a466d439bb528d481a04a40fa318829cd8260315da91113e0a28e33b0"
+        },
+        "shutdown.json": {
+          "bytes": 131,
+          "sha256": "0d3fae78c2ad3a76ead89fe0141a5d46d8af115a50a2a763615f65d61d1e9820"
+        },
+        "telemetry.jsonl": {
+          "bytes": 14731350,
+          "sha256": "bbfd1db749087ec8c4ef91e36f025375d2d28449e20f437bd8f5fdd5593b6bf9"
+        },
+        "tasks.jsonl": {
+          "bytes": 328634,
+          "sha256": "8a40e8d3b666ae0f34bf305636c7ea333d86d29b48cc4938ce8b54be626ff6a6"
+        },
+        "control.jsonl": {
+          "bytes": 227027,
+          "sha256": "cce1b5881ef69b2994eadd02ebcb895aac95aa620a019882e4c2faf9bb4c90cb"
+        },
+        "tools/jtag_actual.log": {
+          "bytes": 4980387,
+          "sha256": "cce06cece793fc4177164e09532fe095e0869530e4ccb9f9f95deeaf7b4a6919"
+        },
+        "tools/jtag_bridge.tcl": {
+          "bytes": 21006,
+          "sha256": "19a1aaa28fe1d1b12ad420901ba896b594eb349d7fba64a6162bcb177d02fd76"
+        }
+      }
+    }
+  ]
+}

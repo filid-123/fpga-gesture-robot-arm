@@ -1,0 +1,21 @@
+{
+  "schema": "robotics.metrics.v1",
+  "kind": "latency",
+  "conditions": "Original 9 saved RGB frames; FP32; Radeon8060S; torch2.13.0+rocm10.0.0; HIP7.15.26333; warm pipeline; no live camera or actuator measurement; see metrics/conditions.json",
+  "evidence_kind": "saved_input",
+  "samples": 9,
+  "input_sha256": "88746f139c4586bde918fc68f56eb9cf5dbee161908326171059a9b039b176c1",
+  "quantile_method": "linear interpolation at (n-1)*p; no unobserved maximum extrapolation",
+  "timing_ms": {
+    "duration_ms": {
+      "p50": 338.5307,
+      "p95": 364.4381,
+      "p99": 365.37442,
+      "max": 365.6085
+    }
+  },
+  "start_event": "Saved frame enters perception pipeline",
+  "end_event": "Perception result ready in host memory",
+  "tail_caveat": "Small sample percentiles do not establish long-run tail latency.",
+  "passed": true
+}

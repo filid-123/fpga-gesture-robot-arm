@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "geometry": {
+    "samples_checked": 6123,
+    "minimum_model_clearance_mm": -0.0006836367031421986
+  },
+  "fifo": 61,
+  "seconds": 2.0939999999973224,
+  "hardware_access": false,
+  "physical_test": "NOT_RUN"
+}

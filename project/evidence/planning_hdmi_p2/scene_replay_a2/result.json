@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "source_log_sha256": "b646c1a6b7db857d88cadeac912a112c1c17b7fbe7163346f63029f4e7cb88f5",
+  "class_name": "red_cube",
+  "delivery_geometry": {
+    "samples_checked": 15447,
+    "minimum_model_clearance_mm": 1.7763568394002505e-15
+  },
+  "delivery_fifo": 41,
+  "delivery_segments": 35,
+  "family": {
+    "passed": true,
+    "handover_steps": 65,
+    "ordered_retarget_pairs": 4160,
+    "model_samples_checked": 954864,
+    "minimum_clearance_mm": 4.000151313760085,
+    "native_rounding_checked": true,
+    "physical_test": "NOT_RUN"
+  },
+  "restock_geometry": {
+    "samples_checked": 6123,
+    "minimum_model_clearance_mm": -0.0006836367031421986
+  },
+  "restock_fifo": 61,
+  "seconds": 54.09300000000076,
+  "source_hashes": {
+    "pc/mode_ab/motion.py": "4f3185d7ac798f41d3cdad23c45fc6f8103815e7b6980766df1844e556da8f11",
+    "pc/mode_ab/runtime.py": "dabef45a547cabcb8a59085c45ec1ec1456afef883c1eb9c2f93677f82a347e1"
+  },
+  "hardware_access": false,
+  "physical_success": null,
+  "physical_test": "NOT_RUN"
+}

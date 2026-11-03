@@ -1,0 +1,215 @@
+{
+  "result": "V2_FINAL_SHARED_BANK_REFERENCE_PASS",
+  "validation": {
+    "routes": 9,
+    "samples": 9423,
+    "max_velocity_deg_s": 69.28543894060934,
+    "max_acceleration_difference_deg_s2": 177.0385032867305,
+    "max_target_position_after_quantization_mm": 0.004019135816392811,
+    "max_target_orientation_after_quantization_rad": 1.9440694209769534e-05,
+    "max_cartesian_chord_mm": 0.16765880162198418
+  },
+  "capacity": {
+    "keypoints": 47,
+    "segments": 59,
+    "stack_max": 23
+  },
+  "timing": [
+    {
+      "object": 1,
+      "interpolation_s": 29.06,
+      "fixed_settle_s": 6.176,
+      "nominal_without_operator_wait_s": 35.236
+    },
+    {
+      "object": 2,
+      "interpolation_s": 29.14,
+      "fixed_settle_s": 6.176,
+      "nominal_without_operator_wait_s": 35.316
+    },
+    {
+      "object": 3,
+      "interpolation_s": 29.74,
+      "fixed_settle_s": 6.176,
+      "nominal_without_operator_wait_s": 35.916
+    }
+  ],
+  "layout": {
+    "schema": "gesture.mode_a.layout.v1",
+    "layout_id": "mode_a_follow_y_255",
+    "units": "mm",
+    "datum": "Original desk left-front corner; +X right, +Y inward, +Z up",
+    "desk_size_mm": [
+      800,
+      600
+    ],
+    "base_axis_D_xy_mm": [
+      585,
+      25
+    ],
+    "camera": {
+      "lens_D_mm": [
+        195,
+        195,
+        333
+      ],
+      "optical_axis_assumption_D": [
+        0,
+        0,
+        -1
+      ],
+      "reported_view_D_xy_mm": [
+        [
+          0,
+          0
+        ],
+        [
+          390,
+          390
+        ]
+      ],
+      "reported_by_operator": true,
+      "height_dependent_pixel_mapping": "NOMINAL_PINHOLE_APPROXIMATION_NOT_PHYSICALLY_CALIBRATED",
+      "use": "Gesture selection and palm readiness; objects need not lie inside this view"
+    },
+    "slots_D_mm": [
+      [
+        530,
+        250,
+        15
+      ],
+      [
+        650,
+        250,
+        15
+      ],
+      [
+        590,
+        320,
+        15
+      ]
+    ],
+    "cube_size_mm": 30,
+    "common_D_mm": {
+      "INNER": [
+        585,
+        225,
+        90
+      ],
+      "B": [
+        360,
+        200,
+        160
+      ],
+      "PRE": [
+        350,
+        275,
+        180
+      ],
+      "H": [
+        285,
+        255,
+        175
+      ],
+      "H_CLEAR": [
+        285,
+        255,
+        195
+      ]
+    },
+    "palm_surface_candidate_z_mm": 150,
+    "delivery_pose": {
+      "type": "Radial tilt",
+      "held_H_deg": 35,
+      "clear_deg": 40,
+      "method": "HEIGHT_BLEND_175_TO_195_MM"
+    },
+    "arrival_policy": "observe_all",
+    "operator_ready_timeout_s": null,
+    "physical_validated": false
+  },
+  "profile": {
+    "version": "0.13.0",
+    "arrival_policy": "observe_all",
+    "arrival_mask": 0,
+    "task_abi": 13322,
+    "planned_speed_deg_s": 72.6,
+    "planned_acceleration_deg_s2": 239.58,
+    "handover_speed_deg_s": 29.7,
+    "handover_acceleration_deg_s2": 130.68,
+    "gripper_speed_deg_s": 74.25,
+    "gripper_acceleration_deg_s2": 326.7,
+    "release_speed_deg_s": 49.5,
+    "release_acceleration_deg_s2": 217.8,
+    "speed_steps_s": 1320,
+    "acceleration_100_steps_s2": 66,
+    "native_speed_deg_s": 116.015625,
+    "native_acceleration_deg_s2": 580.078125,
+    "period_ms": 20,
+    "settle_regular_s": 0.352,
+    "settle_grasp_s": 0.8,
+    "settle_release_s": 0.8,
+    "operator_ready_timeout_s": null,
+    "fist_hold_ms": 1000,
+    "predelivery_wait_ms": 2000,
+    "palm_hold_ms": 500,
+    "palm_loss_periods": 0,
+    "blind_after_pre_palm": true,
+    "readiness_source": "PL_REAL_CNN_PALM_READY",
+    "precision_is_not_a_motion_gate": true,
+    "baseline_version": "0.8.0",
+    "motion_speed_scale": 1.5,
+    "retiming": "N=ceil(v080_N/1.5), Na=max(1,N//4); 20ms samples, fixed settle and interaction unchanged",
+    "cancel_policy": "RETRACE_RETURN_TO_SLOT_THEN_HOME",
+    "hold_policy": false,
+    "pre_D_mm": [
+      320,
+      175,
+      180
+    ],
+    "delivery_D_mm": [
+      240,
+      155,
+      175
+    ],
+    "release_generation": 2,
+    "handalign": true,
+    "handalign_regions": 3,
+    "handalign_hold_ms": 80,
+    "handalign_min_frames": 2,
+    "handalign_max_age_ms": 250,
+    "handalign_offsets_mm": null,
+    "handalign_default_bank": 1,
+    "handalign_mapping": "Fresh raw center; image Y44/64/84 maps H Y255/195/135; clamp16..111",
+    "handalign_image_axis": "Y",
+    "handalign_desk_axis": "Y",
+    "handalign_height_unchanged": true,
+    "handalign_live_mailbox": true,
+    "handalign_settle_ms": 48,
+    "handalign_pair_specific_timing": true,
+    "camera_view_table_mm": 390,
+    "palm_plane_mm": 150,
+    "handalign_H_y_mm": [
+      135,
+      195,
+      255
+    ],
+    "handalign_H_x_mm": 285,
+    "handalign_PRE_x_mm": 350,
+    "handalign_storage_banks": 4,
+    "handalign_retarget": "PAUSE/drain/CLEAR, restart from LAST_DELIVERED; actual-delta timing",
+    "handalign_speed_deg_s": 49.5,
+    "handalign_acceleration_deg_s2": 320,
+    "motion_speed_scale_from_v010": 1.1,
+    "palm_admission": "Qualified fresh PALM plus accepted current Locator center cell; raw box extent/size is not a delivery-position condition",
+    "display": "256x192 source Gray8 on640x480 HDMI; one bbox; stage timing footer",
+    "planner_abi": 12803,
+    "jerk_general_deg_s3": 2000,
+    "jerk_handover_deg_s3": 800,
+    "jerk_gripper_deg_s3": 3000,
+    "jerk_align_deg_s3": 2000,
+    "scalar_profile": "QUINTIC_10u3_15u4_6u5_UQ32",
+    "handalign_continuous_steps": 64
+  },
+  "physical_robot": false
+}

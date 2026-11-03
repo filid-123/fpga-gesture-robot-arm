@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "built_sources": 91,
+  "changed_from_a7": [
+    "native_motion/rtl/hdmi/mode_a_font.mem",
+    "native_motion/rtl/hdmi/mode_a_renderer.v",
+    "native_motion/rtl/hdmi/mode_a_ui_text.vh"
+  ],
+  "unchanged_control_and_models": true,
+  "hardware_access": false,
+  "unchanged_existing_font_glyph_slots": 106
+}

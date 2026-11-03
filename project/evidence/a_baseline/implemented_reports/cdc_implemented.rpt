@@ -1,0 +1,22 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 05:07:29 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_cdc -file C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/board_evidence/mode_a_restock_impl_a2/implemented_reports/cdc_implemented.rpt
+| Design       : roarm_closed_loop_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock                                 Destination Clock                            CDC Type                 Exceptions           Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  -------------------------------------------  -------------------------------------------  -----------------------  -------------------  ---------  ----  ------  -------  ------------  
+Warning   ov5640_pclk                                  clk_fpga_1                                   No Common Primary Clock  Asynch Clock Groups         12    12       0        0             0  
+Warning   clk_fpga_1                                   clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  User Ignored             Asynch Clock Groups         84    84       0        0             0  
+Warning   clk_fpga_1                                   ov5640_pclk                                  No Common Primary Clock  Asynch Clock Groups         12    12       0        0             0  
+Info      clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  clk_fpga_1                                   User Ignored             Asynch Clock Groups          2     2       0        0             0  
+Info      input port clock                             clk_fpga_1                                   No Common Primary Clock  False Path                   4     4       0        0             0  
+

@@ -1,0 +1,5430 @@
+{
+  "schema": "gesture.ai_pc.mode_b_detector_stage.v1",
+  "status": "COMPLETED",
+  "inputs_sha256": "73a203fb12c82bba365a30edb425460e29974a4f4179dc8504d2a2659acc1ea9",
+  "policy": {
+    "tiled": true,
+    "surface_ensemble": true,
+    "detector_confidence": 0.4,
+    "surface_confidence": 0.7,
+    "image_processing": "RAW"
+  },
+  "records": [
+    {
+      "id": "six_00",
+      "pixel_sha256": "01f891358bc4493194012513a471cde8ffa4bea786aa466d22e85499ea6293b0",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9612320065498352,
+          "bbox_xyxy_raw": [
+            643.2662487030029,
+            536.8656635284424,
+            815.798921585083,
+            702.0634746551514
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9543890357017517,
+          "bbox_xyxy_raw": [
+            897.2783517837524,
+            509.1418933868408,
+            1055.687084197998,
+            667.4535512924194
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.921596884727478,
+          "bbox_xyxy_raw": [
+            746.7092800140381,
+            308.24383199214935,
+            907.3506617546082,
+            463.1433016061783
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9204273819923401,
+          "bbox_xyxy_raw": [
+            1149.9299454689026,
+            524.1665554046631,
+            1315.0075936317444,
+            678.3811283111572
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8432320356369019,
+          "bbox_xyxy_raw": [
+            558.0425906181335,
+            72.98738121986389,
+            1342.509355545044,
+            473.31319212913513
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6622005701065063,
+          "bbox_xyxy_raw": [
+            554.5656824111938,
+            336.53413116931915,
+            647.3430347442627,
+            652.7904242277145
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.1906,
+                "model": 61.1021,
+                "decode_nms": 1.2663
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.4259,
+                "model": 61.8052,
+                "decode_nms": 0.791
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.3799,
+                "model": 69.445,
+                "decode_nms": 0.9878
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.0427,
+                "model": 64.6285,
+                "decode_nms": 0.7397
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                562.9730558395386,
+                80.69193005561829,
+                1080,
+                466.52434945106506
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3001150488853,
+                307.09347009658813,
+                906.6543357074261,
+                466.40175104141235
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 10.0391,
+          "model": 256.9808,
+          "decode_nms": 3.7848,
+          "total_spatial_inference": 271.7819
+        }
+      }
+    },
+    {
+      "id": "six_01",
+      "pixel_sha256": "a7b704c387933cd51db09153073e58ddacf7c3f8878632ec7d2d39f679d86186",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9622014760971069,
+          "bbox_xyxy_raw": [
+            643.39035987854,
+            537.1859264373779,
+            815.773229598999,
+            702.0185565948486
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9575001001358032,
+          "bbox_xyxy_raw": [
+            896.5959978103638,
+            508.77685010433197,
+            1055.9459924697876,
+            667.5244098901749
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9237257242202759,
+          "bbox_xyxy_raw": [
+            1147.6456689834595,
+            524.220387339592,
+            1314.9274492263794,
+            678.3638602495193
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9221314191818237,
+          "bbox_xyxy_raw": [
+            746.1477541923523,
+            308.15974473953247,
+            907.6882982254028,
+            463.5233759880066
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8380601406097412,
+          "bbox_xyxy_raw": [
+            556.8135166168213,
+            75.01320004463196,
+            1342.415370941162,
+            471.60698533058167
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6947445869445801,
+          "bbox_xyxy_raw": [
+            554.1362822055817,
+            335.98201990127563,
+            649.6759450435638,
+            653.2829260826111
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 1.7816,
+                "model": 68.0102,
+                "decode_nms": 1.0301
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.068,
+                "model": 71.9159,
+                "decode_nms": 0.8678
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9406,
+                "model": 72.7505,
+                "decode_nms": 0.8389
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.3942,
+                "model": 73.6782,
+                "decode_nms": 0.8987
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                563.191409111023,
+                77.93716728687286,
+                1080,
+                470.80134093761444
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.340126901865,
+                307.1497482061386,
+                906.1306773126125,
+                465.742684006691
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 9.1844,
+          "model": 286.3548,
+          "decode_nms": 3.6355,
+          "total_spatial_inference": 299.9519
+        }
+      }
+    },
+    {
+      "id": "six_02",
+      "pixel_sha256": "b5c8eda5aa66cf56d9083f5aad25d9871f248f92a9549da3892b23187bfe2bf7",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9659519195556641,
+          "bbox_xyxy_raw": [
+            896.4225769042969,
+            508.8179039955139,
+            1056.1338329315186,
+            667.8735852241516
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9613394141197205,
+          "bbox_xyxy_raw": [
+            643.3985424041748,
+            537.3058319091797,
+            815.9900379180908,
+            701.9132995605469
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9233896732330322,
+          "bbox_xyxy_raw": [
+            1149.1588532924652,
+            524.4079381227493,
+            1314.8410284519196,
+            678.4515684843063
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.916885495185852,
+          "bbox_xyxy_raw": [
+            745.9822350740433,
+            307.3443800210953,
+            908.3977049589157,
+            463.7481826543808
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8450839519500732,
+          "bbox_xyxy_raw": [
+            557.8235936164856,
+            75.70212006568909,
+            1342.0205068588257,
+            471.96123003959656
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6761860847473145,
+          "bbox_xyxy_raw": [
+            549.276482462883,
+            333.03894996643066,
+            649.6345299482346,
+            651.7587018013
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.3269,
+                "model": 68.8461,
+                "decode_nms": 0.6928
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.4,
+                "model": 63.4986,
+                "decode_nms": 0.9129
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5235,
+                "model": 62.6808,
+                "decode_nms": 0.8389
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5159,
+                "model": 67.2415,
+                "decode_nms": 0.6411
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                562.44957447052,
+                79.38724994659424,
+                1080,
+                471.38898611068726
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.305727571249,
+                306.8610191345215,
+                906.0166284441948,
+                465.45746326446533
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 9.7663,
+          "model": 262.267,
+          "decode_nms": 3.0857,
+          "total_spatial_inference": 275.9683
+        }
+      }
+    },
+    {
+      "id": "six_03",
+      "pixel_sha256": "bca07f5e8d2dc3ff23fa84182f0320eb308d6b2378b0f4beda863e9f2bdf3e55",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9591420292854309,
+          "bbox_xyxy_raw": [
+            643.1711769104004,
+            536.5937519073486,
+            817.1335029602051,
+            702.4827861785889
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9484697580337524,
+          "bbox_xyxy_raw": [
+            897.0888698101044,
+            508.9901340007782,
+            1056.0149681568146,
+            667.729035615921
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9197362065315247,
+          "bbox_xyxy_raw": [
+            1148.6840057373047,
+            524.2476332187653,
+            1315.073447227478,
+            678.6543595790863
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9156290292739868,
+          "bbox_xyxy_raw": [
+            746.4036691188812,
+            308.454846739769,
+            908.2609283924103,
+            463.28183233737946
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8469361066818237,
+          "bbox_xyxy_raw": [
+            557.0190596580505,
+            66.96235656738281,
+            1340.9906029701233,
+            474.248628616333
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.737485408782959,
+          "bbox_xyxy_raw": [
+            552.033634185791,
+            335.73450565338135,
+            651.9832992553711,
+            653.9743566513062
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.0872,
+                "model": 60.0451,
+                "decode_nms": 0.8276
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.2612,
+                "model": 64.1735,
+                "decode_nms": 0.8302
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.2197,
+                "model": 62.1108,
+                "decode_nms": 1.0481
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.176,
+                "model": 59.7419,
+                "decode_nms": 0.6444
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                561.3884496688843,
+                75.62593460083008,
+                1080,
+                471.27427339553833
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2721811830997,
+                307.12823152542114,
+                906.5204881131649,
+                466.52721405029297
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 8.7441,
+          "model": 246.0713,
+          "decode_nms": 3.3503,
+          "total_spatial_inference": 258.964
+        }
+      }
+    },
+    {
+      "id": "six_04",
+      "pixel_sha256": "6e7c732065512a9e1e3eeaa678e4f58c8943ede7d0e20a7414112b20a4b94904",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9649564027786255,
+          "bbox_xyxy_raw": [
+            642.9999160766602,
+            535.9079074859619,
+            816.9033050537109,
+            702.4925136566162
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9581869840621948,
+          "bbox_xyxy_raw": [
+            895.5403769016266,
+            509.32284593582153,
+            1055.9950768947601,
+            667.4936556816101
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9190871715545654,
+          "bbox_xyxy_raw": [
+            746.0593378543854,
+            307.48078644275665,
+            907.7747189998627,
+            464.41425025463104
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9146953821182251,
+          "bbox_xyxy_raw": [
+            1147.0518922805786,
+            524.2403429746628,
+            1315.2199602127075,
+            678.6468440294266
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8411175608634949,
+          "bbox_xyxy_raw": [
+            557.3706007003784,
+            69.39745903015137,
+            1341.8002223968506,
+            473.56460094451904
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6980021595954895,
+          "bbox_xyxy_raw": [
+            551.8856897950172,
+            332.79980421066284,
+            649.2310962080956,
+            651.7518782615662
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 1.8747,
+                "model": 51.6022,
+                "decode_nms": 0.9151
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5811,
+                "model": 67.7008,
+                "decode_nms": 0.8305
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.2802,
+                "model": 45.6553,
+                "decode_nms": 0.8265
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 1.9244,
+                "model": 47.2021,
+                "decode_nms": 0.6319
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                564.3718814849854,
+                80.66041946411133,
+                1080,
+                468.0499577522278
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3009840846062,
+                306.7925423383713,
+                906.1974160373211,
+                466.58320248126984
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 8.6604,
+          "model": 212.1604,
+          "decode_nms": 3.204,
+          "total_spatial_inference": 224.7685
+        }
+      }
+    },
+    {
+      "id": "six_05",
+      "pixel_sha256": "80e9468dd972297cc1377073f36c9fb1c545b879c14ef59ead8266f4bc86f823",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9629716873168945,
+          "bbox_xyxy_raw": [
+            896.3884592056274,
+            509.27924931049347,
+            1056.130871772766,
+            667.4624508619308
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9594653844833374,
+          "bbox_xyxy_raw": [
+            643.0751037597656,
+            537.0067691802979,
+            815.8830642700195,
+            702.1480464935303
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9186150431632996,
+          "bbox_xyxy_raw": [
+            1148.2676088809967,
+            524.3581295013428,
+            1315.238403081894,
+            678.4691905975342
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9179084300994873,
+          "bbox_xyxy_raw": [
+            746.3079464435577,
+            308.08299601078033,
+            907.8842175006866,
+            463.67492616176605
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8399863839149475,
+          "bbox_xyxy_raw": [
+            558.8288426399231,
+            69.02848899364471,
+            1341.312918663025,
+            472.12546169757843
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6766378283500671,
+          "bbox_xyxy_raw": [
+            552.4265670776367,
+            335.69350004196167,
+            651.5138912200928,
+            652.9756093025208
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 1.6879,
+                "model": 47.4075,
+                "decode_nms": 1.9965
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 5.0968,
+                "model": 66.3067,
+                "decode_nms": 0.7979
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 1.7921,
+                "model": 44.9811,
+                "decode_nms": 0.8154
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.1241,
+                "model": 49.2812,
+                "decode_nms": 0.6358
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                564.5378351211548,
+                79.74781930446625,
+                1080,
+                472.76513636112213
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2870634198189,
+                306.828156709671,
+                906.4915725588799,
+                466.1033499240875
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 10.7009,
+          "model": 207.9765,
+          "decode_nms": 4.2456,
+          "total_spatial_inference": 223.771
+        }
+      }
+    },
+    {
+      "id": "six_06",
+      "pixel_sha256": "98dc34f3eb7d68568a89d711d5868413d8e4cb3832aeb8df2e07dfc853b86e40",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9613986611366272,
+          "bbox_xyxy_raw": [
+            896.092826128006,
+            509.1894006729126,
+            1056.0508239269257,
+            667.874550819397
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.957729160785675,
+          "bbox_xyxy_raw": [
+            643.377685546875,
+            536.8353080749512,
+            816.2269592285156,
+            702.1794319152832
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9176181554794312,
+          "bbox_xyxy_raw": [
+            1147.3633289337158,
+            524.058473110199,
+            1315.107822418213,
+            678.4709286689758
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9136630296707153,
+          "bbox_xyxy_raw": [
+            746.3627922534943,
+            307.63531386852264,
+            907.3683965206146,
+            464.24079716205597
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8390488624572754,
+          "bbox_xyxy_raw": [
+            557.8168988227844,
+            69.42410945892334,
+            1341.772220134735,
+            471.7496681213379
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6599091291427612,
+          "bbox_xyxy_raw": [
+            550.9136402606964,
+            335.1686829328537,
+            654.4376170635223,
+            653.2585126161575
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 1.7488,
+                "model": 60.8486,
+                "decode_nms": 0.7464
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 1.9846,
+                "model": 64.9064,
+                "decode_nms": 0.7961
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 1.7929,
+                "model": 62.3184,
+                "decode_nms": 0.8674
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 1.9851,
+                "model": 61.7386,
+                "decode_nms": 1.2354
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                563.8553524017334,
+                82.47483730316162,
+                1080,
+                468.331139087677
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2852649986744,
+                306.90001308918,
+                906.3978977501392,
+                466.4851301908493
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 7.5114,
+          "model": 249.812,
+          "decode_nms": 3.6452999999999998,
+          "total_spatial_inference": 261.92
+        }
+      }
+    },
+    {
+      "id": "six_07",
+      "pixel_sha256": "97d6407690dfbe46c7ffc6e86fa79e66654dbd3bbaff696f59c8513574cd66fc",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9626636505126953,
+          "bbox_xyxy_raw": [
+            643.6641311645508,
+            537.3805904388428,
+            814.9630737304688,
+            702.0328617095947
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9529287815093994,
+          "bbox_xyxy_raw": [
+            895.9346616268158,
+            508.8717359304428,
+            1056.083847284317,
+            667.3834329843521
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9143275022506714,
+          "bbox_xyxy_raw": [
+            1147.7659177780151,
+            524.2353218793869,
+            1314.7929096221924,
+            678.2972985506058
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9143165349960327,
+          "bbox_xyxy_raw": [
+            746.297727227211,
+            307.40609765052795,
+            907.6206582784653,
+            463.0554163455963
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8397426605224609,
+          "bbox_xyxy_raw": [
+            559.8071193695068,
+            73.1382554769516,
+            1341.2008452415466,
+            472.1674972772598
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.7585006952285767,
+          "bbox_xyxy_raw": [
+            550.7770577073097,
+            333.3120846748352,
+            649.5664796233177,
+            651.3131761550903
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.0075,
+                "model": 59.9492,
+                "decode_nms": 0.7719
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5747,
+                "model": 64.5161,
+                "decode_nms": 1.5732
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9089,
+                "model": 69.2702,
+                "decode_nms": 1.8434
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.3641,
+                "model": 64.2475,
+                "decode_nms": 0.6838
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                564.9469900131226,
+                85.69445371627808,
+                1080,
+                470.25569915771484
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2984091639519,
+                306.6670632362366,
+                906.2218657135963,
+                466.004376411438
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 9.8552,
+          "model": 257.983,
+          "decode_nms": 4.8723,
+          "total_spatial_inference": 273.615
+        }
+      }
+    },
+    {
+      "id": "six_08",
+      "pixel_sha256": "53fcb7d7655b8a141db9cd934874c07de5a5b53eb6d00f8f96f4c46625a4c5ce",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9629477858543396,
+          "bbox_xyxy_raw": [
+            896.3749730587006,
+            509.1046214103699,
+            1056.2272703647614,
+            667.8057360649109
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9622347950935364,
+          "bbox_xyxy_raw": [
+            643.2685089111328,
+            537.3828792572021,
+            815.6705474853516,
+            701.9525241851807
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9145215749740601,
+          "bbox_xyxy_raw": [
+            746.0312712192535,
+            308.20210218429565,
+            907.926961183548,
+            463.78318548202515
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9041337966918945,
+          "bbox_xyxy_raw": [
+            1147.2188758850098,
+            524.1248095035553,
+            1315.148892402649,
+            678.3422791957855
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8396942615509033,
+          "bbox_xyxy_raw": [
+            557.2769379615784,
+            69.66444611549377,
+            1341.8804955482483,
+            473.17421078681946
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.7402031421661377,
+          "bbox_xyxy_raw": [
+            550.2716812491417,
+            332.7580261230469,
+            649.771491587162,
+            651.7343044281006
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.3761,
+                "model": 62.2065,
+                "decode_nms": 0.6531
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.0332,
+                "model": 57.6642,
+                "decode_nms": 0.905
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5679,
+                "model": 65.8572,
+                "decode_nms": 0.8872
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.2428,
+                "model": 64.8206,
+                "decode_nms": 0.6803
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                564.999293088913,
+                85.56556284427643,
+                1080,
+                472.27554738521576
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3082703053951,
+                307.07608938217163,
+                906.3243877887726,
+                465.9125804901123
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 9.219999999999999,
+          "model": 250.5485,
+          "decode_nms": 3.1256,
+          "total_spatial_inference": 263.6675
+        }
+      }
+    },
+    {
+      "id": "six_09",
+      "pixel_sha256": "ffc5083cb10f50fab6ce28d51c2f131f5c4de358068fbc6804d95cab51734e3e",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9577075242996216,
+          "bbox_xyxy_raw": [
+            896.1176419258118,
+            508.9039224386215,
+            1056.3456845283508,
+            668.0912786722183
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9555920958518982,
+          "bbox_xyxy_raw": [
+            642.5622940063477,
+            535.6327056884766,
+            818.4404754638672,
+            702.6077270507812
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9175117015838623,
+          "bbox_xyxy_raw": [
+            748.1527805328369,
+            309.22170639038086,
+            908.5330867767334,
+            456.0976982116699
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9150027632713318,
+          "bbox_xyxy_raw": [
+            1147.8844928741455,
+            524.0815508365631,
+            1315.4058694839478,
+            678.6167657375336
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8341977596282959,
+          "bbox_xyxy_raw": [
+            556.5283441543579,
+            72.70835638046265,
+            1340.7974195480347,
+            472.0453977584839
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6681123375892639,
+          "bbox_xyxy_raw": [
+            547.849871814251,
+            332.57919788360596,
+            650.1154688000679,
+            651.4958667755127
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.6728,
+                "model": 59.3455,
+                "decode_nms": 0.6887
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.1864,
+                "model": 66.0635,
+                "decode_nms": 1.5218
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.3851,
+                "model": 63.2844,
+                "decode_nms": 1.6582
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9046,
+                "model": 89.9085,
+                "decode_nms": 1.5337
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                562.1296405792236,
+                84.86672937870026,
+                1080,
+                467.11823880672455
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2805979549885,
+                306.8142360448837,
+                906.3120160996914,
+                466.43469393253326
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 10.1489,
+          "model": 278.6019,
+          "decode_nms": 5.4024,
+          "total_spatial_inference": 295.7147
+        }
+      }
+    },
+    {
+      "id": "six_10",
+      "pixel_sha256": "122c0c948592f035b805eb4fabcd144469fc87fad5940e59c88148e2314eeed2",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9596906900405884,
+          "bbox_xyxy_raw": [
+            643.265905380249,
+            536.9086933135986,
+            817.0272159576416,
+            702.4150371551514
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9550475478172302,
+          "bbox_xyxy_raw": [
+            896.4633572101593,
+            508.91748905181885,
+            1056.0842978954315,
+            667.4312782287598
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.919459342956543,
+          "bbox_xyxy_raw": [
+            748.8970184326172,
+            309.7306537628174,
+            907.800407409668,
+            456.3654613494873
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9140269756317139,
+          "bbox_xyxy_raw": [
+            1147.3308527469635,
+            524.1858994960785,
+            1315.0851953029633,
+            678.5041773319244
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8391820788383484,
+          "bbox_xyxy_raw": [
+            558.3977365493774,
+            70.82882523536682,
+            1341.6787505149841,
+            473.2875716686249
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6387271881103516,
+          "bbox_xyxy_raw": [
+            548.2511450350285,
+            332.7135443687439,
+            650.5452190339565,
+            651.9755744934082
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.2734,
+                "model": 101.6754,
+                "decode_nms": 1.296
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.7702,
+                "model": 92.1701,
+                "decode_nms": 1.5192
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.4647,
+                "model": 98.0764,
+                "decode_nms": 1.813
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.8904,
+                "model": 103.9694,
+                "decode_nms": 1.2644
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                564.0599298477173,
+                86.76161348819733,
+                1080,
+                468.6192888021469
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3024163842201,
+                306.564661860466,
+                906.5748310089111,
+                466.1606580018997
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 10.3987,
+          "model": 395.8913,
+          "decode_nms": 5.8926,
+          "total_spatial_inference": 413.2332
+        }
+      }
+    },
+    {
+      "id": "six_11",
+      "pixel_sha256": "502e7ef85f9f9f775c0c099aa39fcb09b4e301847bf82022e9ee50b402e5c1b4",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9604307413101196,
+          "bbox_xyxy_raw": [
+            642.7740669250488,
+            536.4830589294434,
+            816.4317512512207,
+            702.2844886779785
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9582475423812866,
+          "bbox_xyxy_raw": [
+            896.7203342914581,
+            509.38074946403503,
+            1056.0003554821014,
+            667.2722446918488
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9155018925666809,
+          "bbox_xyxy_raw": [
+            1146.3992142677307,
+            524.1176640987396,
+            1315.0029587745667,
+            678.5577356815338
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9139827489852905,
+          "bbox_xyxy_raw": [
+            748.5226821899414,
+            309.2042827606201,
+            908.858642578125,
+            456.15368843078613
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8388946056365967,
+          "bbox_xyxy_raw": [
+            556.7226219177246,
+            69.76535081863403,
+            1342.3032975196838,
+            473.63399505615234
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.7370123267173767,
+          "bbox_xyxy_raw": [
+            549.0512855350971,
+            332.7488851547241,
+            650.4182593524456,
+            652.345461845398
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.2059,
+                "model": 103.2043,
+                "decode_nms": 1.3325
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.8085,
+                "model": 99.3315,
+                "decode_nms": 0.9684
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9623,
+                "model": 95.6697,
+                "decode_nms": 1.0979
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.0967,
+                "model": 110.1998,
+                "decode_nms": 1.2635
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                561.8615913391113,
+                81.5258663892746,
+                1080,
+                472.1882897615433
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2793104946613,
+                306.8057870864868,
+                906.4550529420376,
+                466.0688781738281
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 11.0734,
+          "model": 408.4053,
+          "decode_nms": 4.6623,
+          "total_spatial_inference": 425.5678
+        }
+      }
+    },
+    {
+      "id": "six_12",
+      "pixel_sha256": "8d59b9207e4e7e2570480904b9964f238504d94460949ead0d88e29278511e95",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9611825346946716,
+          "bbox_xyxy_raw": [
+            643.0332469940186,
+            537.0773792266846,
+            816.5757465362549,
+            702.3420238494873
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9552463293075562,
+          "bbox_xyxy_raw": [
+            897.3683130741119,
+            509.00625944137573,
+            1056.0311257839203,
+            667.2489094734192
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9206529855728149,
+          "bbox_xyxy_raw": [
+            1146.3896548748016,
+            524.0090024471283,
+            1315.2776062488556,
+            678.6156713962555
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9090862274169922,
+          "bbox_xyxy_raw": [
+            746.39732837677,
+            308.1318712234497,
+            908.027994632721,
+            463.68720531463623
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.826999306678772,
+          "bbox_xyxy_raw": [
+            557.0240163803101,
+            76.33828639984131,
+            1342.1325159072876,
+            471.12183809280396
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6697914600372314,
+          "bbox_xyxy_raw": [
+            548.5163176059723,
+            332.7923369407654,
+            649.9618184566498,
+            651.2973403930664
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.613,
+                "model": 101.1446,
+                "decode_nms": 0.6731
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.0308,
+                "model": 95.2114,
+                "decode_nms": 1.6876
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.8321,
+                "model": 107.9104,
+                "decode_nms": 0.8138
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.1417,
+                "model": 102.2473,
+                "decode_nms": 1.2794
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                561.4939892292023,
+                80.83660840988159,
+                1080,
+                468.35160970687866
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2677434682846,
+                306.7157131433487,
+                906.3931261003017,
+                466.3009589910507
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 11.6176,
+          "model": 406.5137,
+          "decode_nms": 4.4539,
+          "total_spatial_inference": 423.6754
+        }
+      }
+    },
+    {
+      "id": "six_13",
+      "pixel_sha256": "a7ecf0877981b4ee4fd6f50ef91dc1487e4a2c3ebb6f7cc91be7f9720aa33292",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9531986713409424,
+          "bbox_xyxy_raw": [
+            643.3277034759521,
+            536.7719078063965,
+            816.5220737457275,
+            702.271671295166
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9408236742019653,
+          "bbox_xyxy_raw": [
+            897.0447742938995,
+            509.1976726055145,
+            1056.1715877056122,
+            667.4203026294708
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9175304174423218,
+          "bbox_xyxy_raw": [
+            748.148832321167,
+            309.46460723876953,
+            908.4729480743408,
+            456.4383316040039
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9116448163986206,
+          "bbox_xyxy_raw": [
+            1146.4900767803192,
+            524.1224277019501,
+            1314.9122250080109,
+            678.2674133777618
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8354027271270752,
+          "bbox_xyxy_raw": [
+            557.5638484954834,
+            72.84119009971619,
+            1341.9041204452515,
+            471.6855847835541
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.7009948492050171,
+          "bbox_xyxy_raw": [
+            548.6686483025551,
+            332.18246698379517,
+            650.2935084700584,
+            652.6460838317871
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 3.0253,
+                "model": 106.7363,
+                "decode_nms": 1.2786
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.0249,
+                "model": 106.6968,
+                "decode_nms": 1.6031
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.0707,
+                "model": 94.6504,
+                "decode_nms": 1.6199
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.6909,
+                "model": 92.8888,
+                "decode_nms": 1.2204
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                564.1491508483887,
+                84.12484645843506,
+                1080,
+                465.14538288116455
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2882060408592,
+                306.6431486606598,
+                906.1163100600243,
+                465.69464564323425
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 12.8118,
+          "model": 400.9723,
+          "decode_nms": 5.7219999999999995,
+          "total_spatial_inference": 420.5635
+        }
+      }
+    },
+    {
+      "id": "six_14",
+      "pixel_sha256": "c2948de0201810b89275bbb39897e9fdad8cb2d153d8ea049c376131399a6ff9",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.955599308013916,
+          "bbox_xyxy_raw": [
+            642.8504848480225,
+            536.839542388916,
+            817.1606540679932,
+            702.3766136169434
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9473099112510681,
+          "bbox_xyxy_raw": [
+            900.4726231098175,
+            510.70118486881256,
+            1054.6992981433868,
+            664.3820089101791
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 3,
+          "detector_roi_xywh_raw": [
+            840,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9217969179153442,
+          "bbox_xyxy_raw": [
+            748.7380599975586,
+            309.8224639892578,
+            907.6515197753906,
+            456.0120391845703
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9068107008934021,
+          "bbox_xyxy_raw": [
+            1147.2527360916138,
+            524.1384243965149,
+            1314.9595069885254,
+            678.2872080802917
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.832602858543396,
+          "bbox_xyxy_raw": [
+            558.0224418640137,
+            72.35716938972473,
+            1342.3077392578125,
+            470.12750029563904
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.689777135848999,
+          "bbox_xyxy_raw": [
+            550.3054118156433,
+            335.0085711479187,
+            654.0335154533386,
+            652.9577779769897
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.4041,
+                "model": 91.6442,
+                "decode_nms": 1.3647
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5741,
+                "model": 97.7936,
+                "decode_nms": 1.6461
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9107,
+                "model": 89.1704,
+                "decode_nms": 0.8073
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.0748,
+                "model": 96.2066,
+                "decode_nms": 0.9507
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                562.4010372161865,
+                79.26843345165253,
+                1080,
+                474.1564303636551
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2901412546635,
+                307.13565051555634,
+                906.3299480080605,
+                466.0771018266678
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 9.9637,
+          "model": 374.8148,
+          "decode_nms": 4.7688,
+          "total_spatial_inference": 390.576
+        }
+      }
+    },
+    {
+      "id": "six_15",
+      "pixel_sha256": "dfbbee22ca273b2ed4f6e056ef18c37f000954239de5d92c8c17cbaa76c12b85",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9618381261825562,
+          "bbox_xyxy_raw": [
+            895.8868968486786,
+            509.0924549102783,
+            1056.3605225086212,
+            668.0410194396973
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9587705135345459,
+          "bbox_xyxy_raw": [
+            642.8004169464111,
+            536.7588329315186,
+            816.5915966033936,
+            702.2323322296143
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9137535095214844,
+          "bbox_xyxy_raw": [
+            748.537015914917,
+            308.47094535827637,
+            908.9210987091064,
+            456.52173042297363
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.911823034286499,
+          "bbox_xyxy_raw": [
+            1146.697872877121,
+            524.1445398330688,
+            1314.9227821826935,
+            678.2956409454346
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8417147397994995,
+          "bbox_xyxy_raw": [
+            558.864312171936,
+            77.4147641658783,
+            1342.6556754112244,
+            472.93532252311707
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.7093267440795898,
+          "bbox_xyxy_raw": [
+            549.6961212158203,
+            334.7174119949341,
+            659.2964601516724,
+            654.2144680023193
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 3.1146,
+                "model": 104.2671,
+                "decode_nms": 1.5667
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9988,
+                "model": 106.5855,
+                "decode_nms": 1.719
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9366,
+                "model": 96.9163,
+                "decode_nms": 1.7901
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.4791,
+                "model": 102.7938,
+                "decode_nms": 0.7234
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                565.3144311904907,
+                86.6842371225357,
+                1080,
+                465.143660902977
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3088013827801,
+                306.92080557346344,
+                906.4045161008835,
+                465.8524078130722
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 12.5291,
+          "model": 410.5627,
+          "decode_nms": 5.7992,
+          "total_spatial_inference": 430.4765
+        }
+      }
+    },
+    {
+      "id": "six_16",
+      "pixel_sha256": "f45241473c2f5b7fd0956f30761eb6ecedf39ecd225e078e5bdfe8ac9e449443",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9651809930801392,
+          "bbox_xyxy_raw": [
+            896.4581429958344,
+            509.032427072525,
+            1056.131740808487,
+            667.5201451778412
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9565696716308594,
+          "bbox_xyxy_raw": [
+            643.0360794067383,
+            536.3593769073486,
+            817.2121810913086,
+            702.4766063690186
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9129940867424011,
+          "bbox_xyxy_raw": [
+            746.2971478700638,
+            308.4183472394943,
+            907.8407496213913,
+            463.93605530261993
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9098014831542969,
+          "bbox_xyxy_raw": [
+            1143.658847808838,
+            520.1958274841309,
+            1314.9010276794434,
+            679.852237701416
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8427115678787231,
+          "bbox_xyxy_raw": [
+            558.423228263855,
+            62.04676866531372,
+            1342.9445171356201,
+            472.1002435684204
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6751517057418823,
+          "bbox_xyxy_raw": [
+            547.1871395409107,
+            332.6479482650757,
+            649.525566548109,
+            652.5318217277527
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.2855,
+                "model": 95.2745,
+                "decode_nms": 1.1149
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.8979,
+                "model": 89.2666,
+                "decode_nms": 1.7567
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.0887,
+                "model": 120.8625,
+                "decode_nms": 1.8018
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.0826,
+                "model": 122.7591,
+                "decode_nms": 1.3731
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                561.4505052566528,
+                69.86339092254639,
+                1080,
+                465.1584506034851
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3018812835217,
+                307.0741903781891,
+                905.8739134669304,
+                465.966557264328
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "scissors",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                841.6563177108765,
+                121.40010595321655,
+                1348.5866117477417,
+                470.37227869033813
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 11.3547,
+          "model": 428.1627,
+          "decode_nms": 6.0465,
+          "total_spatial_inference": 446.7456
+        }
+      }
+    },
+    {
+      "id": "six_17",
+      "pixel_sha256": "f95efdd045f3d78fd48d312c5dd656398172659ba52a5b26e1be016a6a663ab2",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.957511305809021,
+          "bbox_xyxy_raw": [
+            896.2411415576935,
+            508.5393136739731,
+            1056.1813724040985,
+            668.2628971338272
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9573777914047241,
+          "bbox_xyxy_raw": [
+            642.9833507537842,
+            536.2783813476562,
+            817.3546314239502,
+            702.4738311767578
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.917898416519165,
+          "bbox_xyxy_raw": [
+            746.5890151262283,
+            308.5295194387436,
+            907.5172108411789,
+            463.8045412302017
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.9079428315162659,
+          "bbox_xyxy_raw": [
+            1146.7142236232758,
+            524.2709201574326,
+            1314.921623468399,
+            677.9188495874405
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8429006338119507,
+          "bbox_xyxy_raw": [
+            556.0846853256226,
+            71.70553743839264,
+            1342.2553396224976,
+            470.9149593114853
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6601113080978394,
+          "bbox_xyxy_raw": [
+            552.2373747825623,
+            335.6101369857788,
+            652.594006061554,
+            653.8253974914551
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 3.3522,
+                "model": 113.0781,
+                "decode_nms": 1.4388
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.965,
+                "model": 112.8066,
+                "decode_nms": 1.71
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 3.093,
+                "model": 110.3441,
+                "decode_nms": 1.7489
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.9251,
+                "model": 103.4687,
+                "decode_nms": 0.8353
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                562.1330201625824,
+                76.7085599899292,
+                1080,
+                462.21596002578735
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.3397044539452,
+                307.2966796159744,
+                906.1902424693108,
+                465.189043879509
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "scissors",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                841.9656300544739,
+                129.3865603208542,
+                1348.0602979660034,
+                469.9239045381546
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 12.3353,
+          "model": 439.6975,
+          "decode_nms": 5.733,
+          "total_spatial_inference": 458.6687
+        }
+      }
+    },
+    {
+      "id": "six_18",
+      "pixel_sha256": "bd25c04b0b7eb8026ffb7bfedece86e38ea3d15856ef4ce7d8b656a2d6e3d11f",
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9596446752548218,
+          "bbox_xyxy_raw": [
+            895.0612163543701,
+            508.36458921432495,
+            1056.330041885376,
+            668.2548022270203
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9525901079177856,
+          "bbox_xyxy_raw": [
+            643.1103801727295,
+            536.8658924102783,
+            816.1667346954346,
+            702.3536968231201
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9196206331253052,
+          "bbox_xyxy_raw": [
+            748.87375831604,
+            309.7088813781738,
+            908.3106136322021,
+            456.3350486755371
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.8761069774627686,
+          "bbox_xyxy_raw": [
+            1147.7886414527893,
+            524.2469573020935,
+            1315.1130366325378,
+            678.5396790504456
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8345509767532349,
+          "bbox_xyxy_raw": [
+            556.8631482124329,
+            72.7421522140503,
+            1342.452642917633,
+            470.5065608024597
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.673265814781189,
+          "bbox_xyxy_raw": [
+            540.1882034540176,
+            332.38582134246826,
+            650.7576137781143,
+            653.0757737159729
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.9522,
+                "model": 107.0226,
+                "decode_nms": 1.6267
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.8571,
+                "model": 103.9016,
+                "decode_nms": 1.6581
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.7453,
+                "model": 97.2696,
+                "decode_nms": 1.7015
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.8185,
+                "model": 109.3276,
+                "decode_nms": 1.2922
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                562.0934629440308,
+                84.91657018661499,
+                1080,
+                454.5486831665039
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2698838710785,
+                306.6286164522171,
+                906.4345622062683,
+                466.16030395030975
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 11.373099999999999,
+          "model": 417.52139999999997,
+          "decode_nms": 6.2785,
+          "total_spatial_inference": 436.2836
+        }
+      }
+    },
+    {
+      "id": "six_19",
+      "pixel_sha256": "bb213a6827efe632ae5c704c4ff51778bdabeed9ec4eb8d5919059d096f13473",
+      "detections": [
+        {
+          "class_id": 4,
+          "class_name": "small_canister",
+          "confidence": 0.9583988189697266,
+          "bbox_xyxy_raw": [
+            642.5961971282959,
+            536.1719226837158,
+            817.82395362854,
+            702.6816844940186
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 0,
+          "detector_roi_xywh_raw": null
+        },
+        {
+          "class_id": 1,
+          "class_name": "yellow_cube",
+          "confidence": 0.9468344449996948,
+          "bbox_xyxy_raw": [
+            895.8858668804169,
+            508.8816171884537,
+            1056.2835323810577,
+            667.6880782842636
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 1,
+          "detector_roi_xywh_raw": [
+            0,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "blue_cube",
+          "confidence": 0.9128634929656982,
+          "bbox_xyxy_raw": [
+            746.0324621200562,
+            307.96047806739807,
+            908.0842566490173,
+            464.7139871120453
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "red_cube",
+          "confidence": 0.8848896026611328,
+          "bbox_xyxy_raw": [
+            1147.3744744062424,
+            522.9961091279984,
+            1314.6465665102005,
+            679.7449511289597
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 3,
+          "detector_roi_xywh_raw": [
+            840,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 5,
+          "class_name": "scissors",
+          "confidence": 0.8340332508087158,
+          "bbox_xyxy_raw": [
+            558.9007472991943,
+            73.5440468788147,
+            1342.7905368804932,
+            470.4632377624512
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "eraser",
+          "confidence": 0.6717095971107483,
+          "bbox_xyxy_raw": [
+            546.7918932437897,
+            332.7516531944275,
+            651.9981944561005,
+            653.0097913742065
+          ],
+          "model_role": "mode_b_detector",
+          "trained": true,
+          "detector_pass_index": 2,
+          "detector_roi_xywh_raw": [
+            420,
+            0,
+            1080,
+            1080
+          ]
+        }
+      ],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.4387,
+                "model": 93.8024,
+                "decode_nms": 0.6357
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.7397,
+                "model": 94.1667,
+                "decode_nms": 0.945
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 1.9881,
+                "model": 88.702,
+                "decode_nms": 1.6252
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.7985,
+                "model": 107.3126,
+                "decode_nms": 1.2226
+              }
+            }
+          ],
+          "internal_edge_rejections": [
+            {
+              "class_name": "scissors",
+              "pass_index": 1,
+              "bbox_xyxy_raw": [
+                563.9445734024048,
+                88.17120552062988,
+                1080,
+                470.22634506225586
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            },
+            {
+              "class_name": "blue_cube",
+              "pass_index": 3,
+              "bbox_xyxy_raw": [
+                840.2489666640759,
+                307.0265221595764,
+                906.3600182533264,
+                466.17998600006104
+              ],
+              "reason": "INTERNAL_TILE_EDGE"
+            }
+          ]
+        },
+        "timing_ms": {
+          "preprocess": 9.965,
+          "model": 383.9837,
+          "decode_nms": 4.4285,
+          "total_spatial_inference": 399.3674
+        }
+      }
+    },
+    {
+      "id": "empty_00",
+      "pixel_sha256": "afb9f15a7bb784fa994ac4d5d62d685877b4727fc8633c6ddaf6a665d9ee06e5",
+      "detections": [],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.8499,
+                "model": 92.3293,
+                "decode_nms": 0.4504
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.14,
+                "model": 95.0891,
+                "decode_nms": 0.2818
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5893,
+                "model": 107.0553,
+                "decode_nms": 0.3378
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.7,
+                "model": 87.3943,
+                "decode_nms": 0.3989
+              }
+            }
+          ],
+          "internal_edge_rejections": []
+        },
+        "timing_ms": {
+          "preprocess": 10.2792,
+          "model": 381.868,
+          "decode_nms": 1.4689,
+          "total_spatial_inference": 394.3724
+        }
+      }
+    },
+    {
+      "id": "empty_01",
+      "pixel_sha256": "0dd23c5b6f34c0b07573fe7ff33d6c6ab7156d950833f91b90e17d87a7b1817d",
+      "detections": [],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.5957,
+                "model": 111.2746,
+                "decode_nms": 0.3736
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.6421,
+                "model": 108.2281,
+                "decode_nms": 0.3684
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.762,
+                "model": 109.8182,
+                "decode_nms": 0.3882
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5733,
+                "model": 75.9355,
+                "decode_nms": 0.3737
+              }
+            }
+          ],
+          "internal_edge_rejections": []
+        },
+        "timing_ms": {
+          "preprocess": 10.5731,
+          "model": 405.2564,
+          "decode_nms": 1.5039,
+          "total_spatial_inference": 418.1161
+        }
+      }
+    },
+    {
+      "id": "empty_02",
+      "pixel_sha256": "c6139cdef5bfcb956a6f6214ad51e8621f23c8953c9919331c26a5646c59f0c2",
+      "detections": [],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 1.7879,
+                "model": 87.2583,
+                "decode_nms": 0.3608
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.6622,
+                "model": 95.1777,
+                "decode_nms": 0.3538
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.5594,
+                "model": 101.4576,
+                "decode_nms": 0.3665
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.4672,
+                "model": 106.7286,
+                "decode_nms": 0.3586
+              }
+            }
+          ],
+          "internal_edge_rejections": []
+        },
+        "timing_ms": {
+          "preprocess": 9.476700000000001,
+          "model": 390.6222,
+          "decode_nms": 1.4397,
+          "total_spatial_inference": 402.271
+        }
+      }
+    },
+    {
+      "id": "empty_03",
+      "pixel_sha256": "5c2e57835d0ee99849b85ca9f0a9b7bb7d0d5de5642e0609de601a74604d0612",
+      "detections": [],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 1.9161,
+                "model": 100.1709,
+                "decode_nms": 0.35
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.6386,
+                "model": 96.4208,
+                "decode_nms": 0.3289
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.6474,
+                "model": 101.9159,
+                "decode_nms": 0.2713
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.437,
+                "model": 101.4381,
+                "decode_nms": 0.3665
+              }
+            }
+          ],
+          "internal_edge_rejections": []
+        },
+        "timing_ms": {
+          "preprocess": 9.6391,
+          "model": 399.9457,
+          "decode_nms": 1.3167,
+          "total_spatial_inference": 411.6619
+        }
+      }
+    },
+    {
+      "id": "empty_04",
+      "pixel_sha256": "0c63bbbcee11ee895047fe5212f89678d99e5652008700e7edcc9b4a3c85e49f",
+      "detections": [],
+      "meta": {
+        "backend": {
+          "requested_backend": "onnx_cpu",
+          "actual_backend": "onnx_cpu",
+          "role": "mode_b_detector",
+          "framework": "onnxruntime",
+          "framework_version": "1.31.0",
+          "actual_providers": [
+            "CPUExecutionProvider"
+          ],
+          "cpu_fallback": false,
+          "precision": "fp32",
+          "classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "trained_classes": [
+            "red_cube",
+            "yellow_cube",
+            "blue_cube",
+            "eraser",
+            "small_canister",
+            "scissors"
+          ],
+          "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+          "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+          "npu_execution_verified": false,
+          "hardware_acceptance": "PENDING",
+          "spatial_inference_policy": {
+            "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+            "minimum_tile_overlap": 0.25,
+            "classwise_merge_iou": 0.5,
+            "interior_edge_margin_raw_px": 2,
+            "max_tiles": 16,
+            "thresholds_unchanged": true
+          },
+          "spatial_pass_count": 4,
+          "spatial_views": [
+            {
+              "roi_xywh_raw": null,
+              "timing_ms": {
+                "preprocess": 2.5253,
+                "model": 96.0423,
+                "decode_nms": 0.3526
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                0,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.4901,
+                "model": 106.9343,
+                "decode_nms": 0.3562
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                420,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.6207,
+                "model": 99.8972,
+                "decode_nms": 0.3487
+              }
+            },
+            {
+              "roi_xywh_raw": [
+                840,
+                0,
+                1080,
+                1080
+              ],
+              "timing_ms": {
+                "preprocess": 2.4845,
+                "model": 109.2976,
+                "decode_nms": 0.3511
+              }
+            }
+          ],
+          "internal_edge_rejections": []
+        },
+        "timing_ms": {
+          "preprocess": 10.1206,
+          "model": 412.1714,
+          "decode_nms": 1.4086,
+          "total_spatial_inference": 424.4523
+        }
+      }
+    }
+  ],
+  "requested_backend": "onnx_cpu",
+  "physical_execution": false,
+  "path_submissions": 0,
+  "npu_acceptance": "NOT_ACCEPTED",
+  "first_inference_ms": 284.7838,
+  "backend": {
+    "requested_backend": "onnx_cpu",
+    "actual_backend": "onnx_cpu",
+    "role": "mode_b_detector",
+    "framework": "onnxruntime",
+    "framework_version": "1.31.0",
+    "actual_providers": [
+      "CPUExecutionProvider"
+    ],
+    "cpu_fallback": false,
+    "precision": "fp32",
+    "classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "trained_classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+    "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+    "npu_execution_verified": false,
+    "hardware_acceptance": "PENDING",
+    "spatial_inference_policy": {
+      "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+      "minimum_tile_overlap": 0.25,
+      "classwise_merge_iou": 0.5,
+      "interior_edge_margin_raw_px": 2,
+      "max_tiles": 16,
+      "thresholds_unchanged": true
+    }
+  },
+  "benchmark_runs": 3,
+  "timing_ms": {
+    "p50": 261.6494,
+    "p95": 262.14629,
+    "p99": 262.19045800000004,
+    "max": 262.2015
+  },
+  "timing_scope": "WARM_FULL_FRAME_AND_SQUARE_VIEWS_DETECTOR_ONLY",
+  "profile": null
+}

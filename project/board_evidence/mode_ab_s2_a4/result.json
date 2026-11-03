@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "legs": 1200,
+  "samples": 47050,
+  "axes": 6,
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "inputs": {
+    "candidate/mode_ab/red_cube/normal.json": "416bb489fe89620924ac5b19f086bd2b6c58d7229fa52a671764bfe0755c2783",
+    "candidate/mode_ab/red_cube/restock.json": "74a0972b2dc0e8e5d7594bce4bcb5ae12601e6a5b5e23fe84c071f6f820d8620",
+    "candidate/mode_ab/eraser/normal.json": "3bc341547d10e807e60ed2f1e5cad03d3e094ef7c27218ed37a448ff03f148a9",
+    "candidate/mode_ab/eraser/restock.json": "b16a86d20323a1192925dd18d7b45a7fdecca814e9678b6b9b7150b12fec4889",
+    "candidate/mode_ab/small_canister/normal.json": "4e132654dcf5045641be279eaf0bbbe54f094eaa59ba895dcb874833b3ccda77",
+    "candidate/mode_ab/small_canister/restock.json": "62e12175620e134d3107b043172c0528313a84b5c07a439b3fb071f8a9ae5605",
+    "candidate/mode_ab/shared_red/normal.json": "f67a40f2295c5ec8b336da8afae94f8560e222c47354730fb693482553020ac2",
+    "candidate/mode_ab/shared_red/restock.json": "65119a81efe520f5b8419da4fa57deaf39c57e441105c4294ea051bd59a5476d",
+    "candidate/mode_ab/home_transitions.json": "fb29949814b3f6d725f31020f5c44615415dac364fbdcf810d507a617edff35a"
+  },
+  "sources": {
+    "native_motion/rtl/robot/planner_p2p_core.v": "49ab9f85f799d592c07204d3316c57376c884233eba5b8dd06c5acbe4f80bcfc",
+    "native_motion/rtl/robot/planner_seq_div.v": "00cabf4882c87d69cc2e6cb43b5f5ad4f4c956cf0809ccaea24874756c8a09c3",
+    "native_motion/rtl/robot/planner_seq_mult.v": "bc018fb39b6f494176f04d77fa5497fa11432ef79dae10f2380dfaa7d58bd405",
+    "board_evidence/mode_ab_s2_a4/tb.sv": "0f49bf93033fe451d17ecf8efad23fa9e714c08af126241a93a4302fce3f73cb"
+  },
+  "production_period_cycles": 2000000,
+  "testbench_period_cycles": 512,
+  "physical_execution": false
+}

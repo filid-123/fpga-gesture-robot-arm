@@ -1,0 +1,14 @@
+{
+  "python": "3.12.4",
+  "numpy": "2.5.2",
+  "opencv": "5.0.0",
+  "torch": "2.11.0+cu128",
+  "integer_reference_requires": [
+    "numpy",
+    "opencv-python"
+  ],
+  "approved_PC_reference_requires": [
+    "torch"
+  ],
+  "CUDA_required": false
+}

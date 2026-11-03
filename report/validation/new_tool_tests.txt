@@ -1,0 +1,37 @@
+test_directory_escape_rejected (test_release_tools.Artifacts.test_directory_escape_rejected) ... ok
+test_drc_error_rejected (test_release_tools.Artifacts.test_drc_error_rejected) ... ok
+test_explicit_no_cdc_design_supported (test_release_tools.Artifacts.test_explicit_no_cdc_design_supported) ... ok
+test_fractional_cdc_count_rejected (test_release_tools.Artifacts.test_fractional_cdc_count_rejected) ... ok
+test_hold_failure_rejected (test_release_tools.Artifacts.test_hold_failure_rejected) ... ok
+test_nan_not_accepted_as_timing (test_release_tools.Artifacts.test_nan_not_accepted_as_timing) ... ok
+test_second_synthetic_project_schema_passes (test_release_tools.Artifacts.test_second_synthetic_project_schema_passes) ... ok
+test_source_tamper_rejected (test_release_tools.Artifacts.test_source_tamper_rejected) ... ok
+test_unbound_source_manifest_rejected (test_release_tools.Artifacts.test_unbound_source_manifest_rejected) ... ok
+test_unknown_cdc_rejected (test_release_tools.Artifacts.test_unknown_cdc_rejected) ... ok
+test_xsa_from_different_build_rejected_even_with_new_outer_hash (test_release_tools.Artifacts.test_xsa_from_different_build_rejected_even_with_new_outer_hash) ... ok
+test_changed_model_rejected (test_release_tools.Environment.test_changed_model_rejected) ... ok
+test_declared_model_hash (test_release_tools.Environment.test_declared_model_hash) ... ok
+test_dependency_exact_version (test_release_tools.Environment.test_dependency_exact_version) ... ok
+test_dependency_mismatch_is_not_pass (test_release_tools.Environment.test_dependency_mismatch_is_not_pass) ... ok
+test_empty_probe_labels_gpu_and_inference_not_run (test_release_tools.Environment.test_empty_probe_labels_gpu_and_inference_not_run) ... ok
+test_model_directory_escape_rejected (test_release_tools.Environment.test_model_directory_escape_rejected) ... ok
+test_pip_options_require_explicit_handling (test_release_tools.Environment.test_pip_options_require_explicit_handling) ... ok
+test_skill_script_has_no_repository_import_dependency (test_release_tools.Environment.test_skill_script_has_no_repository_import_dependency) ... ok
+test_batch_one_components (test_release_tools.Metrics.test_batch_one_components) ... ok
+test_empty_input_is_not_zero_latency (test_release_tools.Metrics.test_empty_input_is_not_zero_latency) ... ok
+test_inconsistent_total_rejected (test_release_tools.Metrics.test_inconsistent_total_rejected) ... ok
+test_interventions_remain_in_denominator (test_release_tools.Metrics.test_interventions_remain_in_denominator) ... ok
+test_known_linear_percentiles (test_release_tools.Metrics.test_known_linear_percentiles) ... ok
+test_missing_physical_endpoints_rejected (test_release_tools.Metrics.test_missing_physical_endpoints_rejected) ... ok
+test_missing_task_outcome_rejected (test_release_tools.Metrics.test_missing_task_outcome_rejected) ... ok
+test_nonfinite_timing_rejected (test_release_tools.Metrics.test_nonfinite_timing_rejected) ... ok
+test_wrong_batch_rejected (test_release_tools.Metrics.test_wrong_batch_rejected) ... ok
+test_exact_archive_restores_and_is_idempotent (test_release_tools.Restore.test_exact_archive_restores_and_is_idempotent) ... ok
+test_existing_different_asset_preserved (test_release_tools.Restore.test_existing_different_asset_preserved) ... ok
+test_wrong_archive_hash_rejected_before_write (test_release_tools.Restore.test_wrong_archive_hash_rejected_before_write) ... ok
+test_zip_traversal_rejected (test_release_tools.Restore.test_zip_traversal_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.267s
+
+OK

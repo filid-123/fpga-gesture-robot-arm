@@ -1,0 +1,30 @@
+{
+  "schema": "gesture.mode_b.public_restock_policy.v1",
+  "filid_reference_commit": "480f3e600bc9465d9a1fec361e6781c2b2eb59a0",
+  "filid_reference_branch": "codex/mode-a-auto-restock-20261029",
+  "public_xy_mm": [300, 200],
+  "public_height_semantics": "OBJECT_HALF_HEIGHT_ON_TABLE; NOT_ALWAYS15MM",
+  "return_target": "IMMUTABLE_ORIGINAL_DYNAMIC_GRASP_RECORD",
+  "mode_b_class_profile": {"1": "red_cube", "2": "eraser", "3": "small_canister"},
+  "selection_mapping_can_be_reordered": true,
+  "no_mode_a_fixed_slots": true,
+  "requires_palm": false,
+  "requires_idle_empty_home": true,
+  "requires_public_area_clear": true,
+  "requires_original_source_vacant": true,
+  "delivery_fixture_conflict": {
+    "support_centre_mm": [285, 195, 150],
+    "proxy_size_xy_mm": [80, 80],
+    "public_point_is_inside_footprint": true,
+    "restock_precondition": "REMOVE150MM_DELIVERY_FIXTURE_FROM_PUBLIC_PICKUP_AND_ROUTE"
+  },
+  "cancel_before_release": "STOP_DRAIN_FRESH_STATE; RETURN_HELD_OBJECT_TO_PUBLIC_POINT; KEEP_ORIGINAL_SOURCE_UNAVAILABLE",
+  "cancel_after_release_submission": "FINISH_EXIT_AND_HOME; DO_NOT_RETRIEVE_RELEASED_OBJECT",
+  "restore_inventory_after": "RELEASE_AND_EMPTY_HOME_SEQUENCE_COMPLETED",
+  "inventory_is_physical_presence_proof": false,
+  "new_gesture_requires_background_rearm": true,
+  "communication_or_device_fault": "NO_FURTHER_MOTION; NO_AUTOMATIC_RESUME",
+  "unknown_state_after_reset": "RECONCILE_ORIGIN_RECORD_AND_INVENTORY_BEFORE_SELECT",
+  "physical_restock_accepted": false,
+  "fpga_mode_b_restock_adapter_implemented": false
+}

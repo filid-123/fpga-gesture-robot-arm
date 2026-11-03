@@ -1,0 +1,19 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 03:02:36 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_renderer/xsim_script.tcl
+# xsim {tb_renderer} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: actual A/B mode selects title, B generic object/restock labels, full B raster307200 pixels
+PASS: restock pickup/carry/home and public-point cancellation labels distinct from normal delivery
+PASS: raster307200 pixels, blanking, Chinese UI, gesture/none/release/return/fault labels
+$finish called at time : 48564795859 ps : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/sim/mode_a_upgrade/tb_renderer_hd.sv" Line 37
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 03:02:40 2026...

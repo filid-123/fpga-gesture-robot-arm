@@ -1,0 +1,16 @@
+{
+  "class_name": "eraser",
+  "normal_fifo": 44,
+  "table_segments": 35,
+  "restock_fifo": 57,
+  "normal_geometry": {
+    "samples_checked": 18333,
+    "minimum_model_clearance_mm": 0.0
+  },
+  "restock_geometry": {
+    "samples_checked": 6003,
+    "minimum_model_clearance_mm": 0.0
+  },
+  "physical_test": "NOT_RUN",
+  "preparation_seconds": 13.772574700000405
+}

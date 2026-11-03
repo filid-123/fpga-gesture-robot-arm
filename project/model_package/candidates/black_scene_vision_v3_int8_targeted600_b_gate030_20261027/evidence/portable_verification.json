@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ISOLATED_PACKAGE_VERIFICATION",
+  "python_flags": "-I -B",
+  "checks": [
+    {
+      "command": "reference/verify_delivery.py",
+      "exit_code": 0,
+      "status": "PASS_DELIVERY_INTEGRITY_LAYOUT_GATE_AND_TEMPORAL"
+    },
+    {
+      "command": "reference/integer_vision_reference.py --verify",
+      "exit_code": 0,
+      "samples": 26,
+      "status": "PASS_COMPLETE_INTEGER_CNN_GOLDENS"
+    },
+    {
+      "command": "reference/pc_reference.py --verify",
+      "exit_code": 0,
+      "samples": 26,
+      "status": "PASS_APPROVED_PC_FLOAT_GEOMETRY_CLASSIFIER600"
+    }
+  ],
+  "PC_reference_checked_against_existing_live_TRAIN_input_hash": true,
+  "TRAIN_goldens_only": true,
+  "RTL_simulated": false,
+  "board_tested": false,
+  "TEST_read": false
+}

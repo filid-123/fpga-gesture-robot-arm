@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_commit": "1d3fa84de81d05b846d2b9f30998e16a84f4eee3",
+  "bound_upstream_files": 623,
+  "reviewed_update_files": 139,
+  "frozen_visual_dependencies": 19,
+  "observed_false_movement": {
+    "session": "ab_20261030_053302",
+    "selection_frame_id": 668,
+    "reused_frame_id": 575,
+    "selected_xy_mm": [
+      604.6332733110694,
+      270.8762318653109
+    ],
+    "incorrectly_reused_xy_mm": [
+      605.3203279591194,
+      275.4557445828666
+    ],
+    "position_difference_mm": 4.630764604216186,
+    "yaw_difference_deg": 8.879838927806219
+  },
+  "legitimate_rejection_example": {
+    "class_name": "small_canister",
+    "measured_x_mm": 754.5624964531354,
+    "measured_diameter_mm": 6.199619227902075,
+    "expected_diameter_mm": 25,
+    "workspace_x_max_mm": 690,
+    "reason": "Off-workspace partial/non-circular surface; preserve metric gate and display measured reason"
+  },
+  "fixed": [
+    "B_CONFIGURATION_INDEPENDENT_OF_RGB",
+    "MATCH_BACKGROUND_SOURCE_AND_PROFILE",
+    "CLEARANCE_AWARE_LOCAL_IK",
+    "BOUND_FAMILY_PROOF_WITH_FULL_FALLBACK",
+    "SPARSE_CONFIRMED_RAM_IMAGE",
+    "PER_ACTION_UI_DIAGNOSTICS"
+  ],
+  "hardware_reused": {
+    "attempt": "a8",
+    "built_inputs_unchanged": 91,
+    "task_abi": "340D"
+  },
+  "limitations": [
+    "No real camera opened or board connected during unattended development",
+    "Actual end-to-end switching/planning/communication latency and grip need field test",
+    "Intermittent UART issue remains open"
+  ]
+}

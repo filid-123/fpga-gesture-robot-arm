@@ -1,0 +1,45 @@
+{
+  "result": "RESTOCK_IK_AND_FROZEN_TARGETS_PASS",
+  "pickup_D_mm": [
+    300,
+    200,
+    15
+  ],
+  "keypoints": 46,
+  "segments": 51,
+  "prefix": {
+    "first": 0,
+    "count": 15,
+    "release_kp": null
+  },
+  "tails": [
+    {
+      "first": 15,
+      "count": 12,
+      "release_kp": 21
+    },
+    {
+      "first": 27,
+      "count": 12,
+      "release_kp": 31
+    },
+    {
+      "first": 39,
+      "count": 12,
+      "release_kp": 41
+    }
+  ],
+  "validation": {
+    "samples": 3905,
+    "max_endpoint_mm": 0.0036667749253734045,
+    "max_cartesian_chord_mm": 0.30461021646083936,
+    "max_velocity_deg_s": 69.28543894060934,
+    "max_acceleration_difference_deg_s2": 177.0385032867305
+  },
+  "seconds": [
+    25.78,
+    25.86,
+    26.46
+  ],
+  "physical_test": "NOT_RUN"
+}

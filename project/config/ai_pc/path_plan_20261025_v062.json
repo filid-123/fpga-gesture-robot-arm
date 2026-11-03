@@ -1,0 +1,388 @@
+{
+  "schema": "gesture.ai_pc.desktop_path_plan_v062",
+  "status": "CONDITIONAL_GEOMETRIC_PLAN",
+  "physical_execution": false,
+  "motion_commands_generated": 0,
+  "frame": {
+    "frame_id": "desk_global_20261023",
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "axes": "+X right,+Y inward,+Z up",
+    "size_mm": [
+      800,
+      600
+    ],
+    "revision_note": "Physical D frame preserved; v06 frame label was a document revision, not a new transform."
+  },
+  "layout": {
+    "gesture_zone": {
+      "bounds_xy_mm": [
+        60,
+        240,
+        210,
+        390
+      ],
+      "centre_xy_mm": [
+        150,
+        300
+      ],
+      "role": "HAND_GESTURE_INPUT"
+    },
+    "buffer_zone": {
+      "bounds_xy_mm": [
+        270,
+        450,
+        215,
+        355
+      ],
+      "centre_xyz_mm": [
+        360,
+        285,
+        0
+      ],
+      "role": "DESKTOP_BUFFER_ZONE",
+      "gap_to_pickup_mm": 40,
+      "recommended_object_center_bounds_xy_mm": [
+        302,
+        418,
+        247,
+        323
+      ]
+    },
+    "pickup_area_D": {
+      "corners_xyz_mm": [
+        [
+          490,
+          215,
+          0
+        ],
+        [
+          690,
+          215,
+          0
+        ],
+        [
+          490,
+          355,
+          0
+        ],
+        [
+          690,
+          355,
+          0
+        ]
+      ],
+      "bounds_xy_mm": [
+        490,
+        690,
+        215,
+        355
+      ],
+      "centre_xyz_mm": [
+        590,
+        285,
+        0
+      ],
+      "size_wh_mm": [
+        200,
+        140
+      ],
+      "object_side_mm": 30,
+      "recommended_object_center_bounds_xy_mm": [
+        522,
+        658,
+        247,
+        323
+      ]
+    },
+    "pickup_above_clearance": {
+      "bounds_xy_mm": [
+        450,
+        730,
+        355,
+        600
+      ],
+      "role": "NO_DESKTOP_OBJECTS_OR_SUPPORTS",
+      "note": "Above means +Y/back of desk on the plan; preserve the existing fixed overhead RGB camera. No new desktop objects, mounts or cable piles in this band."
+    },
+    "delivery": {
+      "P_PRE_Q_mm": [
+        290,
+        175,
+        150
+      ],
+      "H_Q_mm": [
+        200,
+        140,
+        115
+      ],
+      "permit_window_xy_mm": [
+        190,
+        210,
+        130,
+        150
+      ],
+      "status": "PROPOSED_UPDATE_REQUIRES_IK_AND_CAMERA_CHECK",
+      "support_top_height_mm": null,
+      "release_gap_mm": null,
+      "height_note": "115 mm is an inherited Q-centre candidate, not a measured support height."
+    },
+    "fixed_devices": {
+      "usb_rgb_approx_D_mm": [
+        600,
+        270,
+        410
+      ],
+      "secondary_camera_C_approx_D_mm": [
+        300,
+        230,
+        450
+      ],
+      "robot_base_approx_D_mm": [
+        600,
+        25,
+        0
+      ],
+      "camera_identity_required": true,
+      "secondary_camera_status": "SOURCE_CANDIDATE_ONLY_DO_NOT_REPOSITION_WITHOUT_MEASUREMENT",
+      "robot_mount_note": "Base-axis XY approx (600,25); book elevation approx 15 mm. Do not interpret the placeholder base Z=0 as a calibrated mechanical origin.",
+      "robot_mount_book_thickness_mm_approx": 15,
+      "base_footprint_mm": null
+    },
+    "handover_support_reservation": {
+      "bounds_xy_mm": [
+        160,
+        240,
+        100,
+        180
+      ],
+      "size_wh_mm": [
+        80,
+        80
+      ],
+      "role": "HAND_OR_DUMMY_SUPPORT_ENVELOPE",
+      "not_a_desktop_obstacle": true,
+      "status": "CANDIDATE_REQUIRES_FULL_HAND_VISIBILITY_AND_IK"
+    },
+    "electronics_reservation": {
+      "bounds_xy_mm": [
+        40,
+        240,
+        450,
+        570
+      ],
+      "role": "PYNQ_AND_CONNECTORS_RESERVATION",
+      "status": "RESERVATION_ONLY_ACTUAL_BOARD_AND_MOUNT_SIZE_NOT_MEASURED"
+    },
+    "former_return_footprint": {
+      "bounds_xy_mm": [
+        300,
+        420,
+        30,
+        150
+      ],
+      "role": "UNALLOCATED_DESK_SPACE",
+      "obstacle_free_status": "NOT_SURVEYED"
+    }
+  },
+  "normal_delivery_path": [
+    {
+      "id": "I",
+      "role": "EMPTY_STANDBY",
+      "Q_mm": [
+        500,
+        130,
+        160
+      ]
+    },
+    {
+      "id": "PICK_APPROACH",
+      "role": "ABOVE_PICKUP",
+      "Q_formula": [
+        "qx",
+        "qy",
+        115
+      ]
+    },
+    {
+      "id": "PICK_CENTER",
+      "role": "PICK_REFERENCE",
+      "Q_formula": [
+        "qx",
+        "qy",
+        15
+      ]
+    },
+    {
+      "id": "PICK_LIFT",
+      "role": "LIFT_CLEARANCE",
+      "Q_formula": [
+        "qx",
+        "qy",
+        115
+      ]
+    },
+    {
+      "id": "B_HIGH",
+      "role": "AERIAL_BUFFER_WAYPOINT",
+      "Q_mm": [
+        360,
+        285,
+        160
+      ],
+      "z_min_mm": 160,
+      "object_bottom_z_at_nominal_mm": 145
+    },
+    {
+      "id": "P_PRE",
+      "role": "PRE_DELIVERY_READY",
+      "Q_mm": [
+        290,
+        175,
+        150
+      ]
+    },
+    {
+      "id": "PALM_READY",
+      "role": "WAIT_FOR_FPGA_EVENT"
+    },
+    {
+      "id": "H",
+      "role": "HANDOVER_RELEASE",
+      "Q_mm": [
+        200,
+        140,
+        115
+      ]
+    },
+    {
+      "id": "H_CLEAR",
+      "role": "LOCAL_EMPTY_GRIPPER_WITHDRAWAL",
+      "Q_mm": null,
+      "status": "REQUIRES_VERIFIED_RELEASE_AND_RETREAT_DIRECTION"
+    },
+    {
+      "id": "I_RETURN",
+      "role": "RETREAT_EMPTY",
+      "Q_mm": [
+        500,
+        130,
+        160
+      ]
+    }
+  ],
+  "required_before_physical_execution": [
+    "mark and survey G/B/handover; no separate return-zone marking",
+    "preserve pickup area and its rear clearance",
+    "T_D_from_C, T_D_from_V, T_B_from_D, T_TCP_from_Q",
+    "joint limits, IK and continuous whole-arm/tool sweep",
+    "new H/P_PRE reachability and full-hand visibility",
+    "original pick pose/version reservation per task",
+    "vacant original-footprint verification including tool and uncertainty clearance",
+    "support height, release gap and local retreat validation at pickup surface",
+    "return branches from actual task states; cancellation and fault-state handling"
+  ],
+  "revision": "0.6.2",
+  "placement_margin": {
+    "object_side_mm": 30,
+    "yaw": "arbitrary_in_plane",
+    "residual_budget_mm": 10,
+    "inset_mm": 32,
+    "formula": "ceil(side/sqrt(2) + residual_budget)",
+    "status": "PLANNING_BUDGET_NOT_A_MEASURED_ACCURACY_OR_GRIPPER_CLEARANCE"
+  },
+  "point_semantics": "XYZ waypoints describe the 30 mm object centre Q in D; empty-arm points describe the virtual grasped-object reference. Convert to TCP with tool orientation; never send D/Q directly as robot Cartesian commands.",
+  "path_rules": [
+    "Keep the hand inside gesture zone G during pickup, lift and buffer transit; no hand in B.",
+    "Enter the handover window only after arrival at P_PRE; PALM_READY needs fresh full-hand visibility.",
+    "Release only after the support and current task state are verified; stop motion on invalid/expired READY.",
+    "Release then withdraw locally along a validated direction before the transit to I.",
+    "B is a reserved arm corridor/holding envelope; no unplanned desktop objects within it.",
+    "All segment curves, not only endpoints, require reach, joint and whole-arm checks.",
+    "Cancellation returns a known held object to its own reserved original pickup pose only when return preconditions hold.",
+    "No separate return tray and no automatic alternate placement in pickup area.",
+    "Freeze changes to the active task original footprint; verify vacancy before final descent."
+  ],
+  "return_to_pickup_path": {
+    "status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_PHYSICALLY_VALIDATED",
+    "destination": "ORIGINAL_PICK_POSE_IN_CURRENT_TASK",
+    "task_record_required": [
+      "task_id",
+      "frame_id",
+      "layout_revision",
+      "calibration_revision",
+      "object_id",
+      "original_Q_xyz_mm",
+      "original_object_yaw",
+      "original_grasp_pose",
+      "validated_return_route_id"
+    ],
+    "preconditions": [
+      "Object remains held; grip/payload state is known.",
+      "Robot feedback, drive control, communications and calibration remain usable.",
+      "Current state has a validated route back to the original pickup approach.",
+      "Original footprint plus carried-object/tool/uncertainty clearance is confirmed vacant.",
+      "Destination pose is still within the valid pickup area; no obstacles or hands in approach."
+    ],
+    "steps": [
+      {
+        "id": "RETURN_TRANSIT",
+        "route": "verified branch for the actual current state; no arbitrary straight shortcut"
+      },
+      {
+        "id": "RETURN_APPROACH",
+        "Q_formula": [
+          "original_qx",
+          "original_qy",
+          115
+        ],
+        "status": "CANDIDATE_HEIGHT_REQUIRES_CLEARANCE_CHECK"
+      },
+      {
+        "id": "VERIFY_DESTINATION",
+        "required": "fresh vacancy evidence; if occluded/uncertain obtain clear view from a validated pose or operator confirmation"
+      },
+      {
+        "id": "RETURN_PLACE",
+        "Q_formula": [
+          "original_qx",
+          "original_qy",
+          "measured_support_z + object_half_height + validated_release_gap"
+        ],
+        "preserve_original_yaw": true
+      },
+      {
+        "id": "VERIFY_SUPPORT",
+        "required": "validated support/placement check before opening"
+      },
+      {
+        "id": "RELEASE",
+        "condition": "safe placement confirmed"
+      },
+      {
+        "id": "RETURN_CLEAR",
+        "route": "validated local empty-gripper withdrawal"
+      },
+      {
+        "id": "I",
+        "Q_mm": [
+          500,
+          130,
+          160
+        ]
+      }
+    ],
+    "on_occupied_or_uncertain_destination": "Do not descend or release; hold only if drive/grip remain healthy, otherwise use the fault-specific stop procedure and request manual intervention.",
+    "automatic_alternate_drop_point": false,
+    "cases": {
+      "cancel_or_handover_timeout_with_known_payload": "Conditional return via validated branch.",
+      "grasp_failed_before_lift_no_payload": "Withdraw via validated empty-gripper route; no object return.",
+      "object_dropped_or_grip_unknown": "Stop task; locate object and request manual intervention, do not run a blind carrying route.",
+      "drive_fault_feedback_loss_or_link_loss": "Do not attempt automatic return motion; use fault-specific stop/hold procedure.",
+      "already_delivered_to_person": "Finish empty-gripper retreat; do not attempt to retrieve from person."
+    }
+  }
+}

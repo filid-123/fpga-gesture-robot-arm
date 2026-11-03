@@ -1,0 +1,19 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 22:46:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/board_uart/xsim_script.tcl
+# xsim {board_uart} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: real115200 nine50Hz native exact commands, three decimated queries, 324B feedback, no overlap/errors; RX=5
+$finish called at time : 298054670 ns : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/board_evidence/mode_a_upgrade_uart_a1/tb_board_uart.sv" Line 189
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:02 . Memory (MB): peak = 229.312 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 22448 KB (Peak: 22448 KB), Simulation CPU Usage: 61983 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 22:48:02 2026...

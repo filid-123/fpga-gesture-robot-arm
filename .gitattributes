@@ -1,0 +1,6 @@
+* -text
+# Preserve the exact sealed p4.1 bytes, including CRLF and model initialization data.
+# New publication documents/scripts are written as UTF-8 with LF by their authoring tools.
+project/** -whitespace
+report/validation/** whitespace=cr-at-eol
+report/acceptance/** whitespace=cr-at-eol

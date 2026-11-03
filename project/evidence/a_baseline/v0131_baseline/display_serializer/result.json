@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: real UNISIM eight OSERDESE2, four coherent ten-bit symbols, differential clock at exactly five high/five low bits"
+  ],
+  "hardware_access": false,
+  "source_hashes": {
+    "native_motion/rtl/hdmi/tmds_serializer_7series.v": "254055e4ebc23ee9ebe139a76135d746da9756d8fd22b14a59bf988f467219d5",
+    "native_motion/sim/mode_a_hdmi/tb_serializer.sv": "539df6cf986849a7432ff1c81ba7dd77f6785015ff219c9a4c6d0a199eb41253"
+  }
+}

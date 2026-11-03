@@ -1,0 +1,366 @@
+{
+  "arrays": {
+    "locator_input_u8": {
+      "shape": [
+        1,
+        128,
+        128
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 4096,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_input_u8": {
+      "shape": [
+        1,
+        32,
+        32
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 256,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv1_acc_i32": {
+      "shape": [
+        8,
+        128,
+        128
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 131072,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv1_u8": {
+      "shape": [
+        8,
+        128,
+        128
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 32768,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv1_pool_u8": {
+      "shape": [
+        8,
+        64,
+        64
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 8192,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv2_acc_i32": {
+      "shape": [
+        12,
+        64,
+        64
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 49152,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv2_u8": {
+      "shape": [
+        12,
+        64,
+        64
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 12288,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv2_pool_u8": {
+      "shape": [
+        12,
+        32,
+        32
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 3072,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv3_acc_i32": {
+      "shape": [
+        16,
+        32,
+        32
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 16384,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv3_u8": {
+      "shape": [
+        16,
+        32,
+        32
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 4096,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv3_pool_u8": {
+      "shape": [
+        16,
+        16,
+        16
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 1024,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_g1_acc_i32": {
+      "shape": [
+        8,
+        16,
+        16
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 2048,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_g1_u8": {
+      "shape": [
+        8,
+        16,
+        16
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 512,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_g2_acc_i32": {
+      "shape": [
+        4,
+        16,
+        16
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 1024,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv4_acc_i32": {
+      "shape": [
+        24,
+        16,
+        16
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 6144,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv4_u8": {
+      "shape": [
+        24,
+        16,
+        16
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 1536,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_conv5_acc_i32": {
+      "shape": [
+        5,
+        16,
+        16
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 1280,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_residual_aligned_i64": {
+      "shape": [
+        4,
+        16,
+        16
+      ],
+      "dtype": "int64",
+      "mem_word_bits": 64,
+      "mem_words": 1024,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_residual_sum_i64": {
+      "shape": [
+        4,
+        16,
+        16
+      ],
+      "dtype": "int64",
+      "mem_word_bits": 64,
+      "mem_words": 1024,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "locator_locator_fused_i32": {
+      "shape": [
+        5,
+        16,
+        16
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 1280,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv1_acc_i32": {
+      "shape": [
+        8,
+        32,
+        32
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 8192,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv1_u8": {
+      "shape": [
+        8,
+        32,
+        32
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 2048,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv1_pool_u8": {
+      "shape": [
+        8,
+        16,
+        16
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 512,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv2_acc_i32": {
+      "shape": [
+        16,
+        16,
+        16
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 4096,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv2_u8": {
+      "shape": [
+        16,
+        16,
+        16
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 1024,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv2_pool_u8": {
+      "shape": [
+        16,
+        8,
+        8
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 256,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv3_acc_i32": {
+      "shape": [
+        32,
+        8,
+        8
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 2048,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv3_u8": {
+      "shape": [
+        32,
+        8,
+        8
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 512,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_conv3_pool_u8": {
+      "shape": [
+        32,
+        4,
+        4
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 128,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_fc1_acc_i32": {
+      "shape": [
+        64
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 64,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_fc1_u8": {
+      "shape": [
+        64
+      ],
+      "dtype": "uint8",
+      "mem_word_bits": 32,
+      "mem_words": 16,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    },
+    "classifier_fc2_logits_i32": {
+      "shape": [
+        6
+      ],
+      "dtype": "int32",
+      "mem_word_bits": 32,
+      "mem_words": 6,
+      "layout": "CHW/C row-major;uint8 packed little-endian4bytes/word"
+    }
+  },
+  "output_stream": "44bit{addr12,data32};cell-major/channel0..4",
+  "bank_valid_bytes": {
+    "act0_F3_and_residual": [
+      0,
+      1024
+    ],
+    "act1_G1": [
+      0,
+      256
+    ],
+    "act1_F4": [
+      0,
+      768
+    ]
+  },
+  "zero_unwritten_bytes": "fixture padding only, not whole RAM clear requirement"
+}

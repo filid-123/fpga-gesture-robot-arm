@@ -1,0 +1,1 @@
+{"result": "SEALED_PACKAGE_INPUTS_PASS", "version": "0.1.0", "patch_id": "native_giao_full_workspace_p4", "hotfix_id": "startup_route_map_p4_1", "physical_access": false}

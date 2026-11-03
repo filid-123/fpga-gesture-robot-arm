@@ -1,0 +1,206 @@
+[
+  {
+    "phase": "DIRECT_PREGRASP",
+    "carrying": false,
+    "request_start_index": 0,
+    "request_end_index_inclusive": 123,
+    "motion_samples": 124,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 4.96,
+    "target_firmware_rad": {
+      "b": -0.14767905968451506,
+      "s": 0.7697284499291408,
+      "e": 0.939610841848987,
+      "t": 1.5043504592218722,
+      "r": -0.13694704780952027,
+      "g": 3.084835364
+    }
+  },
+  {
+    "phase": "DESCEND",
+    "carrying": false,
+    "request_start_index": 125,
+    "request_end_index_inclusive": 160,
+    "motion_samples": 36,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 1.44,
+    "target_firmware_rad": {
+      "b": -0.14772221033271152,
+      "s": 0.8952682989599356,
+      "e": 1.244729261920755,
+      "t": 1.0491484971193092,
+      "r": -0.13666569050715446,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "LIFT",
+    "carrying": true,
+    "request_start_index": 162,
+    "request_end_index_inclusive": 250,
+    "motion_samples": 89,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 3.56,
+    "target_firmware_rad": {
+      "b": -0.1671307426425919,
+      "s": 0.6764070501858392,
+      "e": 1.172668051983619,
+      "t": 1.4413136878305415,
+      "r": -0.15850101008688053,
+      "g": 2.95
+    }
+  },
+  {
+    "phase": "INNER_HOLD",
+    "carrying": true,
+    "request_start_index": 251,
+    "request_end_index_inclusive": 281,
+    "motion_samples": 31,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.62,
+    "target_firmware_rad": {
+      "b": 3.6731945292429695e-06,
+      "s": 0.40568341297506866,
+      "e": 1.7689148418533303,
+      "t": 1.1157905351716186,
+      "r": -0.15850101008688053,
+      "g": 2.95
+    }
+  },
+  {
+    "phase": "BUFFER",
+    "carrying": true,
+    "request_start_index": 282,
+    "request_end_index_inclusive": 771,
+    "motion_samples": 490,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 9.8,
+    "target_firmware_rad": {
+      "b": 0.9097568311452076,
+      "s": 0.5236871998691335,
+      "e": 0.9894164700432443,
+      "t": 1.560988456308634,
+      "r": -0.15850101008688053,
+      "g": 2.95
+    }
+  },
+  {
+    "phase": "PREPLACE",
+    "carrying": true,
+    "request_start_index": 772,
+    "request_end_index_inclusive": 838,
+    "motion_samples": 67,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 1.34,
+    "target_firmware_rad": {
+      "b": 0.8908911451246627,
+      "s": 0.5087938042970938,
+      "e": 0.8863891156128929,
+      "t": 1.5491821426164771,
+      "r": -0.15850101008688053,
+      "g": 2.95
+    }
+  },
+  {
+    "phase": "PLACE",
+    "carrying": true,
+    "request_start_index": 839,
+    "request_end_index_inclusive": 873,
+    "motion_samples": 35,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.7000000000000001,
+    "target_firmware_rad": {
+      "b": 1.0537379364725983,
+      "s": 0.6746297520038558,
+      "e": 0.6037688671163179,
+      "t": 1.5706999999999904,
+      "r": -0.15850101008688053,
+      "g": 2.95
+    }
+  },
+  {
+    "phase": "RELEASE_CLEARANCE",
+    "carrying": false,
+    "request_start_index": 875,
+    "request_end_index_inclusive": 892,
+    "motion_samples": 18,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.36,
+    "target_firmware_rad": {
+      "b": 1.0767761526662134,
+      "s": 0.664181283875009,
+      "e": 0.6296771896715992,
+      "t": 1.5552401455735558,
+      "r": -0.15850101008688053,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "RETREAT",
+    "carrying": false,
+    "request_start_index": 893,
+    "request_end_index_inclusive": 1084,
+    "motion_samples": 192,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 3.84,
+    "target_firmware_rad": {
+      "b": 1.0767761526681072,
+      "s": 0.5568476158440153,
+      "e": 0.5407022776531799,
+      "t": 1.5706999999999998,
+      "r": -0.15850101008688053,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "RETURN_CLEAR",
+    "carrying": false,
+    "request_start_index": 1085,
+    "request_end_index_inclusive": 1111,
+    "motion_samples": 27,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.54,
+    "target_firmware_rad": {
+      "b": 0.8908911451266719,
+      "s": 0.2966972415459419,
+      "e": 1.041043606422924,
+      "t": 1.3305090455283386,
+      "r": -0.15850101008688053,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "INNER_RETURN",
+    "carrying": false,
+    "request_start_index": 1112,
+    "request_end_index_inclusive": 1186,
+    "motion_samples": 75,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 1.5,
+    "target_firmware_rad": {
+      "b": 3.6731945298337195e-06,
+      "s": 0.0912808297053266,
+      "e": 2.4223793896222476,
+      "t": 0.1545896741696703,
+      "r": -0.15850101008688053,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "RETURN_LOW_HOME",
+    "carrying": false,
+    "request_start_index": 1187,
+    "request_end_index_inclusive": 1204,
+    "motion_samples": 18,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.36,
+    "target_firmware_rad": {
+      "b": 0.006135923,
+      "s": 0.104310694,
+      "e": 2.587825589,
+      "t": 0.426446659,
+      "r": 0.004601941999999998,
+      "g": 1.586
+    }
+  }
+]

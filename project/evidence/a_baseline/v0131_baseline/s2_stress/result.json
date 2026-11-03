@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "legs": 177,
+  "samples": 9423,
+  "axes": 6,
+  "checks": [
+    "PASS: quintic/backpressure/pause actual S2 RTL all 177 legs, 9423 exact six-axis samples, production VMAX/AMAX and endpoints"
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "native_plan_sha256": "2e98057a854af232d75cb53e203c7e7dea601f8b58203047f3bea4293a7a5d7e",
+  "bench_sha256": "b96ca863c1ee709ae8c5684f0fd7b9f54bf5a544c3c378e26ada58b0430971da",
+  "production_period_cycles": 2000000,
+  "testbench_period_cycles": 512,
+  "physical_robot": false
+}

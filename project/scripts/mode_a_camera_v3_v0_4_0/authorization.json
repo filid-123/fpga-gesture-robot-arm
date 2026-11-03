@@ -1,0 +1,6 @@
+{
+  "scope": "Reusable v3 camera-only operator tool. The operator invokes --run after the README hardware conditions. This entry never configures arm/UART/motion tables or starts a task.",
+  "user_request": "2026-10-27 A-mode package with Rain v3 and live gesture/status visibility",
+  "hardware_access_this_development": "NOT_RUN",
+  "motion": "NOT_ENABLED_BY_THIS_CAMERA_ENTRY"
+}

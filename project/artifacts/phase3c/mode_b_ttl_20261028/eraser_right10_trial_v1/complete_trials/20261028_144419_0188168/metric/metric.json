@@ -1,0 +1,232 @@
+{
+  "schema": "gesture.mode_b.eraser_restart_metric.v1",
+  "capture_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\capture\\capture.json",
+  "capture_sha256": "ced7554b33d7217ec6845157903e35abfc3d369e7f42aedc67a68b7310b5ee3e",
+  "table_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "table_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "object_centre_mm": [
+    636.2218269564645,
+    260.27831557772197,
+    7.5
+  ],
+  "height_source": "EXISTING_REGISTERED_NOMINAL_DIMENSIONS_NOT_NEW_MEASUREMENT",
+  "xy_max_pairwise_repeatability_mm": 0.3804923967327602,
+  "records": [
+    {
+      "frame": {
+        "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000000_raw.png",
+        "image_sha256": "14477af325a59b9e556ee6073f8e2ddcaffef799fff157b0933128051f69f70d",
+        "pixel_sha256": "5b73c4141ab4d73361ee8d7d5521c0eb81a3f5befc8e77659a7574ba7457b0a7",
+        "received_utc": "2026-10-28T14:44:30.734558+00:00",
+        "image_size_wh": [
+          1920,
+          1080
+        ],
+        "exposure": -4,
+        "flags": 2
+      },
+      "observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\perception\\00_observation.json",
+      "observation_sha256": "983503ae5936c304d95d0ca753ed725c2f9ed6bdcc84364bfcbfd45d2000a72f",
+      "top": {
+        "centre_desktop_xyz_mm": [
+          636.1145742541592,
+          260.40553647195145,
+          15.0
+        ],
+        "projected_boundary_xyz_mm": [
+          [
+            633.5985813911584,
+            226.03621250110083,
+            15.0
+          ],
+          [
+            647.1996032392708,
+            227.97604767564937,
+            15.0
+          ],
+          [
+            637.9060651315347,
+            294.6382846422916,
+            15.0
+          ],
+          [
+            625.7540472546725,
+            292.971601068764,
+            15.0
+          ]
+        ],
+        "edge_lengths_mm": [
+          13.738659171012522,
+          67.30693640299418,
+          12.265780554609796,
+          67.39349344352574
+        ],
+        "opposite_edge_mean_mm": [
+          13.00221986281116,
+          67.35021492325995
+        ],
+        "max_abs_adjacent_edge_cosine": 0.025002737961130447,
+        "long_axis_yaw_mod180_deg": 96.68432285538849,
+        "rectangle_residual": {
+          "centre_xy_mm": [
+            636.1145742541592,
+            260.40553647195145
+          ],
+          "fitted_size_mm": [
+            13.001563594709621,
+            67.34607572035175
+          ],
+          "maximum_corner_residual_mm": 0.4390796110516728,
+          "within2mm": true,
+          "raw_four_corner_centre_retained": true,
+          "raw_corners_replaced": false
+        }
+      }
+    },
+    {
+      "frame": {
+        "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000001_raw.png",
+        "image_sha256": "a3bda265e0284c72a652b794e3e58a041b7b20776ff63011f78cc3ceeb2eab62",
+        "pixel_sha256": "ba9a24fcb5e9993a527163905b8f195076a4c5b1662c4d91cb227b27538aed08",
+        "received_utc": "2026-10-28T14:44:31.134966+00:00",
+        "image_size_wh": [
+          1920,
+          1080
+        ],
+        "exposure": -4,
+        "flags": 2
+      },
+      "observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\perception\\01_observation.json",
+      "observation_sha256": "7daa0b42982ed7e0999af93205e61340386307b25c3b18a374fea4d8edb17fd0",
+      "top": {
+        "centre_desktop_xyz_mm": [
+          636.3804792217223,
+          260.133380244397,
+          15.0
+        ],
+        "projected_boundary_xyz_mm": [
+          [
+            646.7705737851022,
+            227.49864703862337,
+            15.0
+          ],
+          [
+            639.6502088932442,
+            292.6700037231148,
+            15.0
+          ],
+          [
+            626.173641739655,
+            293.63971564029544,
+            15.0
+          ],
+          [
+            632.927492468888,
+            226.72515457555457,
+            15.0
+          ]
+        ],
+        "edge_lengths_mm": [
+          65.55917424960758,
+          13.511410120617427,
+          67.25453874765401,
+          13.864674208856982
+        ],
+        "opposite_edge_mean_mm": [
+          66.40685649863079,
+          13.688042164737205
+        ],
+        "max_abs_adjacent_edge_cosine": 0.17967495548232087,
+        "long_axis_yaw_mod180_deg": 95.76348484310361,
+        "rectangle_residual": {
+          "centre_xy_mm": [
+            636.3804792217223,
+            260.133380244397
+          ],
+          "fitted_size_mm": [
+            66.39423352345408,
+            13.60142592247346
+          ],
+          "maximum_corner_residual_mm": 1.3043862002735864,
+          "within2mm": true,
+          "raw_four_corner_centre_retained": true,
+          "raw_corners_replaced": false
+        }
+      }
+    },
+    {
+      "frame": {
+        "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000002_raw.png",
+        "image_sha256": "f3cf5a058a0e159e20937a87d86e6ada7bf1502bfed7bd261f812ffa456b098a",
+        "pixel_sha256": "b619c1630f85865d001bd2d334a5390557041204684e9bc1ef3aa597415549e3",
+        "received_utc": "2026-10-28T14:44:31.534713+00:00",
+        "image_size_wh": [
+          1920,
+          1080
+        ],
+        "exposure": -4,
+        "flags": 2
+      },
+      "observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\perception\\02_observation.json",
+      "observation_sha256": "0e44c13cd5d4d2b803ada05824cf0b150068f008b2dce1e9e80a1a31ff5bfd93",
+      "top": {
+        "centre_desktop_xyz_mm": [
+          636.1704273935121,
+          260.2960300168174,
+          15.0
+        ],
+        "projected_boundary_xyz_mm": [
+          [
+            633.5985813911584,
+            226.03621250110083,
+            15.0
+          ],
+          [
+            647.4186460794863,
+            227.98098001003623,
+            15.0
+          ],
+          [
+            638.1189008475857,
+            294.6403353922268,
+            15.0
+          ],
+          [
+            625.545581255818,
+            292.52659216390566,
+            15.0
+          ]
+        ],
+        "edge_lengths_mm": [
+          13.956228310448989,
+          67.30493979900314,
+          12.74975591891872,
+          66.97627489554583
+        ],
+        "opposite_edge_mean_mm": [
+          13.352992114683854,
+          67.14060734727448
+        ],
+        "max_abs_adjacent_edge_cosine": 0.0460114905654442,
+        "long_axis_yaw_mod180_deg": 97.94215640262536,
+        "rectangle_residual": {
+          "centre_xy_mm": [
+            636.1704273935121,
+            260.2960300168174
+          ],
+          "fitted_size_mm": [
+            13.349347056942417,
+            67.13737360546345
+          ],
+          "maximum_corner_residual_mm": 0.48023315888294704,
+          "within2mm": true,
+          "raw_four_corner_centre_retained": true,
+          "raw_corners_replaced": false
+        }
+      }
+    }
+  ],
+  "frozen_vision_files_checked": 19,
+  "metric_localization_accepted": false,
+  "physical_execution_allowed": false
+}

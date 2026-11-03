@@ -1,0 +1,10 @@
+OFFLINE_BOARD_GUARDS_PASS_NO_HARDWARE
+OFFLINE_BOARD_GUARDS_PASS_NO_HARDWARE
+OFFLINE_BOARD_GUARDS_PASS_NO_HARDWARE
+OFFLINE_BOARD_GUARDS_PASS_NO_HARDWARE
+OFFLINE_BOARD_GUARDS_PASS_NO_HARDWARE
+.........................................
+----------------------------------------------------------------------
+Ran 41 tests in 0.139s
+
+OK

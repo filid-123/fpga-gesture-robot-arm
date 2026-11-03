@@ -1,0 +1,399 @@
+{
+  "schema": "gesture.ai_pc.raw_exposure_sweep.v1",
+  "status": "COMPLETED",
+  "device": {
+    "Index": 1,
+    "FriendlyName": "Web Camera",
+    "DevicePath": "redacted_usb_device",
+    "Error": null,
+    "Controls": {
+      "exposure": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -13,
+        "Maximum": -1,
+        "Step": 1,
+        "DefaultValue": -5,
+        "Capabilities": 3,
+        "Value": -4,
+        "Flags": 1
+      },
+      "focus": {
+        "Supported": false,
+        "RangeHResult": -2147023728,
+        "GetHResult": -2147023728,
+        "Minimum": 0,
+        "Maximum": 0,
+        "Step": 0,
+        "DefaultValue": 0,
+        "Capabilities": 0,
+        "Value": 0,
+        "Flags": 0
+      },
+      "brightness": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -128,
+        "Maximum": 127,
+        "Step": 1,
+        "DefaultValue": 0,
+        "Capabilities": 2,
+        "Value": 0,
+        "Flags": 2
+      },
+      "white_balance": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": 2800,
+        "Maximum": 6500,
+        "Step": 1,
+        "DefaultValue": 4000,
+        "Capabilities": 3,
+        "Value": 4000,
+        "Flags": 1
+      },
+      "gain": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": 0,
+        "Maximum": 63,
+        "Step": 1,
+        "DefaultValue": 32,
+        "Capabilities": 2,
+        "Value": 0,
+        "Flags": 2
+      }
+    }
+  },
+  "image_size_wh": [
+    1920,
+    1080
+  ],
+  "captures": [
+    {
+      "requested_exposure": -5,
+      "requested_flags": 1,
+      "file": "auto_raw.png",
+      "write": {
+        "DevicePath": "redacted_usb_device",
+        "Before": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -4,
+          "Flags": 1
+        },
+        "After": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -4,
+          "Flags": 1
+        },
+        "SetHResult": 0,
+        "ReadbackMatched": true
+      },
+      "pixel_sha256": "0944c859bcbc80437a06495469c96fad26c40e7bbf63efe90a4e010d27d83370",
+      "quality": {
+        "patches": [
+          {
+            "s_median": 70.0,
+            "v_median": 232.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0002337540906965872,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 26.0,
+            "v_median": 239.0,
+            "neutral_bright_fraction": 1.0,
+            "near_clip_fraction": 0.0,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 76.0,
+            "v_median": 238.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.003069914834620717,
+            "dark_fraction": 0.0
+          }
+        ],
+        "quality_score": -1.8980392156862744,
+        "colour_identity_verified": false,
+        "metric_localization_verified": false
+      },
+      "readback": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -13,
+        "Maximum": -1,
+        "Step": 1,
+        "DefaultValue": -5,
+        "Capabilities": 3,
+        "Value": -4,
+        "Flags": 1
+      },
+      "manual_mode_and_value_verified": false,
+      "exposure": -5,
+      "flags": 1
+    },
+    {
+      "requested_exposure": -4,
+      "requested_flags": 2,
+      "file": "manual_minus4_raw.png",
+      "write": {
+        "DevicePath": "redacted_usb_device",
+        "Before": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -4,
+          "Flags": 1
+        },
+        "After": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -4,
+          "Flags": 2
+        },
+        "SetHResult": 0,
+        "ReadbackMatched": true
+      },
+      "pixel_sha256": "4724a8988978a239f8bb386f6206ba3bc5b45db839b1e4d2d5646d319e0e9b7f",
+      "quality": {
+        "patches": [
+          {
+            "s_median": 163.0,
+            "v_median": 158.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 115.0,
+            "v_median": 187.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 185.0,
+            "v_median": 199.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0,
+            "dark_fraction": 0.0
+          }
+        ],
+        "quality_score": 0.45098039215686275,
+        "colour_identity_verified": false,
+        "metric_localization_verified": false
+      },
+      "readback": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -13,
+        "Maximum": -1,
+        "Step": 1,
+        "DefaultValue": -5,
+        "Capabilities": 3,
+        "Value": -4,
+        "Flags": 2
+      },
+      "manual_mode_and_value_verified": true,
+      "exposure": -4,
+      "flags": 2
+    },
+    {
+      "requested_exposure": -3,
+      "requested_flags": 2,
+      "file": "manual_minus3_raw.png",
+      "write": {
+        "DevicePath": "redacted_usb_device",
+        "Before": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -4,
+          "Flags": 2
+        },
+        "After": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -3,
+          "Flags": 2
+        },
+        "SetHResult": 0,
+        "ReadbackMatched": true
+      },
+      "pixel_sha256": "44fc403d265dc270367cebfa5c632c5690bc2dfc6ca38981d9d8c9a63a5100e7",
+      "quality": {
+        "patches": [
+          {
+            "s_median": 122.0,
+            "v_median": 214.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0017531556802244039,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 59.0,
+            "v_median": 238.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 116.0,
+            "v_median": 231.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0014854426619132501,
+            "dark_fraction": 0.0
+          }
+        ],
+        "quality_score": 0.23137254901960785,
+        "colour_identity_verified": false,
+        "metric_localization_verified": false
+      },
+      "readback": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -13,
+        "Maximum": -1,
+        "Step": 1,
+        "DefaultValue": -5,
+        "Capabilities": 3,
+        "Value": -3,
+        "Flags": 2
+      },
+      "manual_mode_and_value_verified": true,
+      "exposure": -3,
+      "flags": 2
+    },
+    {
+      "requested_exposure": -2,
+      "requested_flags": 2,
+      "file": "manual_minus2_raw.png",
+      "write": {
+        "DevicePath": "redacted_usb_device",
+        "Before": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -3,
+          "Flags": 2
+        },
+        "After": {
+          "Supported": true,
+          "RangeHResult": 0,
+          "GetHResult": 0,
+          "Minimum": -13,
+          "Maximum": -1,
+          "Step": 1,
+          "DefaultValue": -5,
+          "Capabilities": 3,
+          "Value": -2,
+          "Flags": 2
+        },
+        "SetHResult": 0,
+        "ReadbackMatched": true
+      },
+      "pixel_sha256": "c7bb8fed3c29219c9bc889bbef65e1e8c58a04af45f7fefb2aac5588d1920241",
+      "quality": {
+        "patches": [
+          {
+            "s_median": 50.0,
+            "v_median": 235.0,
+            "neutral_bright_fraction": 0.0,
+            "near_clip_fraction": 0.0001168770453482936,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 1.0,
+            "v_median": 240.0,
+            "neutral_bright_fraction": 1.0,
+            "near_clip_fraction": 0.0,
+            "dark_fraction": 0.0
+          },
+          {
+            "s_median": 44.0,
+            "v_median": 239.0,
+            "neutral_bright_fraction": 0.10011883541295306,
+            "near_clip_fraction": 0.0035650623885918,
+            "dark_fraction": 0.0
+          }
+        ],
+        "quality_score": -1.996078431372549,
+        "colour_identity_verified": false,
+        "metric_localization_verified": false
+      },
+      "readback": {
+        "Supported": false,
+        "RangeHResult": 0,
+        "GetHResult": -2147024895,
+        "Minimum": -13,
+        "Maximum": -1,
+        "Step": 1,
+        "DefaultValue": -5,
+        "Capabilities": 3,
+        "Value": 0,
+        "Flags": 0
+      },
+      "manual_mode_and_value_verified": false,
+      "exposure": -2,
+      "flags": 2
+    }
+  ],
+  "selection": {
+    "status": "CANDIDATE_FOR_REVIEW",
+    "selected": "manual_minus4_raw.png",
+    "reason": "VISUAL_RAW_COLOUR_CLARITY_AND_VERIFIED_MANUAL_CONTROL_NOT_DETECTOR_CONFIDENCE_OPTIMIZATION"
+  },
+  "profile_scope": "THIS_COMPUTER_EXACT_DEVICE_PATH_CURRENT_LIGHTING; RECHECK_ON_TARGET_PC",
+  "source_report_sha256": "1e5d4c92fdb5b90a8531516a0b2abfba1241485f8d396691ad52f88f6f460b83",
+  "physical_execution": false,
+  "metric_localization_verified": false
+}

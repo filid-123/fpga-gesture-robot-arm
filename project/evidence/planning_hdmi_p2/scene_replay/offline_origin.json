@@ -1,0 +1,14 @@
+{
+  "task_id": "OFFLINE_REPLAY_NO_HARDWARE_COMPLETION",
+  "origin_kind": "B_DYNAMIC",
+  "source_centre_mm": [
+    639.3042139372925,
+    274.7582631191112,
+    15.0
+  ],
+  "source_yaw_deg": 153.86098031279082,
+  "native_file": "board_evidence\\mode_ab_p2\\scene_replay\\delivery\\native.json",
+  "native_sha256": "c340161e19c5c54d576e195a1f14f0f0fbe4fc78ae8b6ae9bd6ea2133c055e3f",
+  "origin_file": "board_evidence\\mode_ab_p2\\scene_replay\\offline_origin.json",
+  "evidence_kind": "SYNTHETIC_ORIGIN_FOR_OFFLINE_RETURN_GEOMETRY_ONLY"
+}

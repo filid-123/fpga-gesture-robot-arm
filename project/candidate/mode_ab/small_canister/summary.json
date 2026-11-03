@@ -1,0 +1,16 @@
+{
+  "class_name": "small_canister",
+  "normal_fifo": 42,
+  "table_segments": 40,
+  "restock_fifo": 58,
+  "normal_geometry": {
+    "samples_checked": 19506,
+    "minimum_model_clearance_mm": -0.0005486021641480932
+  },
+  "restock_geometry": {
+    "samples_checked": 5982,
+    "minimum_model_clearance_mm": -0.0005486021641480932
+  },
+  "physical_test": "NOT_RUN",
+  "preparation_seconds": 14.9026950999978
+}

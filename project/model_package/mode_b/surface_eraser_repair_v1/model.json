@@ -1,0 +1,44 @@
+{
+  "schema": "gesture.ai_pc.surface_package.v1",
+  "architecture": "mobilenetv3_small_top_unet_v1",
+  "input_encoding": "RGB_FLOAT_0_1_INTERNAL_IMAGENET_NORMALIZATION",
+  "input_side": 256,
+  "checkpoint": {
+    "file": "weights.pt",
+    "sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93"
+  },
+  "warm_start_sha256": "b5651bbe7b0e6c0c4bd7c801e9aa3ba6e0f5bae748c9455f3be5ffa78c984daf",
+  "dataset_sha256": "ea9d170080d30e2a6ca22c5cf9b3387b36f5f5d746dfcefe254aa34585246db9",
+  "encoder_frozen": true,
+  "steps": 2000,
+  "batch": 6,
+  "class_balanced": true,
+  "detector_roi_jitter_fraction": 0.04,
+  "foreground_bce_positive_weight": 1.0,
+  "spatial_augmentation": "RIGID_SCENE_ROTATION_75_PERCENT_UNIFORM_MINUS180_PLUS180_BEFORE_ROI_RESIZE",
+  "training_sample_counts_including_derivatives": {
+    "yellow_cube": 71,
+    "red_cube": 74,
+    "blue_cube": 56,
+    "eraser": 95,
+    "small_canister": 103
+  },
+  "trained_surface_classes": [
+    "blue_cube",
+    "eraser",
+    "red_cube",
+    "small_canister",
+    "yellow_cube"
+  ],
+  "training_labels": "ASSISTANT_SELECTED_VISIBLE_TOP_POLYGONS_PUBLIC_AND_PROJECT_TRAIN_ONLY",
+  "top_surface_gravity_not_measured_for_public_images": true,
+  "validation_top_classes_available": [
+    "eraser"
+  ],
+  "canister_independent_surface_validation": "NOT_AVAILABLE",
+  "metric_scope": "DEVELOPMENT_ONLY_SMALL_PUBLIC_TOP_SAMPLE_COVERAGE",
+  "training_device": "CPU",
+  "rocm_validation": "NOT_RUN",
+  "physical_execution": false,
+  "elapsed_s": 83.20074109999769
+}

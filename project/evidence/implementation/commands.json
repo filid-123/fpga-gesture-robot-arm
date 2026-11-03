@@ -1,0 +1,36 @@
+[
+  {
+    "stage": "create",
+    "command": [
+      "E:/Xilinx/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-notrace",
+      "-source",
+      "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\native_motion\\scripts\\create_roarm_closed_loop_project.tcl",
+      "-log",
+      "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\create.log",
+      "-journal",
+      "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\create.jou"
+    ],
+    "exit_code": 0,
+    "wall_s": 98.86000000000013
+  },
+  {
+    "stage": "implement",
+    "command": [
+      "E:/Xilinx/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-notrace",
+      "-source",
+      "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\native_motion\\scripts\\build_roarm_closed_loop.tcl",
+      "-log",
+      "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\implement.log",
+      "-journal",
+      "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\implement.jou"
+    ],
+    "exit_code": 0,
+    "wall_s": 2378.1400000000003
+  }
+]

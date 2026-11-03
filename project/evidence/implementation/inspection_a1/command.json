@@ -1,0 +1,21 @@
+{
+  "command": [
+    "E:/Xilinx/2026.1/Vivado/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-notrace",
+    "-source",
+    "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\scripts\\inspect_mode_ab_p4_netlist.tcl",
+    "-log",
+    "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\inspection_a1\\inspect.log",
+    "-journal",
+    "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\inspection_a1\\inspect.jou"
+  ],
+  "environment": {
+    "DIAG_PROJECT": "D:/FPGA_Projects/Gesture/builds/mode_ab_v0_1_0_a14/Gesture_Roarm_ClosedLoop.xpr",
+    "DIAG_INSPECT_OUT": "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\inspection_a1\\NETLIST_INSPECTION.txt",
+    "DIAG_CDC_OUT": "C:\\redacted_user\\.codex\\worktrees\\mode-ab-integration-20261029\\Gesture\\board_evidence\\mode_ab_impl_a14\\inspection_a1\\CDC_DETAILS.rpt"
+  },
+  "exit_code": 0,
+  "hardware_access": false
+}

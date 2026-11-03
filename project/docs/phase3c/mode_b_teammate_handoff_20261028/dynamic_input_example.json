@@ -1,0 +1,43 @@
+{
+  "schema": "gesture.mode_b.teammate_input_draft.v1",
+  "wire_protocol_implemented": false,
+  "profile": "MODE_B_DYNAMIC",
+  "task_id": "REPLACE_WITH_FRESH_UNIQUE_ID",
+  "frame_id": "REPLACE_WITH_NPU_FRAME_ID",
+  "capture_utc": "REPLACE_WITH_FRESH_TIMESTAMP",
+  "npu_execution_evidence": "REQUIRED_SEPARATELY",
+  "frame": "desk_global_mm",
+  "object_class": "eraser",
+  "mode_b_class_id": 2,
+  "size_mm": [
+    65,
+    15,
+    15
+  ],
+  "pickup": {
+    "centre_mm": [
+      636.2218269564645,
+      260.27831557772197,
+      7.5
+    ],
+    "yaw_deg": 96.79662769239283,
+    "yaw_semantics": "DETECTED_LONG_AXIS_DEGREES"
+  },
+  "destination": {
+    "support_centre_mm": [
+      285,
+      195,
+      150
+    ],
+    "size_xy_mm": [
+      80,
+      80
+    ],
+    "rim_height_mm": 0
+  },
+  "calibration_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "home_id": "low_park_20261028_v1",
+  "speed_multiplier": 3,
+  "raw_source_must_remain_unchanged": true,
+  "offsets_applied_once_in_motion_adapter": true
+}

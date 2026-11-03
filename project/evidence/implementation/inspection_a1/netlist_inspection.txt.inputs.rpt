@@ -1,0 +1,1177 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Oct 30 21:34:36 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_timing -from [get_ports {{ov5640_data[*]} ov5640_href ov5640_vsync}] -to [get_cells -hier -filter {NAME =~ *u_capture/*dvp_*_iob_reg* && REF_NAME =~ FD*}] -delay_type min_max -max_paths 40 -path_type full_clock_expanded -input_pins -file {C:\redacted_user\.codex\worktrees\mode-ab-integration-20261029\Gesture\board_evidence\mode_ab_impl_a14\inspection_a1\NETLIST_INSPECTION.txt.inputs.rpt}
+| Design       : roarm_closed_loop_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.710ns  (required time - arrival time)
+  Source:                 ov5640_data[0]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.346ns  (logic 2.346ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    Y18                                               0.000    18.417 r  ov5640_data[0]
+                         net (fo=0)                   0.000    18.417    ov5640_data[0]
+    Y18                                                               r  ov5640_data_IBUF[0]_inst/I
+    Y18                  IBUF (Prop_ibuf_I_O)         0.480    18.897 r  ov5640_data_IBUF[0]_inst/O
+                         net (fo=1, routed)           0.000    18.897    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[0]
+    ILOGIC_X1Y66                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y66         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.866    20.763 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.763    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[0]
+    ILOGIC_X1Y66         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y66         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y66         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.763    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.710    <hidden>
+
+Slack (MET) :             1.716ns  (required time - arrival time)
+  Source:                 ov5640_data[1]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.340ns  (logic 2.340ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    Y19                                               0.000    18.417 r  ov5640_data[1]
+                         net (fo=0)                   0.000    18.417    ov5640_data[1]
+    Y19                                                               r  ov5640_data_IBUF[1]_inst/I
+    Y19                  IBUF (Prop_ibuf_I_O)         0.474    18.891 r  ov5640_data_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.000    18.891    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[1]
+    ILOGIC_X1Y65                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y65         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.866    20.757 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.757    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[1]
+    ILOGIC_X1Y65         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y65         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y65         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.757    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.716    <hidden>
+
+Slack (MET) :             1.726ns  (required time - arrival time)
+  Source:                 ov5640_data[4]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.325ns  (logic 2.325ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.586ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.586ns = ( 22.419 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    U19                                               0.000    18.417 r  ov5640_data[4]
+                         net (fo=0)                   0.000    18.417    ov5640_data[4]
+    U19                                                               r  ov5640_data_IBUF[4]_inst/I
+    U19                  IBUF (Prop_ibuf_I_O)         0.459    18.875 r  ov5640_data_IBUF[4]_inst/O
+                         net (fo=1, routed)           0.000    18.875    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[4]
+    ILOGIC_X1Y75                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y75         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.866    20.741 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.741    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[4]
+    ILOGIC_X1Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.620    22.419    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]/C
+                         clock pessimism              0.000    22.419    <hidden>
+                         clock uncertainty           -0.035    22.383    <hidden>
+    ILOGIC_X1Y75         FDRE (Setup_fdre_C_D)        0.084    22.467    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]
+  -------------------------------------------------------------------
+                         required time                         22.467    <hidden>
+                         arrival time                         -20.741    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.726    <hidden>
+
+Slack (MET) :             1.746ns  (required time - arrival time)
+  Source:                 ov5640_data[5]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.312ns  (logic 2.312ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.593ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.593ns = ( 22.426 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    W18                                               0.000    18.417 r  ov5640_data[5]
+                         net (fo=0)                   0.000    18.417    ov5640_data[5]
+    W18                                                               r  ov5640_data_IBUF[5]_inst/I
+    W18                  IBUF (Prop_ibuf_I_O)         0.446    18.863 r  ov5640_data_IBUF[5]_inst/O
+                         net (fo=1, routed)           0.000    18.863    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[5]
+    ILOGIC_X1Y56                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y56         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.866    20.729 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.729    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[5]
+    ILOGIC_X1Y56         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.627    22.426    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y56         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]/C
+                         clock pessimism              0.000    22.426    <hidden>
+                         clock uncertainty           -0.035    22.390    <hidden>
+    ILOGIC_X1Y56         FDRE (Setup_fdre_C_D)        0.084    22.474    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]
+  -------------------------------------------------------------------
+                         required time                         22.474    <hidden>
+                         arrival time                         -20.729    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.746    <hidden>
+
+Slack (MET) :             1.750ns  (required time - arrival time)
+  Source:                 ov5640_data[6]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.308ns  (logic 2.308ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.593ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.593ns = ( 22.426 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    W19                                               0.000    18.417 r  ov5640_data[6]
+                         net (fo=0)                   0.000    18.417    ov5640_data[6]
+    W19                                                               r  ov5640_data_IBUF[6]_inst/I
+    W19                  IBUF (Prop_ibuf_I_O)         0.442    18.859 r  ov5640_data_IBUF[6]_inst/O
+                         net (fo=1, routed)           0.000    18.859    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[6]
+    ILOGIC_X1Y55                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y55         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.866    20.725 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.725    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[6]
+    ILOGIC_X1Y55         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.627    22.426    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y55         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]/C
+                         clock pessimism              0.000    22.426    <hidden>
+                         clock uncertainty           -0.035    22.390    <hidden>
+    ILOGIC_X1Y55         FDRE (Setup_fdre_C_D)        0.084    22.474    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]
+  -------------------------------------------------------------------
+                         required time                         22.474    <hidden>
+                         arrival time                         -20.725    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.750    <hidden>
+
+Slack (MET) :             1.756ns  (required time - arrival time)
+  Source:                 ov5640_data[7]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.300ns  (logic 2.300ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    W14                                               0.000    18.417 r  ov5640_data[7]
+                         net (fo=0)                   0.000    18.417    ov5640_data[7]
+    W14                                                               r  ov5640_data_IBUF[7]_inst/I
+    W14                  IBUF (Prop_ibuf_I_O)         0.556    18.972 r  ov5640_data_IBUF[7]_inst/O
+                         net (fo=1, routed)           0.000    18.972    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[7]
+    ILOGIC_X1Y84                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y84         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.744    20.716 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.716    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[7]
+    ILOGIC_X1Y84         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y84         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y84         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.716    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.756    <hidden>
+
+Slack (MET) :             1.768ns  (required time - arrival time)
+  Source:                 ov5640_href
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.288ns  (logic 2.288ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    Y14                                               0.000    18.417 r  ov5640_href
+                         net (fo=0)                   0.000    18.417    ov5640_href
+    Y14                                                               r  ov5640_href_IBUF_inst/I
+    Y14                  IBUF (Prop_ibuf_I_O)         0.544    18.961 r  ov5640_href_IBUF_inst/O
+                         net (fo=1, routed)           0.000    18.961    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href
+    ILOGIC_X1Y83                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y83         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.744    20.705 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.705    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_href_iob_reg
+    ILOGIC_X1Y83         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y83         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y83         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.705    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.768    <hidden>
+
+Slack (MET) :             1.787ns  (required time - arrival time)
+  Source:                 ov5640_data[2]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.269ns  (logic 2.269ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    Y16                                               0.000    18.417 r  ov5640_data[2]
+                         net (fo=0)                   0.000    18.417    ov5640_data[2]
+    Y16                                                               r  ov5640_data_IBUF[2]_inst/I
+    Y16                  IBUF (Prop_ibuf_I_O)         0.525    18.941 r  ov5640_data_IBUF[2]_inst/O
+                         net (fo=1, routed)           0.000    18.941    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[2]
+    ILOGIC_X1Y86                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y86         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.744    20.685 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.685    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[2]
+    ILOGIC_X1Y86         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y86         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y86         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.685    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.787    <hidden>
+
+Slack (MET) :             1.789ns  (required time - arrival time)
+  Source:                 ov5640_data[3]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.266ns  (logic 2.266ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    Y17                                               0.000    18.417 r  ov5640_data[3]
+                         net (fo=0)                   0.000    18.417    ov5640_data[3]
+    Y17                                                               r  ov5640_data_IBUF[3]_inst/I
+    Y17                  IBUF (Prop_ibuf_I_O)         0.522    18.939 r  ov5640_data_IBUF[3]_inst/O
+                         net (fo=1, routed)           0.000    18.939    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[3]
+    ILOGIC_X1Y85                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y85         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.744    20.683 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.683    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[3]
+    ILOGIC_X1Y85         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y85         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y85         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.683    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.789    <hidden>
+
+Slack (MET) :             1.811ns  (required time - arrival time)
+  Source:                 ov5640_vsync
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.249ns  (logic 2.249ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.595ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.595ns = ( 22.428 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    T11                                               0.000    18.417 r  ov5640_vsync
+                         net (fo=0)                   0.000    18.417    ov5640_vsync
+    T11                                                               r  ov5640_vsync_IBUF_inst/I
+    T11                  IBUF (Prop_ibuf_I_O)         0.505    18.922 r  ov5640_vsync_IBUF_inst/O
+                         net (fo=1, routed)           0.000    18.922    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync
+    ILOGIC_X1Y98                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y98         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.744    20.666 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.666    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_vsync_iob_reg
+    ILOGIC_X1Y98         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.629    22.428    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y98         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg/C
+                         clock pessimism              0.000    22.428    <hidden>
+                         clock uncertainty           -0.035    22.392    <hidden>
+    ILOGIC_X1Y98         FDRE (Setup_fdre_C_D)        0.084    22.476    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg
+  -------------------------------------------------------------------
+                         required time                         22.476    <hidden>
+                         arrival time                         -20.666    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.811    <hidden>
+
+Slack (MET) :             11.050ns  (arrival time - required time)
+  Source:                 ov5640_vsync
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.729ns  (logic 4.729ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.693ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.693ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    T11                                               0.000    12.417 r  ov5640_vsync
+                         net (fo=0)                   0.000    12.417    ov5640_vsync
+    T11                                                               r  ov5640_vsync_IBUF_inst/I
+    T11                  IBUF (Prop_ibuf_I_O)         1.479    13.895 r  ov5640_vsync_IBUF_inst/O
+                         net (fo=1, routed)           0.000    13.895    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync
+    ILOGIC_X1Y98                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y98         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.250    17.145 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.145    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_vsync_iob_reg
+    ILOGIC_X1Y98         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.888     5.693    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y98         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg/C
+                         clock pessimism              0.000     5.693    <hidden>
+                         clock uncertainty            0.035     5.728    <hidden>
+    ILOGIC_X1Y98         FDRE (Hold_fdre_C_D)         0.367     6.095    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_vsync_iob_reg
+  -------------------------------------------------------------------
+                         required time                         -6.095    <hidden>
+                         arrival time                          17.145    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.050    <hidden>
+
+Slack (MET) :             11.074ns  (arrival time - required time)
+  Source:                 ov5640_data[3]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.745ns  (logic 4.745ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.686ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.686ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    Y17                                               0.000    12.417 r  ov5640_data[3]
+                         net (fo=0)                   0.000    12.417    ov5640_data[3]
+    Y17                                                               r  ov5640_data_IBUF[3]_inst/I
+    Y17                  IBUF (Prop_ibuf_I_O)         1.495    13.912 r  ov5640_data_IBUF[3]_inst/O
+                         net (fo=1, routed)           0.000    13.912    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[3]
+    ILOGIC_X1Y85                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y85         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.250    17.162 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.162    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[3]
+    ILOGIC_X1Y85         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.881     5.686    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y85         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]/C
+                         clock pessimism              0.000     5.686    <hidden>
+                         clock uncertainty            0.035     5.721    <hidden>
+    ILOGIC_X1Y85         FDRE (Hold_fdre_C_D)         0.367     6.088    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -6.088    <hidden>
+                         arrival time                          17.162    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.074    <hidden>
+
+Slack (MET) :             11.076ns  (arrival time - required time)
+  Source:                 ov5640_data[2]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.748ns  (logic 4.748ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.686ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.686ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    Y16                                               0.000    12.417 r  ov5640_data[2]
+                         net (fo=0)                   0.000    12.417    ov5640_data[2]
+    Y16                                                               r  ov5640_data_IBUF[2]_inst/I
+    Y16                  IBUF (Prop_ibuf_I_O)         1.498    13.914 r  ov5640_data_IBUF[2]_inst/O
+                         net (fo=1, routed)           0.000    13.914    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[2]
+    ILOGIC_X1Y86                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y86         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.250    17.164 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.164    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[2]
+    ILOGIC_X1Y86         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.881     5.686    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y86         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]/C
+                         clock pessimism              0.000     5.686    <hidden>
+                         clock uncertainty            0.035     5.721    <hidden>
+    ILOGIC_X1Y86         FDRE (Hold_fdre_C_D)         0.367     6.088    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -6.088    <hidden>
+                         arrival time                          17.164    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.076    <hidden>
+
+Slack (MET) :             11.096ns  (arrival time - required time)
+  Source:                 ov5640_href
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.767ns  (logic 4.767ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.685ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.685ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    Y14                                               0.000    12.417 r  ov5640_href
+                         net (fo=0)                   0.000    12.417    ov5640_href
+    Y14                                                               r  ov5640_href_IBUF_inst/I
+    Y14                  IBUF (Prop_ibuf_I_O)         1.517    13.934 r  ov5640_href_IBUF_inst/O
+                         net (fo=1, routed)           0.000    13.934    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href
+    ILOGIC_X1Y83                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y83         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.250    17.184 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.184    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_href_iob_reg
+    ILOGIC_X1Y83         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.880     5.685    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y83         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg/C
+                         clock pessimism              0.000     5.685    <hidden>
+                         clock uncertainty            0.035     5.720    <hidden>
+    ILOGIC_X1Y83         FDRE (Hold_fdre_C_D)         0.367     6.087    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_href_iob_reg
+  -------------------------------------------------------------------
+                         required time                         -6.087    <hidden>
+                         arrival time                          17.184    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.096    <hidden>
+
+Slack (MET) :             11.108ns  (arrival time - required time)
+  Source:                 ov5640_data[7]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.778ns  (logic 4.778ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.685ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.685ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    W14                                               0.000    12.417 r  ov5640_data[7]
+                         net (fo=0)                   0.000    12.417    ov5640_data[7]
+    W14                                                               r  ov5640_data_IBUF[7]_inst/I
+    W14                  IBUF (Prop_ibuf_I_O)         1.528    13.945 r  ov5640_data_IBUF[7]_inst/O
+                         net (fo=1, routed)           0.000    13.945    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[7]
+    ILOGIC_X1Y84                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y84         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.250    17.195 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.195    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[7]
+    ILOGIC_X1Y84         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.880     5.685    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y84         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]/C
+                         clock pessimism              0.000     5.685    <hidden>
+                         clock uncertainty            0.035     5.720    <hidden>
+    ILOGIC_X1Y84         FDRE (Hold_fdre_C_D)         0.367     6.087    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -6.087    <hidden>
+                         arrival time                          17.195    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.108    <hidden>
+
+Slack (MET) :             11.235ns  (arrival time - required time)
+  Source:                 ov5640_data[6]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.910ns  (logic 4.910ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.690ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.690ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    W19                                               0.000    12.417 r  ov5640_data[6]
+                         net (fo=0)                   0.000    12.417    ov5640_data[6]
+    W19                                                               r  ov5640_data_IBUF[6]_inst/I
+    W19                  IBUF (Prop_ibuf_I_O)         1.416    13.833 r  ov5640_data_IBUF[6]_inst/O
+                         net (fo=1, routed)           0.000    13.833    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[6]
+    ILOGIC_X1Y55                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y55         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.494    17.327 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.327    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[6]
+    ILOGIC_X1Y55         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.885     5.690    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y55         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]/C
+                         clock pessimism              0.000     5.690    <hidden>
+                         clock uncertainty            0.035     5.725    <hidden>
+    ILOGIC_X1Y55         FDRE (Hold_fdre_C_D)         0.367     6.092    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -6.092    <hidden>
+                         arrival time                          17.327    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.235    <hidden>
+
+Slack (MET) :             11.238ns  (arrival time - required time)
+  Source:                 ov5640_data[5]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.914ns  (logic 4.914ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.690ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.690ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    W18                                               0.000    12.417 r  ov5640_data[5]
+                         net (fo=0)                   0.000    12.417    ov5640_data[5]
+    W18                                                               r  ov5640_data_IBUF[5]_inst/I
+    W18                  IBUF (Prop_ibuf_I_O)         1.420    13.836 r  ov5640_data_IBUF[5]_inst/O
+                         net (fo=1, routed)           0.000    13.836    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[5]
+    ILOGIC_X1Y56                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y56         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.494    17.330 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.330    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[5]
+    ILOGIC_X1Y56         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.885     5.690    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y56         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]/C
+                         clock pessimism              0.000     5.690    <hidden>
+                         clock uncertainty            0.035     5.725    <hidden>
+    ILOGIC_X1Y56         FDRE (Hold_fdre_C_D)         0.367     6.092    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -6.092    <hidden>
+                         arrival time                          17.330    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.238    <hidden>
+
+Slack (MET) :             11.267ns  (arrival time - required time)
+  Source:                 ov5640_data[4]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.926ns  (logic 4.926ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.674ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.674ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    U19                                               0.000    12.417 r  ov5640_data[4]
+                         net (fo=0)                   0.000    12.417    ov5640_data[4]
+    U19                                                               r  ov5640_data_IBUF[4]_inst/I
+    U19                  IBUF (Prop_ibuf_I_O)         1.432    13.849 r  ov5640_data_IBUF[4]_inst/O
+                         net (fo=1, routed)           0.000    13.849    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[4]
+    ILOGIC_X1Y75                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y75         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.494    17.343 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.343    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[4]
+    ILOGIC_X1Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.869     5.674    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]/C
+                         clock pessimism              0.000     5.674    <hidden>
+                         clock uncertainty            0.035     5.709    <hidden>
+    ILOGIC_X1Y75         FDRE (Hold_fdre_C_D)         0.367     6.076    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -6.076    <hidden>
+                         arrival time                          17.343    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.267    <hidden>
+
+Slack (MET) :             11.271ns  (arrival time - required time)
+  Source:                 ov5640_data[1]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.942ns  (logic 4.942ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.685ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.685ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    Y19                                               0.000    12.417 r  ov5640_data[1]
+                         net (fo=0)                   0.000    12.417    ov5640_data[1]
+    Y19                                                               r  ov5640_data_IBUF[1]_inst/I
+    Y19                  IBUF (Prop_ibuf_I_O)         1.448    13.864 r  ov5640_data_IBUF[1]_inst/O
+                         net (fo=1, routed)           0.000    13.864    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[1]
+    ILOGIC_X1Y65                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y65         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.494    17.358 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.358    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[1]
+    ILOGIC_X1Y65         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.880     5.685    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y65         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]/C
+                         clock pessimism              0.000     5.685    <hidden>
+                         clock uncertainty            0.035     5.720    <hidden>
+    ILOGIC_X1Y65         FDRE (Hold_fdre_C_D)         0.367     6.087    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -6.087    <hidden>
+                         arrival time                          17.358    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.271    <hidden>
+
+Slack (MET) :             11.277ns  (arrival time - required time)
+  Source:                 ov5640_data[0]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            -10.417ns  (ov5640_pclk rise@0.000ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        4.948ns  (logic 4.948ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        5.685ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.685ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  2.000    12.417    <hidden>
+    Y18                                               0.000    12.417 r  ov5640_data[0]
+                         net (fo=0)                   0.000    12.417    ov5640_data[0]
+    Y18                                                               r  ov5640_data_IBUF[0]_inst/I
+    Y18                  IBUF (Prop_ibuf_I_O)         1.454    13.870 r  ov5640_data_IBUF[0]_inst/O
+                         net (fo=1, routed)           0.000    13.870    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[0]
+    ILOGIC_X1Y66                                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]_OPT_INSERTED/DLYIN
+    ILOGIC_X1Y66         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      3.494    17.364 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    17.364    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[0]
+    ILOGIC_X1Y66         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                                                               r  ov5640_pclk_IBUF_inst/I
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17                                                    r  ov5640_pclk_IBUF_BUFG_inst/I
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.880     5.685    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y66         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/C
+                         clock pessimism              0.000     5.685    <hidden>
+                         clock uncertainty            0.035     5.720    <hidden>
+    ILOGIC_X1Y66         FDRE (Hold_fdre_C_D)         0.367     6.087    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -6.087    <hidden>
+                         arrival time                          17.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 11.277    <hidden>
+
+
+
+

@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "9077a54395fb3479100ec0111f2ef1936088f7d9",
+  "baseline_sha256": "3c90df583f5a2e954c5d8d0a4be2d8148de68e11a3ac88d15482f2826eee7772",
+  "matched_clock_data_phase": false,
+  "commands": [
+    {
+      "label": "compile",
+      "exit_code": 0
+    },
+    {
+      "label": "elab",
+      "exit_code": 0
+    },
+    {
+      "label": "run",
+      "exit_code": 0
+    }
+  ],
+  "hardware_access": false
+}

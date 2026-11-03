@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_p2p_core.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_p2p_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_seq_div.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_seq_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_seq_mult.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_seq_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_s2_a4/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_speed15_s2

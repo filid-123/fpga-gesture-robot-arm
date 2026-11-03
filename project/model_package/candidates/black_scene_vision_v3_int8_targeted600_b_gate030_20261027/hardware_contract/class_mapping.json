@@ -1,0 +1,14 @@
+{
+  "class_order": [
+    "background",
+    "one",
+    "two",
+    "three",
+    "fist",
+    "palm"
+  ],
+  "background_id": 0,
+  "no_detection_or_background_produces_target_action": false,
+  "argmax_tie": "first strict greater",
+  "legacy_capture_numeric_ids_not_action_codes": true
+}

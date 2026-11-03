@@ -1,0 +1,215 @@
+{
+  "schema": "gesture.ai_pc.mode_b_raw_check_capture.v1",
+  "status": "COMPLETED",
+  "scene_role": "EXCLUDED_FROM_CURRENT_TRAINING_AND_CHECKPOINT_SELECTION",
+  "used_for_training": false,
+  "physical_execution": false,
+  "path_submissions": 0,
+  "table_coordinates_enabled": false,
+  "exposure_profile_sha256": "1a5da1c452a85f8331e33806f93a59d20d3be65355b88b8ed21a8f429447c252",
+  "frames": [
+    {
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000000_raw.png",
+      "image_sha256": "14477af325a59b9e556ee6073f8e2ddcaffef799fff157b0933128051f69f70d",
+      "pixel_sha256": "5b73c4141ab4d73361ee8d7d5521c0eb81a3f5befc8e77659a7574ba7457b0a7",
+      "received_utc": "2026-10-28T14:44:30.734558+00:00",
+      "image_size_wh": [
+        1920,
+        1080
+      ],
+      "exposure": -4,
+      "flags": 2
+    },
+    {
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000001_raw.png",
+      "image_sha256": "a3bda265e0284c72a652b794e3e58a041b7b20776ff63011f78cc3ceeb2eab62",
+      "pixel_sha256": "ba9a24fcb5e9993a527163905b8f195076a4c5b1662c4d91cb227b27538aed08",
+      "received_utc": "2026-10-28T14:44:31.134966+00:00",
+      "image_size_wh": [
+        1920,
+        1080
+      ],
+      "exposure": -4,
+      "flags": 2
+    },
+    {
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000002_raw.png",
+      "image_sha256": "f3cf5a058a0e159e20937a87d86e6ada7bf1502bfed7bd261f812ffa456b098a",
+      "pixel_sha256": "b619c1630f85865d001bd2d334a5390557041204684e9bc1ef3aa597415549e3",
+      "received_utc": "2026-10-28T14:44:31.534713+00:00",
+      "image_size_wh": [
+        1920,
+        1080
+      ],
+      "exposure": -4,
+      "flags": 2
+    }
+  ],
+  "device_before": {
+    "Index": 1,
+    "FriendlyName": "Web Camera",
+    "DevicePath": "redacted_usb_device",
+    "Error": null,
+    "Controls": {
+      "exposure": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -13,
+        "Maximum": -1,
+        "Step": 1,
+        "DefaultValue": -5,
+        "Capabilities": 3,
+        "Value": -4,
+        "Flags": 1
+      },
+      "focus": {
+        "Supported": false,
+        "RangeHResult": -2147023728,
+        "GetHResult": -2147023728,
+        "Minimum": 0,
+        "Maximum": 0,
+        "Step": 0,
+        "DefaultValue": 0,
+        "Capabilities": 0,
+        "Value": 0,
+        "Flags": 0
+      },
+      "brightness": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": -128,
+        "Maximum": 127,
+        "Step": 1,
+        "DefaultValue": 0,
+        "Capabilities": 2,
+        "Value": 0,
+        "Flags": 2
+      },
+      "white_balance": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": 2800,
+        "Maximum": 6500,
+        "Step": 1,
+        "DefaultValue": 4000,
+        "Capabilities": 3,
+        "Value": 4000,
+        "Flags": 1
+      },
+      "gain": {
+        "Supported": true,
+        "RangeHResult": 0,
+        "GetHResult": 0,
+        "Minimum": 0,
+        "Maximum": 63,
+        "Step": 1,
+        "DefaultValue": 32,
+        "Capabilities": 2,
+        "Value": 0,
+        "Flags": 2
+      }
+    }
+  },
+  "warmup_auto_write": {
+    "DevicePath": "redacted_usb_device",
+    "Before": {
+      "Supported": true,
+      "RangeHResult": 0,
+      "GetHResult": 0,
+      "Minimum": -13,
+      "Maximum": -1,
+      "Step": 1,
+      "DefaultValue": -5,
+      "Capabilities": 3,
+      "Value": -4,
+      "Flags": 1
+    },
+    "After": {
+      "Supported": true,
+      "RangeHResult": 0,
+      "GetHResult": 0,
+      "Minimum": -13,
+      "Maximum": -1,
+      "Step": 1,
+      "DefaultValue": -5,
+      "Capabilities": 3,
+      "Value": -4,
+      "Flags": 1
+    },
+    "SetHResult": 0,
+    "ReadbackMatched": true
+  },
+  "manual_write": {
+    "DevicePath": "redacted_usb_device",
+    "Before": {
+      "Supported": true,
+      "RangeHResult": 0,
+      "GetHResult": 0,
+      "Minimum": -13,
+      "Maximum": -1,
+      "Step": 1,
+      "DefaultValue": -5,
+      "Capabilities": 3,
+      "Value": -4,
+      "Flags": 1
+    },
+    "After": {
+      "Supported": true,
+      "RangeHResult": 0,
+      "GetHResult": 0,
+      "Minimum": -13,
+      "Maximum": -1,
+      "Step": 1,
+      "DefaultValue": -5,
+      "Capabilities": 3,
+      "Value": -4,
+      "Flags": 2
+    },
+    "SetHResult": 0,
+    "ReadbackMatched": true
+  },
+  "readback_after_settle": {
+    "Supported": true,
+    "RangeHResult": 0,
+    "GetHResult": 0,
+    "Minimum": -13,
+    "Maximum": -1,
+    "Step": 1,
+    "DefaultValue": -5,
+    "Capabilities": 3,
+    "Value": -4,
+    "Flags": 2
+  },
+  "restore": {
+    "DevicePath": "redacted_usb_device",
+    "Before": {
+      "Supported": true,
+      "RangeHResult": 0,
+      "GetHResult": 0,
+      "Minimum": -13,
+      "Maximum": -1,
+      "Step": 1,
+      "DefaultValue": -5,
+      "Capabilities": 3,
+      "Value": -4,
+      "Flags": 2
+    },
+    "After": {
+      "Supported": true,
+      "RangeHResult": 0,
+      "GetHResult": 0,
+      "Minimum": -13,
+      "Maximum": -1,
+      "Step": 1,
+      "DefaultValue": -5,
+      "Capabilities": 3,
+      "Value": -4,
+      "Flags": 1
+    },
+    "SetHResult": 0,
+    "ReadbackMatched": true
+  }
+}

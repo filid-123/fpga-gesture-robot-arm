@@ -1,0 +1,221 @@
+{
+  "schema": "amd.pc.environment.v1",
+  "python": "3.12.10",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "requirements": [
+    {
+      "package": "amd-torch-device-gfx1151",
+      "expected": "2.13.0+rocm10.0.0",
+      "actual": "2.13.0+rocm10.0.0",
+      "passed": true
+    },
+    {
+      "package": "amd-torch-device-gfx115x",
+      "expected": "2.13.0+rocm10.0.0",
+      "actual": "2.13.0+rocm10.0.0",
+      "passed": true
+    },
+    {
+      "package": "amd-torchvision-device-gfx1151",
+      "expected": "0.28.0+rocm10.0.0",
+      "actual": "0.28.0+rocm10.0.0",
+      "passed": true
+    },
+    {
+      "package": "filelock",
+      "expected": "4.0.8",
+      "actual": "4.0.8",
+      "passed": true
+    },
+    {
+      "package": "flatbuffers",
+      "expected": "25.12.19",
+      "actual": "25.12.19",
+      "passed": true
+    },
+    {
+      "package": "fsspec",
+      "expected": "2026.9.0",
+      "actual": "2026.9.0",
+      "passed": true
+    },
+    {
+      "package": "Jinja2",
+      "expected": "3.1.6",
+      "actual": "3.1.6",
+      "passed": true
+    },
+    {
+      "package": "MarkupSafe",
+      "expected": "3.0.3",
+      "actual": "3.0.3",
+      "passed": true
+    },
+    {
+      "package": "ml_dtypes",
+      "expected": "0.6.0",
+      "actual": "0.6.0",
+      "passed": true
+    },
+    {
+      "package": "mpmath",
+      "expected": "1.3.0",
+      "actual": "1.3.0",
+      "passed": true
+    },
+    {
+      "package": "networkx",
+      "expected": "3.7",
+      "actual": "3.7",
+      "passed": true
+    },
+    {
+      "package": "numpy",
+      "expected": "2.5.3",
+      "actual": "2.5.3",
+      "passed": true
+    },
+    {
+      "package": "onnx",
+      "expected": "1.22.0",
+      "actual": "1.22.0",
+      "passed": true
+    },
+    {
+      "package": "onnx2torch",
+      "expected": "1.5.15",
+      "actual": "1.5.15",
+      "passed": true
+    },
+    {
+      "package": "onnxruntime",
+      "expected": "1.31.1",
+      "actual": "1.31.1",
+      "passed": true
+    },
+    {
+      "package": "opencv-python",
+      "expected": "5.0.0.93",
+      "actual": "5.0.0.93",
+      "passed": true
+    },
+    {
+      "package": "packaging",
+      "expected": "26.3",
+      "actual": "26.3",
+      "passed": true
+    },
+    {
+      "package": "pillow",
+      "expected": "12.3.0",
+      "actual": "12.3.0",
+      "passed": true
+    },
+    {
+      "package": "protobuf",
+      "expected": "7.36.2",
+      "actual": "7.36.2",
+      "passed": true
+    },
+    {
+      "package": "rocm",
+      "expected": "10.0.0",
+      "actual": "10.0.0",
+      "passed": true
+    },
+    {
+      "package": "rocm-bootstrap",
+      "expected": "0.3.0",
+      "actual": "0.3.0",
+      "passed": true
+    },
+    {
+      "package": "rocm-sdk-core",
+      "expected": "10.0.0",
+      "actual": "10.0.0",
+      "passed": true
+    },
+    {
+      "package": "rocm-sdk-device-gfx1151",
+      "expected": "10.0.0",
+      "actual": "10.0.0",
+      "passed": true
+    },
+    {
+      "package": "rocm-sdk-libraries",
+      "expected": "10.0.0",
+      "actual": "10.0.0",
+      "passed": true
+    },
+    {
+      "package": "scipy",
+      "expected": "1.18.1",
+      "actual": "1.18.1",
+      "passed": true
+    },
+    {
+      "package": "setuptools",
+      "expected": "81.0.0",
+      "actual": "81.0.0",
+      "passed": true
+    },
+    {
+      "package": "sympy",
+      "expected": "1.14.0",
+      "actual": "1.14.0",
+      "passed": true
+    },
+    {
+      "package": "torch",
+      "expected": "2.13.0+rocm10.0.0",
+      "actual": "2.13.0+rocm10.0.0",
+      "passed": true
+    },
+    {
+      "package": "torchvision",
+      "expected": "0.28.0+rocm10.0.0",
+      "actual": "0.28.0+rocm10.0.0",
+      "passed": true
+    },
+    {
+      "package": "typing_extensions",
+      "expected": "4.16.0",
+      "actual": "4.16.0",
+      "passed": true
+    },
+    {
+      "package": "PyYAML",
+      "expected": "6.0.3",
+      "actual": "6.0.3",
+      "passed": true
+    }
+  ],
+  "models": [
+    {
+      "file": "model.onnx",
+      "expected_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+      "actual_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+      "passed": true
+    },
+    {
+      "file": "weights.pt",
+      "expected_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+      "actual_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+      "passed": true
+    }
+  ],
+  "hip": {
+    "status": "PASS",
+    "framework_version": "2.13.0+rocm10.0.0",
+    "hip_version": "7.15.26333",
+    "device": "AMD Radeon(TM) 8060S Graphics",
+    "actual_backend": "rocm",
+    "cpu_fallback": false
+  },
+  "camera_access": false,
+  "robot_access": false,
+  "errors": [],
+  "passed": true,
+  "model_inference": "NOT_RUN"
+}

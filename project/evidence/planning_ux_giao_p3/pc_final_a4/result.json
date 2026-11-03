@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "pc_tests": 55,
+  "ui_checks": 10,
+  "commands": [
+    {
+      "name": "control",
+      "exit_code": 0
+    },
+    {
+      "name": "http",
+      "exit_code": 0
+    },
+    {
+      "name": "shared_red",
+      "exit_code": 0
+    },
+    {
+      "name": "snapshot",
+      "exit_code": 0
+    },
+    {
+      "name": "planning",
+      "exit_code": 0
+    },
+    {
+      "name": "uploads",
+      "exit_code": 0
+    },
+    {
+      "name": "family",
+      "exit_code": 0
+    },
+    {
+      "name": "diagnostics",
+      "exit_code": 0
+    },
+    {
+      "name": "ui",
+      "exit_code": 0
+    }
+  ],
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "pc/mode_ab/board.py": "64fd90206ccc6da0fac657d0188f706dc37aa463dc991cdfb633cae7e7109337",
+    "pc/mode_ab/camera.py": "b8f43dd496f7baae0b73a9f87d1c2fa02e7d1eacbc950bfa60d8de72fb154538",
+    "pc/mode_ab/control.py": "145996f69b8bb048c19f92b22a7254fb5b2da862e4bdc2604498ff1dff238a89",
+    "pc/mode_ab/diagnostics.py": "ef326ac87b15af080c42c4ab59716f0fe22c58b5510e5208bd9f69541db4c0c7",
+    "pc/mode_ab/family.py": "8dedbb55679dcd8fe089efeb6d534b5aa1529d9cf10544562d84c7549941df0f",
+    "pc/mode_ab/geometry.py": "83e31494324d42ade426466c6990e5d50287365fd84f0f34c2a623a4f07f4679",
+    "pc/mode_ab/gpu.py": "f1c02a333b56ea29b35c2efb36691442486d624436eb2991c40bae52ec918ffa",
+    "pc/mode_ab/http.py": "ecbd0d3cbf7e8898c896d8032d9f6a97ccb30f70383f5902b233700a81e9e54a",
+    "pc/mode_ab/motion.py": "e34c62c1cd30aa03ecc42f5cb6e831989648af90c8cc7b7393ff48d90dfc358e",
+    "pc/mode_ab/npu_detector.py": "ed248b37f2adc71db359222df905dae244ce9ff42ece6b2a680eebaf9cf6a5b1",
+    "pc/mode_ab/registers.py": "cbbbcbcaad9408d41280dff8009ff3b63edf1a1d4c6d32310eaac06054d80741",
+    "pc/mode_ab/runtime.py": "06ba9cb2ac27950a2258eac813287af67a44227e934fe42856ffb858b41cb9b2",
+    "pc/mode_ab/shared_red.py": "08b9d3e22c9fcb882081fcccf798d70e4255aafee5c2d3e10aa3c2dab602f695",
+    "pc/mode_ab/uploads.py": "e612cb3e9d4122c9cdb990c7c189b6d5102a55c12a222cea175c094fed1423de",
+    "pc/mode_ab/winml.py": "3a5073d4dd5a9fb7c4d91503cd22a0ffc7a941fee7f513437758272af8581cf5",
+    "pc/mode_ab/__init__.py": "12f000667c92ceb17645691d7eb8f41b1eb566634a748714349d0f708b4b9193",
+    "web/mode-ab/app.js": "a25bc2ce084480f72991a6ae51bd1129d9d5dc2e49be28c8eb9a5ba685786037",
+    "web/mode-ab/index.html": "4241b8e6ca85fe3b89796607a2b8bc2f946047db632abde026e6cc5b92f4eda2",
+    "web/mode-ab/styles.css": "c09b3fc7abd02cd12ee9f095ea73e3fa67bad63524fe5401c6bf5e8d3619d7ad",
+    "scripts/test_mode_ab_control.py": "c2ec20da260e6709b29023bc68aeafffd5463d7c2e36811f1c9664f476637fca",
+    "scripts/test_mode_ab_http.py": "c1de5f237bc7435e341ace928d90c4a77f9d8d393e8fe3900e14777a2c11102b",
+    "scripts/test_mode_ab_shared_red.py": "b217baba5f3abc418e968b0fdd8a643a7ea83a5b53fcf50848527cf15f6a5eb7",
+    "scripts/test_mode_ab_snapshot.py": "2816e701956ee202157b1250f5a687ae74ef2cb03d8d6f57470f81420db31b15",
+    "scripts/test_mode_ab_planning.py": "8705a9ea197017cb4c36daef964dc6aab32f47aa8005d38fb01a8dc2e64303c4",
+    "scripts/test_mode_ab_uploads.py": "93109da149b961567a35fc79e654a78d0041181e737274477d68b84df482284f",
+    "scripts/test_mode_ab_family.py": "9034b5ac941d5abcbaa7818ffedbadea9efce081e2e092d32acfd761e2639aa4",
+    "scripts/test_mode_ab_diagnostics.py": "7000200200a2fa1b43cb2da1d2be79f679ad62a276e1636da04db389bb609bc0",
+    "scripts/test_mode_ab_ui.cjs": "b0cd5c1710990762f533645712453f55fa0ec34de2ed40a7b80e936defb3e86b",
+    "scripts/verify_mode_ab_pc.py": "b24d5ec0eccf11239ab566afb450cbaf54ac4f508e2982421e22b0f76c5418c5"
+  }
+}

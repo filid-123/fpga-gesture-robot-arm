@@ -1,0 +1,1674 @@
+{
+  "schema": "gesture.ai_pc.mode_b_deployment_comparison.v1",
+  "status": "REGRESSION_DIAGNOSTICS_COMPLETE_REVIEW_REQUIRED",
+  "records": [
+    {
+      "id": "six_00",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_01",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_02",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_03",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_04",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_05",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_06",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_07",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_08",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_09",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_10",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_11",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_12",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_13",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_14",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_15",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_16",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_17",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_18",
+      "matched": [
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "six_19",
+      "matched": [
+        {
+          "class_name": "small_canister",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "red_cube",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "scissors",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        },
+        {
+          "class_name": "eraser",
+          "bbox_iou": 1.0,
+          "confidence_delta": 0.0,
+          "box_centre_delta_raw_px": 0.0
+        }
+      ],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_delta_raw_px": 0.0
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "PIXEL_SURFACE_ONLY",
+          "candidate_status": "PIXEL_SURFACE_ONLY",
+          "reference_available": true,
+          "candidate_available": true,
+          "top_polygon_iou": 1.0,
+          "centre_policy": "BOTTLE_CONTOUR_ONLY_PHYSICAL_CENTRE_NEEDS_TOP_PLANE"
+        }
+      ]
+    },
+    {
+      "id": "empty_00",
+      "matched": [],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        }
+      ]
+    },
+    {
+      "id": "empty_01",
+      "matched": [],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        }
+      ]
+    },
+    {
+      "id": "empty_02",
+      "matched": [],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        }
+      ]
+    },
+    {
+      "id": "empty_03",
+      "matched": [],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        }
+      ]
+    },
+    {
+      "id": "empty_04",
+      "matched": [],
+      "missing_relative_to_cpu": [],
+      "extra_relative_to_cpu": [],
+      "localizations": [
+        {
+          "task_id": 1,
+          "class_name": "red_cube",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 2,
+          "class_name": "eraser",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        },
+        {
+          "task_id": 3,
+          "class_name": "small_canister",
+          "reference_status": "NOT_FOUND",
+          "candidate_status": "NOT_FOUND",
+          "reference_available": false,
+          "candidate_available": false
+        }
+      ]
+    }
+  ],
+  "reference_sha256": "289a6c69206b53926d8af754cc0785671b871bbc5666e99fd9031c3773d365ee",
+  "candidate_sha256": "289a6c69206b53926d8af754cc0785671b871bbc5666e99fd9031c3773d365ee",
+  "inputs_sha256": "73a203fb12c82bba365a30edb425460e29974a4f4179dc8504d2a2659acc1ea9",
+  "ground_truth": "CPU_REFERENCE_NOT_INDEPENDENT_GT",
+  "physical_execution": false,
+  "path_submissions": 0,
+  "metric_localization_accepted": false,
+  "hardware_acceptance": false
+}

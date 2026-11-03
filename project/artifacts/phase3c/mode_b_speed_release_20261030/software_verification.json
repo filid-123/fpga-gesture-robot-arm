@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "red_cube_no_grasp_or_scene_changes",
+    "small_canister_no_grasp_or_scene_changes",
+    "eraser_no_grasp_or_scene_changes",
+    "clearance_rejected",
+    "fast_descent_rejected",
+    "acc_overflow_rejected"
+  ],
+  "red_depth_regression_tests_passed": 7,
+  "powershell_scripts_parsed": 4,
+  "hardware_accessed": false
+}

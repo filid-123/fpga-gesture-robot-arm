@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: real UNISIM OSERDESE2 master/slave ten-bit patterns, all lanes and forwarded differential clock"
+  ],
+  "hardware_access": false,
+  "source_hashes": {
+    "native_motion/rtl/hdmi/tmds_serializer_7series.v": "3c90df583f5a2e954c5d8d0a4be2d8148de68e11a3ac88d15482f2826eee7772",
+    "native_motion/sim/mode_a_hdmi/tb_serializer.sv": "57f7c4fef42932184bf99d39ad2c68b61c29e3f41c5ddde784c36482fe8c9300"
+  }
+}

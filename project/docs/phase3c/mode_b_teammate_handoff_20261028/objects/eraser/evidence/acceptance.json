@@ -1,0 +1,70 @@
+{
+  "schema": "gesture.mode_b.eraser_local_correction_result.v1",
+  "software_sequence_finished": true,
+  "run_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_144452_0562891\\LOADED_ROUTE_RESULT.json",
+  "run_sha256": "7601992893f30165d18eb8cf4afdaf50a46e708e548ab9f43aeb4e4252256e94",
+  "plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\native_plan\\LOADED_ROUTE_PLAN.json",
+  "plan_sha256": "0e94b1f1ce3e0d6d5a30113325c522477923a94830817c3cfc2b17c330fc0a3f",
+  "simulation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\native_plan\\COPPELIA_VERIFICATION.json",
+  "simulation_sha256": "572e77cb4a026b6f072a983d661a3230eced1dc4d247751ed8d10d97acaba5ac",
+  "coppelia_samples": 1244,
+  "exact_wire_events_and_stream_match": true,
+  "motion_requests": 1206,
+  "completed_stages": [
+    "DIRECT_PREGRASP",
+    "DESCEND",
+    "LIFT",
+    "INNER_HOLD",
+    "BUFFER",
+    "PREPLACE",
+    "PLACE",
+    "RELEASE_CLEARANCE",
+    "RETREAT",
+    "RETURN_CLEAR",
+    "INNER_RETURN",
+    "RETURN_LOW_HOME"
+  ],
+  "elapsed_first_motion_to_final_capture_seconds": 119.574594,
+  "nominal_motion_seconds": 29.02,
+  "final_capture": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_144452_0562891\\PARK_CLOSE_OBSERVED\\PARK_CLOSE_OBSERVED_20261028_144651_8388111\\POSE_CAPTURE.json",
+  "final_firmware_rad": {
+    "b": 0.013805827,
+    "s": 0.107378655,
+    "e": 2.583223647,
+    "t": 0.417242774,
+    "r": 0.001533981,
+    "g": 3.084835364
+  },
+  "physical_acceptance_pending": false,
+  "physical_alignment_operator_accepted": true,
+  "physical_pickup_delivery_home_operator_accepted": true,
+  "status": "LOCAL_ALIGNMENT_PICKUP_DELIVERY_HOME_OPERATOR_ACCEPTED",
+  "operator_reply": "对位改善，全程正常",
+  "adapter_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\config\\ai_pc\\mode_b_eraser_grasp_20261028_v4.json",
+  "adapter_sha256": "43db7ec53e8c2f7143d9b975867d389b87cd8f50fa8940731de2e90613ceb76a",
+  "source_centre_mm": [
+    636.2218269564645,
+    260.27831557772197,
+    7.5
+  ],
+  "source_correction_locality": {
+    "reference_source_centre_mm": [
+      631.6914227158205,
+      265.6341499003452,
+      7.5
+    ],
+    "maximum_xy_distance_mm": 25.0,
+    "current_source_xy_distance_mm": 7.014950026552875
+  },
+  "desk_command_correction_mm": [
+    13,
+    10,
+    0
+  ],
+  "extra_radial_outward_mm": 2,
+  "close_speed": 60,
+  "close_acceleration": 5,
+  "speed_multiplier": 3,
+  "no_new_camera_coordinate_correction": true,
+  "physical_general_mapping_calibrated": false
+}

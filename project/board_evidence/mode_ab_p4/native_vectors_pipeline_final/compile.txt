@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/b_route_ram.v" into library work
+INFO: [VRFC 10-311] analyzing module b_route_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/b_route_player.v" into library work
+INFO: [VRFC 10-311] analyzing module b_route_player
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/native_vectors_pipeline_final/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb

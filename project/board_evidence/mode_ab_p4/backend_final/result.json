@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: byte-exact A1320/66 -> B2640/254 -> B3960/254 -> T10660/5 -> unchanged A1320/66",
+    "PASS: speed/type b_ctx latched before MAP and stable through frame transmission despite upstream change"
+  ],
+  "hardware_access": false,
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes": {
+    "native_motion/rtl/robot/arm_uart_tx.v": "c54fe1ed75b830aace69b73936c8e581b9fad11be0eda33ef15d39784b7a9e90",
+    "native_motion/rtl/robot/arm_uart_rx.v": "7cefdb5c7487c2d4621fdb6452150511179ee76ddf9af65f9230ddcfb4fd2965",
+    "native_motion/rtl/robot/arm_half_duplex_dir_ctrl.v": "aa9efbbe064c3a7fc1f7603c75a60e2dc6fed773d08938789c101a2fa3e8e8b7",
+    "native_motion/rtl/robot/arm_joint_unit_mapper.v": "0dba2c11371528864f3661b721d5bdbdc06cfad065c1e39da37060fea7b70383",
+    "native_motion/rtl/robot/arm_frame_formatter.v": "662c10af63c2b90118547909b640badd02d65b6f11c2b36ab2dc49dead0e8d52",
+    "native_motion/rtl/robot/arm_json_feedback_parser.v": "7523988f51dfe3ac59469cc155907fa602fdac71f2ddfe1bcdee1234e07858bb",
+    "native_motion/rtl/robot/arm_feedback_watchdog.v": "72fe58eb91403af11cfe07c1b6f7de5508f8e516b54d1ff98b50587839141bec",
+    "native_motion/rtl/robot/arm_motion_permission_gate.v": "01b2da72b6c5156df86d4184e7c7b64c97eeed2fccdb97bc78ac75ee3cbcc159",
+    "native_motion/rtl/robot/arm_backend_core.v": "9f2db46a6ced6ba3e795bbb3e0e8c789719027aec677e5de37d71fa528103f4c",
+    "native_motion/rtl/robot/arm_backend_axi_top.v": "38028195e068373006c24a968ffa3beaffd47e7b8c4b3054bfa8a6d1c7db0b85",
+    "native_motion/rtl/robot/planner_seq_mult.v": "bc018fb39b6f494176f04d77fa5497fa11432ef79dae10f2380dfaa7d58bd405",
+    "native_motion/rtl/robot/planner_seq_div.v": "00cabf4882c87d69cc2e6cb43b5f5ad4f4c956cf0809ccaea24874756c8a09c3",
+    "native_motion/rtl/robot/planner_p2p_core.v": "49ab9f85f799d592c07204d3316c57376c884233eba5b8dd06c5acbe4f80bcfc",
+    "native_motion/rtl/robot/b_route_ram.v": "012d2e0b98415031d5a8bd7f3b291b83eae8006f4765e06095cd59c69e7a4488",
+    "native_motion/rtl/robot/b_route_player.v": "708fca31ab9d1558a4810b6c0b740cb233157c99b1cb95b448249b84e0648f54",
+    "native_motion/rtl/robot/planner_axi_top.v": "c85d99037e9e5a0e1fc1f952111891539a212d2037119aac8326847b461847d4",
+    "native_motion/rtl/robot/motion_sample_mux.v": "a9ca05d607cc583df8bff34f55a7621e74abc06f1b7e1c469432260b30f257e9",
+    "native_motion/rtl/robot/phase3_s2_motion_top.v": "49689faf2a96fb6507cdb4958c34fa08d45d4d6b5f85a7dc9b4adda23cf0a6f2",
+    "native_motion/rtl/robot/s4_axil_window.v": "eb7d662fa45c867970a6ed25f511d81facb57c0a7894799b7245bcbef08196f7",
+    "native_motion/rtl/robot/s4_motion_link.v": "02062a74e4022c4d3f8ddb4523b406551f7f032ce35438661754c5726123941b",
+    "native_motion/rtl/robot/s4_task_regs.v": "2f80e0c531556650ecc055bfc8846da70464c72e8447faeac2858b391b256c16",
+    "native_motion/rtl/robot/s4_task_fsm.v": "3555e021a35d0bba603c5f3c5dcf126e94ca981595ea3a82d45abd1d201b31fa",
+    "native_motion/rtl/robot/phase3_s4_task_top.v": "e70dd849145aae65755f025681ddf9d5f1508beaae7548d88e56f086b6390410",
+    "native_motion/rtl/robot/hand_align_region_lut.v": "fdbd9fcc91e0b39ae933c7e591a2456909825718589d3f13a04867db8e59bdc1",
+    "native_motion/rtl/robot/hand_y_step_map.v": "c46974e7b89e07d0f0e1cb39f8c49401563777fb82ab1fca09016da3bed41de9",
+    "native_motion/rtl/robot/hand_align_target_core.v": "85888d4523d26a45e046ed69e6b7887751f68ae3821994fab725ed2589a30cbb",
+    "board_evidence/mode_ab_p4/backend_final/tb.sv": "0e95dbeafc10da5cb49d12bff59daf9e3a25da42ab11b6fc3b7fe4619fb5a9ea"
+  }
+}

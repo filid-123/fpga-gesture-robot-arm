@@ -1,0 +1,1335 @@
+{
+  "schema": "gesture.excluded_assets.v1",
+  "assets": [
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+      "bytes": 731917,
+      "sha256": "a9ee74d9b6134ee0fac2ff0dffbbb8602b3768f6b229c5a35e35dbe90430c5e5",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+      "bytes": 704037,
+      "sha256": "df34e50bba245389f4f02743e0f8b5c15e4a8a75a41b6a9a49ee642b9a9ed043",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+      "bytes": 697649,
+      "sha256": "700a53fd155df82f92f2d513a06f77df27ed0761023a0817931f4dd5d7ed418e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+      "bytes": 794558,
+      "sha256": "8e450215970d71bc940797a5721857d049314bfc66ec0db734be938a730b3fc8",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+      "bytes": 803852,
+      "sha256": "8093e4cceaaaae845142f43b70be60ed2bf87683d0d9f2cdf86de1524f75fb4c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+      "bytes": 785904,
+      "sha256": "4bfaee9f4de4c0c878886502f9d152897927213239d2700f899ef00ec1fbfdb8",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+      "bytes": 789799,
+      "sha256": "71610e9d29724878116f78fde58b17765fc88516c010b9f472aa08c6b4862c04",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+      "bytes": 789132,
+      "sha256": "cc79d4c0992012d51bad1a6c61c3b94816edf30038fd443a8c59bbbcc75fe707",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+      "bytes": 792739,
+      "sha256": "8bf24fa3948b8919e5446464d65a02fadacd94b806f01813e2090d629f397335",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+      "bytes": 802833,
+      "sha256": "9a97f4dd97ec3c46754c523ec208e22e67e4be533099a7698e0bfca0529bc709",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+      "bytes": 790181,
+      "sha256": "bc2a84b8d41e6bee2b8349f6baf67c43413cb0554bcd0fec63d8c79afe782b66",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+      "bytes": 788746,
+      "sha256": "fc168e79a6c48d4d1e54925c43e919a9cf5edb72a109435356207485707c8975",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+      "bytes": 798882,
+      "sha256": "7319b9908353030528425dfb3c32a4cfa428d859ea0b39c76e283a837414830c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+      "bytes": 818593,
+      "sha256": "de6ca4b974e0dccc094e68de5f87dba251094224c7be3ec192567f002497b057",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+      "bytes": 809923,
+      "sha256": "30c1242f1d8c308f69fbb9779a2fe25167daa03e21c8f0d94f809842ea2b8204",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+      "bytes": 803855,
+      "sha256": "9fe801caf49a2a7f7f6ffe27d3cddcec9265705db6c65fe0899b2736903927fc",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+      "bytes": 785011,
+      "sha256": "fc41e76437184e604d0e0c6f7b8a0acab6b49c68802136d93f7e79f5654c2f1e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+      "bytes": 796032,
+      "sha256": "ccab08ddd6af69f7f5be9a0c2baf70bf51d03a83446d182324a1f61006fac333",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+      "bytes": 847510,
+      "sha256": "83300c6a17439520f2a992307e7c1b5fbb49abaa1647afe3fc4d8b7590f68eaa",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+      "bytes": 849730,
+      "sha256": "5c9118a3902dae9473ac39f3a6e2b43cbc92e5d07494281d74924f2d41eb648a",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/capture/frame_000000_raw.png",
+      "bytes": 1353806,
+      "sha256": "8a8fbd2d1a324a6bea8ab00362e1620048f184c63da68887dffcefb9b0910dda",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/capture/frame_000001_raw.png",
+      "bytes": 1353237,
+      "sha256": "748ba7ddf5b1663acb97b25208226a7e0bc13aa27e9b79a5cac4d1832e3cb8e0",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/capture/frame_000002_raw.png",
+      "bytes": 1386898,
+      "sha256": "923c01b56c6596ac2bf6e8d114846f591721d794a6c9e22bfa56d75ae243a8e9",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000000_raw.png",
+      "bytes": 1393105,
+      "sha256": "14477af325a59b9e556ee6073f8e2ddcaffef799fff157b0933128051f69f70d",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000001_raw.png",
+      "bytes": 1386964,
+      "sha256": "a3bda265e0284c72a652b794e3e58a041b7b20776ff63011f78cc3ceeb2eab62",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000002_raw.png",
+      "bytes": 1389890,
+      "sha256": "f3cf5a058a0e159e20937a87d86e6ada7bf1502bfed7bd261f812ffa456b098a",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000000_raw.png",
+      "bytes": 1418776,
+      "sha256": "681e9b250c8555234f177cc1572d8d273665a318854acd8d4a7288d70b8378a0",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000001_raw.png",
+      "bytes": 1407277,
+      "sha256": "26f76f78ca03af8013e3ba35fc0c35cc88a52963dc9b7bd9a461c042bed174a4",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000002_raw.png",
+      "bytes": 1410481,
+      "sha256": "4395568e83c4bcdad5e5f8279d621f11ce213fe73f78e3d6dff04613515c79fe",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "board_evidence/mode_a_restock_task_ab_legacy_a1/xelab.pb",
+      "bytes": 2490,
+      "sha256": "1ddc6d0a1bfd7c0585a5eec9253d05e8c148c82d3ad2161adeba4efd6e92fc03",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_restock_task_ab_legacy_a1/xsim.jou",
+      "bytes": 1331,
+      "sha256": "98ef7c87e0a0715c219fab39be0f83fcab7a41e45daac13c7e528bd336692092",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_restock_task_ab_legacy_a1/xvlog.pb",
+      "bytes": 1548,
+      "sha256": "70683ea0cbd72715e176bafa3db490034d832d45015b3addabb216fd5abe208c",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/hdmi_preview.png",
+      "bytes": 47133,
+      "sha256": "6447ad28e49be7018621c1f9c5ff7c90f66d13e678dbb1d938362eec1d66fa91",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xelab.pb",
+      "bytes": 1191,
+      "sha256": "1136ed80732c4e4e9bea744166c0b06f625a7ec4bcea782e0bfb5990ac1413c1",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xsim.jou",
+      "bytes": 1326,
+      "sha256": "462a3ea4d3f1a03381c07676b2219470ba8ccb4b97cb4c47f576dc9ab26ca654",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xsim_20992.backup.jou",
+      "bytes": 1354,
+      "sha256": "4f2948b9f527881439b771b0d169b4cc28c49c8d6202394a642f80cc9aff65a5",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xsim_34808.backup.jou",
+      "bytes": 1338,
+      "sha256": "c27c5f35992aec820ca983b21dbd6fc1da0e9afcd4fa64f8aeaee2eb8f0d81bc",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xsim_41308.backup.jou",
+      "bytes": 1336,
+      "sha256": "1e9ce6f5f8cde4b6e258c12c6d464c9f8934e96ce72e56e9ddfeed5af5bab978",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xsim_43016.backup.jou",
+      "bytes": 1336,
+      "sha256": "7024f5be61d56bcc7450cf4e06adcd86ad767c859e18715116bf885fc86869d3",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xsim_43344.backup.jou",
+      "bytes": 1330,
+      "sha256": "35daafeadfc69c3a663f3645d13e6582650d96382ca62ed25faa4bfb5a592999",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_a_upgrade_hdmi_abp4final/xvlog.pb",
+      "bytes": 6174,
+      "sha256": "b7d312dc4befa9b1fdb8eb9a856f0b68859bcc4f709f2ee1de502a2fdc4cd9ba",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_a5/xelab.pb",
+      "bytes": 2450,
+      "sha256": "87a044f69987ed0eb6115e8736be43dc4ca48f19926d529fe5b225c6364cc1e2",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_a5/xsim.jou",
+      "bytes": 1279,
+      "sha256": "e24fac7724484d0306a49dc42ab8e2b145280b6c2e8a1be66d716d7c34ba6c53",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_a5/xvlog.pb",
+      "bytes": 1539,
+      "sha256": "b23541ee3e4a1eb7e3ee8eb8e062c0caa67221e5838836cee5413ffc9c373bd2",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_p3a2/xelab.pb",
+      "bytes": 2458,
+      "sha256": "d58df1267b8c3ec76d3b42d3fd215b79869a3fd47ee014da0f841ab6a1633bc8",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_p3a2/xsim.jou",
+      "bytes": 1285,
+      "sha256": "15992fc0551ca93a7ad33305a765841c9e29e9dbdb6024d99763fc4bbc1dc776",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_p3a2/xvlog.pb",
+      "bytes": 1541,
+      "sha256": "697b32be9b311a0875f1bdca93319c694e565613bff242380c396c68912b6f9a",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_p4final/xelab.pb",
+      "bytes": 2470,
+      "sha256": "a6b65da082142e5e74b287f4281ff4acf4be6ebd455e9a6107d4e834de37e3d0",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_p4final/xsim.jou",
+      "bytes": 1294,
+      "sha256": "a5881dc361a46f2da14c48b986abedf3f6bfbc29328847ce60c7ac979404f436",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_paths_p4final/xvlog.pb",
+      "bytes": 1544,
+      "sha256": "73eff26d478763d918f5cf3d0e4f4697a5ab5f0d583bcb9a936c5bbc08a0849a",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_s2_a4/xelab.pb",
+      "bytes": 1381,
+      "sha256": "6818a4d2597c8598bd2bcd152b6ad0e8dfacf005fe85b03bfe93bdf661687969",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_s2_a4/xsim.jou",
+      "bytes": 1269,
+      "sha256": "f2f5b065a1764dd536e68b8bfb51a8e4bf536fef87fbfa70c34222cccbba7a38",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_s2_a4/xvlog.pb",
+      "bytes": 1227,
+      "sha256": "c9e594697675830a3e80f581ac7cc017b8b13867f2489f496806937794568316",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_s2_p3a2/xelab.pb",
+      "bytes": 1381,
+      "sha256": "6818a4d2597c8598bd2bcd152b6ad0e8dfacf005fe85b03bfe93bdf661687969",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_s2_p3a2/xsim.jou",
+      "bytes": 1276,
+      "sha256": "0f13e1edae1a5ff6bbe363f5c8160c3562b60fa12b272afedca3c9e5d87f6f2c",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_s2_p3a2/xvlog.pb",
+      "bytes": 1229,
+      "sha256": "eea6a0dfe6f7ba4ac89f2df07e76d6183018a71e200edaa11acb5573d730f12e",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_task_a7/xelab.pb",
+      "bytes": 2472,
+      "sha256": "8b90910d7e3a3d14c08262a1d2a274ad5dcffdac0c7e1c3bc639c8886d93e6d4",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_task_a7/xsim.jou",
+      "bytes": 1270,
+      "sha256": "785aad94fe7aff568b6c80839d800bf4fd6bf7f22ae10b4284dd07c4fc3bf28e",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "board_evidence/mode_ab_task_a7/xvlog.pb",
+      "bytes": 1546,
+      "sha256": "737865b349cc1d63d8985425c44109231ba86cd4e2a129ec6c3b28167bedbe4e",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "docs/mode_ab/specification.pdf",
+      "bytes": 950952,
+      "sha256": "c6ad82acd4f7bdcd13bd412e232ed85d05f2a87dd5e2cdd04f9d219f88b569fc",
+      "git_included": false,
+      "reason": "Source PDF redistribution has not been established; retained in the original local archive."
+    },
+    {
+      "path": "docs/phase3c/mode_b_restock_20261029/red_public_placement.png",
+      "bytes": 154084,
+      "sha256": "76f711ded8515fc04be403d94f14a9075ca1451d15536ebfcb8ee83bef70a713",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "docs/pl_architecture/01_pl_top.png",
+      "bytes": 177776,
+      "sha256": "11f5d84ec710c9c614085c7d1df89f408db06fa76ce9a838b6d7fe1959b235cd",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "docs/pl_architecture/02_vision.png",
+      "bytes": 199975,
+      "sha256": "e047db524943f3f421b9cb1f8f5a30fe4773a4a5fb7bb88c3dfb0f3bc45465c7",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "docs/pl_architecture/03_task.png",
+      "bytes": 179047,
+      "sha256": "f3caee75edec9cbe4e38aa3847a333eff3d5d2fd9bd7374a37f7ffafce6285cb",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "docs/pl_architecture/04_motion.png",
+      "bytes": 198192,
+      "sha256": "aac62685bb7ede46c9dea307a9e6d458271c75e32507608300088320a9f0a65a",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "docs/pl_architecture/05_hdmi.png",
+      "bytes": 173160,
+      "sha256": "3c09ec72230027c463565a352c6590cde02aae86654aa29971f1a763c4c8c082",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "docs/pl_architecture/pl_architecture.pdf",
+      "bytes": 12531,
+      "sha256": "8c5dbdee27861ada5b385c0552d2c6fa7d219d7b7159242dea8aa6bc8f8bf24f",
+      "git_included": false,
+      "reason": "Source PDF redistribution has not been established; retained in the original local archive."
+    },
+    {
+      "path": "evidence/console_b.png",
+      "bytes": 34804,
+      "sha256": "d2a8e9a23e2c9abb96ddfadbf290146b6fb2bebb4b962bae4f369e9ff2be9ba9",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "evidence/hdmi_p2/hdmi_preview.png",
+      "bytes": 47133,
+      "sha256": "6447ad28e49be7018621c1f9c5ff7c90f66d13e678dbb1d938362eec1d66fa91",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "evidence/hdmi_p2/hdmi_preview_b.png",
+      "bytes": 47062,
+      "sha256": "ced54bebd59c14f7824fd5e22532b74a57856c18ef4b0652a95c9d535d57a529",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "evidence/hdmi_p2/xelab.pb",
+      "bytes": 1191,
+      "sha256": "1136ed80732c4e4e9bea744166c0b06f625a7ec4bcea782e0bfb5990ac1413c1",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xsim.jou",
+      "bytes": 1317,
+      "sha256": "fd4e3209b7e9a5daa48d206623c9353a9b1ffbb62ea5e1e0de631a958c276c1e",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xsim_28016.backup.jou",
+      "bytes": 1327,
+      "sha256": "3aebb3415afe1248a9709112eb00acc4a20cf3fcddd7ff444ac8b873cbd231d7",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xsim_45500.backup.jou",
+      "bytes": 1329,
+      "sha256": "5064e45096d8072a41146607af4f133522102184cf48303929800a576d89dcc0",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xsim_46828.backup.jou",
+      "bytes": 1321,
+      "sha256": "531c3d6f669db1ea244332126aff1ab55b209618faede3d7804409019f6d81cb",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xsim_47136.backup.jou",
+      "bytes": 1345,
+      "sha256": "df6379da5a4fb7c7552a79e64c9fc294f2f48c141a959b3999f38dc5d4c3c6b6",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xsim_48244.backup.jou",
+      "bytes": 1327,
+      "sha256": "ff1099f106c04a2fbdec566326ee76b512966c95558d771a7dd6d062339be8d6",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/hdmi_p2/xvlog.pb",
+      "bytes": 5219,
+      "sha256": "25e8309d50e9305100ca48ea27eafada1f2983a70d84f93534672e05fb44e9d1",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/implementation/create.jou",
+      "bytes": 1697,
+      "sha256": "56e4cc87a0f4143731bc7b2cad7eb159c87185a6631559dfd41a9942c4bab52f",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/implementation/implement.jou",
+      "bytes": 1692,
+      "sha256": "b42f43d0ca3b57750c0fd53cf8322a086af27b2f486d57fdcf0d92e5363163f4",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "evidence/implementation/implemented_reports/roarm_closed_loop.bit",
+      "bytes": 4045780,
+      "sha256": "9510737174c11c236f7b30c3442da76f28aaabad45d08c98a37fd0a63427ae8d",
+      "git_included": false,
+      "reason": "Duplicate of current hardware/ artifact; recover from source archive for the original whole-package check."
+    },
+    {
+      "path": "evidence/implementation/implemented_reports/roarm_closed_loop.hwh",
+      "bytes": 298794,
+      "sha256": "a325b55e10ea0452cf3612281104797952b9fa760a3179fc1f93091b02c1f17f",
+      "git_included": false,
+      "reason": "Duplicate of current hardware/ artifact; recover from source archive for the original whole-package check."
+    },
+    {
+      "path": "evidence/implementation/implemented_reports/roarm_closed_loop.xsa",
+      "bytes": 2707976,
+      "sha256": "b4dbfcf059e34e10385cce20cb8e06ba441e8423c3a780dbfc3e9df68ccfbc9d",
+      "git_included": false,
+      "reason": "Duplicate of current hardware/ artifact; recover from source archive for the original whole-package check."
+    },
+    {
+      "path": "evidence/implementation/inspection_a1/inspect.jou",
+      "bytes": 1718,
+      "sha256": "fbe499b7c2a4a0aa99650c5c209954de810d83c5f543a8948b576a83d01e3d18",
+      "git_included": false,
+      "reason": "Regenerable EDA session/cache output; original retained in source archive."
+    },
+    {
+      "path": "handoff/calibration/train_000.png",
+      "bytes": 359896,
+      "sha256": "49beb89eede5fbb9e49e5effcebe166155f6a47d2afaf64822d8d19664da6229",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_001.png",
+      "bytes": 155793,
+      "sha256": "781cba81cf32fecdcd52bd94e210be5b6932d48641a927ff5ab12e73460b25e2",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_002.png",
+      "bytes": 786255,
+      "sha256": "1a6ad00eea0788bfc7190861ecbb17327940f9c96e25a5676f4108d1394209ca",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_003.png",
+      "bytes": 680114,
+      "sha256": "c74d4d1a0d5385f0a3a6b878e2fe352d60eb7d821a90fb85d3289c7f49e8edaf",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_004.png",
+      "bytes": 617440,
+      "sha256": "16c08511f8c2a1659207fe3771c1561ca4a55b27789e12832553297b95cc0ffe",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_005.png",
+      "bytes": 718523,
+      "sha256": "fcbf9417430b8ffc36afb3ffd69d3df09e3587003e9e9d7fa740335edd574219",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_006.png",
+      "bytes": 773235,
+      "sha256": "035bef8c6ac9cbf34b77d672588418d3f7587498350dec74f05762b408e8f5aa",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_007.png",
+      "bytes": 893349,
+      "sha256": "417812783f51d5a23c92ce6aa184bc951e1739f7355c99837b01ddbabd2369d8",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_008.png",
+      "bytes": 946061,
+      "sha256": "179dd11338dc57a47bcabb81ac286f205d154f41ebf4fd8f6522e9a3a6d7a8f2",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_009.png",
+      "bytes": 566921,
+      "sha256": "de4c10f968233718348c085925d8cd7e9e3cf442fbded979860ce60d99477491",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/calibration/train_010.png",
+      "bytes": 1080580,
+      "sha256": "48f9193ffac5de717ff485c99b8e3e21a8d11d831d4194e80245c8fb9eb167ea",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/empty_00_detected.png",
+      "bytes": 507495,
+      "sha256": "0cd367e4afaa8510f98cadf84df7933d08bd077678f2809975fc3055b23abab1",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/empty_01_detected.png",
+      "bytes": 506043,
+      "sha256": "e632e18a143699bb3d8117bb58fd9787da763e1a3772fded4ee117f7fd5ae97d",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/empty_02_detected.png",
+      "bytes": 508468,
+      "sha256": "52d4faca01790fc3a7c225903ca06b3962fec0c2afde29ebcfffd927cb571440",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/empty_03_detected.png",
+      "bytes": 500048,
+      "sha256": "a5fb0246f8621ea86a57ea8ad1306f3fadc3e1658ff474e999c91f0e1191d3b5",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/empty_04_detected.png",
+      "bytes": 515066,
+      "sha256": "d52a9aa51bdff5c545438dfe925e8203db5c440eb0beeec53e2533017bbccc1e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_00_detected.png",
+      "bytes": 779549,
+      "sha256": "7b6f65c05d2a175aa3bc1fcb75ae40de251852a47638555e48afb3ce3a8e11b2",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_01_detected.png",
+      "bytes": 752523,
+      "sha256": "26f554e55516355649fa5af36e79f05f3be401042ce719c9cd360c9178282115",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_02_detected.png",
+      "bytes": 747855,
+      "sha256": "16c8f1220c1a8c3799b94787707d83db670e190511081a5137b4b7b27734679f",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_03_detected.png",
+      "bytes": 844357,
+      "sha256": "4349b6dbce85d84af283ff4321366c0384cb855ddac7c4de6ddf1adb03b96439",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_04_detected.png",
+      "bytes": 853901,
+      "sha256": "1944fc7c486a2d2364209dc39179610ad0404d714f5ee1f7cccd5122a282e028",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_05_detected.png",
+      "bytes": 835537,
+      "sha256": "ef9fcb258e879e727d615e56ab112979c44f900f612166536548c38c9c54869b",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_06_detected.png",
+      "bytes": 840227,
+      "sha256": "da5ab07a81778beb273326e6c610648029c7c30d913dcdba805d6143ce8fdac7",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_07_detected.png",
+      "bytes": 839176,
+      "sha256": "c7ff3fc6ffb7e467e27ee4bff5444c4138bdba06ed59c51e60d7cc3cd9cdd4ae",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_08_detected.png",
+      "bytes": 842965,
+      "sha256": "51b70014f801a67911843a9f8797af3d3e55671845599c591d57708fa010ee57",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_09_detected.png",
+      "bytes": 851330,
+      "sha256": "2e3ebe7c841a693be0c51573094c00c339f22b4884ee641d1306053529b6945e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_10_detected.png",
+      "bytes": 840107,
+      "sha256": "bda3586115ca18f90ef8bc507a75b02d4e2b549f44211ecc4087f85901ac44c8",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_11_detected.png",
+      "bytes": 837763,
+      "sha256": "82e9b7ae5d617b0fd2388676ba47028c91af0a12428468d4eb81b2e14d71982b",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_12_detected.png",
+      "bytes": 848780,
+      "sha256": "00f93db5d0a1791062ccc64314b33178979cb581239459ba95919aa9c3ae8603",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_13_detected.png",
+      "bytes": 868955,
+      "sha256": "1a6b953916ac88315d30a4db8fe5e93f481f8d39f9547504a6cc84f151222bf9",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_14_detected.png",
+      "bytes": 858265,
+      "sha256": "3cc22fb974a70e9695cb02a6562a5c271dd5a81c24cfbd673f082e702e9000f6",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_15_detected.png",
+      "bytes": 853667,
+      "sha256": "d9519d93e934f14698ad95aaef9c2ffc9756a8c2155e8cab7c4c5ae5dbe413ae",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_16_detected.png",
+      "bytes": 836545,
+      "sha256": "2d54dcb1427fe88425d3ea8192a7c9c28df64fd173b641bcd1a89898d1a07271",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_17_detected.png",
+      "bytes": 845793,
+      "sha256": "2fadcd64a53af06b0ec34c7f6ca001be02cfe1fe79d4604d617a2eec58f3e718",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_18_detected.png",
+      "bytes": 897634,
+      "sha256": "96b5a0f2b955145e334d81f0b94805576ee62c5e21d21c7346c445404dcaacc3",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/cpu_surface/six_19_detected.png",
+      "bytes": 899860,
+      "sha256": "d2c649801a1b0024ed4f0c4d211e89f214b8c30dcd0d421866a322ab78ae322d",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/current_metric_cli_replay/detected.png",
+      "bytes": 1432531,
+      "sha256": "aeb605256b223193184c6f3954d57e73afb3d440b35914413faf5e2f363b0e8c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/empty_00.png",
+      "bytes": 494781,
+      "sha256": "359f48f78c663c18d82fff29da15b0c6b03fe5e09dfdfc675aa51f848c2198fe",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/empty_01.png",
+      "bytes": 493380,
+      "sha256": "65f5e1bbebdbf9f7f4a9fbdf603ecc9412cbdd06b04565e62141d072a15923e7",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/empty_02.png",
+      "bytes": 495836,
+      "sha256": "3132de12f1150ad512c17a26e93243daac5cbdc08bca26669631f600bee55797",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/empty_03.png",
+      "bytes": 487122,
+      "sha256": "dc84eeb8db13224c52ad3f88b137a23876dfe657a4eb3c20f6097b5a403b0fe1",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/empty_04.png",
+      "bytes": 502316,
+      "sha256": "ffd8f97584412b6377b0be61a77361d4bf1f9dbd3d3977d23aba15de74f135fe",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_00.png",
+      "bytes": 731917,
+      "sha256": "a9ee74d9b6134ee0fac2ff0dffbbb8602b3768f6b229c5a35e35dbe90430c5e5",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_01.png",
+      "bytes": 704037,
+      "sha256": "df34e50bba245389f4f02743e0f8b5c15e4a8a75a41b6a9a49ee642b9a9ed043",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_02.png",
+      "bytes": 697649,
+      "sha256": "700a53fd155df82f92f2d513a06f77df27ed0761023a0817931f4dd5d7ed418e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_03.png",
+      "bytes": 794558,
+      "sha256": "8e450215970d71bc940797a5721857d049314bfc66ec0db734be938a730b3fc8",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_04.png",
+      "bytes": 803852,
+      "sha256": "8093e4cceaaaae845142f43b70be60ed2bf87683d0d9f2cdf86de1524f75fb4c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_05.png",
+      "bytes": 785904,
+      "sha256": "4bfaee9f4de4c0c878886502f9d152897927213239d2700f899ef00ec1fbfdb8",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_06.png",
+      "bytes": 789799,
+      "sha256": "71610e9d29724878116f78fde58b17765fc88516c010b9f472aa08c6b4862c04",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_07.png",
+      "bytes": 789132,
+      "sha256": "cc79d4c0992012d51bad1a6c61c3b94816edf30038fd443a8c59bbbcc75fe707",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_08.png",
+      "bytes": 792739,
+      "sha256": "8bf24fa3948b8919e5446464d65a02fadacd94b806f01813e2090d629f397335",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_09.png",
+      "bytes": 802833,
+      "sha256": "9a97f4dd97ec3c46754c523ec208e22e67e4be533099a7698e0bfca0529bc709",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_10.png",
+      "bytes": 790181,
+      "sha256": "bc2a84b8d41e6bee2b8349f6baf67c43413cb0554bcd0fec63d8c79afe782b66",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_11.png",
+      "bytes": 788746,
+      "sha256": "fc168e79a6c48d4d1e54925c43e919a9cf5edb72a109435356207485707c8975",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_12.png",
+      "bytes": 798882,
+      "sha256": "7319b9908353030528425dfb3c32a4cfa428d859ea0b39c76e283a837414830c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_13.png",
+      "bytes": 818593,
+      "sha256": "de6ca4b974e0dccc094e68de5f87dba251094224c7be3ec192567f002497b057",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_14.png",
+      "bytes": 809923,
+      "sha256": "30c1242f1d8c308f69fbb9779a2fe25167daa03e21c8f0d94f809842ea2b8204",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_15.png",
+      "bytes": 803855,
+      "sha256": "9fe801caf49a2a7f7f6ffe27d3cddcec9265705db6c65fe0899b2736903927fc",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_16.png",
+      "bytes": 785011,
+      "sha256": "fc41e76437184e604d0e0c6f7b8a0acab6b49c68802136d93f7e79f5654c2f1e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_17.png",
+      "bytes": 796032,
+      "sha256": "ccab08ddd6af69f7f5be9a0c2baf70bf51d03a83446d182324a1f61006fac333",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_18.png",
+      "bytes": 847510,
+      "sha256": "83300c6a17439520f2a992307e7c1b5fbb49abaa1647afe3fc4d8b7590f68eaa",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "handoff/replay/six_19.png",
+      "bytes": 849730,
+      "sha256": "5c9118a3902dae9473ac39f3a6e2b43cbc92e5d07494281d74924f2d41eb648a",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "hdmi_preview.png",
+      "bytes": 60801,
+      "sha256": "3fd1d7f7a1f1544b89c84a67b3590e15e94c35c6ec463a08cf58f16a2cc36f74",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_00/source.png",
+      "bytes": 164439,
+      "sha256": "3345fe37b849c4c82a99e54e983aa81942b605c3e1a32da18f1f9146390fe4a1",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_01/source.png",
+      "bytes": 275788,
+      "sha256": "c81b343209b6e6dcd287b2b03a2a2c76514cfe0c8b758e61f6e3e8b2d60704ac",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_02/source.png",
+      "bytes": 284524,
+      "sha256": "f25cb3e06c5a92291838889eeeea30ba1835b914cbffa0a91c242b0dc5078a26",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_03/source.png",
+      "bytes": 280970,
+      "sha256": "696709e5228acf2da34e41a35cdd737161379e8c854c68849a3b319c8732ec95",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_04/source.png",
+      "bytes": 290182,
+      "sha256": "6659cdd98db589f3668bf4c386c10a19a27df5c18145e957d022db4c54900f89",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_05/source.png",
+      "bytes": 290097,
+      "sha256": "10cdd119a12e3a2d256536114f871b74dfa309ec6eb31745e83c6a90e798417c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_06/source.png",
+      "bytes": 304670,
+      "sha256": "30a620f1dd10b4ed5bfd65c4f46e9d4b557883f186ed1c1b4250d463dafe2f3e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_07/source.png",
+      "bytes": 324515,
+      "sha256": "c68208da7d6820504304d0e2e7c53360e7e2288a158bfeecbd34abc352c7deef",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_08/source.png",
+      "bytes": 327276,
+      "sha256": "e2e93777a0d3bd53acbe7d724859c0c9c47ec8d200b57b5c4a671a87252690e6",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_09/source.png",
+      "bytes": 344834,
+      "sha256": "cb0aed3104a4a875a014d4ec54533802afc0d0c4f4756f513cf142870317ffa1",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_10/source.png",
+      "bytes": 314555,
+      "sha256": "c3e1bfdf221209a329b4fa4d80ce09effdd18a26c8c6f188677017c2f436ad50",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_11/source.png",
+      "bytes": 323992,
+      "sha256": "4ff6f6d2f83069134053f8e7c3c82647b7438adbc76ef93176e5b279e123f373",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_12/source.png",
+      "bytes": 191053,
+      "sha256": "dd726aed3c484c906c4a5941f84eaa37d3ed55317ef1be4a44df469b3140185e",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_13/source.png",
+      "bytes": 228523,
+      "sha256": "4b224f84a9f46192090a713af5ebf72888ad802cafa86ecaec2f178e0c936329",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_14/source.png",
+      "bytes": 241406,
+      "sha256": "9456135dc0cd91325b0dd3d611c9780a598b2db9bd562081cda473ca99925cff",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_15/source.png",
+      "bytes": 254517,
+      "sha256": "20c76cbcd677c08cd558903fed39f67384559b6ec14538eccb7ae05efcb9ad98",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_16/source.png",
+      "bytes": 239320,
+      "sha256": "5764a7905220733f540105be982b864161311c35f3a654d55a65a7d1eb133dde",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_17/source.png",
+      "bytes": 259434,
+      "sha256": "62e3e57168391215ad5c97403e56a5792ec35be87df5b7d9433a661b2ac8356d",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_18/source.png",
+      "bytes": 182936,
+      "sha256": "9362d914cb2f07a3427c05d4966039ffd03757cd65be6f8acb183736a18c1d31",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_19/source.png",
+      "bytes": 216227,
+      "sha256": "40c5a95d9e8834663c1359dd797c8aa44920d1040b41233c90eed3c10de4536b",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_20/source.png",
+      "bytes": 221532,
+      "sha256": "f67efc38a7c533368f0d81cf791a3564d57a2c020d20a60632f29be27130cd05",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_21/source.png",
+      "bytes": 228970,
+      "sha256": "0b0a43dc4b029d1dabb2004faba68d8154197ddcc7242bc26b1473a8d4f594ce",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_22/source.png",
+      "bytes": 219860,
+      "sha256": "0688bc66f176b482064eecf170a783626ce5d00ad00538ace07acdabbb9edfb7",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_23/source.png",
+      "bytes": 253425,
+      "sha256": "62c01accfb822fa7c8c1a1d0e8a04001fe0142f02e8819d1078985c48a27b770",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_24/source.png",
+      "bytes": 267753,
+      "sha256": "71c18cf96fbc6b46a7dc86cc34d7265575ea9803603e622aa1ccf5071c42c368",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_25/source.png",
+      "bytes": 226678,
+      "sha256": "47752efb6a07e5775c09806162f8a192e12d3948172a1b111efa644d6dcd9243",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/models/classifier_final.pt",
+      "bytes": 489573,
+      "sha256": "da50fec1e717b4fb4b94cd2bdca7fceb7fadd8383f0f4b8661b1d8ac4ca4e227",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/models/locator_best.pt",
+      "bytes": 62479,
+      "sha256": "a09c85d89469f7fc5ebf57990ac0f2740458a7df2ace8da24dc702709dd8e06d",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/mode_b/detector_background_v2/model.onnx",
+      "bytes": 44666590,
+      "sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "model_package/mode_b/surface_eraser_repair_v1/weights.pt",
+      "bytes": 6148747,
+      "sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "rollback/mode_a_v014_original.zip",
+      "bytes": 47957276,
+      "sha256": "c356962dd6df39ebd17e185f7bd260813b3f9a8212633c654260e72e810b21d1",
+      "git_included": false,
+      "reason": "Historical rollback package; retained locally and in source archive, outside current runtime."
+    },
+    {
+      "path": "rollback/p3_a8/built_source_hashes.json",
+      "bytes": 11667,
+      "sha256": "965da0eda86fd7bf685a354f89e8067904244efa47ba860caf93188a1bb5e990",
+      "git_included": false,
+      "reason": "Historical rollback package; retained locally and in source archive, outside current runtime."
+    },
+    {
+      "path": "rollback/p3_a8/implementation_summary.json",
+      "bytes": 1611,
+      "sha256": "7a9fa04500a032864fc4b91f5527d6bc1d9b66c545347f6ca489b860beb29b80",
+      "git_included": false,
+      "reason": "Historical rollback package; retained locally and in source archive, outside current runtime."
+    },
+    {
+      "path": "rollback/p3_a8/roarm_closed_loop.bit",
+      "bytes": 4045780,
+      "sha256": "ee3037080aee2179697702ad619fac4b131426628b12daad0271edcd35b00be0",
+      "git_included": false,
+      "reason": "Historical rollback package; retained locally and in source archive, outside current runtime."
+    },
+    {
+      "path": "rollback/p3_a8/roarm_closed_loop.hwh",
+      "bytes": 282629,
+      "sha256": "d108bf089f441e8d3d2a475cb0b1b9785da2617d7713c44ed6e49b80b063b77c",
+      "git_included": false,
+      "reason": "Historical rollback package; retained locally and in source archive, outside current runtime."
+    },
+    {
+      "path": "rollback/p3_a8/roarm_closed_loop.xsa",
+      "bytes": 2588287,
+      "sha256": "71ad69326ecf3520aa10316860481f5d30622e62ade85c40f3be572a8739a4fb",
+      "git_included": false,
+      "reason": "Historical rollback package; retained locally and in source archive, outside current runtime."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/base_link.stl",
+      "bytes": 3284,
+      "sha256": "55cbfcc2cfb995ab11d8a6ce7c2132283721b9c69cd05b4c7b9d6404e9d8fded",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/gripper_link.stl",
+      "bytes": 684984,
+      "sha256": "7946a374e24a2f467a0581b4946e0ec41b1b86a92f070bc00aa9bced1bf65a56",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/link1.stl",
+      "bytes": 12784,
+      "sha256": "022fdd2df4fa57748f56337fb1b3b3cce81dd116e0f608ccab51d6f1eacb552c",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/link2.stl",
+      "bytes": 468284,
+      "sha256": "5acd32a9f662221deb58ea2ca338c5d6726cbcd7664e7dcdb93bac722820b025",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/link3.stl",
+      "bytes": 34484,
+      "sha256": "80c4e9b1084bf1c7d975398eb11e7ba4e7dc69e62ff4adefcac38a0e0f5a4069",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/link4.stl",
+      "bytes": 9284,
+      "sha256": "bb334cafafa5f5adeedb4d430b325b436eafa833fa851ea782d9c785698f8c09",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    },
+    {
+      "path": "sim/models/mode_b_roarm_nominal/meshes/link5.stl",
+      "bytes": 704684,
+      "sha256": "1d63f374a78c1419b21eec63fa8efeef40d0d42ca89c5de3ceb0d86476d9c7eb",
+      "git_included": false,
+      "reason": "Redistribution review pending for model weights, raster source/evidence images or CAD meshes."
+    }
+  ]
+}

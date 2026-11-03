@@ -1,0 +1,8 @@
+{
+  "source": "operator_review",
+  "release": "p4.1",
+  "comparison": "Qualitative agreement with physical-test timing",
+  "accepted_for_competition_report": true,
+  "reported_distribution_endpoint": "TTL feedback observation",
+  "evidence": "metrics/evidence/vision_ttl_20261103/summary.json"
+}

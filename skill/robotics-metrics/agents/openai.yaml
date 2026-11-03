@@ -1,0 +1,4 @@
+interface:
+  display_name: "Robotics Metrics and Evidence"
+  short_description: "Report task outcomes and measured timing percentiles"
+  default_prompt: "Use $robotics-metrics to summarize these logs with explicit measurement endpoints and evidence conditions."

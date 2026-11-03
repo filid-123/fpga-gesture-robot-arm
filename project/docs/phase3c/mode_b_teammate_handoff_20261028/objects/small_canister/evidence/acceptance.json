@@ -1,0 +1,28 @@
+{
+  "schema": "gesture.mode_b.cylinder_physical_result.v1",
+  "status": "RIGHT10_PICKUP_DELIVERY_HOME_OPERATOR_ACCEPTED",
+  "result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_133722_0931306\\LOADED_ROUTE_RESULT.json",
+  "result_sha256": "c3e77eb7dd77d9dcdc0660526963b05fbe3e0daa11974d332ef0653398d2f7cc",
+  "plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\cylinder_trial_v2\\native_plan_v1\\LOADED_ROUTE_PLAN.json",
+  "plan_sha256": "9b03b34caac2791fbd957dd6f20a0ec441b3ff242640f7e7663ffe4b59321fb6",
+  "request_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\cylinder_trial_v2\\metric\\request.json",
+  "request_sha256": "245d7a0b747559a5e511bf53221dda0e75c3e2bb2b4c07ce02fc29c101155f4e",
+  "camera_source_centre_mm": [
+    586.2390145235656,
+    266.8283415175714,
+    23.0
+  ],
+  "desk_command_correction_mm": [
+    10.0,
+    0.0,
+    0.0
+  ],
+  "fixed_red_primary_anchor": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+  "offset_policy": "RIGHT10_AND_OUTWARD2_RELATIVE_TO_FIXED_RED_PRIMARY_NOT_COMPOUNDED",
+  "physical_pickup_confirmed": true,
+  "physical_delivery_confirmed": true,
+  "transport_no_slip_operator_confirmed": true,
+  "return_home_operator_confirmed": true,
+  "operator_result": "对位改善，全程正常",
+  "physical_general_mapping_calibrated": false
+}

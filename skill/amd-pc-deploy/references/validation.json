@@ -1,0 +1,41 @@
+{
+  "schema": "skill.reuse.validation.v1",
+  "date": "2026-11-01",
+  "passed": true,
+  "python": "3.12",
+  "stdlib_clean_environment": true,
+  "copied_outside_repository": true,
+  "focused_behavior_tests": 8,
+  "scope": "Fresh stdlib venv and copied skill; synthetic model hash and real existing HIP device arithmetic. Full application clean install and new model inference NOT_RUN.",
+  "commands": [
+    {
+      "name": "standalone_environment",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "clean_hip_unavailable_rejected",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true
+    },
+    {
+      "name": "actual_existing_hip_environment",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "failure_conditions_tested": [
+    "version mismatch",
+    "changed model hash",
+    "directory escape",
+    "unsupported dependency syntax",
+    "missing HIP"
+  ],
+  "second_physical_device": "NOT_RUN",
+  "whole_application_deployment": "NOT_RUN",
+  "hardware_access": false,
+  "script_sha256": "b1e5a853d46f70d89b2ace2d2abd48e01b48349a16ead20b2c9971fb754c132f"
+}

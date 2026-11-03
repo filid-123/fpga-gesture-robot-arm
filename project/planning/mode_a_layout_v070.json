@@ -1,0 +1,96 @@
+{
+  "schema": "gesture.mode_a.layout.v1",
+  "layout_id": "D_original_camera195_195_333_H240_155_175_board_v070",
+  "units": "mm",
+  "datum": "Original desk left-front corner; +X right, +Y inward, +Z up",
+  "desk_size_mm": [
+    800,
+    600
+  ],
+  "base_axis_D_xy_mm": [
+    585,
+    25
+  ],
+  "camera": {
+    "lens_D_mm": [
+      195,
+      195,
+      333
+    ],
+    "optical_axis_assumption_D": [
+      0,
+      0,
+      -1
+    ],
+    "reported_view_D_xy_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        310,
+        310
+      ]
+    ],
+    "reported_by_operator": true,
+    "height_dependent_pixel_mapping": "NOT_CALIBRATED",
+    "use": "Gesture selection and palm readiness; objects need not lie inside this view"
+  },
+  "slots_D_mm": [
+    [
+      530,
+      250,
+      15
+    ],
+    [
+      650,
+      250,
+      15
+    ],
+    [
+      590,
+      320,
+      15
+    ]
+  ],
+  "cube_size_mm": 30,
+  "common_D_mm": {
+    "INNER": [
+      585,
+      225,
+      90
+    ],
+    "B": [
+      360,
+      200,
+      160
+    ],
+    "PRE": [
+      270,
+      175,
+      180
+    ],
+    "H": [
+      240,
+      155,
+      175
+    ],
+    "H_CLEAR": [
+      240,
+      155,
+      195
+    ]
+  },
+  "palm_surface_candidate_z_mm": 150,
+  "delivery_pose": {
+    "type": "Tilt tool away from the base in the radial vertical plane",
+    "tilt_deg_at_x_ge_450": 0,
+    "tilt_deg_at_x_le_270": 40,
+    "between": "Linear interpolation in desk X",
+    "pick_pose": "Unchanged vertical tool at all three original slots",
+    "reason": "Raised PRE/delivery/retreat solved together; ascent begins on the INNER-to-B corridor"
+  },
+  "arrival_policy": "observe_all",
+  "operator_ready_timeout_s": null,
+  "physical_validated": false
+}

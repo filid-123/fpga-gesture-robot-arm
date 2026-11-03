@@ -1,0 +1,4 @@
+interface:
+  display_name: "AMD AI PC Deployment Check"
+  short_description: "Check pinned packages, model hashes and actual HIP"
+  default_prompt: "Use $amd-pc-deploy to inspect this project's environment, model files and real HIP availability."

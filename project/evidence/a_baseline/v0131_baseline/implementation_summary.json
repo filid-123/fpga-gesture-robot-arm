@@ -1,0 +1,85 @@
+{
+  "result": "IMPLEMENTATION_NETLIST_IOB_CDC_SKEW_AND_XSA_PASS",
+  "version": "0.13.1",
+  "task_abi": 13322,
+  "utilization": {
+    "LUT_TOTAL": 26052.0,
+    "LUT_LOGIC": 25316.0,
+    "LUT_MEMORY": 736.0,
+    "FF": 23024.0,
+    "BRAM_TILE": 113.0,
+    "RAMB36": 105.0,
+    "RAMB18": 16.0,
+    "DSP": 32.0
+  },
+  "resource_max_percent": 85,
+  "resource_percent": {
+    "LUT_TOTAL": 48.97,
+    "FF": 21.639,
+    "BRAM_TILE": 80.714,
+    "DSP": 14.545
+  },
+  "timing_ns": {
+    "WNS": 0.222,
+    "TNS": 0.0,
+    "TNS_FAILING": 0.0,
+    "WHS": 0.019,
+    "THS": 0.0,
+    "THS_FAILING": 0.0
+  },
+  "unconstrained_internal_endpoints": 0,
+  "cdc_endpoints": 111,
+  "cdc_safe": 111,
+  "cdc_unsafe": 0,
+  "cdc_unknown": 0,
+  "gray_bus_skew_slacks_ns": [
+    9.008,
+    9.035
+  ],
+  "drc_errors": 0,
+  "drc_warning_count": 44,
+  "drc_warning_rule_types": 4,
+  "review": "Original Gray pointer CDC-6 buses retain10ns skew constraints. HDMI multi-bit CDC-6 buses have two-stage ASYNC_REG, held payload and request/ack, latched only at frame boundaries; focused randomized snapshot/paired-bank tests pass. Other endpoints CDC-3.",
+  "artifacts": {
+    "roarm_closed_loop.bit": {
+      "bytes": 4045780,
+      "sha256": "9b59429c8f5b51b2a20e9724c617a12c65d34eae196e28c031cc8b35e8cd9b7e"
+    },
+    "roarm_closed_loop.hwh": {
+      "bytes": 282530,
+      "sha256": "756ec209c0e11b7b6bbd990a843209520f8b396d6e78a8a3f9301f448c678c63"
+    },
+    "roarm_closed_loop.xsa": {
+      "bytes": 2584447,
+      "sha256": "0af15654a4181133f495abbd3e4447e6bf4ae75124f154c7260f90879171222a"
+    }
+  },
+  "hardware_source_binding_sha256": "66fe005c8ec488d6259f7dfe3e131d59c24e81b90dfd46b869b2dffe039bf604",
+  "built_input_files": 91,
+  "model_audit": {
+    "status": "PASS",
+    "files": 2316,
+    "samples": 26,
+    "layer_checks": 832,
+    "Rain_commit": "022267a939c892d73ae278ceddee1a3e856a8dee",
+    "class_order": [
+      "background",
+      "one",
+      "two",
+      "three",
+      "fist",
+      "palm"
+    ],
+    "confidence_threshold_i32": -11748,
+    "training_performed": false,
+    "RTL_verified": false
+  },
+  "physical_hardware_test": "NOT_RUN",
+  "inherited_xdc_parser_warning_review": {
+    "status": "REVIEWED_INHERITED_CONSTRAINT_PARSER_WARNING",
+    "warning": "Designutils20-1307: if command in unchanged mode_a_hdmi.xdc line19 is unsupported by XDC parser",
+    "effect": "Only the uniqueness assertion is affected; the following set_clock_groups remains. Unique HDMI pixel/serial clocks, held CDC, clock interactions, all internal endpoints and both DVP setup/hold are independently inspected before sealing.",
+    "action": "No constraints relaxed or changed; physical DRC remains0 errors and44 warnings in4 inherited categories. This is not a clean-all-tool-warnings claim."
+  },
+  "hdmi_sys_clock_groups_verified": true
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "gesture.ai_pc.mode_b_candidate_freeze.v3",
+  "status": "FROZEN_REPAIR_V2_BEFORE_NEW_LAYOUT_REQUEST",
+  "frozen_utc": "2026-10-27T14:14:55.139552+00:00",
+  "files_sha256": {
+    "model_package/mode_b/detector_background_v2/model.json": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+    "config/ai_pc/mode_b_six_objects_v1.json": "038561eb1c4847ef444a6ae91f5de1a86c7d4f800560e71fce1e9f826416a031",
+    "artifacts/multiobject/six_objects_field_20261027/reviewed_camera_adjusted_exposure_profile.json": "1a5da1c452a85f8331e33806f93a59d20d3be65355b88b8ed21a8f429447c252",
+    "model_package/mode_b/detector_background_v2/model.onnx": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+    "pc/mode_b/geometry.py": "9a614ff05e4a433151f4378449db9824a5ada47146120026a192b4ca192843ce",
+    "pc/mode_b/perception.py": "1b1d02a27800568f53e6e332077710c2d9cc30bef09e020da6ac2e0a34259553",
+    "pc/mode_b/profile.py": "36d77913ba860f63f1a90d2c39406686ee16232afedae8a6ac9b1ffeba0f492f",
+    "pc/mode_b/tiled_detector.py": "151ad63c2be314eae58eae14cf30c1967c1d60f6e77be827390b84c69d461b7f",
+    "pc/multiobject/pixel_top.py": "4eefdc1afad1e8326cc29ad65994ace37b493adcb140e736a27edc2043364795",
+    "pc/multiobject/yolo.py": "323a600a9c09ce0ec3723fa9a0214493a93034f50fa6d52b440ddfd3bdcdc3b3",
+    "pc/multiobject/surface.py": "5e61a048130855689886f471536ce629c42d7b038a4dcc18e93b5dbb2b792e5c",
+    "artifacts/multiobject/six_objects_field_20261027/capture_camera_adjusted_check.py": "0f7efdc367c218c62b0ea91c2374625d453e77f63473f54cc10dc1c1e3dd5318",
+    "artifacts/multiobject/recognition_refinement_20261027/evaluate_frozen_burst.py": "3d93696cc3cdf02ab463ffdcc40374b7f7b6412a8b9d100d6c687a044e8ec619",
+    "model_package/mode_b/surface_eraser_repair_v1/model.json": "d71afc46ea197b0fdab77142c3a99d9acf4b73ca885f24dc949a9af13f957a8b",
+    "model_package/mode_b/surface_eraser_repair_v1/weights.pt": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+    "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json": "ea9d170080d30e2a6ca22c5cf9b3387b36f5f5d746dfcefe254aa34585246db9",
+    "pc/mode_b/surface_ensemble.py": "13a81241ba13551d4530c826b3d185d4cb4c08903ee470720988ba46bbd7de34",
+    "scripts/preview_mode_b.py": "9fab0626360482fa435b07e4dace3074da13d73d9ba6eff0cc9ac32d388cefd0",
+    "artifacts/multiobject/eraser_top_repair_20261027/evaluate_frozen_burst.py": "cb2057210e63a8492eeb559c73cc21a63ebc9679ac12c6911fec24b98b028f43"
+  },
+  "detector_package": "model_package/mode_b/detector_background_v2/model.json",
+  "surface_package": "model_package/mode_b/surface_eraser_repair_v1/model.json",
+  "profile": "config/ai_pc/mode_b_six_objects_v1.json",
+  "dataset_manifest": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json",
+  "dataset_sha256": "ea9d170080d30e2a6ca22c5cf9b3387b36f5f5d746dfcefe254aa34585246db9",
+  "exposure_profile": "artifacts/multiobject/six_objects_field_20261027/reviewed_camera_adjusted_exposure_profile.json",
+  "exposure_profile_sha256": "1a5da1c452a85f8331e33806f93a59d20d3be65355b88b8ed21a8f429447c252",
+  "checkpoint_selection": "ORIGINAL_38_DEVELOPMENT_VALIDATION_ONLY",
+  "training_recipe": "6_NEW_TRAIN_FRAMES_2_POSES_18_CONTEXT_CROPS; SURFACE_FIXED_2000_STEPS_ROTATION_JITTER0_04_FOREGROUND_WEIGHT1; DETECTOR_UNCHANGED",
+  "previous_check_scenes": "DEVELOPMENT_RUNTIME_DIAGNOSTICS_EXCLUDED_FROM_WEIGHT_TRAINING_AND_CHECKPOINT_SELECTION",
+  "new_check_scene": "NEW_USER_LAYOUT_EXCLUDED_FROM_TRAINING_CHECKPOINT_AND_RUNTIME_SELECTION",
+  "detector_confidence": 0.4,
+  "surface_confidence": 0.7,
+  "shape_min_iou": 0.85,
+  "tiled_inference": true,
+  "shape_thresholds_unchanged": true,
+  "metric_localization_accepted": false,
+  "physical_execution": false,
+  "path_submissions": 0,
+  "npu_acceptance": "NOT_RUN",
+  "rocm_acceptance": "NOT_RUN",
+  "surface_ensemble": true,
+  "surface_spatial_policy": {
+    "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+    "relative_shift": 0.04,
+    "shifts_xy": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "uses_temporal_history": false,
+    "thresholds_unchanged": true
+  },
+  "runtime_revision_reason": "REDUCE_CROP_SENSITIVITY_USING_FIXED_SAME_FRAME_PROBABILITY_MEAN_NO_TEMPORAL_HISTORY_NO_FRAME_REJECTION"
+}

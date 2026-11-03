@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 23:28:44 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_tmds_encoder/xsim_script.tcl
+# xsim {tb_tmds_encoder} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: TMDS control symbols and running-disparity data encoding are bit-exact
+$finish called at time : 170 ns : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/sim/hdmi/tb_tmds_encoder.v" Line 108
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 23:28:46 2026...

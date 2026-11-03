@@ -1,0 +1,38 @@
+{
+  "schema": "gesture.video.response.update.validation.v1",
+  "date": "2026-11-01",
+  "publication_version": "0.1.0-publication.4",
+  "passed": true,
+  "metric_rows": 55,
+  "current_duration_ms": 620,
+  "prior_2400_ms_retracted": true,
+  "reported_duration_values": 1,
+  "underlying_trial_count_known": false,
+  "percentiles_or_maximum_inferred": false,
+  "other_metric_rows_unchanged": true,
+  "metric_evidence_files_exist": true,
+  "original_recovery_snapshot_unchanged": true,
+  "production_code_changed": false,
+  "tool_code_changed": false,
+  "hardware_access": false,
+  "video_independently_reanalyzed": false,
+  "source": "Operator correction in this chat",
+  "checks": [
+    {
+      "name": "public_prior_metrics_recompute",
+      "passed": true,
+      "exit_code": 0,
+      "wall_s": 0.42,
+      "log": "video_response_prior_metrics_recompute.txt"
+    },
+    {
+      "name": "video_report_units_scope_and_metric_table",
+      "passed": true
+    }
+  ],
+  "prior_tool_test_result": {
+    "tests": 42,
+    "status": "PASS_REUSED_UNCHANGED_TOOLS",
+    "evidence": "report/validation/metrics_recovery_20261101.json"
+  }
+}

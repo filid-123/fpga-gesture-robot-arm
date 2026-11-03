@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "pc_tests": 41,
+  "records": [
+    {
+      "test": "control",
+      "exit_code": 0,
+      "seconds": 0.25
+    },
+    {
+      "test": "http",
+      "exit_code": 0,
+      "seconds": 3.2180000000007567
+    },
+    {
+      "test": "shared_red",
+      "exit_code": 0,
+      "seconds": 1.235000000000582
+    },
+    {
+      "test": "snapshot",
+      "exit_code": 0,
+      "seconds": 1.375
+    },
+    {
+      "test": "planning",
+      "exit_code": 0,
+      "seconds": 1.5469999999986612
+    }
+  ],
+  "hardware_access": false,
+  "source_hashes": {
+    "pc/mode_ab/motion.py": "459ea6619d22e45fc97ec68a4dac06d37d339c093841f13350b42e8fd930cdef",
+    "pc/mode_ab/runtime.py": "dabef45a547cabcb8a59085c45ec1ec1456afef883c1eb9c2f93677f82a347e1"
+  }
+}

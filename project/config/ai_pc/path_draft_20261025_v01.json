@@ -1,0 +1,328 @@
+{
+  "schema": "gesture.ai_pc.path_review_draft.v1",
+  "revision": "0.1",
+  "status": "PARTIALLY_ACCEPTED_PENDING_PHYSICAL_VALIDATION",
+  "physical_execution": false,
+  "hardware_commands_sent": 0,
+  "joint_targets_generated": 0,
+  "source_layout": "config/ai_pc/path_plan_20261025_v062.json",
+  "source_layout_sha256": "00d8a99c0151384797bfcaa619c026ff4311639877b3be4d3c2be6a0b59e6689",
+  "frame_id": "desk_global_20261023",
+  "layout_revision": "0.6.2",
+  "waypoint_reference": "Object centre Q in desk D; empty waypoints use a virtual held-object centre, not firmware TCP.",
+  "example_only": {
+    "object_side_mm": 30,
+    "qx": 590,
+    "qy": 285,
+    "support_z": 0,
+    "pick_Qz_calibrated": 15,
+    "yaw": "task-specific; not inferred from image without frame/tool mapping"
+  },
+  "valid_pick_centre_bounds_xy_mm": [
+    522,
+    658,
+    247,
+    323
+  ],
+  "waypoints": {
+    "I": {
+      "Q_D_mm": null,
+      "role": "EMPTY_STANDBY_TO_BE_VALIDATED"
+    },
+    "P0": {
+      "Q_D_mm": [
+        "qx",
+        "qy",
+        160
+      ],
+      "role": "HIGH_PICK_ENTRY"
+    },
+    "P1": {
+      "Q_D_mm": [
+        "qx",
+        "qy",
+        115
+      ],
+      "role": "PICK_APPROACH"
+    },
+    "P2": {
+      "Q_D_mm": [
+        "qx",
+        "qy",
+        55
+      ],
+      "role": "FINAL_APPROACH_ENTRY"
+    },
+    "P3": {
+      "Q_D_mm": [
+        "qx",
+        "qy",
+        "pick_Qz_calibrated"
+      ],
+      "role": "GRASP_REFERENCE"
+    },
+    "L_TEST": {
+      "Q_D_mm": [
+        "qx",
+        "qy",
+        "pick_Qz_calibrated + 20"
+      ],
+      "role": "TEST_LIFT"
+    },
+    "L_HIGH": {
+      "Q_D_mm": [
+        "qx",
+        "qy",
+        160
+      ],
+      "role": "HIGH_CARRY"
+    },
+    "B": {
+      "Q_D_mm": [
+        360,
+        285,
+        160
+      ],
+      "role": "LEFT_BUFFER_HOLD"
+    },
+    "PRE_HIGH": {
+      "Q_D_mm": [
+        290,
+        175,
+        160
+      ],
+      "role": "HIGH_PREDELIVERY_ENTRY"
+    },
+    "PRE": {
+      "Q_D_mm": [
+        290,
+        175,
+        150
+      ],
+      "role": "PREDELIVERY_HOLD"
+    },
+    "H": {
+      "Q_D_mm": [
+        200,
+        140,
+        115
+      ],
+      "role": "HANDOVER_CANDIDATE"
+    },
+    "H_CLEAR": {
+      "Q_D_mm": null,
+      "role": "LOCAL_RELEASE_RETREAT_TBD"
+    }
+  },
+  "user_review": {
+    "accepted": [
+      "vertical lift before leftward transfer",
+      "buffer used for held-object waiting only"
+    ],
+    "not_accepted": [
+      "numeric standby point I",
+      "unverified numerical transit heights",
+      "H reachability"
+    ],
+    "standby_correction": "Remove I=(500,130,160); use fresh actual pose to select/validate a standby joint configuration. Do not restore the old Cartesian placeholder.",
+    "note": "Accepted sequence and zone purpose do not authorize physical motion."
+  },
+  "segments": [
+    {
+      "id": "S01",
+      "start": "I",
+      "end": "P0",
+      "geometry": "VALIDATED_START_CONNECTOR_TBD",
+      "gripper_state": "EMPTY",
+      "entry_gate": "ACTUAL_START_AND_HIGH_ENTRY_VALIDATED",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S02",
+      "start": "P0",
+      "end": "P1",
+      "geometry": "VERTICAL",
+      "gripper_state": "OPEN",
+      "entry_gate": "PICK_DESTINATION_STABLE",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S03",
+      "start": "P1",
+      "end": "P2",
+      "geometry": "VERTICAL",
+      "gripper_state": "OPEN",
+      "entry_gate": "APPROACH_CLEAR",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S04",
+      "start": "P2",
+      "end": "P3",
+      "geometry": "VERTICAL",
+      "gripper_state": "OPEN",
+      "entry_gate": "FINAL_ALIGNMENT_VERIFIED",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S05",
+      "start": "P3",
+      "end": "L_TEST",
+      "geometry": "VERTICAL",
+      "gripper_state": "HOLD_CLOSED",
+      "entry_gate": "CONTACT_AND_GRIP_ACCEPTED",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S06",
+      "start": "L_TEST",
+      "end": "L_HIGH",
+      "geometry": "VERTICAL",
+      "gripper_state": "HOLD_CLOSED",
+      "entry_gate": "LIFT_AND_PAYLOAD_CONFIRMED",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S07",
+      "start": "L_HIGH",
+      "end": "B",
+      "geometry": "XY_AT_CONSTANT_Z",
+      "gripper_state": "HOLD_CLOSED",
+      "entry_gate": "CARRY_CLEARANCE_VERIFIED",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S08",
+      "start": "B",
+      "end": "PRE_HIGH",
+      "geometry": "XY_AT_CONSTANT_Z",
+      "gripper_state": "HOLD_CLOSED",
+      "entry_gate": "HAND_OUTSIDE_ROBOT_TRANSIT",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S09",
+      "start": "PRE_HIGH",
+      "end": "PRE",
+      "geometry": "VERTICAL",
+      "gripper_state": "HOLD_CLOSED",
+      "entry_gate": "PREDELIVERY_CLEAR",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S10",
+      "start": "PRE",
+      "end": "H",
+      "geometry": "CARTESIAN_LINE_WITH_VERIFIED_ORIENTATION",
+      "gripper_state": "HOLD_CLOSED",
+      "entry_gate": "FRESH_PALM_READY_AND_HANDOVER_ROUTE_VALID",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S11",
+      "start": "H",
+      "end": "H_CLEAR",
+      "geometry": "VALIDATED_LOCAL_WITHDRAWAL",
+      "gripper_state": "OPEN_AFTER_SUPPORT_CHECK",
+      "entry_gate": "RELEASE_CONFIRMED",
+      "stop_at_endpoint": true
+    },
+    {
+      "id": "S12",
+      "start": "H_CLEAR",
+      "end": "I",
+      "geometry": "VALIDATED_EMPTY_RETURN",
+      "gripper_state": "OPEN",
+      "entry_gate": "HAND_AND_OBJECT_CLEAR",
+      "stop_at_endpoint": true
+    }
+  ],
+  "orientation": {
+    "physical_gripper_long_axis": "vertical downward during grasp, carry and placement; measured mapping required",
+    "yaw": "solve grasp yaw with fixed-finger side and source object orientation; preserve object-to-tool attachment for return",
+    "closure": "incremental bounded closure using validated grip criterion; no universal g angle or assumed force sensing",
+    "constraint": "IK must satisfy orientation at every sample; interpolation of joints alone does not guarantee verticality or straight XYZ."
+  },
+  "timing": {
+    "status": "UNSET_REQUIRES_MEASURED_JOINT_LIMITS_AND_CONTROL_PERIOD",
+    "joint_vmax": null,
+    "joint_amax": null,
+    "sample_period": null,
+    "arrival_joint_tolerance": null,
+    "arrival_consecutive_samples": null,
+    "palm_ready_ttl": null,
+    "delivery_wait_timeout": null,
+    "note": "No speeds, forces or settling times are authorized by this geometric draft."
+  },
+  "confirmation": {
+    "arrival": "fresh joint feedback + measured tolerances + consecutive arrival samples; HTTP ok/firmware FK XYZ alone is insufficient",
+    "payload": "manual observation at L_TEST for first validation; no automatic held-object detector is claimed",
+    "support": "manual/dummy support confirmation during first validation; no uninstalled contact sensor is assumed",
+    "vacancy": "reserve original pose; verify fresh object/tool-envelope vacancy from unoccluded view or manual confirmation"
+  },
+  "return": {
+    "destination": "TASK_ORIGINAL_PICK_POSE_ONLY",
+    "separate_return_zone": false,
+    "alternate_drop_point": false,
+    "task_memory": [
+      "task_id",
+      "object_id",
+      "layout_revision",
+      "frame_id",
+      "calibration_revision",
+      "original_Q",
+      "original_yaw",
+      "original_grasp_pose",
+      "object_in_tool_transform",
+      "accepted_return_branch"
+    ],
+    "from_pick_descent_empty": "stop; validated vertical withdrawal to P0 then I; no payload return",
+    "from_test_lift_or_high_above_original": "verified vertical return over original footprint only if vacant and controllable",
+    "from_B": "B -> original P0 (high XY line, validation required)",
+    "from_PRE": "PRE -> PRE_HIGH -> B -> original P0, validated branches only",
+    "from_H_before_release": "validated carrying withdrawal to PRE, then return branch; requires hand clearance, else hold",
+    "from_mid_segment": "controlled stop using measured dynamics; choose approved connector from actual stopped state, never snap to last waypoint",
+    "placement": [
+      "high original P0",
+      "verify vacant footprint and tool envelope",
+      "vertical controlled approach preserving return object yaw",
+      "original_qx/original_qy at measured support_z + 15 + validated_gap",
+      "verify support",
+      "open",
+      "local vertical withdrawal after tool-clear check",
+      "I"
+    ],
+    "placement_z_mm": null,
+    "return_connector_from_arbitrary_state": null,
+    "faults_not_returnable": [
+      "drive fault",
+      "feedback/link loss",
+      "dropped/unknown payload",
+      "unknown current pose",
+      "occupied original location",
+      "no verified connector"
+    ],
+    "post_delivery": "retreat empty; never retrieve from recipient automatically"
+  },
+  "protocol_boundary": {
+    "reviewed_source": "pc/phase3_path_contract.py",
+    "wire_contract_version": 1,
+    "max_grasp_path_segments": 32,
+    "wire_units": "six joint channels incl gripper; Q16.16 rad; not desk millimetres",
+    "grasp_submission": "HOME -> PRE_DELIVERY; exactly one F_GRASP; samples/digest and real-execution gates required",
+    "not_part_of_grasp_submission": [
+      "PALM_READY wait",
+      "PRE -> H final delivery",
+      "post-release retreat",
+      "cancel return branches"
+    ],
+    "required_integration": "map I to verified HOME, PRE to verified PRE_DELIVERY; implement/version task-specific dynamic return in PS/PL state machine; existing fixed-tray assumptions must be audited",
+    "wire_or_rtl_changes_made": false
+  },
+  "evidence_limits": [
+    "prior physical grasp is local single-object evidence, not whole-route validation",
+    "2026-10-24 upward shoulder errors about 3 degrees remain unresolved",
+    "D/camera/base/tool transforms and real IK are not deployment-validated",
+    "H reach and hand/camera visibility need priority review"
+  ]
+}

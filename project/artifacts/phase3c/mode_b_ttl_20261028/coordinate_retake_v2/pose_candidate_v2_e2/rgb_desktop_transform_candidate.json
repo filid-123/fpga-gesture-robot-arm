@@ -1,0 +1,68 @@
+{
+  "schema": "gesture.ai_pc.rgb_table_transform.v1",
+  "image_size_wh": [
+    1920,
+    1080
+  ],
+  "source_directory": "artifacts/phase3c/metric_recheck_20261027/board_presence_capture_01",
+  "reference_image": "frame_000000_raw.png",
+  "reference_sha256": "ccdd9e942b4858c6c81960d5bfd4b8f3daddcbb30c54ca1d7441512c71f84941",
+  "intrinsics_file": "docs/phase3b/calibration/RGB_INTRINSICS_CANDIDATE_20261014.json",
+  "intrinsics_sha256": "15fd11a87bb39aec230a2bb5aa0bf2e7846390d76dd48fe5955becde3f634200",
+  "intrinsics_status": "PROVISIONAL_FOR_TABLE_VALIDATION",
+  "intrinsics_refitted": false,
+  "status": "PHYSICAL_METRIC_RESIDUAL_REVIEW_REQUIRED",
+  "table_frame_id": "desk_global_mm",
+  "table_to_camera_nominal": {
+    "rotation": [
+      [
+        -0.9990402705060494,
+        0.0009389628010330231,
+        0.043791052237390896
+      ],
+      [
+        -0.008726894612129603,
+        0.9754587384848772,
+        -0.22000929713064293
+      ],
+      [
+        -0.042922945118297806,
+        -0.2201803076170733,
+        -0.9745143677340127
+      ]
+    ],
+    "translation_mm": [
+      597.0884908653208,
+      -288.04369430653514,
+      516.8979483963296
+    ]
+  },
+  "table_transform_equation": "p_camera = R_camera_from_desktop @ p_desktop + t_camera_from_desktop",
+  "frame_definition": {
+    "origin": "Physical desktop front-left corner, nominal working plane",
+    "x": "Right along desktop front edge",
+    "y": "Toward desktop back edge",
+    "z": "Up"
+  },
+  "source_table_frame_id": "rgb_table_board_presence_capture_01_frame_000000_raw",
+  "source_table_sha256": "93b68a0c6b183325bf8fcd3a01389a2d6ff92939d656f9e8f69b928d20bd31f4",
+  "surface_height_mm_nominal": 0.0,
+  "coordinates_interchangeable_with_previous_frame": false,
+  "metric_localization_accepted": false,
+  "desktop_registration_accepted": false,
+  "independent_metric_validation": "PHYSICAL_METRIC_RESIDUAL_REVIEW_REQUIRED",
+  "camera_to_robot_base": null,
+  "physical_execution": false,
+  "depth_available": false,
+  "scope": "Candidate desktop millimetres for offline review; no default switch or motion authorization",
+  "validity": "Camera/optics/plane fixed; local30mm cube placements checked, no general metric acceptance",
+  "desktop_registration_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\DIRECTION_CHECK.json",
+  "desktop_registration_sha256": "6ac415e13ab2948ae16ff4e225af33973fbc7930e6b775a2a3b0dd5200a8b739",
+  "calibration_method": "CONVERGED_UNDISTORTION_THEN_SQPNP",
+  "previous_desktop_table_file": "docs\\phase3c\\table_reference_20261027\\desktop_registration\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "previous_desktop_table_sha256": "9566d29ef6947c0771aaf8a7280d30cfd0623e7e3509b58c82467517e99a66cd",
+  "physical_validation_heights_mm": [
+    30
+  ],
+  "other_object_heights_independently_checked": false
+}

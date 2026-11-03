@@ -1,0 +1,44 @@
+{
+  "schema": "gesture.mode_b.motion_request.v1",
+  "frame": "desk_global_mm",
+  "task_id": "mode_b_ttl_restart_red_20261028",
+  "object_class": "red_cube",
+  "pickup": {
+    "centre_mm": [
+      651.879446649631,
+      257.80145957601377,
+      15.0
+    ],
+    "yaw_deg": 2.978087653032702,
+    "yaw_equivalence": {
+      "raw_long_axis_deg": 92.9780876530327,
+      "symmetry_deg": 90,
+      "selected_deg": 2.978087653032702
+    }
+  },
+  "destination": {
+    "support_centre_mm": [
+      285,
+      195,
+      150
+    ],
+    "size_xy_mm": [
+      80,
+      80
+    ],
+    "rim_height_mm": 0
+  },
+  "obstacles": [],
+  "source": "FRESH_POST_REBOOT_PC_COMMISSIONING_BURST",
+  "physical_general_mapping_calibrated": false,
+  "support_size_is_proxy": true,
+  "metric_file_sha256": "b7ae384d98737dc37c25dd0aa4355325884862f11f5003f769f7a7b54fb643b2",
+  "table_transform_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "table_transform_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "source_planning_strategy": {
+    "mode": "TODAY_SUCCESSFUL_NATIVE_RELATIVE_TRANSFER",
+    "anchor_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+    "anchor_sha256": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631",
+    "historical_wrong_camera_xy_not_reused": true
+  }
+}

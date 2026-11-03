@@ -1,0 +1,87 @@
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[0] LOC=ILOGIC_X1Y66
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[1] LOC=ILOGIC_X1Y65
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[2] LOC=ILOGIC_X1Y86
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[3] LOC=ILOGIC_X1Y85
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[4] LOC=ILOGIC_X1Y75
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[5] LOC=ILOGIC_X1Y56
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[6] LOC=ILOGIC_X1Y55
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_data_iob_reg[7] LOC=ILOGIC_X1Y84
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_href_iob_reg LOC=ILOGIC_X1Y83
+POSITIVE_IOB=roarm_closed_loop_i/s5_0/inst/u_vision/u_camera_frontend/u_capture/dvp_vsync_iob_reg LOC=ILOGIC_X1Y98
+EXCLUDED_REFERENCE=IDELAYE2 COUNT=0
+EXCLUDED_REFERENCE=IDELAYCTRL COUNT=0
+CAMERA_AND_HDMI_MMCM_COUNT=2
+EXCLUDED_HIERARCHY=*u_retained* COUNT=0
+EXCLUDED_HIERARCHY=*u_input_delay* COUNT=0
+EXCLUDED_HIERARCHY=*u_line_diag* COUNT=0
+EXCLUDED_HIERARCHY=*u_phase_diag* COUNT=0
+EXCLUDED_HIERARCHY=*u_coordinate_diag* COUNT=0
+EXCLUDED_HIERARCHY=*u_register_diag* COUNT=0
+SHARED_CAMERA_RAM_COUNT=8 TYPE=RAMB36E1 PAYLOAD_BYTES=32768
+NEAREST_ROI_DSP_COUNT=0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_task/u_regs/g_continuous.product_q0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_task/u_regs/g_continuous.product_q_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/floor_div5_return0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/floor_div5_return0__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/floor_div5_return0__1
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/ema_box_x0_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/ema_box_x1_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/ema_box_y0_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/ema_box_y1_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/mul_result0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/mul_result0__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/mul_result_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/mul_result_reg__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_bbox/side_num_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/conv_inst/rq_s2_mult0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/conv_inst/rq_s2_mult0__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/conv_inst/rq_s2_mult_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/conv_inst/rq_s2_mult_reg__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/dense_inst/g_rq.u_requant/cross_sum_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/dense_inst/g_rq.u_requant/hh_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/dense_inst/g_rq.u_requant/lh_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/dense_inst/g_rq.u_requant/ll_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/dense_inst/w_bram_addr2
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/g_parallel.conv_lane1/rq_s2_mult0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/g_parallel.conv_lane1/rq_s2_mult0__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/g_parallel.conv_lane1/rq_s2_mult_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_classifier/g_parallel.conv_lane1/rq_s2_mult_reg__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_locator/p_0_out
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_locator/requant_product0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_locator/requant_product0__0
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_locator/requant_product_reg
+ACTUAL_DSP=roarm_closed_loop_i/s5_0/inst/u_vision/u_locator/requant_product_reg__0
+PHASE2_INPUT PORT=ov5640_data[7] TYPE=max SLACK=1.756 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[7] TYPE=min SLACK=11.108 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[6] TYPE=max SLACK=1.750 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[6] TYPE=min SLACK=11.235 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[5] TYPE=max SLACK=1.746 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[5] TYPE=min SLACK=11.238 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[4] TYPE=max SLACK=1.726 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[4] TYPE=min SLACK=11.267 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[3] TYPE=max SLACK=1.789 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[3] TYPE=min SLACK=11.074 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[2] TYPE=max SLACK=1.787 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[2] TYPE=min SLACK=11.076 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[1] TYPE=max SLACK=1.716 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[1] TYPE=min SLACK=11.271 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_data[0] TYPE=max SLACK=1.710 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_data[0] TYPE=min SLACK=11.277 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_href TYPE=max SLACK=1.768 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_href TYPE=min SLACK=11.096 REQUIREMENT=-10.417
+PHASE2_INPUT PORT=ov5640_vsync TYPE=max SLACK=1.811 REQUIREMENT=10.417
+PHASE2_INPUT PORT=ov5640_vsync TYPE=min SLACK=11.050 REQUIREMENT=-10.417
+GRAY_POINTER_GROUP SOURCE=wr_gray_reg DESTINATION=wr_gray_rd_sync1_reg BITS=11 SYNC_STAGES=2 BOUND_NS=10.000
+GRAY_POINTER_GROUP SOURCE=rd_gray_reg DESTINATION=rd_gray_wr_sync1_reg BITS=11 SYNC_STAGES=2 BOUND_NS=10.000
+MODE_A_STATE_REGISTERS PATTERN=*slot_available_reg* COUNT=3 EXPECTED=3
+MODE_A_STATE_REGISTERS PATTERN=*roarm_query_phase_reg* COUNT=2 EXPECTED=2
+HDMI_SERIALIZERS=8
+HDMI_CLOCKS PIXEL_PERIOD_NS=13.468 SERIAL_PERIOD_NS=2.694
+HDMI_HELD_PAYLOAD_CDC=status_cdc WIDTH=43 SYNC_STAGES=2
+HDMI_HELD_PAYLOAD_CDC=frame WIDTH=39 SYNC_STAGES=2
+HDMI_PRIVATE_FRAME_RAMB36=48
+HDMI_COORDINATE_ROM_RAMB36=1 RAMB18=1 LATENCY_CYCLES=1
+TRACE_MEMORY_PRIMITIVES=4
+RESTOCK_STATE=1 SEGMENT_RAM_PRIMITIVES=1
+RESTOCK_STATE_CELL=roarm_closed_loop_i/s5_0/inst/u_task/u_fsm/restocking_reg SEGMENT_RAM_CELL=roarm_closed_loop_i/s5_0/inst/u_task/u_regs/seg_mem_reg
+RESULT=PHASE2_POSITIVE_IOB_INPUT_TIMING_AND_NO_REDUNDANT_FRONTEND_PASS

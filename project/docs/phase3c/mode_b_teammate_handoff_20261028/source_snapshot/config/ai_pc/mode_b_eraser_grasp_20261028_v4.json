@@ -1,0 +1,41 @@
+{
+  "schema": "gesture.mode_b.empirical_object_adapter.v1",
+  "object_class": "eraser",
+  "shape": "box",
+  "size_mm": [
+    65,
+    15,
+    15
+  ],
+  "dimensions_source": "EXISTING_REGISTERED_NOMINAL_DIMENSIONS_NOT_NEW_MEASUREMENT",
+  "open_rad": 1.586,
+  "closed_rad": 2.95,
+  "close_speed": 60,
+  "close_acceleration": 5,
+  "loaded_hand_command_bounds_rad": [
+    2.5,
+    3.05
+  ],
+  "fingertip_height_adjustment_mm": -8.0,
+  "desk_command_correction_mm": [
+    13.0,
+    10.0,
+    0.0
+  ],
+  "closing_yaw_policy": "PERPENDICULAR_TO_DETECTED_LONG_AXIS_WITH180DEG_SYMMETRY",
+  "pickup_height_policy": "SOURCE_RELATIVE_TCP_DOWN8MM; CHECK_ALL_FINGER_SHAPES_ABOVE_TABLE",
+  "gripper_width_force_mapping_calibrated": false,
+  "physical_object_adapter_accepted": false,
+  "closure_note": "Separate position target for15mm thickness. Same moderate closing speed and torque limits; operator confirms actual hold.",
+  "operator_source_correction_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\OPERATOR_GRASP_OFFSET.json",
+  "operator_source_correction_sha256": "0184f48515a9b22968e1c9e447c6af5e2be62d66efa96e1a7176c5036df91fd9",
+  "revision": "RIGHT10_LOCAL_CORRECTION_ON_TOP_OF_X3_Y10_SPEED3_CLOSE60",
+  "source_correction_locality": {
+    "reference_source_centre_mm": [
+      631.6914227158205,
+      265.6341499003452,
+      7.5
+    ],
+    "maximum_xy_distance_mm": 25.0
+  }
+}

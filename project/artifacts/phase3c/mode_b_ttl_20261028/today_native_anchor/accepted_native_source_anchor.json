@@ -1,0 +1,31 @@
+{
+  "schema": "gesture.mode_b.successful_native_source_anchor.v1",
+  "status": "OPERATOR_ACCEPTED_PICKUP_DELIVERY_HOME",
+  "accepted_result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_124958_2424262\\LOADED_ROUTE_RESULT.json",
+  "accepted_result_sha256": "73cf16cf59320ad25692738d0a7b55c557669a8b5453ba7b1c8451ca7b088772",
+  "accepted_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\continuation_plan_v3\\LOADED_ROUTE_PLAN.json",
+  "accepted_plan_sha256": "b4b7ec03a16eafc11236c864140c158f5947d61f1f90e25709845a4cbdc5f153",
+  "source_request_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\high_registration_trials\\20261028_123552_9899623\\metric\\request.json",
+  "source_request_sha256": "b3293ce30be033e88a606fd41a08b779a2dbc0a59f5e3faf48df2ff9283b5457",
+  "source_camera_centre_mm": [
+    607.424690571717,
+    274.7430790211431,
+    15.0
+  ],
+  "source_yaw_deg": 3.4014402821814826,
+  "table_transform_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "source_kind": "CAMERA_XY_COLOCATED_WITH_OPERATOR_ACCEPTED_GRASP_NOT_INDEPENDENT_METROLOGY",
+  "same_physical_base_position": true,
+  "same_camera_pose_required": true,
+  "maximum_source_transfer_xy_mm": 150.0,
+  "next_trial_extra_outward_mm": 2.0,
+  "previous19_or70_blanket_correction_used": false,
+  "general_calibration_accepted": false,
+  "physical_pickup_accepted": true,
+  "support_centre_mm": [
+    285,
+    195,
+    150
+  ],
+  "operator_report": "都正常，如果能向远离底座调整2mm就更好了。我接下来要换个位置再做尝试"
+}

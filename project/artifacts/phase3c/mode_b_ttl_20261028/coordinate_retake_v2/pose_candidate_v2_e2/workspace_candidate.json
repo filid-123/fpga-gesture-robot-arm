@@ -1,0 +1,43 @@
+{
+  "schema": "gesture.ai_pc.rgb_workspace_overlay.v1",
+  "table_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "table_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "table_frame_id": "desk_global_mm",
+  "centre_table_xy_mm": [
+    590.0,
+    285.0
+  ],
+  "size_wh_mm": [
+    200,
+    140
+  ],
+  "plane_z_mm": 0,
+  "centre_basis": "FOUR_PHYSICAL_30MM_TOP_CENTRES_AND_INDEPENDENT_POINT",
+  "orientation": "DESKTOP_AXES; ONLY_GENERATED_FOR_AXIS_ALIGNED_BOARD",
+  "pattern_outer_corners_desktop_xyz_mm": [
+    [
+      490.0,
+      215.0,
+      0.0
+    ],
+    [
+      690.0,
+      215.0,
+      0.0
+    ],
+    [
+      690.0,
+      355.0,
+      0.0
+    ],
+    [
+      490.0,
+      355.0,
+      0.0
+    ]
+  ],
+  "desktop_registration_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\DIRECTION_CHECK.json",
+  "desktop_registration_sha256": "6ac415e13ab2948ae16ff4e225af33973fbc7930e6b775a2a3b0dd5200a8b739",
+  "metric_localization_accepted": false,
+  "physical_execution": false
+}

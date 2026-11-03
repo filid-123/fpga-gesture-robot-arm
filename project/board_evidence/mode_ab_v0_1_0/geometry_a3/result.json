@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "class_name": "red_cube",
+      "family": {
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "trajectory_model_samples": 514020,
+        "retarget_model_samples": 440844,
+        "minimum_clearance_mm": 4.000151313760085
+      },
+      "local_transfer_variants": [
+        {
+          "delta_mm": [
+            5,
+            0,
+            0
+          ],
+          "yaw_delta_deg": 3,
+          "normal_fifo": 41,
+          "geometry": {
+            "samples_checked": 15402,
+            "minimum_model_clearance_mm": 3.552713678800501e-15
+          }
+        },
+        {
+          "delta_mm": [
+            -5,
+            3,
+            0
+          ],
+          "yaw_delta_deg": -3,
+          "normal_fifo": 41,
+          "geometry": {
+            "samples_checked": 15402,
+            "minimum_model_clearance_mm": 3.552713678800501e-15
+          }
+        }
+      ],
+      "compilation_s": 44.42149139999674,
+      "physical_test": "NOT_RUN"
+    },
+    {
+      "class_name": "eraser",
+      "family": {
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "trajectory_model_samples": 528060,
+        "retarget_model_samples": 440844,
+        "minimum_clearance_mm": 4.000512606669915
+      },
+      "local_transfer_variants": [
+        {
+          "delta_mm": [
+            5,
+            0,
+            0
+          ],
+          "yaw_delta_deg": 3,
+          "normal_fifo": 42,
+          "geometry": {
+            "samples_checked": 15855,
+            "minimum_model_clearance_mm": -0.0026181768310653553
+          }
+        },
+        {
+          "delta_mm": [
+            -5,
+            3,
+            0
+          ],
+          "yaw_delta_deg": -3,
+          "normal_fifo": 42,
+          "geometry": {
+            "samples_checked": 15849,
+            "minimum_model_clearance_mm": 8.881784197001252e-16
+          }
+        }
+      ],
+      "compilation_s": 44.34905699999945,
+      "physical_test": "NOT_RUN"
+    },
+    {
+      "class_name": "small_canister",
+      "family": {
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "trajectory_model_samples": 583440,
+        "retarget_model_samples": 440844,
+        "minimum_clearance_mm": 4.000098211921625
+      },
+      "local_transfer_variants": [
+        {
+          "delta_mm": [
+            5,
+            0,
+            0
+          ],
+          "yaw_delta_deg": 3,
+          "normal_fifo": 40,
+          "geometry": {
+            "samples_checked": 17028,
+            "minimum_model_clearance_mm": 3.552713678800501e-15
+          }
+        },
+        {
+          "delta_mm": [
+            -5,
+            3,
+            0
+          ],
+          "yaw_delta_deg": -3,
+          "normal_fifo": 40,
+          "geometry": {
+            "samples_checked": 17040,
+            "minimum_model_clearance_mm": 3.552713678800501e-15
+          }
+        }
+      ],
+      "compilation_s": 49.8316863,
+      "physical_test": "NOT_RUN"
+    }
+  ],
+  "source_hashes": {
+    "pc/mode_ab/motion.py": "95c1edafa3c376bac1899b211eecc4cb2445245bf8bea92a6027896b94faf697",
+    "pc/mode_ab/geometry.py": "04be7f364d9ca6846e9952ba9a5fd9b4598a46966bdcbf79bab181bead56e948",
+    "scripts/prepare_mode_b_loaded_route.py": "baaaf42ffb52133d0ff53ec074d2ed8ada66315e8b4d768cb0d95baacfc07acb",
+    "scripts/verify_mode_ab_motion.py": "dea4eaf7995f3dd0576b639fb656c8e09196da2cbcf622f68c5a6e6e9036cb29"
+  },
+  "limitation": "Kinematic URDF enclosing boxes and rigid attachment; no friction/contact/physical stopping-distance claim"
+}

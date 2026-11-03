@@ -1,0 +1,42 @@
+{
+  "schema": "gesture.mode_a.continuous_y.v1",
+  "revision": 3,
+  "calibrated": false,
+  "method": "BOUNDED_ANCHOR_JOINT_INTERPOLATION",
+  "image_axis": "Y",
+  "desk_axis": "Y",
+  "image_up_is_desk_plus_y": true,
+  "thresholds": [
+    44,
+    64,
+    84
+  ],
+  "steps": 64,
+  "deadband_steps": 2,
+  "physical_H_D_mm": [
+    [
+      285,
+      135,
+      175
+    ],
+    [
+      285,
+      195,
+      175
+    ],
+    [
+      285,
+      255,
+      175
+    ]
+  ],
+  "cells": [
+    {
+      "bank": 1,
+      "x0": 0,
+      "x1": 127,
+      "y0": 16,
+      "y1": 111
+    }
+  ]
+}

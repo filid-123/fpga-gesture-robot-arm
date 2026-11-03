@@ -1,0 +1,8 @@
+{
+  "version": "0.4.0",
+  "model_id": "022267A9",
+  "hardware_source_binding_sha256": "daebb08c8e4b59776015809e4e4e2bde32b46fe8adc6e27224ef19fa7e812485",
+  "source_baseline": "fd397f9",
+  "hardware_board_test": "NOT_RUN",
+  "physical_arm_loop": "NOT_RUN"
+}

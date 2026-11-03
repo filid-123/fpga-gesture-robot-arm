@@ -1,0 +1,41 @@
+{
+  "schema": "gesture.mode_b.empirical_object_adapter.v1",
+  "object_class": "red_cube",
+  "shape": "box",
+  "size_mm": [
+    30,
+    30,
+    30
+  ],
+  "open_rad": 1.586,
+  "closed_rad": 2.7,
+  "close_speed": 40,
+  "close_acceleration": 5,
+  "fingertip_height_adjustment_mm": -12.0,
+  "desk_command_correction_mm": [
+    0,
+    0,
+    0
+  ],
+  "operator_depth_observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_red_retry_20261030\\depth12_fast_v2\\OPERATOR_DEPTH_OBSERVATION.json",
+  "operator_depth_observation_sha256": "86594562cacfe42c2248d10d3df052b4a681d480f1559ce999089c44a96f2058",
+  "physical_object_adapter_accepted": false,
+  "revision": "RED_DEPTH12_FAST_TRANSIT_AND_POSTRELEASE_WITHDRAWAL_V3",
+  "scope": "RED_PICKUP_ONLY; PUBLIC_RESTOCK_AND_OTHER_CLASSES_UNCHANGED",
+  "postrelease_return_profile": {
+    "schema": "gesture.mode_b.red_postrelease_speed.v1",
+    "joint_phases": [
+      "RETREAT",
+      "RETURN_CLEAR"
+    ],
+    "phase_speed_multiplier": {
+      "RETREAT": 2.0,
+      "RETURN_CLEAR": 2.0
+    },
+    "preserve_lateral_clearance_mm": 8,
+    "basis_result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261029_210204_7035257\\LOADED_ROUTE_RESULT.json",
+    "basis_result_sha256": "1a2bb9f22eb7152a550fbaf65a024f5fdef142d43b6828ceafa6ce24dcc14fb0",
+    "operator_feedback": "放置完物体后，从交付区移动到HOME位置的开始一段时间动作过慢，需要加快",
+    "physical_acceptance": "PENDING_CURRENT_TRIAL"
+  }
+}

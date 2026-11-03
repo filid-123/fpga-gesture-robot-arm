@@ -1,0 +1,13 @@
+test_added_formatter_programs_leave_a_and_query_slots_untouched (__main__.Tests.test_added_formatter_programs_leave_a_and_query_slots_untouched) ... ok
+test_calibrated_workspace_overlay_roundtrips_to_declared_boundary (__main__.Tests.test_calibrated_workspace_overlay_roundtrips_to_declared_boundary) ... ok
+test_corrupt_word_never_commits_or_keeps_a_confirmed_image (__main__.Tests.test_corrupt_word_never_commits_or_keeps_a_confirmed_image) ... ok
+test_every_uploaded_word_read_back_then_committed (__main__.Tests.test_every_uploaded_word_read_back_then_committed) ... ok
+test_native_profile_is_disjoint_from_old_shared_red_settling_flags (__main__.Tests.test_native_profile_is_disjoint_from_old_shared_red_settling_flags) ... ok
+test_only_confirmed_same_owner_program_can_skip_ram_transfer (__main__.Tests.test_only_confirmed_same_owner_program_can_skip_ram_transfer) ... ok
+test_real_bridge_bulk_guard_denies_running_a_wrong_abi_and_overrun (__main__.Tests.test_real_bridge_bulk_guard_denies_running_a_wrong_abi_and_overrun) ... ok
+test_wrong_route_abi_is_rejected_before_writes (__main__.Tests.test_wrong_route_abi_is_rejected_before_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.298s
+
+OK

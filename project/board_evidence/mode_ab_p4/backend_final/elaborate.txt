@@ -1,0 +1,23 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb -s native_backend -O0 -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'commit_done' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/backend_final/tb.sv:9]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.arm_joint_unit_mapper
+Compiling module work.arm_frame_formatter(EXTRA_SCALAR...
+Compiling module work.arm_uart_tx
+Compiling module work.arm_half_duplex_dir_ctrl
+Compiling module work.arm_uart_rx
+Compiling module work.arm_json_feedback_parser
+Compiling module work.arm_feedback_watchdog
+Compiling module work.arm_motion_permission_gate(DEBOU...
+Compiling module work.arm_backend_core(FAST_B=1,HAS_SO...
+Compiling module work.tb
+Built simulation snapshot native_backend

@@ -1,0 +1,276 @@
+{
+  "schema": "gesture.recovered.metrics.v1",
+  "date": "2026-11-01",
+  "release": "0.1.0-p4.1",
+  "tasks": {
+    "attempts": 17,
+    "successes": 16,
+    "failures": 1,
+    "success_rate_pct": 94.11764705882354,
+    "groups": [
+      {
+        "mode": "A",
+        "kind": "DELIVERY",
+        "attempts": 5,
+        "successes": 5,
+        "failures": 0,
+        "success_rate_pct": 100.0
+      },
+      {
+        "mode": "A",
+        "kind": "RESTOCK",
+        "attempts": 3,
+        "successes": 3,
+        "failures": 0,
+        "success_rate_pct": 100.0
+      },
+      {
+        "mode": "B",
+        "kind": "DELIVERY",
+        "attempts": 6,
+        "successes": 5,
+        "failures": 1,
+        "success_rate_pct": 83.33333333333333
+      },
+      {
+        "mode": "B",
+        "kind": "RESTOCK",
+        "attempts": 3,
+        "successes": 3,
+        "failures": 0,
+        "success_rate_pct": 100.0
+      }
+    ],
+    "provenance": "OPERATOR_REVIEWED_RECORDED_COHORT",
+    "cohort_definition": "Retrospective operator review of the 17 program-completed task executions in the six recorded sessions. Rejected selections and dedicated cancellation tests are outside this cohort. This is not a claim about every requested selection or every future task."
+  },
+  "communication": {
+    "attempts": 52884,
+    "successes": 52882,
+    "failures": 2,
+    "command_error_rate_pct": 0.003781862188941835,
+    "all_attempts_rtt_ms": {
+      "n": 52884,
+      "p50": 28.168599999999998,
+      "p95": 217.28284499999995,
+      "p99": 244.564982,
+      "max": 5551.759
+    },
+    "successful_rtt_ms": {
+      "n": 52882,
+      "p50": 28.168599999999998,
+      "p95": 217.26595999999998,
+      "p99": 244.54727200000005,
+      "max": 786.7561
+    },
+    "by_operation": {
+      "B": {
+        "attempts": 750,
+        "failures": 0,
+        "successful_rtt_ms": {
+          "n": 750,
+          "p50": 130.6642,
+          "p95": 240.89815499999992,
+          "p99": 398.106124,
+          "max": 489.2699
+        }
+      },
+      "R": {
+        "attempts": 1763,
+        "failures": 0,
+        "successful_rtt_ms": {
+          "n": 1763,
+          "p50": 3.5269,
+          "p95": 25.087279999999964,
+          "p99": 34.78239599999998,
+          "max": 41.643
+        }
+      },
+      "T": {
+        "attempts": 24447,
+        "failures": 1,
+        "successful_rtt_ms": {
+          "n": 24446,
+          "p50": 181.37894999999997,
+          "p95": 229.6998,
+          "p99": 254.77083,
+          "max": 786.7561
+        }
+      },
+      "U": {
+        "attempts": 2874,
+        "failures": 0,
+        "successful_rtt_ms": {
+          "n": 2874,
+          "p50": 14.443850000000001,
+          "p95": 32.998819999999995,
+          "p99": 42.475353,
+          "max": 53.0978
+        }
+      },
+      "V": {
+        "attempts": 2874,
+        "failures": 0,
+        "successful_rtt_ms": {
+          "n": 2874,
+          "p50": 13.2661,
+          "p95": 31.788835,
+          "p99": 40.339151,
+          "max": 51.6718
+        }
+      },
+      "W": {
+        "attempts": 20176,
+        "failures": 1,
+        "successful_rtt_ms": {
+          "n": 20175,
+          "p50": 6.4794,
+          "p95": 20.77592,
+          "p99": 32.16504799999975,
+          "max": 224.074
+        }
+      }
+    },
+    "excluded_close_records": 3,
+    "endpoint": "Python BoardBridge.call -> local XSDB/JTAG/PL AXI -> decoded RPC reply; includes host scheduling and batch payload effects",
+    "error_semantics": "Recorded command exceptions, including Invalid context; not UART bit-error rate or Ethernet packet loss"
+  },
+  "ai_quality": {
+    "samples": 550,
+    "correct": 503,
+    "accuracy_pct": 91.45454545454545,
+    "macro_f1": 0.9230474275302606,
+    "hands": 490,
+    "correct_hands": 443,
+    "hand_accuracy_pct": 90.40816326530613,
+    "hand_detection_recall_pct": 99.59183673469387,
+    "groups": {
+      "old_dev": {
+        "correct": 240,
+        "samples": 270,
+        "accuracy_pct": 88.88888888888889
+      },
+      "usb_dev": {
+        "correct": 117,
+        "samples": 120,
+        "accuracy_pct": 97.5
+      },
+      "targeted_dev": {
+        "correct": 146,
+        "samples": 160,
+        "accuracy_pct": 91.25
+      }
+    },
+    "classes": [
+      "background",
+      "one",
+      "two",
+      "three",
+      "fist",
+      "palm"
+    ],
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        111,
+        3,
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        7,
+        95,
+        6,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        12,
+        96,
+        0,
+        2
+      ],
+      [
+        1,
+        7,
+        0,
+        0,
+        82,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        59
+      ]
+    ],
+    "per_class": {
+      "background": {
+        "support": 60,
+        "f1": 0.967741935483871
+      },
+      "one": {
+        "support": 120,
+        "f1": 0.9061224489795918
+      },
+      "two": {
+        "support": 110,
+        "f1": 0.8597285067873304
+      },
+      "three": {
+        "support": 110,
+        "f1": 0.9056603773584906
+      },
+      "fist": {
+        "support": 90,
+        "f1": 0.9318181818181818
+      },
+      "palm": {
+        "support": 60,
+        "f1": 0.9672131147540983
+      }
+    },
+    "scope": "Full-integer reference on existing DEV sets; not independent TEST and not a new board accuracy test. Rejected detections and classifier background both mean no effective gesture.",
+    "not_claimed": "B-mode detector mAP or segmentation mIoU; no such independent ground-truth score is derived here."
+  },
+  "fpga": {
+    "clock_hz": 100000000,
+    "telemetry_observations": 24446,
+    "locator_cycles": 1647640,
+    "classifier_cycles": 468486,
+    "locator_ms": 16.4764,
+    "classifier_ms": 4.68486,
+    "cnn_service_sum_ms": 21.16126,
+    "classifier_zero_observations": 135,
+    "scope": "Actual latched start/done cycle counters. Repeated observations of a held counter are not independent inference trials. Sum is CNN service time, excluding capture, ROI, confirmation and actuator response; no CPU speedup claimed."
+  },
+  "telemetry_error_observations": 0,
+  "trace_collision_counter_max": 0,
+  "sensor_to_physical_response": {
+    "status": "MISSING_PAIRED_PHYSICAL_ENDPOINT",
+    "reason": "Joint feedback is sampled, but these non-atomic register snapshots do not bind a unique sensor event to physical motion onset with a synchronized timestamp. Frame age, network service time and RPC RTT cannot replace this endpoint."
+  },
+  "new_hardware_access": false,
+  "new_model_inference": false,
+  "raw_private_logs_published": false,
+  "public_csv_sha256": {
+    "fpga_cycle_observations.csv": "bf90f847d62009327bcb02ac49e00b712684feea2f1de7c86961427a9a6a49ae",
+    "int8_dev_predictions.csv": "5f06636ee4150548d80eb8bd051e6e196f3b0833dc1cd6f0c370b3cba1073c83",
+    "rpc_samples.csv": "9d37d3a70a6451e15bdcf2e6aabc4f89270f2cb1f0ed4f677b9f1b94f0e7d39c"
+  }
+}

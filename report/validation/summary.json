@@ -1,0 +1,219 @@
+{
+  "schema": "gesture.publication.validation.v1",
+  "date": "2026-11-01",
+  "publication_version": "0.1.0-publication.7-review",
+  "baseline": "p4.1",
+  "passed": true,
+  "archive_files": 4521,
+  "published_baseline_files": 4331,
+  "excluded_assets": 190,
+  "published_baseline_bytes": 270132635,
+  "new_tool_tests": 42,
+  "original_pc_tests_rerun": 67,
+  "original_ui_checks": 10,
+  "original_package_recorded_distinct_python_tests": 78,
+  "full_archive_restored_and_rechecked": true,
+  "complete_application_clean_install": "NOT_RUN",
+  "clean_stdlib_skill_environment": "PASS",
+  "second_project_reuse": "SYNTHETIC_FORMAT_ONLY",
+  "existing_hip_probe": "PASS_DEVICE_ARITHMETIC",
+  "new_gpu_model_inference": "NOT_RUN",
+  "new_vivado_implementation": "NOT_RUN",
+  "physical_board_or_robot_access": false,
+  "physical_ab_closed_loop": "PASS_USER_CONFIRMED",
+  "repository_license": "UNDECIDED",
+  "third_party_redistribution": "PENDING",
+  "commands": [
+    {
+      "name": "create_clean_python",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.125,
+      "log": "create_clean_python.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "clean_environment_has_no_third_party",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.188,
+      "log": "clean_environment_has_no_third_party.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "new_tool_tests",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.453,
+      "log": "new_tool_tests.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "standalone_environment",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.203,
+      "log": "standalone_environment.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "clean_hip_unavailable_rejected",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "wall_s": 0.187,
+      "log": "clean_hip_unavailable_rejected.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "standalone_second_fpga_project",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.109,
+      "log": "standalone_second_fpga_project.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "standalone_task_metrics",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.078,
+      "log": "standalone_task_metrics.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "missing_assets_rejected",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "wall_s": 3.594,
+      "log": "missing_assets_rejected.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "restore_original_assets",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 2.828,
+      "log": "restore_original_assets.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "restored_complete_inventory",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 3.719,
+      "log": "restored_complete_inventory.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "original_complete_package",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 6.266,
+      "log": "original_complete_package.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "original_startup_checkonly",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 3.843,
+      "log": "original_startup_checkonly.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "original_pc_regressions",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 6.391,
+      "log": "original_pc_regressions.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "original_ui_checks",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.797,
+      "log": "original_ui_checks.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "actual_existing_hip_environment",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 8.469,
+      "log": "actual_existing_hip_environment.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "fpga_build_plan",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "wall_s": 0.156,
+      "log": "fpga_build_plan.txt",
+      "hardware_access": false
+    }
+  ],
+  "skill_schema_validation": {
+    "amd-pc-deploy": "PASS",
+    "fpga-artifact-check": "PASS",
+    "robotics-metrics": "PASS"
+  },
+  "metric_rows": 61,
+  "release_status": "USABLE_USER_ACCEPTED",
+  "field_acceptance_evidence": "report/acceptance/board_test_20261101.json",
+  "field_acceptance_source_commit": "633a4e1441ce9b54e95a25ea93b46b8fbc6329e0",
+  "status_update_new_hardware_access": false,
+  "metrics_update": {
+    "record": "report/validation/metrics_recovery_20261101.json",
+    "evidence": "metrics/evidence/recovered_20261101/summary.json",
+    "operator_review": "report/acceptance/task_outcomes_review_20261101.json",
+    "hardware_access": false,
+    "production_code_changed": false
+  },
+  "commands_scope": "The commands array records publication.1 validation; metrics_update, video_response_update and physical_response_row_update identify publication.3, publication.4 and publication.5 checks respectively. The prior 42 tool tests remain passed for unchanged code; this update only changes metric presentation and documentation.",
+  "video_response_update": {
+    "record": "report/validation/video_response_update_20261101.json",
+    "evidence": "report/acceptance/video_response_review_20261101.json",
+    "duration_ms": 620,
+    "status": "VIDEO_STOPWATCH_OPERATOR_REPORTED",
+    "distribution_status": "INSUFFICIENT_REPEATED_TIMINGS",
+    "hardware_access": false,
+    "production_code_changed": false
+  },
+  "physical_response_row_update": {
+    "record": "report/validation/physical_response_row_20261101.json",
+    "metric": "sensor_to_physical_response",
+    "value": 620,
+    "unit": "ms",
+    "status": "VIDEO_STOPWATCH_OPERATOR_REPORTED",
+    "duplicate_placeholder_removed": true,
+    "hardware_access": false
+  },
+  "public_review": "report/provenance/public_review.json",
+  "public_review_checks": {
+    "existing_tool_tests_passed": 42,
+    "public_recorded_metrics_recomputed": true,
+    "fpga_build_plan_verified": true,
+    "restored_assets_in_disposable_copy": 190,
+    "complete_inventory_members_verified": 4521,
+    "runtime_check_only": "SEALED_PACKAGE_INPUTS_PASS",
+    "hardware_access": false
+  },
+  "vision_ttl_evidence": "metrics/evidence/vision_ttl_20261103/summary.json"
+}

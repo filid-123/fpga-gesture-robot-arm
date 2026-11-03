@@ -1,0 +1,18 @@
+{
+  "power_scheme_at_capture": "电源方案 GUID: 64a64f24-65b9-4b56-befd-5ec1eaced9b3  (Silent)",
+  "manufacturer": "ASUSTeK COMPUTER INC.",
+  "drivers": [
+    {
+      "DeviceName": "AMD Radeon(TM) 8060S Graphics",
+      "DriverVersion": "32.0.31032.1003",
+      "DriverDate": "/Date(1785283200000)/"
+    }
+  ],
+  "cpu": "AMD RYZEN AI MAX+ 395 w/ Radeon 8060S          ",
+  "os_version": "10.0.26200",
+  "os": "Microsoft Windows 11 家庭版 中文版",
+  "os_build": "26200",
+  "model": "ROG Flow Z13 GZ302EA_GZ302EA",
+  "memory_bytes": 68341796864,
+  "capture_scope": "Captured during packaging, not synchronized power measurement"
+}

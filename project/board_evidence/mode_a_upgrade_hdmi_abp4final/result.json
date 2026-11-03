@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: coherent status CDC updates only on frame boundary, 51 snapshots",
+    "PASS: overlapped capture, protected displayed bank, exact frame/box association and unmatched rejection",
+    "PASS: actual A/B mode selects title, B generic object/restock labels, full B raster307200 pixels",
+    "PASS: restock pickup/carry/home and public-point cancellation labels distinct from normal delivery",
+    "PASS: raster307200 pixels, blanking, Chinese UI, gesture/none/release/return/fault labels",
+    "PASS: TMDS control symbols and running-disparity data encoding are bit-exact",
+    "PASS: 640x480 timing is bit-exact for one 800x525 frame",
+    "PASS: all2048 X and1024 Y ROM entries equal floor coordinate and legacy source mapping, one-cycle DE/HS/VS/start alignment and reset"
+  ],
+  "hardware_access": false,
+  "preview": "RTL raster, real captured fixture, injected WAIT_PALM status",
+  "commands": [
+    {
+      "label": "compile",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_display_cdc_elab",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_display_cdc",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_framebuffer_elab",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_framebuffer",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_renderer_elab",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_renderer",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_tmds_encoder_elab",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_tmds_encoder",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_video_timing_640x480_elab",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_video_timing_640x480",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_canvas_elab",
+      "exit_code": 0
+    },
+    {
+      "label": "tb_canvas",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes": {
+    "native_motion/rtl/hdmi/cycles_to_ms8.v": "12abce98be082e804bef63ad08776506d18f69bbb6ddb1c016ab91e835255fcb",
+    "native_motion/rtl/hdmi/hdmi_frame_bram.v": "a977e5fd993e42c251ebdcb2e85125ebb341381c200eda9f93d6a880c138f4a2",
+    "native_motion/rtl/hdmi/mode_a_720p_canvas.v": "ac6c412de531636389ed0408182a074c2747e938ff97554bbcf6d0bb725d179a",
+    "native_motion/rtl/hdmi/mode_a_display_cdc.v": "9f3fc957f94fea308816b3ee6d8aa23347f7702410ec814d6a17127274d1919f",
+    "native_motion/rtl/hdmi/mode_a_framebuffer.v": "97c6296e3791cf403a6917838a678181cc3fd50d8e64d37e2621d4cfaee9266d",
+    "native_motion/rtl/hdmi/mode_a_hdmi_output.v": "d2b980f558d335050ae1d4af3c09a56e95b2db450d983186919f601564d01b8a",
+    "native_motion/rtl/hdmi/mode_a_renderer.v": "18a9a594251847a98e89ed0b06bf64e60e4c31b50a87397f64e747dfd22824fa",
+    "native_motion/rtl/hdmi/tmds_encoder.v": "5f51f2d6fb7a2888fffe7840ad6282592ad1680b8f81373ca6a0c8d558609f45",
+    "native_motion/rtl/hdmi/tmds_serializer_7series.v": "254055e4ebc23ee9ebe139a76135d746da9756d8fd22b14a59bf988f467219d5",
+    "native_motion/rtl/hdmi/video_timing_640x480.v": "95b053fd04db18dc28229e41bc0cc17818ac3fcc309061ffd56939d4786e74cd",
+    "native_motion/rtl/hdmi/video_timing_720p.v": "0bdcfeb54e7bf55fd4c0a5508aa35d3e41c2faf5800e4592e3e85468c802cc6e",
+    "native_motion/rtl/wrappers/display_scan_pipeline.v": "65bb421957c51f905739e9292e7028509478735026446043015d49a9f6ae497a",
+    "native_motion/rtl/wrappers/display_telemetry_bridge.v": "26c9f8a781de29efce51af268691da7badbfedb186376b6ffa7334ce3169247e",
+    "native_motion/rtl/wrappers/hdmi_phy_pipeline.v": "b63edfd74b86c4ec0112224c1e17d05533086c3ef306c954532368ebdffac69e",
+    "native_motion/sim/mode_a_hdmi/tb_display_cdc.sv": "e32543977f760b880f13af7cbc00b711d31fdfffadb773258e2b33b35e63ad12",
+    "native_motion/sim/mode_a_hdmi/tb_canvas.sv": "f7d72f25c6ee988df304accf5aa69bcbabf111a4642e95b53f6f901818eb9cb3",
+    "native_motion/sim/mode_a_upgrade/tb_framebuffer_hd.sv": "6ac248be3c4de513aa1e0c86d5e4b63b47fa6e8d016ca21c8dd048913e1d994a",
+    "native_motion/sim/mode_a_upgrade/tb_renderer_hd.sv": "9cd0b27d8fe28de372a06cf034eb787e52bfe12176d0445f2234574b1addff95",
+    "sim/hdmi/tb_tmds_encoder.v": "c122de3694eed7dc1f35e8dc22e39301bc624ac8e525d309e17790936754f8e1",
+    "sim/hdmi/tb_video_timing_640x480.v": "54665c7b2975162066303458d4cea287a07044e5400a6389689d71b3637843b8"
+  }
+}

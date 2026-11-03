@@ -1,0 +1,121 @@
+{
+  "status": "FULL_VISUAL_RUNTIME_AND_CURRENT_POSE_REPLAY_PASS",
+  "scope": "INDEPENDENT_STAGED_COPY_WITH_EXISTING_CPU_ENVIRONMENT_NO_CAMERA_OR_ROBOT",
+  "source_modules_loaded_from_stage": true,
+  "frozen_files": 19,
+  "web_sample_recognized_classes": [
+    "small_canister",
+    "yellow_cube",
+    "blue_cube",
+    "red_cube",
+    "scissors",
+    "eraser"
+  ],
+  "web_sample_source": "sample_replay",
+  "current_table_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "current_pose_source_frames": [
+    {
+      "class_name": "red_cube",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000000_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        651.8952034619932,
+        257.8932297745481,
+        15.0
+      ]
+    },
+    {
+      "class_name": "red_cube",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000001_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        651.9472841315152,
+        257.83992464633826,
+        15.0
+      ]
+    },
+    {
+      "class_name": "red_cube",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000002_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        651.7958523553846,
+        257.67122430715494,
+        15.0
+      ]
+    },
+    {
+      "class_name": "eraser",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000000_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        636.1145742541592,
+        260.40553647195145,
+        7.5
+      ]
+    },
+    {
+      "class_name": "eraser",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000001_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        636.3804792217223,
+        260.133380244397,
+        7.5
+      ]
+    },
+    {
+      "class_name": "eraser",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/capture/frame_000002_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        636.1704273935121,
+        260.2960300168174,
+        7.5
+      ]
+    },
+    {
+      "class_name": "small_canister",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/capture/frame_000000_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        586.247376330916,
+        266.83558136997425,
+        23.0
+      ]
+    },
+    {
+      "class_name": "small_canister",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/capture/frame_000001_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        586.2466029208605,
+        266.8040499159771,
+        23.0
+      ]
+    },
+    {
+      "class_name": "small_canister",
+      "image": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/capture/frame_000002_raw.png",
+      "top_centre_max_difference_mm": 0.0,
+      "object_centre_mm": [
+        586.2230643189203,
+        266.8453932667629,
+        23.0
+      ]
+    }
+  ],
+  "hardware_acceptance": false,
+  "web_to_fpga_bridge_implemented": false,
+  "physical_execution": false,
+  "path_submissions": 0,
+  "web_backend_and_http_tests": 14,
+  "web_tests_pass": true,
+  "actual_metric_cli_pass": true,
+  "python_syntax_files": 3,
+  "additional_checks": [
+    "tampered_frozen_source_rejected",
+    "modified_current_workspace_rejected",
+    "real_web_http_sample_six_classes_pass"
+  ]
+}

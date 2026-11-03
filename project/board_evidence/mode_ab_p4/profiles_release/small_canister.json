@@ -1,0 +1,75 @@
+{
+  "class_name": "small_canister",
+  "passed": true,
+  "exact_giao_motion_phases": [
+    "DIRECT_PREGRASP",
+    "DESCEND",
+    "LIFT",
+    "INNER_HOLD",
+    "BUFFER",
+    "PREPLACE",
+    "PLACE",
+    "RELEASE_CLEARANCE",
+    "RETREAT",
+    "RETURN_CLEAR",
+    "INNER_RETURN",
+    "RETURN_LOW_HOME"
+  ],
+  "all_six_q16_axes_identical": true,
+  "native_speed_and_period_identical": true,
+  "geometry": {
+    "samples_checked": 7584,
+    "minimum_model_clearance_mm": -0.014671479297572176
+  },
+  "family": {
+    "passed": true,
+    "method": "FULL_NATIVE_GEOMETRY",
+    "handover_steps": 65,
+    "ordered_retarget_pairs": 4160,
+    "model_samples_checked": 988206,
+    "minimum_model_clearance_mm": 4.00036477687533,
+    "payload_margin_mm": 45.798458599971866,
+    "loaded_tilt_margin_deg": 12.31426269152356,
+    "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+    "tcp_from_object": [
+      [
+        0.9999594766698616,
+        0.008948989305344879,
+        0.0009801063971465755,
+        4.478935367471308
+      ],
+      [
+        0.008949087930762746,
+        -0.9999599514749808,
+        -9.628790878135756e-05,
+        0.03954426785026044
+      ],
+      [
+        0.0009792054658651083,
+        0.0001050550652039965,
+        -0.9999995150599271,
+        -5.133122721362405
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "exact_native_q16_and_wire_rounding": true,
+    "physical_test": "NOT_RUN"
+  },
+  "points": 1264,
+  "speed": {
+    "policy": "GIAO_PER_PHASE_NATIVE",
+    "nominal_motion_seconds": 23.1,
+    "nominal_with_gripper_waits_seconds": 25.0,
+    "periods_ms": [
+      20,
+      40
+    ],
+    "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+  },
+  "seconds": 35.64100000000144
+}

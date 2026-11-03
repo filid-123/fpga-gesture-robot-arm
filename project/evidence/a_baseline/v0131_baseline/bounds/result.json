@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: exact quintic conservative constants N2..65535, overflow boundary, ESTOP/CLEAR and reuse of scalar datapath"
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elab",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "hardware_access": false,
+  "source_hashes": {
+    "native_motion/rtl/robot/planner_p2p_core.v": "49ab9f85f799d592c07204d3316c57376c884233eba5b8dd06c5acbe4f80bcfc",
+    "native_motion/rtl/robot/planner_seq_div.v": "00cabf4882c87d69cc2e6cb43b5f5ad4f4c956cf0809ccaea24874756c8a09c3",
+    "native_motion/rtl/robot/planner_seq_mult.v": "bc018fb39b6f494176f04d77fa5497fa11432ef79dae10f2380dfaa7d58bd405",
+    "native_motion/sim/mode_a_upgrade/tb_quintic_bounds.sv": "301022052d15bb8bc52e09d3813ebecc49f47d285e96e94bfcb5e3f84248d9c6"
+  }
+}

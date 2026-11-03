@@ -1,0 +1,58 @@
+{
+  "bytes": 16384,
+  "valid_end": 9312,
+  "word_count": 4096,
+  "word_address_bits": 12,
+  "endianness": "little",
+  "layers": [
+    {
+      "layer": "conv1",
+      "weight_offset": 0,
+      "weight_bytes": 72,
+      "bias_offset": 72,
+      "bias_bytes": 32
+    },
+    {
+      "layer": "conv2",
+      "weight_offset": 128,
+      "weight_bytes": 864,
+      "bias_offset": 992,
+      "bias_bytes": 48
+    },
+    {
+      "layer": "conv3",
+      "weight_offset": 1088,
+      "weight_bytes": 1728,
+      "bias_offset": 2816,
+      "bias_bytes": 64
+    },
+    {
+      "layer": "conv4",
+      "weight_offset": 2880,
+      "weight_bytes": 3456,
+      "bias_offset": 6336,
+      "bias_bytes": 96
+    },
+    {
+      "layer": "conv5",
+      "weight_offset": 6464,
+      "weight_bytes": 1080,
+      "bias_offset": 7544,
+      "bias_bytes": 20
+    },
+    {
+      "layer": "g1",
+      "weight_offset": 7616,
+      "weight_bytes": 1152,
+      "bias_offset": 8768,
+      "bias_bytes": 32
+    },
+    {
+      "layer": "g2",
+      "weight_offset": 8800,
+      "weight_bytes": 288,
+      "bias_offset": 9088,
+      "bias_bytes": 16
+    }
+  ]
+}

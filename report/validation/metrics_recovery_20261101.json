@@ -1,0 +1,63 @@
+{
+  "schema": "gesture.metrics.recovery.validation.v1",
+  "date": "2026-11-01",
+  "publication_version": "0.1.0-publication.3",
+  "baseline": "p4.1",
+  "passed": true,
+  "tool_tests": 42,
+  "existing_tool_tests": 32,
+  "added_metric_tests": 10,
+  "metric_rows": 54,
+  "checks": [
+    {
+      "name": "metrics_recovery_tool_tests",
+      "command": "-X utf8 -B -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "passed": true,
+      "wall_s": 0.67,
+      "log": "metrics_recovery_tool_tests.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "metrics_recovery_public_recompute",
+      "command": "-X utf8 -B metrics/scripts/recover_recorded_metrics.py --verify-public metrics/evidence/recovered_20261101",
+      "exit_code": 0,
+      "passed": true,
+      "wall_s": 0.309,
+      "log": "metrics_recovery_public_recompute.txt",
+      "hardware_access": false
+    },
+    {
+      "name": "independent_private_source_reextraction",
+      "passed": true,
+      "exit_code": 0,
+      "wall_s": 0.975,
+      "byte_identical_files": [
+        "summary.json",
+        "provenance.json",
+        "rpc_samples.csv",
+        "int8_dev_predictions.csv",
+        "fpga_cycle_observations.csv"
+      ],
+      "hardware_access": false,
+      "private_log_content_published": false
+    },
+    {
+      "name": "metric_table_and_frozen_baseline",
+      "passed": true,
+      "metric_rows": 54,
+      "unique_metric_names": true,
+      "old_saved_frame_resource_rows_unchanged": true,
+      "project_files_changed": false,
+      "remaining_missing_endpoint": "sensor_to_physical_response",
+      "hardware_access": false
+    }
+  ],
+  "new_model_inference": false,
+  "new_vivado_implementation": false,
+  "hardware_access": false,
+  "production_code_changed": false,
+  "acceptance_status": "USABLE_USER_ACCEPTED",
+  "operator_reviewed_task_successes": 16,
+  "operator_reviewed_task_attempts": 17
+}

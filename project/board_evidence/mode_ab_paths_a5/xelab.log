@@ -1,0 +1,21 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_restock -s paths -O0 -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'active_revision' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_paths_a5/tb.sv:34]
+WARNING: [VRFC 10-3645] port 'target_bundle' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_paths_a5/tb.sv:35]
+WARNING: [VRFC 10-3645] port 'cmd_done_index' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_paths_a5/tb.sv:43]
+WARNING: [VRFC 10-3645] port 'irq' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_paths_a5/tb.sv:141]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.hand_align_region_lut(REGION_COU...
+Compiling module work.hand_align_target_core(PIPELINED...
+Compiling module work.s4_task_fsm(PALM_CONTINUITY=1,SL...
+Compiling module work.s4_task_regs(HAND_ALIGN_REGIONS=...
+Compiling module work.tb_restock
+Built simulation snapshot paths

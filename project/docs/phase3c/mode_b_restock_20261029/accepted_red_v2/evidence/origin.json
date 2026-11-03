@@ -1,0 +1,82 @@
+{
+  "schema": "gesture.mode_b.dynamic_grasp_origin.v1",
+  "selection": 1,
+  "original_task_id": "mode_b_ttl_restart_red_20261028:e0bcc268d5b7d666",
+  "source_request_task_id": "mode_b_ttl_restart_red_20261028",
+  "object_class": "red_cube",
+  "original_pickup": {
+    "centre_mm": [
+      651.879446649631,
+      257.80145957601377,
+      15.0
+    ],
+    "yaw_deg": 2.978087653032702,
+    "yaw_equivalence": {
+      "raw_long_axis_deg": 92.9780876530327,
+      "symmetry_deg": 90,
+      "selected_deg": 2.978087653032702
+    }
+  },
+  "delivery_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\docs\\phase3c\\mode_b_teammate_handoff_20261028\\objects\\red_cube\\evidence\\PLAN.json",
+  "delivery_plan_sha256": "e0bcc268d5b7d6663d0146002e5c96d4e991b93ddaa1091ce033ad838c98fae4",
+  "delivery_result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\docs\\phase3c\\mode_b_teammate_handoff_20261028\\objects\\red_cube\\evidence\\RESULT.json",
+  "delivery_result_sha256": "a8695b388f5b474a644da78f5d85a4e9a2abf307c83edba00832a9d44e060a8b",
+  "grasp_command_firmware_rad": {
+    "b": -0.13660254840382816,
+    "s": 0.8277459221177432,
+    "e": 1.3579521828337444,
+    "t": 1.0034479530485123,
+    "r": -0.058813292643436085,
+    "g": 2.7
+  },
+  "grasp_observed_firmware_rad": {
+    "b": -0.138058271,
+    "s": 0.845223414,
+    "e": 1.354505036,
+    "t": 1.004757416,
+    "r": -0.052155347,
+    "g": 2.616971224
+  },
+  "grasp_observed_firmware_endpoint": {
+    "x": 286.7123435,
+    "y": -39.83642783,
+    "z": -120.7692645,
+    "tit": 1.633689539
+  },
+  "firmware_endpoint_frame": "FIRMWARE_BASE_ENDPOINT_NOT_CAMERA_OBJECT_CENTRE",
+  "grasp_feedback_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_130433_9936683\\CLOSE_SOURCE_OBSERVED\\CLOSE_SOURCE_OBSERVED_20261028_130518_4787751\\POSE_CAPTURE.json",
+  "grasp_feedback_sha256": "2ea0a0d91586ff7604142477e3ed72af62e5182b88a9c97a13304a4f6dd78ef8",
+  "original_model_source_pose": [
+    [
+      0.9969707847558235,
+      0.0777769525203801,
+      0.0,
+      631.3946200735714
+    ],
+    [
+      -0.0777769525203801,
+      0.9969707847558235,
+      -0.0,
+      311.38428247844746
+    ],
+    [
+      -0.0,
+      0.0,
+      0.9999999999999999,
+      15.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "return_policy": "RESTORE_ORIGINAL_SUCCESSFUL_GRASP_COMMAND; RAW_CAMERA_SOURCE_UNCHANGED",
+  "inventory_semantics": "PROGRAM_COMPLETION_NOT_PHYSICAL_PRESENCE_PROOF",
+  "public_xy_mm": [
+    300,
+    200
+  ],
+  "filid_reference_commit": "480f3e600bc9465d9a1fec361e6781c2b2eb59a0"
+}

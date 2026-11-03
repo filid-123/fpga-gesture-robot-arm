@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "hardware_access": false,
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "E:/Xilinx/2026.1/Vivado/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-notrace",
+    "-source",
+    "C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\scripts\\inspect_mode_a_restock_netlist.tcl",
+    "-log",
+    "C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\board_evidence\\mode_a_restock_impl_a2\\inspection_a1\\inspection.log",
+    "-journal",
+    "C:\\redacted_user\\.codex\\worktrees\\mode-a-four-zone-20261028\\Gesture\\board_evidence\\mode_a_restock_impl_a2\\inspection_a1\\inspection.jou"
+  ]
+}

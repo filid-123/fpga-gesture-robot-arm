@@ -1,0 +1,106 @@
+{
+  "schema": "gesture.ai_pc.yolov8_package.v1",
+  "role": "mode_b_detector",
+  "profile_id": "mode_b_red_eraser_canister_v1",
+  "architecture": "yolov8s",
+  "classes": [
+    "red_cube",
+    "yellow_cube",
+    "blue_cube",
+    "eraser",
+    "small_canister",
+    "scissors"
+  ],
+  "trained_classes": [
+    "red_cube",
+    "yellow_cube",
+    "blue_cube",
+    "eraser",
+    "small_canister",
+    "scissors"
+  ],
+  "input_size_wh": [
+    512,
+    512
+  ],
+  "input_encoding": "RGB_FLOAT_0_1_LETTERBOX_114",
+  "output_encoding": "YOLOV8_XYWH_CLASS_PROB_NO_NMS",
+  "precision": "fp32",
+  "onnx": {
+    "file": "model.onnx",
+    "sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce"
+  },
+  "source_checkpoint_sha256": "32ac68c0a7c31ec95e646eba5e9728189f9affcb37f6f1073419f83802edff0d",
+  "ultralytics_version": "8.4.89",
+  "license": "Ultralytics AGPL-3.0 / Enterprise; dataset notices recorded separately",
+  "training_report": {
+    "schema": "gesture.ai_pc.mode_b_training.v1",
+    "classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "trained_classes": [
+      "red_cube",
+      "yellow_cube",
+      "blue_cube",
+      "eraser",
+      "small_canister",
+      "scissors"
+    ],
+    "dataset_sha256": "702877907b93b6d4326faf45c43ae30a0d92daffd060c3010f97ae3e59e388b0",
+    "dataset_counts": {
+      "train": {
+        "red_cube": 125,
+        "blue_cube": 102,
+        "yellow_cube": 101,
+        "eraser": 131,
+        "scissors": 177,
+        "small_canister": 149
+      },
+      "validation": {
+        "red_cube": 2,
+        "blue_cube": 2,
+        "yellow_cube": 1,
+        "eraser": 15,
+        "scissors": 19,
+        "small_canister": 9
+      }
+    },
+    "cube_checkpoint_sha256": "85deb5e944c08206a759a4debce8d04f8007b39864807d663eaa1fa4eeffb258",
+    "official_coco_checkpoint_sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+    "initial_checkpoint_sha256": null,
+    "head_transfer": [],
+    "epochs_requested": 6,
+    "elapsed_s": 414.76651579999816,
+    "train_input_size_wh": [
+      512,
+      512
+    ],
+    "warm_start_sha256": "dbeef86204c41ea6325305af7eb6031a664688ac87531a4db78dbc6b15db0adb",
+    "device": "cpu",
+    "torch_version": "2.14.1+cpu",
+    "test_used_for_training": false,
+    "validation_used_for_model_selection": true,
+    "metric_scope": "PUBLIC_AND_PROJECT_DEVELOPMENT_ONLY",
+    "project_eraser_canister_photos_available": true,
+    "project_field_original_instances_by_class": {
+      "red_cube": 5,
+      "yellow_cube": 5,
+      "blue_cube": 5,
+      "eraser": 5,
+      "small_canister": 9,
+      "scissors": 5
+    },
+    "physical_execution": false,
+    "npu_acceptance": "NOT_ACCEPTED",
+    "rocm_acceptance": "NOT_ACCEPTED"
+  },
+  "metric_scope": "PUBLIC_AND_PROJECT_DEVELOPMENT_ONLY",
+  "class_quality_acceptance": "NOT_ACCEPTED_DEVELOPMENT_CANDIDATE",
+  "npu_validation": "NOT_RUN",
+  "physical_execution": false
+}

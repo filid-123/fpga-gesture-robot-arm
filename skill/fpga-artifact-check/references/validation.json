@@ -1,0 +1,33 @@
+{
+  "schema": "skill.reuse.validation.v1",
+  "date": "2026-11-01",
+  "passed": true,
+  "python": "3.12",
+  "stdlib_clean_environment": true,
+  "copied_outside_repository": true,
+  "focused_behavior_tests": 11,
+  "scope": "105 real sealed build inputs, BIT/HWH/XSA; independent synthetic design schema. No new synthesis or board deployment.",
+  "commands": [
+    {
+      "name": "standalone_second_fpga_project",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "failure_conditions_tested": [
+    "changed source",
+    "unbound manifest",
+    "negative hold margin",
+    "nonfinite timing",
+    "unknown CDC",
+    "DRC error",
+    "different inner XSA members",
+    "directory escape",
+    "fractional CDC endpoint count"
+  ],
+  "second_physical_device": "NOT_RUN",
+  "whole_application_deployment": "NOT_RUN",
+  "hardware_access": false,
+  "script_sha256": "541e9a5f416fbe93625b450a065f6a0f891e20bd1abf19b0b7dd3a3c8d7b01e1"
+}

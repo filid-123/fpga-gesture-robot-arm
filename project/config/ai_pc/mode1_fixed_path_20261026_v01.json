@@ -1,0 +1,450 @@
+{
+  "schema": "gesture.mode_a.fixed_slot_path_review.v1",
+  "revision": "0.1",
+  "date": "2026-10-26",
+  "status": "GEOMETRIC_HANDOFF_FOR_FPGA_REVIEW_NOT_EXECUTABLE",
+  "execution_allowed": false,
+  "mode": "A_PURE_FPGA",
+  "physical_execution": false,
+  "hardware_commands_sent": 0,
+  "joint_targets_generated": 0,
+  "supersedes": "Only fixed-slot mode-A path design; does not change vision mode-B settings or approved desk zones.",
+  "source_layout": "config/ai_pc/path_plan_20261025_v062.json",
+  "source_path_draft": "config/ai_pc/path_draft_20261025_v01.json",
+  "frame": {
+    "frame_id": "desk_global_20261023",
+    "axes": "+X right,+Y inward,+Z up",
+    "units": "mm",
+    "table_size_mm": [
+      800,
+      600
+    ],
+    "origin": "whole desktop lower-left on tabletop"
+  },
+  "pickup_bounds_xy_mm": [
+    490,
+    690,
+    215,
+    355
+  ],
+  "recommended_centre_bounds_xy_mm": [
+    522,
+    658,
+    247,
+    323
+  ],
+  "waypoint_reference": "Object geometric centre Q; empty gripper uses virtual Q. Never firmware XYZ/TCP or marker P.",
+  "nominal_height_model": {
+    "side_mm": 30,
+    "support_z_D_mm": 0,
+    "pick_Qz_mm": 15,
+    "calibrated_support_z_D_mm": null,
+    "calibrated_release_gap_mm": null,
+    "note": "Nominal geometry only; tool offset and real support height must be calibrated."
+  },
+  "slots": [
+    {
+      "slot_id": "SLOT_1",
+      "object_id": 1,
+      "gesture_event": "OBJECT_1",
+      "color": "red",
+      "color_cn": "红",
+      "footprint_centre_D_mm": [
+        530,
+        250,
+        0
+      ],
+      "nominal_object_centre_Q_D_mm": [
+        530,
+        250,
+        15
+      ],
+      "side_mm": 30,
+      "object_yaw_D_deg": 0,
+      "yaw_definition": "cube edges parallel to desk X/Y; no arbitrary rotation",
+      "placement_from_pickup_lower_left_mm": [
+        40,
+        35
+      ],
+      "Q_waypoints_D_mm": {
+        "P0": [
+          530,
+          250,
+          160
+        ],
+        "P1": [
+          530,
+          250,
+          115
+        ],
+        "P2": [
+          530,
+          250,
+          55
+        ],
+        "P3": [
+          530,
+          250,
+          15
+        ],
+        "L_TEST": [
+          530,
+          250,
+          35
+        ],
+        "L_HIGH": [
+          530,
+          250,
+          160
+        ],
+        "B": [
+          360,
+          285,
+          160
+        ],
+        "PRE_HIGH": [
+          290,
+          175,
+          160
+        ],
+        "PRE": [
+          290,
+          175,
+          150
+        ]
+      },
+      "s4_descriptors": {
+        "approach": [
+          "P0",
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "grasp": [
+          "CLOSE_AT_P3"
+        ],
+        "lift": [
+          "L_TEST",
+          "L_HIGH",
+          "B",
+          "PRE_HIGH",
+          "PRE"
+        ]
+      },
+      "return_destination": "SLOT_1",
+      "grasp_joint_target": null,
+      "calibrated_pick_pose": null
+    },
+    {
+      "slot_id": "SLOT_2",
+      "object_id": 2,
+      "gesture_event": "OBJECT_2",
+      "color": "yellow",
+      "color_cn": "黄",
+      "footprint_centre_D_mm": [
+        650,
+        250,
+        0
+      ],
+      "nominal_object_centre_Q_D_mm": [
+        650,
+        250,
+        15
+      ],
+      "side_mm": 30,
+      "object_yaw_D_deg": 0,
+      "yaw_definition": "cube edges parallel to desk X/Y; no arbitrary rotation",
+      "placement_from_pickup_lower_left_mm": [
+        160,
+        35
+      ],
+      "Q_waypoints_D_mm": {
+        "P0": [
+          650,
+          250,
+          160
+        ],
+        "P1": [
+          650,
+          250,
+          115
+        ],
+        "P2": [
+          650,
+          250,
+          55
+        ],
+        "P3": [
+          650,
+          250,
+          15
+        ],
+        "L_TEST": [
+          650,
+          250,
+          35
+        ],
+        "L_HIGH": [
+          650,
+          250,
+          160
+        ],
+        "B": [
+          360,
+          285,
+          160
+        ],
+        "PRE_HIGH": [
+          290,
+          175,
+          160
+        ],
+        "PRE": [
+          290,
+          175,
+          150
+        ]
+      },
+      "s4_descriptors": {
+        "approach": [
+          "P0",
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "grasp": [
+          "CLOSE_AT_P3"
+        ],
+        "lift": [
+          "L_TEST",
+          "L_HIGH",
+          "B",
+          "PRE_HIGH",
+          "PRE"
+        ]
+      },
+      "return_destination": "SLOT_2",
+      "grasp_joint_target": null,
+      "calibrated_pick_pose": null
+    },
+    {
+      "slot_id": "SLOT_3",
+      "object_id": 3,
+      "gesture_event": "OBJECT_3",
+      "color": "blue",
+      "color_cn": "蓝",
+      "footprint_centre_D_mm": [
+        590,
+        320,
+        0
+      ],
+      "nominal_object_centre_Q_D_mm": [
+        590,
+        320,
+        15
+      ],
+      "side_mm": 30,
+      "object_yaw_D_deg": 0,
+      "yaw_definition": "cube edges parallel to desk X/Y; no arbitrary rotation",
+      "placement_from_pickup_lower_left_mm": [
+        100,
+        105
+      ],
+      "Q_waypoints_D_mm": {
+        "P0": [
+          590,
+          320,
+          160
+        ],
+        "P1": [
+          590,
+          320,
+          115
+        ],
+        "P2": [
+          590,
+          320,
+          55
+        ],
+        "P3": [
+          590,
+          320,
+          15
+        ],
+        "L_TEST": [
+          590,
+          320,
+          35
+        ],
+        "L_HIGH": [
+          590,
+          320,
+          160
+        ],
+        "B": [
+          360,
+          285,
+          160
+        ],
+        "PRE_HIGH": [
+          290,
+          175,
+          160
+        ],
+        "PRE": [
+          290,
+          175,
+          150
+        ]
+      },
+      "s4_descriptors": {
+        "approach": [
+          "P0",
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "grasp": [
+          "CLOSE_AT_P3"
+        ],
+        "lift": [
+          "L_TEST",
+          "L_HIGH",
+          "B",
+          "PRE_HIGH",
+          "PRE"
+        ]
+      },
+      "return_destination": "SLOT_3",
+      "grasp_joint_target": null,
+      "calibrated_pick_pose": null
+    }
+  ],
+  "shared_waypoints_Q_D_mm": {
+    "B": [
+      360,
+      285,
+      160
+    ],
+    "PRE_HIGH": [
+      290,
+      175,
+      160
+    ],
+    "PRE": [
+      290,
+      175,
+      150
+    ],
+    "H": [
+      200,
+      140,
+      115
+    ],
+    "HOME": null,
+    "H_CLEAR": null
+  },
+  "accepted_rules": [
+    "vertical lift at original XY before any leftward carrying transfer",
+    "buffer is held-object waiting only; no release/storage",
+    "conditional cancel return to the same reserved original slot, never another slot"
+  ],
+  "orientation": {
+    "tool_long_axis_D": [
+      0,
+      0,
+      -1
+    ],
+    "object_yaw_D_deg": 0,
+    "grasp_contact_face_normal_D_candidate": [
+      0,
+      1,
+      0
+    ],
+    "fixed_finger_side": "TBD after tool-frame mapping; not inferred from photo or firmware tit",
+    "numeric_tool_rotation": null,
+    "scope": "Fixed cube orientation; contact-face choice and complete tool orientation require physical mapping."
+  },
+  "runtime": {
+    "pc_object_recognition_required": false,
+    "pc_object_localization_required": false,
+    "pc_heartbeat_required": false,
+    "ov5640_gesture_pipeline_required": true,
+    "planning_and_calibration": "Offline before release; frozen validated joint tables loaded before mode-A operation.",
+    "authority": "PL selects, interpolates and executes; PS initializes/logs; PC never streams arm commands.",
+    "startup": "Enable only from verified HOME with known empty gripper and occupied/marked slots manually checked.",
+    "one_task_at_a_time": true,
+    "inventory": "Successful delivery marks that slot unavailable; re-arm alone must not restore presence. Manual restock/check or a validated presence input is required.",
+    "fixture": "Flat crosshair/corner tape; no raised slot holder in this geometry. Any holder requires new approach/return validation."
+  },
+  "s4_integration": {
+    "source_reference": "pynq/s4_task_reference.py",
+    "table_type": "S4Tables",
+    "table_depths": {
+      "keypoints": 64,
+      "segments": 64,
+      "retrace_stack": 32
+    },
+    "per_object_descriptors": [
+      "approach",
+      "grasp",
+      "lift"
+    ],
+    "shared_descriptors": [
+      "deliver",
+      "release",
+      "retreat"
+    ],
+    "phase_flow": "OUT(approach_i,grasp_i,lift_i) -> WAIT_PALM -> DELIVER -> RELEASE -> RETREAT -> HOME",
+    "nominal_descriptor_segment_count": 34,
+    "nominal_count_note": "3*(4 approach+1 grasp+5 lift)+1 deliver+1 release+2 unknown retreat placeholders. IK subdivision, holds, HOME preparation and inventory logic may increase this.",
+    "shared_home_joint_pose": null,
+    "shared_predelivery_joint_pose": null,
+    "common_grip_target": null,
+    "common_grip_requirement": "Current shared PRE/DELIVER/RELEASE need consistent six-channel entry poses. Validate one common hold angle for all three cubes, or implement per-object delivery tables/retained-gripper semantics; do not change g while carrying just to force equality.",
+    "buffer_wait": "B may be a passage stop or held pause. Automatic B_WAIT/resume needs PL logic or a proved existing control path; current RUN LIFT does not imply a wait gate at B.",
+    "validation_lift": "The trial at L_TEST needs manual confirmation during commissioning; autonomous mid-LIFT payload detection/pause is not implemented by this handoff.",
+    "release_gate": "PALM_READY stability, window and blind expiry follow actual S4 build. Physical support/release condition must be established; no contact sensor is presumed.",
+    "tray_exit": false,
+    "warning": "Mode-A S4 fixed tables are not the AI-PC mode-B PathPlan submission. S6 max-32 rule is not the whole fixed-table allocation limit."
+  },
+  "cancel": {
+    "known_completed_waypoints": "Validate stage retrace including inverse pure gripper segment at P3; return only to task slot.",
+    "mid_segment": "S4 retraces to the current segment start after a stop; validate that actual joint-space return sweep under load. Never assume it follows a Cartesian line.",
+    "blind_expiry": "With no release, withdraw to PRE and wait again according to the actual S4 implementation.",
+    "after_release": "Empty retreat; never retrieve from the user.",
+    "nonreturnable": [
+      "unknown payload/drop",
+      "occupied or unknown original slot",
+      "feedback/link/drive fault",
+      "unvalidated connecting path"
+    ],
+    "response": "Use the build-specific stop/hold/permission fault handling; do not command a blind return or open the gripper."
+  },
+  "deployment_fields": {
+    "T_robot_base_from_D": null,
+    "T_tool_from_Q": null,
+    "measured_joint_limits": null,
+    "measured_vmax": null,
+    "measured_amax": null,
+    "measured_period_cycles": null,
+    "arrival_tolerance": null,
+    "arrival_consecutive_samples": null,
+    "measured_gripper_open": null,
+    "measured_gripper_hold": null,
+    "segment_n_na_profile": null,
+    "calibrated_joint_tables": null,
+    "actual_collision_model": null,
+    "palm_window_and_ttl": null
+  },
+  "unresolved": [
+    "HOME and safe start connector",
+    "calibrated D/base/tool transforms and real IK",
+    "complete tool orientation and gripper polarity/channel map",
+    "shared PRE/grip consistency across tasks",
+    "whole-arm/tool/other-two-block collision sweeps including cancel",
+    "H/PRE reachability and actual hand/support visibility",
+    "measured limits/timing and upward tracking",
+    "slot occupancy/restock and buffer-wait integration"
+  ]
+}

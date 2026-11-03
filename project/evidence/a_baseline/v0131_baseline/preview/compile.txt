@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/preview_gray256.v" into library work
+INFO: [VRFC 10-311] analyzing module preview_gray256
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/camera/pl_letterbox_640x480.v" into library work
+INFO: [VRFC 10-311] analyzing module pl_letterbox_640x480
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_preview256.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_preview256

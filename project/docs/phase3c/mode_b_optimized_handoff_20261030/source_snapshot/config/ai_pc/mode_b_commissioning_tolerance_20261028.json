@@ -1,0 +1,17 @@
+{
+  "schema": "gesture.mode_b.commissioning_tolerance.v1",
+  "scope": "PC_WIFI_OBSERVED_POSE_TRIALS_NOT_FORMAL_FPGA_ACCEPTANCE",
+  "source": "USER_EXPLICITLY_REQUESTED_WIDER_REAL_ARM_TOLERANCE_20261028",
+  "arrival_tolerance_deg": {"b": 2.5, "s": 6.0, "e": 5.0, "t": 5.0, "r": 2.5, "g": 6.0},
+  "moving_tracking_limit_deg": 20.0,
+  "loaded_pitch_limit_from_vertical_deg": 25.0,
+  "pickup_observed_pitch_limit_from_vertical_deg": 10.0,
+  "descending_fingertip_model_floor_mm": 5.0,
+  "lifting_fingertip_model_floor_mm": 2.0,
+  "native_stream_spd": 160,
+  "native_stream_acc": 20,
+  "native_period_s": 0.08,
+  "fault_checks_enabled": true,
+  "communication_loss_stops_new_motion": true,
+  "grasp_success_still_requires_physical_observation": true
+}

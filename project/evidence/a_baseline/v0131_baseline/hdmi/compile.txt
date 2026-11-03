@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/cycles_to_ms8.v" into library work
+INFO: [VRFC 10-311] analyzing module cycles_to_ms8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/hdmi_frame_bram.v" into library work
+INFO: [VRFC 10-311] analyzing module hdmi_frame_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/mode_a_display_cdc.v" into library work
+INFO: [VRFC 10-311] analyzing module mode_a_display_cdc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/mode_a_framebuffer.v" into library work
+INFO: [VRFC 10-311] analyzing module mode_a_framebuffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/mode_a_hdmi_output.v" into library work
+INFO: [VRFC 10-311] analyzing module mode_a_hdmi_output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/mode_a_renderer.v" into library work
+INFO: [VRFC 10-311] analyzing module mode_a_renderer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/tmds_encoder.v" into library work
+INFO: [VRFC 10-311] analyzing module tmds_encoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/tmds_serializer_7series.v" into library work
+INFO: [VRFC 10-311] analyzing module tmds_serializer_7series
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/video_timing_640x480.v" into library work
+INFO: [VRFC 10-311] analyzing module video_timing_640x480
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_hdmi/tb_display_cdc.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_display_cdc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_framebuffer_hd.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_framebuffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_renderer_hd.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_renderer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/sim/hdmi/tb_tmds_encoder.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tmds_encoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/sim/hdmi/tb_video_timing_640x480.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_video_timing_640x480

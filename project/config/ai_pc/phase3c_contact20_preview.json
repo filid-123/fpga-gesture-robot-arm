@@ -1,0 +1,46 @@
+{
+  "schema": "gesture.ai_pc.rgb_task_preview_config.v1",
+  "objects": [
+    {
+      "object_id": 1,
+      "name": "red_cube",
+      "size_mm": 30
+    },
+    {
+      "object_id": 2,
+      "name": "yellow_cube",
+      "size_mm": 30
+    },
+    {
+      "object_id": 3,
+      "name": "blue_cube",
+      "size_mm": 30
+    }
+  ],
+  "preview": {
+    "approach_clearance_mm": 60,
+    "lift_height_mm": 80,
+    "parameter_status": "CONTACT_HEIGHT_APPROVED_APPROACH_AND_LIFT_STILL_PREVIEW_DEFAULTS",
+    "contact_geometry": {
+      "finger_direction": "VERTICALLY_DOWN_ASSUMED",
+      "contact_center_to_tip_mm": 15,
+      "nominal_tip_clearance_mm": 5,
+      "table_frame_id": "rgb_table_rgb_20261020_144354_741379_frame_001190",
+      "table_sha256": "e4726e2f7c9b21d68bd4032a3f97d4bca41e763d88382ffd31153da047b1dd10",
+      "approval": "User accepted option2 on2026-10-21; offline planning only"
+    }
+  },
+  "hardware": {
+    "arm_candidate": "RoArm-M3-S",
+    "camera": "康帕斯 1080P USB RGB",
+    "robot_base_transform": null,
+    "real_ik": "PENDING",
+    "gripper_parameters": "PENDING"
+  },
+  "diagnostic_registration": {
+    "review_file": "docs/phase3c/contact20_20261021/REGISTRATION_REVIEW.json",
+    "review_sha256": "dfbcfccad57a93d909c8425607083ca62e008ab1b3c04960a604bd4eaedbe1ed",
+    "candidate": "coverage_subset",
+    "status": "CONDITIONAL_NOT_ACCEPTED_FOR_EXECUTION"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "gesture.mode_b.local_red_grasp_correction.v1",
+  "status": "TWO_PHYSICAL_POSITIONS_OPERATOR_ACCEPTED_WITH_FIXED_PRIMARY_ANCHOR_PLUS2MM",
+  "coordinate_validation_pending": false,
+  "operator_observation": "First native20mm correction completed all steps normally. New source651.879/257.801 with2mm outward adjustment also operator accepted as very successful. Fixed primary source607.425/274.743 retained; no cumulative fine offset.",
+  "object_class": "red_cube",
+  "object_size_mm": [
+    30,
+    30,
+    30
+  ],
+  "away_from_base_mm": 0,
+  "maximum_source_transfer_xy_mm": 150.0,
+  "source_region_xy_mm": [
+    490,
+    690,
+    215,
+    355
+  ],
+  "arm_speed_multiplier": 2.0,
+  "speed_reference": "20261028_102659_7485344_FULL_TRIAL_1X; GRIPPER_AND_PRE_WAIT_UNCHANGED",
+  "base_axis_xy_mm": [
+    585,
+    25
+  ],
+  "direction": "DESK_XY_RADIAL_FROM_BASE_AXIS_TO_FRESH_CAMERA_SOURCE",
+  "scope": "LOCAL_SOURCE_APPROACH_DESCEND_LIFT_ONLY; FILID_DESTINATIONS_UNCHANGED",
+  "global_calibration_changed": false,
+  "physical_grasp_corrected_accepted": true,
+  "previous19mm_correction_requires_reassessment_after_registration": true,
+  "previous179deg_fit_invalidated": true,
+  "latest_coordinate_report": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\DIRECTION_CHECK.json",
+  "workspace_candidate_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\WORKSPACE_CANDIDATE.json",
+  "candidate_activated": false,
+  "historical_grasp_source_requires_new_pose_anchor": false,
+  "source_planning_mode": "TODAY_SUCCESSFUL_NATIVE_RELATIVE_TRANSFER",
+  "previous_away_from_base_mm": 19,
+  "workspace_file": "artifacts/phase3c/mode_b_ttl_20261028/coordinate_retake_v2/pose_candidate_v2_E2/WORKSPACE_CANDIDATE.json",
+  "local_coordinate_approval_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\accepted_coordinate_trial\\OPERATOR_COORDINATE_TRIAL_APPROVAL.json",
+  "operator_authorized_local_trial": true,
+  "historical_camera_source_excluded": true,
+  "general_calibration_accepted": false,
+  "desk_command_correction_mm": [
+    0,
+    0,
+    0
+  ],
+  "measured_correction_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\accepted_coordinate_trial\\OPERATOR_PICKUP_OFFSET.json",
+  "measured_correction_sha256": "bdbee4915e705cd1ce2a9e257c770cb856abd912e51c5f2558615101f11edc00",
+  "corrected_full_route_ready": true,
+  "review_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\REVIEW_CN.md",
+  "complete_transfer_planning_passed": true,
+  "successful_native_source_anchor_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+  "successful_native_source_anchor_sha256": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631",
+  "previous_measured70_candidate_archived": true,
+  "extra_outward_fine_adjustment_mm": 2.0,
+  "current_new_source_physical_acceptance_pending": false,
+  "physical_two_positions_accepted": true,
+  "latest_accepted_transfer_file": "artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\ACCEPTED_SECOND_POSITION.json",
+  "outward_adjustment_policy": "2MM_RELATIVE_TO_FIXED_PRIMARY_REFERENCE; DO_NOT_COMPOUND_ACROSS_RUNS"
+}

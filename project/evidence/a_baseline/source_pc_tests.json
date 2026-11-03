@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "tests": 70,
+  "suites": [
+    {
+      "test": "test_mode_a_upgrade.py",
+      "tests": 41,
+      "exit_code": 0,
+      "sha256": "d2fc40201834230f2489e130f085b92c3fde3f81344c2d4d767ee35e89716047"
+    },
+    {
+      "test": "test_mode_a_upgrade_observer.py",
+      "tests": 5,
+      "exit_code": 0,
+      "sha256": "8f099879eff82083d025aa1c2161275ff8c6ec0d432f6d0389481e3086810ef7"
+    },
+    {
+      "test": "test_mode_a_terminal.py",
+      "tests": 13,
+      "exit_code": 0,
+      "sha256": "ca0c464cafe94cdfe9160888567f72340332c7aa6ad2cfdb86e0467440642846"
+    },
+    {
+      "test": "test_mode_a_restock.py",
+      "tests": 11,
+      "exit_code": 0,
+      "sha256": "7be68debcfd60345bcabd6402437263bed6957dea2820afd740dc99dd72b1c00"
+    }
+  ],
+  "hardware_access": false
+}

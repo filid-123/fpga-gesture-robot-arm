@@ -1,0 +1,65 @@
+{
+  "schema": "gesture.phase3.arm_s1_golden.v1",
+  "generated_utc": "2026-09-23T16:32:27.923605+00:00",
+  "provenance": "Python reference models in ps/robot (FIXTURE_NOT_OFFICIAL protocol files)",
+  "trajectory_mem": "pick_place_phase3_trajectory_q16_16_v1.mem",
+  "trajectory_mem_sha256": "6d8095d6ca97a6c48b7c8a25dcd0e4c8efe4636b83cac2f7376d1bf1b1d90c45",
+  "tb_debounce_cycles": 8,
+  "summary": {
+    "uart": {
+      "bytes": 64
+    },
+    "mapper": {
+      "cases": 40
+    },
+    "formatter": {
+      "cases": 13
+    },
+    "json_parser": {
+      "configs": 3,
+      "events": 33
+    },
+    "sts_parser": {
+      "configs": 3
+    },
+    "watchdog": {
+      "events": 77
+    },
+    "permission_gate": {
+      "cycles": 400
+    },
+    "half_duplex": {
+      "cases": 5
+    },
+    "integration": {
+      "roarm": {
+        "segment": 2,
+        "dry_bytes": 3085,
+        "line_bytes": 3096
+      },
+      "so101": {
+        "segment": 3,
+        "bus_bytes": 2464,
+        "replies": 204,
+        "limit_frames_before_fault": 7,
+        "limit_mask": 32
+      }
+    }
+  },
+  "sha256": {
+    "formatter_stream.mem": "51a1cd859e406e2c14a3bbbe7fb5a876e9db717a063a1c31c4f700222b98293d",
+    "gate_trace.mem": "8478342c6763ddaeda50a4685cf76556607e0cf24ac04c16ffa8abe75bbfcd40",
+    "half_duplex_cases.mem": "abea4421ee736ee7a19593aa020e8f106feaf94e1c24917b33df0ae2c755f472",
+    "integ_roarm.mem": "e0094d5d2ba2ff9fade15c348d74d06f0abea7c040b165927c9037581a43c9c8",
+    "integ_so101.mem": "b4d596418f5fc711f4c7fcb8d8ab2d658f15cf844345d84af3c925e383a1363d",
+    "json_stream.mem": "2af5138ceb13218f36a523e2dfa5355280de9f7793766421f91ca74eafe7f92d",
+    "mapper_cases.mem": "716d5db3ed190142f78938333299216c94ad2aa194ff6859b7a9ed8767af54e8",
+    "sts_stream.mem": "602270a25562b16ccb22cf78b972d3dbafceaf30f8c1913ab2a743d0044c9fd6",
+    "uart_bytes.mem": "c1dd90ebf8be632d64baef5fd53fa4fe092a3cf9a106b21eea475c0e40f3fe09",
+    "watchdog_stream.mem": "7c1ab76e632ffd091eacedad2a0a2a96006309255db739fe8b0926d6ac59d301"
+  },
+  "limitations": [
+    "protocol constants are synthetic fixtures, not official RoArm/Feetech values",
+    "vectors prove RTL == Python model, not that the model matches real hardware"
+  ]
+}

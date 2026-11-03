@@ -1,0 +1,19 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_serializer glbl -L unisims_ver -L secureip -s serial -O0 -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33",SLEW...
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module work.tmds_serializer_7series_default
+Compiling module work.tb_serializer
+Compiling module work.glbl
+Built simulation snapshot serial

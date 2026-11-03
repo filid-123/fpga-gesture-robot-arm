@@ -1,0 +1,40 @@
+{
+  "schema": "gesture.ai_pc.rgb_workspace_overlay.v1",
+  "table_file": "docs/phase3c/table_reference_20261020/RGB_TABLE_TRANSFORM_CANDIDATE.json",
+  "table_sha256": "e4726e2f7c9b21d68bd4032a3f97d4bca41e763d88382ffd31153da047b1dd10",
+  "table_frame_id": "rgb_table_rgb_20261020_144354_741379_frame_001190",
+  "centre_table_xy_mm": [
+    74.60127395794481,
+    15.266717501740828
+  ],
+  "centre_basis": "OPTICAL_AXIS_INTERSECTION_WITH_TABLE_NOT_SURVEYED_DESK_FRAME",
+  "size_wh_mm": [
+    200,
+    150
+  ],
+  "plane_z_mm": 0,
+  "orientation": "Parallel to checkerboard axes; not registered to desk edges",
+  "user_reported_installation_cm": {
+    "desk_size_wh": [
+      80,
+      60
+    ],
+    "camera_lens_centre": [
+      60,
+      27,
+      41
+    ],
+    "base_axis_table_projection": [
+      60,
+      2.5,
+      0
+    ],
+    "camera_and_base_locked": true,
+    "checkerboard_square_cm": 2,
+    "paper_surface_height_cm": 0.1
+  },
+  "desk_to_checkerboard_transform": null,
+  "metric_localization_accepted": false,
+  "physical_execution": false,
+  "scope": "Visual tape placement aid; confirm physical dimensions independently; no IK or path submission"
+}

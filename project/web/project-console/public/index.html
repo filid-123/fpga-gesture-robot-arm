@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075c50">
+  <title>知行 · 具身智能协作平台</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <aside class="sidebar">
+    <a href="#/mode-b" class="brand" aria-label="知行工作台"><img src="./assets/mark.svg" alt="" width="40" height="40"><span>知行<span class="brand-sub">EMBODIED INTELLIGENCE</span></span></a>
+    <div class="sidebar-title">协作工作台 <span>WORKSPACE</span></div>
+    <nav class="mode-navigation" aria-label="模式选择">
+      <a href="#/mode-a" class="mode-link" data-mode="A"><span class="mode-letter">A</span><span><strong>模式 A</strong><small>固定物体 · 手势交付</small></span><span class="nav-arrow">↗</span></a>
+      <a href="#/mode-b" class="mode-link" data-mode="B"><span class="mode-letter">B</span><span><strong>模式 B</strong><small>视觉识别 · 自由选择</small></span><span class="nav-arrow">↗</span></a>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-cross">＋</span><p>让感知理解意图<br>让动作回应需求</p><div class="orbit-art" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+    <div class="sidebar-bottom"><span class="connection-dot" id="sidebar-dot"></span><span id="sidebar-status">设备尚未连接</span><span class="version">V 1.0</span></div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <div class="breadcrumb">协作工作台 <span>/</span> <strong id="breadcrumb-mode">模式 B</strong></div>
+      <button class="device-chip" id="device-button" type="button" title="设置展示设备与相机"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><small>AI PC</small><strong id="device-name">设备信息载入中</strong><span id="device-model"></span></span><svg class="settings-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6l1 3 3 1 1 5-3 2-1 4H9l-1-3-3-1-1-5 3-2z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <div class="page-heading"><div><div class="eyebrow"><span></span> HUMAN INTENT, ROBOT ACTION</div><h1>感知所见，协作随行<span>。</span></h1><p>从物体识别到精准交付，让每一次人机协作自然发生。</p></div><span class="platform-tag">AI PC <span>×</span> FPGA</span></div>
+
+      <div class="content-layout" id="content-layout">
+        <div class="main-column">
+          <section class="intro-card" aria-labelledby="mode-title"><div class="intro-top"><span class="label-pill" id="mode-pill">MODE B / 视觉驱动</span><span class="small-index" id="mode-index">02</span></div><h2 id="mode-title">你来选择，机械臂来完成。</h2><p id="mode-description">识别取物区中的物体，选择本次协作目标。系统根据物体位置规划路径，通过手势完成抓取与交付。</p><div class="intro-features" id="intro-features"></div></section>
+
+          <section class="selection-panel" id="selection-panel" aria-labelledby="selection-title"><div class="section-heading"><div><h2 id="selection-title">选择识别物体 <span>OBJECT LIBRARY</span></h2><p>依次选择物体，绑定对应的控制手势。</p></div><span class="selection-counter"><strong id="selected-count">0</strong> / 3</span></div><div id="object-grid" class="object-grid"></div><div class="selection-help"><span class="info-circle">i</span><span>最多选择3个 · 再次点击取消 · 编号按选择顺序生成</span></div></section>
+
+          <section class="mode-a-panel" id="mode-a-panel" hidden aria-labelledby="mode-a-title"><div class="section-heading"><div><h2 id="mode-a-title">固定目标，一步交付 <span>FIXED TARGETS</span></h2><p>三色木块与三个手势固定对应。</p></div></div><div id="mode-a-objects" class="fixed-objects"></div><div class="flow-line"><span>手势选择</span><i>→</i><span>抓取抬升</span><i>→</i><span>缓冲等待</span><i>→</i><span>确认交付</span></div></section>
+
+          <section class="gesture-panel" aria-labelledby="gesture-title"><div class="section-heading compact"><h2 id="gesture-title">你的手势映射 <span>GESTURE MAPPING</span></h2><span id="mapping-state">尚未应用</span></div><div id="gesture-slots" class="gesture-slots"></div></section>
+        </div>
+
+        <aside class="visual-column" aria-label="工作区预览">
+          <section class="fixed-scene-panel" id="fixed-scene-panel" hidden><div class="camera-heading"><div><span class="camera-title-dot"></span><h2>固定流程，一次连贯协作</h2></div><span class="camera-state">MODE A</span></div><img src="./assets/mode-a-scene.svg" alt="模式A流程示意：从三色木块取物区抓取，经缓冲区送到交付区"><div class="fixed-scene-caption"><span>01 选择目标</span><i>→</i><span>02 抓取转运</span><i>→</i><span>03 确认交付</span></div><p>固定物体与预设路径，让每次交付清晰、连贯。</p></section>
+          <section class="camera-panel" id="camera-panel"><div class="camera-heading"><div><span class="camera-title-dot"></span><h2>取物区视野</h2></div><span class="camera-state" id="camera-status">未连接</span></div><div class="camera-stage" id="camera-stage"><img class="workspace-demo" id="workspace-demo" src="./assets/workspace.svg" alt="取物区布局示意：三色木块、圆柱、橡皮和剪刀，不是真实相机画面"><video id="camera-video" autoplay muted playsinline hidden aria-label="本地相机原始画面"></video><img id="annotated-stream" hidden alt="取物区实时识别视频"><canvas id="detection-canvas" hidden aria-label="同帧物体识别结果"></canvas><div class="camera-overlay-label" id="camera-overlay-label"><span></span>示意画面</div><div class="camera-corner tl"></div><div class="camera-corner tr"></div><div class="camera-corner bl"></div><div class="camera-corner br"></div><button type="button" class="camera-connect" id="camera-connect"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="13" rx="3"/><path d="m17 10 4-3v11l-4-3M7 3h6"/></svg><span>连接工作区相机</span><small>右侧摄像头 · 实时画面</small></button></div><div class="camera-bottom"><span><i class="hollow-dot"></i><span id="camera-source">等待相机接入</span></span><button id="camera-settings" class="text-button" type="button">画面设置 <span>↗</span></button></div><div class="vision-note" id="vision-note">连接相机后可查看工作区；识别结果由视觉服务提供。</div><div class="vision-toolbar"><button class="secondary-button" id="recognize-camera" type="button" disabled>开始识别</button><button class="text-button" id="sample-vision" type="button">查看识别样例</button><button class="text-button" id="photo-vision" type="button">识别照片</button><input id="vision-file" type="file" accept="image/png,image/jpeg,image/webp" hidden></div><div class="detection-list" id="detection-list" aria-live="polite"></div></section>
+
+          <section class="collaboration-card"><div class="eyebrow">FROM PERCEPTION TO ACTION</div><h3>看见 · 理解 · 执行</h3><div class="pipeline"><div><span class="pipeline-symbol">◎</span><strong>物体感知</strong><small>AI PC 视觉识别</small></div><i>→</i><div><span class="pipeline-symbol">⌘</span><strong>意图决策</strong><small>手势与目标关联</small></div><i>→</i><div><span class="pipeline-symbol">↗</span><strong>协作交付</strong><small>FPGA 运动执行</small></div></div><div class="collaboration-footer"><span class="line-dot"></span> 感知与动作，在同一工作流中连接。</div></section>
+        </aside>
+      </div>
+
+      <section class="apply-bar" aria-label="模式应用"><div class="apply-status-icon" id="apply-icon">◇</div><div class="apply-description"><strong id="apply-title">当前正在查看模式 B</strong><span id="apply-description">锁定后，设备将使用当前模式与手势映射。</span></div><div class="active-mode-tag" id="active-mode-tag"><span></span>设备模式未确认</div><button class="apply-button" id="apply-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 15v2"/></svg><span>锁定模式 B</span><span class="button-arrow">→</span></button></section>
+      <footer class="page-footer"><span>知行 · 具身智能协作平台</span><span>PERCEIVE. CONNECT. COLLABORATE.</span></footer>
+    </main>
+  </div>
+
+  <dialog id="add-dialog" aria-labelledby="add-title"><form id="add-form"><div class="dialog-heading"><div><span class="eyebrow">EXPAND YOUR LIBRARY</span><h2 id="add-title">添加识别物体</h2></div><button class="icon-button dialog-close" type="button" aria-label="关闭">×</button></div><p class="dialog-intro">登记新的物体类别，扩展你的协作物体库。</p><label>物体名称<input name="name" id="object-name" maxlength="16" placeholder="例如：螺丝刀" required autocomplete="off"></label><label>识别类别 ID<input name="id" id="object-id" maxlength="40" placeholder="例如：screwdriver" pattern="[a-z][a-z0-9_]{1,39}" required autocomplete="off"><small>与识别服务中的类别ID保持一致。</small></label><label>物体图标<select id="object-icon"><option value="package">通用物体</option><option value="cube">方形物体</option><option value="cylinder">圆柱物体</option></select></label><div class="dialog-note">添加后标记为“待接入”。连接支持该类别的识别模型后，才能获得真实识别结果。</div><p id="add-error" class="form-error" role="alert"></p><div class="dialog-actions"><button class="secondary-button dialog-close" type="button">取消</button><button class="primary-button" type="submit">添加到物体库 <span>＋</span></button></div></form></dialog>
+
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-heading"><div><span class="eyebrow">WORKSPACE SETTINGS</span><h2 id="settings-title">工作台设置</h2></div><button class="icon-button dialog-close" type="button" aria-label="关闭">×</button></div><form id="device-form"><div class="settings-section-title">展示设备</div><div class="field-row"><label>AI PC 名称<input id="device-name-input" maxlength="40" required></label><label>设备型号<input id="device-model-input" maxlength="80" required></label></div><small class="field-hint">默认显示当前主机信息，可改为正式展示用的AI PC。</small><button class="secondary-button small" type="submit">保存设备信息</button></form><div class="settings-divider"></div><div class="settings-section-title">工作区右侧相机</div><p class="field-hint">请在相机列表中选择对准取物区的摄像头。</p><label>本地摄像头<select id="camera-select"><option value="">请先授权读取摄像头</option></select></label><div class="camera-actions"><button class="primary-button" id="start-camera" type="button">连接相机</button><button class="secondary-button" id="stop-camera" type="button" disabled>断开相机</button></div><p class="field-hint" id="camera-message">连接后点击“开始识别”即可显示物体框；也可先查看识别样例。</p><div class="settings-divider"></div><div class="settings-section-title">设备连接</div><div class="connection-summary"><span id="settings-connection">FPGA模式接口待接入</span><span id="settings-vision">识别视频待接入</span></div><p class="field-hint">模式切换和识别视频由项目服务接入，收到设备确认后才显示模式已锁定。</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "schema": "gesture.mode_b.loaded_native_coppelia.v1",
+  "route_sha256": "0f9cbb16f22f97c7f11190558cc8e3597886846480939bc81b3819f86f71bad6",
+  "simulator_version": 41000,
+  "samples_checked": 3873,
+  "maximum_tcp_error_mm": 5.689893001203927e-13,
+  "mesh_collisions": [],
+  "released_payload_matrix_error": 2.8317405177515576e-13,
+  "home_joint_error_rad": 0.0,
+  "stages": [
+    {
+      "phase": "RESTOCK_INNER_OPEN",
+      "samples": 93,
+      "maximum_tcp_error_mm": 5.689893001203927e-13,
+      "intentional_source_table_contact": true
+    },
+    {
+      "phase": "RESTOCK_BUFFER_OPEN",
+      "samples": 1018,
+      "maximum_tcp_error_mm": 5.23691153334427e-13,
+      "intentional_source_table_contact": true
+    },
+    {
+      "phase": "RESTOCK_PUBLIC_HIGH",
+      "samples": 338,
+      "maximum_tcp_error_mm": 4.388541835720876e-13,
+      "intentional_source_table_contact": true
+    },
+    {
+      "phase": "RESTOCK_PUBLIC_DESCEND",
+      "samples": 27,
+      "maximum_tcp_error_mm": 3.502767113577769e-13,
+      "intentional_source_table_contact": true,
+      "intentional_finger_grasp_contact": true
+    },
+    {
+      "phase": "RESTOCK_PUBLIC_LIFT",
+      "samples": 27,
+      "maximum_tcp_error_mm": 3.815760786470701e-13,
+      "source_table_contact_exempt_until_bottom_mm": 0.5,
+      "table_samples_checked_after_liftoff": 26
+    },
+    {
+      "phase": "RESTOCK_RETURN_BUFFER",
+      "samples": 848,
+      "maximum_tcp_error_mm": 4.750989259956121e-13
+    },
+    {
+      "phase": "RESTOCK_RETURN_INNER",
+      "samples": 942,
+      "maximum_tcp_error_mm": 4.910462595695866e-13
+    },
+    {
+      "phase": "RESTOCK_SOURCE_HIGH",
+      "samples": 59,
+      "maximum_tcp_error_mm": 4.982493048981751e-13
+    },
+    {
+      "phase": "RESTOCK_SOURCE_DESCEND",
+      "samples": 219,
+      "maximum_tcp_error_mm": 4.750102420444396e-13
+    },
+    {
+      "phase": "RESTOCK_SOURCE_EXIT_CLEARANCE",
+      "samples": 14,
+      "maximum_tcp_error_mm": 4.0125770192081414e-13,
+      "initial_intended_fixed_jaw_contact_exempt_until_mm": 2.0,
+      "fixed_jaw_samples_checked_after_contact_zone": 9
+    },
+    {
+      "phase": "RESTOCK_SOURCE_EXIT_UP",
+      "samples": 59,
+      "maximum_tcp_error_mm": 5.074414582634863e-13
+    },
+    {
+      "phase": "RESTOCK_SOURCE_EXIT_RECENTER",
+      "samples": 14,
+      "maximum_tcp_error_mm": 4.39073555834512e-13
+    },
+    {
+      "phase": "RESTOCK_HOME",
+      "samples": 173,
+      "maximum_tcp_error_mm": 4.941739743737033e-13
+    }
+  ],
+  "passed": true,
+  "simulation_type": "EXACT_NATIVE_RADIAN_SAMPLES_RIGID_PAYLOAD_MESH_KINEMATICS",
+  "intentional_contact_allowance": {
+    "link": "link5",
+    "maximum_initial_lateral_travel_mm": 2,
+    "direction": "AWAY_FROM_FIXED_JAW_FACE",
+    "nominal_contact_not_force_simulated": true
+  },
+  "payload_geometry": {
+    "shape": "box",
+    "size_mm": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "grasp_width_mm": 30.0
+  },
+  "friction_slip_servo_dynamics_validated": false,
+  "physical_general_mapping_calibrated": false
+}

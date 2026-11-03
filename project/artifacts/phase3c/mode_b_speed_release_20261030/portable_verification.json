@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "package_manifest_and_vectors",
+    "red_cube_reference_comparison",
+    "small_canister_reference_comparison",
+    "eraser_reference_comparison",
+    "truncated_observed_rejected",
+    "changed_pl_word_rejected",
+    "package_tamper_rejected"
+  ],
+  "hardware_accessed": false
+}

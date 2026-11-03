@@ -1,0 +1,6 @@
+{
+  "status": "REVIEWED_INHERITED_CONSTRAINT_PARSER_WARNING",
+  "warning": "Designutils20-1307: if command in unchanged mode_a_hdmi.xdc line19 is unsupported by XDC parser",
+  "effect": "Only the uniqueness assertion is affected; the following set_clock_groups remains. Unique HDMI pixel/serial clocks, held CDC, clock interactions, all internal endpoints and both DVP setup/hold are independently inspected before sealing.",
+  "action": "No constraints relaxed or changed; physical DRC remains0 errors and44 warnings in4 inherited categories. This is not a clean-all-tool-warnings claim."
+}

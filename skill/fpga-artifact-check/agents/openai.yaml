@@ -1,0 +1,4 @@
+interface:
+  display_name: "FPGA Artifact and Build Check"
+  short_description: "Bind FPGA sources, timing and matching hardware files"
+  default_prompt: "Use $fpga-artifact-check to verify this package's source binding, timing and BIT/HWH/XSA consistency."

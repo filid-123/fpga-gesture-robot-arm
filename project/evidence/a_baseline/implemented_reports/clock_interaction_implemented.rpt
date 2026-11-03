@@ -1,0 +1,29 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 05:07:30 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -file C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/board_evidence/mode_a_restock_impl_a2/implemented_reports/clock_interaction_implemented.rpt
+| Design       : roarm_closed_loop_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                                                                            WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock          
+From Clock                                    To Clock                                      Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints          
+--------------------------------------------  --------------------------------------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -------------------  
+clk_fpga_1                                    clk_fpga_1                                    rise - rise     0.33     0.00            0        73293            10.00  Clean                Partial False Path   
+clk_fpga_1                                    clk_out1_roarm_closed_loop_hdmi_clock_wiz_0                                            0           84                   Ignored              Asynchronous Groups  
+clk_fpga_1                                    ov5640_pclk                                                                            0           12                   Ignored              Asynchronous Groups  
+clk_out1_roarm_closed_loop_hdmi_clock_wiz_0   clk_fpga_1                                                                             0            2                   Ignored              Asynchronous Groups  
+clk_out1_roarm_closed_loop_hdmi_clock_wiz_0   clk_out1_roarm_closed_loop_hdmi_clock_wiz_0   rise - rise     0.30     0.00            0         1498            13.47  Clean                Timed                
+ov5640_pclk                                   clk_fpga_1                                                                             0           12                   Ignored              Asynchronous Groups  
+ov5640_pclk                                   ov5640_pclk                                   fall - rise     1.71     0.00            0          367            10.42  Clean                Timed                
+
+

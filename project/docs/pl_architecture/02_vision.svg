@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1250" viewBox="0 0 1700 1250">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#32495c"/></marker></defs>
+<rect width="1700" height="1250" fill="white"/>
+<text x="60" y="65" text-anchor="start" font-family="Arial, sans-serif" font-size="34" fill="#172d3e">Vision datapath, memories and scheduling</text>
+<text x="60" y="112" text-anchor="start" font-family="Arial, sans-serif" font-size="27" fill="#172d3e">u_vision : gesture_autonomous_top_black</text>
+<path d="M520.0,305.0 H570.0 V305.0 H620.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="570.0" y="293.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[1]</text>
+<text x="60" y="850" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[1] camera_mem_we / addr / data[31:0]</text>
+<path d="M1060.0,305.0 H1110.0 V305.0 H1160.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="1110.0" y="293.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[2]</text>
+<text x="880" y="850" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[2] camera_read_data[31:0] / locator address</text>
+<path d="M1380.0,420.0 V481.5 H750.0 V575.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="1065.0" y="469.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[3]</text>
+<text x="60" y="916" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[3] Top-1 cell / box regression / done</text>
+<path d="M840.0,420.0 V497.5 H1380.0 V575.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="1110.0" y="485.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[4]</text>
+<text x="880" y="916" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[4] classifier_input_data[7:0]</text>
+<path d="M750.0,575.0 V513.5 H840.0 V420.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="795.0" y="501.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[5]</text>
+<text x="60" y="982" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[5] ROI start / coordinates / frame ownership</text>
+<path d="M1020.0,690.0 H1090.0 V690.0 H1160.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="1090.0" y="678.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[6]</text>
+<text x="880" y="982" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[6] classifier_start / classifier_done</text>
+<path d="M750.0,575.0 V545.5 H300.0 V420.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="525.0" y="533.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[7]</text>
+<text x="60" y="1048" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[7] capture_enable / buffer release</text>
+<rect x="80" y="190" width="440" height="230" rx="18" fill="#f3edf8" stroke="#32495c" stroke-width="2.5"/>
+<text x="300.0" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_acquisition</text>
+<text x="300.0" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">vision_acquisition_pipeline</text>
+<text x="300.0" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">SCCB FSM + DVP receiver + CDC</text>
+<text x="300.0" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">FIFO</text>
+<rect x="620" y="190" width="440" height="230" rx="2" fill="#fff4dd" stroke="#32495c" stroke-width="2.5"/>
+<path d="M620 212 Q840.0 238 1060 212" fill="none" stroke="#32495c" stroke-width="2"/>
+<text x="840.0" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_roi_memory</text>
+<text x="840.0" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">vision_roi_memory_pipeline</text>
+<text x="840.0" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Ping-pong BRAM + ROI + input</text>
+<text x="840.0" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">BRAM</text>
+<rect x="1160" y="190" width="440" height="230" rx="2" fill="#edf4fa" stroke="#32495c" stroke-width="2.5"/>
+<text x="1380.0" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_locator_compute</text>
+<text x="1380.0" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">vision_locator_compute</text>
+<text x="1380.0" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Model ROM + 8-lane CNN +</text>
+<text x="1380.0" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Top-1</text>
+<rect x="1160" y="575" width="440" height="230" rx="2" fill="#edf4fa" stroke="#32495c" stroke-width="2.5"/>
+<text x="1380.0" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_classifier_compute</text>
+<text x="1380.0" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">vision_classifier_compute</text>
+<text x="1380.0" y="727" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Descriptor / weight ROM + CNN</text>
+<text x="1380.0" y="759" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">MACs</text>
+<rect x="480" y="575" width="540" height="230" rx="18" fill="#eaf3ed" stroke="#32495c" stroke-width="2.5"/>
+<text x="750.0" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_pipeline_control</text>
+<text x="750.0" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">vision_schedule_qualifier</text>
+<text x="750.0" y="727" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">BBox decode + scheduler FSM + filter</text>
+<text x="60" y="1110" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">Every box is a real wrapper .v. Internal memory and compute instances are listed in hierarchy.csv.</text>
+<text x="60" y="1146" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">Original DVP CDC, frame ownership, ROM contents, arithmetic, registers and cycle sequencing are retained.</text>
+</svg>

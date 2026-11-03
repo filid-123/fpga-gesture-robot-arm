@@ -1,0 +1,113 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Oct 30 21:34:48 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file {C:\redacted_user\.codex\worktrees\mode-ab-integration-20261029\Gesture\board_evidence\mode_ab_impl_a14\inspection_a1\CDC_DETAILS.rpt}
+| Design       : roarm_closed_loop_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID     Severity  Count  Description
+-----  --------  -----  ----------------------------------------------
+CDC-3  Info         56  1-bit synchronized with ASYNC_REG property
+CDC-6  Warning       3  Multi-bit synchronized with ASYNC_REG property
+
+Source Clock: clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+Destination Clock: clk_fpga_1
+CDC Type: User Ignored
+
+Row  ID     Severity  Description                                 Depth  Exception            Source (From)                                                                            Destination (To)
+---  -----  --------  ------------------------------------------  -----  -------------------  ---------------------------------------------------------------------------------------  --------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/C                   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/acknowledge_reg/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/ack1_reg/D
+
+Source Clock: input port clock
+Destination Clock: clk_fpga_1
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)     Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  ----------------  ------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  motion_enable_in  roarm_closed_loop_i/s5_0/inst/u_task/estop_s1_reg/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  motion_enable_in  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_gate/enable_meta_reg/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  arm_uart_rx       roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_uart_rx/rx_meta_reg/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  ov5640_sda        roarm_closed_loop_i/s5_0/inst/u_vision/sccb_sda_meta_reg/D
+
+Source Clock: ov5640_pclk
+Destination Clock: clk_fpga_1
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                                                                      Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  -------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_pclk_reg/C    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_sync1_reg/D
+  2  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_reg[10:0]/C  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[10:0]/D
+
+Source Clock: clk_fpga_1
+Destination Clock: clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+CDC Type: User Ignored
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                                                         Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  ------------------------------------------------------------------------------------  -------------------------------------------------------------------------------------
+  1  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/payload_reg[68:32]/C             roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/data1_reg[68:32]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/requested_bank_reg[0]/C          roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/data1_reg[69]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/requested_bank_reg[1]/C          roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/data1_reg[70]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/request_reg/C                    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/req1_reg/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[0]/C   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[0]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[1]/C   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[1]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[2]/C   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[2]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[3]/C   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[3]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[4]/C   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[4]/D
+ 10  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[13]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[13]/D
+ 11  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[37]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[37]/D
+ 12  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[38]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[38]/D
+ 13  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[39]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[39]/D
+ 14  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[40]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[40]/D
+ 15  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[41]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[41]/D
+ 16  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[42]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[42]/D
+ 17  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[43]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[43]/D
+ 18  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[46]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[46]/D
+ 19  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[47]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[47]/D
+ 20  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[56]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[56]/D
+ 21  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[57]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[57]/D
+ 22  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[58]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[58]/D
+ 23  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[66]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[66]/D
+ 24  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[69]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[69]/D
+ 25  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[70]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[70]/D
+ 26  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[71]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[71]/D
+ 27  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[72]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[72]/D
+ 28  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[73]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[73]/D
+ 29  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[74]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[74]/D
+ 30  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[75]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[75]/D
+ 31  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[76]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[76]/D
+ 32  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[77]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[77]/D
+ 33  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[78]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[78]/D
+ 34  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[79]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[79]/D
+ 35  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[80]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[80]/D
+ 36  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[81]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[81]/D
+ 37  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[82]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[82]/D
+ 38  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[83]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[83]/D
+ 39  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[84]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[84]/D
+ 40  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[85]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[85]/D
+ 41  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[86]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[86]/D
+ 42  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[87]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[87]/D
+ 43  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[88]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[88]/D
+ 44  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[89]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[89]/D
+ 45  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[90]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[90]/D
+ 46  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[91]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[91]/D
+ 47  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[92]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[92]/D
+ 48  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[93]/C  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[93]/D
+ 49  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/request_reg/C   roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/req1_reg/D
+
+Source Clock: clk_fpga_1
+Destination Clock: ov5640_pclk
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                                                                      Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  -------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property          2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/u_vision/capture_enable_reg/C                                        roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/capture_enable_pclk_sync1_reg/D
+  2  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      2  Asynch Clock Groups  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_reg[10:0]/C  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[10:0]/D
+

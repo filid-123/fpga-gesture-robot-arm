@@ -1,0 +1,37 @@
+{
+  "schema": "gesture.mode_b.object_specific_source_offset.v1",
+  "object_class": "eraser",
+  "source_result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_143131_1468955\\LOADED_ROUTE_RESULT.json",
+  "source_result_sha256": "04f13c0942c1b99ceaf0916a2a22faf7983d8f6d1c9f22f1f1706425e2386e62",
+  "source_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\speed3_trial_v2\\complete_trials\\20261028_143058_3217217\\native_plan\\LOADED_ROUTE_PLAN.json",
+  "source_plan_sha256": "51ad1b1d551f99617f56042bc40f6c68473e9f76bd9863c24f5d9e6500bfae71",
+  "operator_observation": "抓取低位闭合之前橡皮相对夹口右偏10mm；最终成功夹起并放回取物区",
+  "user_authorization": "下一步解决右偏10mm再试一次",
+  "reference_source_centre_mm": [
+    631.6914227158205,
+    265.6341499003452,
+    7.5
+  ],
+  "increment_from_prior_adapter_desk_mm": [
+    10.0,
+    0.0,
+    0.0
+  ],
+  "prior_adapter_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\config\\ai_pc\\mode_b_eraser_grasp_20261028_v3.json",
+  "prior_adapter_sha256": "047c1ec1045e5350eb9822039889d3b2121038c11e9e8849de8011f2d5545f2c",
+  "prior_desk_command_correction_mm": [
+    3.0,
+    10.0,
+    0.0
+  ],
+  "desk_command_correction_mm": [
+    13.0,
+    10.0,
+    0.0
+  ],
+  "maximum_xy_distance_mm": 25.0,
+  "axes": "DESK_X_RIGHT_Y_AWAY_FROM_BASE",
+  "camera_coordinate_change": false,
+  "fixed_primary_outward2mm_compounds": false,
+  "physical_corrected_trial_accepted": false
+}

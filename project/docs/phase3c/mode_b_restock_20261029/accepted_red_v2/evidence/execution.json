@@ -1,0 +1,142 @@
+{
+  "schema": "gesture.mode_b.restock_session_v2_execution_verification.v1",
+  "passed": true,
+  "date": "2026-10-29",
+  "result_file": "artifacts\\phase3c\\mode_b_return_20261029\\session_runs\\20261029_094927_5503514\\RESTOCK_RESULT.json",
+  "result_sha256": "aa3fe1bf24d0180a5336566f519b9bef94e291f476e3c29d079f5a6c3f0c5db4",
+  "session_sha256": "f875a3ea0d3cbf7e4412ab0a4c68df8b360a6b52c9cdebe2ac1e46aa2eba1056",
+  "plan_sha256": "0f9cbb16f22f97c7f11190558cc8e3597886846480939bc81b3819f86f71bad6",
+  "engine_sha256": "436d0e79d3c61a2cd600b21a585f5c7b9f5e60f893486dbb8adb707bdd9cc9fc",
+  "all_3835_wire_and_labels_match_accepted_plan": true,
+  "ordered_wire_lf_sha256": "1935e7c4d5f13893bdf362d431d79ef18feb7c41976e927bdab9a6598b0da9a2",
+  "all_attempts_have_write_return": true,
+  "write_return_is_execution_ack": false,
+  "motion_requests": 3835,
+  "motion_stages": 13,
+  "gripper_events": 4,
+  "observation_groups": 18,
+  "valid_boundary_states": 56,
+  "firmware_or_torque_faults_in_observed_states": 0,
+  "first_request_to_final_feedback_seconds": 130.6435419,
+  "v1_first_request_to_final_feedback_seconds": 174.7820413,
+  "reduction_from_v1_percent": 25.25345228360141,
+  "original_first_request_to_final_feedback_seconds": 204.040416,
+  "reduction_from_original_percent": 35.97173321779543,
+  "nominal_motion_seconds": 76.62,
+  "summed_motion_submission_seconds": 82.34668219999999,
+  "interframe_min_ms": 20.084900000001653,
+  "interframe_mean_ms": 21.49487121529596,
+  "interframe_max_ms": 32.62739999999758,
+  "native_write_min_ms": 8.685400000002119,
+  "native_write_mean_ms": 11.438867136517972,
+  "native_write_max_ms": 12.102700000003097,
+  "timing": [
+    {
+      "label": "RESTOCK_INNER_OPEN",
+      "frames": 93,
+      "nominal_ms": 1860,
+      "submission_ms": 2001.1668,
+      "max_interframe_ms": 22.45930000000044
+    },
+    {
+      "label": "RESTOCK_BUFFER_OPEN",
+      "frames": 1018,
+      "nominal_ms": 20360,
+      "submission_ms": 21873.312400000003,
+      "max_interframe_ms": 30.75499999999738
+    },
+    {
+      "label": "RESTOCK_PUBLIC_HIGH",
+      "frames": 338,
+      "nominal_ms": 6760,
+      "submission_ms": 7271.031499999997,
+      "max_interframe_ms": 22.720399999998335
+    },
+    {
+      "label": "RESTOCK_PUBLIC_DESCEND",
+      "frames": 27,
+      "nominal_ms": 540,
+      "submission_ms": 582.4200999999957,
+      "max_interframe_ms": 22.26929999999993
+    },
+    {
+      "label": "RESTOCK_PUBLIC_LIFT",
+      "frames": 27,
+      "nominal_ms": 540,
+      "submission_ms": 582.0861999999979,
+      "max_interframe_ms": 22.684799999995448
+    },
+    {
+      "label": "RESTOCK_RETURN_BUFFER",
+      "frames": 848,
+      "nominal_ms": 16960,
+      "submission_ms": 18232.572400000005,
+      "max_interframe_ms": 22.81689999999071
+    },
+    {
+      "label": "RESTOCK_RETURN_INNER",
+      "frames": 942,
+      "nominal_ms": 18840,
+      "submission_ms": 20240.97140000001,
+      "max_interframe_ms": 32.62739999999758
+    },
+    {
+      "label": "RESTOCK_SOURCE_HIGH",
+      "frames": 59,
+      "nominal_ms": 1180,
+      "submission_ms": 1273.1533000000054,
+      "max_interframe_ms": 22.54539999998815
+    },
+    {
+      "label": "RESTOCK_SOURCE_DESCEND",
+      "frames": 219,
+      "nominal_ms": 4380,
+      "submission_ms": 4704.298899999994,
+      "max_interframe_ms": 22.754899999999907
+    },
+    {
+      "label": "RESTOCK_SOURCE_EXIT_CLEARANCE",
+      "frames": 14,
+      "nominal_ms": 280,
+      "submission_ms": 301.23679999999877,
+      "max_interframe_ms": 22.246200000008685
+    },
+    {
+      "label": "RESTOCK_SOURCE_EXIT_UP",
+      "frames": 59,
+      "nominal_ms": 1180,
+      "submission_ms": 1266.6506999999983,
+      "max_interframe_ms": 22.808300000004238
+    },
+    {
+      "label": "RESTOCK_SOURCE_EXIT_RECENTER",
+      "frames": 14,
+      "nominal_ms": 280,
+      "submission_ms": 300.09799999999814,
+      "max_interframe_ms": 22.102800000007846
+    },
+    {
+      "label": "RESTOCK_HOME",
+      "frames": 173,
+      "nominal_ms": 3460,
+      "submission_ms": 3717.683699999994,
+      "max_interframe_ms": 22.476800000004005
+    }
+  ],
+  "final_joint_error_deg_b_s_e_t_r_g": [
+    -0.6152343454812437,
+    0.9667968940942739,
+    -0.17578127430652982,
+    0.35156249131724676,
+    -0.43945312847050816,
+    -1.2204321319694107
+  ],
+  "release_home_and_park_feedback_observed": true,
+  "serial_closed": true,
+  "original_8mm_and_gripper_and_release_geometry_unchanged": true,
+  "residual_stops_enabled": false,
+  "no_motion_retry": true,
+  "physical_acceptance": "AWAITING_OPERATOR_FEEDBACK",
+  "frozen_vision_files_unchanged": 19,
+  "camera_or_fpga_accessed": false
+}

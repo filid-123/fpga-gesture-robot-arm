@@ -1,0 +1,13 @@
+{
+  "schema": "gesture.mode_ab.native_reference.v1",
+  "giao_source": {
+    "file": "docs/phase3c/mode_b_optimized_handoff_20261030/objects/eraser/PLAN.json",
+    "sha256": "c0c35386a74b5601f805e0a4bb93430e7a97f22332fc5fe0032b3fd8c0ec83d2"
+  },
+  "builder_sha256": "2dbcbea7f3f35e87ad09beea4cccef06b0c7287fa330d0d40ee1d44835e4f48a",
+  "files": {
+    "native_bank0.json": "05cac013d34714d41218b59f75de7c8362366ca86687ff2763abe498641151ce",
+    "native_bank1.json": "9eb6dbbdfacbda4fd18375d62e4bb7fb1478ee7749bde1e26191a7ca12c6d45d",
+    "native_bank2.json": "5edbd9f376df594f70f3c8e5467128bc3ee31f51efe2724a1b63ee37f208af6d"
+  }
+}

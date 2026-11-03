@@ -1,0 +1,22 @@
+{
+  "schema": "gesture.mode_a.manual_remaining_measurements.v1",
+  "recorded_date": "2026-10-27",
+  "units": "mm",
+  "frame": "desk_global_20261023; +X right,+Y inward,+Z up",
+  "source": "User measurements in this conversation following successful HIGH_FINISH; not synchronized metrology or a fresh robot capture.",
+  "cube_side_mm": 30,
+  "cube_centre_projection_D_mm": [540, 205],
+  "cube_bottom_height_mm": 122,
+  "base_yaw_axis_projection_D_mm": [585, 25],
+  "superseded_approximate_base_projection_D_mm": [600, 25],
+  "wrist_pitch_axis_projection_D_mm": [540, 210],
+  "wrist_point_semantics": "Centre of the gripper pitch rotation axis; explicitly asked, manually identified by operator.",
+  "operator_support_statement": "承托面先跟计划中的一样",
+  "actual_support_centre_D_mm": null,
+  "actual_support_top_height_mm": null,
+  "actual_support_size_and_rim_mm": null,
+  "support_statement_semantics": "Intention to use the plan, not a measurement; original H=(200,140,115) describes cube centre, with zero gap implying support top100mm.",
+  "related_high_evidence": "docs/phase3c/mode1_red_trial_20261026/HIGH_LIFT_SUCCESS_151815.json",
+  "reference_pose_binding": "Session-context association only. Fresh feedback and unchanged grip/setup must be checked before any later execution.",
+  "full_base_tool_calibration_accepted": false
+}

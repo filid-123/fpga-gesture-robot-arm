@@ -1,0 +1,151 @@
+{
+  "schema": "gesture.mode_b.filid_postlift_reference.v1",
+  "status": "DESKTOP_DIRECTION_REVERSED_WAITING_COORDINATE_CHECK",
+  "source_ref": "origin/codex/mode-a-hdmi-20261028",
+  "source_commit": "85b4bcaf000a8b69c50ca6d65bbd88b07afe4735",
+  "source_files_sha256": {
+    "planning/mode_a_layout_v082.json": "22a6861d6916828b91bfc0aed274b66b798152fef2d9c04980984563601fd5ab",
+    "scripts/prepare_mode_a_follow.py": "7914be5a4ee3a922480d52699c1c85fbb10b68bdfc33afa694cd716cf4d6643a",
+    "scripts/mode_a_follow_profile.py": "cc6e22cff6e3dca1a8bfd8e3844fc8f321be0aeb68172c7815ccf6a34f22f19d",
+    "scripts/mode_a_palmfix_config.py": "7b7b3f7537f161e2d63c6e24d8916a649ce12e34b433b01564b273519c3a69f2",
+    "scripts/plan_mode_a_residual.py": "6878020be2827cb14ebcc652f2b3d117763aa08a03919ab43f6863c095707eee",
+    "scripts/plan_mode_a_nominal.py": "afcf224252c86f3d5386e2d8bf4fc9602b10bd9a1c1c38eedcafcfad3c32f358",
+    "docs/mode_a_follow_v0_11_0/README_CN.md": "7151e4f4e894ee2a15044c5158e4bbb2a700e294edf5266490e72aace9b1452d",
+    "docs/mode_a_hdmi_v0_12_0/INTERFACE_CN.md": "552b675a83aaf86b358cf9c9ab7031ec2feb722b315a146e996383d04cb7f5b6"
+  },
+  "source_snapshot": "artifacts/phase3c/mode_b_ttl_20261028/filid_reference_85b4bca",
+  "frame": "desk_global_mm",
+  "base_axis_xy_mm": [
+    585,
+    25
+  ],
+  "waypoint_semantics": "FILID_HAND_TCP_ORIGIN_AT_LINK5_LOCAL_0_0_115.428MM; NOT_SUPPORT_SURFACE_OR_CUBE_BOTTOM",
+  "reference_link5_tcp_xyz_mm": [
+    0,
+    0,
+    115.428
+  ],
+  "common": {
+    "INNER": [
+      585,
+      225,
+      90
+    ],
+    "B": [
+      360,
+      200,
+      160
+    ]
+  },
+  "default_bank": 1,
+  "banks": [
+    {
+      "bank": 0,
+      "PRE": [
+        350,
+        155,
+        180
+      ],
+      "H": [
+        285,
+        135,
+        175
+      ],
+      "H_CLEAR": [
+        285,
+        135,
+        195
+      ],
+      "reference_handover_tilt_deg": 40
+    },
+    {
+      "bank": 1,
+      "PRE": [
+        350,
+        215,
+        180
+      ],
+      "H": [
+        285,
+        195,
+        175
+      ],
+      "H_CLEAR": [
+        285,
+        195,
+        195
+      ],
+      "reference_handover_tilt_deg": 40
+    },
+    {
+      "bank": 2,
+      "PRE": [
+        350,
+        275,
+        180
+      ],
+      "H": [
+        285,
+        255,
+        175
+      ],
+      "H_CLEAR": [
+        285,
+        255,
+        195
+      ],
+      "reference_handover_tilt_deg": 35
+    }
+  ],
+  "support_proxy": {
+    "top_z_mm": 150,
+    "size_xy_mm": [
+      80,
+      80
+    ],
+    "status": "TEAMMATE_PALM_PROXY_NOT_CURRENTLY_MEASURED_FIXTURE"
+  },
+  "interaction": {
+    "buffer": "HOLD_ONLY",
+    "pre_minimum_wait_s": 2,
+    "palm_confirm_s": 0.5,
+    "fist_cancel_s": 1,
+    "cancel": "RETURN_TO_ORIGINAL_DYNAMIC_PICKUP_BEFORE_RELEASE; RELEASED_OBJECT_IS_NOT_RETRIEVED",
+    "retarget": "PAUSE_DRAIN_CLEAR_FROM_LAST_DELIVERED; NO_OLD_OR_STALE_TARGET_REPLAY"
+  },
+  "native_reference": {
+    "command": 102,
+    "arm_units": "rad",
+    "hand_field": "hand",
+    "period_s": 0.02,
+    "baud": 115200,
+    "speed_steps_s": 660,
+    "acceleration_100_steps_s2": 33,
+    "tracking_query_every_motion_frames": 3
+  },
+  "mode_b_invariants": {
+    "keep_operator_accepted_low_home": true,
+    "keep_current_successful_grasp_correction": true,
+    "dynamic_camera_pickup": true,
+    "copy_mode_a_fixed_pickup_slots": false,
+    "copy_mode_a_old_joint_residual": false,
+    "copy_mode_a_class_selection": false
+  },
+  "physical_execution_allowed": false,
+  "operator_decisions": {
+    "support_top_150mm_accepted": true,
+    "support_not_placed_yet": false,
+    "support_readiness_basis": "OPERATOR_SAYS_SAME_AS_FILID_FOR_COMPLETE_TRIAL; NOT_INDEPENDENTLY_MEASURED",
+    "current_overhead_clear": true,
+    "current_payload": "EMPTY_RETURNED_LOW_HOME; LATEST_PICKUP_FAILED_OPERATOR_CONFIRMED",
+    "two_previous_pickups_failed_operator_confirmed": true,
+    "previous_cube_offset_away_from_base_mm": [
+      18,
+      20
+    ],
+    "buffer_delivery_positions_operator_accepted": true,
+    "previous_tail_did_not_hit_object_operator_confirmed": true,
+    "low_home_return_operator_accepted": true,
+    "source": "USER_20261028_CONFIRMED"
+  }
+}

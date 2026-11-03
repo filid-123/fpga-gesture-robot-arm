@@ -1,0 +1,20 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 21:39:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/handoff/xsim_script.tcl
+# xsim {handoff} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: full root native B completes, ownership fence acknowledges and restores host P2P HOME transition
+PASS: host P2P returns ownership to native B with the same immutable program
+PASS: asynchronous reset drains the real elastic output, invalidates route/backend configuration and rejects motion before complete RAM reload
+$finish called at time : 3453220 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/reset_warning_release/tb.sv" Line 70
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 233.461 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 21:39:39 2026...

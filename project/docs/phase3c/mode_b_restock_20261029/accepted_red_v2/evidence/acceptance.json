@@ -1,0 +1,34 @@
+{
+  "schema": "gesture.mode_b.restock_physical_acceptance.v1",
+  "date": "2026-10-29",
+  "status": "OPERATOR_ACCEPTED_COMPLETE_RESTOCK",
+  "operator_reply": "全程正常",
+  "object_class": "red_cube",
+  "public_xy_mm": [
+    300,
+    200
+  ],
+  "return_centre_mm": [
+    651.879446649631,
+    257.80145957601377,
+    15.0
+  ],
+  "plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_return_20261029\\red_speed2_v1\\RESTOCK_PLAN.json",
+  "plan_sha256": "0f9cbb16f22f97c7f11190558cc8e3597886846480939bc81b3819f86f71bad6",
+  "result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_return_20261029\\session_runs\\20261029_094927_5503514\\RESTOCK_RESULT.json",
+  "result_sha256": "aa3fe1bf24d0180a5336566f519b9bef94e291f476e3c29d079f5a6c3f0c5db4",
+  "session_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_return_20261029\\session_runs\\20261029_094927_5503514\\SESSION.json",
+  "session_sha256": "f875a3ea0d3cbf7e4412ab0a4c68df8b360a6b52c9cdebe2ac1e46aa2eba1056",
+  "engine_sha256": "436d0e79d3c61a2cd600b21a585f5c7b9f5e60f893486dbb8adb707bdd9cc9fc",
+  "execution_verification_sha256": "bfb477b03b457c3bf14c2e9c475e8442f0626a36e003b5f31da6d3c3de4f2265",
+  "public_grasp_accepted": true,
+  "no_slip_in_transport_accepted": true,
+  "original_source_placement_accepted": true,
+  "exit_and_empty_home_accepted": true,
+  "first_request_to_final_feedback_seconds": 130.6435419,
+  "reduction_from_v1_percent": 25.25345228360141,
+  "reduction_from_original_percent": 35.97173321779543,
+  "mean_interframe_ms": 21.49487121529596,
+  "original_wire_count": 3835,
+  "no_next_trial_started": true
+}

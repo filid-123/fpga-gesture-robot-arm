@@ -1,0 +1,37 @@
+{
+  "schema": "gesture.operator_video_response_review.v1",
+  "date": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "release": "0.1.0-p4.1",
+  "source": "OPERATOR_REVIEW_OF_RECORDED_FIELD_TEST",
+  "measurement_start": "Trigger gesture already in the camera field of view",
+  "measurement_end": "First visible physical motion of the robot arm",
+  "reported_duration_s": 0.62,
+  "reported_duration_ms": 620,
+  "method": "Operator stopwatch timing of recorded physical testing, reviewed from a second camera view.",
+  "status": "VIDEO_STOPWATCH_OPERATOR_REPORTED",
+  "reported_duration_values": 1,
+  "underlying_trial_count": null,
+  "mode_or_task_stage": null,
+  "video_path_and_frame_rate": null,
+  "timing_uncertainty_ms": null,
+  "raw_video_in_repository": false,
+  "distribution_statistics": {
+    "status": "INSUFFICIENT_REPEATED_TIMINGS",
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null,
+    "max_ms": null,
+    "reason": "One duration value was reported; no per-trial timing series or confirmed trial count was supplied. Do not assign this value to all percentiles or infer a maximum."
+  },
+  "superseded_estimate": {
+    "reported_duration_s": 2.4,
+    "status": "RETRACTED_BY_OPERATOR",
+    "reason": "Operator corrected the earlier video reading after reviewing another view",
+    "used_in_current_metrics": false
+  },
+  "new_hardware_test": false,
+  "production_behavior_changed": false,
+  "earlier_recovery_snapshot": "metrics/evidence/recovered_20261101/summary.json",
+  "note": "The prior recovery snapshot describes what could be reconstructed from the original logs before this video-timing report. It remains unchanged as historical evidence."
+}

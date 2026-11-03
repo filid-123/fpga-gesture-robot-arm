@@ -1,0 +1,98 @@
+{
+  "schema": "gesture.vision_ttl_poll_observation.v1",
+  "release": "0.1.0-p4.1",
+  "clock": "FPGA VIS+0x84 millisecond counter, modulo 2^32, read by sequential JTAG telemetry",
+  "start": "Matching qualified selection at last IDLE or first observed task admission",
+  "end": "First strictly later RUN observation with a fresh full six-channel TTL feedback snapshot after observed motion TX",
+  "scope": "Observed software-hardware feedback loop, including sampling delay and mode B path preparation. No per-command acknowledgment pairing or physical-motion onset timestamp.",
+  "sessions": [
+    {
+      "session": "ab_20261030_222822",
+      "telemetry_sha256": "cd96f5b6bf326bf28d2f523facbbc77fbb51ea4aef7082f206be47f0b65b236a",
+      "rows": 4258,
+      "accepted": 7,
+      "excluded": {
+        "motion_tx_unobserved_before_exit": 15,
+        "qualified_gesture_unobserved": 6
+      }
+    },
+    {
+      "session": "ab_20261030_225113",
+      "telemetry_sha256": "f48f6bef9079a14803b7ac5a46df31fdc7fe3491aeb5d9551369be141eb90c4b",
+      "rows": 2726,
+      "accepted": 2,
+      "excluded": {
+        "motion_tx_unobserved_before_exit": 9
+      }
+    },
+    {
+      "session": "ab_20261030_233230",
+      "telemetry_sha256": "a995b3939a1e237265f9d21790dbeb16921cfcab1840988922f01c5f77bae269",
+      "rows": 7163,
+      "accepted": 7,
+      "excluded": {
+        "motion_tx_unobserved_before_exit": 28,
+        "qualified_gesture_unobserved": 2
+      }
+    },
+    {
+      "session": "ab_20261031_230338",
+      "telemetry_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0,
+      "accepted": 0,
+      "excluded": {}
+    },
+    {
+      "session": "ab_20261031_230618",
+      "telemetry_sha256": "97a29731d18d76b37fd50955ae0b790600fb59ee031f54a6ad0cc37c08706275",
+      "rows": 5279,
+      "accepted": 0,
+      "excluded": {}
+    },
+    {
+      "session": "ab_20261031_233419",
+      "telemetry_sha256": "bbfd1db749087ec8c4ef91e36f025375d2d28449e20f437bd8f5fdd5593b6bf9",
+      "rows": 5020,
+      "accepted": 16,
+      "excluded": {
+        "motion_tx_unobserved_before_exit": 9
+      }
+    }
+  ],
+  "modes": {
+    "A": {
+      "vision_to_ttl_feedback_observed_ms": {
+        "n": 14,
+        "p50": 493.0,
+        "p95": 542.95,
+        "p99": 551.79,
+        "max": 554.0
+      },
+      "feedback_observation_step_ms": {
+        "n": 14,
+        "p50": 261.0,
+        "p95": 293.95,
+        "p99": 313.18999999999994,
+        "max": 318.0
+      }
+    },
+    "B": {
+      "vision_to_ttl_feedback_observed_ms": {
+        "n": 18,
+        "p50": 14985.0,
+        "p95": 22125.55,
+        "p99": 23007.51,
+        "max": 23228.0
+      },
+      "feedback_observation_step_ms": {
+        "n": 18,
+        "p50": 314.5,
+        "p95": 354.75,
+        "p99": 358.15,
+        "max": 359.0
+      }
+    }
+  },
+  "samples_sha256": "199612635950f5894cb92acf5c471989b62b196d3e4ce4b78aa684e0ee6a3edb",
+  "script_sha256": "4d96aeb506fd05ee3da5b7a5d929d76d4f0c214c0e369580d15240269d5b1160"
+}

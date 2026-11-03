@@ -1,0 +1,54 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_uart_tx.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_uart_rx.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_half_duplex_dir_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_half_duplex_dir_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_joint_unit_mapper.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_joint_unit_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_frame_formatter.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_frame_formatter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_json_feedback_parser.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_json_feedback_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_feedback_watchdog.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_feedback_watchdog
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_motion_permission_gate.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_motion_permission_gate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_backend_core.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_backend_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/arm_backend_axi_top.v" into library work
+INFO: [VRFC 10-311] analyzing module arm_backend_axi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_seq_mult.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_seq_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_seq_div.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_seq_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_p2p_core.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_p2p_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/b_route_ram.v" into library work
+INFO: [VRFC 10-311] analyzing module b_route_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/b_route_player.v" into library work
+INFO: [VRFC 10-311] analyzing module b_route_player
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/planner_axi_top.v" into library work
+INFO: [VRFC 10-311] analyzing module planner_axi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/motion_sample_mux.v" into library work
+INFO: [VRFC 10-311] analyzing module motion_sample_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/phase3_s2_motion_top.v" into library work
+INFO: [VRFC 10-311] analyzing module phase3_s2_motion_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/s4_axil_window.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_axil_window
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/s4_motion_link.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_motion_link
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/s4_task_regs.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/s4_task_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/phase3_s4_task_top.v" into library work
+INFO: [VRFC 10-311] analyzing module phase3_s4_task_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/hand_align_region_lut.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_align_region_lut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/hand_y_step_map.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_y_step_map
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/hand_align_target_core.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_align_target_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/backend_final/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb

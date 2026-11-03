@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "B lock explains unready RGB",
+    "ready RGB permits idle B lock",
+    "planning failure appears in task area",
+    "planning failure does not replace configuration status"
+  ],
+  "transport": "FAKE_STATUS_ONLY",
+  "hardware_access": false
+}

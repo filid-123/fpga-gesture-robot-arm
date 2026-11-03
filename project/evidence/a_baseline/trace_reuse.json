@@ -1,0 +1,13 @@
+{
+  "result": "PASS_FINAL_S4_COMMAND_TRACE_IDENTICAL_AFTER_EVENT_BIT_REPAIR",
+  "old_trace_sha256": "00d2bc0d3e89222ea3fddb951593a350e683712717856f0d9f8885356e472e59",
+  "final_trace_sha256": "00d2bc0d3e89222ea3fddb951593a350e683712717856f0d9f8885356e472e59",
+  "final_core": "mode_a_restock_task_a5",
+  "reused_replay": "mode_a_restock_replay_a1",
+  "reused_s2": "mode_a_restock_s2_xsim_a1",
+  "reused_coppelia": [
+    "mode_a_restock_replay_coppelia_exact_a1",
+    "mode_a_restock_replay_coppelia_wire_a1"
+  ],
+  "scope": "Only completion event bit moved11->14; all emitted motion commands, cancellation targets, durations and endpoints byte-identical. Reuse exact176legs/8776samples S2 and mesh replay results. No physical test."
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "gesture.ai_pc.mode_b_profile.v1",
+  "profile_id": "mode_b_red_eraser_canister_v1",
+  "status": "ARCHITECTURE_APPROVED_TRAINING_CANDIDATE_PENDING",
+  "approved_on": "2026-10-26",
+  "classes": ["red_cube", "yellow_cube", "blue_cube", "eraser", "small_canister", "scissors"],
+  "task_mapping": {"1": "red_cube", "2": "eraser", "3": "small_canister"},
+  "fallback_baseline_id": "rgb_cubes_20261026_v1",
+  "physical_execution": false,
+  "metric_localization_accepted": false,
+  "objects": [
+    {"name":"red_cube","task_id":1,"grasp_target":true,"shape":"square","placement":"FLAT","dimensions_mm":{"side":30,"height":30},"dimensions_verified":false},
+    {"name":"yellow_cube","task_id":null,"grasp_target":false,"shape":null},
+    {"name":"blue_cube","task_id":null,"grasp_target":false,"shape":null},
+    {
+      "name":"eraser","task_id":2,"grasp_target":true,"shape":"rectangle",
+      "placement":"LARGEST_FACE_UP",
+      "dimensions_mm":{"length":65,"width":15,"height":15},
+      "dimensions_verified":true,
+      "dimension_provenance":{
+        "source":"USER_REPORTED_AND_CONFIRMED",
+        "confirmed_on":"2026-10-27",
+        "axis_order":"LENGTH_WIDTH_HEIGHT",
+        "confirmed_values_mm":[65,15,15],
+        "clarification":"USER_CONFIRMED_6_5_BY_1_5_BY_1_5_CM_AFTER_INITIAL_UNITLESS_INPUT",
+        "independently_measured_by_assistant":false,
+        "uncertainty_mm":null
+      },
+      "instance_recognition_accepted":false,
+      "grasp_parameters_verified":false
+    },
+    {
+      "name":"small_canister","task_id":3,"grasp_target":true,"shape":"circle",
+      "selected_instance":"cylindrical_medicine_bottle",
+      "placement":"UPRIGHT_CLOSED_FLAT_TOP",
+      "dimensions_mm":{"top_diameter":25,"body_diameter":25,"height":46},
+      "dimensions_verified":true,
+      "dimension_provenance":{
+        "source":"USER_REPORTED_AND_CONFIRMED",
+        "confirmed_on":"2026-10-27",
+        "diameter_scope":"CAP_AND_BODY_BOTH_25_MM",
+        "independently_measured_by_assistant":false,
+        "uncertainty_mm":null
+      },
+      "instance_recognition_accepted":false,
+      "grasp_parameters_verified":false
+    },
+    {"name":"scissors","task_id":null,"grasp_target":false,"shape":null}
+  ]
+}

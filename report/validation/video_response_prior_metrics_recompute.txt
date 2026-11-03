@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "public_metrics_recomputed": [
+    "communication",
+    "ai_quality",
+    "fpga",
+    "tasks"
+  ],
+  "hardware_access": false
+}

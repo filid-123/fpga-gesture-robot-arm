@@ -1,0 +1,10 @@
+{
+  "probability": 0.3,
+  "raw_signed_int32": -11748,
+  "comparison": ">=",
+  "raw_confidence_scale": 7.211674627785822e-05,
+  "reject_boundary": -11749,
+  "accept_boundary": -11748,
+  "in_Locator_weight_ROM": false,
+  "changed_from_v2": false
+}

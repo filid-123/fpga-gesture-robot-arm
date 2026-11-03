@@ -1,0 +1,396 @@
+{
+  "passed": true,
+  "hardware_accessed": false,
+  "cases": [
+    {
+      "object_class": "red_cube",
+      "base_speed": 2,
+      "old_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_red_retry_20261030\\return_fast_v3\\LOADED_ROUTE_PLAN.json",
+      "old_plan_sha256": "c792f634b467310403bf5674603e692ccece67e824ed3de398729851a6f86c26",
+      "new_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_speed_release_20261030\\red_cube\\LOADED_ROUTE_PLAN.json",
+      "new_plan_sha256": "173c224ce7228be0f0e9a9d6fd6e588b035980dfb8b6b7962cdc11aae4fa688c",
+      "old_seconds": 22.62,
+      "new_seconds": 22.62,
+      "grasp_frames_exactly_preserved": true,
+      "gripper_events_exactly_preserved": true,
+      "scene_and_offsets_preserved": true,
+      "max_numeric_tolerance_rad": 1e-08,
+      "phase_comparison": [
+        {
+          "phase": "DIRECT_PREGRASP",
+          "old_seconds": 6.32,
+          "new_seconds": 6.32,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 158,
+          "new_frames": 158
+        },
+        {
+          "phase": "DESCEND",
+          "old_seconds": 2.04,
+          "new_seconds": 2.04,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 51,
+          "new_frames": 51
+        },
+        {
+          "phase": "LIFT",
+          "old_seconds": 7.5600000000000005,
+          "new_seconds": 7.5600000000000005,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 189,
+          "new_frames": 189
+        },
+        {
+          "phase": "INNER_HOLD",
+          "old_seconds": 0.6,
+          "new_seconds": 0.6,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 30,
+          "new_frames": 30
+        },
+        {
+          "phase": "BUFFER",
+          "old_seconds": 0.7000000000000001,
+          "new_seconds": 0.7000000000000001,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 35,
+          "new_frames": 35
+        },
+        {
+          "phase": "PREPLACE",
+          "old_seconds": 0.28,
+          "new_seconds": 0.28,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 14,
+          "new_frames": 14
+        },
+        {
+          "phase": "PLACE",
+          "old_seconds": 1.1,
+          "new_seconds": 1.1,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 55,
+          "new_frames": 55
+        },
+        {
+          "phase": "RELEASE_CLEARANCE",
+          "old_seconds": 0.52,
+          "new_seconds": 0.52,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 26,
+          "new_frames": 26
+        },
+        {
+          "phase": "RETREAT",
+          "old_seconds": 0.28,
+          "new_seconds": 0.28,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 14,
+          "new_frames": 14
+        },
+        {
+          "phase": "RETURN_CLEAR",
+          "old_seconds": 0.46,
+          "new_seconds": 0.46,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 23,
+          "new_frames": 23
+        },
+        {
+          "phase": "INNER_RETURN",
+          "old_seconds": 2.16,
+          "new_seconds": 2.16,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 108,
+          "new_frames": 108
+        },
+        {
+          "phase": "RETURN_LOW_HOME",
+          "old_seconds": 0.6,
+          "new_seconds": 0.6,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 30,
+          "new_frames": 30
+        }
+      ],
+      "geometry_checked": {
+        "passed": true,
+        "pickup": {
+          "model_samples_checked": 1194,
+          "maximum_velocity_deg_s": 23.972220500911074,
+          "maximum_acceleration_deg_s2": 95.2535099635385
+        },
+        "postlift": {
+          "model_samples_checked": 1005,
+          "minimum_finger_height_mm": 58.86713033101107,
+          "minimum_payload_bottom_loaded_mm": 80.98085844144619,
+          "maximum_chord_error_mm": 0.15368454453699176,
+          "maximum_loaded_tilt_deg": 18.736281763295242,
+          "passed": true,
+          "rigid_attachment_not_friction": true
+        }
+      },
+      "physical_test_performed_this_task": false
+    },
+    {
+      "object_class": "small_canister",
+      "base_speed": 2,
+      "old_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\cylinder_trial_v2\\native_plan_v1\\LOADED_ROUTE_PLAN.json",
+      "old_plan_sha256": "9b03b34caac2791fbd957dd6f20a0ec441b3ff242640f7e7663ffe4b59321fb6",
+      "new_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_speed_release_20261030\\small_canister\\LOADED_ROUTE_PLAN.json",
+      "new_plan_sha256": "90f84f7b34cc351e8bff18e0197560b46207904cf389a1bfae8a4c02d5c02ff1",
+      "old_seconds": 43.9,
+      "new_seconds": 23.1,
+      "grasp_frames_exactly_preserved": true,
+      "gripper_events_exactly_preserved": true,
+      "scene_and_offsets_preserved": true,
+      "max_numeric_tolerance_rad": 1e-08,
+      "phase_comparison": [
+        {
+          "phase": "DIRECT_PREGRASP",
+          "old_seconds": 7.24,
+          "new_seconds": 7.24,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 181,
+          "new_frames": 181
+        },
+        {
+          "phase": "DESCEND",
+          "old_seconds": 2.16,
+          "new_seconds": 2.16,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 54,
+          "new_frames": 54
+        },
+        {
+          "phase": "LIFT",
+          "old_seconds": 6.8,
+          "new_seconds": 6.8,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 170,
+          "new_frames": 170
+        },
+        {
+          "phase": "INNER_HOLD",
+          "old_seconds": 0.86,
+          "new_seconds": 0.86,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 43,
+          "new_frames": 43
+        },
+        {
+          "phase": "BUFFER",
+          "old_seconds": 14.040000000000001,
+          "new_seconds": 0.7000000000000001,
+          "max_endpoint_error_rad": 1.1102230246251565e-16,
+          "old_frames": 702,
+          "new_frames": 35
+        },
+        {
+          "phase": "PREPLACE",
+          "old_seconds": 2.04,
+          "new_seconds": 0.28,
+          "max_endpoint_error_rad": 1.4259593505983048e-10,
+          "old_frames": 102,
+          "new_frames": 14
+        },
+        {
+          "phase": "PLACE",
+          "old_seconds": 1.1,
+          "new_seconds": 1.1,
+          "max_endpoint_error_rad": 2.1213475420722716e-11,
+          "old_frames": 55,
+          "new_frames": 55
+        },
+        {
+          "phase": "RELEASE_CLEARANCE",
+          "old_seconds": 0.52,
+          "new_seconds": 0.52,
+          "max_endpoint_error_rad": 2.3744783916868073e-11,
+          "old_frames": 26,
+          "new_frames": 26
+        },
+        {
+          "phase": "RETREAT",
+          "old_seconds": 5.6000000000000005,
+          "new_seconds": 0.28,
+          "max_endpoint_error_rad": 4.2163605940004345e-11,
+          "old_frames": 280,
+          "new_frames": 14
+        },
+        {
+          "phase": "RETURN_CLEAR",
+          "old_seconds": 0.84,
+          "new_seconds": 0.46,
+          "max_endpoint_error_rad": 4.32729407862098e-11,
+          "old_frames": 42,
+          "new_frames": 23
+        },
+        {
+          "phase": "INNER_RETURN",
+          "old_seconds": 2.18,
+          "new_seconds": 2.18,
+          "max_endpoint_error_rad": 4.1729911193222335e-11,
+          "old_frames": 109,
+          "new_frames": 109
+        },
+        {
+          "phase": "RETURN_LOW_HOME",
+          "old_seconds": 0.52,
+          "new_seconds": 0.52,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 26,
+          "new_frames": 26
+        }
+      ],
+      "geometry_checked": {
+        "passed": true,
+        "pickup": {
+          "model_samples_checked": 1215,
+          "maximum_velocity_deg_s": 23.982178350685004,
+          "maximum_acceleration_deg_s2": 84.85909728438317
+        },
+        "postlift": {
+          "model_samples_checked": 1035,
+          "minimum_finger_height_mm": 59.070800190876476,
+          "minimum_payload_bottom_loaded_mm": 70.87557187959743,
+          "maximum_chord_error_mm": 0.18237165582207573,
+          "maximum_loaded_tilt_deg": 20.314945309344946,
+          "passed": true,
+          "rigid_attachment_not_friction": true
+        }
+      },
+      "physical_test_performed_this_task": false
+    },
+    {
+      "object_class": "eraser",
+      "base_speed": 3,
+      "old_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\eraser_right10_trial_v1\\complete_trials\\20261028_144419_0188168\\native_plan\\LOADED_ROUTE_PLAN.json",
+      "old_plan_sha256": "0e94b1f1ce3e0d6d5a30113325c522477923a94830817c3cfc2b17c330fc0a3f",
+      "new_plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_speed_release_20261030\\eraser\\LOADED_ROUTE_PLAN.json",
+      "new_plan_sha256": "c0c35386a74b5601f805e0a4bb93430e7a97f22332fc5fe0032b3fd8c0ec83d2",
+      "old_seconds": 29.02,
+      "new_seconds": 15.0,
+      "grasp_frames_exactly_preserved": true,
+      "gripper_events_exactly_preserved": true,
+      "scene_and_offsets_preserved": true,
+      "max_numeric_tolerance_rad": 1e-08,
+      "phase_comparison": [
+        {
+          "phase": "DIRECT_PREGRASP",
+          "old_seconds": 4.96,
+          "new_seconds": 4.96,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 124,
+          "new_frames": 124
+        },
+        {
+          "phase": "DESCEND",
+          "old_seconds": 1.44,
+          "new_seconds": 1.44,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 36,
+          "new_frames": 36
+        },
+        {
+          "phase": "LIFT",
+          "old_seconds": 3.56,
+          "new_seconds": 3.56,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 89,
+          "new_frames": 89
+        },
+        {
+          "phase": "INNER_HOLD",
+          "old_seconds": 0.62,
+          "new_seconds": 0.62,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 31,
+          "new_frames": 31
+        },
+        {
+          "phase": "BUFFER",
+          "old_seconds": 9.8,
+          "new_seconds": 0.6,
+          "max_endpoint_error_rad": 1.1102230246251565e-16,
+          "old_frames": 490,
+          "new_frames": 30
+        },
+        {
+          "phase": "PREPLACE",
+          "old_seconds": 1.34,
+          "new_seconds": 0.22,
+          "max_endpoint_error_rad": 1.113553693699032e-11,
+          "old_frames": 67,
+          "new_frames": 11
+        },
+        {
+          "phase": "PLACE",
+          "old_seconds": 0.7000000000000001,
+          "new_seconds": 0.7000000000000001,
+          "max_endpoint_error_rad": 7.068123863973597e-12,
+          "old_frames": 35,
+          "new_frames": 35
+        },
+        {
+          "phase": "RELEASE_CLEARANCE",
+          "old_seconds": 0.36,
+          "new_seconds": 0.36,
+          "max_endpoint_error_rad": 7.068901020090834e-12,
+          "old_frames": 18,
+          "new_frames": 18
+        },
+        {
+          "phase": "RETREAT",
+          "old_seconds": 3.84,
+          "new_seconds": 0.22,
+          "max_endpoint_error_rad": 3.4487968036955863e-12,
+          "old_frames": 192,
+          "new_frames": 11
+        },
+        {
+          "phase": "RETURN_CLEAR",
+          "old_seconds": 0.54,
+          "new_seconds": 0.46,
+          "max_endpoint_error_rad": 2.567057677538287e-12,
+          "old_frames": 27,
+          "new_frames": 23
+        },
+        {
+          "phase": "INNER_RETURN",
+          "old_seconds": 1.5,
+          "new_seconds": 1.5,
+          "max_endpoint_error_rad": 2.3915314173450497e-12,
+          "old_frames": 75,
+          "new_frames": 75
+        },
+        {
+          "phase": "RETURN_LOW_HOME",
+          "old_seconds": 0.36,
+          "new_seconds": 0.36,
+          "max_endpoint_error_rad": 0.0,
+          "old_frames": 18,
+          "new_frames": 18
+        }
+      ],
+      "geometry_checked": {
+        "passed": true,
+        "pickup": {
+          "model_samples_checked": 747,
+          "maximum_velocity_deg_s": 35.88716739070337,
+          "maximum_acceleration_deg_s2": 173.16524530624443
+        },
+        "postlift": {
+          "model_samples_checked": 756,
+          "minimum_finger_height_mm": 59.21932698943671,
+          "minimum_payload_bottom_loaded_mm": 76.81281532861293,
+          "maximum_chord_error_mm": 0.17223958845735757,
+          "maximum_loaded_tilt_deg": 19.482721828203736,
+          "passed": true,
+          "rigid_attachment_not_friction": true
+        }
+      },
+      "physical_test_performed_this_task": false
+    }
+  ]
+}

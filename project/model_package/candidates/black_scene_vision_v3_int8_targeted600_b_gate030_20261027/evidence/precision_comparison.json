@@ -1,0 +1,39 @@
+{
+  "old_dev": {
+    "hand_float_correct_integer_wrong": 7,
+    "hand_integer_correct_float_wrong": 4,
+    "corrected_ids": [
+      "project_black:session_20261006_020734_p02_p02_black_20261006_right_near_two:images/two_000012.png",
+      "project_black:session_20261006_020734_p02_p02_black_20261006_right_near_two:images/two_000018.png",
+      "project_black:session_20261006_020734_p02_p02_black_20261006_right_near_two:images/two_000024.png",
+      "project_black:session_20261006_020956_p02_p02_black_20261006_right_middle_one:images/one_000006.png"
+    ],
+    "regressed_ids": [
+      "project_black:session_20261006_020650_p02_p02_black_20261006_right_near_one:images/one_000004.png",
+      "project_black:session_20261006_020734_p02_p02_black_20261006_right_near_two:images/two_000007.png",
+      "project_black:session_20261006_020900_p02_p02_black_20261006_right_near_fist:images/fist_000006.png",
+      "project_black:session_20261006_020956_p02_p02_black_20261006_right_middle_one:images/one_000005.png",
+      "project_black:session_20261006_021038_p02_p02_black_20261006_right_middle_two:images/two_000019.png",
+      "project_black:session_20261006_021119_p02_p02_black_20261006_right_middle_three:images/three_000020.png",
+      "project_black:session_20261006_021201_p02_p02_black_20261006_right_middle_fist:images/fist_000008.png"
+    ],
+    "same_ROI": 101,
+    "records": 270
+  },
+  "usb_dev": {
+    "hand_float_correct_integer_wrong": 0,
+    "hand_integer_correct_float_wrong": 0,
+    "corrected_ids": [],
+    "regressed_ids": [],
+    "same_ROI": 67,
+    "records": 120
+  },
+  "targeted_dev": {
+    "hand_float_correct_integer_wrong": 0,
+    "hand_integer_correct_float_wrong": 0,
+    "corrected_ids": [],
+    "regressed_ids": [],
+    "same_ROI": 95,
+    "records": 160
+  }
+}

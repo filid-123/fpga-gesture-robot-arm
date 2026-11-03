@@ -1,0 +1,349 @@
+{
+  "algorithm": "SHA256",
+  "files": {
+    "BRANCH_TEST_CN.md": {
+      "bytes": 2354,
+      "sha256": "fc79febbca0a99c031ab09472b3c77c4c7dd0c3db45095d3a2f7d2bc2aa7994c"
+    },
+    "DYNAMIC_INPUT_EXAMPLE.json": {
+      "bytes": 1078,
+      "sha256": "a8ffce5380172d0a2a31ac370917599148da29e6940bf6ff0cce99c1d501b3c4"
+    },
+    "HOME.json": {
+      "bytes": 2687,
+      "sha256": "8840ed92bb15cd6c1379fe33e279eb27513f300b7c80b866ff86ea3b85baae40"
+    },
+    "INTEGRATION_CN.md": {
+      "bytes": 5740,
+      "sha256": "f81540f03b97047f91432b5eb59a11f32627d5fdd65d19ba5fcdffcef9e2f254"
+    },
+    "objects/eraser/commands.jsonl": {
+      "bytes": 220371,
+      "sha256": "6ed9cadcbd935eea101c31a9a27c9bf77250e41cec40152eb6000da8c37d94bd"
+    },
+    "objects/eraser/evidence/ACCEPTANCE.json": {
+      "bytes": 3011,
+      "sha256": "c6ffce6b3703bce7074a8e431d7586d765aa170798491d12eeee7b1b17d21266"
+    },
+    "objects/eraser/evidence/COPPELIA.json": {
+      "bytes": 2776,
+      "sha256": "572e77cb4a026b6f072a983d661a3230eced1dc4d247751ed8d10d97acaba5ac"
+    },
+    "objects/eraser/evidence/PLAN.json": {
+      "bytes": 981834,
+      "sha256": "0e94b1f1ce3e0d6d5a30113325c522477923a94830817c3cfc2b17c330fc0a3f"
+    },
+    "objects/eraser/evidence/RESULT.json": {
+      "bytes": 486029,
+      "sha256": "7601992893f30165d18eb8cf4afdaf50a46e708e548ab9f43aeb4e4252256e94"
+    },
+    "objects/eraser/motion_q16.mem": {
+      "bytes": 60100,
+      "sha256": "05d52de7f13ac11250bff65ee419cdeded2e0cfd9c98b1267eecce80a9910690"
+    },
+    "objects/eraser/phase_map.json": {
+      "bytes": 5291,
+      "sha256": "320277d02013390f05b63ddb12804e26af36c06fe5c21680cc6c84d96a16c3bc"
+    },
+    "objects/eraser/PROFILE.json": {
+      "bytes": 1802,
+      "sha256": "3abf6f2268ae55b131823590f3f4dba5b0c45b3ea98a0254bcc14b5844dbfdd8"
+    },
+    "objects/eraser/sequence.jsonl": {
+      "bytes": 390834,
+      "sha256": "69781243c92fb4ec79f9f53ad8366fe885c56e69dc741a991298ec41fc0e6858"
+    },
+    "objects/red_cube/commands.jsonl": {
+      "bytes": 325715,
+      "sha256": "b5930007018cc4d5e7c2d3d9d9e8c7b64818bd720e9fe0f5d066929a17d01777"
+    },
+    "objects/red_cube/evidence/ACCEPTANCE.json": {
+      "bytes": 1289,
+      "sha256": "895e405c38c1baa88387d210c02b478a7f96f6541530d9bb5105b1a4b461b1bf"
+    },
+    "objects/red_cube/evidence/COPPELIA.json": {
+      "bytes": 2635,
+      "sha256": "a49ae072231f6b7b9e72cc84f9427c7052d1f2bed1cbffb6421e5a17bfa51a83"
+    },
+    "objects/red_cube/evidence/PLAN.json": {
+      "bytes": 1429150,
+      "sha256": "e0bcc268d5b7d6663d0146002e5c96d4e991b93ddaa1091ce033ad838c98fae4"
+    },
+    "objects/red_cube/evidence/RESULT.json": {
+      "bytes": 713896,
+      "sha256": "a8695b388f5b474a644da78f5d85a4e9a2abf307c83edba00832a9d44e060a8b"
+    },
+    "objects/red_cube/motion_q16.mem": {
+      "bytes": 89250,
+      "sha256": "786922f543a26c45522f1afb2a4f507444d27a16763aaa6bad2e3f9ddf58268d"
+    },
+    "objects/red_cube/phase_map.json": {
+      "bytes": 5310,
+      "sha256": "db6c65b78b90e4d33a012100f2cda58dbb2cb366b28b390c22637b579592da2a"
+    },
+    "objects/red_cube/PROFILE.json": {
+      "bytes": 894,
+      "sha256": "ae9b66945c832cfcbc2732a6237a584bfc9cad0c37d9727236e0eddc04759cd7"
+    },
+    "objects/red_cube/sequence.jsonl": {
+      "bytes": 579639,
+      "sha256": "74ac3bb1ec0fb32a0e092a6220144dc1eeaf287061a1a8a4b68f95ead060719c"
+    },
+    "objects/small_canister/commands.jsonl": {
+      "bytes": 324631,
+      "sha256": "2626ed2c17596f889ce43640bfb46b19d2d8a956ef376b5e8c9339e21d634bb7"
+    },
+    "objects/small_canister/evidence/ACCEPTANCE.json": {
+      "bytes": 1648,
+      "sha256": "83aa82a8588e6cd0c96e2537caa27d2bdc1e16058c2f997e46023913c9aa7530"
+    },
+    "objects/small_canister/evidence/COPPELIA.json": {
+      "bytes": 2783,
+      "sha256": "dfcc0a87c543a622c6be6994e9e1817a3b310b231de423ea5f0d76a172279733"
+    },
+    "objects/small_canister/evidence/PLAN.json": {
+      "bytes": 1429108,
+      "sha256": "9b03b34caac2791fbd957dd6f20a0ec441b3ff242640f7e7663ffe4b59321fb6"
+    },
+    "objects/small_canister/evidence/RESULT.json": {
+      "bytes": 714214,
+      "sha256": "c3e77eb7dd77d9dcdc0660526963b05fbe3e0daa11974d332ef0653398d2f7cc"
+    },
+    "objects/small_canister/motion_q16.mem": {
+      "bytes": 89500,
+      "sha256": "284cfea6614a8d01647ed1979654869fb7c0296e5c4ca5b3c4afc50c2f90231e"
+    },
+    "objects/small_canister/phase_map.json": {
+      "bytes": 5300,
+      "sha256": "49afd399ec0a2d5d040aa65c6a74d6db94076e3cd409884f0c94c7939dde01c0"
+    },
+    "objects/small_canister/PROFILE.json": {
+      "bytes": 1181,
+      "sha256": "b434c80bd254772ad6fde8249a2d94a5f1fa6011c6f5362b381f9e17caf71663"
+    },
+    "objects/small_canister/sequence.jsonl": {
+      "bytes": 579413,
+      "sha256": "5c29341bf525fe253366a968f479a93a799bed21198068171570ff100fb11ed1"
+    },
+    "PACKAGE.json": {
+      "bytes": 4739,
+      "sha256": "6fcde82b5092f66df6d8d58179dfdcd188275ee7ac32622b96effcb284174e1a"
+    },
+    "PROVENANCE.json": {
+      "bytes": 4890,
+      "sha256": "7dc0b2de9d5934ca2089849ec6a7c6e0aeec982abc052835e292fa8e0af0ba17"
+    },
+    "README_CN.md": {
+      "bytes": 4100,
+      "sha256": "f29fdbd23f6bad05d0a0a77668ee87dde2579e637f5384565f2c1176fa49e184"
+    },
+    "reference_evidence/eraser_right10_trial_v1/EXECUTION_VERIFICATION.json": {
+      "bytes": 2069,
+      "sha256": "e1a4cbf605c0c6fbe4ee09c73de6132b87723721ce3e74e28dcd4bf1b7e81dbf"
+    },
+    "reference_evidence/eraser_right10_trial_v1/OPERATOR_GRASP_OFFSET.json": {
+      "bytes": 1676,
+      "sha256": "0184f48515a9b22968e1c9e447c6af5e2be62d66efa96e1a7176c5036df91fd9"
+    },
+    "reference_evidence/eraser_right10_trial_v1/SOFTWARE_VERIFICATION.json": {
+      "bytes": 2786,
+      "sha256": "4e6f387ffa5644a9659b23a1c2c5eda286aeb3591a6b78d3aed7e4dd36423b18"
+    },
+    "reference_evidence/today_native_anchor/ACCEPTED_NATIVE_SOURCE_ANCHOR.json": {
+      "bytes": 1846,
+      "sha256": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631"
+    },
+    "SOURCE_INDEX.json": {
+      "bytes": 8119,
+      "sha256": "9937d4f3d78c7d99ca83956a6e6baacf6bd0a3a7a999cdf6aec828b5e4262373"
+    },
+    "source_snapshot/config/ai_pc/mode_b_commissioning_tolerance_20261028.json": {
+      "bytes": 747,
+      "sha256": "1c1b333e76ed5fc7a4c3ee4f325cf3a2e3fc72d5cfdfb02ee99c4ce52a880d33"
+    },
+    "source_snapshot/config/ai_pc/mode_b_cylinder_grasp_20261028_v2.json": {
+      "bytes": 1253,
+      "sha256": "85665b69faae5f2b2a16e9be0c56acda271bb3813f899d184e57ed2de8a2f04f"
+    },
+    "source_snapshot/config/ai_pc/mode_b_cylinder_grasp_active_20261028.json": {
+      "bytes": 224,
+      "sha256": "71956afbf6e5f50ea2c7f49cdba701f0e2f3457f08168b7f28548875c40fbae0"
+    },
+    "source_snapshot/config/ai_pc/mode_b_eraser_grasp_20261028_v4.json": {
+      "bytes": 1504,
+      "sha256": "43db7ec53e8c2f7143d9b975867d389b87cd8f50fa8940731de2e90613ceb76a"
+    },
+    "source_snapshot/config/ai_pc/mode_b_eraser_grasp_active_20261028.json": {
+      "bytes": 222,
+      "sha256": "a8e168c3b0b38c7c63327193e4f3419e37003073e4386e9e8e29d1ac80d1feac"
+    },
+    "source_snapshot/config/ai_pc/mode_b_filid_postlift_20261028.json": {
+      "bytes": 4320,
+      "sha256": "a72e6083c960054affb90e2eee06de59d2298db089bb8c4d685b6d48a013eff0"
+    },
+    "source_snapshot/config/ai_pc/mode_b_red_grasp_correction_20261028.json": {
+      "bytes": 3347,
+      "sha256": "b40b25194310e2dd773ac4005c732d3694da4c7bcf4d83544c02bba1e2666962"
+    },
+    "source_snapshot/config/ai_pc/roarm_reference_geometry.json": {
+      "bytes": 1424,
+      "sha256": "51bdbd9d4533e656c6e2a529d81bf69b694ec988170d3eb8a3812b600851eeae"
+    },
+    "source_snapshot/config/ai_pc/robot_home_current.json": {
+      "bytes": 2687,
+      "sha256": "8840ed92bb15cd6c1379fe33e279eb27513f300b7c80b866ff86ea3b85baae40"
+    },
+    "source_snapshot/pc/mode_b/motion/__init__.py": {
+      "bytes": 81,
+      "sha256": "3b65631af606a3b0e56d3623581a9f5558fb1e683b61e2d2ac8814d3703924f4"
+    },
+    "source_snapshot/pc/mode_b/motion/collision.py": {
+      "bytes": 5345,
+      "sha256": "d1c310272b6d2fc1eb5edcf6b85f67255482891ee37799e04e96e53dfca3a03e"
+    },
+    "source_snapshot/pc/mode_b/motion/export.py": {
+      "bytes": 5371,
+      "sha256": "524d2f42f5992a4eaedff24be8a6b7cf1e85d28e8001c26f8b45a16865494407"
+    },
+    "source_snapshot/pc/mode_b/motion/fpga_review.py": {
+      "bytes": 23586,
+      "sha256": "74644077292369071c8b7cbed9e67254041fa3e34d77f104dba6752de1774cee"
+    },
+    "source_snapshot/pc/mode_b/motion/home_profile.py": {
+      "bytes": 1073,
+      "sha256": "9096e2b635d71bf71c5165cf7544b4214f1d88142f6febab0022960587c3cee3"
+    },
+    "source_snapshot/pc/mode_b/motion/kinematics.py": {
+      "bytes": 9091,
+      "sha256": "5c50f5efccec270aeb1aec242acd77ddf5831b3b44dec56f6330070c69f9411d"
+    },
+    "source_snapshot/pc/mode_b/motion/pc_trial.py": {
+      "bytes": 8995,
+      "sha256": "a5b867af980d5645d146690b8e3a21d09f568c41a7a2ef8554aba9612fc59347"
+    },
+    "source_snapshot/pc/mode_b/motion/perception_input.py": {
+      "bytes": 3080,
+      "sha256": "e510fbd1a93b479312d04d18ec8be90d06a34804bd2614d5054b78ea16d336e0"
+    },
+    "source_snapshot/pc/mode_b/motion/planner.py": {
+      "bytes": 24499,
+      "sha256": "cab2a5526d6418c639f37c4e03c9089531a3ecb60d726358af31b7bbc6279943"
+    },
+    "source_snapshot/pc/mode_b/motion/state_machine.py": {
+      "bytes": 5406,
+      "sha256": "51d37690c65d4b08f5ee5b0e1c4d02193de83f5a4ae96869cb9561471a01412a"
+    },
+    "source_snapshot/pc/mode_b/motion/trajectory.py": {
+      "bytes": 2936,
+      "sha256": "dcbd8b900a49249ce0770c74e5c3ddb533636f1ea481e2184b95f5ea86410248"
+    },
+    "source_snapshot/pc/mode_b/postlift_workflow.py": {
+      "bytes": 3917,
+      "sha256": "5d676429c599370209de65b888e0e9bd062a77a8c539f1262d7a2eca753fa627"
+    },
+    "source_snapshot/pc/rgb_table_geometry.py": {
+      "bytes": 5036,
+      "sha256": "f3bc5fd14eca9deb492573ad008fb22238b272888b6d57257a46cef98bc4465a"
+    },
+    "source_snapshot/pc/roarm_reference_kinematics.py": {
+      "bytes": 4244,
+      "sha256": "267959fa06e26072722fc7b7e755022157b8bc506376d5471694ceae2d50f1b3"
+    },
+    "source_snapshot/requirements-mode-b-motion.txt": {
+      "bytes": 88,
+      "sha256": "14abaae39f9d20e2786d0b91708da0cd4faea0cf45719b486765dc0f9ca00edf"
+    },
+    "source_snapshot/scripts/collect_mode_b_serial_pose.ps1": {
+      "bytes": 3932,
+      "sha256": "48c55add2e07ada1a497a2ca46f68ac06a526777a7e474c6bb5587f74a64b1bc"
+    },
+    "source_snapshot/scripts/mode_b_eraser_geometry.py": {
+      "bytes": 1134,
+      "sha256": "13aeb94bb1086cb5d69334bbda0cec06de5a001f7b904027380a4043613cea76"
+    },
+    "source_snapshot/scripts/mode_b_native_stream.ps1": {
+      "bytes": 18778,
+      "sha256": "5f638fa80cf21f228f5522e26dd6b0981e5e5c528eda9fba9643248ddbcb6619"
+    },
+    "source_snapshot/scripts/mode_b_serial_stream.ps1": {
+      "bytes": 8539,
+      "sha256": "4911d2be9a90c5d116ad210176ad3416a4410304c73e731bfc2cdb820a14300f"
+    },
+    "source_snapshot/scripts/prepare_mode_b_approach.py": {
+      "bytes": 8716,
+      "sha256": "01ba610e6c7ad9ebb41be262e7bac5962c5e14cad9add1edd54f7ee78b1406f5"
+    },
+    "source_snapshot/scripts/prepare_mode_b_cylinder_restart.py": {
+      "bytes": 7385,
+      "sha256": "309a4c55feadd38748666798ed51ed9f11af42d79ea5ae4a4dd5a594b0377f7d"
+    },
+    "source_snapshot/scripts/prepare_mode_b_empirical_transfer.py": {
+      "bytes": 19849,
+      "sha256": "2563e04a762b0356d0070d07c5d8323a7ad0c0f70cf7a494208087ec3b273bf7"
+    },
+    "source_snapshot/scripts/prepare_mode_b_eraser_restart.py": {
+      "bytes": 429,
+      "sha256": "d94ad3d671d2377c1ad57470a2de788fc82a34b7bb0f8fc987f8a1d4a067feee"
+    },
+    "source_snapshot/scripts/prepare_mode_b_loaded_route.py": {
+      "bytes": 29040,
+      "sha256": "baaaf42ffb52133d0ff53ec074d2ed8ada66315e8b4d768cb0d95baacfc07acb"
+    },
+    "source_snapshot/scripts/prepare_mode_b_red_restart.py": {
+      "bytes": 9201,
+      "sha256": "5eaca491763da07b1deedebf1d4e6de3d058b01cfee90a024e99a5e8b91dbb4e"
+    },
+    "source_snapshot/scripts/prepare_mode_b_ttl_full_trial.py": {
+      "bytes": 19399,
+      "sha256": "e8006802ff99d0ff02800bb4bbe8a063434a11a3ecb45090535a4cb08a1276b6"
+    },
+    "source_snapshot/scripts/roarm_state_json.ps1": {
+      "bytes": 1247,
+      "sha256": "7f150f05b28134881678574bc69dd826c5e14479f8a220677fbe511c39b5c546"
+    },
+    "source_snapshot/scripts/run_mode_b_ttl_cylinder_trial.ps1": {
+      "bytes": 721,
+      "sha256": "1949cbb64c89db3c0ad13f5a968412c691205201ce08311a4d3fe8b44045c6e5"
+    },
+    "source_snapshot/scripts/run_mode_b_ttl_eraser_trial.ps1": {
+      "bytes": 564,
+      "sha256": "ef3889455816ade3a3795e0ba96ee1fb6ec96f1937a91d678478ef9405ac0298"
+    },
+    "source_snapshot/scripts/run_mode_b_ttl_red_trial.ps1": {
+      "bytes": 7377,
+      "sha256": "2e947c38040d74e49f22c956ce2b641d919540f8adf93e3e68efc2c11f2a0d71"
+    },
+    "source_snapshot/scripts/test_mode_b_cylinder_transfer.py": {
+      "bytes": 6667,
+      "sha256": "1d79a5fd6f9cd90818cf88c8ad5c1eea1b92bbf954b74cc4da1227c337a80123"
+    },
+    "source_snapshot/scripts/test_mode_b_empirical_transfer.py": {
+      "bytes": 3387,
+      "sha256": "e52705ff014a19ac68df6a26c3641e98a3df026731deee13fba21601f3e7d799"
+    },
+    "source_snapshot/scripts/test_mode_b_eraser_transfer.py": {
+      "bytes": 6303,
+      "sha256": "dd6e5ec547ce0ddb3a3eac961df307e0926bfb9ce5a1159f39b716690f954558"
+    },
+    "source_snapshot/scripts/test_mode_b_local_grasp_correction.py": {
+      "bytes": 3933,
+      "sha256": "807a6f6470bb783e1f39ac702285ce99e26325b316dc9cd0de5596a8249bc565"
+    },
+    "source_snapshot/scripts/try_mode_b_loaded_route.ps1": {
+      "bytes": 11546,
+      "sha256": "7d9040572e01776a4efcef62733b78e9fd8ec2e7c3fa33efc6dad2177f6f6fea"
+    },
+    "source_snapshot/sim/phase3_robot/verify_mode_b_complete_task.py": {
+      "bytes": 10363,
+      "sha256": "527c44d82bbaf2cad5fcaae983062c1a8d3c1a7ef450c2f374456e52d5d9ca52"
+    },
+    "source_snapshot/sim/phase3_robot/verify_mode_b_loaded_route.py": {
+      "bytes": 11749,
+      "sha256": "a06de158bb74c8f81d611a74670c27a91ffc2ba637f0de8b319689adb11410b2"
+    },
+    "verify.py": {
+      "bytes": 10260,
+      "sha256": "394f0e479216fb6b08030b0f918709693dac1abb67ad3a53464fab8efea4e7ec"
+    }
+  }
+}

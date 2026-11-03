@@ -1,0 +1,37 @@
+{
+  "schema": "gesture.mode_b.transit_speed_profile.v1",
+  "profile_id": "MODE_B_SHARED_FAST_TRANSIT_20261030_V1",
+  "object_classes": [
+    "red_cube",
+    "small_canister",
+    "eraser"
+  ],
+  "joint_phases": [
+    "BUFFER",
+    "PREPLACE",
+    "RETREAT",
+    "RETURN_CLEAR"
+  ],
+  "phase_speed_multiplier": {
+    "BUFFER": 2.0,
+    "PREPLACE": 2.0,
+    "RETREAT": 2.0,
+    "RETURN_CLEAR": 2.0
+  },
+  "time_law": "10*u^3-15*u^4+6*u^5",
+  "preserve_lateral_clearance_mm": 8,
+  "native_spd_max": 4095,
+  "native_acc_max": 254,
+  "base_speed_by_object": {
+    "red_cube": 2.0,
+    "small_canister": 2.0,
+    "eraser": 3.0
+  },
+  "red_operator_feedback": {
+    "file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_red_retry_20261030\\return_fast_v3\\OPERATOR_FEEDBACK.json",
+    "sha256": "1f04a5fa70197eaeeecd75a49d6cc85234bb05cea2814fc5c97a8652a90b58d8"
+  },
+  "physical_scope": "RED_RETURN_SPEED_ACCEPTED; CYLINDER_AND_ERASER_NEW_TRANSIT_CURVES_NOT_PHYSICALLY_TESTED",
+  "grasp_and_gripper_parameters_changed": false,
+  "restock_profile_changed": false
+}

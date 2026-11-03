@@ -1,0 +1,98 @@
+{
+  "schema": "gesture.mode_b.loaded_native_coppelia.v1",
+  "route_sha256": "9b03b34caac2791fbd957dd6f20a0ec441b3ff242640f7e7663ffe4b59321fb6",
+  "simulator_version": 41000,
+  "samples_checked": 1832,
+  "maximum_tcp_error_mm": 5.900916318210353e-13,
+  "mesh_collisions": [],
+  "released_payload_matrix_error": 2.6662034722004284e-13,
+  "home_joint_error_rad": 0.0,
+  "stages": [
+    {
+      "phase": "DIRECT_PREGRASP",
+      "samples": 181,
+      "maximum_tcp_error_mm": 5.797195660796456e-13,
+      "intentional_source_table_contact": true
+    },
+    {
+      "phase": "DESCEND",
+      "samples": 54,
+      "maximum_tcp_error_mm": 5.900916318210353e-13,
+      "intentional_source_table_contact": true,
+      "intentional_finger_grasp_contact": true
+    },
+    {
+      "phase": "LIFT",
+      "samples": 170,
+      "maximum_tcp_error_mm": 5.506811298800084e-13,
+      "source_table_contact_exempt_until_bottom_mm": 0.5,
+      "table_samples_checked_after_liftoff": 156
+    },
+    {
+      "phase": "INNER_HOLD",
+      "samples": 43,
+      "maximum_tcp_error_mm": 4.5118820365977084e-13
+    },
+    {
+      "phase": "BUFFER",
+      "samples": 702,
+      "maximum_tcp_error_mm": 5.074414582634863e-13
+    },
+    {
+      "phase": "PREPLACE",
+      "samples": 102,
+      "maximum_tcp_error_mm": 4.941739743737033e-13
+    },
+    {
+      "phase": "PLACE",
+      "samples": 55,
+      "maximum_tcp_error_mm": 4.3177542613803814e-13
+    },
+    {
+      "phase": "RELEASE_CLEARANCE",
+      "samples": 26,
+      "maximum_tcp_error_mm": 3.8559277963506346e-13,
+      "initial_intended_fixed_jaw_contact_exempt_until_mm": 2.0,
+      "fixed_jaw_samples_checked_after_contact_zone": 17
+    },
+    {
+      "phase": "RETREAT",
+      "samples": 280,
+      "maximum_tcp_error_mm": 4.552252871008669e-13
+    },
+    {
+      "phase": "RETURN_CLEAR",
+      "samples": 42,
+      "maximum_tcp_error_mm": 4.272916553455145e-13
+    },
+    {
+      "phase": "INNER_RETURN",
+      "samples": 109,
+      "maximum_tcp_error_mm": 4.718447854656915e-13
+    },
+    {
+      "phase": "RETURN_LOW_HOME",
+      "samples": 26,
+      "maximum_tcp_error_mm": 5.003707553108402e-13
+    }
+  ],
+  "passed": true,
+  "simulation_type": "EXACT_NATIVE_RADIAN_SAMPLES_RIGID_PAYLOAD_MESH_KINEMATICS",
+  "intentional_contact_allowance": {
+    "link": "link5",
+    "maximum_initial_lateral_travel_mm": 2,
+    "direction": "AWAY_FROM_FIXED_JAW_FACE",
+    "nominal_contact_not_force_simulated": true
+  },
+  "payload_geometry": {
+    "shape": "cylinder",
+    "size_mm": [
+      25.0,
+      25.0,
+      46.0
+    ],
+    "grasp_width_mm": 25.0
+  },
+  "friction_slip_servo_dynamics_validated": false,
+  "physical_general_mapping_calibrated": false
+}

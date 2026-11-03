@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "method": "IDENTITY_PORT_PARAMETER_BINDING_AND_EXPANDED_CONCURRENT_AST_EQUALITY",
+  "parent_modules": 4,
+  "structural_wrappers": 12,
+  "leaf_instances_moved": 34,
+  "state_or_timing_added": false,
+  "new_bit_generated": false,
+  "hardware_access": false,
+  "proof_source_root": "board_evidence/pl_wrappers_v1/pure_after",
+  "functional_b_changes_excluded": true,
+  "source_hashes": {
+    "native_motion/rtl/autonomous/gesture_autonomous_top_black.v": "7019daae46554070591751993d034f6f8bab4069a5d57b3225ecbb2d4bb3a805",
+    "native_motion/rtl/robot/phase3_s4_task_top.v": "31ce848ea485aa1c99c7277bd347491d53361624b280d751141d350d9a882be6",
+    "native_motion/rtl/robot/phase3_s2_motion_top.v": "89f1d956110253982add7d430c72d3469e56db8cef704de18702b1d57b1cfcd5",
+    "native_motion/rtl/hdmi/mode_a_hdmi_output.v": "d2b980f558d335050ae1d4af3c09a56e95b2db450d983186919f601564d01b8a",
+    "native_motion/rtl/wrappers/vision_acquisition_pipeline.v": "305a535106363cc36a4996d2802f425ef9951890a20ccd787b7f0efb2d1e7bb6",
+    "native_motion/rtl/wrappers/vision_locator_compute.v": "decc203dd3965d85d995e7a3a4246d4e15e2043c7885e3c267530246d4b0dfce",
+    "native_motion/rtl/wrappers/vision_roi_memory_pipeline.v": "b6fd32a6efdbde657d67dbca3566910880b1e07851c9aa670a917abe8b69a1f5",
+    "native_motion/rtl/wrappers/vision_classifier_compute.v": "61497e38a3da5755682133465ece72bb7f79abc0c0538c7620a777d9b14ee218",
+    "native_motion/rtl/wrappers/vision_schedule_qualifier.v": "f15579515edcd941b0be74a0962f4f543ad2dca591f68302251fe830eb09bad2",
+    "native_motion/rtl/wrappers/motion_axil_ownership_fabric.v": "f300230fbc6df15c4d02050d1554cbd27a50b20a72cf5ab0a0bc9fa42f4be6fd",
+    "native_motion/rtl/wrappers/motion_hand_target_pipeline.v": "1b31b338092482f38238b9dcd36d094dd716be2a66d259a9104a0ed740f7dde2",
+    "native_motion/rtl/wrappers/motion_task_control.v": "c5673b431894548ee1d2660d78272eb240a5f796c53685ecaa51066eda4f92e7",
+    "native_motion/rtl/wrappers/motion_actuator_pipeline.v": "2582bb7ee70f89c98c1b7743875a7edaf7d8a3683fa1da3c7c2dcae74684a4ce",
+    "native_motion/rtl/wrappers/display_scan_pipeline.v": "65bb421957c51f905739e9292e7028509478735026446043015d49a9f6ae497a",
+    "native_motion/rtl/wrappers/display_telemetry_bridge.v": "26c9f8a781de29efce51af268691da7badbfedb186376b6ffa7334ce3169247e",
+    "native_motion/rtl/wrappers/hdmi_phy_pipeline.v": "b63edfd74b86c4ec0112224c1e17d05533086c3ef306c954532368ebdffac69e"
+  }
+}

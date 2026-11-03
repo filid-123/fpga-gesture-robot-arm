@@ -1,0 +1,150 @@
+{
+  "status": "PARAMETERS_FROZEN_BEFORE_DEVELOPMENT_VALIDATION",
+  "release_id": "black_scene_vision_v3_int8_targeted600_B_gate030_20261027",
+  "locator_model_sha256": "a09c85d89469f7fc5ebf57990ac0f2740458a7df2ace8da24dc702709dd8e06d",
+  "classifier_model_sha256": "da50fec1e717b4fb4b94cd2bdca7fceb7fadd8383f0f4b8661b1d8ac4ca4e227",
+  "integer_base_and_confidence_parameters_unchanged": true,
+  "confidence_threshold_raw_i32": -11748,
+  "threshold_probability": 0.3,
+  "new_geometry_layers": {
+    "g1": {
+      "weight_shape": [
+        8,
+        16,
+        3,
+        3
+      ],
+      "weight_granularity": "per_layer",
+      "weight_scale": 0.0010033200575610783,
+      "bias_scale": 4.682767430864e-06,
+      "input_scale": 0.004667271819769167,
+      "M": 2919188,
+      "shift": 31,
+      "output_scale": 0.003444850912281111
+    },
+    "g2": {
+      "weight_shape": [
+        4,
+        8,
+        3,
+        3
+      ],
+      "weight_granularity": "per_output_channel",
+      "weight_scale": [
+        0.0002732615712590105,
+        0.0003789352971737779,
+        0.0001601521219090214,
+        0.0003292429752237215
+      ],
+      "bias_scale": [
+        9.413453730429721e-07,
+        1.3053756041646027e-06,
+        5.51700183262048e-07,
+        1.1341929635615842e-06
+      ],
+      "input_scale": 0.003444850912281111,
+      "output": "raw signed32 accumulator, no ReLU or requant"
+    }
+  },
+  "residual_M": [
+    126680881,
+    193904139,
+    233575886,
+    383048081
+  ],
+  "residual_shift": [
+    31,
+    31,
+    31,
+    31
+  ],
+  "classifier_layers": {
+    "conv1": {
+      "weight_shape": [
+        8,
+        1,
+        3,
+        3
+      ],
+      "weight_granularity": "per_layer",
+      "weight_scale": 0.004980613396862361,
+      "bias_scale": 1.953181724259749e-05,
+      "input_scale": 0.00392156862745098,
+      "M": 6687108,
+      "shift": 31,
+      "output_scale": 0.0062724066715614465
+    },
+    "conv2": {
+      "weight_shape": [
+        16,
+        8,
+        3,
+        3
+      ],
+      "weight_granularity": "per_layer",
+      "weight_scale": 0.010502264255613793,
+      "bias_scale": 6.587447238341327e-05,
+      "input_scale": 0.0062724066715614465,
+      "M": 7503936,
+      "shift": 31,
+      "output_scale": 0.01885201884251015
+    },
+    "conv3": {
+      "weight_shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "weight_granularity": "per_layer",
+      "weight_scale": 0.009019365460853877,
+      "bias_scale": 0.00017003324761550253,
+      "input_scale": 0.01885201884251015,
+      "M": 8183873,
+      "shift": 31,
+      "output_scale": 0.04461745841830384
+    },
+    "fc1": {
+      "weight_shape": [
+        64,
+        512
+      ],
+      "weight_granularity": "per_layer",
+      "weight_scale": 0.008343709735419806,
+      "bias_scale": 0.0003722751221744901,
+      "input_scale": 0.04461745841830384,
+      "M": 8281009,
+      "shift": 31,
+      "output_scale": 0.09654073528214997
+    },
+    "fc2": {
+      "weight_shape": [
+        6,
+        64
+      ],
+      "weight_granularity": "per_layer",
+      "weight_scale": 0.012297331817506805,
+      "bias_scale": 0.0011871934556706846,
+      "input_scale": 0.09654073528214997,
+      "output": "raw signed32 accumulator, no ReLU or requant"
+    }
+  },
+  "base_ROM_prefix_unchanged": true,
+  "whole_Locator_ROM_changed": true,
+  "files_sha256": {
+    "calibration.json": "c46b20b57ade72b0c98b07e02e16f760105bfa2d565f8bbeccd1cbda409b5ad7",
+    "classifier/layer_descriptors.bin": "c9c971d54a2412ffb3a3cc87f711a3f3a042c6e2df1958d4d44ee87276e895f5",
+    "classifier/layer_descriptors.mem": "fc909674efbcd0a38cda88126ff00657963500feece411a1c7b0fa0fe3fb86cb",
+    "classifier/layout_and_descriptors.json": "22733e0c90f0ec4ca43f5bf4fc56c3105e5ff2988f1571658f1dae000058eb24",
+    "classifier/parameters.npz": "ef056732fa05d9192631916ba37d9cd53fecdd6fd5622382a73591c1a70e8647",
+    "classifier/weights_all.bin": "8561861012b717810e15dad5325a1640127058208a62da5da27b84a7eeeca731",
+    "classifier/weights_all.mem": "f44ed071517adf21c637314d7013371b24009e8039781964f856313dc8b2af72",
+    "locator/layout.json": "79223ebab3bb36058204204604c3c5d5f06bbdc5ce1f088b8bc4107e66ac523b",
+    "locator/model_rom_16k.bin": "3e3803634f055b7ced738811c18b6614ab311fe1b28fdfdcbdd9cfaab3d7c203",
+    "locator/model_rom_16k.mem": "19a0265b786de097342bbe187ee2d4a0adbe2d425231fc4be1211bc93dfc4261",
+    "locator/parameters.npz": "ca31e79e86b58ef81f357406408bc9d07e79582b7c086e4d7f9f88af4baf6325"
+  },
+  "TEST_read": false,
+  "new_training": false,
+  "RTL_simulated": false
+}

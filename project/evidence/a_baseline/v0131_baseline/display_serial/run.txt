@@ -1,0 +1,19 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Oct 29 02:39:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/receiver/xsim_script.tcl
+# xsim {receiver} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: real serialized TMDS receiver: 1237500 words, 921600 exact RGB pixels, 720 rows, positive HS40/line1650, DE and both sync signals aligned
+$finish called at time : 49515368200 ps : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_hdmi/tb_tmds_720p.sv" Line 81
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:10:51 . Memory (MB): peak = 228.816 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 86260 KB (Peak: 86260 KB), Simulation CPU Usage: 650014 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 02:50:05 2026...

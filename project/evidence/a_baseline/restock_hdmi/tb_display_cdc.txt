@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Oct 29 04:21:57 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_display_cdc/xsim_script.tcl
+# xsim {tb_display_cdc} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: coherent status CDC updates only on frame boundary, 51 snapshots
+$finish called at time : 198489364 ps : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_hdmi/tb_display_cdc.sv" Line 15
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 04:21:59 2026...

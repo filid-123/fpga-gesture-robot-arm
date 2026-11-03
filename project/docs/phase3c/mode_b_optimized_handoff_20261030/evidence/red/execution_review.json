@@ -1,0 +1,46 @@
+{
+  "schema": "gesture.mode_b.red_fast_return_execution_review.v1",
+  "result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261029_210927_0063404\\LOADED_ROUTE_RESULT.json",
+  "result_sha256": "f6fdcc06c4602f93bac23a38abe0d0e2aefa83825c705c389718819427012175",
+  "plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\.\\artifacts\\phase3c\\mode_b_red_retry_20261030\\return_fast_v3\\LOADED_ROUTE_PLAN.json",
+  "plan_sha256": "c792f634b467310403bf5674603e692ccece67e824ed3de398729851a6f86c26",
+  "exact_command_sequence_match": true,
+  "motion_requests": 737,
+  "completed_stages": [
+    "DIRECT_PREGRASP",
+    "DESCEND",
+    "LIFT",
+    "INNER_HOLD",
+    "BUFFER",
+    "PREPLACE",
+    "PLACE",
+    "RELEASE_CLEARANCE",
+    "RETREAT",
+    "RETURN_CLEAR",
+    "INNER_RETURN",
+    "RETURN_LOW_HOME"
+  ],
+  "error": null,
+  "final_capture": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261029_210927_0063404\\PARK_CLOSE_OBSERVED\\PARK_CLOSE_OBSERVED_20261029_211117_6136189\\POSE_CAPTURE.json",
+  "final_firmware_rad": {
+    "b": 0.016873789,
+    "s": 0.107378655,
+    "e": 2.583223647,
+    "t": 0.411106851,
+    "r": 0.010737866,
+    "g": 3.083301384
+  },
+  "phase_send_timing": {
+    "RETREAT": {
+      "requests": 14,
+      "write_start_span_seconds": 0.403094
+    },
+    "RETURN_CLEAR": {
+      "requests": 23,
+      "write_start_span_seconds": 0.684287
+    }
+  },
+  "simulation_performed_for_this_plan": false,
+  "port_closed_after_trial": true,
+  "physical_acceptance": "PENDING_OPERATOR_FEEDBACK"
+}

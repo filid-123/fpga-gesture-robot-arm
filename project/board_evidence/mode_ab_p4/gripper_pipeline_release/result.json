@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: all 12 actual production T106 waits exceed one second, retain full 32-bit cycle counts, finish and do not trigger downstream-stall protection"
+  ],
+  "production_period_cycles": [
+    1076088746,
+    1915537732,
+    342071698,
+    1086974551,
+    1077088746,
+    1581982924,
+    396396585,
+    1086974551,
+    1077088746,
+    2078512393,
+    363801652,
+    1086974551
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "inputs": {
+    "candidate/mode_ab/native_profiles/red_cube/normal.json": "5fdf67cc317ae736506454c34f884436e00499418a23a19965bfa6aa1df26f80",
+    "candidate/mode_ab/native_profiles/eraser/normal.json": "d3ed2b740d8b8ea53ad97dfd5b3383d4527e2727ce170b08a7db88bf1757ee5c",
+    "candidate/mode_ab/native_profiles/small_canister/normal.json": "9e5e908f5c1e2895c0d41ab0caa3561b620660b7345d44a499449332ca8b5853"
+  },
+  "source_hashes": {
+    "native_motion/rtl/robot/b_route_ram.v": "012d2e0b98415031d5a8bd7f3b291b83eae8006f4765e06095cd59c69e7a4488",
+    "native_motion/rtl/robot/b_route_player.v": "916f76a72587765565bfc35fb9b1178694d5be69b6a49f3d3bfb5bc1b5114156",
+    "board_evidence/mode_ab_p4/gripper_pipeline_release/tb.sv": "f71ab4e015353f5f5b2400200d721d3adcde23f3d496504c45f16c2b8c36a9a7"
+  },
+  "hardware_access": false
+}

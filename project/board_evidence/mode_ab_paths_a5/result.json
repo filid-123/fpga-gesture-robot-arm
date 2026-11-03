@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: three colors deliver -> empty-digit auto-restock -> HOME/stock -> fresh-digit next delivery; held digit never retriggers",
+    "PASS: FIST before grasp, during source lift and slot descent drains/retraces public pickup/HOME; destination stays empty",
+    "PASS: once placement opening commits, FIST follows existing released policy and completes HOME/refill",
+    "PASS: busy restock configuration locked; D5 fault never marks destination available",
+    "PASS: restock retains feedback-freshness fault and empty stock",
+    "PASS: missing placement release descriptor is refused before any MOVE",
+    "PASS: original PS_WRITE_BLOCKED bit11 never increments independent RESTOCKED bit14 counter in IDLE or running task",
+    "PASS: dynamic B WAIT_PATH-only tables, immutable COMMIT scan, selected task identity and real PALM/core completion",
+    "PASS: cancelled or timed-out B selections cannot accept an earlier task path",
+    "PASS: dynamic B restock uses FIFO end-to-end without PALM and preserves separate A inventory",
+    "PASS: dynamic B held restock drains and retraces its actual public pickup before HOME",
+    "PASS: dynamic B placement opening is a commitment; later FIST completes retreat/HOME",
+    "PASS: malformed dynamic B restock release index is refused before any MOVE",
+    "PASS: B FIFO/return stack crosses entry 32 and rejects the 64th segment without wrap",
+    "PASS: actual red_cube normal table/FIFO/map commits and completes at low HOME",
+    "PASS: actual red_cube restock table/FIFO/map commits and completes at low HOME",
+    "PASS: actual eraser normal table/FIFO/map commits and completes at low HOME",
+    "PASS: actual eraser restock table/FIFO/map commits and completes at low HOME",
+    "PASS: actual small_canister normal table/FIFO/map commits and completes at low HOME",
+    "PASS: actual small_canister restock table/FIFO/map commits and completes at low HOME",
+    "PASS: actual shared_red normal table/FIFO/map commits and completes at low HOME",
+    "PASS: actual shared_red restock table/FIFO/map commits and completes at low HOME",
+    "PASS: shared red empty/refill works in B IDLE, preserves other stocks and never starts a MOVE"
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "inputs": {
+    "candidate/mode_ab/red_cube/normal.json": "416bb489fe89620924ac5b19f086bd2b6c58d7229fa52a671764bfe0755c2783",
+    "candidate/mode_ab/red_cube/restock.json": "74a0972b2dc0e8e5d7594bce4bcb5ae12601e6a5b5e23fe84c071f6f820d8620",
+    "candidate/mode_ab/eraser/normal.json": "3bc341547d10e807e60ed2f1e5cad03d3e094ef7c27218ed37a448ff03f148a9",
+    "candidate/mode_ab/eraser/restock.json": "b16a86d20323a1192925dd18d7b45a7fdecca814e9678b6b9b7150b12fec4889",
+    "candidate/mode_ab/small_canister/normal.json": "4e132654dcf5045641be279eaf0bbbe54f094eaa59ba895dcb874833b3ccda77",
+    "candidate/mode_ab/small_canister/restock.json": "62e12175620e134d3107b043172c0528313a84b5c07a439b3fb071f8a9ae5605"
+  },
+  "sources": {
+    "native_motion/rtl/robot/s4_task_fsm.v": "4985a3c374917d2e11eba38fd1ea3dadd34d04499672343d581b72351096444d",
+    "native_motion/rtl/robot/s4_task_regs.v": "6766e8bb1ac40efb6d802081b24787c95911abc3650af6f761045bc642c63f4b",
+    "native_motion/rtl/robot/hand_align_region_lut.v": "fdbd9fcc91e0b39ae933c7e591a2456909825718589d3f13a04867db8e59bdc1",
+    "native_motion/rtl/robot/hand_align_target_core.v": "85888d4523d26a45e046ed69e6b7887751f68ae3821994fab725ed2589a30cbb",
+    "board_evidence/mode_ab_paths_a5/tb.sv": "5dbeb157c1a8054173f0b907140ce4c29066b6d718f7cd7320e44e5eda1fa686"
+  },
+  "motion_transport": "MOCK",
+  "physical_execution": false
+}

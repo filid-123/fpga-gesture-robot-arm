@@ -1,0 +1,25 @@
+{
+  "schema": "gesture.mode_b.full_workspace.v1",
+  "enabled": true,
+  "workspace_xy_mm": [
+    490,
+    690,
+    215,
+    355
+  ],
+  "height_by_class_mm": {
+    "red_cube": 15,
+    "eraser": 7.5,
+    "small_canister": 23
+  },
+  "height_tolerance_mm": 0.02,
+  "historical_anchor_radius_gate": false,
+  "residual_policy": "USER_REQUESTED_FULL_WORKSPACE_CONSTANT_PER_CLASS",
+  "red_pickup_profile": "red_depth12",
+  "upright_object_yaw_snap": true,
+  "maximum_additional_grasp_tilt_deg": 25,
+  "physical_full_workspace_validated": false,
+  "authorization": "2026-10-30 user explicitly requested full pickup window, upright objects, slight tilt and extrapolation of measured residuals.",
+  "maximum_grasp_tcp_raise_mm": 15,
+  "profile_status": "FULL_FRAME_OFFLINE_GRID_VALIDATED_PHYSICAL_NOT_RUN"
+}

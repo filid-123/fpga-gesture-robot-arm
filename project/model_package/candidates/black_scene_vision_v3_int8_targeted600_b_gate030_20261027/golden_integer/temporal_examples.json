@@ -1,0 +1,173 @@
+{
+  "kind": "synthetic_geometry_gate_events_not_recognition_or_RTL_measurement",
+  "rows": [
+    {
+      "timestamp_seconds": 0,
+      "raw_box": [
+        100,
+        100,
+        220,
+        250
+      ],
+      "raw_confidence": -11748,
+      "detected": true,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          100.0,
+          100.0,
+          220.0,
+          250.0
+        ],
+        "state": "initialized",
+        "accepted": true,
+        "classifier_allowed": true,
+        "display_hold": false
+      }
+    },
+    {
+      "timestamp_seconds": 0.05,
+      "raw_box": [
+        103,
+        102,
+        223,
+        252
+      ],
+      "raw_confidence": -11747,
+      "detected": true,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          101.69620537447878,
+          101.13080358298583,
+          221.69620537447878,
+          251.13080358298583
+        ],
+        "state": "ema",
+        "accepted": true,
+        "classifier_allowed": true,
+        "display_hold": false
+      }
+    },
+    {
+      "timestamp_seconds": 0.1,
+      "raw_box": [
+        300,
+        100,
+        420,
+        250
+      ],
+      "raw_confidence": -11000,
+      "detected": true,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          101.69620537447878,
+          101.13080358298583,
+          221.69620537447878,
+          251.13080358298583
+        ],
+        "state": "jump_pending",
+        "accepted": true,
+        "classifier_allowed": true,
+        "display_hold": false
+      }
+    },
+    {
+      "timestamp_seconds": 0.15,
+      "raw_box": [
+        302,
+        100,
+        422,
+        250
+      ],
+      "raw_confidence": -11000,
+      "detected": true,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          274.8918292209868,
+          100.15303762318837,
+          394.8918292209868,
+          250.15303762318837
+        ],
+        "state": "confirmed_jump",
+        "accepted": true,
+        "classifier_allowed": true,
+        "display_hold": false
+      }
+    },
+    {
+      "timestamp_seconds": 0.2,
+      "raw_box": [
+        302,
+        100,
+        422,
+        250
+      ],
+      "raw_confidence": -11749,
+      "detected": false,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          274.8918292209868,
+          100.15303762318837,
+          394.8918292209868,
+          250.15303762318837
+        ],
+        "state": "loss_display_hold",
+        "accepted": false,
+        "classifier_allowed": false,
+        "display_hold": true
+      }
+    },
+    {
+      "timestamp_seconds": 0.3,
+      "raw_box": [
+        302,
+        100,
+        422,
+        250
+      ],
+      "raw_confidence": -11749,
+      "detected": false,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          274.8918292209868,
+          100.15303762318837,
+          394.8918292209868,
+          250.15303762318837
+        ],
+        "state": "loss_display_hold",
+        "accepted": false,
+        "classifier_allowed": false,
+        "display_hold": true
+      }
+    },
+    {
+      "timestamp_seconds": 0.46,
+      "raw_box": [
+        104,
+        103,
+        224,
+        253
+      ],
+      "raw_confidence": -11748,
+      "detected": true,
+      "expected": {
+        "version": "black_scene_geometry_stabilizer_v1",
+        "effective_box": [
+          274.8918292209868,
+          100.15303762318837,
+          394.8918292209868,
+          250.15303762318837
+        ],
+        "state": "jump_pending",
+        "accepted": true,
+        "classifier_allowed": true,
+        "display_hold": false
+      }
+    }
+  ]
+}

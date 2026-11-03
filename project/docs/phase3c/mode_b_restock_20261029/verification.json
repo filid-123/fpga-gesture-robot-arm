@@ -1,0 +1,209 @@
+{
+  "schema": "gesture.mode_b.restock_verification.v1",
+  "date": "2026-10-29",
+  "filid_commit": "480f3e600bc9465d9a1fec361e6781c2b2eb59a0",
+  "public_xy_mm": [
+    300,
+    200
+  ],
+  "return_target": "IMMUTABLE_ORIGINAL_GRASP_RECORD",
+  "python_checks": {
+    "new_restock": 13,
+    "existing_motion_regressions": 28,
+    "total": 41,
+    "passed": true,
+    "modules": [
+      "scripts.test_mode_b_restock",
+      "scripts.test_mode_b_local_grasp_correction",
+      "scripts.test_mode_b_empirical_transfer",
+      "scripts.test_mode_b_cylinder_transfer",
+      "scripts.test_mode_b_eraser_transfer"
+    ]
+  },
+  "powershell_ast": {
+    "files": [
+      "scripts/run_mode_b_restock.ps1",
+      "scripts/try_mode_b_loaded_route.ps1"
+    ],
+    "passed": true
+  },
+  "offline_entry": {
+    "passed": true,
+    "move": false,
+    "status": "OFFLINE_RESTOCK_READY",
+    "object_class": "red_cube",
+    "hardware_accessed": false
+  },
+  "new_mesh_routes": [
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/eraser/cancel/RESTOCK_SOURCE_HIGH/RESTOCK_PLAN.json",
+      "plan_sha256": "59964ff9e3a273d52989034c530515704de159d5da9c14f88718030c6520a646",
+      "object_class": "eraser",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 3936,
+      "nominal_motion_seconds": 78.3,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/eraser/RESTOCK_PLAN.json",
+      "plan_sha256": "c1c7af5a00009a0f8efd35889db0e13a760df0618ba4a584f892ff6fd23a6134",
+      "object_class": "eraser",
+      "kind": "RESTOCK",
+      "samples": 3973,
+      "nominal_motion_seconds": 78.62,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_INNER_OPEN/RESTOCK_PLAN.json",
+      "plan_sha256": "1b70ccc83e335122ed6fe2867e75eeacea879fcdd300573a68d1780887e892ab",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL_EMPTY",
+      "samples": 184,
+      "nominal_motion_seconds": 3.68,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_PUBLIC_DESCEND/RESTOCK_PLAN.json",
+      "plan_sha256": "ad35d579a1aa07a4aee624c543641a8f7fac4b192152fa1f08d6adee988db50e",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL_EMPTY",
+      "samples": 4573,
+      "nominal_motion_seconds": 91.46000000000001,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_PUBLIC_LIFT/RESTOCK_PLAN.json",
+      "plan_sha256": "ebbddd7c6a616b875ebeaeb43672e12ffb74d82a0b8a69e084fa34976333f0bc",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 4638,
+      "nominal_motion_seconds": 92.34,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_RETURN_BUFFER/RESTOCK_PLAN.json",
+      "plan_sha256": "32b516a2abbfb8b41934ab7589abdc8fd43eabd69f7410538b55b77e27c3fce8",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 6227,
+      "nominal_motion_seconds": 124.12,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_RETURN_INNER/RESTOCK_PLAN.json",
+      "plan_sha256": "a8a6524945fa0e0302003ca183d7c0d64cc6f9408c9564c49ed34a8d1c8ff561",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 8952,
+      "nominal_motion_seconds": 178.62,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_SOURCE_DESCEND/RESTOCK_PLAN.json",
+      "plan_sha256": "73ea78f2241a8649f9d5593a99b1b88348d430c995b3adc13f06c3a97ba98375",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 9470,
+      "nominal_motion_seconds": 188.98000000000002,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/cancel/RESTOCK_SOURCE_HIGH/RESTOCK_PLAN.json",
+      "plan_sha256": "4a76c99cab8211e2652c58001e84549b6f86c9a6256ca9f4633f5a50944b8757",
+      "object_class": "red_cube",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 9069,
+      "nominal_motion_seconds": 180.96,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/red_cube/RESTOCK_PLAN.json",
+      "plan_sha256": "aa5022d3625a03260f056d25ad845396b465989d1e9ca169fc152bbcf263f5df",
+      "object_class": "red_cube",
+      "kind": "RESTOCK",
+      "samples": 7478,
+      "nominal_motion_seconds": 148.72,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/small_canister/cancel/RESTOCK_SOURCE_HIGH/RESTOCK_PLAN.json",
+      "plan_sha256": "c1b4f9d07e32ffff2eb0f6c665a28a0f1618172fc7824fdace50fea075348b8e",
+      "object_class": "small_canister",
+      "kind": "RESTOCK_CANCEL",
+      "samples": 9269,
+      "nominal_motion_seconds": 184.96,
+      "passed": true
+    },
+    {
+      "plan": "artifacts/phase3c/mode_b_return_20261029/plans/small_canister/RESTOCK_PLAN.json",
+      "plan_sha256": "7700b1e9fa1170b7a7ea2db153a1367576589f2c9f5391f6e9b25f94611771e7",
+      "object_class": "small_canister",
+      "kind": "RESTOCK",
+      "samples": 7555,
+      "nominal_motion_seconds": 150.26,
+      "passed": true
+    }
+  ],
+  "new_mesh_samples": 75324,
+  "unchanged_delivery_mesh_regressions": [
+    {
+      "object_class": "eraser",
+      "samples": 1244,
+      "passed": true
+    },
+    {
+      "object_class": "red_cube",
+      "samples": 1827,
+      "passed": true
+    },
+    {
+      "object_class": "small_canister",
+      "samples": 1832,
+      "passed": true
+    }
+  ],
+  "baseline_mesh_samples": 4903,
+  "portable_archive": {
+    "archive_sha256": "49e6c04f619c974c3d35afc46cda09f3f565ef4b966cb6d79716cda2389467fc",
+    "archive_bytes": 10292989,
+    "independent_extraction": {
+      "passed": true,
+      "files": 73,
+      "routes": 12,
+      "mesh_samples": 75324,
+      "normal": 3,
+      "cancel": 9,
+      "hardware_accessed": false,
+      "physical_restock_accepted": false
+    },
+    "changed_plan_hash_rejected": true,
+    "changed_plan_with_rehashed_manifest_rejected": true,
+    "semantic_rejection": "RESTOCK_REVIEW_FAILED: Mesh proof/plan mismatch",
+    "truncated_sequence_with_rehashed_manifest_rejected": true
+  },
+  "frozen_vision": {
+    "files": 19,
+    "all_sha256_unchanged": true
+  },
+  "source_snapshot_matches_workspace": {
+    "scripts/prepare_mode_b_restock.py": "1cf89e7ceb9e0056bcf4f153fc04dd1132287d9986ab9e6ba5294093cf8221b6",
+    "scripts/run_mode_b_restock.ps1": "75471dc29e5e72099a16f2134eaa48cc9a2be4ec377b3a45b26ef7bc72efaa6b",
+    "scripts/test_mode_b_restock.py": "9301e3f3a0424ff1de4a5b44e308dbaebf8ddceb7798174b74f7c4443886941b",
+    "scripts/try_mode_b_loaded_route.ps1": "106455d334d5a1eec948afaee43a00ff56b550ea9c79517c9350b0ef658d242e",
+    "config/ai_pc/mode_b_restock_20261029.json": "270fcc9d330a79d079a891330a34030403ee1be994c55b0490e5fdb9606c8691",
+    "pc/mode_b/restock_workflow.py": "4dda8b2439bb3b9dbeec6aa7d5b3c4aee8adbc0908185d2f32ae08e8c2e52a81",
+    "sim/phase3_robot/verify_mode_b_loaded_route.py": "44c660156bc427ca9ee6ede27accf5a0923e2d89e5e910da0f63c91d762891ef"
+  },
+  "owned_simulator_closed": true,
+  "motion_requests_this_task": 0,
+  "serial_opened": false,
+  "camera_opened": false,
+  "fpga_accessed": false,
+  "physical_restock": "NOT_RUN",
+  "public_pickup_calibration": "NOT_RUN",
+  "fpga_web_adapter": "NOT_IMPLEMENTED",
+  "friction_slip_servo_dynamics_validated": false,
+  "precondition": "Remove overlapping150mm delivery fixture before public table pickup; normal delivery retains its own fixture layout.",
+  "git_commit_created_this_task": false,
+  "git_push_this_task": false
+}

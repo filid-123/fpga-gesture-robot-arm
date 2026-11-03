@@ -1,0 +1,76 @@
+{
+  "schema": "gesture.phase3.s6_scene.v1",
+  "status": "SYNTHETIC",
+  "note": "SYNTHETIC values for the synthetic-scene tests only; real objects, colours, sizes, workspace and tray are TBD",
+  "objects": [
+    {
+      "object_id": 1,
+      "name": "orange_cube",
+      "hsv_low": [
+        3,
+        120,
+        80
+      ],
+      "hsv_high": [
+        18,
+        255,
+        255
+      ],
+      "size_mm": 45.0,
+      "min_area_px": 400,
+      "max_area_px": 20000
+    },
+    {
+      "object_id": 2,
+      "name": "green_cube",
+      "hsv_low": [
+        50,
+        120,
+        80
+      ],
+      "hsv_high": [
+        70,
+        255,
+        255
+      ],
+      "size_mm": 45.0,
+      "min_area_px": 400,
+      "max_area_px": 20000
+    },
+    {
+      "object_id": 3,
+      "name": "blue_cube",
+      "hsv_low": [
+        100,
+        120,
+        80
+      ],
+      "hsv_high": [
+        130,
+        255,
+        255
+      ],
+      "size_mm": 45.0,
+      "min_area_px": 400,
+      "max_area_px": 20000
+    }
+  ],
+  "workspace": {
+    "x_mm": [
+      150.0,
+      450.0
+    ],
+    "y_mm": [
+      -180.0,
+      180.0
+    ],
+    "table_z_mm": 0.0,
+    "max_object_height_mm": 120.0,
+    "tray_xyz_mm": [
+      200.0,
+      -220.0,
+      40.0
+    ],
+    "status": "SYNTHETIC"
+  }
+}

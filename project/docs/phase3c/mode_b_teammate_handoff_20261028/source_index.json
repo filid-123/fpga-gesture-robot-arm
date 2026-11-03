@@ -1,0 +1,196 @@
+{
+  "purpose": "REVIEW_SNAPSHOT_NOT_PORTABLE_LIVE_RUNTIME",
+  "files": [
+    {
+      "repository_path": "config/ai_pc/mode_b_commissioning_tolerance_20261028.json",
+      "sha256": "1c1b333e76ed5fc7a4c3ee4f325cf3a2e3fc72d5cfdfb02ee99c4ce52a880d33"
+    },
+    {
+      "repository_path": "config/ai_pc/mode_b_cylinder_grasp_20261028_v2.json",
+      "sha256": "85665b69faae5f2b2a16e9be0c56acda271bb3813f899d184e57ed2de8a2f04f"
+    },
+    {
+      "repository_path": "config/ai_pc/mode_b_cylinder_grasp_active_20261028.json",
+      "sha256": "71956afbf6e5f50ea2c7f49cdba701f0e2f3457f08168b7f28548875c40fbae0"
+    },
+    {
+      "repository_path": "config/ai_pc/mode_b_eraser_grasp_20261028_v4.json",
+      "sha256": "43db7ec53e8c2f7143d9b975867d389b87cd8f50fa8940731de2e90613ceb76a"
+    },
+    {
+      "repository_path": "config/ai_pc/mode_b_eraser_grasp_active_20261028.json",
+      "sha256": "a8e168c3b0b38c7c63327193e4f3419e37003073e4386e9e8e29d1ac80d1feac"
+    },
+    {
+      "repository_path": "config/ai_pc/mode_b_filid_postlift_20261028.json",
+      "sha256": "a72e6083c960054affb90e2eee06de59d2298db089bb8c4d685b6d48a013eff0"
+    },
+    {
+      "repository_path": "config/ai_pc/mode_b_red_grasp_correction_20261028.json",
+      "sha256": "b40b25194310e2dd773ac4005c732d3694da4c7bcf4d83544c02bba1e2666962"
+    },
+    {
+      "repository_path": "config/ai_pc/roarm_reference_geometry.json",
+      "sha256": "51bdbd9d4533e656c6e2a529d81bf69b694ec988170d3eb8a3812b600851eeae"
+    },
+    {
+      "repository_path": "config/ai_pc/robot_home_current.json",
+      "sha256": "8840ed92bb15cd6c1379fe33e279eb27513f300b7c80b866ff86ea3b85baae40"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/__init__.py",
+      "sha256": "3b65631af606a3b0e56d3623581a9f5558fb1e683b61e2d2ac8814d3703924f4"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/collision.py",
+      "sha256": "d1c310272b6d2fc1eb5edcf6b85f67255482891ee37799e04e96e53dfca3a03e"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/export.py",
+      "sha256": "524d2f42f5992a4eaedff24be8a6b7cf1e85d28e8001c26f8b45a16865494407"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/fpga_review.py",
+      "sha256": "74644077292369071c8b7cbed9e67254041fa3e34d77f104dba6752de1774cee"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/home_profile.py",
+      "sha256": "9096e2b635d71bf71c5165cf7544b4214f1d88142f6febab0022960587c3cee3"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/kinematics.py",
+      "sha256": "5c50f5efccec270aeb1aec242acd77ddf5831b3b44dec56f6330070c69f9411d"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/pc_trial.py",
+      "sha256": "a5b867af980d5645d146690b8e3a21d09f568c41a7a2ef8554aba9612fc59347"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/perception_input.py",
+      "sha256": "e510fbd1a93b479312d04d18ec8be90d06a34804bd2614d5054b78ea16d336e0"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/planner.py",
+      "sha256": "cab2a5526d6418c639f37c4e03c9089531a3ecb60d726358af31b7bbc6279943"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/state_machine.py",
+      "sha256": "51d37690c65d4b08f5ee5b0e1c4d02193de83f5a4ae96869cb9561471a01412a"
+    },
+    {
+      "repository_path": "pc/mode_b/motion/trajectory.py",
+      "sha256": "dcbd8b900a49249ce0770c74e5c3ddb533636f1ea481e2184b95f5ea86410248"
+    },
+    {
+      "repository_path": "pc/mode_b/postlift_workflow.py",
+      "sha256": "5d676429c599370209de65b888e0e9bd062a77a8c539f1262d7a2eca753fa627"
+    },
+    {
+      "repository_path": "pc/rgb_table_geometry.py",
+      "sha256": "f3bc5fd14eca9deb492573ad008fb22238b272888b6d57257a46cef98bc4465a"
+    },
+    {
+      "repository_path": "pc/roarm_reference_kinematics.py",
+      "sha256": "267959fa06e26072722fc7b7e755022157b8bc506376d5471694ceae2d50f1b3"
+    },
+    {
+      "repository_path": "requirements-mode-b-motion.txt",
+      "sha256": "14abaae39f9d20e2786d0b91708da0cd4faea0cf45719b486765dc0f9ca00edf"
+    },
+    {
+      "repository_path": "scripts/collect_mode_b_serial_pose.ps1",
+      "sha256": "48c55add2e07ada1a497a2ca46f68ac06a526777a7e474c6bb5587f74a64b1bc"
+    },
+    {
+      "repository_path": "scripts/mode_b_eraser_geometry.py",
+      "sha256": "13aeb94bb1086cb5d69334bbda0cec06de5a001f7b904027380a4043613cea76"
+    },
+    {
+      "repository_path": "scripts/mode_b_native_stream.ps1",
+      "sha256": "5f638fa80cf21f228f5522e26dd6b0981e5e5c528eda9fba9643248ddbcb6619"
+    },
+    {
+      "repository_path": "scripts/mode_b_serial_stream.ps1",
+      "sha256": "4911d2be9a90c5d116ad210176ad3416a4410304c73e731bfc2cdb820a14300f"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_approach.py",
+      "sha256": "01ba610e6c7ad9ebb41be262e7bac5962c5e14cad9add1edd54f7ee78b1406f5"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_cylinder_restart.py",
+      "sha256": "309a4c55feadd38748666798ed51ed9f11af42d79ea5ae4a4dd5a594b0377f7d"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_empirical_transfer.py",
+      "sha256": "2563e04a762b0356d0070d07c5d8323a7ad0c0f70cf7a494208087ec3b273bf7"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_eraser_restart.py",
+      "sha256": "d94ad3d671d2377c1ad57470a2de788fc82a34b7bb0f8fc987f8a1d4a067feee"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_loaded_route.py",
+      "sha256": "baaaf42ffb52133d0ff53ec074d2ed8ada66315e8b4d768cb0d95baacfc07acb"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_red_restart.py",
+      "sha256": "5eaca491763da07b1deedebf1d4e6de3d058b01cfee90a024e99a5e8b91dbb4e"
+    },
+    {
+      "repository_path": "scripts/prepare_mode_b_ttl_full_trial.py",
+      "sha256": "e8006802ff99d0ff02800bb4bbe8a063434a11a3ecb45090535a4cb08a1276b6"
+    },
+    {
+      "repository_path": "scripts/roarm_state_json.ps1",
+      "sha256": "7f150f05b28134881678574bc69dd826c5e14479f8a220677fbe511c39b5c546"
+    },
+    {
+      "repository_path": "scripts/run_mode_b_ttl_cylinder_trial.ps1",
+      "sha256": "1949cbb64c89db3c0ad13f5a968412c691205201ce08311a4d3fe8b44045c6e5"
+    },
+    {
+      "repository_path": "scripts/run_mode_b_ttl_eraser_trial.ps1",
+      "sha256": "ef3889455816ade3a3795e0ba96ee1fb6ec96f1937a91d678478ef9405ac0298"
+    },
+    {
+      "repository_path": "scripts/run_mode_b_ttl_red_trial.ps1",
+      "sha256": "2e947c38040d74e49f22c956ce2b641d919540f8adf93e3e68efc2c11f2a0d71"
+    },
+    {
+      "repository_path": "scripts/test_mode_b_cylinder_transfer.py",
+      "sha256": "1d79a5fd6f9cd90818cf88c8ad5c1eea1b92bbf954b74cc4da1227c337a80123"
+    },
+    {
+      "repository_path": "scripts/test_mode_b_empirical_transfer.py",
+      "sha256": "e52705ff014a19ac68df6a26c3641e98a3df026731deee13fba21601f3e7d799"
+    },
+    {
+      "repository_path": "scripts/test_mode_b_eraser_transfer.py",
+      "sha256": "dd6e5ec547ce0ddb3a3eac961df307e0926bfb9ce5a1159f39b716690f954558"
+    },
+    {
+      "repository_path": "scripts/test_mode_b_local_grasp_correction.py",
+      "sha256": "807a6f6470bb783e1f39ac702285ce99e26325b316dc9cd0de5596a8249bc565"
+    },
+    {
+      "repository_path": "scripts/try_mode_b_loaded_route.ps1",
+      "sha256": "7d9040572e01776a4efcef62733b78e9fd8ec2e7c3fa33efc6dad2177f6f6fea"
+    },
+    {
+      "repository_path": "sim/phase3_robot/verify_mode_b_complete_task.py",
+      "sha256": "527c44d82bbaf2cad5fcaae983062c1a8d3c1a7ef450c2f374456e52d5d9ca52"
+    },
+    {
+      "repository_path": "sim/phase3_robot/verify_mode_b_loaded_route.py",
+      "sha256": "a06de158bb74c8f81d611a74670c27a91ffc2ba637f0de8b319689adb11410b2"
+    }
+  ],
+  "external_dependencies": [
+    "numpy/scipy and motion requirements",
+    "CoppeliaSim4.10 + URDF meshes for a new simulation run",
+    "frozen vision models, camera/exposure device and local calibration",
+    "original hash-bound JSON evidence graph for new dynamic planning",
+    "local PowerShell/serial and fresh state for any live commissioning"
+  ]
+}

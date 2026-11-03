@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/hdmi/cycles_to_ms8.v" into library work
+INFO: [VRFC 10-311] analyzing module cycles_to_ms8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/hand_y_step_map.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_y_step_map
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/robot/s4_task_regs.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/rtl/integration/mode_a_observer.v" into library work
+INFO: [VRFC 10-311] analyzing module mode_a_observer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_upgrade_units.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_upgrade_units

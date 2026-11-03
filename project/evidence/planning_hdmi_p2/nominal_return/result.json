@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "class_name": "red_cube",
+      "passed": true,
+      "fifo": 59,
+      "geometry": {
+        "samples_checked": 5934,
+        "minimum_model_clearance_mm": -7.105427357601002e-15
+      },
+      "seconds": 1.5939999999973224
+    },
+    {
+      "class_name": "eraser",
+      "passed": true,
+      "fifo": 57,
+      "geometry": {
+        "samples_checked": 6003,
+        "minimum_model_clearance_mm": 1.1546319456101628e-14
+      },
+      "seconds": 2.375
+    },
+    {
+      "class_name": "small_canister",
+      "passed": true,
+      "fifo": 58,
+      "geometry": {
+        "samples_checked": 5982,
+        "minimum_model_clearance_mm": -0.0005486021641480932
+      },
+      "seconds": 3.5780000000013388
+    }
+  ],
+  "hardware_access": false,
+  "physical_test": "NOT_RUN"
+}

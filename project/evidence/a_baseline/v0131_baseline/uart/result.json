@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: real115200 nine50Hz native exact commands, three decimated queries, 324B feedback, no overlap/errors; RX=5"
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "physical_robot": false,
+  "config_sha256": "0d5bc5507df61ded8e1dce3e8596de49fbaa20e68101a03a2782606b3cee06aa"
+}

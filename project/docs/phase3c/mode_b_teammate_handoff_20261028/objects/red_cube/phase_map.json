@@ -1,0 +1,206 @@
+[
+  {
+    "phase": "DIRECT_PREGRASP",
+    "carrying": false,
+    "request_start_index": 0,
+    "request_end_index_inclusive": 172,
+    "motion_samples": 173,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 6.92,
+    "target_firmware_rad": {
+      "b": -0.13660254840382818,
+      "s": 0.6949020129429879,
+      "e": 1.0533846807406269,
+      "t": 1.4654030573163852,
+      "r": -0.0590251399638546,
+      "g": 3.084835364
+    }
+  },
+  {
+    "phase": "DESCEND",
+    "carrying": false,
+    "request_start_index": 174,
+    "request_end_index_inclusive": 227,
+    "motion_samples": 54,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 2.16,
+    "target_firmware_rad": {
+      "b": -0.13660254840382816,
+      "s": 0.8277459221177432,
+      "e": 1.3579521828337444,
+      "t": 1.0034479530485123,
+      "r": -0.058813292643436085,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "LIFT",
+    "carrying": true,
+    "request_start_index": 229,
+    "request_end_index_inclusive": 403,
+    "motion_samples": 175,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 7.0,
+    "target_firmware_rad": {
+      "b": -0.15569850861266182,
+      "s": 0.6086292721352464,
+      "e": 1.2644672407728073,
+      "t": 1.4172922770919463,
+      "r": -0.07956372010225271,
+      "g": 2.7
+    }
+  },
+  {
+    "phase": "INNER_HOLD",
+    "carrying": true,
+    "request_start_index": 404,
+    "request_end_index_inclusive": 442,
+    "motion_samples": 39,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.78,
+    "target_firmware_rad": {
+      "b": 3.673194529787832e-06,
+      "s": 0.40568341297506655,
+      "e": 1.7689148418533336,
+      "t": 1.1157905351716133,
+      "r": -0.07956372010225271,
+      "g": 2.7
+    }
+  },
+  {
+    "phase": "BUFFER",
+    "carrying": true,
+    "request_start_index": 443,
+    "request_end_index_inclusive": 1144,
+    "motion_samples": 702,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 14.040000000000001,
+    "target_firmware_rad": {
+      "b": 0.9097568311452073,
+      "s": 0.5236871998349752,
+      "e": 0.9894164701106333,
+      "t": 1.5609884562387792,
+      "r": -0.07956372010225271,
+      "g": 2.7
+    }
+  },
+  {
+    "phase": "PREPLACE",
+    "carrying": true,
+    "request_start_index": 1145,
+    "request_end_index_inclusive": 1246,
+    "motion_samples": 102,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 2.04,
+    "target_firmware_rad": {
+      "b": 0.8908911451246626,
+      "s": 0.5087938043022573,
+      "e": 0.8863891156019508,
+      "t": 1.5491821426272714,
+      "r": -0.07956372010225271,
+      "g": 2.7
+    }
+  },
+  {
+    "phase": "PLACE",
+    "carrying": true,
+    "request_start_index": 1247,
+    "request_end_index_inclusive": 1309,
+    "motion_samples": 63,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 1.26,
+    "target_firmware_rad": {
+      "b": 1.0754845618900553,
+      "s": 0.668150941038991,
+      "e": 0.6071791895587275,
+      "t": 1.5706999999999998,
+      "r": -0.07956372010225271,
+      "g": 2.7
+    }
+  },
+  {
+    "phase": "RELEASE_CLEARANCE",
+    "carrying": false,
+    "request_start_index": 1311,
+    "request_end_index_inclusive": 1336,
+    "motion_samples": 26,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.52,
+    "target_firmware_rad": {
+      "b": 1.098748001246241,
+      "s": 0.6632567388370667,
+      "e": 0.6194142887879645,
+      "t": 1.563359102972687,
+      "r": -0.07956372010225271,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "RETREAT",
+    "carrying": false,
+    "request_start_index": 1337,
+    "request_end_index_inclusive": 1614,
+    "motion_samples": 278,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 5.5600000000000005,
+    "target_firmware_rad": {
+      "b": 1.098748001248233,
+      "s": 0.529007073652815,
+      "e": 0.6084559195016259,
+      "t": 1.514236584589096,
+      "r": -0.07956372010225271,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "RETURN_CLEAR",
+    "carrying": false,
+    "request_start_index": 1615,
+    "request_end_index_inclusive": 1651,
+    "motion_samples": 37,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.74,
+    "target_firmware_rad": {
+      "b": 0.8908911451266719,
+      "s": 0.282232316628638,
+      "e": 1.0730148327497675,
+      "t": 1.296452428365139,
+      "r": -0.07956372010225271,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "INNER_RETURN",
+    "carrying": false,
+    "request_start_index": 1652,
+    "request_end_index_inclusive": 1761,
+    "motion_samples": 110,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 2.2,
+    "target_firmware_rad": {
+      "b": 3.6731945292796803e-06,
+      "s": 0.08769243737079326,
+      "e": 2.440923628248179,
+      "t": 0.12308351212465221,
+      "r": -0.07956372010225271,
+      "g": 1.586
+    }
+  },
+  {
+    "phase": "RETURN_LOW_HOME",
+    "carrying": false,
+    "request_start_index": 1762,
+    "request_end_index_inclusive": 1787,
+    "motion_samples": 26,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.52,
+    "target_firmware_rad": {
+      "b": 0.006135923,
+      "s": 0.104310694,
+      "e": 2.587825589,
+      "t": 0.426446659,
+      "r": 0.004601941999999998,
+      "g": 1.586
+    }
+  }
+]

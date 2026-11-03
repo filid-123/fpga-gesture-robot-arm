@@ -1,0 +1,9 @@
+﻿metric,value,unit,condition,evidence
+physical_task_success,NOT_RUN,,Requires attended physical/independent measurement,evidence/validation_summary.json
+physical_response_latency,NOT_RUN,,Requires attended physical/independent measurement,evidence/validation_summary.json
+communication_rtt_error_rate,NOT_RUN,,Requires attended physical/independent measurement,evidence/validation_summary.json
+formal_AI_quality,NOT_RUN,,Requires attended physical/independent measurement,evidence/validation_summary.json
+continuous_visual_fps,NOT_RUN,,Requires attended physical/independent measurement,evidence/validation_summary.json
+ROCm_pipeline_P50_P95_P99_max,"{""p50"": 338.5307, ""p95"": 364.4381, ""p99"": 365.37442, ""max"": 365.6085}",ms,9 saved frames; warm models; no camera or physical latency claim,board_evidence/mode_ab_p4/gpu_final/result.json
+FPGA_utilization,"{""LUT_TOTAL"": 30657.0, ""LUT_LOGIC"": 29053.0, ""LUT_MEMORY"": 1604.0, ""FF"": 25196.0, ""BRAM_TILE"": 117.5, ""RAMB36"": 110.0, ""RAMB18"": 15.0, ""DSP"": 56.0}",count,XC7Z020 full implementation,evidence/implementation/implementation_summary.json
+FPGA_timing,"{""WNS"": 0.013, ""TNS"": 0.0, ""TNS_FAILING"": 0.0, ""WHS"": 0.011, ""THS"": 0.0, ""THS_FAILING"": 0.0}",ns,Full routed setup/hold,evidence/implementation/implemented_reports/build_gate.txt

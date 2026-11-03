@@ -1,0 +1,88 @@
+{
+  "private_sources": [
+    {
+      "run": "ab_20261030_222822",
+      "file": "telemetry.jsonl",
+      "bytes": 12474231,
+      "sha256": "cd96f5b6bf326bf28d2f523facbbc77fbb51ea4aef7082f206be47f0b65b236a"
+    },
+    {
+      "run": "ab_20261030_222822",
+      "file": "communication.jsonl",
+      "bytes": 1380736,
+      "sha256": "ffbc30b54d3f9949f63744efaae8254290fa326f98c09e0e7e650385e9519432"
+    },
+    {
+      "run": "ab_20261030_225113",
+      "file": "telemetry.jsonl",
+      "bytes": 7931272,
+      "sha256": "f48f6bef9079a14803b7ac5a46df31fdc7fe3491aeb5d9551369be141eb90c4b"
+    },
+    {
+      "run": "ab_20261030_225113",
+      "file": "communication.jsonl",
+      "bytes": 1009655,
+      "sha256": "6ff18b5f947d996bbcb1b5a98a8aeca95b74bd991e6f8571be1d44a139966f28"
+    },
+    {
+      "run": "ab_20261030_233230",
+      "file": "telemetry.jsonl",
+      "bytes": 20904929,
+      "sha256": "a995b3939a1e237265f9d21790dbeb16921cfcab1840988922f01c5f77bae269"
+    },
+    {
+      "run": "ab_20261030_233230",
+      "file": "communication.jsonl",
+      "bytes": 2706431,
+      "sha256": "a0b27dd48a2a5aa3a5147954f5f7919229707e2079997c93f06e444003922264"
+    },
+    {
+      "run": "ab_20261031_230338",
+      "file": "telemetry.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "ab_20261031_230338",
+      "file": "communication.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "run": "ab_20261031_230618",
+      "file": "telemetry.jsonl",
+      "bytes": 15178525,
+      "sha256": "97a29731d18d76b37fd50955ae0b790600fb59ee031f54a6ad0cc37c08706275"
+    },
+    {
+      "run": "ab_20261031_230618",
+      "file": "communication.jsonl",
+      "bytes": 851409,
+      "sha256": "87db42dba6ad932b0cdeb9bab8f221d81df947ccfc3fe2f657d40459bd1f1449"
+    },
+    {
+      "run": "ab_20261031_233419",
+      "file": "telemetry.jsonl",
+      "bytes": 14731350,
+      "sha256": "bbfd1db749087ec8c4ef91e36f025375d2d28449e20f437bd8f5fdd5593b6bf9"
+    },
+    {
+      "run": "ab_20261031_233419",
+      "file": "communication.jsonl",
+      "bytes": 1403168,
+      "sha256": "c62d2146cfc0c84d7d9fd0da4bdbaab44246b8054664cc2972eac14a75e70a25"
+    }
+  ],
+  "public_sources": {
+    "report/acceptance/board_test_20261101.json": "3e58000fddccd2c60ee79adebca581f0477d682dfd477d691dfaf4802068a6e0",
+    "report/acceptance/task_outcomes_review_20261101.json": "91d1c9b21e39d7ad74619d1c146a2b0a0563f8e10781ee7bb9fc3c331cfa3b4f",
+    "project/model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/quantized/validation.json": "d4900a6075e33cf16810d13aaee7f327b27784bb36139205dc9001ac1d90bf94",
+    "project/model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/quantized/validation_rows.json": "0f13385a3d34e1afd244c8abef8c88e34a12746ca145cd98d9f5f0fe97bb3da2",
+    "project/hardware/roarm_closed_loop.hwh": "a325b55e10ea0452cf3612281104797952b9fa760a3179fc1f93091b02c1f17f",
+    "project/native_motion/rtl/integration/mode_a_observer.v": "dc616d21421ec1ab3882e877265c25280e797fa759072672cdfec9e94556c628",
+    "project/native_motion/rtl/integration/s5_vision_event_adapter.v": "e6e29212acfe69cd14994dc003a3c65fffce290e9ecc6c3c244704ee96a18cc9",
+    "project/pc/mode_ab/board.py": "a41765ce2792a557923faae629fdfa105068a497d597a6d1b13c735d882ea266"
+  },
+  "script_sha256": "05f4e6a926767e62070c1413986eebc15ddc46d0bf246a64d558b92588e3ef79",
+  "privacy": "Only RPC timings/statuses, aggregate cycle observations and development labels are exported. No images, raw JTAG data, joint positions or device paths are copied."
+}

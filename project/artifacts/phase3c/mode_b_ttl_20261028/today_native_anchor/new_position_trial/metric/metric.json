@@ -1,0 +1,190 @@
+{
+  "schema": "gesture.mode_b.red_restart_metric.v1",
+  "capture_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\new_position_trial\\capture\\capture.json",
+  "capture_sha256": "fa8205f66ad501702845aa7d51c74459fe149c27148ae681e64741a918cc0aac",
+  "table_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\coordinate_retake_v2\\pose_candidate_v2_E2\\RGB_DESKTOP_TRANSFORM_CANDIDATE.json",
+  "table_sha256": "7bc4444cbffa6fb84c3b4d0526b7105789d46e714cd1f932b3163e5d8748a77f",
+  "frozen_vision_files_checked": 19,
+  "object_centre_mm": [
+    651.879446649631,
+    257.80145957601377,
+    15.0
+  ],
+  "height_source": "KNOWN30MM_NOT_NEW_DEPTH",
+  "xy_max_pairwise_repeatability_mm": 0.2432222644759706,
+  "records": [
+    {
+      "frame": {
+        "image": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000000_raw.png",
+        "image_sha256": "681e9b250c8555234f177cc1572d8d273665a318854acd8d4a7288d70b8378a0",
+        "pixel_sha256": "ec061020a169e4258741fd91e877330e1a4b838c42717d9d8be97e4c7df7c868",
+        "received_utc": "2026-10-28T12:58:55.833258+00:00",
+        "image_size_wh": [
+          1920,
+          1080
+        ],
+        "exposure": -4,
+        "flags": 2
+      },
+      "observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\new_position_trial\\perception\\00_observation.json",
+      "observation_sha256": "1d6169d1d3efdb61eec1fc41745fb6ea0eb1982d8a5ce36ed2399c5b8208cce9",
+      "top": {
+        "centre_desktop_xyz_mm": [
+          651.8952034619932,
+          257.8932297745481,
+          30.0
+        ],
+        "projected_boundary_xyz_mm": [
+          [
+            667.169605419395,
+            242.97871618328185,
+            30.0
+          ],
+          [
+            665.5839413508836,
+            273.45801630196195,
+            30.0
+          ],
+          [
+            636.9522811900545,
+            272.7895811702109,
+            30.0
+          ],
+          [
+            637.8749858876396,
+            242.34660544273783,
+            30.0
+          ]
+        ],
+        "edge_lengths_mm": [
+          30.52051877446943,
+          28.63946174582493,
+          30.456955775363713,
+          29.301438488555764
+        ],
+        "opposite_edge_mean_mm": [
+          30.488737274916573,
+          28.970450117190346
+        ],
+        "max_abs_adjacent_edge_cosine": 0.030398391444019388,
+        "long_axis_yaw_mod180_deg": 92.9780876530327
+      }
+    },
+    {
+      "frame": {
+        "image": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000001_raw.png",
+        "image_sha256": "26f76f78ca03af8013e3ba35fc0c35cc88a52963dc9b7bd9a461c042bed174a4",
+        "pixel_sha256": "bc39e019e91bb181a6dcbfc838e1073e33f34115152f0819091cb0c8e6f54157",
+        "received_utc": "2026-10-28T12:58:56.243688+00:00",
+        "image_size_wh": [
+          1920,
+          1080
+        ],
+        "exposure": -4,
+        "flags": 2
+      },
+      "observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\new_position_trial\\perception\\01_observation.json",
+      "observation_sha256": "77539035e2a37bd4a5b6f4cf9c8fca03a4fd09355387c258969dc337d1456293",
+      "top": {
+        "centre_desktop_xyz_mm": [
+          651.9472841315152,
+          257.83992464633826,
+          30.0
+        ],
+        "projected_boundary_xyz_mm": [
+          [
+            666.9756150605227,
+            242.52907247517177,
+            30.0
+          ],
+          [
+            666.2110712812773,
+            273.0351757659338,
+            30.0
+          ],
+          [
+            637.1562204651439,
+            273.0104991691703,
+            30.0
+          ],
+          [
+            637.4462297191168,
+            242.78495117507705,
+            30.0
+          ]
+        ],
+        "edge_lengths_mm": [
+          30.515682282672685,
+          29.05486129518087,
+          30.226939258062917,
+          29.530493943554436
+        ],
+        "opposite_edge_mean_mm": [
+          30.3713107703678,
+          29.29267761936765
+        ],
+        "max_abs_adjacent_edge_cosine": 0.033715363884831887,
+        "long_axis_yaw_mod180_deg": 91.43564595762709
+      }
+    },
+    {
+      "frame": {
+        "image": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/capture/frame_000002_raw.png",
+        "image_sha256": "4395568e83c4bcdad5e5f8279d621f11ce213fe73f78e3d6dff04613515c79fe",
+        "pixel_sha256": "20ef9857d437de02c212ab363f8ad97cf811e5ebfc7e4e856f6f2eee05dc02cd",
+        "received_utc": "2026-10-28T12:58:56.645322+00:00",
+        "image_size_wh": [
+          1920,
+          1080
+        ],
+        "exposure": -4,
+        "flags": 2
+      },
+      "observation_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\new_position_trial\\perception\\02_observation.json",
+      "observation_sha256": "f273630277185758c41fe379055f73928acb661ab8603a885a13652349c187ba",
+      "top": {
+        "centre_desktop_xyz_mm": [
+          651.7958523553846,
+          257.67122430715494,
+          30.0
+        ],
+        "projected_boundary_xyz_mm": [
+          [
+            666.9756150605227,
+            242.52907247517177,
+            30.0
+          ],
+          [
+            665.7953607834925,
+            273.24499973329904,
+            30.0
+          ],
+          [
+            636.7482687754242,
+            272.56860148263104,
+            30.0
+          ],
+          [
+            637.664164802099,
+            242.342223537518,
+            30.0
+          ]
+        ],
+        "edge_lengths_mm": [
+          30.738594429235274,
+          29.05496633484007,
+          30.2402511433436,
+          29.31204579652454
+        ],
+        "opposite_edge_mean_mm": [
+          30.48942278628944,
+          29.183506065682305
+        ],
+        "max_abs_adjacent_edge_cosine": 0.032025939028250086,
+        "long_axis_yaw_mod180_deg": 92.20049801412792
+      }
+    }
+  ],
+  "metric_localization_accepted": false,
+  "physical_execution_allowed": false
+}

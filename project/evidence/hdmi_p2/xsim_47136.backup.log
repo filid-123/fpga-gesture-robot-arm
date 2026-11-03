@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 03:02:48 2026
+# Process ID         : 47136
+# Current directory  : C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_a_upgrade_hdmi_abp2a1
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_video_timing_640x480/xsim_script.tcl}
+# Log file           : C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_a_upgrade_hdmi_abp2a1/xsim.log
+# Journal file       : C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_a_upgrade_hdmi_abp2a1\xsim.jou
+# Running On         : AlvinX
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD RYZEN AI MAX+ 395 w/ Radeon 8060S          
+# CPU Frequency      : 2994 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 68341 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72636 MB
+# Available Virtual  : 35110 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_video_timing_640x480/xsim_script.tcl
+# xsim {tb_video_timing_640x480} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: 640x480 timing is bit-exact for one 800x525 frame
+$finish called at time : 8400030 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/sim/hdmi/tb_video_timing_640x480.v" Line 47
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 03:02:50 2026...

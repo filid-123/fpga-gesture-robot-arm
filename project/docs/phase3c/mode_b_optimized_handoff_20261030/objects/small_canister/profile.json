@@ -1,0 +1,70 @@
+{
+  "object_class": "small_canister",
+  "source_centre_mm": [
+    586.2390145235656,
+    266.8283415175714,
+    23.0
+  ],
+  "yaw_deg": 3.4014402821814826,
+  "destination": {
+    "support_centre_mm": [
+      285,
+      195,
+      150
+    ],
+    "size_xy_mm": [
+      80,
+      80
+    ],
+    "rim_height_mm": 0
+  },
+  "origin_for_restock": {
+    "centre_mm": [
+      586.2390145235656,
+      266.8283415175714,
+      23.0
+    ],
+    "yaw_deg": 3.4014402821814826,
+    "yaw_source": "AXISYMMETRIC_CYLINDER_KEEP_ACCEPTED_CLOSING_AXIS"
+  },
+  "base_speed_multiplier": 2,
+  "nominal_motion_seconds": 23.1,
+  "requests": 754,
+  "motion_samples": 750,
+  "close_command": {
+    "T": 106,
+    "cmd": 2.8,
+    "spd": 40,
+    "acc": 5
+  },
+  "local_transfer": {
+    "delta_desk_mm": [
+      -21.185676048151322,
+      -7.9147375035717005,
+      8.0
+    ],
+    "yaw_delta_equivalent_deg": 0.0,
+    "extra_outward_mm": 2.0,
+    "scope": "LOCAL_NATIVE_ENDPOINT_DIFFERENCES_FROM_OPERATOR_ACCEPTED_CURRENT_CAMERA_SOURCE",
+    "native_endpoint_delta_mm": [
+      -6.092938702405622,
+      8.78539552983579,
+      0.010376418105732794
+    ],
+    "fixed_jaw_width_adjustment_native_mm": [
+      -0.1760147235417518,
+      -2.4937744779838873,
+      0.010376418105732794
+    ],
+    "object_specific_source_correction_desk_mm": [
+      10.0,
+      0.0,
+      0.0
+    ],
+    "object_centre_height_change_mm": 8.0,
+    "maximum_native_pitch_adjustment_deg": 0.0
+  },
+  "new_speed_physical_test_performed": false,
+  "physical_scope": "BASELINE_GRASP_ACCEPTED_NEW_TRANSIT_SPEED_UNTESTED",
+  "source_plan_sha256": "90f84f7b34cc351e8bff18e0197560b46207904cf389a1bfae8a4c02d5c02ff1"
+}

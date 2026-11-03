@@ -1,0 +1,27 @@
+{
+  "selected_sensor_parameters": {
+    "3503": 3,
+    "3500": 0,
+    "3501": 61,
+    "3502": 128,
+    "350A": 0,
+    "350B": 80,
+    "exposure_units": 15744,
+    "gain_code": 80,
+    "exposure_lines": 984.0,
+    "gain_nominal_x": 5.0
+  },
+  "reason": "Approximate visual compromise: less highlight clipping than original, brighter hand than quarter exposure; classification improvement NOT demonstrated",
+  "original_near_image": "camera_09_128x128.png",
+  "selected_near_image": "camera_10_128x128.png",
+  "full_frame_exported": false,
+  "requires_reapplication": true,
+  "register_writes": {
+    "3503": 3,
+    "3500": 0,
+    "3501": 61,
+    "3502": 128,
+    "350A": 0,
+    "350B": 80
+  }
+}

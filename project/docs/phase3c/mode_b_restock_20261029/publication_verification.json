@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "fresh_extraction_stdlib_cli": true,
+  "matching_observed_stream_accepted": true,
+  "truncated_stream_rejected": true,
+  "wrong_pl_samples_rejected": true,
+  "tampered_file_rejected": true,
+  "published_files": 89,
+  "source_files": 35,
+  "new_accepted_zip_sha256": "afb745fc8583b77f8a91bfee2f1b8a675ceaedaf0d25d0c643cccc6b5b49ae25",
+  "hardware_accessed": false,
+  "original_three_class_review_archive_crc_and_all_hashes": true,
+  "source_line_endings_preserved": true,
+  "source_and_package_files": 91,
+  "remote_branch": "dev/Giao",
+  "accepted_actual_seconds": 130.6435419,
+  "current_git_head": "8314c6b19acd4f0583a2b99b6affa8c4175c2bc5",
+  "new_hardware_requests": 0
+}

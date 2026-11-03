@@ -1,0 +1,2896 @@
+{
+  "kind": "v3_targeted600_full_INT8_CNN_TRAIN_goldens",
+  "selection": "one_per_class_per_four_TRAIN_cohorts_plus_rejected_one_and_leftlean_two",
+  "all_source_role": "TRAIN",
+  "samples": [
+    {
+      "id": "sample_00",
+      "image": "golden_integer/sample_00/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "project_black:session_20261006_020349_p01_p01_black_20261006_none_unknown_no_hand:images/no_hand_000000.png",
+      "source_sha256": "3345fe37b849c4c82a99e54e983aa81942b605c3e1a32da18f1f9146390fe4a1",
+      "class_label": "background",
+      "vectors": "golden_integer/sample_00/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_00/float_classifier_layers.npz",
+      "classifier_input_role": "rejected_peak_diagnostic_not_live_action",
+      "pipeline": {
+        "peak_xy": [
+          13,
+          5
+        ],
+        "confidence_raw_i32": -36570,
+        "confidence_logit": -2.637309411381275,
+        "confidence": 0.06677550843589225,
+        "detected": false,
+        "bbox_source": [
+          434.41808592686766,
+          0.0,
+          640.0,
+          271.15522721515595
+        ],
+        "regression_float": [
+          0.007787312507972203,
+          -0.14201114263221043,
+          0.33091689554203507,
+          0.4276114778763887
+        ],
+        "effective_bbox_source": [
+          434.41808592686766,
+          0.0,
+          640.0,
+          271.15522721515595
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "fresh_target_gesture": false
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          13,
+          5
+        ],
+        "confidence_raw_i32": -36570,
+        "confidence_logit": -2.637309411381275,
+        "confidence": 0.06677550843589225,
+        "detected": false,
+        "bbox_source": [
+          435.95569610595703,
+          0.0,
+          640.0,
+          269.69844818115234
+        ],
+        "regression_float": [
+          0.007787312507972203,
+          -0.14201114263221043,
+          0.33091689554203507,
+          0.4276114778763887
+        ],
+        "effective_bbox_source": [
+          435.95569610595703,
+          0.0,
+          640.0,
+          269.69844818115234
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": false
+      }
+    },
+    {
+      "id": "sample_01",
+      "image": "golden_integer/sample_01/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "project_black:session_20261006_014854_p01_p01_black_20261006_right_near_one:images/one_000000.png",
+      "source_sha256": "c81b343209b6e6dcd287b2b03a2a2c76514cfe0c8b758e61f6e3e8b2d60704ac",
+      "class_label": "one",
+      "vectors": "golden_integer/sample_01/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_01/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 7587,
+        "confidence_logit": 0.5471497540101103,
+        "confidence": 0.6334740596876498,
+        "detected": true,
+        "bbox_source": [
+          97.07884606273545,
+          63.24884924466513,
+          353.4889199931652,
+          473.6276780344896
+        ],
+        "regression_float": [
+          0.13209707569875798,
+          0.21095659098943448,
+          0.4006407405162965,
+          0.6412169199841008
+        ],
+        "effective_bbox_source": [
+          97.07884606273545,
+          63.24884924466513,
+          353.4889199931652,
+          473.6276780344896
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "logits_i32": [
+            -5362,
+            8257,
+            448,
+            -12462,
+            -8472,
+            -14663
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 7587,
+        "confidence_logit": 0.5471497540101103,
+        "confidence": 0.6334740596876498,
+        "detected": true,
+        "bbox_source": [
+          92.65203475952148,
+          60.78044891357422,
+          355.9181213378906,
+          478.40389251708984
+        ],
+        "regression_float": [
+          0.13209707569875798,
+          0.21095659098943448,
+          0.4006407405162965,
+          0.6412169199841008
+        ],
+        "effective_bbox_source": [
+          92.65203475952148,
+          60.78044891357422,
+          355.9181213378906,
+          478.40389251708984
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "confidence": 0.9999250173568726,
+          "logits_float32": [
+            -6.3395514488220215,
+            9.751190185546875,
+            0.25201448798179626,
+            -14.648847579956055,
+            -9.463006019592285,
+            -17.06346321105957
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_02",
+      "image": "golden_integer/sample_02/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "project_black:session_20261006_014955_p01_p01_black_20261006_right_near_two:images/two_000000.png",
+      "source_sha256": "f25cb3e06c5a92291838889eeeea30ba1835b914cbffa0a91c242b0dc5078a26",
+      "class_label": "two",
+      "vectors": "golden_integer/sample_02/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_02/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          6,
+          8
+        ],
+        "confidence_raw_i32": 26520,
+        "confidence_logit": 1.9125361112888,
+        "confidence": 0.8713037987551517,
+        "detected": true,
+        "bbox_source": [
+          114.14570872082483,
+          28.678665507220344,
+          402.9308575671659,
+          480.0
+        ],
+        "regression_float": [
+          -0.03654292140011546,
+          -0.02018197649542561,
+          0.451226795072408,
+          0.7203564232280082
+        ],
+        "effective_bbox_source": [
+          114.14570872082483,
+          28.678665507220344,
+          402.9308575671659,
+          480.0
+        ],
+        "roi_source": [
+          18,
+          0,
+          498,
+          480
+        ],
+        "small_roi": {
+          "sx": 3,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "logits_i32": [
+            -9263,
+            -6866,
+            7635,
+            -6778,
+            -23303,
+            -26389
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          6,
+          8
+        ],
+        "confidence_raw_i32": 26520,
+        "confidence_logit": 1.9125361112888,
+        "confidence": 0.8713037987551517,
+        "detected": true,
+        "bbox_source": [
+          112.55085945129395,
+          24.520797729492188,
+          405.04138946533203,
+          480.0
+        ],
+        "regression_float": [
+          -0.03654292140011546,
+          -0.02018197649542561,
+          0.451226795072408,
+          0.7203564232280082
+        ],
+        "effective_bbox_source": [
+          112.55085945129395,
+          24.520797729492188,
+          405.04138946533203,
+          480.0
+        ],
+        "roi_source": [
+          19,
+          0,
+          499,
+          480
+        ],
+        "small_roi": {
+          "sx": 3,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "confidence": 1.0,
+          "logits_float32": [
+            -11.279261589050293,
+            -7.761385917663574,
+            8.911645889282227,
+            -7.950134754180908,
+            -27.057893753051758,
+            -30.852588653564453
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_03",
+      "image": "golden_integer/sample_03/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "project_black:session_20261006_015120_p01_p01_black_20261006_right_near_three:images/three_000000.png",
+      "source_sha256": "696709e5228acf2da34e41a35cdd737161379e8c854c68849a3b319c8732ec95",
+      "class_label": "three",
+      "vectors": "golden_integer/sample_03/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_03/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          4,
+          10
+        ],
+        "confidence_raw_i32": 14893,
+        "confidence_logit": 1.0740347023161425,
+        "confidence": 0.7453634471325121,
+        "detected": true,
+        "bbox_source": [
+          36.37616569699613,
+          115.05039550436607,
+          333.76393647526993,
+          480.0
+        ],
+        "regression_float": [
+          0.12675127715332624,
+          -0.22628101440286652,
+          0.4646683918410529,
+          0.6746823872484977
+        ],
+        "effective_bbox_source": [
+          36.37616569699613,
+          115.05039550436607,
+          333.76393647526993,
+          480.0
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "logits_i32": [
+            -5283,
+            -11382,
+            -605,
+            4615,
+            -9400,
+            -2300
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          4,
+          10
+        ],
+        "confidence_raw_i32": 14893,
+        "confidence_logit": 1.0740347023161425,
+        "confidence": 0.7453634471325121,
+        "detected": true,
+        "bbox_source": [
+          38.1610107421875,
+          114.97690200805664,
+          329.1265106201172,
+          480.0
+        ],
+        "regression_float": [
+          0.12675127715332624,
+          -0.22628101440286652,
+          0.4646683918410529,
+          0.6746823872484977
+        ],
+        "effective_bbox_source": [
+          38.1610107421875,
+          114.97690200805664,
+          329.1265106201172,
+          480.0
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "confidence": 0.9973822236061096,
+          "logits_float32": [
+            -6.088101387023926,
+            -13.365196228027344,
+            -0.8741148710250854,
+            5.24600887298584,
+            -11.039219856262207,
+            -2.5427393913269043
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_04",
+      "image": "golden_integer/sample_04/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "project_black:session_20261006_015207_p01_p01_black_20261006_right_near_fist:images/fist_000000.png",
+      "source_sha256": "6659cdd98db589f3668bf4c386c10a19a27df5c18145e957d022db4c54900f89",
+      "class_label": "fist",
+      "vectors": "golden_integer/sample_04/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_04/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 14212,
+        "confidence_logit": 1.024923198100921,
+        "confidence": 0.7359304687612291,
+        "detected": true,
+        "bbox_source": [
+          83.48445452272014,
+          68.23007369522472,
+          349.86058480448327,
+          444.4778138804969
+        ],
+        "regression_float": [
+          -0.08318700840995716,
+          -0.09115140530348029,
+          0.4162127035652549,
+          0.5878870940394878
+        ],
+        "effective_bbox_source": [
+          83.48445452272014,
+          68.23007369522472,
+          349.86058480448327,
+          444.4778138804969
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "logits_i32": [
+            -3213,
+            -1533,
+            -8066,
+            -6947,
+            14818,
+            -272
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 14212,
+        "confidence_logit": 1.024923198100921,
+        "confidence": 0.7359304687612291,
+        "detected": true,
+        "bbox_source": [
+          84.2062759399414,
+          67.1002197265625,
+          347.2278594970703,
+          443.4770965576172
+        ],
+        "regression_float": [
+          -0.08318700840995716,
+          -0.09115140530348029,
+          0.4162127035652549,
+          0.5878870940394878
+        ],
+        "effective_bbox_source": [
+          84.2062759399414,
+          67.1002197265625,
+          347.2278594970703,
+          443.4770965576172
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "confidence": 1.0,
+          "logits_float32": [
+            -4.068910121917725,
+            -1.4687961339950562,
+            -9.51420783996582,
+            -8.37899112701416,
+            17.90765953063965,
+            -0.39520683884620667
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_05",
+      "image": "golden_integer/sample_05/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "project_black:session_20261006_015237_p01_p01_black_20261006_right_near_palm:images/palm_000000.png",
+      "source_sha256": "10cdd119a12e3a2d256536114f871b74dfa309ec6eb31745e83c6a90e798417c",
+      "class_label": "palm",
+      "vectors": "golden_integer/sample_05/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_05/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          4,
+          8
+        ],
+        "confidence_raw_i32": 16249,
+        "confidence_logit": 1.1718250102689183,
+        "confidence": 0.7634747364744006,
+        "detected": true,
+        "bbox_source": [
+          55.84547333404753,
+          58.14428802168994,
+          306.97710829794045,
+          434.5019053253982
+        ],
+        "regression_float": [
+          0.03528227039984947,
+          -0.3419225831613977,
+          0.39239317963108267,
+          0.5880587770370441
+        ],
+        "effective_bbox_source": [
+          55.84547333404753,
+          58.14428802168994,
+          306.97710829794045,
+          434.5019053253982
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "logits_i32": [
+            3937,
+            -23651,
+            -16204,
+            -755,
+            -7258,
+            18367
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          4,
+          8
+        ],
+        "confidence_raw_i32": 16249,
+        "confidence_logit": 1.1718250102689183,
+        "confidence": 0.7634747364744006,
+        "detected": true,
+        "bbox_source": [
+          57.847537994384766,
+          57.41180419921875,
+          301.2622261047363,
+          432.82615661621094
+        ],
+        "regression_float": [
+          0.03528227039984947,
+          -0.3419225831613977,
+          0.39239317963108267,
+          0.5880587770370441
+        ],
+        "effective_bbox_source": [
+          57.847537994384766,
+          57.41180419921875,
+          301.2622261047363,
+          432.82615661621094
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "confidence": 1.0,
+          "logits_float32": [
+            4.363247871398926,
+            -27.33751678466797,
+            -18.74007797241211,
+            -0.8350910544395447,
+            -8.342306137084961,
+            21.017805099487305
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_06",
+      "image": "golden_integer/sample_06/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "lab_black:session_20261023_220120_990713_p01_lab_20261023_214809_494165_b1_s11_no_hand:images/no_hand_000000.png",
+      "source_sha256": "30a620f1dd10b4ed5bfd65c4f46e9d4b557883f186ed1c1b4250d463dafe2f3e",
+      "class_label": "background",
+      "vectors": "golden_integer/sample_06/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_06/float_classifier_layers.npz",
+      "classifier_input_role": "rejected_peak_diagnostic_not_live_action",
+      "pipeline": {
+        "peak_xy": [
+          13,
+          0
+        ],
+        "confidence_raw_i32": -42980,
+        "confidence_logit": -3.0995777550223464,
+        "confidence": 0.04312467549293408,
+        "detected": false,
+        "bbox_source": [
+          456.7436470009116,
+          0.0,
+          627.3644794991956,
+          50.65090194296997
+        ],
+        "regression_float": [
+          0.05135158125134129,
+          -0.22370766782966756,
+          0.2665950507785687,
+          0.37374752705048964
+        ],
+        "effective_bbox_source": [
+          456.7436470009116,
+          0.0,
+          627.3644794991956,
+          50.65090194296997
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "fresh_target_gesture": false
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          13,
+          0
+        ],
+        "confidence_raw_i32": -42980,
+        "confidence_logit": -3.0995777550223464,
+        "confidence": 0.04312467549293408,
+        "detected": false,
+        "bbox_source": [
+          457.4296188354492,
+          0.0,
+          626.2742233276367,
+          49.62228775024414
+        ],
+        "regression_float": [
+          0.05135158125134129,
+          -0.22370766782966756,
+          0.2665950507785687,
+          0.37374752705048964
+        ],
+        "effective_bbox_source": [
+          457.4296188354492,
+          0.0,
+          626.2742233276367,
+          49.62228775024414
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": false
+      }
+    },
+    {
+      "id": "sample_07",
+      "image": "golden_integer/sample_07/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "lab_black:session_20261023_214836_999439_p01_lab_20261023_214809_494165_b1_s01_one:images/one_000000.png",
+      "source_sha256": "c68208da7d6820504304d0e2e7c53360e7e2288a158bfeecbd34abc352c7deef",
+      "class_label": "one",
+      "vectors": "golden_integer/sample_07/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_07/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": 10809,
+        "confidence_logit": 0.7795099105173695,
+        "confidence": 0.6855744788233397,
+        "detected": true,
+        "bbox_source": [
+          197.64100401388376,
+          48.99853534383247,
+          456.87533495592913,
+          461.3592217884103
+        ],
+        "regression_float": [
+          -0.3185457628773383,
+          -0.12052803584696513,
+          0.40505364209694594,
+          0.6443135725696529
+        ],
+        "effective_bbox_source": [
+          197.64100401388376,
+          48.99853534383247,
+          456.87533495592913,
+          461.3592217884103
+        ],
+        "roi_source": [
+          88,
+          0,
+          568,
+          480
+        ],
+        "small_roi": {
+          "sx": 17,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "logits_i32": [
+            -5223,
+            9430,
+            821,
+            -15766,
+            -9685,
+            -17522
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": 10809,
+        "confidence_logit": 0.7795099105173695,
+        "confidence": 0.6855744788233397,
+        "detected": true,
+        "bbox_source": [
+          194.6118927001953,
+          44.539451599121094,
+          459.13818359375,
+          464.48604583740234
+        ],
+        "regression_float": [
+          -0.3185457628773383,
+          -0.12052803584696513,
+          0.40505364209694594,
+          0.6443135725696529
+        ],
+        "effective_bbox_source": [
+          194.6118927001953,
+          44.539451599121094,
+          459.13818359375,
+          464.48604583740234
+        ],
+        "roi_source": [
+          87,
+          0,
+          567,
+          480
+        ],
+        "small_roi": {
+          "sx": 17,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "confidence": 0.9999874830245972,
+          "logits_float32": [
+            -5.910033226013184,
+            11.530281066894531,
+            0.24217674136161804,
+            -18.913990020751953,
+            -10.912835121154785,
+            -20.114255905151367
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_08",
+      "image": "golden_integer/sample_08/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "lab_black:session_20261023_215141_191143_p01_lab_20261023_214809_494165_b1_s02_two:images/two_000000.png",
+      "source_sha256": "e2e93777a0d3bd53acbe7d724859c0c9c47ec8d200b57b5c4a671a87252690e6",
+      "class_label": "two",
+      "vectors": "golden_integer/sample_08/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_08/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          7,
+          8
+        ],
+        "confidence_raw_i32": 32034,
+        "confidence_logit": 2.31018785026491,
+        "confidence": 0.9097172849549067,
+        "detected": true,
+        "bbox_source": [
+          160.19761920800164,
+          41.64887471783995,
+          418.4613146943309,
+          466.0187232551844
+        ],
+        "regression_float": [
+          -0.26676332622084287,
+          -0.15415502533719433,
+          0.4035370241973894,
+          0.6630778883396008
+        ],
+        "effective_bbox_source": [
+          160.19761920800164,
+          41.64887471783995,
+          418.4613146943309,
+          466.0187232551844
+        ],
+        "roi_source": [
+          49,
+          0,
+          529,
+          480
+        ],
+        "small_roi": {
+          "sx": 9,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "logits_i32": [
+            -8941,
+            -1019,
+            7262,
+            -4157,
+            -17980,
+            -17098
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          7,
+          8
+        ],
+        "confidence_raw_i32": 32034,
+        "confidence_logit": 2.31018785026491,
+        "confidence": 0.9097172849549067,
+        "detected": true,
+        "bbox_source": [
+          154.0449333190918,
+          34.73731994628906,
+          423.80943298339844,
+          473.740234375
+        ],
+        "regression_float": [
+          -0.26676332622084287,
+          -0.15415502533719433,
+          0.4035370241973894,
+          0.6630778883396008
+        ],
+        "effective_bbox_source": [
+          154.0449333190918,
+          34.73731994628906,
+          423.80943298339844,
+          473.740234375
+        ],
+        "roi_source": [
+          49,
+          0,
+          529,
+          480
+        ],
+        "small_roi": {
+          "sx": 9,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "confidence": 0.9999058246612549,
+          "logits_float32": [
+            -10.713811874389648,
+            -0.9141104817390442,
+            8.37350845336914,
+            -4.9961981773376465,
+            -20.954010009765625,
+            -20.152454376220703
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_09",
+      "image": "golden_integer/sample_09/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "lab_black:session_20261023_215316_640553_p01_lab_20261023_214809_494165_b1_s03_three:images/three_000000.png",
+      "source_sha256": "cb0aed3104a4a875a014d4ec54533802afc0d0c4f4756f513cf142870317ffa1",
+      "class_label": "three",
+      "vectors": "golden_integer/sample_09/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_09/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": 12976,
+        "confidence_logit": 0.9357868997014883,
+        "confidence": 0.7182478457507769,
+        "detected": true,
+        "bbox_source": [
+          204.97652254227478,
+          46.772488705981594,
+          473.6575062473105,
+          447.6571205583528
+        ],
+        "regression_float": [
+          -0.01707464013018495,
+          -0.31962988419582006,
+          0.41981403703911824,
+          0.6263822372693301
+        ],
+        "effective_bbox_source": [
+          204.97652254227478,
+          46.772488705981594,
+          473.6575062473105,
+          447.6571205583528
+        ],
+        "roi_source": [
+          100,
+          0,
+          580,
+          480
+        ],
+        "small_roi": {
+          "sx": 20,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "logits_i32": [
+            -10588,
+            -18645,
+            -1579,
+            8823,
+            -19100,
+            -19384
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": 12976,
+        "confidence_logit": 0.9357868997014883,
+        "confidence": 0.7182478457507769,
+        "detected": true,
+        "bbox_source": [
+          205.23725509643555,
+          45.579471588134766,
+          472.2077178955078,
+          447.6434326171875
+        ],
+        "regression_float": [
+          -0.01707464013018495,
+          -0.31962988419582006,
+          0.41981403703911824,
+          0.6263822372693301
+        ],
+        "effective_bbox_source": [
+          205.23725509643555,
+          45.579471588134766,
+          472.2077178955078,
+          447.6434326171875
+        ],
+        "roi_source": [
+          98,
+          0,
+          578,
+          480
+        ],
+        "small_roi": {
+          "sx": 19,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "confidence": 0.9999265670776367,
+          "logits_float32": [
+            -12.467191696166992,
+            -24.86248779296875,
+            1.7457255125045776,
+            11.264140129089355,
+            -22.223913192749023,
+            -25.515724182128906
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_10",
+      "image": "golden_integer/sample_10/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "lab_black:session_20261023_215412_741918_p01_lab_20261023_214809_494165_b1_s04_fist:images/fist_000000.png",
+      "source_sha256": "c3e1bfdf221209a329b4fa4d80ce09effdd18a26c8c6f188677017c2f436ad50",
+      "class_label": "fist",
+      "vectors": "golden_integer/sample_10/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_10/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": -3532,
+        "confidence_logit": -0.25471634785339525,
+        "confidence": 0.4366629876279884,
+        "detected": true,
+        "bbox_source": [
+          208.4149626594017,
+          74.68119949032548,
+          479.4170311498457,
+          428.9453769425834
+        ],
+        "regression_float": [
+          0.09789992261559316,
+          -0.20466779458863923,
+          0.42344073201631865,
+          0.553537777269153
+        ],
+        "effective_bbox_source": [
+          208.4149626594017,
+          74.68119949032548,
+          479.4170311498457,
+          428.9453769425834
+        ],
+        "roi_source": [
+          104,
+          0,
+          584,
+          480
+        ],
+        "small_roi": {
+          "sx": 20,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "logits_i32": [
+            -1477,
+            3118,
+            -6997,
+            -12223,
+            18067,
+            -1799
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": -3532,
+        "confidence_logit": -0.25471634785339525,
+        "confidence": 0.4366629876279884,
+        "detected": true,
+        "bbox_source": [
+          209.04380798339844,
+          70.66888809204102,
+          475.97694396972656,
+          428.61236572265625
+        ],
+        "regression_float": [
+          0.09789992261559316,
+          -0.20466779458863923,
+          0.42344073201631865,
+          0.553537777269153
+        ],
+        "effective_bbox_source": [
+          209.04380798339844,
+          70.66888809204102,
+          475.97694396972656,
+          428.61236572265625
+        ],
+        "roi_source": [
+          102,
+          0,
+          582,
+          480
+        ],
+        "small_roi": {
+          "sx": 20,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "confidence": 1.0,
+          "logits_float32": [
+            -1.669833779335022,
+            3.68158221244812,
+            -8.28650951385498,
+            -14.318493843078613,
+            21.380327224731445,
+            -2.0837087631225586
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_11",
+      "image": "golden_integer/sample_11/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "lab_black:session_20261023_215530_242678_p01_lab_20261023_214809_494165_b1_s05_palm:images/palm_000000.png",
+      "source_sha256": "4ff6f6d2f83069134053f8e7c3c82647b7438adbc76ef93176e5b279e123f373",
+      "class_label": "palm",
+      "vectors": "golden_integer/sample_11/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_11/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": -360,
+        "confidence_logit": -0.02596202866002896,
+        "confidence": 0.49350985737514125,
+        "detected": true,
+        "bbox_source": [
+          116.13874239799853,
+          104.9676543781446,
+          329.80514728021757,
+          423.1433027085271
+        ],
+        "regression_float": [
+          0.074298620977702,
+          0.10138696358339527,
+          0.3338537576284673,
+          0.49714945051622256
+        ],
+        "effective_bbox_source": [
+          116.13874239799853,
+          104.9676543781446,
+          329.80514728021757,
+          423.1433027085271
+        ],
+        "roi_source": [
+          7,
+          48,
+          439,
+          480
+        ],
+        "small_roi": {
+          "sx": 1,
+          "sy": 25,
+          "ss": 87
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "logits_i32": [
+            -4647,
+            -12127,
+            -8023,
+            1481,
+            -1363,
+            5009
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": -360,
+        "confidence_logit": -0.02596202866002896,
+        "confidence": 0.49350985737514125,
+        "detected": true,
+        "bbox_source": [
+          118.18658828735352,
+          102.96531677246094,
+          325.9385681152344,
+          421.824951171875
+        ],
+        "regression_float": [
+          0.074298620977702,
+          0.10138696358339527,
+          0.3338537576284673,
+          0.49714945051622256
+        ],
+        "effective_bbox_source": [
+          118.18658828735352,
+          102.96531677246094,
+          325.9385681152344,
+          421.824951171875
+        ],
+        "roi_source": [
+          5,
+          46,
+          439,
+          480
+        ],
+        "small_roi": {
+          "sx": 1,
+          "sy": 25,
+          "ss": 87
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "confidence": 0.977456271648407,
+          "logits_float32": [
+            -5.945093154907227,
+            -14.117996215820312,
+            -9.296236991882324,
+            1.8144901990890503,
+            -1.6706929206848145,
+            5.6146016120910645
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_12",
+      "image": "golden_integer/sample_12/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_midfar:session_20261026_150722_775871_usb_midfar_train_20261026_150248_162203_s06_no_hand:images/no_hand_000000.png",
+      "source_sha256": "dd726aed3c484c906c4a5941f84eaa37d3ed55317ef1be4a44df469b3140185e",
+      "class_label": "background",
+      "vectors": "golden_integer/sample_12/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_12/float_classifier_layers.npz",
+      "classifier_input_role": "rejected_peak_diagnostic_not_live_action",
+      "pipeline": {
+        "peak_xy": [
+          13,
+          7
+        ],
+        "confidence_raw_i32": -34608,
+        "confidence_logit": -2.4958163551841173,
+        "confidence": 0.07615198999667304,
+        "detected": false,
+        "bbox_source": [
+          449.51865434634425,
+          88.64869095464616,
+          630.5502825184803,
+          347.9302038033212
+        ],
+        "regression_float": [
+          0.0008617108103083995,
+          -0.04276381552540756,
+          0.28286191901896274,
+          0.40512736382605474
+        ],
+        "effective_bbox_source": [
+          449.51865434634425,
+          88.64869095464616,
+          630.5502825184803,
+          347.9302038033212
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "fresh_target_gesture": false
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          13,
+          7
+        ],
+        "confidence_raw_i32": -34608,
+        "confidence_logit": -2.4958163551841173,
+        "confidence": 0.07615198999667304,
+        "detected": false,
+        "bbox_source": [
+          451.64344787597656,
+          89.45802688598633,
+          628.8105010986328,
+          346.473388671875
+        ],
+        "regression_float": [
+          0.0008617108103083995,
+          -0.04276381552540756,
+          0.28286191901896274,
+          0.40512736382605474
+        ],
+        "effective_bbox_source": [
+          451.64344787597656,
+          89.45802688598633,
+          628.8105010986328,
+          346.473388671875
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": false
+      }
+    },
+    {
+      "id": "sample_13",
+      "image": "golden_integer/sample_13/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_midfar:session_20261026_150250_114412_usb_midfar_train_20261026_150248_162203_s01_one:images/one_000000.png",
+      "source_sha256": "4b224f84a9f46192090a713af5ebf72888ad802cafa86ecaec2f178e0c936329",
+      "class_label": "one",
+      "vectors": "golden_integer/sample_13/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_13/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 27674,
+        "confidence_logit": 1.9957588364934484,
+        "confidence": 0.8803510633598836,
+        "detected": true,
+        "bbox_source": [
+          69.60814258337308,
+          42.849914016056694,
+          356.48448324255327,
+          471.1671997712879
+        ],
+        "regression_float": [
+          -0.17384217717592046,
+          -0.07478607765819247,
+          0.44824428227996904,
+          0.6692457589925488
+        ],
+        "effective_bbox_source": [
+          69.60814258337308,
+          42.849914016056694,
+          356.48448324255327,
+          471.1671997712879
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "logits_i32": [
+            -4709,
+            11856,
+            -1801,
+            -19813,
+            -7697,
+            -18821
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 27674,
+        "confidence_logit": 1.9957588364934484,
+        "confidence": 0.8803510633598836,
+        "detected": true,
+        "bbox_source": [
+          69.35017585754395,
+          40.966644287109375,
+          357.39234924316406,
+          471.1619567871094
+        ],
+        "regression_float": [
+          -0.17384217717592046,
+          -0.07478607765819247,
+          0.44824428227996904,
+          0.6692457589925488
+        ],
+        "effective_bbox_source": [
+          69.35017585754395,
+          40.966644287109375,
+          357.39234924316406,
+          471.1619567871094
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "confidence": 1.0,
+          "logits_float32": [
+            -5.3762407302856445,
+            14.310436248779297,
+            -2.569164752960205,
+            -23.655664443969727,
+            -8.5635347366333,
+            -22.060152053833008
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_14",
+      "image": "golden_integer/sample_14/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_midfar:session_20261026_150537_440549_usb_midfar_train_20261026_150248_162203_s02_two:images/two_000000.png",
+      "source_sha256": "9456135dc0cd91325b0dd3d611c9780a598b2db9bd562081cda473ca99925cff",
+      "class_label": "two",
+      "vectors": "golden_integer/sample_14/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_14/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 10973,
+        "confidence_logit": 0.7913370569069382,
+        "confidence": 0.6881183505026867,
+        "detected": true,
+        "bbox_source": [
+          32.80581867277526,
+          0.0,
+          382.53648606632584,
+          480.0
+        ],
+        "regression_float": [
+          -0.3082211907612359,
+          -0.2582165345163301,
+          0.5464541678024228,
+          0.8744514514790812
+        ],
+        "effective_bbox_source": [
+          32.80581867277526,
+          0.0,
+          382.53648606632584,
+          480.0
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "logits_i32": [
+            -7468,
+            -14700,
+            5198,
+            -579,
+            -23527,
+            -24004
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 10973,
+        "confidence_logit": 0.7913370569069382,
+        "confidence": 0.6881183505026867,
+        "detected": true,
+        "bbox_source": [
+          29.34732437133789,
+          0.0,
+          384.5677185058594,
+          480.0
+        ],
+        "regression_float": [
+          -0.3082211907612359,
+          -0.2582165345163301,
+          0.5464541678024228,
+          0.8744514514790812
+        ],
+        "effective_bbox_source": [
+          29.34732437133789,
+          0.0,
+          384.5677185058594,
+          480.0
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "confidence": 0.999201238155365,
+          "logits_float32": [
+            -9.374886512756348,
+            -16.873455047607422,
+            6.30014705657959,
+            -0.8316433429718018,
+            -27.858945846557617,
+            -28.697267532348633
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_15",
+      "image": "golden_integer/sample_15/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_midfar:session_20261026_150607_243565_usb_midfar_train_20261026_150248_162203_s03_three:images/three_000000.png",
+      "source_sha256": "20c76cbcd677c08cd558903fed39f67384559b6ec14538eccb7ae05efcb9ad98",
+      "class_label": "three",
+      "vectors": "golden_integer/sample_15/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_15/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 26190,
+        "confidence_logit": 1.8887375850171069,
+        "confidence": 0.8686115237954732,
+        "detected": true,
+        "bbox_source": [
+          55.41971625631131,
+          0.0,
+          387.31860920755764,
+          480.0
+        ],
+        "regression_float": [
+          0.03422906829836143,
+          -0.33504104962857345,
+          0.5185920202363223,
+          0.8143687609639211
+        ],
+        "effective_bbox_source": [
+          55.41971625631131,
+          0.0,
+          387.31860920755764,
+          480.0
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "logits_i32": [
+            -1064,
+            -40354,
+            -11484,
+            13379,
+            -18030,
+            -1653
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          8
+        ],
+        "confidence_raw_i32": 26190,
+        "confidence_logit": 1.8887375850171069,
+        "confidence": 0.8686115237954732,
+        "detected": true,
+        "bbox_source": [
+          50.00326156616211,
+          0.0,
+          388.9893341064453,
+          480.0
+        ],
+        "regression_float": [
+          0.03422906829836143,
+          -0.33504104962857345,
+          0.5185920202363223,
+          0.8143687609639211
+        ],
+        "effective_bbox_source": [
+          50.00326156616211,
+          0.0,
+          388.9893341064453,
+          480.0
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "confidence": 1.0,
+          "logits_float32": [
+            -1.414101004600525,
+            -47.4851188659668,
+            -13.449750900268555,
+            15.660537719726562,
+            -21.53960609436035,
+            -2.3935790061950684
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_16",
+      "image": "golden_integer/sample_16/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_midfar:session_20261026_150631_540070_usb_midfar_train_20261026_150248_162203_s04_fist:images/fist_000000.png",
+      "source_sha256": "5764a7905220733f540105be982b864161311c35f3a654d55a65a7d1eb133dde",
+      "class_label": "fist",
+      "vectors": "golden_integer/sample_16/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_16/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          6,
+          8
+        ],
+        "confidence_raw_i32": 6420,
+        "confidence_logit": 0.4629895111038498,
+        "confidence": 0.6137231312160587,
+        "detected": true,
+        "bbox_source": [
+          111.20203930485563,
+          43.72584902244743,
+          392.6603512831318,
+          450.8205728279064
+        ],
+        "regression_float": [
+          -0.20172011765015702,
+          -0.318169726870578,
+          0.4397786124660565,
+          0.6360855059460296
+        ],
+        "effective_bbox_source": [
+          111.20203930485563,
+          43.72584902244743,
+          392.6603512831318,
+          450.8205728279064
+        ],
+        "roi_source": [
+          12,
+          0,
+          492,
+          480
+        ],
+        "small_roi": {
+          "sx": 2,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "logits_i32": [
+            -1447,
+            2776,
+            -6171,
+            -7496,
+            8776,
+            -3079
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          6,
+          8
+        ],
+        "confidence_raw_i32": 6420,
+        "confidence_logit": 0.4629895111038498,
+        "confidence": 0.6137231312160587,
+        "detected": true,
+        "bbox_source": [
+          108.0942153930664,
+          40.757598876953125,
+          395.37914276123047,
+          452.2212219238281
+        ],
+        "regression_float": [
+          -0.20172011765015702,
+          -0.318169726870578,
+          0.4397786124660565,
+          0.6360855059460296
+        ],
+        "effective_bbox_source": [
+          108.0942153930664,
+          40.757598876953125,
+          395.37914276123047,
+          452.2212219238281
+        ],
+        "roi_source": [
+          12,
+          0,
+          492,
+          480
+        ],
+        "small_roi": {
+          "sx": 2,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "confidence": 0.9995738863945007,
+          "logits_float32": [
+            -1.6113280057907104,
+            3.1502811908721924,
+            -7.709598541259766,
+            -8.57238483428955,
+            10.920764923095703,
+            -3.250450611114502
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_17",
+      "image": "golden_integer/sample_17/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_midfar:session_20261026_150657_017831_usb_midfar_train_20261026_150248_162203_s05_palm:images/palm_000000.png",
+      "source_sha256": "62e3e57168391215ad5c97403e56a5792ec35be87df5b7d9433a661b2ac8356d",
+      "class_label": "palm",
+      "vectors": "golden_integer/sample_17/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_17/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          5,
+          7
+        ],
+        "confidence_raw_i32": 16239,
+        "confidence_logit": 1.1711038428061395,
+        "confidence": 0.763344482543371,
+        "detected": true,
+        "bbox_source": [
+          26.457941448541362,
+          0.0,
+          396.65635649523756,
+          449.3958143729222
+        ],
+        "regression_float": [
+          -0.21107127570276296,
+          -0.4529668248958992,
+          0.5784350235104628,
+          0.7734827730273692
+        ],
+        "effective_bbox_source": [
+          26.457941448541362,
+          0.0,
+          396.65635649523756,
+          449.3958143729222
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "logits_i32": [
+            10756,
+            -31130,
+            -29453,
+            -3203,
+            3099,
+            28029
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          5,
+          7
+        ],
+        "confidence_raw_i32": 16239,
+        "confidence_logit": 1.1711038428061395,
+        "confidence": 0.763344482543371,
+        "detected": true,
+        "bbox_source": [
+          31.046733856201172,
+          0.0,
+          392.60589599609375,
+          443.7238311767578
+        ],
+        "regression_float": [
+          -0.21107127570276296,
+          -0.4529668248958992,
+          0.5784350235104628,
+          0.7734827730273692
+        ],
+        "effective_bbox_source": [
+          31.046733856201172,
+          0.0,
+          392.60589599609375,
+          443.7238311767578
+        ],
+        "roi_source": [
+          0,
+          0,
+          480,
+          480
+        ],
+        "small_roi": {
+          "sx": 0,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "confidence": 1.0,
+          "logits_float32": [
+            12.733431816101074,
+            -36.29478073120117,
+            -34.84355163574219,
+            -4.099135875701904,
+            4.256397247314453,
+            33.09857940673828
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_18",
+      "image": "golden_integer/sample_18/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205846_035455_usb_targeted_train_20261026_205425_263763_s06_no_hand:images/no_hand_000000.png",
+      "source_sha256": "9362d914cb2f07a3427c05d4966039ffd03757cd65be6f8acb183736a18c1d31",
+      "class_label": "background",
+      "vectors": "golden_integer/sample_18/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_18/float_classifier_layers.npz",
+      "classifier_input_role": "rejected_peak_diagnostic_not_live_action",
+      "pipeline": {
+        "peak_xy": [
+          12,
+          0
+        ],
+        "confidence_raw_i32": -39830,
+        "confidence_logit": -2.872410004247093,
+        "confidence": 0.05353440929202673,
+        "detected": false,
+        "bbox_source": [
+          422.67555421947844,
+          0.0,
+          581.2819324649008,
+          39.50888679924526
+        ],
+        "regression_float": [
+          0.04946858355474145,
+          -0.28123208364291863,
+          0.24782246600847255,
+          0.34611928170300627
+        ],
+        "effective_bbox_source": [
+          422.67555421947844,
+          0.0,
+          581.2819324649008,
+          39.50888679924526
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "fresh_target_gesture": false
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          12,
+          0
+        ],
+        "confidence_raw_i32": -39830,
+        "confidence_logit": -2.872410004247093,
+        "confidence": 0.05353440929202673,
+        "detected": false,
+        "bbox_source": [
+          423.349609375,
+          0.0,
+          580.5848693847656,
+          38.62203598022461
+        ],
+        "regression_float": [
+          0.04946858355474145,
+          -0.28123208364291863,
+          0.24782246600847255,
+          0.34611928170300627
+        ],
+        "effective_bbox_source": [
+          423.349609375,
+          0.0,
+          580.5848693847656,
+          38.62203598022461
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": false
+      }
+    },
+    {
+      "id": "sample_19",
+      "image": "golden_integer/sample_19/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205427_032446_usb_targeted_train_20261026_205425_263763_s01_one:images/one_000000.png",
+      "source_sha256": "40c5a95d9e8834663c1359dd797c8aa44920d1040b41233c90eed3c10de4536b",
+      "class_label": "one",
+      "vectors": "golden_integer/sample_19/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_19/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          8,
+          9
+        ],
+        "confidence_raw_i32": 19124,
+        "confidence_logit": 1.3791606558177607,
+        "confidence": 0.7988561640659086,
+        "detected": true,
+        "bbox_source": [
+          221.19521395101373,
+          107.83517383855632,
+          453.69324518309764,
+          474.344545712073
+        ],
+        "regression_float": [
+          -0.063894260823608,
+          -0.2227535056171331,
+          0.3632781738001311,
+          0.5726708935523699
+        ],
+        "effective_bbox_source": [
+          221.19521395101373,
+          107.83517383855632,
+          453.69324518309764,
+          474.344545712073
+        ],
+        "roi_source": [
+          98,
+          0,
+          578,
+          480
+        ],
+        "small_roi": {
+          "sx": 19,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "logits_i32": [
+            -7847,
+            10032,
+            -526,
+            -13649,
+            -13725,
+            -21446
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          8,
+          9
+        ],
+        "confidence_raw_i32": 19124,
+        "confidence_logit": 1.3791606558177607,
+        "confidence": 0.7988561640659086,
+        "detected": true,
+        "bbox_source": [
+          221.7845344543457,
+          107.6467514038086,
+          451.41510009765625,
+          471.70421600341797
+        ],
+        "regression_float": [
+          -0.063894260823608,
+          -0.2227535056171331,
+          0.3632781738001311,
+          0.5726708935523699
+        ],
+        "effective_bbox_source": [
+          221.7845344543457,
+          107.6467514038086,
+          451.41510009765625,
+          471.70421600341797
+        ],
+        "roi_source": [
+          96,
+          0,
+          576,
+          480
+        ],
+        "small_roi": {
+          "sx": 19,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 1,
+          "class": "one",
+          "confidence": 0.9999977350234985,
+          "logits_float32": [
+            -9.378363609313965,
+            12.000473022460938,
+            -0.992651104927063,
+            -16.152217864990234,
+            -15.699668884277344,
+            -25.026277542114258
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_20",
+      "image": "golden_integer/sample_20/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205645_601512_usb_targeted_train_20261026_205425_263763_s02_two:images/two_000000.png",
+      "source_sha256": "f67efc38a7c533368f0d81cf791a3564d57a2c020d20a60632f29be27130cd05",
+      "class_label": "two",
+      "vectors": "golden_integer/sample_20/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_20/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": 17595,
+        "confidence_logit": 1.2688941507589153,
+        "confidence": 0.7805533859882221,
+        "detected": true,
+        "bbox_source": [
+          199.1353117994628,
+          21.873052890722313,
+          467.2968919161554,
+          479.56415497451655
+        ],
+        "regression_float": [
+          -0.16959745355477165,
+          -0.23203490168451366,
+          0.4190024689323322,
+          0.7151423470059285
+        ],
+        "effective_bbox_source": [
+          199.1353117994628,
+          21.873052890722313,
+          467.2968919161554,
+          479.56415497451655
+        ],
+        "roi_source": [
+          93,
+          0,
+          573,
+          480
+        ],
+        "small_roi": {
+          "sx": 18,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "logits_i32": [
+            -9713,
+            -8412,
+            9215,
+            -5061,
+            -22301,
+            -27174
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          8,
+          8
+        ],
+        "confidence_raw_i32": 17595,
+        "confidence_logit": 1.2688941507589153,
+        "confidence": 0.7805533859882221,
+        "detected": true,
+        "bbox_source": [
+          194.66201782226562,
+          17.621631622314453,
+          469.8200225830078,
+          480.0
+        ],
+        "regression_float": [
+          -0.16959745355477165,
+          -0.23203490168451366,
+          0.4190024689323322,
+          0.7151423470059285
+        ],
+        "effective_bbox_source": [
+          194.66201782226562,
+          17.621631622314453,
+          469.8200225830078,
+          480.0
+        ],
+        "roi_source": [
+          92,
+          0,
+          572,
+          480
+        ],
+        "small_roi": {
+          "sx": 18,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "confidence": 1.0,
+          "logits_float32": [
+            -11.569358825683594,
+            -9.693501472473145,
+            10.818782806396484,
+            -6.1666579246521,
+            -26.12729835510254,
+            -32.528995513916016
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_21",
+      "image": "golden_integer/sample_21/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205717_652671_usb_targeted_train_20261026_205425_263763_s03_three:images/three_000000.png",
+      "source_sha256": "0b0a43dc4b029d1dabb2004faba68d8154197ddcc7242bc26b1473a8d4f594ce",
+      "class_label": "three",
+      "vectors": "golden_integer/sample_21/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_21/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          7,
+          8
+        ],
+        "confidence_raw_i32": 17830,
+        "confidence_logit": 1.285841586134212,
+        "confidence": 0.7834425028446155,
+        "detected": true,
+        "bbox_source": [
+          197.8725671452554,
+          66.23711573386966,
+          416.2850223159596,
+          468.53794155719396
+        ],
+        "regression_float": [
+          0.17696986826518799,
+          0.1846882161382967,
+          0.34126946120422536,
+          0.6285950403489443
+        ],
+        "effective_bbox_source": [
+          197.8725671452554,
+          66.23711573386966,
+          416.2850223159596,
+          468.53794155719396
+        ],
+        "roi_source": [
+          67,
+          0,
+          547,
+          480
+        ],
+        "small_roi": {
+          "sx": 13,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "logits_i32": [
+            -3810,
+            -26837,
+            -2372,
+            10749,
+            -15809,
+            -2746
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          7,
+          8
+        ],
+        "confidence_raw_i32": 17830,
+        "confidence_logit": 1.285841586134212,
+        "confidence": 0.7834425028446155,
+        "detected": true,
+        "bbox_source": [
+          195.25527954101562,
+          63.67612838745117,
+          417.5962448120117,
+          471.806640625
+        ],
+        "regression_float": [
+          0.17696986826518799,
+          0.1846882161382967,
+          0.34126946120422536,
+          0.6285950403489443
+        ],
+        "effective_bbox_source": [
+          195.25527954101562,
+          63.67612838745117,
+          417.5962448120117,
+          471.806640625
+        ],
+        "roi_source": [
+          66,
+          0,
+          546,
+          480
+        ],
+        "small_roi": {
+          "sx": 13,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 3,
+          "class": "three",
+          "confidence": 0.9999996423721313,
+          "logits_float32": [
+            -5.046159744262695,
+            -31.544200897216797,
+            -2.4840638637542725,
+            12.636470794677734,
+            -18.866130828857422,
+            -3.5752081871032715
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_22",
+      "image": "golden_integer/sample_22/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205747_529477_usb_targeted_train_20261026_205425_263763_s04_fist:images/fist_000000.png",
+      "source_sha256": "0688bc66f176b482064eecf170a783626ce5d00ad00538ace07acdabbb9edfb7",
+      "class_label": "fist",
+      "vectors": "golden_integer/sample_22/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_22/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          9,
+          8
+        ],
+        "confidence_raw_i32": 1115,
+        "confidence_logit": 0.08041017209981191,
+        "confidence": 0.520091718445701,
+        "detected": true,
+        "bbox_source": [
+          225.19378308909288,
+          46.50940010242458,
+          519.9618120186611,
+          459.0613541235392
+        ],
+        "regression_float": [
+          -0.18555506115307535,
+          -0.18036557217545124,
+          0.46057504520245046,
+          0.6446124281579917
+        ],
+        "effective_bbox_source": [
+          225.19378308909288,
+          46.50940010242458,
+          519.9618120186611,
+          459.0613541235392
+        ],
+        "roi_source": [
+          132,
+          0,
+          612,
+          480
+        ],
+        "small_roi": {
+          "sx": 26,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "logits_i32": [
+            -2294,
+            5668,
+            -6970,
+            -8432,
+            9812,
+            -6427
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          9,
+          8
+        ],
+        "confidence_raw_i32": 1115,
+        "confidence_logit": 0.08041017209981191,
+        "confidence": 0.520091718445701,
+        "detected": true,
+        "bbox_source": [
+          225.40546417236328,
+          45.49192428588867,
+          522.9133987426758,
+          458.41796875
+        ],
+        "regression_float": [
+          -0.18555506115307535,
+          -0.18036557217545124,
+          0.46057504520245046,
+          0.6446124281579917
+        ],
+        "effective_bbox_source": [
+          225.40546417236328,
+          45.49192428588867,
+          522.9133987426758,
+          458.41796875
+        ],
+        "roi_source": [
+          134,
+          0,
+          614,
+          480
+        ],
+        "small_roi": {
+          "sx": 26,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 4,
+          "class": "fist",
+          "confidence": 0.9961691498756409,
+          "logits_float32": [
+            -2.509505033493042,
+            6.671930313110352,
+            -8.674991607666016,
+            -10.05698299407959,
+            12.232853889465332,
+            -7.448018550872803
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_23",
+      "image": "golden_integer/sample_23/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205833_757391_usb_targeted_train_20261026_205425_263763_s05_palm:images/palm_000000.png",
+      "source_sha256": "62c01accfb822fa7c8c1a1d0e8a04001fe0142f02e8819d1078985c48a27b770",
+      "class_label": "palm",
+      "vectors": "golden_integer/sample_23/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_23/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          9,
+          9
+        ],
+        "confidence_raw_i32": 9038,
+        "confidence_logit": 0.6517911528592826,
+        "confidence": 0.657413981287541,
+        "detected": true,
+        "bbox_source": [
+          194.80578095177748,
+          45.440633240534716,
+          558.1805313566161,
+          480.0
+        ],
+        "regression_float": [
+          -0.0876710961450805,
+          -0.2116794411504454,
+          0.5677730475075604,
+          0.7690380909795232
+        ],
+        "effective_bbox_source": [
+          194.80578095177748,
+          45.440633240534716,
+          558.1805313566161,
+          480.0
+        ],
+        "roi_source": [
+          136,
+          0,
+          616,
+          480
+        ],
+        "small_roi": {
+          "sx": 27,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "logits_i32": [
+            4027,
+            -27982,
+            -17115,
+            -1035,
+            -2193,
+            23695
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          9,
+          9
+        ],
+        "confidence_raw_i32": 9038,
+        "confidence_logit": 0.6517911528592826,
+        "confidence": 0.657413981287541,
+        "detected": true,
+        "bbox_source": [
+          191.62025451660156,
+          42.34107971191406,
+          562.2030639648438,
+          480.0
+        ],
+        "regression_float": [
+          -0.0876710961450805,
+          -0.2116794411504454,
+          0.5677730475075604,
+          0.7690380909795232
+        ],
+        "effective_bbox_source": [
+          191.62025451660156,
+          42.34107971191406,
+          562.2030639648438,
+          480.0
+        ],
+        "roi_source": [
+          137,
+          0,
+          617,
+          480
+        ],
+        "small_roi": {
+          "sx": 27,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 5,
+          "class": "palm",
+          "confidence": 1.0,
+          "logits_float32": [
+            4.716084003448486,
+            -33.09223937988281,
+            -20.20479393005371,
+            -0.9394333362579346,
+            -2.3406152725219727,
+            27.603376388549805
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    },
+    {
+      "id": "sample_24",
+      "image": "golden_integer/sample_24/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205946_526475_usb_targeted_train_20261026_205425_263763_s07_one:images/one_000004.png",
+      "source_sha256": "71c18cf96fbc6b46a7dc86cc34d7265575ea9803603e622aa1ccf5071c42c368",
+      "class_label": "one",
+      "vectors": "golden_integer/sample_24/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_24/float_classifier_layers.npz",
+      "classifier_input_role": "rejected_peak_diagnostic_not_live_action",
+      "pipeline": {
+        "peak_xy": [
+          10,
+          9
+        ],
+        "confidence_raw_i32": -13230,
+        "confidence_logit": -0.9541045532560642,
+        "confidence": 0.2780601128071552,
+        "detected": false,
+        "bbox_source": [
+          288.2041294738336,
+          124.19788562401915,
+          548.8213724698426,
+          480.0
+        ],
+        "regression_float": [
+          -0.03718122570404761,
+          0.09770042776223946,
+          0.40721444218126396,
+          0.5615941608952201
+        ],
+        "effective_bbox_source": [
+          288.2041294738336,
+          124.19788562401915,
+          548.8213724698426,
+          480.0
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "fresh_target_gesture": false
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          10,
+          9
+        ],
+        "confidence_raw_i32": -13230,
+        "confidence_logit": -0.9541045532560642,
+        "confidence": 0.2780601128071552,
+        "detected": false,
+        "bbox_source": [
+          286.3302230834961,
+          119.40324783325195,
+          547.6163864135742,
+          480.0
+        ],
+        "regression_float": [
+          -0.03718122570404761,
+          0.09770042776223946,
+          0.40721444218126396,
+          0.5615941608952201
+        ],
+        "effective_bbox_source": [
+          286.3302230834961,
+          119.40324783325195,
+          547.6163864135742,
+          480.0
+        ],
+        "roi_source": null,
+        "small_roi": null,
+        "classifier": null,
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": false
+      }
+    },
+    {
+      "id": "sample_25",
+      "image": "golden_integer/sample_25/source.png",
+      "source_role": "TRAIN",
+      "source_image_id": "usb_targeted:session_20261026_205645_601512_usb_targeted_train_20261026_205425_263763_s02_two:images/two_000005.png",
+      "source_sha256": "47752efb6a07e5775c09806162f8a192e12d3948172a1b111efa644d6dcd9243",
+      "class_label": "two",
+      "vectors": "golden_integer/sample_25/layers.npz",
+      "float_classifier_vectors": "golden_integer/sample_25/float_classifier_layers.npz",
+      "classifier_input_role": "production",
+      "pipeline": {
+        "peak_xy": [
+          8,
+          7
+        ],
+        "confidence_raw_i32": 18310,
+        "confidence_logit": 1.320457624347584,
+        "confidence": 0.7892578332126057,
+        "detected": true,
+        "bbox_source": [
+          204.24151354808222,
+          0.0,
+          447.45224378974274,
+          424.7040462455466
+        ],
+        "regression_float": [
+          -0.3538280332771878,
+          -0.31546626726839705,
+          0.38001676600259454,
+          0.6791334279258828
+        ],
+        "effective_bbox_source": [
+          204.24151354808222,
+          0.0,
+          447.45224378974274,
+          424.7040462455466
+        ],
+        "roi_source": [
+          86,
+          0,
+          566,
+          480
+        ],
+        "small_roi": {
+          "sx": 17,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "logits_i32": [
+            -10761,
+            -2664,
+            9238,
+            -9670,
+            -20644,
+            -36884
+          ]
+        },
+        "stabilizer": null,
+        "fresh_target_gesture": true
+      },
+      "pipeline_approved_PC": {
+        "peak_xy": [
+          8,
+          7
+        ],
+        "confidence_raw_i32": 18310,
+        "confidence_logit": 1.320457624347584,
+        "confidence": 0.7892578332126057,
+        "detected": true,
+        "bbox_source": [
+          200.00558853149414,
+          0.0,
+          450.3416442871094,
+          430.62679290771484
+        ],
+        "regression_float": [
+          -0.3538280332771878,
+          -0.31546626726839705,
+          0.38001676600259454,
+          0.6791334279258828
+        ],
+        "effective_bbox_source": [
+          200.00558853149414,
+          0.0,
+          450.3416442871094,
+          430.62679290771484
+        ],
+        "roi_source": [
+          85,
+          0,
+          565,
+          480
+        ],
+        "small_roi": {
+          "sx": 17,
+          "sy": 16,
+          "ss": 96
+        },
+        "classifier": {
+          "class_id": 2,
+          "class": "two",
+          "confidence": 0.9999986886978149,
+          "logits_float32": [
+            -12.952557563781738,
+            -2.8559486865997314,
+            10.711346626281738,
+            -11.456452369689941,
+            -23.67226791381836,
+            -43.880638122558594
+          ]
+        },
+        "stabilizer": null,
+        "precision": "integer_gate_float_geometry_float_classifier",
+        "fresh_target_gesture": true
+      }
+    }
+  ]
+}

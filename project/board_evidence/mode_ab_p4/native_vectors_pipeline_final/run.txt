@@ -1,0 +1,21 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 20:55:09 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/native_vectors/xsim_script.tcl
+# xsim {native_vectors} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: real class program           0:         528 PL phases, all 65 hand positions,       18428 backend-accepted vectors
+PASS: real class program           1:         528 PL phases, all 65 hand positions,       12860 backend-accepted vectors
+PASS: real class program           2:         528 PL phases, all 65 hand positions,       18252 backend-accepted vectors
+$finish called at time : 260100050 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/native_vectors_pipeline_final/tb.sv" Line 62
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:46 . Memory (MB): peak = 228.609 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 23248 KB (Peak: 23248 KB), Simulation CPU Usage: 166000 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 20:57:57 2026...

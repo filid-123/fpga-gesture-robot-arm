@@ -1,0 +1,20 @@
+{
+  "schema": "gesture.mode_b.accepted_native_transfer.v1",
+  "status": "OPERATOR_ACCEPTED_VERY_SUCCESSFUL",
+  "result_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_pc_trial_20261028\\loaded_route_trials\\20261028_130433_9936683\\LOADED_ROUTE_RESULT.json",
+  "result_sha256": "a8695b388f5b474a644da78f5d85a4e9a2abf307c83edba00832a9d44e060a8b",
+  "plan_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\.\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\new_position_trial\\native_plan\\LOADED_ROUTE_PLAN.json",
+  "plan_sha256": "e0bcc268d5b7d6663d0146002e5c96d4e991b93ddaa1091ce033ad838c98fae4",
+  "source_camera_centre_mm": [
+    651.879446649631,
+    257.80145957601377,
+    15.0
+  ],
+  "primary_anchor_file": "C:\\redacted_user\\Documents\\ChatGPT\\FPGA-具身智能-collab\\artifacts\\phase3c\\mode_b_ttl_20261028\\today_native_anchor\\ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+  "primary_anchor_sha256": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631",
+  "extra_outward_mm_relative_to_primary": 2.0,
+  "fine_adjustment_must_not_compound": true,
+  "physical_grip_delivery_return_accepted": true,
+  "general_calibration_accepted": false,
+  "operator_report": "非常成功"
+}

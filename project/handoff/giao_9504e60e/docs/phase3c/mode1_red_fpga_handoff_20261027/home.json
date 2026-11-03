@@ -1,0 +1,30 @@
+{
+  "schema": "gesture.mode_a.red_initial_target.v1",
+  "joint_order": [
+    "b",
+    "s",
+    "e",
+    "t",
+    "r",
+    "g"
+  ],
+  "joint_rad": {
+    "b": 0.006135923,
+    "s": -0.003067962,
+    "e": 1.619883712,
+    "t": -0.003067962,
+    "r": 0.007669904,
+    "g": 3.083301384
+  },
+  "joint_q16": [
+    402,
+    -201,
+    106161,
+    -201,
+    503,
+    202067
+  ],
+  "source": "PRACTICAL_INITIAL request in20261026_144923_5840088",
+  "startup": "Verify empty actual HOME, seed LAST_DELIVERED to exact commanded HOME, then enable S4. No arbitrary-state homing path provided.",
+  "repeatability_physically_accepted": false
+}

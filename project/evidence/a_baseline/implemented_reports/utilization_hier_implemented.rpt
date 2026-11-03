@@ -1,0 +1,105 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 05:07:08 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/board_evidence/mode_a_restock_impl_a2/implemented_reports/utilization_hier_implemented.rpt
+| Design       : roarm_closed_loop_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------+----------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|                  Instance                  |                    Module                    | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------+----------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| roarm_closed_loop_wrapper                  |                                        (top) |      26568 |      25832 |     698 |   38 | 23188 |    105 |     16 |         32 |
+|   (roarm_closed_loop_wrapper)              |                                        (top) |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   roarm_closed_loop_i                      |                            roarm_closed_loop |      26568 |      25832 |     698 |   38 | 23188 |    105 |     16 |         32 |
+|     ps_axi_fabric                          |            roarm_closed_loop_ps_axi_fabric_0 |        524 |        524 |       0 |    0 |   470 |      0 |      0 |          0 |
+|       inst                                 |                                      bd_7aad |        524 |        524 |       0 |    0 |   470 |      0 |      0 |          0 |
+|         sc_ul                              |                              bd_7aad_sc_ul_0 |        524 |        524 |       0 |    0 |   470 |      0 |      0 |          0 |
+|           inst                             |                      sc_ultralite_v1_0_1_top |        524 |        524 |       0 |    0 |   470 |      0 |      0 |          0 |
+|             gen_axi_full_nxm.sasd_inst     |                sc_ultralite_v1_0_1_sasd_lite |        524 |        524 |       0 |    0 |   468 |      0 |      0 |          0 |
+|               (gen_axi_full_nxm.sasd_inst) |                sc_ultralite_v1_0_1_sasd_lite |        157 |        157 |       0 |    0 |   288 |      0 |      0 |          0 |
+|               gen_read.araddr_mux          |  sc_ultralite_v1_0_1_mux_hot__parameterized4 |        100 |        100 |       0 |    0 |    32 |      0 |      0 |          0 |
+|               gen_read.arctrl_mux          |  sc_ultralite_v1_0_1_mux_hot__parameterized5 |         72 |         72 |       0 |    0 |     8 |      0 |      0 |          0 |
+|               gen_read.rdata_mux           | sc_ultralite_v1_0_1_mux_hot__parameterized10 |         90 |         90 |       0 |    0 |    32 |      0 |      0 |          0 |
+|     s5_0                                   |                     roarm_closed_loop_s5_0_0 |      26000 |      25267 |     698 |   35 | 22615 |    105 |     16 |         32 |
+|       inst                                 |                 phase3_roarm_closed_loop_top |      26000 |      25267 |     698 |   35 | 22615 |    105 |     16 |         32 |
+|         u_vision                           |                 gesture_autonomous_top_black |      13043 |      12893 |     132 |   18 | 10121 |     47 |     13 |         30 |
+|           (u_vision)                       |                 gesture_autonomous_top_black |          3 |          3 |       0 |    0 |    58 |      0 |      0 |          3 |
+|           u_bbox                           |                       locator_bbox_roi_black |       2813 |       2813 |       0 |    0 |  2273 |      0 |      1 |          9 |
+|           u_camera_frontend                |                       ov5640_phase2_frontend |        420 |        420 |       0 |    0 |   819 |      1 |      0 |          0 |
+|             u_letterbox                    |                         pl_letterbox_640x480 |        318 |        318 |       0 |    0 |   461 |      0 |      0 |          0 |
+|             g_preview.tap                  |                              preview_gray256 |         42 |         42 |       0 |    0 |   191 |      0 |      0 |          0 |
+|             u_capture                      |                               ov5640_capture |         21 |         21 |       0 |    0 |    52 |      0 |      0 |          0 |
+|             u_fifo                         |                               cdc_async_fifo |         38 |         38 |       0 |    0 |   108 |      1 |      0 |          0 |
+|           u_camera_init                    |                              ov5640_init_fsm |        142 |        142 |       0 |    0 |    51 |      0 |      1 |          0 |
+|           u_classifier                     |                                  cnn_core_7c |       5775 |       5625 |     132 |   18 |  3607 |      4 |      1 |         13 |
+|             pool_inst                      |                           generic_maxpool2x2 |        125 |        101 |      24 |    0 |    75 |      0 |      0 |          0 |
+|             conv_inst                      |              generic_conv3x3__parameterized0 |       2346 |       2283 |      54 |    9 |  1520 |      1 |      0 |          4 |
+|             dense_inst                     |                             generic_dense_7c |        419 |        419 |       0 |    0 |   368 |      0 |      0 |          5 |
+|               (dense_inst)                 |                             generic_dense_7c |        295 |        295 |       0 |    0 |   287 |      0 |      0 |          1 |
+|               g_rq.u_requant               |                     requant_fixed31_pipeline |        126 |        126 |       0 |    0 |    81 |      0 |      0 |          4 |
+|             fsm_inst                       |                                 cnn_core_fsm |        636 |        636 |       0 |    0 |   105 |      0 |      0 |          0 |
+|             g_parallel.conv_lane1          |                              generic_conv3x3 |       2286 |       2223 |      54 |    9 |  1514 |      1 |      0 |          4 |
+|           u_classifier_weights             |                       cnn_weight_rom_compact |        237 |        237 |       0 |    0 |    12 |     10 |      0 |          0 |
+|           u_confirm                        |                          gesture_time_filter |         58 |         58 |       0 |    0 |   112 |      0 |      0 |          0 |
+|           u_locator                        |             locator_cnn_engine_context_8lane |       2971 |       2971 |       0 |    0 |  1859 |      8 |      8 |          5 |
+|             (u_locator)                    |             locator_cnn_engine_context_8lane |       2706 |       2706 |       0 |    0 |  1859 |      0 |      0 |          5 |
+|           u_locator_model                  |                    locator_context_rom_8lane |        192 |        192 |       0 |    0 |     0 |     16 |      0 |          0 |
+|           u_same_frame_roi                 |                       same_frame_roi_128x128 |         95 |         95 |       0 |    0 |   128 |      0 |      0 |          0 |
+|           u_sccb                           |                             sccb_master_sync |         58 |         58 |       0 |    0 |    63 |      0 |      0 |          0 |
+|           u_scheduler                      |                      autonomous_overlap_ctrl |        249 |        249 |       0 |    0 |   801 |      0 |      0 |          0 |
+|           u_top1                           |                         locator_top1_reducer |         16 |         16 |       0 |    0 |   336 |      0 |      0 |          0 |
+|         g_hdmi.u_display                   |                           mode_a_hdmi_output |       1265 |       1249 |       0 |   16 |   985 |     50 |      1 |          0 |
+|           canvas                           |                           mode_a_720p_canvas |        181 |        181 |       0 |    0 |     4 |      1 |      1 |          0 |
+|           cls_units                        |                                cycles_to_ms8 |        186 |        178 |       0 |    8 |   175 |      0 |      0 |          0 |
+|           frame                            |                           mode_a_framebuffer |        300 |        300 |       0 |    0 |   305 |     48 |      0 |          0 |
+|             (frame)                        |                           mode_a_framebuffer |        268 |        268 |       0 |    0 |   305 |      0 |      0 |          0 |
+|           loc_units                        |                             cycles_to_ms8_17 |        186 |        178 |       0 |    8 |   182 |      0 |      0 |          0 |
+|           renderer                         |                              mode_a_renderer |        185 |        185 |       0 |    0 |    72 |      1 |      0 |          0 |
+|           status_cdc                       |                           mode_a_display_cdc |        142 |        142 |       0 |    0 |   178 |      0 |      0 |          0 |
+|         g_observe.observer                 |                              mode_a_observer |        341 |        341 |       0 |    0 |   232 |      4 |      0 |          0 |
+|         u_adapter                          |                      s5_vision_event_adapter |        687 |        687 |       0 |    0 |   788 |      0 |      0 |          0 |
+|         u_task                             |                           phase3_s4_task_top |      10636 |      10069 |     566 |    1 | 10489 |      4 |      2 |          2 |
+|           (u_task)                         |                           phase3_s4_task_top |          2 |          2 |       0 |    0 |    68 |      0 |      0 |          0 |
+|           g_handalign.u_regions            |                        hand_align_region_lut |        493 |        493 |       0 |    0 |   709 |      0 |      0 |          0 |
+|           g_handalign.u_target             |                       hand_align_target_core |        170 |        170 |       0 |    0 |   215 |      0 |      0 |          0 |
+|           u_fsm                            |                                  s4_task_fsm |       2698 |       2542 |     156 |    0 |  2041 |      0 |      0 |          0 |
+|           u_link                           |                               s4_motion_link |        249 |        249 |       0 |    0 |   376 |      0 |      0 |          0 |
+|           u_motion                         |                         phase3_s2_motion_top |       4650 |       4240 |     410 |    0 |  4019 |      0 |      0 |          0 |
+|             u_planner                      |                              planner_axi_top |       1824 |       1780 |      44 |    0 |  1878 |      0 |      0 |          0 |
+|               (u_planner)                  |                              planner_axi_top |        529 |        485 |      44 |    0 |  1018 |      0 |      0 |          0 |
+|               u_core                       |                             planner_p2p_core |       1298 |       1298 |       0 |    0 |   860 |      0 |      0 |          0 |
+|                 (u_core)                   |                             planner_p2p_core |        625 |        625 |       0 |    0 |   716 |      0 |      0 |          0 |
+|                 u_div                      |                              planner_seq_div |        187 |        187 |       0 |    0 |    71 |      0 |      0 |          0 |
+|                 u_mult                     |                             planner_seq_mult |        490 |        490 |       0 |    0 |    73 |      0 |      0 |          0 |
+|             u_arm_backend                  |                          arm_backend_axi_top |       2719 |       2353 |     366 |    0 |  1746 |      0 |      0 |          0 |
+|               (u_arm_backend)              |                          arm_backend_axi_top |        563 |        431 |     132 |    0 |   702 |      0 |      0 |          0 |
+|               u_core                       |                             arm_backend_core |       2157 |       1923 |     234 |    0 |  1044 |      0 |      0 |          0 |
+|                 (u_core)                   |                             arm_backend_core |        338 |        272 |      66 |    0 |   162 |      0 |      0 |          0 |
+|                 g_roarm.u_json             |                     arm_json_feedback_parser |        493 |        447 |      46 |    0 |   140 |      0 |      0 |          0 |
+|                 u_formatter                |                          arm_frame_formatter |        501 |        413 |      88 |    0 |   211 |      0 |      0 |          0 |
+|                 u_mapper                   |                        arm_joint_unit_mapper |        303 |        303 |       0 |    0 |   258 |      0 |      0 |          0 |
+|                 u_uart_rx                  |                                  arm_uart_rx |         90 |         90 |       0 |    0 |    42 |      0 |      0 |          0 |
+|                 u_watchdog                 |                        arm_feedback_watchdog |        391 |        357 |      34 |    0 |   161 |      0 |      0 |          0 |
+|             u_mux                          |                            motion_sample_mux |        103 |        103 |       0 |    0 |   391 |      0 |      0 |          0 |
+|           u_regs                           |                                 s4_task_regs |       2359 |       2358 |       0 |    1 |  2568 |      4 |      2 |          2 |
+|           u_win_arm                        |               s4_axil_window__parameterized0 |         91 |         91 |       0 |    0 |   215 |      0 |      0 |          0 |
+|           u_win_plan                       |            s4_axil_window__parameterized0_29 |         87 |         87 |       0 |    0 |   215 |      0 |      0 |          0 |
+|           u_win_traj                       |                               s4_axil_window |         56 |         56 |       0 |    0 |    48 |      0 |      0 |          0 |
++--------------------------------------------+----------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

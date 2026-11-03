@@ -1,0 +1,46 @@
+{
+  "schema": "gesture.ai_pc.roarm_reference_geometry.v1",
+  "robot_family": "RoArm-M3 reference source; purchased unit RoArm-M3-S",
+  "status": "REFERENCE_SOURCE_ONLY_NOT_DEPLOYMENT_PROFILE",
+  "installed_firmware_identified": false,
+  "geometry_mm": {
+    "l2a": 236.82,
+    "l2b": 30,
+    "l3a": 144.49,
+    "l3b": 0,
+    "l4a": 171.67,
+    "l4b": 13.69
+  },
+  "vendor_reference_position_limits_rad": {
+    "b": [
+      -3.141592653589793,
+      3.141592653589793
+    ],
+    "s": [
+      -1.5707963267948966,
+      1.5707963267948966
+    ],
+    "e": [
+      0,
+      3.1400586728019073
+    ],
+    "t": [
+      -1.5707963267948966,
+      1.5707963267948966
+    ]
+  },
+  "limit_source_note": "Source clamps: base/shoulder/wrist radians; elbow servo1024..3071 relative to1024 with4096 steps per2pi. These are software clamps, not measured physical safety limits.",
+  "physical_soft_limits_rad": null,
+  "reference_sources": [
+    {
+      "file": "artifacts/phase3c/roarm_tcp_reference_review_20261017/RoArm-M3_config.h",
+      "sha256": "5054eca7fcaa4f48b3e0c676b4745e23a25dbed53c2f9d37c750ba5e6683303b"
+    },
+    {
+      "file": "artifacts/phase3c/roarm_tcp_reference_review_20261017/RoArm-M3_module.h",
+      "sha256": "6a4bfb29a3060f2387f7106547b0f598841ebe9051c017804a42344eb1b9aa18"
+    }
+  ],
+  "roll_and_gripper": "Not solved; scalar FK XYZ ignores them. No width-to-angle mapping.",
+  "physical_execution": false
+}

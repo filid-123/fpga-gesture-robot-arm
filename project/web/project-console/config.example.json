@@ -1,0 +1,7 @@
+{
+  "device": null,
+  "bridge_url": null,
+  "bridge_timeout_s": 3,
+  "bridge_token_env": "PROJECT_CONSOLE_BRIDGE_TOKEN",
+  "vision": { "stream_url": null, "local_enabled": true }
+}

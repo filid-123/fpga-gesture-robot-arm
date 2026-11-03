@@ -1,0 +1,234 @@
+{
+  "schema": "gesture.mode_b.optimized_handoff.v1",
+  "date": "2026-10-30",
+  "hardware_execution_enabled": false,
+  "objects": [
+    {
+      "object_class": "red_cube",
+      "source_centre_mm": [
+        583.7419796330238,
+        252.22010726545997,
+        15.0
+      ],
+      "yaw_deg": 4.822835133554307,
+      "destination": {
+        "support_centre_mm": [
+          285,
+          195,
+          150
+        ],
+        "size_xy_mm": [
+          80,
+          80
+        ],
+        "rim_height_mm": 0
+      },
+      "origin_for_restock": {
+        "centre_mm": [
+          583.7419796330238,
+          252.22010726545997,
+          15.0
+        ],
+        "yaw_deg": 4.822835133554307,
+        "yaw_equivalence": {
+          "raw_long_axis_deg": 94.8228351335543,
+          "symmetry_deg": 90,
+          "selected_deg": 4.822835133554307
+        }
+      },
+      "base_speed_multiplier": 2.0,
+      "nominal_motion_seconds": 22.62,
+      "requests": 737,
+      "motion_samples": 733,
+      "close_command": {
+        "T": 106,
+        "cmd": 2.7,
+        "spd": 40,
+        "acc": 5
+      },
+      "local_transfer": {
+        "delta_desk_mm": [
+          -23.682710938693162,
+          -22.52297175568313,
+          0.0
+        ],
+        "yaw_delta_equivalent_deg": 1.421394851372824,
+        "extra_outward_mm": 2.0,
+        "scope": "LOCAL_NATIVE_ENDPOINT_DIFFERENCES_FROM_OPERATOR_ACCEPTED_CURRENT_CAMERA_SOURCE",
+        "native_endpoint_delta_mm": [
+          -20.53342168875293,
+          23.88689353143317,
+          -12.0
+        ],
+        "fixed_jaw_width_adjustment_native_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "object_specific_source_correction_desk_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "object_centre_height_change_mm": 0.0,
+        "maximum_native_pitch_adjustment_deg": 0.0
+      },
+      "new_speed_physical_test_performed": true,
+      "physical_scope": "POSTRELEASE_SPEED_ACCEPTED",
+      "source_plan_sha256": "c792f634b467310403bf5674603e692ccece67e824ed3de398729851a6f86c26"
+    },
+    {
+      "object_class": "small_canister",
+      "source_centre_mm": [
+        586.2390145235656,
+        266.8283415175714,
+        23.0
+      ],
+      "yaw_deg": 3.4014402821814826,
+      "destination": {
+        "support_centre_mm": [
+          285,
+          195,
+          150
+        ],
+        "size_xy_mm": [
+          80,
+          80
+        ],
+        "rim_height_mm": 0
+      },
+      "origin_for_restock": {
+        "centre_mm": [
+          586.2390145235656,
+          266.8283415175714,
+          23.0
+        ],
+        "yaw_deg": 3.4014402821814826,
+        "yaw_source": "AXISYMMETRIC_CYLINDER_KEEP_ACCEPTED_CLOSING_AXIS"
+      },
+      "base_speed_multiplier": 2,
+      "nominal_motion_seconds": 23.1,
+      "requests": 754,
+      "motion_samples": 750,
+      "close_command": {
+        "T": 106,
+        "cmd": 2.8,
+        "spd": 40,
+        "acc": 5
+      },
+      "local_transfer": {
+        "delta_desk_mm": [
+          -21.185676048151322,
+          -7.9147375035717005,
+          8.0
+        ],
+        "yaw_delta_equivalent_deg": 0.0,
+        "extra_outward_mm": 2.0,
+        "scope": "LOCAL_NATIVE_ENDPOINT_DIFFERENCES_FROM_OPERATOR_ACCEPTED_CURRENT_CAMERA_SOURCE",
+        "native_endpoint_delta_mm": [
+          -6.092938702405622,
+          8.78539552983579,
+          0.010376418105732794
+        ],
+        "fixed_jaw_width_adjustment_native_mm": [
+          -0.1760147235417518,
+          -2.4937744779838873,
+          0.010376418105732794
+        ],
+        "object_specific_source_correction_desk_mm": [
+          10.0,
+          0.0,
+          0.0
+        ],
+        "object_centre_height_change_mm": 8.0,
+        "maximum_native_pitch_adjustment_deg": 0.0
+      },
+      "new_speed_physical_test_performed": false,
+      "physical_scope": "BASELINE_GRASP_ACCEPTED_NEW_TRANSIT_SPEED_UNTESTED",
+      "source_plan_sha256": "90f84f7b34cc351e8bff18e0197560b46207904cf389a1bfae8a4c02d5c02ff1"
+    },
+    {
+      "object_class": "eraser",
+      "source_centre_mm": [
+        636.2218269564645,
+        260.27831557772197,
+        7.5
+      ],
+      "yaw_deg": 96.79662769239283,
+      "destination": {
+        "support_centre_mm": [
+          285,
+          195,
+          150
+        ],
+        "size_xy_mm": [
+          80,
+          80
+        ],
+        "rim_height_mm": 0
+      },
+      "origin_for_restock": {
+        "centre_mm": [
+          636.2218269564645,
+          260.27831557772197,
+          7.5
+        ],
+        "yaw_deg": 96.79662769239283,
+        "yaw_source": "DETECTED_LONG_AXIS_CLOSING_PERPENDICULAR"
+      },
+      "base_speed_multiplier": 3,
+      "nominal_motion_seconds": 15.0,
+      "requests": 505,
+      "motion_samples": 501,
+      "close_command": {
+        "T": 106,
+        "cmd": 2.95,
+        "spd": 60,
+        "acc": 5
+      },
+      "local_transfer": {
+        "delta_desk_mm": [
+          28.797136384747546,
+          -14.464763443421134,
+          -7.5
+        ],
+        "yaw_delta_equivalent_deg": 3.3951874102113493,
+        "extra_outward_mm": 2.0,
+        "scope": "LOCAL_NATIVE_ENDPOINT_DIFFERENCES_FROM_OPERATOR_ACCEPTED_CURRENT_CAMERA_SOURCE",
+        "native_endpoint_delta_mm": [
+          -3.0143951796417774,
+          -49.57151994801268,
+          -7.968870745682802
+        ],
+        "fixed_jaw_width_adjustment_native_mm": [
+          -0.5280441706252554,
+          -7.481323433951663,
+          0.031129254317198384
+        ],
+        "object_specific_source_correction_desk_mm": [
+          13.0,
+          10.0,
+          0.0
+        ],
+        "object_centre_height_change_mm": -7.5,
+        "maximum_native_pitch_adjustment_deg": 0.0,
+        "fingertip_height_adjustment_mm": -8.0,
+        "native_endpoint_delta_mm_is_initial_seed": true,
+        "maximum_relative_tcp_error_mm": 0.0008319658712695903,
+        "relative_canonical_tcp_translation_world_mm": [
+          42.09019651406101,
+          -2.4863510090165244,
+          -8.0
+        ],
+        "object_yaw_offset_from_closing_axis_deg": -90,
+        "closing_symmetry_deg": 180
+      },
+      "new_speed_physical_test_performed": false,
+      "physical_scope": "BASELINE_GRASP_ACCEPTED_NEW_TRANSIT_SPEED_UNTESTED",
+      "source_plan_sha256": "c0c35386a74b5601f805e0a4bb93430e7a97f22332fc5fe0032b3fd8c0ec83d2"
+    }
+  ],
+  "additional_hardware_access_this_task": false,
+  "restock130s_reference_changed": false,
+  "npu_fpga_closed_loop_accepted": false
+}

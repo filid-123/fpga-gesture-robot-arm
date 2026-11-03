@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "source_b": "3d66aeb8d33b42abf8d82da3c71b1e6276a9a32a",
+  "reference_paths_source": "1d3fa84de81d05b846d2b9f30998e16a84f4eee3",
+  "results": [
+    {
+      "class_name": "red_cube",
+      "passed": true,
+      "exact_giao_motion_phases": [
+        "DIRECT_PREGRASP",
+        "DESCEND",
+        "LIFT",
+        "INNER_HOLD",
+        "BUFFER",
+        "PREPLACE",
+        "PLACE",
+        "RELEASE_CLEARANCE",
+        "RETREAT",
+        "RETURN_CLEAR",
+        "INNER_RETURN",
+        "RETURN_LOW_HOME"
+      ],
+      "all_six_q16_axes_identical": true,
+      "native_speed_and_period_identical": true,
+      "geometry": {
+        "samples_checked": 7524,
+        "minimum_model_clearance_mm": -0.012916180451831849
+      },
+      "family": {
+        "passed": true,
+        "method": "FULL_NATIVE_GEOMETRY",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "model_samples_checked": 989382,
+        "minimum_model_clearance_mm": 4.000464320262381,
+        "payload_margin_mm": 46.90451483855588,
+        "loaded_tilt_margin_deg": 13.340400885596654,
+        "fingerprint": "a41139f01ff2295552afa9776eaa5d28a762d7fdbbf38dd04d786e469f4a1560",
+        "tcp_from_object": [
+          [
+            0.9999569973991306,
+            0.008949874445785756,
+            0.0024296295850530798,
+            6.995929603008335
+          ],
+          [
+            0.008950572052550062,
+            -0.9999599046267765,
+            -0.00027640322097740444,
+            0.059889823880894255
+          ],
+          [
+            0.0024270583940239135,
+            0.00029813790958204236,
+            -0.9999970102462005,
+            -9.140967702559763
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "exact_native_q16_and_wire_rounding": true,
+        "physical_test": "NOT_RUN"
+      },
+      "points": 1254,
+      "speed": {
+        "policy": "GIAO_PER_PHASE_NATIVE",
+        "nominal_motion_seconds": 22.62,
+        "nominal_with_gripper_waits_seconds": 24.52,
+        "periods_ms": [
+          20,
+          40
+        ],
+        "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+      },
+      "seconds": 35.95299999999952
+    },
+    {
+      "class_name": "eraser",
+      "passed": true,
+      "exact_giao_motion_phases": [
+        "DIRECT_PREGRASP",
+        "DESCEND",
+        "LIFT",
+        "INNER_HOLD",
+        "BUFFER",
+        "PREPLACE",
+        "PLACE",
+        "RELEASE_CLEARANCE",
+        "RETREAT",
+        "RETURN_CLEAR",
+        "INNER_RETURN",
+        "RETURN_LOW_HOME"
+      ],
+      "all_six_q16_axes_identical": true,
+      "native_speed_and_period_identical": true,
+      "geometry": {
+        "samples_checked": 5178,
+        "minimum_model_clearance_mm": -0.009344690234529551
+      },
+      "family": {
+        "passed": true,
+        "method": "FULL_NATIVE_GEOMETRY",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "model_samples_checked": 956910,
+        "minimum_model_clearance_mm": 4.000626066628655,
+        "payload_margin_mm": 43.89016956108304,
+        "loaded_tilt_margin_deg": 12.955667466521703,
+        "fingerprint": "b401d4d79ba1f9b76440d7841a23c35726d4b1ca9ced1452fa3b63b679ab8d52",
+        "tcp_from_object": [
+          [
+            -0.008949521805390676,
+            0.9998987911557282,
+            -0.011059543605811724,
+            -0.4994547305323067
+          ],
+          [
+            0.9999599277610347,
+            0.00894652758111537,
+            -0.0003201818033358316,
+            -0.0039421438698354905
+          ],
+          [
+            -0.00022120488620144065,
+            -0.011061965899168151,
+            -0.9999387901160974,
+            2.3864531722622484
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "exact_native_q16_and_wire_rounding": true,
+        "physical_test": "NOT_RUN"
+      },
+      "points": 863,
+      "speed": {
+        "policy": "GIAO_PER_PHASE_NATIVE",
+        "nominal_motion_seconds": 14.999999999999998,
+        "nominal_with_gripper_waits_seconds": 16.9,
+        "periods_ms": [
+          20,
+          40
+        ],
+        "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+      },
+      "seconds": 32.5
+    },
+    {
+      "class_name": "small_canister",
+      "passed": true,
+      "exact_giao_motion_phases": [
+        "DIRECT_PREGRASP",
+        "DESCEND",
+        "LIFT",
+        "INNER_HOLD",
+        "BUFFER",
+        "PREPLACE",
+        "PLACE",
+        "RELEASE_CLEARANCE",
+        "RETREAT",
+        "RETURN_CLEAR",
+        "INNER_RETURN",
+        "RETURN_LOW_HOME"
+      ],
+      "all_six_q16_axes_identical": true,
+      "native_speed_and_period_identical": true,
+      "geometry": {
+        "samples_checked": 7584,
+        "minimum_model_clearance_mm": -0.014671479297572176
+      },
+      "family": {
+        "passed": true,
+        "method": "FULL_NATIVE_GEOMETRY",
+        "handover_steps": 65,
+        "ordered_retarget_pairs": 4160,
+        "model_samples_checked": 988206,
+        "minimum_model_clearance_mm": 4.00036477687533,
+        "payload_margin_mm": 45.798458599971866,
+        "loaded_tilt_margin_deg": 12.31426269152356,
+        "fingerprint": "1e3c6af2640150aef64a2a749ac40a7e790f43d70e6235441016cb509b9f486b",
+        "tcp_from_object": [
+          [
+            0.9999594766698616,
+            0.008948989305344879,
+            0.0009801063971465755,
+            4.478935367471308
+          ],
+          [
+            0.008949087930762746,
+            -0.9999599514749808,
+            -9.628790878135756e-05,
+            0.03954426785026044
+          ],
+          [
+            0.0009792054658651083,
+            0.0001050550652039965,
+            -0.9999995150599271,
+            -5.133122721362405
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "exact_native_q16_and_wire_rounding": true,
+        "physical_test": "NOT_RUN"
+      },
+      "points": 1264,
+      "speed": {
+        "policy": "GIAO_PER_PHASE_NATIVE",
+        "nominal_motion_seconds": 23.1,
+        "nominal_with_gripper_waits_seconds": 25.0,
+        "periods_ms": [
+          20,
+          40
+        ],
+        "scalar": "GIAO_PCHIP_OR_JOINT_QUINTIC"
+      },
+      "seconds": 35.64100000000144
+    }
+  ],
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "pc/mode_ab/native_routes.py": "584c8d19be74908a42ded22cfc1e1a6c89cf3921ee04467494eb0f2bbcec539b",
+    "pc/mode_ab/native_family.py": "9886e22622f0d326d46f4ad5ad60333b99f1b57a36d5ed19d85354310ae25f25",
+    "scripts/prepare_mode_ab_p4.py": "352e5bc57a5f8964dd4affbe29ca71b66bd400c9c9959ff7e410127b7e90b889"
+  }
+}

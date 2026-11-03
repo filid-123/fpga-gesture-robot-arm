@@ -1,0 +1,146 @@
+[
+  {
+    "name": "create_clean_python",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.125,
+    "log": "create_clean_python.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "clean_environment_has_no_third_party",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.188,
+    "log": "clean_environment_has_no_third_party.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "new_tool_tests",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.453,
+    "log": "new_tool_tests.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "standalone_environment",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.203,
+    "log": "standalone_environment.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "clean_hip_unavailable_rejected",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "passed": true,
+    "wall_s": 0.187,
+    "log": "clean_hip_unavailable_rejected.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "standalone_second_fpga_project",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.109,
+    "log": "standalone_second_fpga_project.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "standalone_task_metrics",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.078,
+    "log": "standalone_task_metrics.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "missing_assets_rejected",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "passed": true,
+    "wall_s": 3.594,
+    "log": "missing_assets_rejected.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "restore_original_assets",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 2.828,
+    "log": "restore_original_assets.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "restored_complete_inventory",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 3.719,
+    "log": "restored_complete_inventory.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "original_complete_package",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 6.266,
+    "log": "original_complete_package.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "original_startup_checkonly",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 3.843,
+    "log": "original_startup_checkonly.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "original_pc_regressions",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 6.391,
+    "log": "original_pc_regressions.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "original_ui_checks",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.797,
+    "log": "original_ui_checks.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "actual_existing_hip_environment",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 8.469,
+    "log": "actual_existing_hip_environment.txt",
+    "hardware_access": false
+  },
+  {
+    "name": "fpga_build_plan",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "passed": true,
+    "wall_s": 0.156,
+    "log": "fpga_build_plan.txt",
+    "hardware_access": false
+  }
+]

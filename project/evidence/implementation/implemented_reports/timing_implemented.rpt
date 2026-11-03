@@ -1,0 +1,2275 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Oct 30 21:32:16 2026
+| Host         : AlvinX running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -return_string
+| Design       : roarm_closed_loop_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                                                                                            Violations  
+---------  --------  -----------------------------------------------------------------------------------------------------  ----------  
+TIMING-16  Warning   Large setup violation                                                                                  10          
+TIMING-18  Warning   Missing input or output delay                                                                          18          
+TIMING-47  Warning   False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  2           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (3)
+6. checking no_output_delay (14)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (3)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 3 input ports with no input delay but user has a false path constraint. (MEDIUM)
+
+arm_uart_rx
+motion_enable_in
+ov5640_sda
+
+
+6. checking no_output_delay (14)
+--------------------------------
+ There are 13 ports with no output delay specified. (HIGH)
+
+hdmi_clk_p
+hdmi_data_p[0]
+hdmi_data_p[1]
+hdmi_data_p[2]
+leds[0]
+leds[1]
+leds[2]
+leds[3]
+ov5640_pwdn
+ov5640_reset_n
+ov5640_scl
+ov5640_sda
+ov5640_xclk
+
+ There is 1 port with no output delay but user has a false path constraint (MEDIUM)
+
+arm_uart_tx
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.013        0.000                      0                87348        0.011        0.000                      0                87348        0.538        0.000                       0                 27649  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                                           Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                                           ------------         ----------      --------------
+clk_fpga_0                                      {0.000 10.000}       20.000          50.000          
+clk_fpga_1                                      {0.000 5.000}        10.000          100.000         
+  clk_out1_roarm_closed_loop_camera_xclk_wiz_0  {0.000 20.833}       41.667          24.000          
+  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0   {0.000 6.734}        13.468          74.250          
+  clk_out2_roarm_closed_loop_hdmi_clock_wiz_0   {0.000 1.347}        2.694           371.250         
+  clkfbout_roarm_closed_loop_camera_xclk_wiz_0  {0.000 25.000}       50.000          20.000          
+  clkfbout_roarm_closed_loop_hdmi_clock_wiz_0   {0.000 25.000}       50.000          20.000          
+ov5640_pclk                                     {0.000 10.416}       20.833          48.001          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_1                                            0.051        0.000                      0                83518        0.011        0.000                      0                83518        3.000        0.000                       0                 26966  
+  clk_out1_roarm_closed_loop_camera_xclk_wiz_0                                                                                                                                                   39.511        0.000                       0                     3  
+  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0         0.013        0.000                      0                 1524        0.037        0.000                      0                 1524        5.754        0.000                       0                   517  
+  clk_out2_roarm_closed_loop_hdmi_clock_wiz_0                                                                                                                                                     0.538        0.000                       0                    10  
+  clkfbout_roarm_closed_loop_camera_xclk_wiz_0                                                                                                                                                   47.845        0.000                       0                     3  
+  clkfbout_roarm_closed_loop_hdmi_clock_wiz_0                                                                                                                                                    47.845        0.000                       0                     3  
+ov5640_pclk                                           1.710        0.000                      0                  367        0.044        0.000                      0                  367        9.436        0.000                       0                   147  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  clk_fpga_1         clk_fpga_1               2.274        0.000                      0                 1939        1.242        0.000                      0                 1939  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group                                   From Clock                                   To Clock                                   
+----------                                   ----------                                   --------                                   
+(none)                                       clk_fpga_1                                                                                
+(none)                                                                                    clk_fpga_1                                   
+(none)                                       clk_fpga_1                                   clk_fpga_1                                   
+(none)                                       clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  clk_fpga_1                                   
+(none)                                       ov5640_pclk                                  clk_fpga_1                                   
+(none)                                                                                    clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  
+(none)                                       clk_fpga_1                                   clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  
+(none)                                                                                    ov5640_pclk                                  
+(none)                                       clk_fpga_1                                   ov5640_pclk                                  
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group                                    From Clock                                    To Clock                                    
+----------                                    ----------                                    --------                                    
+(none)                                        clk_fpga_1                                                                                  
+(none)                                        clk_out1_roarm_closed_loop_camera_xclk_wiz_0                                                
+(none)                                        clk_out2_roarm_closed_loop_hdmi_clock_wiz_0                                                 
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_1
+  To Clock:  clk_fpga_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.051ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.011ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.051ns  (required time - arrival time)
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/ix1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg/A[6]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_1 rise@10.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.820ns  (logic 2.697ns (46.343%)  route 3.123ns (53.657%))
+  Logic Levels:           7  (CARRY4=4 LUT2=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.753ns = ( 12.753 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.933ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.639     2.933    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/clk_100mhz
+    SLICE_X51Y27         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/ix1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y27         FDRE (Prop_fdre_C_Q)         0.456     3.389 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/ix1_reg[1]/Q
+                         net (fo=6, routed)           0.625     4.014    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/ix1[1]
+    SLICE_X48Y27         LUT2 (Prop_lut2_I0_O)        0.124     4.138 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_39/O
+                         net (fo=1, routed)           0.000     4.138    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_39_n_0
+    SLICE_X48Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     4.688 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_18/CO[3]
+                         net (fo=1, routed)           0.000     4.688    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_18_n_0
+    SLICE_X48Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.802 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.802    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_16_n_0
+    SLICE_X48Y29         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     5.136 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_13/O[1]
+                         net (fo=3, routed)           1.079     6.215    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/box_w[9]
+    SLICE_X46Y24         LUT4 (Prop_lut4_I1_O)        0.303     6.518 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_26/O
+                         net (fo=1, routed)           0.000     6.518    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_26_n_0
+    SLICE_X46Y24         CARRY4 (Prop_carry4_S[0]_CO[1])
+                                                      0.458     6.976 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_14/CO[1]
+                         net (fo=11, routed)          0.845     7.821    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/max_side1
+    SLICE_X41Y25         LUT3 (Prop_lut3_I1_O)        0.358     8.179 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg_i_6/O
+                         net (fo=1, routed)           0.574     8.753    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/A[6]
+    DSP48_X2Y11          DSP48E1                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg/A[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                     10.000    10.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000    10.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088    11.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.574    12.753    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/clk_100mhz
+    DSP48_X2Y11          DSP48E1                                      r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg/CLK
+                         clock pessimism              0.129    12.882    <hidden>
+                         clock uncertainty           -0.154    12.728    <hidden>
+    DSP48_X2Y11          DSP48E1 (Setup_dsp48e1_CLK_A[6])
+                                                     -3.924     8.804    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_bbox/side_num_reg
+  -------------------------------------------------------------------
+                         required time                          8.804    <hidden>
+                         arrival time                          -8.753    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.051    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_diff_q_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_1 rise@0.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        0.405ns  (logic 0.256ns (63.144%)  route 0.149ns (36.856%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.260ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.184ns
+    Source Clock Delay      (SCD):    0.889ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.553     0.889    roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/s_axi_aclk
+    SLICE_X49Y89         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_diff_q_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y89         FDRE (Prop_fdre_C_Q)         0.141     1.030 r  roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_diff_q_reg[12]/Q
+                         net (fo=1, routed)           0.149     1.179    roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_diff_q__0[12]
+    SLICE_X50Y89         LUT2 (Prop_lut2_I1_O)        0.045     1.224 r  roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q[15]_i_5/O
+                         net (fo=1, routed)           0.000     1.224    roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q[15]_i_5_n_0
+    SLICE_X50Y89         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     1.294 r  roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q_reg[15]_i_1/O[0]
+                         net (fo=1, routed)           0.000     1.294    roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q_reg[15]_i_1_n_7
+    SLICE_X50Y89         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.818     1.184    roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/s_axi_aclk
+    SLICE_X50Y89         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q_reg[12]/C
+                         clock pessimism             -0.035     1.149    <hidden>
+    SLICE_X50Y89         FDRE (Hold_fdre_C_D)         0.134     1.283    roarm_closed_loop_i/s5_0/inst/u_task/u_task_control/u_fsm/align_abs_q_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.283    <hidden>
+                         arrival time                           1.294    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.011    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1] }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     DSP48E1/CLK        n/a            3.884         10.000      6.116      DSP48_X2Y25      roarm_closed_loop_i/s5_0/inst/u_task/u_motion/g_b_program.u_player/blend_pipeline[0].product_l_reg[0]/CLK
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X0Y0  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X0Y0  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_roarm_closed_loop_camera_xclk_wiz_0
+  To Clock:  clk_out1_roarm_closed_loop_camera_xclk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       39.511ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_roarm_closed_loop_camera_xclk_wiz_0
+Waveform(ns):       { 0.000 20.833 }
+Period(ns):         41.667
+Sources:            { roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         41.667      39.511     BUFGCTRL_X0Y2    roarm_closed_loop_i/camera_xclk_wiz/inst/clkout1_buf/I
+Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       41.667      171.693    MMCME2_ADV_X0Y0  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKOUT0
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+  To Clock:  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.013ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.037ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        5.754ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.013ns  (required time - arrival time)
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/x_word_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/font_row_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise@13.468ns - clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise@0.000ns)
+  Data Path Delay:        13.736ns  (logic 4.453ns (32.418%)  route 9.283ns (67.582%))
+  Logic Levels:           14  (LUT2=1 LUT3=1 LUT5=1 LUT6=10 MUXF7=1)
+  Clock Path Skew:        0.453ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.743ns = ( 17.211 - 13.468 ) 
+    Source Clock Delay      (SCD):    3.428ns
+    Clock Pessimism Removal (CPR):    0.138ns
+  Clock Uncertainty:      0.203ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.806     3.100    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.793    -0.693 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.889     1.196    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.101     1.297 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.146     1.443    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.101     1.544 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           1.884     3.428    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/clk_out1_repN_2_alias
+    RAMB36_X2Y22         RAMB36E1                                     r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/x_word_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y22         RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     5.882 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/x_word_reg/DOADO[4]
+                         net (fo=33, routed)          1.408     7.290    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/out[4]
+    SLICE_X31Y111        LUT6 (Prop_lut6_I1_O)        0.124     7.414 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/font_column[3]_i_6/O
+                         net (fo=5, routed)           0.452     7.866    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/font_column[3]_i_6_n_0
+    SLICE_X29Y112        LUT2 (Prop_lut2_I0_O)        0.124     7.990 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/textd_i_19/O
+                         net (fo=3, routed)           0.787     8.778    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/textd_i_19_n_0
+    SLICE_X29Y111        LUT6 (Prop_lut6_I1_O)        0.124     8.902 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/font_column[3]_i_17/O
+                         net (fo=6, routed)           0.608     9.510    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/font_column[3]_i_17_n_0
+    SLICE_X31Y111        LUT6 (Prop_lut6_I0_O)        0.124     9.634 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_63/O
+                         net (fo=10, routed)          0.642    10.276    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_63_n_0
+    SLICE_X29Y110        LUT3 (Prop_lut3_I0_O)        0.124    10.400 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_69/O
+                         net (fo=20, routed)          1.066    11.466    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_69_n_0
+    SLICE_X26Y111        LUT6 (Prop_lut6_I3_O)        0.124    11.590 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_136_comp/O
+                         net (fo=1, routed)           0.722    12.311    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_136_n_0
+    SLICE_X28Y109        LUT6 (Prop_lut6_I4_O)        0.124    12.435 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_89/O
+                         net (fo=1, routed)           0.659    13.094    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_89_n_0
+    SLICE_X33Y109        LUT5 (Prop_lut5_I2_O)        0.124    13.218 f  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_42_comp/O
+                         net (fo=1, routed)           0.154    13.373    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_42_n_0
+    SLICE_X33Y109        LUT6 (Prop_lut6_I0_O)        0.124    13.497 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_15/O
+                         net (fo=5, routed)           0.553    14.050    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b0_i_15_n_0
+    SLICE_X34Y108        LUT6 (Prop_lut6_I0_O)        0.124    14.174 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan/canvas/g0_b7_i_6/O
+                         net (fo=112, routed)         0.695    14.869    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_scan_n_79
+    SLICE_X34Y111        LUT6 (Prop_lut6_I5_O)        0.124    14.993 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/g17_b10/O
+                         net (fo=1, routed)           0.000    14.993    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out_inferred__0/font_row[10]_i_3_7
+    SLICE_X34Y111        MUXF7 (Prop_muxf7_I1_O)      0.214    15.207 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out_inferred__0/font_row_reg[10]_i_11/O
+                         net (fo=1, routed)           1.103    16.310    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out_inferred__0/font_row_reg[10]_i_11_n_0
+    SLICE_X37Y113        LUT6 (Prop_lut6_I5_O)        0.297    16.607 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out_inferred__0/font_row[10]_i_3/O
+                         net (fo=1, routed)           0.433    17.041    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out_inferred__0/font_row[10]_i_3_n_0
+    SLICE_X37Y113        LUT6 (Prop_lut6_I1_O)        0.124    17.165 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out_inferred__0/font_row[10]_i_1/O
+                         net (fo=1, routed)           0.000    17.165    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/p_0_out[10]
+    SLICE_X37Y113        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/font_row_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                     13.468    13.468 r  <hidden>
+    PS7_X0Y0             PS7                          0.000    13.468 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088    14.556    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    14.647 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.612    16.260    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.425    12.834 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.725    14.559    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.091    14.650 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.133    14.783    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.091    14.874 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.133    15.007    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.091    15.098 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.133    15.231    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    15.322 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.147    15.469    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    15.560 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         1.651    17.211    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/hdmi_pixel_clk
+    SLICE_X37Y113        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/font_row_reg[10]/C
+                         clock pessimism              0.138    17.349    <hidden>
+                         clock uncertainty           -0.203    17.146    <hidden>
+    SLICE_X37Y113        FDRE (Setup_fdre_C_D)        0.032    17.178    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/renderer/font_row_reg[10]
+  -------------------------------------------------------------------
+                         required time                         17.178    <hidden>
+                         arrival time                         -17.165    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.013    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.037ns  (arrival time - required time)
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data2_reg[90]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/display_data_reg[90]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise@0.000ns - clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.414ns  (logic 0.148ns (35.784%)  route 0.266ns (64.216%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.354ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.562ns
+    Source Clock Delay      (SCD):    1.148ns
+    Clock Pessimism Removal (CPR):    0.060ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.597     0.933    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.217 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529     0.312    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.026     0.338 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.030     0.368    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.026     0.394 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.030     0.424    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.026     0.450 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.030     0.480    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.506 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.042     0.548    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.574 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         0.574     1.148    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/hdmi_pixel_clk
+    SLICE_X26Y90         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data2_reg[90]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y90         FDRE (Prop_fdre_C_Q)         0.148     1.296 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data2_reg[90]/Q
+                         net (fo=1, routed)           0.266     1.561    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data2[90]
+    SLICE_X29Y101        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/display_data_reg[90]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.864     1.230    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.237 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576     0.339    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029     0.368 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.033     0.401    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.029     0.430 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.033     0.463    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.029     0.492 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.033     0.525    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.554 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.046     0.600    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.629 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         0.933     1.562    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/hdmi_pixel_clk
+    SLICE_X29Y101        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/display_data_reg[90]/C
+                         clock pessimism             -0.060     1.502    <hidden>
+    SLICE_X29Y101        FDRE (Hold_fdre_C_D)         0.022     1.524    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/display_data_reg[90]
+  -------------------------------------------------------------------
+                         required time                         -1.524    <hidden>
+                         arrival time                           1.561    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.037    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+Waveform(ns):       { 0.000 6.734 }
+Period(ns):         13.468
+Sources:            { roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         13.468      10.892     RAMB36_X4Y23     roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/banks[0].parts[0].ram/memory_reg_0/CLKBWRCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       13.468      199.892    MMCME2_ADV_X1Y0  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         6.734       5.754      SLICE_X112Y107   roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/POR_SRL_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         6.734       5.754      SLICE_X112Y107   roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/POR_SRL_I/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_roarm_closed_loop_hdmi_clock_wiz_0
+  To Clock:  clk_out2_roarm_closed_loop_hdmi_clock_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.538ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_roarm_closed_loop_hdmi_clock_wiz_0
+Waveform(ns):       { 0.000 1.347 }
+Period(ns):         2.694
+Sources:            { roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         2.694       0.538      BUFGCTRL_X0Y1    roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout2_buf/I
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       2.694       210.666    MMCME2_ADV_X1Y0  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_roarm_closed_loop_camera_xclk_wiz_0
+  To Clock:  clkfbout_roarm_closed_loop_camera_xclk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       47.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_roarm_closed_loop_camera_xclk_wiz_0
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         50.000      47.845     BUFGCTRL_X0Y3    roarm_closed_loop_i/camera_xclk_wiz/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y0  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_roarm_closed_loop_hdmi_clock_wiz_0
+  To Clock:  clkfbout_roarm_closed_loop_hdmi_clock_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       47.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_roarm_closed_loop_hdmi_clock_wiz_0
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         50.000      47.845     BUFGCTRL_X0Y4    roarm_closed_loop_i/hdmi_clock_wiz/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ov5640_pclk
+  To Clock:  ov5640_pclk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.710ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.044ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.436ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.710ns  (required time - arrival time)
+  Source:                 ov5640_data[0]
+                            (input port clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            10.417ns  (ov5640_pclk rise@20.833ns - ov5640_pclk fall@10.417ns)
+  Data Path Delay:        2.346ns  (logic 2.346ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           2  (IBUF=1 ZHOLD_DELAY=1)
+  Input Delay:            8.000ns
+  Clock Path Skew:        1.591ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.591ns = ( 22.424 - 20.833 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.417 - 10.417 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk fall edge)
+                                                     10.417    10.417 f  <hidden>
+                         input delay                  8.000    18.417    <hidden>
+    Y18                                               0.000    18.417 r  ov5640_data[0]
+                         net (fo=0)                   0.000    18.417    ov5640_data[0]
+    Y18                  IBUF (Prop_ibuf_I_O)         0.480    18.897 r  ov5640_data_IBUF[0]_inst/O
+                         net (fo=1, routed)           0.000    18.897    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data[0]
+    ILOGIC_X1Y66         ZHOLD_DELAY (Prop_zhold_delay_DLYIN_DLYIFF)
+                                                      1.866    20.763 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]_OPT_INSERTED/DLYIFF
+                         net (fo=1, routed)           0.000    20.763    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/OPT_ZHD_N_dvp_data_iob_reg[0]
+    ILOGIC_X1Y66         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                     20.833    20.833 r  <hidden>
+    U18                                               0.000    20.833 r  ov5640_pclk
+                         net (fo=0)                   0.000    20.833    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         0.266    21.099 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674    21.773    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026    21.799 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.625    22.424    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    ILOGIC_X1Y66         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]/C
+                         clock pessimism              0.000    22.424    <hidden>
+                         clock uncertainty           -0.035    22.388    <hidden>
+    ILOGIC_X1Y66         FDRE (Setup_fdre_C_D)        0.084    22.472    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/dvp_data_iob_reg[0]
+  -------------------------------------------------------------------
+                         required time                         22.472    <hidden>
+                         arrival time                         -20.763    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.710    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.044ns  (arrival time - required time)
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pixel_y_coord_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/mem_reg/DIADI[24]
+                            (rising edge-triggered cell RAMB36E1 clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             ov5640_pclk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ov5640_pclk rise@0.000ns - ov5640_pclk rise@0.000ns)
+  Data Path Delay:        0.418ns  (logic 0.164ns (39.245%)  route 0.254ns (60.755%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.077ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.139ns
+    Source Clock Delay      (SCD):    1.580ns
+    Clock Pessimism Removal (CPR):    0.481ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026     0.966 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.614     1.580    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pclk
+    SLICE_X98Y45         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pixel_y_coord_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X98Y45         FDRE (Prop_fdre_C_Q)         0.164     1.744 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_capture/pixel_y_coord_reg[6]/Q
+                         net (fo=1, routed)           0.254     1.998    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/DIADI[24]
+    RAMB36_X4Y9          RAMB36E1                                     r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/mem_reg/DIADI[24]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.029     1.214 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.924     2.139    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/pclk
+    RAMB36_X4Y9          RAMB36E1                                     r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/mem_reg/CLKARDCLK
+                         clock pessimism             -0.481     1.657    <hidden>
+    RAMB36_X4Y9          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_DIADI[24])
+                                                      0.296     1.953    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/mem_reg
+  -------------------------------------------------------------------
+                         required time                         -1.953    <hidden>
+                         arrival time                           1.998    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.044    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ov5640_pclk
+Waveform(ns):       { 0.000 10.417 }
+Period(ns):         20.833
+Sources:            { ov5640_pclk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         20.833      18.257     RAMB36_X4Y9    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/mem_reg/CLKARDCLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         10.416      9.436      SLICE_X112Y75  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/POR_SRL_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         10.417      9.437      SLICE_X112Y75  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/POR_SRL_I/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_fpga_1
+  To Clock:  clk_fpga_1
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.274ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.242ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.274ns  (required time - arrival time)
+  Source:                 roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/m_data_reg[115]/CLR
+                            (recovery check against rising-edge clock clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_1 rise@10.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        6.972ns  (logic 0.580ns (8.319%)  route 6.392ns (91.681%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.195ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.692ns = ( 12.692 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.016ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.722     3.016    roarm_closed_loop_i/rst_100m/U0/slowest_sync_clk
+    SLICE_X87Y54         FDRE                                         r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X87Y54         FDRE (Prop_fdre_C_Q)         0.456     3.472 r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica/Q
+                         net (fo=473, routed)         1.765     5.237    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/u_mult/peripheral_aresetn[0]_repN_alias
+    SLICE_X103Y76        LUT1 (Prop_lut1_I0_O)        0.124     5.361 f  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/u_mult/axi_bresp[1]_i_1/O
+                         net (fo=1094, routed)        4.626     9.988    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_8
+    SLICE_X27Y67         FDCE                                         f  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/m_data_reg[115]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                     10.000    10.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000    10.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088    11.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.513    12.692    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/S_AXI_ACLK
+    SLICE_X27Y67         FDCE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/m_data_reg[115]/C
+                         clock pessimism              0.129    12.821    <hidden>
+                         clock uncertainty           -0.154    12.667    <hidden>
+    SLICE_X27Y67         FDCE (Recov_fdce_C_CLR)     -0.405    12.262    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_planner/u_core/m_data_reg[115]
+  -------------------------------------------------------------------
+                         required time                         12.262    <hidden>
+                         arrival time                          -9.988    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  2.274    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.242ns  (arrival time - required time)
+  Source:                 roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica_1/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/mapper_start_reg/CLR
+                            (removal check against rising-edge clock clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_1 rise@0.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        1.512ns  (logic 0.186ns (12.301%)  route 1.326ns (87.699%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.337ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.261ns
+    Source Clock Delay      (SCD):    0.889ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.553     0.889    roarm_closed_loop_i/rst_100m/U0/slowest_sync_clk
+    SLICE_X37Y62         FDRE                                         r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica_1/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y62         FDRE (Prop_fdre_C_Q)         0.141     1.030 r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica_1/Q
+                         net (fo=156, routed)         1.045     2.074    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_mapper/peripheral_aresetn[0]_repN_1_alias
+    SLICE_X43Y125        LUT1 (Prop_lut1_I0_O)        0.045     2.119 f  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_mapper/bresp[1]_i_1/O
+                         net (fo=2576, routed)        0.281     2.401    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N
+    SLICE_X42Y123        FDCE                                         f  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/mapper_start_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.895     1.261    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/s_axi_aclk
+    SLICE_X42Y123        FDCE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/mapper_start_reg/C
+                         clock pessimism             -0.035     1.226    <hidden>
+    SLICE_X42Y123        FDCE (Remov_fdce_C_CLR)     -0.067     1.159    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/mapper_start_reg
+  -------------------------------------------------------------------
+                         required time                         -1.159    <hidden>
+                         arrival time                           2.401    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.242    <hidden>
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_fpga_1
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/arm_uart_tx_reg/C
+                            (rising edge-triggered cell FDPE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            arm_uart_tx
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.817ns  (logic 4.816ns (99.979%)  route 0.001ns (0.021%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.152ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.887     3.181    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/s_axi_aclk
+    OLOGIC_X1Y95         FDPE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/arm_uart_tx_reg/C
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y95         FDPE (Prop_fdpe_C_Q)         0.472     3.653 r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/arm_uart_tx_reg/Q
+                         net (fo=1, routed)           0.001     3.654    arm_uart_tx_OBUF
+    U12                  OBUF (Prop_obuf_I_O)         4.344     7.998 r  arm_uart_tx_OBUF_inst/O
+                         net (fo=0)                   0.000     7.998    arm_uart_tx
+    U12                                                               r  arm_uart_tx
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/arm_uart_tx_reg/C
+                            (rising edge-triggered cell FDPE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            arm_uart_tx
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.207ns  (logic 3.206ns (99.969%)  route 0.001ns (0.031%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.152ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.628     0.964    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/s_axi_aclk
+    OLOGIC_X1Y95         FDPE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/arm_uart_tx_reg/C
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y95         FDPE (Prop_fdpe_C_Q)         0.177     1.141 r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/arm_uart_tx_reg/Q
+                         net (fo=1, routed)           0.001     1.142    arm_uart_tx_OBUF
+    U12                  OBUF (Prop_obuf_I_O)         3.029     4.171 r  arm_uart_tx_OBUF_inst/O
+                         net (fo=0)                   0.000     4.171    arm_uart_tx
+    U12                                                               r  arm_uart_tx
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk_fpga_1
+
+Max Delay             5 Endpoints
+Min Delay             5 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 arm_uart_rx
+                            (input port)
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_uart_rx/rx_meta_reg/D
+                            (rising edge-triggered cell FDPE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.481ns  (logic 1.529ns (27.891%)  route 3.952ns (72.109%))
+  Logic Levels:           1  (IBUF=1)
+  Clock Path Skew:        2.892ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.892ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.152ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    T14                                               0.000     0.000 r  arm_uart_rx
+                         net (fo=0)                   0.000     0.000    arm_uart_rx
+    T14                  IBUF (Prop_ibuf_I_O)         1.529     1.529 r  arm_uart_rx_IBUF_inst/O
+                         net (fo=1, routed)           3.952     5.481    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_uart_rx/arm_uart_rx
+    SLICE_X62Y141        FDPE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_uart_rx/rx_meta_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.713     2.892    roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_uart_rx/s_axi_aclk
+    SLICE_X62Y141        FDPE                                         r  roarm_closed_loop_i/s5_0/inst/u_task/u_motion/u_actuator/u_arm_backend/u_core/u_uart_rx/rx_meta_reg/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.007ns  (logic 0.045ns (4.470%)  route 0.962ns (95.530%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.152ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=3, routed)           0.962     0.962    roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ext_reset_in
+    SLICE_X26Y131        LUT1 (Prop_lut1_I0_O)        0.045     1.007 r  roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT_i_1/O
+                         net (fo=1, routed)           0.000     1.007    roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/src_in
+    SLICE_X26Y131        FDRE                                         r  roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.920     1.286    roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/dest_clk
+    SLICE_X26Y131        FDRE                                         r  roarm_closed_loop_i/rst_100m/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_fpga_1
+  To Clock:  clk_fpga_1
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.189ns  (logic 0.456ns (38.338%)  route 0.733ns (61.662%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.315ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.859ns
+    Source Clock Delay      (SCD):    3.174ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.880     3.174    roarm_closed_loop_i/rst_100m/U0/slowest_sync_clk
+    SLICE_X27Y134        FDRE                                         r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X27Y134        FDRE (Prop_fdre_C_Q)         0.456     3.630 r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
+                         net (fo=1, routed)           0.733     4.363    roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/src_rst
+    SLICE_X27Y123        FDRE                                         r  roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.680     2.859    roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/dest_clk
+    SLICE_X27Y123        FDRE                                         r  roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/syncstages_ff_reg[0]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.450ns  (logic 0.141ns (31.304%)  route 0.309ns (68.696%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.293ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.280ns
+    Source Clock Delay      (SCD):    0.987ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.651     0.987    roarm_closed_loop_i/rst_100m/U0/slowest_sync_clk
+    SLICE_X27Y134        FDRE                                         r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X27Y134        FDRE (Prop_fdre_C_Q)         0.141     1.128 r  roarm_closed_loop_i/rst_100m/U0/ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N/Q
+                         net (fo=1, routed)           0.309     1.437    roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/src_rst
+    SLICE_X27Y123        FDRE                                         r  roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.914     1.280    roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/dest_clk
+    SLICE_X27Y123        FDRE                                         r  roarm_closed_loop_i/ps_axi_fabric/inst/sc_ul/inst/cdc_aresetn/syncstages_ff_reg[0]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+  To Clock:  clk_fpga_1
+
+Max Delay             2 Endpoints
+Min Delay             2 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.015ns  (logic 0.518ns (51.055%)  route 0.497ns (48.945%))
+  Logic Levels:           0  
+  Clock Path Skew:        -1.299ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.770ns
+    Source Clock Delay      (SCD):    4.069ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.576ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.323ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.806     3.100    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.793    -0.693 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.889     1.196    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.101     1.297 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.146     1.443    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.101     1.544 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.146     1.690    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.101     1.791 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.146     1.937    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     2.038 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.161     2.199    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     2.300 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         1.769     4.069    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/hdmi_pixel_clk
+    SLICE_X96Y76         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X96Y76         FDRE (Prop_fdre_C_Q)         0.518     4.587 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/Q
+                         net (fo=2, routed)           0.497     5.084    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge
+    SLICE_X97Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.591     2.770    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/clk_100mhz
+    SLICE_X97Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.343ns  (logic 0.164ns (47.871%)  route 0.179ns (52.129%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.227ns
+    Source Clock Delay      (SCD):    1.171ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.576ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.323ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.597     0.933    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.217 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529     0.312    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.026     0.338 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.030     0.368    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.026     0.394 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.030     0.424    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.026     0.450 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.030     0.480    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.506 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.042     0.548    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.574 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         0.597     1.171    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/hdmi_pixel_clk
+    SLICE_X96Y76         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X96Y76         FDRE (Prop_fdre_C_Q)         0.164     1.335 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge_reg/Q
+                         net (fo=2, routed)           0.179     1.513    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/acknowledge
+    SLICE_X97Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.861     1.227    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/clk_100mhz
+    SLICE_X97Y75         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/ack1_reg/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  ov5640_pclk
+  To Clock:  clk_fpga_1
+
+Max Delay            12 Endpoints
+Min Delay            12 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_pclk_reg/C
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_sync1_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        1.102ns  (logic 0.456ns (41.391%)  route 0.646ns (58.609%))
+  Logic Levels:           0  
+  Clock Path Skew:        -2.803ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.740ns
+    Source Clock Delay      (SCD):    5.542ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     3.804 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.738     5.542    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/pclk
+    SLICE_X84Y41         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_pclk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y41         FDRE (Prop_fdre_C_Q)         0.456     5.998 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_pclk_reg/Q
+                         net (fo=2, routed)           0.646     6.644    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_pclk
+    SLICE_X78Y42         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_sync1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.560     2.740    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/clk_100mhz
+    SLICE_X78Y42         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/fifo_overflow_sync1_reg/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.241ns  (logic 0.128ns (53.025%)  route 0.113ns (46.975%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.332ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.222ns
+    Source Clock Delay      (SCD):    1.554ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.026     0.966 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.588     1.554    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/pclk
+    SLICE_X83Y40         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X83Y40         FDRE (Prop_fdre_C_Q)         0.128     1.682 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_reg[4]/Q
+                         net (fo=1, routed)           0.113     1.795    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray[4]
+    SLICE_X81Y40         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.856     1.222    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/clk_100mhz
+    SLICE_X81Y40         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/wr_gray_rd_sync1_reg[4]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        3.553ns  (logic 0.124ns (3.490%)  route 3.429ns (96.510%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.525ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.323ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=3, routed)           3.429     3.429    roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ext_reset_in
+    SLICE_X112Y108       LUT1 (Prop_lut1_I0_O)        0.124     3.553 r  roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT_i_1/O
+                         net (fo=1, routed)           0.000     3.553    roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/src_in
+    SLICE_X112Y108       FDRE                                         r  roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.612     2.791    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.425    -0.634 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.725     1.091    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.091     1.182 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.133     1.315    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.091     1.406 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.133     1.539    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.091     1.630 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.133     1.763    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091     1.854 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.147     2.001    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     2.092 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         1.862     3.954    roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/dest_clk
+    SLICE_X112Y108       FDRE                                         r  roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.547ns  (logic 0.045ns (2.908%)  route 1.502ns (97.092%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.525ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.323ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=3, routed)           1.502     1.502    roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ext_reset_in
+    SLICE_X112Y108       LUT1 (Prop_lut1_I0_O)        0.045     1.547 r  roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT_i_1/O
+                         net (fo=1, routed)           0.000     1.547    roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/src_in
+    SLICE_X112Y108       FDRE                                         r  roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.864     1.230    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.237 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576     0.339    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029     0.368 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.033     0.401    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.029     0.430 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.033     0.463    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.029     0.492 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.033     0.525    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.554 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.046     0.600    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.629 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         0.995     1.624    roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/dest_clk
+    SLICE_X112Y108       FDRE                                         r  roarm_closed_loop_i/rst_hdmi_pixel/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_fpga_1
+  To Clock:  clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+
+Max Delay            85 Endpoints
+Min Delay            85 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[75]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[75]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        2.505ns  (logic 0.419ns (16.723%)  route 2.086ns (83.277%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.683ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.620ns
+    Source Clock Delay      (SCD):    2.937ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.576ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.323ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.643     2.937    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/clk_100mhz
+    SLICE_X49Y65         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[75]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y65         FDRE (Prop_fdre_C_Q)         0.419     3.356 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held_reg[75]/Q
+                         net (fo=1, routed)           2.086     5.442    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/held[75]
+    SLICE_X31Y93         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[75]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     1.088    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.612     2.791    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.425    -0.634 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.725     1.091    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.091     1.182 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.133     1.315    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.091     1.406 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.133     1.539    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.091     1.630 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.133     1.763    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091     1.854 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.147     2.001    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     2.092 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         1.528     3.620    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/hdmi_pixel_clk
+    SLICE_X31Y93         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_telemetry/status_cdc/data1_reg[75]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/payload_reg[67]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/data1_reg[67]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.241ns  (logic 0.128ns (53.138%)  route 0.113ns (46.862%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.564ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.498ns
+    Source Clock Delay      (SCD):    0.934ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.576ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.323ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.598     0.934    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/clk_100mhz
+    SLICE_X103Y71        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/payload_reg[67]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X103Y71        FDRE (Prop_fdre_C_Q)         0.128     1.062 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/payload_reg[67]/Q
+                         net (fo=1, routed)           0.113     1.174    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/payload[67]
+    SLICE_X104Y71        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/data1_reg[67]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.337     0.337    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.864     1.230    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.237 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576     0.339    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y12       BUFG (Prop_bufg_I_O)         0.029     0.368 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_3/O
+                         net (fo=2, routed)           0.033     0.401    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_3
+    BUFGCTRL_X0Y13       BUFG (Prop_bufg_I_O)         0.029     0.430 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_2/O
+                         net (fo=2, routed)           0.033     0.463    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_2
+    BUFGCTRL_X0Y14       BUFG (Prop_bufg_I_O)         0.029     0.492 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica_1/O
+                         net (fo=1, routed)           0.033     0.525    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN_1
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.554 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf_replica/O
+                         net (fo=1, routed)           0.046     0.600    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out1_repN
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.629 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout1_buf/O
+                         net (fo=509, routed)         0.869     1.498    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/hdmi_pixel_clk
+    SLICE_X104Y71        FDRE                                         r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/frame/data1_reg[67]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  ov5640_pclk
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        4.311ns  (logic 0.124ns (2.877%)  route 4.187ns (97.123%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=3, routed)           4.187     4.187    roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ext_reset_in
+    SLICE_X112Y78        LUT1 (Prop_lut1_I0_O)        0.124     4.311 r  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT_i_1/O
+                         net (fo=1, routed)           0.000     4.311    roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/src_in
+    SLICE_X112Y78        FDRE                                         r  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.428     1.428 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.434    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     3.525 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.674     5.198    roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/dest_clk
+    SLICE_X112Y78        FDRE                                         r  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                            (internal pin)
+  Destination:            roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.843ns  (logic 0.045ns (2.442%)  route 1.798ns (97.558%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       False Path
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7                          0.000     0.000 f  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKRESETN[0]
+                         net (fo=3, routed)           1.798     1.798    roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ext_reset_in
+    SLICE_X112Y78        LUT1 (Prop_lut1_I0_O)        0.045     1.843 r  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT_i_1/O
+                         net (fo=1, routed)           0.000     1.843    roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/src_in
+    SLICE_X112Y78        FDRE                                         r  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.029     1.214 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.896     2.110    roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/dest_clk
+    SLICE_X112Y78        FDRE                                         r  roarm_closed_loop_i/rst_camera_pclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_fpga_1
+  To Clock:  ov5640_pclk
+
+Max Delay            12 Endpoints
+Min Delay            12 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/capture_enable_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/capture_enable_pclk_sync1_reg/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        2.416ns  (logic 0.456ns (18.873%)  route 1.960ns (81.127%))
+  Logic Levels:           0  
+  Clock Path Skew:        2.121ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.064ns
+    Source Clock Delay      (SCD):    2.943ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.649     2.943    roarm_closed_loop_i/s5_0/inst/u_vision/clk_100mhz
+    SLICE_X49Y58         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/capture_enable_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y58         FDRE (Prop_fdre_C_Q)         0.456     3.399 r  roarm_closed_loop_i/s5_0/inst/u_vision/capture_enable_reg/Q
+                         net (fo=2, routed)           1.960     5.359    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/snapshot_buffer_reg[0]
+    SLICE_X81Y64         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/capture_enable_pclk_sync1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.428     1.428 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.434    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     3.525 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         1.540     5.064    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/pclk
+    SLICE_X81Y64         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/capture_enable_pclk_sync1_reg/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by ov5640_pclk  {rise@0.000ns fall@10.417ns period=20.833ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.227ns  (logic 0.128ns (56.407%)  route 0.099ns (43.593%))
+  Logic Levels:           0  
+  Clock Path Skew:        1.148ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.071ns
+    Source Clock Delay      (SCD):    0.924ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Timing Exception:       Asynchronous Clock Groups
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.588     0.924    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/clk_100mhz
+    SLICE_X83Y41         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X83Y41         FDRE (Prop_fdre_C_Q)         0.128     1.052 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_reg[5]/Q
+                         net (fo=1, routed)           0.099     1.150    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray[5]
+    SLICE_X85Y41         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ov5640_pclk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  ov5640_pclk
+                         net (fo=0)                   0.000     0.000    ov5640_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  ov5640_pclk_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    ov5640_pclk_IBUF
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.029     1.214 r  ov5640_pclk_IBUF_BUFG_inst/O
+                         net (fo=146, routed)         0.857     2.071    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/pclk
+    SLICE_X85Y41         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_fifo/rd_gray_wr_sync1_reg[5]/C
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_fpga_1
+  To Clock:  
+
+Max Delay             8 Endpoints
+Min Delay             8 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_letterbox/now_ms_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            leds[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        14.530ns  (logic 6.814ns (46.900%)  route 7.715ns (53.100%))
+  Logic Levels:           14  (CARRY4=8 LUT2=1 LUT4=1 LUT5=1 LUT6=2 OBUF=1)
+  Clock Uncertainty:      0.152ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.706     3.000    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_letterbox/clk_100mhz
+    SLICE_X67Y67         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_letterbox/now_ms_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X67Y67         FDRE (Prop_fdre_C_Q)         0.456     3.456 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_letterbox/now_ms_reg[0]/Q
+                         net (fo=14, routed)          1.053     4.509    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_letterbox/now_ms_reg[0]_0
+    SLICE_X60Y63         LUT2 (Prop_lut2_I0_O)        0.124     4.633 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_camera_frontend/u_letterbox/output_valid1_carry_i_4/O
+                         net (fo=1, routed)           0.000     4.633    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[3]_INST_0_i_1_0[0]
+    SLICE_X60Y63         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     5.165 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry/CO[3]
+                         net (fo=1, routed)           0.000     5.165    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry_n_0
+    SLICE_X60Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.279 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     5.279    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__0_n_0
+    SLICE_X60Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.393 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     5.393    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__1_n_0
+    SLICE_X60Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.507 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     5.507    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__2_n_0
+    SLICE_X60Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.621 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     5.621    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__3_n_0
+    SLICE_X60Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.735 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     5.735    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__4_n_0
+    SLICE_X60Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.849 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     5.849    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__5_n_0
+    SLICE_X60Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     6.183 f  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1_carry__6/O[1]
+                         net (fo=1, routed)           0.560     6.743    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/output_valid1__93[29]
+    SLICE_X63Y68         LUT4 (Prop_lut4_I3_O)        0.303     7.046 f  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[3]_INST_0_i_6/O
+                         net (fo=1, routed)           0.407     7.453    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[3]_INST_0_i_6_n_0
+    SLICE_X63Y68         LUT6 (Prop_lut6_I1_O)        0.124     7.577 f  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[3]_INST_0_i_2/O
+                         net (fo=1, routed)           0.769     8.346    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[3]_INST_0_i_2_n_0
+    SLICE_X61Y64         LUT6 (Prop_lut6_I0_O)        0.124     8.470 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[3]_INST_0_i_1/O
+                         net (fo=5, routed)           1.090     9.560    roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/filter_valid
+    SLICE_X86Y68         LUT5 (Prop_lut5_I0_O)        0.124     9.684 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_pipeline_control/u_confirm/leds[2]_INST_0/O
+                         net (fo=2, routed)           3.836    13.520    leds_OBUF[2]
+    N16                  OBUF (Prop_obuf_I_O)         4.009    17.530 r  leds_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    17.530    leds[2]
+    N16                                                               r  leds[2]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_sccb/state_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ov5640_sda
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.042ns  (logic 1.109ns (36.452%)  route 1.933ns (63.548%))
+  Logic Levels:           2  (LUT5=1 OBUFT=1)
+  Clock Uncertainty:      0.152ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.596     0.932    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_sccb/clk_100mhz
+    SLICE_X16Y47         FDRE                                         r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_sccb/state_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y47         FDRE (Prop_fdre_C_Q)         0.164     1.096 f  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_sccb/state_reg[3]/Q
+                         net (fo=14, routed)          0.243     1.338    roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_sccb/state_reg_n_0_[3]
+    SLICE_X18Y48         LUT5 (Prop_lut5_I0_O)        0.048     1.386 r  roarm_closed_loop_i/s5_0/inst/u_vision/u_acquisition/u_sccb/sccb_sda_drive_low_INST_0/O
+                         net (fo=1, routed)           1.691     3.077    roarm_closed_loop_i/camera_sccb_iobuf_0/inst/u_sda_iobuf/T
+    W16                  OBUFT (TriStatD_obuft_T_O)
+                                                      0.897     3.974 r  roarm_closed_loop_i/camera_sccb_iobuf_0/inst/u_sda_iobuf/OBUFT/O
+                         net (fo=1, unset)            0.000     3.974    ov5640_sda
+    W16                                                               r  ov5640_sda
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_out1_roarm_closed_loop_camera_xclk_wiz_0
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/ov5640_xclk_forward_0/inst/u_xclk_oddr/C
+                            (falling edge-triggered cell ODDR clocked by clk_out1_roarm_closed_loop_camera_xclk_wiz_0  {rise@0.000ns fall@20.833ns period=41.667ns})
+  Destination:            ov5640_xclk
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.727ns  (logic 3.726ns (99.973%)  route 0.001ns (0.027%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.501ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.299ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_roarm_closed_loop_camera_xclk_wiz_0 fall edge)
+                                                     20.833    20.833 f  <hidden>
+    PS7_X0Y0             PS7                          0.000    20.833 f  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193    22.026    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101    22.127 f  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.762    23.889    roarm_closed_loop_i/camera_xclk_wiz/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.715    20.174 f  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    22.029    roarm_closed_loop_i/camera_xclk_wiz/inst/clk_out1_roarm_closed_loop_camera_xclk_wiz_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.101    22.130 f  roarm_closed_loop_i/camera_xclk_wiz/inst/clkout1_buf/O
+                         net (fo=1, routed)           1.891    24.022    roarm_closed_loop_i/ov5640_xclk_forward_0/inst/clk_24mhz
+    OLOGIC_X1Y97         ODDR                                         f  roarm_closed_loop_i/ov5640_xclk_forward_0/inst/u_xclk_oddr/C
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y97         ODDR (Prop_oddr_C_Q)         0.472    24.494 r  roarm_closed_loop_i/ov5640_xclk_forward_0/inst/u_xclk_oddr/Q
+                         net (fo=1, routed)           0.001    24.495    ov5640_xclk_OBUF
+    T10                  OBUF (Prop_obuf_I_O)         3.254    27.749 r  ov5640_xclk_OBUF_inst/O
+                         net (fo=0)                   0.000    27.749    ov5640_xclk
+    T10                                                               r  ov5640_xclk
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/ov5640_xclk_forward_0/inst/u_xclk_oddr/C
+                            (rising edge-triggered cell ODDR clocked by clk_out1_roarm_closed_loop_camera_xclk_wiz_0  {rise@0.000ns fall@20.833ns period=41.667ns})
+  Destination:            ov5640_xclk
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.595ns  (logic 1.594ns (99.937%)  route 0.001ns (0.063%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.501ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.401ns
+    Phase Error              (PE):    0.299ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_roarm_closed_loop_camera_xclk_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.580     0.916    roarm_closed_loop_i/camera_xclk_wiz/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.122    -0.206 r  roarm_closed_loop_i/camera_xclk_wiz/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518     0.312    roarm_closed_loop_i/camera_xclk_wiz/inst/clk_out1_roarm_closed_loop_camera_xclk_wiz_0
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.026     0.338 r  roarm_closed_loop_i/camera_xclk_wiz/inst/clkout1_buf/O
+                         net (fo=1, routed)           0.631     0.969    roarm_closed_loop_i/ov5640_xclk_forward_0/inst/clk_24mhz
+    OLOGIC_X1Y97         ODDR                                         r  roarm_closed_loop_i/ov5640_xclk_forward_0/inst/u_xclk_oddr/C
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y97         ODDR (Prop_oddr_C_Q)         0.177     1.146 r  roarm_closed_loop_i/ov5640_xclk_forward_0/inst/u_xclk_oddr/Q
+                         net (fo=1, routed)           0.001     1.147    ov5640_xclk_OBUF
+    T10                  OBUF (Prop_obuf_I_O)         1.417     2.564 r  ov5640_xclk_OBUF_inst/O
+                         net (fo=0)                   0.000     2.564    ov5640_xclk
+    T10                                                               r  ov5640_xclk
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_out2_roarm_closed_loop_hdmi_clock_wiz_0
+  To Clock:  
+
+Max Delay             8 Endpoints
+Min Delay             8 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[3].u_master/CLK
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            hdmi_clk_n
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.420ns  (logic 2.419ns (99.959%)  route 0.001ns (0.041%))
+  Logic Levels:           1  (OBUFDS=1)
+  Clock Uncertainty:      0.471ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.292ns
+    Phase Error              (PE):    0.323ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       1.806     3.100    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.793    -0.693 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           1.889     1.196    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out2_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     1.297 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout2_buf/O
+                         net (fo=8, routed)           2.066     3.363    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/hdmi_pixel_clk_5x
+    OLOGIC_X1Y128        OSERDESE2                                    r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[3].u_master/CLK
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y128        OSERDESE2 (Prop_oserdese2_CLK_OQ)
+                                                      0.472     3.835 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[3].u_master/OQ
+                         net (fo=1, routed)           0.001     3.836    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/serial_data_3
+    L16                  OBUFDS (Prop_obufds_I_OB)    1.947     5.784 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[3].g_clock.u_clock_out/OB
+                         net (fo=0)                   0.000     5.784    hdmi_clk_n
+    L17                                                               r  hdmi_clk_n
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[0].u_master/CLK
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out2_roarm_closed_loop_hdmi_clock_wiz_0  {rise@0.000ns fall@1.347ns period=2.694ns})
+  Destination:            hdmi_data_p[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.984ns  (logic 0.983ns (99.898%)  route 0.001ns (0.102%))
+  Logic Levels:           1  (OBUFDS=1)
+  Clock Uncertainty:      0.471ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.292ns
+    Phase Error              (PE):    0.323ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_roarm_closed_loop_hdmi_clock_wiz_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  roarm_closed_loop_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           0.310     0.310    roarm_closed_loop_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  roarm_closed_loop_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=26990, routed)       0.597     0.933    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.150    -0.217 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.529     0.312    roarm_closed_loop_i/hdmi_clock_wiz/inst/clk_out2_roarm_closed_loop_hdmi_clock_wiz_0
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.338 r  roarm_closed_loop_i/hdmi_clock_wiz/inst/clkout2_buf/O
+                         net (fo=8, routed)           0.704     1.042    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/hdmi_pixel_clk_5x
+    OLOGIC_X1Y126        OSERDESE2                                    r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[0].u_master/CLK
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y126        OSERDESE2 (Prop_oserdese2_CLK_OQ)
+                                                      0.177     1.219 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[0].u_master/OQ
+                         net (fo=1, routed)           0.001     1.220    roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/serial_data_0
+    K17                  OBUFDS (Prop_obufds_I_O)     0.806     2.026 r  roarm_closed_loop_i/s5_0/inst/g_hdmi.u_display/u_phy/serializer/g_tmds[0].g_data.u_data_out/O
+                         net (fo=0)                   0.000     2.026    hdmi_data_p[0]
+    K17                                                               r  hdmi_data_p[0]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

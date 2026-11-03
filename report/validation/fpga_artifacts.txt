@@ -1,0 +1,41 @@
+{
+  "schema": "fpga.artifact.check.v1",
+  "passed": true,
+  "source_files": 105,
+  "artifacts": {
+    "roarm_closed_loop.bit": {
+      "bytes": 4045780,
+      "sha256": "9510737174c11c236f7b30c3442da76f28aaabad45d08c98a37fd0a63427ae8d"
+    },
+    "roarm_closed_loop.hwh": {
+      "bytes": 298794,
+      "sha256": "a325b55e10ea0452cf3612281104797952b9fa760a3179fc1f93091b02c1f17f"
+    },
+    "roarm_closed_loop.xsa": {
+      "bytes": 2707976,
+      "sha256": "b4dbfcf059e34e10385cce20cb8e06ba441e8423c3a780dbfc3e9df68ccfbc9d"
+    }
+  },
+  "timing_ns": {
+    "WNS": 0.013,
+    "TNS": 0.0,
+    "TNS_FAILING": 0.0,
+    "WHS": 0.011,
+    "THS": 0.0,
+    "THS_FAILING": 0.0
+  },
+  "utilization": {
+    "LUT_TOTAL": 30657.0,
+    "LUT_LOGIC": 29053.0,
+    "LUT_MEMORY": 1604.0,
+    "FF": 25196.0,
+    "BRAM_TILE": 117.5,
+    "RAMB36": 110.0,
+    "RAMB18": 15.0,
+    "DSP": 56.0
+  },
+  "drc_errors": 0,
+  "cdc_safe": 115,
+  "hardware_access": false,
+  "claim": "Stored build evidence and artifacts agree; no new implementation or board test was run."
+}

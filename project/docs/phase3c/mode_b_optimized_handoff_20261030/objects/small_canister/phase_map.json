@@ -1,0 +1,242 @@
+[
+  {
+    "phase": "DIRECT_PREGRASP",
+    "carrying": false,
+    "request_start_index": 0,
+    "request_end_index_inclusive": 180,
+    "motion_samples": 181,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 7.24,
+    "target_firmware_rad": {
+      "b": 0.04676402247313805,
+      "s": 0.7294581453921984,
+      "e": 0.9757903326251418,
+      "t": 1.5084412729826597,
+      "r": 0.1174037845283215,
+      "g": 3.084835364
+    },
+    "native_spd": 320,
+    "native_acc": 80,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "DESCEND",
+    "carrying": false,
+    "request_start_index": 182,
+    "request_end_index_inclusive": 235,
+    "motion_samples": 54,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 2.16,
+    "target_firmware_rad": {
+      "b": 0.04676402247313804,
+      "s": 0.8518480186290686,
+      "e": 1.294211603382746,
+      "t": 1.0430864359881855,
+      "r": 0.1173604394887862,
+      "g": 1.586
+    },
+    "native_spd": 320,
+    "native_acc": 80,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "LIFT",
+    "carrying": true,
+    "request_start_index": 237,
+    "request_end_index_inclusive": 406,
+    "motion_samples": 170,
+    "period_s": 0.04,
+    "nominal_motion_seconds": 6.8,
+    "target_firmware_rad": {
+      "b": 0.05041140208477962,
+      "s": 0.6358721264335396,
+      "e": 1.2052279715119962,
+      "t": 1.4492886920544639,
+      "r": 0.12134347392985494,
+      "g": 2.8
+    },
+    "native_spd": 320,
+    "native_acc": 80,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "INNER_HOLD",
+    "carrying": true,
+    "request_start_index": 407,
+    "request_end_index_inclusive": 449,
+    "motion_samples": 43,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.86,
+    "target_firmware_rad": {
+      "b": 3.6731945301643376e-06,
+      "s": 0.40568341297508287,
+      "e": 1.7689148418533092,
+      "t": 1.1157905351716464,
+      "r": 0.12134347392985494,
+      "g": 2.8
+    },
+    "native_spd": 1320,
+    "native_acc": 132,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "BUFFER",
+    "carrying": true,
+    "request_start_index": 450,
+    "request_end_index_inclusive": 484,
+    "motion_samples": 35,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.7000000000000001,
+    "target_firmware_rad": {
+      "b": 0.9097568311452074,
+      "s": 0.5236871998697286,
+      "e": 0.9894164700420692,
+      "t": 1.5609884563098515,
+      "r": 0.12134347392985494,
+      "g": 2.8
+    },
+    "native_spd": 2640,
+    "native_acc": 254,
+    "path_kind": "JOINT_QUINTIC"
+  },
+  {
+    "phase": "PREPLACE",
+    "carrying": true,
+    "request_start_index": 485,
+    "request_end_index_inclusive": 498,
+    "motion_samples": 14,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.28,
+    "target_firmware_rad": {
+      "b": 0.8908911451246628,
+      "s": 0.508793804356844,
+      "e": 0.8863891154862777,
+      "t": 1.5491821427413799,
+      "r": 0.12134347392985494,
+      "g": 2.8
+    },
+    "native_spd": 2640,
+    "native_acc": 254,
+    "path_kind": "JOINT_QUINTIC"
+  },
+  {
+    "phase": "PLACE",
+    "carrying": true,
+    "request_start_index": 499,
+    "request_end_index_inclusive": 553,
+    "motion_samples": 55,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 1.1,
+    "target_firmware_rad": {
+      "b": 1.0680402555679736,
+      "s": 0.6819775423348541,
+      "e": 0.5819055044535157,
+      "t": 1.5706999999999944,
+      "r": 0.12134347392985494,
+      "g": 2.8
+    },
+    "native_spd": 1320,
+    "native_acc": 132,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "RELEASE_CLEARANCE",
+    "carrying": false,
+    "request_start_index": 555,
+    "request_end_index_inclusive": 580,
+    "motion_samples": 26,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.52,
+    "target_firmware_rad": {
+      "b": 1.0908574511913147,
+      "s": 0.6847918487999519,
+      "e": 0.574758280766187,
+      "t": 1.5706999999999998,
+      "r": 0.12134347392985494,
+      "g": 1.586
+    },
+    "native_spd": 1320,
+    "native_acc": 132,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "RETREAT",
+    "carrying": false,
+    "request_start_index": 581,
+    "request_end_index_inclusive": 594,
+    "motion_samples": 14,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.28,
+    "target_firmware_rad": {
+      "b": 1.0908574511948073,
+      "s": 0.5468957509774894,
+      "e": 0.5790089695834196,
+      "t": 1.5092161487872966,
+      "r": 0.12134347392985494,
+      "g": 1.586
+    },
+    "native_spd": 2640,
+    "native_acc": 254,
+    "path_kind": "JOINT_QUINTIC"
+  },
+  {
+    "phase": "RETURN_CLEAR",
+    "carrying": false,
+    "request_start_index": 595,
+    "request_end_index_inclusive": 617,
+    "motion_samples": 23,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.46,
+    "target_firmware_rad": {
+      "b": 0.890891145126672,
+      "s": 0.2681582278714108,
+      "e": 1.1042681771874956,
+      "t": 1.26269446428931,
+      "r": 0.12134347392985494,
+      "g": 1.586
+    },
+    "native_spd": 2640,
+    "native_acc": 254,
+    "path_kind": "JOINT_QUINTIC"
+  },
+  {
+    "phase": "INNER_RETURN",
+    "carrying": false,
+    "request_start_index": 618,
+    "request_end_index_inclusive": 726,
+    "motion_samples": 109,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 2.18,
+    "target_firmware_rad": {
+      "b": 3.673194529986628e-06,
+      "s": 0.0845383550943824,
+      "e": 2.459605921506084,
+      "t": 0.09097659274780384,
+      "r": 0.12134347392985494,
+      "g": 1.586
+    },
+    "native_spd": 1320,
+    "native_acc": 132,
+    "path_kind": "CARTESIAN_PCHIP_QUINTIC"
+  },
+  {
+    "phase": "RETURN_LOW_HOME",
+    "carrying": false,
+    "request_start_index": 727,
+    "request_end_index_inclusive": 752,
+    "motion_samples": 26,
+    "period_s": 0.02,
+    "nominal_motion_seconds": 0.52,
+    "target_firmware_rad": {
+      "b": 0.006135923,
+      "s": 0.104310694,
+      "e": 2.587825589,
+      "t": 0.426446659,
+      "r": 0.004601941999999998,
+      "g": 1.586
+    },
+    "native_spd": 1320,
+    "native_acc": 132,
+    "path_kind": "JOINT_QUINTIC"
+  }
+]

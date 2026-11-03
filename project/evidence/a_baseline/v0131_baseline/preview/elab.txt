@@ -1,0 +1,16 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_preview256 -s preview -O0 -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'buffer_frame_id_0' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_preview256.sv:6]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.pl_letterbox_640x480_default
+Compiling module work.preview_gray256
+Compiling module work.tb_preview256
+Built simulation snapshot preview

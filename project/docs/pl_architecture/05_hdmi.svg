@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1250" viewBox="0 0 1700 1250">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#32495c"/></marker></defs>
+<rect width="1700" height="1250" fill="white"/>
+<text x="60" y="65" text-anchor="start" font-family="Arial, sans-serif" font-size="34" fill="#172d3e">Passive display memory, CDC and physical interface</text>
+<text x="60" y="112" text-anchor="start" font-family="Arial, sans-serif" font-size="27" fill="#172d3e">g_hdmi.u_display : mode_a_hdmi_output</text>
+<path d="M875.0,410.0 V460.5 H875.0 V575.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="875.0" y="448.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[1]</text>
+<text x="60" y="850" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[1] x / y / active / hsync / vsync</text>
+<path d="M315.0,410.0 V476.5 H875.0 V575.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="595.0" y="464.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[2]</text>
+<text x="880" y="850" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[2] frame_word_data[31:0] / display metadata</text>
+<path d="M550.0,690.0 H600.0 V690.0 H650.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="600.0" y="678.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[3]</text>
+<text x="60" y="916" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[3] ui[93:0] held payload</text>
+<path d="M1100.0,690.0 H1155.0 V690.0 H1210.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="1155.0" y="678.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[4]</text>
+<text x="880" y="916" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[4] RGB[23:0] / de / rhs / rvs</text>
+<path d="M650.0,295.0 H600.0 V295.0 H550.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="600.0" y="283.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[5]</text>
+<text x="60" y="982" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[5] frame_start / mapped read address</text>
+<rect x="80" y="180" width="470" height="230" rx="2" fill="#fff4dd" stroke="#32495c" stroke-width="2.5"/>
+<path d="M80 202 Q315.0 228 550 202" fill="none" stroke="#32495c" stroke-width="2"/>
+<text x="315.0" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">frame</text>
+<text x="315.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">mode_a_framebuffer</text>
+<text x="315.0" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Four image banks + frame-ID</text>
+<text x="315.0" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">ownership</text>
+<rect x="650" y="180" width="450" height="230" rx="2" fill="#edf4fa" stroke="#32495c" stroke-width="2.5"/>
+<text x="875.0" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_scan</text>
+<text x="875.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">display_scan_pipeline</text>
+<text x="875.0" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Raster timing + coordinate</text>
+<text x="875.0" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">ROMs</text>
+<rect x="650" y="575" width="450" height="230" rx="2" fill="#edf4fa" stroke="#32495c" stroke-width="2.5"/>
+<text x="875.0" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">renderer</text>
+<text x="875.0" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">mode_a_renderer</text>
+<text x="875.0" y="727" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Pixel datapath / font ROM /</text>
+<text x="875.0" y="759" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">overlays</text>
+<rect x="80" y="575" width="470" height="230" rx="18" fill="#f3edf8" stroke="#32495c" stroke-width="2.5"/>
+<text x="315.0" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_telemetry</text>
+<text x="315.0" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">display_telemetry_bridge</text>
+<text x="315.0" y="727" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Unit conversion + held-payload</text>
+<text x="315.0" y="759" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">CDC</text>
+<rect x="1210" y="575" width="410" height="230" rx="2" fill="#f5f5f5" stroke="#32495c" stroke-width="2.5"/>
+<text x="1415.0" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_phy</text>
+<text x="1415.0" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">hdmi_phy_pipeline</text>
+<text x="1415.0" y="727" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">TMDS encoders + OSERDESE2</text>
+<text x="60" y="1110" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">sys_clk = 100 MHz; pixel_clk = 74.25 MHz; pixel_clk_5x = 371.25 MHz.</text>
+<text x="60" y="1146" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">Frame and telemetry CDC are explicit; the HDMI branch observes inference and motion and does not gate either datapath.</text>
+</svg>

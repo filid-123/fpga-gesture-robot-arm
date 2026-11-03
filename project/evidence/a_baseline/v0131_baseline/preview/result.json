@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "PASS: 256x192 exact nearest source samples/12288-word packing, frame IDs, full-buffer drop; original Locator128x128 unchanged"
+  ],
+  "hardware_access": false,
+  "source_hashes": {
+    "native_motion/rtl/camera/preview_gray256.v": "d51d0491dfaf4e836ca3f34f16aef53bc1b16027f5bd12c652ca0fde643316d0",
+    "native_motion/rtl/camera/pl_letterbox_640x480.v": "9944c7c2f7f08051b5e29901313320126f3a033e1a45305181c6e476b81d5b81",
+    "native_motion/sim/mode_a_upgrade/tb_preview256.sv": "e36d5850957c812da45bc8185994d27aacc0733bdd29d0e73cf4900b2b46ecfb"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "pc_tests_preceding": 74,
+  "ui_checks": 10,
+  "focused_native_tests": 9,
+  "focused_startup_tests": 3,
+  "total_distinct_python_tests": 78,
+  "policy": "Reuse unchanged cones and geometric vectors; timing-only delta independently checked. No repeated full grid/GPU/vision sweep.",
+  "s4_mock_timing_scope": "S4 mock state-control vectors retain pre-fix coarse T106 durations; motion endpoints/flags/order are unchanged. All 12 real production hold counters and the final real sample player are checked separately.",
+  "permitted_historical_bindings": {
+    "pc/mode_ab/native_upload.py": {
+      "old_sha256": "723f0a5146f76f496a8109c5718b9fb356e39ac267b9c61c4650895e048fd4ac",
+      "new_sha256": "246c08a5126c054ac63256be6e96ffd80516cc230411e24825e823aa25930f6b",
+      "reason": "XSDB startup adds the matching 4 KiB route page and early B001 ABI check; upload/guards/motion code unchanged. Three actual-generated-Tcl restricted-map cases verify the startup delta."
+    },
+    "pc/mode_ab/native_routes.py": {
+      "old_sha256": "584c8d19be74908a42ded22cfc1e1a6c89cf3921ee04467494eb0f2bbcec539b",
+      "new_sha256": "2dbcbea7f3f35e87ad09beea4cccef06b0c7287fa330d0d40ee1d44835e4f48a",
+      "reason": "T106 hold periods only; every motion vector, speed, period and geometry fingerprint proven unchanged"
+    },
+    "scripts/test_mode_ab_native.py": {
+      "old_sha256": "64e608a460ed8915b53eadd3a65e1b4fcac1d17f622c4c924a98f32591809c6a",
+      "new_sha256": "30075eadcc1a2e8c13bf66f3f6223d1f99fbf815feff23db36de9a383d411aae",
+      "reason": "One Giao grip-travel timing test added; all nine native tests passed"
+    },
+    "native_motion/rtl/robot/phase3_s2_motion_top.v": {
+      "old_sha256": "49689faf2a96fb6507cdb4958c34fa08d45d4d6b5f85a7dc9b4adda23cf0a6f2",
+      "new_sha256": "61b269b7de98b6472cf3fe4b9716166209269eac570108d07df0e57da7627e75",
+      "reason": "Only route ownership fence changed after backend-only/idle aperture tests; current full-root native-host-native handoff proves that change"
+    },
+    "native_motion/rtl/robot/b_route_player.v": {
+      "old_sha256": "708fca31ab9d1558a4810b6c0b740cb233157c99b1cb95b448249b84e0648f54",
+      "new_sha256": "916f76a72587765565bfc35fb9b1178694d5be69b6a49f3d3bfb5bc1b5114156",
+      "reason": "Inactive in backend formatting and idle aperture cones; split multiply/sum pipeline is checked by final real vectors, reverse/stall, long grip timers and full-root handoff"
+    }
+  },
+  "focused_log": {
+    "path": "board_evidence/mode_ab_p4/gripper_waits_final/native_tests.txt",
+    "sha256": "e73afde9ba1fc78bcaf2a25fb9ff779b7b68faae2da8e87d96e46f7db2100ed9"
+  },
+  "hardware_access": false,
+  "physical_test": "NOT_RUN",
+  "source_hashes": {
+    "scripts/test_mode_ab_native.py": "30075eadcc1a2e8c13bf66f3f6223d1f99fbf815feff23db36de9a383d411aae",
+    "pc/mode_ab/native_routes.py": "2dbcbea7f3f35e87ad09beea4cccef06b0c7287fa330d0d40ee1d44835e4f48a",
+    "native_motion/rtl/robot/phase3_s2_motion_top.v": "61b269b7de98b6472cf3fe4b9716166209269eac570108d07df0e57da7627e75",
+    "native_motion/rtl/robot/b_route_player.v": "916f76a72587765565bfc35fb9b1178694d5be69b6a49f3d3bfb5bc1b5114156",
+    "pc/mode_ab/native_upload.py": "246c08a5126c054ac63256be6e96ffd80516cc230411e24825e823aa25930f6b"
+  }
+}

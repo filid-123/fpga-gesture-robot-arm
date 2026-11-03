@@ -1,0 +1,10 @@
+{
+  "result": "ACTUAL_S4_TARGETS_TO_EXACT_S2_RETURN_REPLAY",
+  "routes": 19,
+  "returned_scenarios": 4,
+  "legs": 594,
+  "samples": 29658,
+  "conservatively_retimed_stopped_prefixes": 3,
+  "return_targets_and_durations_changed": false,
+  "physical_robot": false
+}

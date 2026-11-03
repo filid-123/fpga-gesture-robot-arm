@@ -1,0 +1,44 @@
+{
+  "profile": "red_depth12",
+  "class_name": "red_cube",
+  "normal_fifo": 36,
+  "table_segments": 26,
+  "restock_fifo": 57,
+  "normal_geometry": {
+    "samples_checked": 24090,
+    "minimum_model_clearance_mm": -0.012916180451831849
+  },
+  "restock_geometry": {
+    "samples_checked": 11436,
+    "minimum_model_clearance_mm": -0.015821882481022342
+  },
+  "family": {
+    "passed": true,
+    "method": "FULL_GEOMETRY",
+    "handover_steps": 65,
+    "ordered_retarget_pairs": 4160,
+    "model_samples_checked": 826944,
+    "payload_margin_mm": 46.90451483855588,
+    "loaded_tilt_margin_deg": 13.025187841101118,
+    "minimum_clearance_mm": 4.000535793713993,
+    "native_rounding_checked": true,
+    "physical_test": "NOT_RUN"
+  },
+  "certificate": {
+    "passed": true,
+    "method": "BOUND_RIGID_PAYLOAD_DISPLACEMENT",
+    "fingerprint": "1723b3fd638327604f59b24e00ce648f1d4d71b94feec94a4cc7c1a8b9927c6d",
+    "reference_model_samples": 826944,
+    "model_samples_checked": 0,
+    "handover_steps": 65,
+    "ordered_retarget_pairs": 4160,
+    "native_rounding_checked": true,
+    "payload_displacement_bound_mm": 0.0,
+    "remaining_payload_margin_mm": 46.90451483855588,
+    "attachment_rotation_deg": 0.0,
+    "remaining_tilt_margin_deg": 13.025187841101118,
+    "physical_test": "NOT_RUN"
+  },
+  "seconds": 37.00352479999128,
+  "physical_test": "NOT_RUN"
+}

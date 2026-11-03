@@ -1,0 +1,25 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Thu Oct 29 19:36:36 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/restock/xsim_script.tcl
+# xsim {restock} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: three colors deliver -> empty-digit auto-restock -> HOME/stock -> fresh-digit next delivery; held digit never retriggers
+PASS: FIST before grasp, during source lift and slot descent drains/retraces public pickup/HOME; destination stays empty
+PASS: once placement opening commits, FIST follows existing released policy and completes HOME/refill
+PASS: busy restock configuration locked; D5 fault never marks destination available
+PASS: restock retains feedback-freshness fault and empty stock
+PASS: missing placement release descriptor is refused before any MOVE
+PASS: original PS_WRITE_BLOCKED bit11 never increments independent RESTOCKED bit14 counter in IDLE or running task
+$finish called at time : 79813920 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/sim/mode_a_restock/tb_restock.sv" Line 211
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 230.336 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 21560 KB (Peak: 21560 KB), Simulation CPU Usage: 13874 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 19:36:51 2026...

@@ -1,0 +1,82 @@
+[
+  {
+    "package_path": "objects/red_cube/evidence/PLAN.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/native_plan/LOADED_ROUTE_PLAN.json",
+    "sha256": "e0bcc268d5b7d6663d0146002e5c96d4e991b93ddaa1091ce033ad838c98fae4"
+  },
+  {
+    "package_path": "objects/red_cube/evidence/RESULT.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_pc_trial_20261028/loaded_route_trials/20261028_130433_9936683/LOADED_ROUTE_RESULT.json",
+    "sha256": "a8695b388f5b474a644da78f5d85a4e9a2abf307c83edba00832a9d44e060a8b"
+  },
+  {
+    "package_path": "objects/red_cube/evidence/COPPELIA.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/new_position_trial/native_plan/COPPELIA_VERIFICATION.json",
+    "sha256": "a49ae072231f6b7b9e72cc84f9427c7052d1f2bed1cbffb6421e5a17bfa51a83"
+  },
+  {
+    "package_path": "objects/red_cube/evidence/ACCEPTANCE.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/ACCEPTED_SECOND_POSITION.json",
+    "sha256": "895e405c38c1baa88387d210c02b478a7f96f6541530d9bb5105b1a4b461b1bf"
+  },
+  {
+    "package_path": "objects/small_canister/evidence/PLAN.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/native_plan_v1/LOADED_ROUTE_PLAN.json",
+    "sha256": "9b03b34caac2791fbd957dd6f20a0ec441b3ff242640f7e7663ffe4b59321fb6"
+  },
+  {
+    "package_path": "objects/small_canister/evidence/RESULT.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_pc_trial_20261028/loaded_route_trials/20261028_133722_0931306/LOADED_ROUTE_RESULT.json",
+    "sha256": "c3e77eb7dd77d9dcdc0660526963b05fbe3e0daa11974d332ef0653398d2f7cc"
+  },
+  {
+    "package_path": "objects/small_canister/evidence/COPPELIA.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/native_plan_v1/COPPELIA_VERIFICATION.json",
+    "sha256": "dfcc0a87c543a622c6be6994e9e1817a3b310b231de423ea5f0d76a172279733"
+  },
+  {
+    "package_path": "objects/small_canister/evidence/ACCEPTANCE.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/cylinder_trial_v2/ACCEPTED_CYLINDER_TRIAL_V2.json",
+    "sha256": "83aa82a8588e6cd0c96e2537caa27d2bdc1e16058c2f997e46023913c9aa7530"
+  },
+  {
+    "package_path": "objects/eraser/evidence/PLAN.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/native_plan/LOADED_ROUTE_PLAN.json",
+    "sha256": "0e94b1f1ce3e0d6d5a30113325c522477923a94830817c3cfc2b17c330fc0a3f"
+  },
+  {
+    "package_path": "objects/eraser/evidence/RESULT.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_pc_trial_20261028/loaded_route_trials/20261028_144452_0562891/LOADED_ROUTE_RESULT.json",
+    "sha256": "7601992893f30165d18eb8cf4afdaf50a46e708e548ab9f43aeb4e4252256e94"
+  },
+  {
+    "package_path": "objects/eraser/evidence/COPPELIA.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/complete_trials/20261028_144419_0188168/native_plan/COPPELIA_VERIFICATION.json",
+    "sha256": "572e77cb4a026b6f072a983d661a3230eced1dc4d247751ed8d10d97acaba5ac"
+  },
+  {
+    "package_path": "objects/eraser/evidence/ACCEPTANCE.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/ACCEPTED_ERASER_RIGHT10_TRIAL.json",
+    "sha256": "c6ffce6b3703bce7074a8e431d7586d765aa170798491d12eeee7b1b17d21266"
+  },
+  {
+    "package_path": "reference_evidence/today_native_anchor/ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/today_native_anchor/ACCEPTED_NATIVE_SOURCE_ANCHOR.json",
+    "sha256": "2c781f5f64d05bb554552c72f40b94eee0226785455370baa524412f7ed53631"
+  },
+  {
+    "package_path": "reference_evidence/eraser_right10_trial_v1/OPERATOR_GRASP_OFFSET.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/OPERATOR_GRASP_OFFSET.json",
+    "sha256": "0184f48515a9b22968e1c9e447c6af5e2be62d66efa96e1a7176c5036df91fd9"
+  },
+  {
+    "package_path": "reference_evidence/eraser_right10_trial_v1/EXECUTION_VERIFICATION.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/EXECUTION_VERIFICATION.json",
+    "sha256": "e1a4cbf605c0c6fbe4ee09c73de6132b87723721ce3e74e28dcd4bf1b7e81dbf"
+  },
+  {
+    "package_path": "reference_evidence/eraser_right10_trial_v1/SOFTWARE_VERIFICATION.json",
+    "original_repository_path": "artifacts/phase3c/mode_b_ttl_20261028/eraser_right10_trial_v1/SOFTWARE_VERIFICATION.json",
+    "sha256": "4e6f387ffa5644a9659b23a1c2c5eda286aeb3591a6b78d3aed7e4dd36423b18"
+  }
+]

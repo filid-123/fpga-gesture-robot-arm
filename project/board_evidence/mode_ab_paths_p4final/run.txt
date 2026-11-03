@@ -1,0 +1,46 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 17:26:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/paths/xsim_script.tcl
+# xsim {paths} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: three colors deliver -> empty-digit auto-restock -> HOME/stock -> fresh-digit next delivery; held digit never retriggers
+PASS: FIST before grasp, during source lift and slot descent drains/retraces public pickup/HOME; destination stays empty
+PASS: once placement opening commits, FIST follows existing released policy and completes HOME/refill
+PASS: busy restock configuration locked; D5 fault never marks destination available
+PASS: restock retains feedback-freshness fault and empty stock
+PASS: missing placement release descriptor is refused before any MOVE
+PASS: original PS_WRITE_BLOCKED bit11 never increments independent RESTOCKED bit14 counter in IDLE or running task
+PASS: dynamic B WAIT_PATH-only tables, immutable COMMIT scan, selected task identity and real PALM/core completion
+PASS: cancelled or timed-out B selections cannot accept an earlier task path
+PASS: dynamic B restock uses FIFO end-to-end without PALM and preserves separate A inventory
+PASS: dynamic B held restock drains and retraces its actual public pickup before HOME
+PASS: dynamic B placement opening is a commitment; later FIST completes retreat/HOME
+PASS: malformed dynamic B restock release index is refused before any MOVE
+PASS: B FIFO/return stack crosses entry 32 and rejects the 64th segment without wrap
+PASS: actual red_depth12 normal table/FIFO/map commits and completes at low HOME
+PASS: native red_depth12 partial FIST returns HOME with reverse opcode and original-slot release
+PASS: actual red_depth12 restock table/FIFO/map commits and completes at low HOME
+PASS: actual red_legacy normal table/FIFO/map commits and completes at low HOME
+PASS: actual red_legacy restock table/FIFO/map commits and completes at low HOME
+PASS: actual eraser normal table/FIFO/map commits and completes at low HOME
+PASS: native eraser partial FIST returns HOME with reverse opcode and original-slot release
+PASS: actual eraser restock table/FIFO/map commits and completes at low HOME
+PASS: actual small_canister normal table/FIFO/map commits and completes at low HOME
+PASS: native small_canister partial FIST returns HOME with reverse opcode and original-slot release
+PASS: actual small_canister restock table/FIFO/map commits and completes at low HOME
+PASS: actual shared_red normal table/FIFO/map commits and completes at low HOME
+PASS: actual shared_red restock table/FIFO/map commits and completes at low HOME
+PASS: shared red empty/refill works in B IDLE, preserves other stocks and never starts a MOVE
+$finish called at time : 123258 us : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_paths_p4final/tb.sv" Line 450
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:40 . Memory (MB): peak = 229.055 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 22156 KB (Peak: 22156 KB), Simulation CPU Usage: 39484 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 17:26:53 2026...

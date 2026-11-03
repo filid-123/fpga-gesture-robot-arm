@@ -1,0 +1,37 @@
+{
+  "schema": "gesture.ai_pc.phase2.local_simulation.v1",
+  "simulation": true,
+  "bind": "127.0.0.1",
+  "port": 0,
+  "timeout_s": 15,
+  "loop_period_s": 0.001,
+  "ticks_per_step": 5,
+  "path_wait_ticks": 250000,
+  "synthetic_tray": {
+    "status": "SYNTHETIC",
+    "closed_rad": [
+      0.1,
+      -0.2,
+      0.3,
+      0,
+      0,
+      0
+    ],
+    "open_rad": [
+      0.1,
+      -0.2,
+      0.3,
+      0,
+      0,
+      1.5
+    ]
+  },
+  "unknown_parameters": {
+    "arm": "TBD",
+    "gripper": "TBD",
+    "rgbd_camera": "TBD",
+    "objects": "TBD",
+    "target_ai_pc": "EXTERNAL_MACHINE",
+    "accelerator": "NOT_TESTED"
+  }
+}

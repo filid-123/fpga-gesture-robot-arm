@@ -1,0 +1,17 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_quintic_bounds -s bounds -O0 -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'cfg_ch' remains unconnected for this instance [C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_quintic_bounds.sv:5]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.planner_seq_mult
+Compiling module work.planner_seq_div
+Compiling module work.planner_p2p_core(SMOOTH_PROFILE=...
+Compiling module work.tb_quintic_bounds
+Built simulation snapshot bounds

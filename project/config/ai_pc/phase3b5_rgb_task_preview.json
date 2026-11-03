@@ -1,0 +1,20 @@
+{
+  "schema": "gesture.ai_pc.rgb_task_preview_config.v1",
+  "objects": [
+    {"object_id": 1, "name": "red_cube", "size_mm": 30},
+    {"object_id": 2, "name": "yellow_cube", "size_mm": 30},
+    {"object_id": 3, "name": "blue_cube", "size_mm": 30}
+  ],
+  "preview": {
+    "approach_clearance_mm": 60,
+    "lift_height_mm": 80,
+    "parameter_status": "PREVIEW_DEFAULTS_NOT_MEASURED"
+  },
+  "hardware": {
+    "arm_candidate": "RoArm-M3-S",
+    "camera": "康帕斯 1080P USB RGB",
+    "robot_base_transform": null,
+    "real_ik": "PENDING",
+    "gripper_parameters": "PENDING"
+  }
+}

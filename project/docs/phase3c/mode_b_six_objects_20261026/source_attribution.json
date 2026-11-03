@@ -1,0 +1,2010 @@
+{
+  "schema": "gesture.ai_pc.public_source_attribution.v1",
+  "sources": [
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 117441,
+      "coco_url": "http://images.cocodataset.org/train2017/000000117441.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5041/5218362367_fecf76c3ee_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "971783fc5b8fafc64f6be3bc50053adbd112512ae0178eb11e4ca8e790ca3770",
+      "annotation_id": 25806,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 445103,
+      "coco_url": "http://images.cocodataset.org/train2017/000000445103.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7193/6831649036_f7db5627b8_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "304a165305cd00a302825f0d1013d9dac43d3490a2aa039f7270712e66331679",
+      "annotation_id": 704749,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 88917,
+      "coco_url": "http://images.cocodataset.org/train2017/000000088917.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2548/4005901136_fe1a865655_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "714d92151c04ca2e5527701ddb99d56d1bff89d22a738a192d1a8d535a067e54",
+      "annotation_id": 931881,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 213054,
+      "coco_url": "http://images.cocodataset.org/train2017/000000213054.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3021/2570927375_32a3d46bf6_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "8d0f56e3db5fd1e1bfd525069bed6f29bf161689b590f4000a7293d09d3322ca",
+      "annotation_id": 176159,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 16701,
+      "coco_url": "http://images.cocodataset.org/train2017/000000016701.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/72/212213231_2e8113947c_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "c4fec9ccacc973077ae28d05f4dd659a9fbae440e56d4565907a1ddedd255ef9",
+      "annotation_id": 1105703,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 308473,
+      "coco_url": "http://images.cocodataset.org/train2017/000000308473.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7029/6478578289_6785f46c85_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "a26dba77e6dc88d1eded9d55e9bbd39bf115264d2e2f53b99bd67c56fb0951b0",
+      "annotation_id": 766325,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 81354,
+      "coco_url": "http://images.cocodataset.org/train2017/000000081354.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3124/2333085942_958abb30dd_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "ce27bfcd22630fac8e73220f60802ac384ca93bfff2142d0eae260788ef699ad",
+      "annotation_id": 131669,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 389056,
+      "coco_url": "http://images.cocodataset.org/train2017/000000389056.jpg",
+      "flickr_url": "http://farm2.staticflickr.com/1257/763036017_8fede9662c_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "a8f8e8b5093283c97c6c46f4baf9d2f9d5c8184142e60ad066ac51ed49d4327e",
+      "annotation_id": 502664,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 140021,
+      "coco_url": "http://images.cocodataset.org/train2017/000000140021.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5046/5259111500_aae23eb86f_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "25c774576d2cc55c9ca35d4209c2c370d85e32e1ef1bce59036fc7552047d5a0",
+      "annotation_id": 4423,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 268733,
+      "coco_url": "http://images.cocodataset.org/train2017/000000268733.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7060/6876230607_0727ebdaac_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "0331ebe492fb18f51fd805778be90b6be7f8fbd1fb4f9a46cd74b8d09113cfbc",
+      "annotation_id": 808178,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 418699,
+      "coco_url": "http://images.cocodataset.org/train2017/000000418699.jpg",
+      "flickr_url": "http://farm2.staticflickr.com/1388/532927552_2a17455cc2_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "f580b150e15e22cf1189bab0f8d8d727374be07bf8b6bf0b9b3e92db17df23c5",
+      "annotation_id": 597366,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 198992,
+      "coco_url": "http://images.cocodataset.org/train2017/000000198992.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3436/3307182679_e701a65673_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "5f33f875fd9bdd79da9e6b16fb2bc84cc518cb984e12bb34509c1b6270ed069e",
+      "annotation_id": 238805,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 454637,
+      "coco_url": "http://images.cocodataset.org/train2017/000000454637.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/125/370262261_8587c734de_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "d9933484085e8a1ec45c903fdba24a167830723b6a0807ad523d86c5a6caa6cd",
+      "annotation_id": 402962,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 221700,
+      "coco_url": "http://images.cocodataset.org/train2017/000000221700.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4125/5133242349_d5a6763666_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "eb5998a1b00ac42164d377d9b120819491e28d1a710ee11c39a59a270d5dfbc9",
+      "annotation_id": 195975,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 57903,
+      "coco_url": "http://images.cocodataset.org/train2017/000000057903.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5076/5893698308_29379e8035_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "cf1b8117aca49f43f3461d1909811ae35a7324ea44df409328ce851512e6a41e",
+      "annotation_id": 293204,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 421069,
+      "coco_url": "http://images.cocodataset.org/train2017/000000421069.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4028/5133197401_46becfb53e_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "2a35325f243cbea46d77af7571f04bd07e0c70562dd65836d1c7b1d8ba32ebd8",
+      "annotation_id": 190883,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 389326,
+      "coco_url": "http://images.cocodataset.org/train2017/000000389326.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8070/8260053707_350cba5d5c_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "3b0ed22f444efa796ea5550cf1721ab8249eef1f03154a28d82b73b9cb8fa5f7",
+      "annotation_id": 1103948,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 472312,
+      "coco_url": "http://images.cocodataset.org/train2017/000000472312.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6156/6181801151_3bf87f9fb4_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "fe13f1358942eb24b6f20aad535ceac661e57983023b2f1129515c7aa52894a5",
+      "annotation_id": 1214974,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 410924,
+      "coco_url": "http://images.cocodataset.org/train2017/000000410924.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5179/5456769333_be159a38c2_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "c4c2274b7d8ad2140ba96f95cd8dfb5f18f405abf5a4b7346c31bcafa5cb9c8e",
+      "annotation_id": 495048,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 526827,
+      "coco_url": "http://images.cocodataset.org/train2017/000000526827.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8060/8238626552_df0e90392d_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "2fede3e9abc6df6d5d9603b409c80819c2b16e7cfcf15b59b655fe36ef75874c",
+      "annotation_id": 209342,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 82860,
+      "coco_url": "http://images.cocodataset.org/train2017/000000082860.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/62/159807251_5bd01b7ecd_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "ebd80444eb4cacdc05389c0893ad80d73bc18e352b27d4aa3c8b1caaf47a3149",
+      "annotation_id": 747768,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 19852,
+      "coco_url": "http://images.cocodataset.org/train2017/000000019852.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3486/3936078783_4863fe27b7_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "8bec1765b141e2b6183e3c617ea3be34e042a5f86182549c6dad5e618139b1b2",
+      "annotation_id": 1105458,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 16928,
+      "coco_url": "http://images.cocodataset.org/train2017/000000016928.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2451/3604146211_21fcc07954_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "66e53cac2386e6926d2e21eb1939fbc39dc5d3b972b902607c0379ebaf43d16f",
+      "annotation_id": 25807,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 374505,
+      "coco_url": "http://images.cocodataset.org/train2017/000000374505.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2782/4267329237_d3356f4804_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "339dd67f63bad11aa39a373b7b267978f9d897b40c351dba00a6952a586a3cf8",
+      "annotation_id": 83263,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 96073,
+      "coco_url": "http://images.cocodataset.org/train2017/000000096073.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7440/9450510796_5105e24bcd_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "f0127d2108847a1a292d3426c0152e5743eb253716bb81f27c386f920ba035fc",
+      "annotation_id": 908632,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 574281,
+      "coco_url": "http://images.cocodataset.org/train2017/000000574281.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6144/5933233241_9f62eb41b1_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "728adbe04a55079ac26d044c89f0992a65ef0169ea9f9249f54cb3b32ea40b75",
+      "annotation_id": 475789,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 476525,
+      "coco_url": "http://images.cocodataset.org/train2017/000000476525.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3450/3943168615_dda1a6133f_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "0292d98193901effaf9eeff77cb72475478b94b58eed1ebf6e12901a36af4137",
+      "annotation_id": 1257703,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 39470,
+      "coco_url": "http://images.cocodataset.org/train2017/000000039470.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7001/6478577555_5763f16c7e_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "91b0af16036f301c11c289dc29b6217882a90369198f609b376ac635fee5bed4",
+      "annotation_id": 651729,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 563046,
+      "coco_url": "http://images.cocodataset.org/train2017/000000563046.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5235/5911882713_88d4ea281b_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "6648997295b25119457213db1ae33a14726bd676495df76330dc4f80a8de0a43",
+      "annotation_id": 484742,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 515826,
+      "coco_url": "http://images.cocodataset.org/train2017/000000515826.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3241/2906648035_1f74856831_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "8ad0a23717575e0d53ddef7cffc4d2a45d7ea5dfe34f492e48088aaaff0aa877",
+      "annotation_id": 315999,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 98987,
+      "coco_url": "http://images.cocodataset.org/train2017/000000098987.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/226/491792045_0010925208_z.jpg",
+      "coco_license_id": 6,
+      "image_sha256": "637028dab0fbfb8aaec90c723bb0f0853ccc916c8e5c18dcfe16e667731ac205",
+      "annotation_id": 421277,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 367271,
+      "coco_url": "http://images.cocodataset.org/train2017/000000367271.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3260/3158330000_a626f8d967_z.jpg",
+      "coco_license_id": 5,
+      "image_sha256": "476c37ec3da011b3fb3e7c4f39d2f024aeab407b9b2ffac25a2826a47032939c",
+      "annotation_id": 1171320,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 476589,
+      "coco_url": "http://images.cocodataset.org/train2017/000000476589.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2558/3683534994_40fe464200_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "5c04595fbd3faae8c2e585849d77c6e409af6441d61b0709c6e21a56231c4a39",
+      "annotation_id": 749366,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 11168,
+      "coco_url": "http://images.cocodataset.org/train2017/000000011168.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2008/2131689835_27e779804e_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "5470eb45295eae98b29ed7e982bddcc474a83893fbd7cf87ec91a1be16dfac68",
+      "annotation_id": 1064810,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 498363,
+      "coco_url": "http://images.cocodataset.org/train2017/000000498363.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5149/5619735053_58c14e30ce_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "80cffb78856b6358b2992aa3261795ff2e7c92af7e248eb2bdacdd4cbc7c3fb4",
+      "annotation_id": 272210,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 108021,
+      "coco_url": "http://images.cocodataset.org/train2017/000000108021.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5498/9528571961_b233e587e1_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "0655b77571334038c1f7f8a92f275f1faf9b7d420acff3843bdfd0d963d12a56",
+      "annotation_id": 221105,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 414750,
+      "coco_url": "http://images.cocodataset.org/train2017/000000414750.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3646/3526362046_55573d911f_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "f2de41308221bd28143617d0b778be690c0589c8e6dd7c5f7ea59e3a8f4a9abe",
+      "annotation_id": 298544,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 433924,
+      "coco_url": "http://images.cocodataset.org/train2017/000000433924.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3617/3503759168_602675a928_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "62abdd5a65771ca8f7d056e02b37acc00cd94e1f814c0c4325fff88698433b8d",
+      "annotation_id": 7272,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 224632,
+      "coco_url": "http://images.cocodataset.org/train2017/000000224632.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/133/357976793_33047eb487_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "0a3d8182a6dc9865e68944b85c4f62d486cc423020c84a6ebd9341d2ac91a1b7",
+      "annotation_id": 985972,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 561314,
+      "coco_url": "http://images.cocodataset.org/train2017/000000561314.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3337/3653062264_e5a990918d_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "28e826ac92e568247c2325c25972003f3f480f5c5b984bc5be25b29978a036e7",
+      "annotation_id": 242451,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 115037,
+      "coco_url": "http://images.cocodataset.org/train2017/000000115037.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4027/4701005177_1e539b0c30_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "2171484d6a665446fb37d3a27f324c9c418e886f568c52beb4c5edf218fd9fee",
+      "annotation_id": 914433,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 62154,
+      "coco_url": "http://images.cocodataset.org/train2017/000000062154.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2682/4184813439_055b1da44f_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "43e2267c1f757294641b93f3a4bdb3ebeb0ccf689df57ccf6c10da34863000f6",
+      "annotation_id": 83999,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 271435,
+      "coco_url": "http://images.cocodataset.org/train2017/000000271435.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7085/7380752960_6c819edf16_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "338ec5a22c864672d37a89dcb48438f142080f6ebdc63703c09a318be8c7cfff",
+      "annotation_id": 1253674,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 271435,
+      "coco_url": "http://images.cocodataset.org/train2017/000000271435.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7085/7380752960_6c819edf16_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "338ec5a22c864672d37a89dcb48438f142080f6ebdc63703c09a318be8c7cfff",
+      "annotation_id": 1253673,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 156060,
+      "coco_url": "http://images.cocodataset.org/train2017/000000156060.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6128/6000831169_e8d5e4267c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "603cd0bec60c63e93ffb70c8cf33e3dcc51d4c4210fdaa386cf80fb2d92531aa",
+      "annotation_id": 994658,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 205757,
+      "coco_url": "http://images.cocodataset.org/train2017/000000205757.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3274/2293946604_46b774793b_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "014922f287a2fcf04aec8dfff17aeb3eabf06a8bccfb20b75d56397be497acca",
+      "annotation_id": 1113808,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 291019,
+      "coco_url": "http://images.cocodataset.org/train2017/000000291019.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3687/9234302075_2e0f4999b2_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "1aa7ae7988caf0862ed1b87d4dc82c4de94585d2632fa11f2af94acee89d664f",
+      "annotation_id": 593645,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 415493,
+      "coco_url": "http://images.cocodataset.org/train2017/000000415493.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3206/2790339735_1eeaf1a0e3_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "0d7a8f922006efc94cfbebc0d1396f7d9edaab02b1f90f14ae6149aec9ba2bdc",
+      "annotation_id": 438094,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 224742,
+      "coco_url": "http://images.cocodataset.org/train2017/000000224742.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5147/5882546542_c7864c7681_z.jpg",
+      "coco_license_id": 5,
+      "image_sha256": "3c7509c93cb8e3c875d370705f3cf6899028e4c53356eaf021a1f1e08a922815",
+      "annotation_id": 307400,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 188352,
+      "coco_url": "http://images.cocodataset.org/train2017/000000188352.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4068/4289686881_a9f06afa0a_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "cc19381efbafa77f177f1d42fe4e1b4f2fa26f724e8a034de51cad0a6d3ef72c",
+      "annotation_id": 637048,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 156060,
+      "coco_url": "http://images.cocodataset.org/train2017/000000156060.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6128/6000831169_e8d5e4267c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "603cd0bec60c63e93ffb70c8cf33e3dcc51d4c4210fdaa386cf80fb2d92531aa",
+      "annotation_id": 994659,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 291019,
+      "coco_url": "http://images.cocodataset.org/train2017/000000291019.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3687/9234302075_2e0f4999b2_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "1aa7ae7988caf0862ed1b87d4dc82c4de94585d2632fa11f2af94acee89d664f",
+      "annotation_id": 593642,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 156060,
+      "coco_url": "http://images.cocodataset.org/train2017/000000156060.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6128/6000831169_e8d5e4267c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "603cd0bec60c63e93ffb70c8cf33e3dcc51d4c4210fdaa386cf80fb2d92531aa",
+      "annotation_id": 994657,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 415493,
+      "coco_url": "http://images.cocodataset.org/train2017/000000415493.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3206/2790339735_1eeaf1a0e3_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "0d7a8f922006efc94cfbebc0d1396f7d9edaab02b1f90f14ae6149aec9ba2bdc",
+      "annotation_id": 438095,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 361755,
+      "coco_url": "http://images.cocodataset.org/train2017/000000361755.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7003/6585990445_f85ee15c96_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "b8d97ad89ab09a19c3828ae5c00efeef7cb925ee964298f05ec8e1666472b9e5",
+      "annotation_id": 1077063,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 156060,
+      "coco_url": "http://images.cocodataset.org/train2017/000000156060.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6128/6000831169_e8d5e4267c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "603cd0bec60c63e93ffb70c8cf33e3dcc51d4c4210fdaa386cf80fb2d92531aa",
+      "annotation_id": 994656,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 415493,
+      "coco_url": "http://images.cocodataset.org/train2017/000000415493.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3206/2790339735_1eeaf1a0e3_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "0d7a8f922006efc94cfbebc0d1396f7d9edaab02b1f90f14ae6149aec9ba2bdc",
+      "annotation_id": 438093,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 73511,
+      "coco_url": "http://images.cocodataset.org/train2017/000000073511.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3120/3152806809_b67981cfa2_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "e84e445e2d16c6035997d4a3c137cb06d818f2379e8a56c8efc12ad51730bdb5",
+      "annotation_id": 889094,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 217289,
+      "coco_url": "http://images.cocodataset.org/train2017/000000217289.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2522/3824334965_1296c48a7f_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "9484a754a3c011b4f803af7fcdf8ad093ad45526475d126e8086cc9672bb3aaa",
+      "annotation_id": 1147766,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 553554,
+      "coco_url": "http://images.cocodataset.org/train2017/000000553554.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/54/116651247_c9ca15e517_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "02f87844a3913b5a6f33a5a1a2b8f1f413302f45df8a2405d2e11a9be62f0822",
+      "annotation_id": 901569,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 553554,
+      "coco_url": "http://images.cocodataset.org/train2017/000000553554.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/54/116651247_c9ca15e517_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "02f87844a3913b5a6f33a5a1a2b8f1f413302f45df8a2405d2e11a9be62f0822",
+      "annotation_id": 901568,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 553554,
+      "coco_url": "http://images.cocodataset.org/train2017/000000553554.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/54/116651247_c9ca15e517_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "02f87844a3913b5a6f33a5a1a2b8f1f413302f45df8a2405d2e11a9be62f0822",
+      "annotation_id": 901567,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 265745,
+      "coco_url": "http://images.cocodataset.org/train2017/000000265745.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5195/7182537130_8584678d0d_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "aea5ae51ed39003cebfbd5f9020e9f8c29ddb3f40d05b7536a6fa4b787059de0",
+      "annotation_id": 806217,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 265745,
+      "coco_url": "http://images.cocodataset.org/train2017/000000265745.jpg",
+      "flickr_url": "http://farm6.staticflickr.com/5195/7182537130_8584678d0d_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "aea5ae51ed39003cebfbd5f9020e9f8c29ddb3f40d05b7536a6fa4b787059de0",
+      "annotation_id": 806218,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 537604,
+      "coco_url": "http://images.cocodataset.org/train2017/000000537604.jpg",
+      "flickr_url": "http://farm2.staticflickr.com/1028/558336428_17feaddc0b_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "17fdd3d5252eebbbad1c47163f6ccda6be636162a066fe1a7e850089b0454737",
+      "annotation_id": 380701,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 29286,
+      "coco_url": "http://images.cocodataset.org/train2017/000000029286.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7032/6745332853_329e3b747c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "ec968aa78c3a4d8a768f30b65890fc147ef3a90a8a1d28db1bae4b2a00a3b410",
+      "annotation_id": 731669,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 115037,
+      "coco_url": "http://images.cocodataset.org/train2017/000000115037.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4027/4701005177_1e539b0c30_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "2171484d6a665446fb37d3a27f324c9c418e886f568c52beb4c5edf218fd9fee",
+      "annotation_id": 914435,
+      "class_name": "eraser"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 29286,
+      "coco_url": "http://images.cocodataset.org/train2017/000000029286.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7032/6745332853_329e3b747c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "ec968aa78c3a4d8a768f30b65890fc147ef3a90a8a1d28db1bae4b2a00a3b410",
+      "annotation_id": 731670,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 210672,
+      "coco_url": "http://images.cocodataset.org/train2017/000000210672.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3064/2550051912_f99f791aa2_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "d1813b1bb6955b986831a0f88c749ccd9a98e1c1f6e695a8b0ec025a1a068967",
+      "annotation_id": 502925,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 244965,
+      "coco_url": "http://images.cocodataset.org/train2017/000000244965.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3550/3396857540_5fb55c9522_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "f8dfb66aac204ff480b4e25d0cbdd9b1bde50495f2f06e44e2d51b89287c3896",
+      "annotation_id": 384811,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 468341,
+      "coco_url": "http://images.cocodataset.org/train2017/000000468341.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8119/8692025042_ff74bbb0b0_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "f432ec259c7f2deedf9749a7dda4c620751ed910ab1746d0aa81fd9322a9f52f",
+      "annotation_id": 1087755,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 29286,
+      "coco_url": "http://images.cocodataset.org/train2017/000000029286.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7032/6745332853_329e3b747c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "ec968aa78c3a4d8a768f30b65890fc147ef3a90a8a1d28db1bae4b2a00a3b410",
+      "annotation_id": 731675,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 217289,
+      "coco_url": "http://images.cocodataset.org/train2017/000000217289.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2522/3824334965_1296c48a7f_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "9484a754a3c011b4f803af7fcdf8ad093ad45526475d126e8086cc9672bb3aaa",
+      "annotation_id": 1147768,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 73511,
+      "coco_url": "http://images.cocodataset.org/train2017/000000073511.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3120/3152806809_b67981cfa2_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "e84e445e2d16c6035997d4a3c137cb06d818f2379e8a56c8efc12ad51730bdb5",
+      "annotation_id": 889095,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 29286,
+      "coco_url": "http://images.cocodataset.org/train2017/000000029286.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7032/6745332853_329e3b747c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "ec968aa78c3a4d8a768f30b65890fc147ef3a90a8a1d28db1bae4b2a00a3b410",
+      "annotation_id": 731677,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 487338,
+      "coco_url": "http://images.cocodataset.org/train2017/000000487338.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8237/8573361800_8ff4b93378_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "03ac5b5dc6fafcabe8ea0420339baab454c126626638772a60ea98485e8de6fb",
+      "annotation_id": 6183,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 487338,
+      "coco_url": "http://images.cocodataset.org/train2017/000000487338.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8237/8573361800_8ff4b93378_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "03ac5b5dc6fafcabe8ea0420339baab454c126626638772a60ea98485e8de6fb",
+      "annotation_id": 6179,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 487338,
+      "coco_url": "http://images.cocodataset.org/train2017/000000487338.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8237/8573361800_8ff4b93378_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "03ac5b5dc6fafcabe8ea0420339baab454c126626638772a60ea98485e8de6fb",
+      "annotation_id": 6184,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 217289,
+      "coco_url": "http://images.cocodataset.org/train2017/000000217289.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2522/3824334965_1296c48a7f_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "9484a754a3c011b4f803af7fcdf8ad093ad45526475d126e8086cc9672bb3aaa",
+      "annotation_id": 1147765,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 188352,
+      "coco_url": "http://images.cocodataset.org/train2017/000000188352.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4068/4289686881_a9f06afa0a_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "cc19381efbafa77f177f1d42fe4e1b4f2fa26f724e8a034de51cad0a6d3ef72c",
+      "annotation_id": 637049,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 29286,
+      "coco_url": "http://images.cocodataset.org/train2017/000000029286.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7032/6745332853_329e3b747c_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "ec968aa78c3a4d8a768f30b65890fc147ef3a90a8a1d28db1bae4b2a00a3b410",
+      "annotation_id": 731672,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 242248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000242248.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2717/4355237036_3c18a32497_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "b9cdee4160696b9cf2e5fb37c37633cac46178f568670391b47d75d29b1e2474",
+      "annotation_id": 1029762,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 81612,
+      "coco_url": "http://images.cocodataset.org/train2017/000000081612.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2546/4115172419_8a1a577036_z.jpg",
+      "coco_license_id": 5,
+      "image_sha256": "ffca6faa018f4c4ddb9f6d76cfba9abe7f4a57e12b50085c4242fa7c9a12f7b0",
+      "annotation_id": 873873,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 291019,
+      "coco_url": "http://images.cocodataset.org/train2017/000000291019.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3687/9234302075_2e0f4999b2_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "1aa7ae7988caf0862ed1b87d4dc82c4de94585d2632fa11f2af94acee89d664f",
+      "annotation_id": 593643,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 242248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000242248.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2717/4355237036_3c18a32497_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "b9cdee4160696b9cf2e5fb37c37633cac46178f568670391b47d75d29b1e2474",
+      "annotation_id": 1029763,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 115037,
+      "coco_url": "http://images.cocodataset.org/train2017/000000115037.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4027/4701005177_1e539b0c30_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "2171484d6a665446fb37d3a27f324c9c418e886f568c52beb4c5edf218fd9fee",
+      "annotation_id": 914436,
+      "class_name": "eraser"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "train",
+      "image_id": 570856,
+      "coco_url": "http://images.cocodataset.org/train2017/000000570856.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3576/3496986434_40b3db0d5f_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "9a2c873b51c97a51871356fc81a96decec2dfbba2617aa5fb8ffc0288ac3fdb4",
+      "annotation_id": 1078758,
+      "class_name": "eraser"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 244582,
+      "coco_url": "http://images.cocodataset.org/train2017/000000244582.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4098/4795253358_43e095839c_z.jpg",
+      "coco_license_id": 5,
+      "image_sha256": "e90c86900e28c6433d6b669eb3edd96997f38e6af45730a738cb2c1c576d4ee7",
+      "annotation_id": 183426,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 348012,
+      "coco_url": "http://images.cocodataset.org/val2017/000000348012.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2312/2475795533_4466c92782_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "7b693d91d6a6565e8957be70cf50804c36d5ddd2f921c7505bb0e2d16594697f",
+      "annotation_id": 40789,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 48601,
+      "coco_url": "http://images.cocodataset.org/train2017/000000048601.jpg",
+      "flickr_url": "http://farm7.staticflickr.com/6076/6083598126_f54493236f_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "e8674ca5d3cb50d3238d2d15c3f8ed6b420af58481106c2c6b90a113b377c44b",
+      "annotation_id": 142371,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 156042,
+      "coco_url": "http://images.cocodataset.org/train2017/000000156042.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4119/4877928430_b3f62fe607_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "0a46d947f8dc109b58a62fa70a2c46aeb7736077ba950bd4b2f3cb4e604f51db",
+      "annotation_id": 98906,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 379443,
+      "coco_url": "http://images.cocodataset.org/train2017/000000379443.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/174/423422868_292893495b_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "2620dc4daac7f2e8976058f5523075ae3122c9016a8b0fc6e28b7b9b89773a79",
+      "annotation_id": 71485,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 546826,
+      "coco_url": "http://images.cocodataset.org/val2017/000000546826.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3481/3872748823_feff3fbe1a_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "4a4089c8b04a04facaaa44cef49aeb2b2897fbaabfa221442ce50e7e67c521ab",
+      "annotation_id": 32529,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 325944,
+      "coco_url": "http://images.cocodataset.org/train2017/000000325944.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2701/4066480208_f19ce5a3b6_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "fee842ea6e7a8ef3d06bc130a0060f1f488d0555f0ff69488391a15180c8f5c2",
+      "annotation_id": 230259,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 161008,
+      "coco_url": "http://images.cocodataset.org/val2017/000000161008.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3463/3258760025_be62a85dc5_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "089039ac4fa151ef5e1899de95ce54e95ea255a40befcad7d2a9b9e3b08f2518",
+      "annotation_id": 14720,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 357501,
+      "coco_url": "http://images.cocodataset.org/val2017/000000357501.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4143/4913709490_69ea74c205_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "875de71a2c80883bdc8d7fe411a1a0e4e796c76998e15b230430e869d44a1fa3",
+      "annotation_id": 1313,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 285864,
+      "coco_url": "http://images.cocodataset.org/train2017/000000285864.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3134/3114367622_a9c76fc066_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "f2a7aac88c0f4823b391139b1e766b7b0a8554988f340d2b4c6dc309de2d5d33",
+      "annotation_id": 222099,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 156042,
+      "coco_url": "http://images.cocodataset.org/train2017/000000156042.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4119/4877928430_b3f62fe607_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "0a46d947f8dc109b58a62fa70a2c46aeb7736077ba950bd4b2f3cb4e604f51db",
+      "annotation_id": 98907,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 528119,
+      "coco_url": "http://images.cocodataset.org/train2017/000000528119.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3552/3660082287_a02bc6c52d_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "1752088c2e102820da6bc50136a0220aae708129af47677d6ca3648ba9f113fc",
+      "annotation_id": 161593,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 368982,
+      "coco_url": "http://images.cocodataset.org/val2017/000000368982.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2495/4079809213_3f0014af52_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "3cb21f1a277e66bb9bab8c86105b50dbf512cb568a93d796a755af90ca56092a",
+      "annotation_id": 49600,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 239882,
+      "coco_url": "http://images.cocodataset.org/train2017/000000239882.jpg",
+      "flickr_url": "http://farm2.staticflickr.com/1334/4732395647_472e63e035_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "698f6a4473d9a8dbcb08fd2b9f4e822ac139a81c78455de8d29b19b5d131439b",
+      "annotation_id": 121888,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 305014,
+      "coco_url": "http://images.cocodataset.org/train2017/000000305014.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2100/2132056506_831d1ff120_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "7b51053e5a420e00b2d0495ec3cee8923d1de84ab5f4ffb241402df0b1261f23",
+      "annotation_id": 218506,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 1674,
+      "coco_url": "http://images.cocodataset.org/train2017/000000001674.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7203/6831648330_3c3a96f80d_z.jpg",
+      "coco_license_id": 2,
+      "image_sha256": "c2432c63a52c6e2ccc4487659b0b0928c1b7717c7fa39efaa0a5b4f8ab2e3734",
+      "annotation_id": 175208,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 351096,
+      "coco_url": "http://images.cocodataset.org/val2017/000000351096.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3161/2929024941_dc55bc22ca_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "e671c3e71386f51caae7f0dc55051ed79896567e1ccf34810fe784e60f8c679d",
+      "annotation_id": 759,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 342307,
+      "coco_url": "http://images.cocodataset.org/train2017/000000342307.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3076/3160532038_ed02a3e990_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "b815ba4db74a5035784ee79b358aaf79af863ba394469a9840dbdfeb3d480b7e",
+      "annotation_id": 221266,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 311180,
+      "coco_url": "http://images.cocodataset.org/val2017/000000311180.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/46/141116980_2ba28d32d7_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "29a1a65910552343cdd8ab90b70aefd463859b9598fd0abb012c242788f367c0",
+      "annotation_id": 50311,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 282900,
+      "coco_url": "http://images.cocodataset.org/train2017/000000282900.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8228/8443408303_2017df4f77_z.jpg",
+      "coco_license_id": 5,
+      "image_sha256": "6b07f485edcd0631cb87c581b75ebfd4d21f5d3d199fabc54db974f281a76e2a",
+      "annotation_id": 173011,
+      "class_name": "scissors"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 402199,
+      "coco_url": "http://images.cocodataset.org/train2017/000000402199.jpg",
+      "flickr_url": "http://farm5.staticflickr.com/4058/4420582601_d6ca0ae657_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "01748f56a62f6fe62601c4fc07ae371cc48fb5eb0b7247f85686b58844e520bf",
+      "annotation_id": 126821,
+      "class_name": "eraser"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 185802,
+      "coco_url": "http://images.cocodataset.org/val2017/000000185802.jpg",
+      "flickr_url": "http://farm1.staticflickr.com/52/143262028_305c98ba68_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "313612d21e297ed8922a09864cae809903f05bd430e0d171be2eda4961b513de",
+      "annotation_id": 31900,
+      "class_name": "eraser"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 40248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000040248.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7005/6661862897_f4946d2d51_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9",
+      "annotation_id": 207384,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 529568,
+      "coco_url": "http://images.cocodataset.org/val2017/000000529568.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8098/8565573049_cf913235b6_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "2c97efcc385141e55c77afcf239cf59639637e9155cacf5ac870c87d2a6de42e",
+      "annotation_id": 19627,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 40248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000040248.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7005/6661862897_f4946d2d51_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9",
+      "annotation_id": 207385,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 93288,
+      "coco_url": "http://images.cocodataset.org/train2017/000000093288.jpg",
+      "flickr_url": "http://farm2.staticflickr.com/1294/4662170585_f86267ab6a_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "f1ad4c2a7ebbe43c8e5671c0e03053b7256f50cea592369fcd9eac816d06b43f",
+      "annotation_id": 177931,
+      "class_name": "eraser"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 40248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000040248.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7005/6661862897_f4946d2d51_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9",
+      "annotation_id": 207382,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 191338,
+      "coco_url": "http://images.cocodataset.org/train2017/000000191338.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2762/4342062184_5f14d23c29_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "22a304b4f6cd9c4fcd1598801fb53a8de446142174d6503c1ac0d89358a6407b",
+      "annotation_id": 154825,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 40248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000040248.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7005/6661862897_f4946d2d51_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9",
+      "annotation_id": 207386,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 191338,
+      "coco_url": "http://images.cocodataset.org/train2017/000000191338.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2762/4342062184_5f14d23c29_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "22a304b4f6cd9c4fcd1598801fb53a8de446142174d6503c1ac0d89358a6407b",
+      "annotation_id": 154824,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 40248,
+      "coco_url": "http://images.cocodataset.org/train2017/000000040248.jpg",
+      "flickr_url": "http://farm8.staticflickr.com/7005/6661862897_f4946d2d51_z.jpg",
+      "coco_license_id": 3,
+      "image_sha256": "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9",
+      "annotation_id": 207381,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 191338,
+      "coco_url": "http://images.cocodataset.org/train2017/000000191338.jpg",
+      "flickr_url": "http://farm3.staticflickr.com/2762/4342062184_5f14d23c29_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "22a304b4f6cd9c4fcd1598801fb53a8de446142174d6503c1ac0d89358a6407b",
+      "annotation_id": 154823,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 219118,
+      "coco_url": "http://images.cocodataset.org/train2017/000000219118.jpg",
+      "flickr_url": "http://farm4.staticflickr.com/3725/9248405455_19c0849760_z.jpg",
+      "coco_license_id": 1,
+      "image_sha256": "1f685e20506c352ef99bf5bec8782f95cc2372df3ac172024b5eea22314c108c",
+      "annotation_id": 172822,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "LVIS_V1",
+      "split": "val",
+      "image_id": 507958,
+      "coco_url": "http://images.cocodataset.org/train2017/000000507958.jpg",
+      "flickr_url": "http://farm9.staticflickr.com/8047/8142526823_0c9fba36e0_z.jpg",
+      "coco_license_id": 4,
+      "image_sha256": "4332d677b6c4c8fcf57719e6d69304a828160f84cbfd2745f01c27593d2a67d2",
+      "annotation_id": 106299,
+      "class_name": "small_canister"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00001-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00001-18.jpg",
+      "sha256": "03c66a8bfd82b3642b07aaa0138149478388335a8be7949f5a07e7f909b418f3"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00002-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00002-18.jpg",
+      "sha256": "ea78b8a4415623749a022003596ce75210fd9b133054e98bc25628c35ba5ed0b"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00003-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00003-18.jpg",
+      "sha256": "f98044c6cfb6890cbe907f982aea00a1a7170e0ab693dc6f8dd788dc2e213df0"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00004-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00004-18.jpg",
+      "sha256": "176806b1dca01d5c7a6b0b8d9482e28a45bf68a689b7e61f44af732439dacd1c"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00005-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00005-18.jpg",
+      "sha256": "5e91c7db06da5e221b4c1a7ceb8431fb7bae049bfb7e4bd143350d9ef546a096"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00006-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00006-18.jpg",
+      "sha256": "8a07d0cfc3ac7b8d42661ab193f0b72a80d8b756c631e160a927aa7bcd16fb72"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00007-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00007-18.jpg",
+      "sha256": "4e6dcd96c1fce77a2f68ad70256392adb0b6b8247c66c29fdd23c7a7c499b7f7"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00008-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00008-18.jpg",
+      "sha256": "6755118ded58c7f33449c208daf4ef725390c1486f957e7125995a1d7ce72134"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00009-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00009-18.jpg",
+      "sha256": "e89bdd08cff7fc79759994b12318625929206583767d0254ac592f884e8a6406"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00010-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00010-18.jpg",
+      "sha256": "73f2c194ca7937fec459c6848a5b0f71f8b2bbd2f5ecbe4a1679dc007597b69b"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00011-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00011-18.jpg",
+      "sha256": "8af5116d4968592656763c4d203b7f39eca154ebb5d80c604fbb1a98ca1b4ad5"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00012-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00012-18.jpg",
+      "sha256": "d60603aeb5af665c03877fc24f04e91eea2ac34ffa6c3ae80b5b174e3d115eb7"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00013-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00013-18.jpg",
+      "sha256": "dee696d8f41d8766d0646b8e6bf20fa01f30cabfcea23a681f86ecf1fd08af44"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00014-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00014-18.jpg",
+      "sha256": "97310972892b5e4ae8042f8fde12635ed9cd2639750adafb0d08b0a700de4cff"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00015-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00015-18.jpg",
+      "sha256": "11de86ea1650f164721c1684691ab318cea4c1431ad70a64c33bbe9dc81f48e4"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00016-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00016-18.jpg",
+      "sha256": "c10bd096ef8c1c784bdf91bd8b69f115b8b7e2212752f598874af46efd4a1f26"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00017-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00017-18.jpg",
+      "sha256": "e6681b808d92cb3b6a9c7bc63cffd409fe82072b10ee61f2e201982db64c1b7c"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00018-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00018-18.jpg",
+      "sha256": "10e8188783e87554febdfba311dc7b8a7837a64931db849bbf4cf874e6dd87bd"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00019-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00019-18.jpg",
+      "sha256": "d70767aac6a379f5139a2522b41d70381fed85058886f5262aacc5bdfd97c223"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00020-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00020-18.jpg",
+      "sha256": "d8365724f9dbafae2d6c8ffb507331f54394622d1777fc44d21f230e7b1126d1"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00021-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00021-18.jpg",
+      "sha256": "2428922c776281daccd401245b21811b251aa25067b833561f980ba973c825ce"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00022-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00022-18.jpg",
+      "sha256": "d98f75643531ad286c0b8b5460da86b40ef338037a81fde2d82df1f691d2aa86"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00023-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00023-18.jpg",
+      "sha256": "2f8a1e454b6df525cff65893e562338410a5471c42896f5a5d180942be8bd7d8"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00024-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00024-18.jpg",
+      "sha256": "1cc5111d6e94e73504b0414b49540c27aef89254535b830166ff57d3fe301160"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00025-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00025-18.jpg",
+      "sha256": "9721dd19fd5f9a4f47f266e9f1dfaddc378148ab09b9ca4218e50f26af1286ec"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00026-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00026-18.jpg",
+      "sha256": "f4d6ec2812a7ee291d5cc19f760320810a0474353903636dfb57060be3e69377"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00027-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00027-18.jpg",
+      "sha256": "0d05b3004c08008afed0642542ac4780d188db2d3522e68484e9db197ab8abca"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00028-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00028-18.jpg",
+      "sha256": "bb55816658d3ffabaea016a1fad53493f2ad763c31143af1ce3fe0689470d68b"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00029-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00029-18.jpg",
+      "sha256": "7cd5b604b6ccbbd795ec371557f4ed633e5d5687d93799c78c7b96803abda08e"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00030-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00030-18.jpg",
+      "sha256": "acb001164f0ea24e1121a3d314e6aaed89d79fc04487cd8aa2334be0189d108d"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00031-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00031-18.jpg",
+      "sha256": "d69bbf0c8e3a65743ecf2e6aa0c1251da26f1a1ce7f61d124bec7cdc90524327"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00032-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00032-18.jpg",
+      "sha256": "a2426c206430ea6ac450f659d5677cc2da96cefc69b7f707adf5c754e00f1aed"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00033-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00033-18.jpg",
+      "sha256": "f1798f092fbed9a85da27419607503babff6c240d5fa8600d11dd2beeda8eba0"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00034-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00034-18.jpg",
+      "sha256": "70d79ab0c2cfc93a4c9400e383aec52f0106554947b9daf7d84c719b7b9bab88"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00035-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00035-18.jpg",
+      "sha256": "e7b8e7e0b7a42f883e92ebfbc0b791a636dbe4deffbba09338ff1f6ad4bd250f"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00036-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00036-18.jpg",
+      "sha256": "6b1bdaf2fbe8e1481e88a4654be23396d357af9ed573feb4e5bf7300f99728d4"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00037-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00037-18.jpg",
+      "sha256": "8734be08bff12b7d7cfe473d76cb9b83ac18e3eb858115b410a8bf2c2fbe363e"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00038-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00038-18.jpg",
+      "sha256": "ace6ab5f81434a29c9322800e5e210af02914952b7aedeeccd7bfd8971aae78d"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00039-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00039-18.jpg",
+      "sha256": "26a4340096a0d6de22209d8b8ebdd17904917c7972c2325b3cffe1ce933469b8"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00040-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00040-18.jpg",
+      "sha256": "720f1736b85d4a86116064f86b5421ac29cb19000068a45d46a0ce05805883e5"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00041-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00041-18.jpg",
+      "sha256": "7858c45ca110436ce5c3e7eadef1aa7c404a0f67ef0aa4a87178b7be3483abd5"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00042-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00042-18.jpg",
+      "sha256": "7e7cf8e43c9aa7a3457bb60275fa2ce2da5fb7150e6661097778e4d050fcb0b5"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00043-18.jpg",
+      "domain": "Real World",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_6_00043-18.jpg",
+      "sha256": "cb3cc1f86a00787b76bb759947b315e84325b5b04190bab332e8c17dcc92c391"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00001-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00001-83.jpg",
+      "sha256": "f79125d42e8f5917e818069780b119d2fdbf944315994c5112dfd31c4a4e734c"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00002-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00002-83.jpg",
+      "sha256": "5c92a255fef927cdb55c6339cd5c43d6a588478c8773f32884a2374e4e9ad52a"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00003-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00003-83.jpg",
+      "sha256": "cd655987329896dc09dac913695e1ed94916dc0bc206f97c89e8264a8bc583bf"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00004-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00004-83.jpg",
+      "sha256": "d5473e93681514528847447dcec962a073bdb5937daddfe91683b6f45f3378eb"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00005-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00005-83.jpg",
+      "sha256": "cd655987329896dc09dac913695e1ed94916dc0bc206f97c89e8264a8bc583bf"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00006-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00006-83.jpg",
+      "sha256": "73e4cffa0c9583453fe222c31d704098f35cc2398877b05fbd556b52c5457619"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00007-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00007-83.jpg",
+      "sha256": "d893f9545aa633b194da4165372f40e22b00e68e31799b246d2d633130caec3c"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00008-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00008-83.jpg",
+      "sha256": "8809fd76162ee0f547f80b10c9d0cbd8a816e296542bc113987bf5f6f76a58a9"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00009-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00009-83.jpg",
+      "sha256": "3cf2d20c78dd6a73804531c0801e1b288fd8f3e5167662af67e0652449d1893d"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00010-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00010-83.jpg",
+      "sha256": "7c4ca8bb6cb9c0b47e0e5b6d94451e49b1a52e72f97afd8847b4485f171acc39"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00011-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00011-83.jpg",
+      "sha256": "f3d5dd94631c1b8a12f0f10c18b6727868c178b5b01d593ea47c66d7b1d0b5bb"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00012-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00012-83.jpg",
+      "sha256": "a6079fc0d7cd905924186ee79923a127e50a0f90911da6354e1d80c9d5e5cc24"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00013-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00013-83.jpg",
+      "sha256": "67f5cfef9bed6f7bbf6a0c507a221ab32b656b970d569c5c769a068fd3c092df"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00014-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00014-83.jpg",
+      "sha256": "dc1f2e4a0a1d207925585b328a44839808612b5ab07307656068828d8ab28431"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00015-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00015-83.jpg",
+      "sha256": "5290bd2d70fbb9972c338e1f979b7dfbecd5941c972ae152c69158a7d44f8e14"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_27/00016-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_27_00016-83.jpg",
+      "sha256": "169159b14311de56ed27650df89314d6eb1d213138c9d7ebc07ddd4f4f423f7a"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00017-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00017-83.jpg",
+      "sha256": "49ca1fbda4b0e1c7a41f4d5d2abd0adbb431c9058f6ce8d71495ffb4c8ebde41"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00018-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00018-83.jpg",
+      "sha256": "f0f04c6011faed658507c9cebbe9cd820dcf8f7e4596032cdf93185a106e47bb"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00019-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00019-83.jpg",
+      "sha256": "d46b5b7e508790d6960454715999d4b1cbe692a267a2270edc894fe14ba8eaf0"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00020-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00020-83.jpg",
+      "sha256": "7498560fbd2b884972936855063d0e5d54825be33857894a5b6ac6a1b2fbef02"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00021-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00021-83.jpg",
+      "sha256": "eb94296f7d026d1bc9baad3d6ab3c6da4fb88157ab6e76a54e242ec15beed07d"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00022-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00022-83.jpg",
+      "sha256": "8954566c353304d982fcdb62d0baec189c1b5af00bb88ffccef118b33316ca8f"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00023-83.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00023-83.jpg",
+      "sha256": "ffa716a5a4a59670b2f293a49763da65f52ce18a7d4ae3603f8ac9b303a629ea"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00024-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00024-82.jpg",
+      "sha256": "65e98d072dfecf2b02d728024f0fa1794388f3f7f27dfcde8a513796de036680"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00025-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00025-82.jpg",
+      "sha256": "40042c9dc071dba0309c853dfd9d4f88914896ea60e6eb88e4d32e1ad36e5193"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00026-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00026-82.jpg",
+      "sha256": "0439c1cf10470ae87a7a3c74941e7e6f55ca74f7d5b74b2198cfa0c3b8483b56"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00027-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00027-82.jpg",
+      "sha256": "f41410344ec731c86e0dbadb23fe0c45ddb8bfd510bcbdffec4eec6f046bb168"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00028-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00028-82.jpg",
+      "sha256": "0ef83a9247a9942f6342cdb823af1c95176553b47069020f7c223fe25e5c47fd"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00029-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00029-82.jpg",
+      "sha256": "24cee0772fadb93b1716f4d752492761d8269f71f6452f0b37155bb76a59be7b"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00030-82.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00030-82.jpg",
+      "sha256": "cd655987329896dc09dac913695e1ed94916dc0bc206f97c89e8264a8bc583bf"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00031-81.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00031-81.jpg",
+      "sha256": "247d6c0df19e3ae6156465d3468c86be6b688cf49669c39b41d61fe16102e0b8"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00032-81.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00032-81.jpg",
+      "sha256": "7301ac775f093ba9f93db4195c1b8a38273e86cff4397258ffd0e29600069142"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00033-81.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00033-81.jpg",
+      "sha256": "d686ea66b75a5c87e1265f7facff691eb958303aeca11ad7573948b814c9032e"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00034-81.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00034-81.jpg",
+      "sha256": "9ca42962ec69a604bf675cb277eb8adedbaad7b0c320fca437305cb5afe1aabd"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00035-81.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00035-81.jpg",
+      "sha256": "a9a55d314bd9cc0bd3d0630ed5add19c4ca25a62bcb13dc8649dbeebf2aa52fd"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00036-81.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00036-81.jpg",
+      "sha256": "b118fa0e02eb43694dc79bd5d1be7586fd3c533ac4de9479fe3e5c2f06385811"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00037-80.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00037-80.jpg",
+      "sha256": "bfd8fc372b208c006b46d9ad1d33e152798bb885b2b21c5bbadf367340b77fed"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00038-80.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00038-80.jpg",
+      "sha256": "efbdc5f74414ee038117bb94cf48f2758d1a982a8dc7bf84fcd79c11d2007f76"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00039-80.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00039-80.jpg",
+      "sha256": "369bdfe72ce80b45542a99c8aeda88e4fdef46939145c74a0875d2474a865a3d"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00040-80.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00040-80.jpg",
+      "sha256": "e501a0a9fc4360c9da349c81d5e239caa4db07f0ed711b3fe79c1eb858af230a"
+    },
+    {
+      "dataset": "OfficeHome",
+      "source_url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_28/00041-80.jpg",
+      "domain": "Product",
+      "license_notice": "ACADEMIC_NONCOMMERCIAL_RESEARCH_TEACHING_NOTICE",
+      "local_image": "artifacts/multiobject/mode_b_public_20261026/source/officehome/data_data_28_00041-80.jpg",
+      "sha256": "6ab3a8c72637a7a918da1b00d27ff97a3a3511c7f20eb27a6ebe417cc9f9f7f0"
+    }
+  ],
+  "original_images_in_git": false,
+  "public_data_is_not_physical_project_validation": true
+}

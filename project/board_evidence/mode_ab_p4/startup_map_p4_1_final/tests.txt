@@ -1,0 +1,8 @@
+test_generated_startup_registers_exact_five_pages_before_ids_and_telemetry (__main__.StartupMap.test_generated_startup_registers_exact_five_pages_before_ids_and_telemetry) ... ok
+test_generator_rejects_a_changed_unmapped_startup_template (__main__.StartupMap.test_generator_rejects_a_changed_unmapped_startup_template) ... ok
+test_original_four_page_map_reproduces_recorded_first_telemetry_failure (__main__.StartupMap.test_original_four_page_map_reproduces_recorded_first_telemetry_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.029s
+
+OK

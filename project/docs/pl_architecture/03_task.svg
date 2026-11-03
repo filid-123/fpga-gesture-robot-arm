@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1250" viewBox="0 0 1700 1250">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#32495c"/></marker></defs>
+<rect width="1700" height="1250" fill="white"/>
+<text x="60" y="65" text-anchor="start" font-family="Arial, sans-serif" font-size="34" fill="#172d3e">Task control and bus ownership</text>
+<text x="60" y="112" text-anchor="start" font-family="Arial, sans-serif" font-size="27" fill="#172d3e">u_task : phase3_s4_task_top</text>
+<path d="M320.0,410.0 V458.0 H710.0 V570.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="515.0" y="446.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[1]</text>
+<text x="60" y="850" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[1] guarded AXI arm / planner / B program</text>
+<path d="M980,410.0 V474.0 H850 V570.0" fill="none" stroke="#32495c" stroke-width="2.5"  marker-end="url(#arrow)"/>
+<text x="915.0" y="462.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[2]</text>
+<text x="880" y="850" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[2] native_code[2:0] / target[191:0] / n / na</text>
+<path d="M1210.0,295.0 H1165.0 V295.0 H1120.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="1165.0" y="283.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[3]</text>
+<text x="60" y="916" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[3] target cell / revision / delivery_ready</text>
+<path d="M1415.0,570.0 V506.0 H790 V410.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="1102.5" y="494.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[4]</text>
+<text x="880" y="916" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[4] continuous hand step[6:0]</text>
+<path d="M650.0,295.0 H605.0 V295.0 H560.0" fill="none" stroke="#32495c" stroke-width="2.5"  stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<text x="605.0" y="283.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">[5]</text>
+<text x="60" y="982" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">[5] owner_s4 / route_cfg_unlock</text>
+<rect x="80" y="180" width="480" height="230" rx="18" fill="#eaf3ed" stroke="#32495c" stroke-width="2.5"/>
+<text x="320.0" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_ownership_fabric</text>
+<text x="320.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">motion_axil_ownership_fabric</text>
+<text x="320.0" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">3 AXI windows / locks / timeouts</text>
+<rect x="650" y="180" width="470" height="230" rx="18" fill="#eaf3ed" stroke="#32495c" stroke-width="2.5"/>
+<text x="885.0" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_task_control</text>
+<text x="885.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">motion_task_control</text>
+<text x="885.0" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Register RAM + task FSM +</text>
+<text x="885.0" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">native link</text>
+<rect x="1210" y="180" width="410" height="230" rx="2" fill="#fff4dd" stroke="#32495c" stroke-width="2.5"/>
+<path d="M1210 202 Q1415.0 228 1620 202" fill="none" stroke="#32495c" stroke-width="2"/>
+<text x="1415.0" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">g_handalign.u_hand_target</text>
+<text x="1415.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">motion_hand_target_pipeline</text>
+<text x="1415.0" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Region LUT + stable-target</text>
+<text x="1415.0" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">FSM</text>
+<rect x="1210" y="570" width="410" height="230" rx="2" fill="#edf4fa" stroke="#32495c" stroke-width="2.5"/>
+<text x="1415.0" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_step_map</text>
+<text x="1415.0" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">hand_y_step_map</text>
+<text x="1415.0" y="722" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Bounded 65-position mapping</text>
+<rect x="360" y="570" width="700" height="230" rx="2" fill="#edf4fa" stroke="#32495c" stroke-width="2.5"/>
+<text x="710.0" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">u_motion</text>
+<text x="710.0" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">phase3_s2_motion_top</text>
+<text x="710.0" y="722" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#172d3e">Native program / quintic / backend pipeline</text>
+<text x="60" y="1110" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">A: original P2P program and timing. B: PL-owned native route operation 7; host config only at stationary WAIT_PATH.</text>
+<text x="60" y="1146" text-anchor="start" font-family="Arial, sans-serif" font-size="26" fill="#172d3e">D5, feedback watchdog, joint limits, inventory, PALM/FIST and cancellation remain in the hardware execution path.</text>
+</svg>

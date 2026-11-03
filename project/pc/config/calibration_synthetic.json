@@ -1,0 +1,75 @@
+{
+  "calib_id": 900001,
+  "status": "SYNTHETIC",
+  "color": {
+    "width": 640,
+    "height": 480,
+    "fx": 600.0,
+    "fy": 600.0,
+    "cx": 320.0,
+    "cy": 240.0,
+    "dist": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "depth": {
+    "width": 640,
+    "height": 480,
+    "fx": 580.0,
+    "fy": 580.0,
+    "cx": 318.0,
+    "cy": 242.0,
+    "dist": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "depth_to_color": {
+    "rotation": [
+      1.0,
+      0,
+      0,
+      0,
+      1.0,
+      0,
+      0,
+      0,
+      1.0
+    ],
+    "translation": [
+      25.0,
+      0.0,
+      0.0
+    ]
+  },
+  "color_to_base": {
+    "rotation": [
+      0.0,
+      -1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "translation": [
+      300.0,
+      0.0,
+      800.0
+    ]
+  },
+  "depth_scale_mm": 1.0,
+  "depth_min_mm": 200.0,
+  "depth_max_mm": 1500.0,
+  "source": "synthetic_scene.py",
+  "schema": "gesture.phase3.s6_calibration.v1"
+}

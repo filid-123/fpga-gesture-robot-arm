@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Wed Oct 28 23:08:02 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/preview/xsim_script.tcl
+# xsim {preview} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: 256x192 exact nearest source samples/12288-word packing, frame IDs, full-buffer drop; original Locator128x128 unchanged
+$finish called at time : 9267350 ns : File "C:/redacted_user/.codex/worktrees/mode-a-four-zone-20261028/Gesture/native_motion/sim/mode_a_upgrade/tb_preview256.sv" Line 30
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 28 23:08:05 2026...

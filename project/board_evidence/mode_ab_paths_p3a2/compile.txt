@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/s4_task_fsm.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/s4_task_regs.v" into library work
+INFO: [VRFC 10-311] analyzing module s4_task_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/hand_align_region_lut.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_align_region_lut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/hand_align_target_core.v" into library work
+INFO: [VRFC 10-311] analyzing module hand_align_target_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_paths_p3a2/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_restock

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_V3_26_FULL_LAYER_TRAIN_GOLDENS",
+  "samples": 26,
+  "independent_tap_scalar_Dense_oracle_samples": 26,
+  "B_VGA_scalar_exact": true,
+  "ranges": {
+    "conv1": {
+      "min": -30895,
+      "max": 42351,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 3407872
+    },
+    "conv2": {
+      "min": -54668,
+      "max": 45970,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 1277952
+    },
+    "conv3": {
+      "min": -39459,
+      "max": 28175,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 425984
+    },
+    "g1": {
+      "min": -28748,
+      "max": 161449,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 53248
+    },
+    "g2": {
+      "min": -118924,
+      "max": 140851,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 0
+    },
+    "conv4": {
+      "min": -58132,
+      "max": 44237,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 159744
+    },
+    "conv5": {
+      "min": -116592,
+      "max": 116763,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 0
+    },
+    "fusion": {
+      "min": -47143,
+      "max": 137522,
+      "overflow_count": 0,
+      "high_saturation_count": 0,
+      "activation_elements": 0
+    }
+  },
+  "RTL_simulated": false
+}

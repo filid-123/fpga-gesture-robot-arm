@@ -1,0 +1,20 @@
+{
+  "schema": "gesture.physical.response.row.validation.v1",
+  "date": "2026-11-01",
+  "publication_version": "0.1.0-publication.5",
+  "passed": true,
+  "metric_rows": 54,
+  "physical_response_rows": 1,
+  "metric": "sensor_to_physical_response",
+  "duration_ms": 620,
+  "status": "VIDEO_STOPWATCH_OPERATOR_REPORTED",
+  "source_matches_operator_review": true,
+  "duplicate_placeholder_removed": true,
+  "other_metric_rows_unchanged": true,
+  "evidence_files_exist": true,
+  "percentiles_claimed": false,
+  "statistical_limitations_preserved_in_documentation": true,
+  "production_or_tool_code_changed": false,
+  "hardware_access": false,
+  "original_acceptance_and_recovered_evidence_unchanged": true
+}

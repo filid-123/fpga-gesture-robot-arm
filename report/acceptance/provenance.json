@@ -1,0 +1,11 @@
+{
+  "source_branch": "codex/mode-ab-integration-20261029",
+  "source_commit": "633a4e1441ce9b54e95a25ea93b46b8fbc6329e0",
+  "source_path": "board_evidence/mode_ab_p4/BOARD_TEST_20261101.json",
+  "source_sha256": "8cad3d8a1349b74e8c495e9370c8252581c469727cc466058ebe1057be9fbd33",
+  "published_copy": "report/acceptance/board_test_20261101.json",
+  "copied_without_changes": false,
+  "raw_field_logs_published": false,
+  "published_sha256": "3e58000fddccd2c60ee79adebca581f0477d682dfd477d691dfaf4802068a6e0",
+  "transformation": "Operator confirmation paraphrased and local identifiers removed"
+}

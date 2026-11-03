@@ -1,0 +1,19 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 17:26:18 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/root_route/xsim_script.tcl
+# xsim {root_route} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+WARNING: File geometry_alpha_q16.mem referenced on C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/native_motion/rtl/robot/phase3_s4_task_top.v at line 342 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+PASS: complete root route AXI port crosses the real S4 ownership window and reaches all six native RAMs
+PASS: configuration and readback with D5 low never arm or start a task
+$finish called at time : 29800 ns : File "C:/redacted_user/.codex/worktrees/mode-ab-integration-20261029/Gesture/board_evidence/mode_ab_p4/route_aperture_final/tb.sv" Line 32
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 17:26:20 2026...

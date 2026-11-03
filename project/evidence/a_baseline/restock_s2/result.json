@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "legs": 176,
+  "samples": 8776,
+  "axes": 6,
+  "checks": [
+    "PASS: quintic actual S2 RTL all 176 legs, 8776 exact six-axis samples, production VMAX/AMAX and endpoints"
+  ],
+  "commands": [
+    {
+      "stage": "compile",
+      "exit_code": 0
+    },
+    {
+      "stage": "elaborate",
+      "exit_code": 0
+    },
+    {
+      "stage": "run",
+      "exit_code": 0
+    }
+  ],
+  "native_plan_sha256": "9fe3a28f0435fce30f0a7f72bb3d8864a4b567106aead298aa5c9e3ecee2488d",
+  "bench_sha256": "d5e1bd8db7e708c187a72d2c4c318b1ba09cbbe44d7c989377a8bc92735a1010",
+  "production_period_cycles": 2000000,
+  "testbench_period_cycles": 512,
+  "physical_robot": false
+}
