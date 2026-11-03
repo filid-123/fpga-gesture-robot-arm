@@ -1,6 +1,6 @@
 # 当前发布上下文
 
-日期：2026-11-01。整理版本：`0.1.0-publication.7-review`。运行基线：p4.1 / ABI340E。
+日期：2026-11-01。整理版本：`0.1.0-publication.9`。运行基线：p4.1 / ABI340E。
 
 - 唯一导入基线：`gesture_mode_ab_v0_1_0_20261030_p4_1.zip`，SHA256 `c29a4f659c341646d2354006435401aa5458eb135630601a7b1077b9ba7b8adf`，4,521 文件。
 - 源包原生产文件位于 `project/`。Git 收录子集与被排除资产逐项见 `report/provenance/`；原始 manifest 和 SHA 清单保留不变。

@@ -2,7 +2,8 @@
 
 历史版本仅列文件名，详细变更见开发日志。
 
-- p4.1 / publication.8 为当前参赛公开版，增加固定版本运行资产渠道和下载校验。
+- p4.1 / publication.9 为当前参赛工程包，新增八张图、硬件接线与同次综合报告。
+- p4.1 / publication.8，增加固定版本运行资产渠道和下载校验。
 - p4.1 / publication.7 保留离线资产恢复入口。
 
 - `CurrentACameraFrontend_v0.1.0_20261021_EvidenceOnly.zip`

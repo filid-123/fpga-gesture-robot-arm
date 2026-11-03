@@ -24,18 +24,19 @@ py -3.12 tools/check_repository.py --complete
 按 `docs/model.md` 确认 AMD GPU、驱动、Python 和封存版本锁。使用显式 Python 路径，避免依赖原开发者用户目录：
 
 ```powershell
+py -3.12 tools/install_runtime_assets.py --download
 cd project
-powershell -ExecutionPolicy Bypass -File ./setup_mode_ab.ps1 -Python C:/path/to/Python312/python.exe -VerifyModels
-powershell -ExecutionPolicy Bypass -File ./start_mode_ab.ps1 -CheckOnly
+powershell -ExecutionPolicy Bypass -File ./setup_mode_ab.ps1 -Python C:/path/to/Python312/python.exe
+powershell -ExecutionPolicy Bypass -File ./start_mode_ab.ps1 -CheckOnly -RuntimeOnly
 ```
 
-安装会访问原包声明的 AMD wheel 索引并创建项目本地 `.venv-ab-rocm`；虚拟环境不随 Git 发布。预期 CheckOnly 返回 `SEALED_PACKAGE_INPUTS_PASS`、正确 patch/hotfix。如需严格检查原始封存包，使用独立目录解压原 ZIP，在该目录运行：
+安装会访问原包声明的 AMD wheel 索引并创建项目本地 `.venv-ab-rocm`；虚拟环境不随 Git 发布。公开版预期返回 `PUBLIC_RUNTIME_INPUTS_PASS` 及 p4.1 patch/hotfix。完成现场准备后，使用 `start_mode_ab.ps1 -RuntimeOnly` 启动。如需严格检查原始封存包，使用独立目录解压原 ZIP，在该目录运行：
 
 ```powershell
 ./.venv-ab-rocm/Scripts/python.exe -X utf8 -B scripts/check_mode_ab_package.py
 ```
 
-环境探测可从仓库根使用该解释器运行 `skill/amd-pc-deploy/scripts/probe_environment.py`，传入 `project/requirements_mode_ab_lock.txt` 和模型 JSON。`--require-hip` 会实际执行设备算术，但不跑相机/机械臂；模型推理数值另由原 `-VerifyModels` 检查。
+环境探测可从仓库根使用该解释器运行 `skill/amd-pc-deploy/scripts/probe_environment.py`，传入 `project/requirements_mode_ab_lock.txt` 和模型 JSON。`--require-hip` 会实际执行设备算术，但不跑相机/机械臂；原 `-VerifyModels` 需要完整原包的九张历史图。公开版部署步骤省略此选项。
 
 本次没有在新机器完整下载和安装全部应用依赖；使用既有环境重跑的结果与干净标准库工具环境验证分开记录。wheel/驱动不兼容则停止，保存失败，不切换 CPU 后仍报 ROCm 成功。
 
