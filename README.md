@@ -26,23 +26,26 @@ py -3.12 tools/check_repository.py --complete
 
 ## 目录与赛题对照
 
-赛题 3.2.5.5 的结构是推荐结构。本仓库保留封存项目相对路径，避免破坏脚本、模型和证据绑定；比赛内容对应如下。
+按赛题 3.2.5.5 对照如下。FPGA 和上位机共享同一套 p4.1 工程，相对路径用于定位 RTL、模型、配置和封存证据，因此统一保留在 `project/` 下。文档、指标、Skill 和报告可直接从提交包根目录查阅。
 
-| 赛题内容 | 本仓库位置 |
+| 赛题推荐路径 | 提交包中的对应位置 |
 |---|---|
-| 架构、数据流、接口、硬件搭建 | [docs/architecture.md](docs/architecture.md)、[docs/interface.md](docs/interface.md)、[docs/hardware_setup.md](docs/hardware_setup.md) |
-| FPGA RTL、约束、BD Tcl | `project/native_motion/rtl/`、`project/native_motion/constraints/`、`project/native_motion/scripts/` |
-| 当前 BIT / HWH / XSA | `project/hardware/`，与封存构建一一绑定 |
-| 可复现构建入口、综合实现报告 | [tools/build_fpga.py](tools/build_fpga.py)、`project/evidence/implementation/` |
-| AI PC 应用、网页和通信 | `project/pc/`、`project/web/`、`project/scripts/`；实际传输是 XSDB/JTAG AXI MMIO |
-| 模型来源、精度、部署环境 | [docs/model.md](docs/model.md)、`project/model_package/`、`project/requirements_mode_ab_lock.txt` |
-| PS 支持、初始化与板端接口 | `project/ps/`、`project/hardware/ps7_init.*`、`project/scripts/mode_a_board_bridge.tcl` |
-| 指标汇总、脚本、原始证据 | [metrics/metrics.csv](metrics/metrics.csv)、`skill/robotics-metrics/`、`project/board_evidence/`、`project/evidence/` |
-| 可复用 Skill 与工作流 | [skill/README.md](skill/README.md)，可独立复制使用 |
-| 设计报告、复现和材料缺口 | [report/design_report.md](report/design_report.md)、[report/submission_status.md](report/submission_status.md) |
-| 整理验证与版本来源 | `report/validation/`、`report/provenance/`、[PROJECT_LOG.md](PROJECT_LOG.md) |
+| `README.md` | 本页及 [从零复现步骤](docs/reproduction.md) |
+| `docs/` | [系统架构与数据流](docs/architecture.md)、[接口定义](docs/interface.md)、[硬件与接线](docs/hardware_setup.md) |
+| `fpga/src/` | [RTL](project/native_motion/rtl/)、[约束](project/native_motion/constraints/)、[BD 与构建 Tcl](project/native_motion/scripts/) |
+| `fpga/build/` | [构建入口](tools/build_fpga.py)、[BIT、XSA、HWH 与 PS 初始化](project/hardware/) |
+| `fpga/report/` | [a14 综合资源报告](report/validation/a14_utilization_synth.rpt)、[实现资源和时序报告](project/evidence/implementation/implemented_reports/) |
+| `host/model/` | [模型说明](docs/model.md)、[模型目录](project/model_package/)、[外部资产安装器](tools/install_runtime_assets.py)及[固定版本渠道](docs/runtime_assets.md) |
+| `host/app/` | [上位机与通信源码](project/pc/)、[WebUI](project/web/)、[桥接和运行脚本](project/scripts/) |
+| `host/deploy/` | [环境安装](project/setup_mode_ab.ps1)、[启动入口](project/start_mode_ab.ps1)、[依赖锁](project/requirements_mode_ab_lock.txt) |
+| `metrics/metrics.csv` | [指标汇总](metrics/metrics.csv) |
+| `metrics/logs/` | [保存帧日志](metrics/logs/)、[封存板级记录](project/board_evidence/) |
+| `metrics/scripts/` | [指标复算脚本](metrics/scripts/)、[视觉评测工具](tools/vision_metrics/) |
+| `metrics/evidence/` | [指标证据](metrics/evidence/)、[封存工程证据](project/evidence/)、[实物验收](report/acceptance/) |
+| `skill/` | [三项可复用 Skill 与工作流](skill/README.md) |
+| `report/` | [设计报告](report/design_report.md)、[工程包索引](report/engineering_package.md)、[验收与交付状态](report/submission_status.md) |
 
-文件使用 ASCII 路径；`README.md`、`SKILL.md`、`AGENTS.md` 等保留工具/赛题示例采用的约定名称。生产项目中的原始 Windows 路径仅是历史记录，新的入口从本仓库位置解析。`project/` 是封存项目，后续开发应建立新版本及证据，不能直接改哈希来掩盖变化。
+提交 ZIP 省略仓库根目录的内部协作说明和开发助手配置。开发与版本记录见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
 ## 已有证据与限制
 
@@ -65,7 +68,7 @@ py -3.12 tools/check_repository.py --complete
 
 B 模式开发评测已收录。模型和资产的合规获取方式、完整环境复现资料由团队补充。当前INT8成绩按DEV集原口径列示。
 
-本审查版从最新GitHub主分支导出并脱敏。源提交与逐文件变更见 `report/provenance/public_review.json`。原始封存包用于完整原包复核，交付副本使用自己的发布校验清单。
+本工程包从本地发布提交导出并脱敏。源提交与逐文件变更见 `report/provenance/public_review.json`。原始封存包用于完整原包复核，交付副本使用自己的发布校验清单。
 
 开发过程与历史版本见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
