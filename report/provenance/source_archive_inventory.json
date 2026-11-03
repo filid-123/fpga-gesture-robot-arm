@@ -7992,13 +7992,13 @@
       "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/.gitattributes",
       "bytes": 17,
       "sha256": "b2caf282036fdc2f3447f2e151d90b08de38b50d349885c6e9c9da86ef9e7eba",
-      "git_included": true
+      "git_included": false
     },
     {
       "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/.gitignore",
       "bytes": 68,
       "sha256": "13bc22fa9cd7ea9d33fac5564d10e2033eed64e74565d8c0c14510c2f84382ce",
-      "git_included": true
+      "git_included": false
     },
     {
       "path": "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/checksums.sha256",
@@ -26929,7 +26929,7 @@
       "path": "sim/phase3_native_closed_loop/.gitattributes",
       "bytes": 197,
       "sha256": "c2ddce792687c02859534c5e3fcb82454c01f43b359d0c645d50c96ed14c4f5f",
-      "git_included": true
+      "git_included": false
     },
     {
       "path": "sim/phase3_native_closed_loop/adapters/planner_axi_driver.py",

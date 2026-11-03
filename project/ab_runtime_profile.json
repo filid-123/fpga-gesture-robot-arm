@@ -161,6 +161,8 @@
     "handoff/replay/six_18.png",
     "handoff/replay/six_19.png",
     "hdmi_preview.png",
+    "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/.gitattributes",
+    "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/.gitignore",
     "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_00/source.png",
     "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_01/source.png",
     "model_package/candidates/black_scene_vision_v3_int8_targeted600_b_gate030_20261027/golden_integer/sample_02/source.png",
@@ -194,6 +196,7 @@
     "rollback/p3_a8/implementation_summary.json",
     "rollback/p3_a8/roarm_closed_loop.bit",
     "rollback/p3_a8/roarm_closed_loop.hwh",
-    "rollback/p3_a8/roarm_closed_loop.xsa"
+    "rollback/p3_a8/roarm_closed_loop.xsa",
+    "sim/phase3_native_closed_loop/.gitattributes"
   ]
 }

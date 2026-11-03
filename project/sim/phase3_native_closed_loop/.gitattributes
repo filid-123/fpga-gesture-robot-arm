@@ -1,7 +1,0 @@
-*.py text eol=lf
-*.json text eol=lf
-*.md text eol=lf
-*.txt text eol=lf
-# Frozen inputs are hashed as bytes; preserve their original line endings.
-s8_baseline/** -text
-metrics_tools/** -text

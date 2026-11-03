@@ -1,4 +1,0 @@
-__pycache__/
-*.pyc
-!quantized/**/*.bin
-!golden_integer/**/*.bin

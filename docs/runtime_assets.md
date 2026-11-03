@@ -19,6 +19,6 @@ py -3.12 -X utf8 -B project/scripts/run_mode_ab.py --check-only --runtime-only
 
 离线时，可将已取得的文件按渠道表中的 `project/` 相对路径放入本地交接目录，再运行 `py -3.12 tools/install_runtime_assets.py --source-dir C:/path/to/handoff`。无参数运行只校验本地文件。
 
-团队也可用安装工具的 `--archive` 参数从合法持有的原 p4.1 ZIP 提取这 9 项。工具核验字节与 SHA256，拒绝覆盖不同内容。公开运行配置省略 181 项历史、图片、训练或缓存等外部文件，仍核验其余封存输入。默认启动保留完整封存校验。
+团队也可用安装工具的 `--archive` 参数从合法持有的原 p4.1 ZIP 提取这 9 项。工具核验字节与 SHA256，拒绝覆盖不同内容。公开运行配置省略历史、图片、训练、缓存与 Git 配置等非运行文件，仍核验其余封存输入。默认启动保留完整封存校验。
 
 目标 Windows AMD AI PC 装好匹配依赖后，使用 `project/start_mode_ab.ps1 -CheckOnly -RuntimeOnly` 检查。环境变量 `GESTURE_XSDB` 可设为本机 xsdb.bat 的完整路径。操作者按硬件与标定说明完成现场准备后，可用 `-RuntimeOnly` 进入联测。验收覆盖 A 启动、A/B HOME 切换、B 视觉定位、路径规划、下发、取放及反馈。
