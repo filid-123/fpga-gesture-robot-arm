@@ -2,7 +2,8 @@
 
 历史版本仅列文件名，详细变更见开发日志。
 
-- p4.1 / publication.7 为当前参赛基线。
+- p4.1 / publication.8 为当前参赛公开版，增加固定版本运行资产渠道和下载校验。
+- p4.1 / publication.7 保留离线资产恢复入口。
 
 - `CurrentACameraFrontend_v0.1.0_20261021_EvidenceOnly.zip`
 - `Gesture_AIPC_Layout_Clarification_v0_1_1_20261024.zip`

@@ -2,7 +2,7 @@
 
 以 Windows 原生 AMD Ryzen AI PC、PYNQ-Z2 / XC7Z020 和 RoARM-M3-S 实现手势交互、视觉定位与机械臂递送。模式 A 使用固定槽位和 PL 视觉/任务链；模式 B 使用 AI PC 普通 RGB 感知和规划，PL 完成实时轨迹、交互与执行。
 
-本分支整理基线是 `gesture_mode_ab_v0_1_0_20261030_p4_1.zip`，发布整理版本为 `0.1.0-publication.7-review`。运行合同仍为 p4.1：`native_giao_full_workspace_p4`、`startup_route_map_p4_1`、TASK ABI `0x340E`、B 路径 RAM ABI `0xB001`。本轮没有更改生产 RTL、模型数值、路径或动作参数。
+本分支整理基线是 `gesture_mode_ab_v0_1_0_20261030_p4_1.zip`，发布整理版本为 `0.1.0-publication.8`。运行合同仍为 p4.1：`native_giao_full_workspace_p4`、`startup_route_map_p4_1`、TASK ABI `0x340E`、B 路径 RAM ABI `0xB001`。本轮没有更改生产 RTL、模型数值、路径或动作参数。
 
 **当前 p4.1 已实测通过，登记为 `USABLE_USER_ACCEPTED`（用户验收通过的可用版本），可作为后续开发和回退基线。** 2026-11-01 用户现场确认“实测任务完成，可以作为可用的版本”；六次既有会话的日志摘要支持 A/B 任务完成及双向固定 HOME 过渡。详见 [当前实测验收](docs/field_acceptance.md)。经用户复核，既有17次任务执行中16次物理成功，成功率94.12%；通信、INT8开发集质量及FPGA周期时延已从原记录复算，见[指标复算](docs/metrics_recovery_20261101.md)。闭环延迟采用板端遥测中的视觉确认至TTL反馈观测时长。团队原创部分采用 AGPL-3.0-only。第三方资产按各自条款管理。
 
@@ -69,8 +69,8 @@ B 模式开发评测已收录。模型和资产的合规获取方式、完整环
 
 开发过程与历史版本见 [开发日志](docs/development_history.md) 和 [版本记录](docs/version_history.md)。
 
-Giao 的冻结 B 模式模型评测已收录。38 张开发验证图的 mAP@0.5:0.95 为 65.52%，GT 框内顶面二分类 mIoU 为 82.81%。历史单布局 20 帧分别为 83.28% 和 95.45%。两组均使用 CPU 离线评测和 AI 近似标注。原始图像与现有 B 模式权重由团队保管。
+Giao 的冻结 B 模式模型评测已收录。38 张开发验证图的 mAP@0.5:0.95 为 65.52%，GT 框内顶面二分类 mIoU 为 82.81%。历史单布局 20 帧分别为 83.28% 和 95.45%。两组均使用 CPU 离线评测和 AI 近似标注。原始图像由团队保管。两份冻结 B 模式权重由 Giao 的上游仓库提供。
 
 ## 公开 A/B 运行资产
 
-见 [运行资产获取说明](docs/runtime_assets.md) 和 [待补渠道清单](docs/runtime_asset_channels.csv)。
+见 [运行资产获取说明](docs/runtime_assets.md) 和 [固定版本渠道清单](docs/runtime_asset_channels.csv)。
