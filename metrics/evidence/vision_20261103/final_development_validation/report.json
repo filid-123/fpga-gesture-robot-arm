@@ -1,0 +1,731 @@
+{
+  "schema": "gesture.report.vision_metrics.v1",
+  "status": "COMPLETED",
+  "scope": "DEVELOPMENT_VALIDATION",
+  "independent_layouts": null,
+  "independent_test_accepted": false,
+  "label_provenance": "ASSISTANT_VISUAL_APPROXIMATE_BOXES_AND_VISIBLE_TOP_POLYGONS_NOT_HUMAN_METROLOGY",
+  "human_ground_truth_reviewed": false,
+  "evaluation_manifest_sha256": "12711e05d161604f47e4964191116a4783a2373412bb391c1cf50fb5ecffcf9e",
+  "images": 38,
+  "ground_truth_instances": 48,
+  "training_overlap_audit": {
+    "method": "EXACT_IMAGE_PIXEL_ANCESTRY_HASH_AND_SESSION",
+    "matches": [
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00009.png",
+        "split": "validation",
+        "hashes": [
+          "1da1ea1481c390cec3ee5985e2a6fcc802584533239c65205b7cd21136ea1e90",
+          "f91822db90fab04d151ad1ed75fdc56b63546e7fd6ad56d6e9e7552ef9277aec"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00015.png",
+        "split": "validation",
+        "hashes": [
+          "be673302c9dc5227f2521148a02a14fac610b3cf5f0ec5544bc84819c933cdbf",
+          "c7c32badbc0ebcf279bd84881c09dee03c27ca216e01cc65dffdafac39a6ecb1"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00080.png",
+        "split": "validation",
+        "hashes": [
+          "026249344849e37e0444426fda96856d22c1a4ba25bcb1b1908c665b60a4a6b3",
+          "03c66a8bfd82b3642b07aaa0138149478388335a8be7949f5a07e7f909b418f3",
+          "92b2cad5885a4d2ecc0f3a946f7f90327d093f4c3eaaf8d1e45f10cb7964c557"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00081.png",
+        "split": "validation",
+        "hashes": [
+          "176806b1dca01d5c7a6b0b8d9482e28a45bf68a689b7e61f44af732439dacd1c",
+          "35eb5e485a8c575c00f63c1609947580bfc211f2e94c53b7022de3590b5224f2",
+          "78c5d243c28f32c6a05438e952c235fc415549021a28eee656ebf18bafd9d66b"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00082.png",
+        "split": "validation",
+        "hashes": [
+          "214de4ddd947273ef880fcebd9249bb124851e72b26af98a0cdd1a4f1ee3da42",
+          "5a85146dfe89b10808154ccb9e852516747ac02dbd41b9a4eabd382c9c24cd54",
+          "6755118ded58c7f33449c208daf4ef725390c1486f957e7125995a1d7ce72134"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00083.png",
+        "split": "validation",
+        "hashes": [
+          "0afd9addf70df8a3d798ada77ab0ae5815e8401473ddc1acf95520a8e674661d",
+          "6aefd2420e253934d1515d5d44fdf4c6706598e6221d38886bbf61b6b17c04ce",
+          "dee696d8f41d8766d0646b8e6bf20fa01f30cabfcea23a681f86ecf1fd08af44"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00084.png",
+        "split": "validation",
+        "hashes": [
+          "194cba5d2a9de2e80747716463310a99c4aa9583e879673a8138662351c4120e",
+          "7393f950d252adfbf61126ce71498f04170e353472a4407f0510e376fe4f7756",
+          "97310972892b5e4ae8042f8fde12635ed9cd2639750adafb0d08b0a700de4cff"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00085.png",
+        "split": "validation",
+        "hashes": [
+          "0b4bd6523a85f1154ec2a1f30db4fc8fc1e0154c0363b10133a7e99cd8fc38f5",
+          "2428922c776281daccd401245b21811b251aa25067b833561f980ba973c825ce",
+          "f2dc6612f784136a0fa44b57dfd748e1f3aaf0704ff2b989dad01400be5dbdb0"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00086.png",
+        "split": "validation",
+        "hashes": [
+          "023060fca8cc8de8e0d199d3729c267754fc15aa31802e7cef02c3d486a78083",
+          "2f8a1e454b6df525cff65893e562338410a5471c42896f5a5d180942be8bd7d8",
+          "86bdbfd12b53e59358f5b225d55963b0ac66e8a819fab469bc00655b86bab2cd"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00087.png",
+        "split": "validation",
+        "hashes": [
+          "5192d656c5c7e8c2c1886f8a75fcdc091b0bee657fcc291f0f4f37c9f45a4da5",
+          "9721dd19fd5f9a4f47f266e9f1dfaddc378148ab09b9ca4218e50f26af1286ec",
+          "e4e3f03d44c931a7ac690f3af436eb5c1b6e1b6bb020301d045d46c1becbdd15"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00088.png",
+        "split": "validation",
+        "hashes": [
+          "afd5b6918f3898340077208ef2a0c366f2fc1e413e0b9c84a5c50f4c0c51abb6",
+          "be8f93edf43bc09c88fe761e67c8901a6cfc9e611daa6778a038037f4005f15e",
+          "d69bbf0c8e3a65743ecf2e6aa0c1251da26f1a1ce7f61d124bec7cdc90524327"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00089.png",
+        "split": "validation",
+        "hashes": [
+          "81781ac02d00bfc48367e8534e5cf4ba9cfc14d64fb6d8bb3e952564879935b5",
+          "ce0f587aa166a235d1daf06538e6bad0a22b4f1c3d961ce4f6e6b5fad19d7bf4",
+          "f1798f092fbed9a85da27419607503babff6c240d5fa8600d11dd2beeda8eba0"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00090.png",
+        "split": "validation",
+        "hashes": [
+          "70d79ab0c2cfc93a4c9400e383aec52f0106554947b9daf7d84c719b7b9bab88",
+          "ec2cf269eb4d1baad664d9df3a76d36ac79e4f826f347dea3e63bc158b7782ea",
+          "f906b17c605ab4df260f14fca01cbc48fecbe2a6787997c4651bc3fb857395a4"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00091.png",
+        "split": "validation",
+        "hashes": [
+          "54e626730d4115c0de546c6abd0962e0f27a38a4c848ae469e3ac8793519985f",
+          "8734be08bff12b7d7cfe473d76cb9b83ac18e3eb858115b410a8bf2c2fbe363e",
+          "b9ae6c3402db7a3caa9902969a3acf22a49b60f6f6ad542de9b080d4f3e401b5"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00092.png",
+        "split": "validation",
+        "hashes": [
+          "06ac184a05d514a4568e8a611fabd8a87f4a857bf2904566b3276ec946bd9f6f",
+          "7858c45ca110436ce5c3e7eadef1aa7c404a0f67ef0aa4a87178b7be3483abd5",
+          "d9e2d907b0afe9c1b1636565a533349939035977b30b61678d2b7e55b919b730"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00093.png",
+        "split": "validation",
+        "hashes": [
+          "0de695fc2aa134a1d88ce898bcc8ed35a319ca9e397f9ecb8fbba85854cb2f35",
+          "4d14de7033d63126bc33f93bb1d000c5c297763d09fb71cd4352e6cd5a052626",
+          "cb3cc1f86a00787b76bb759947b315e84325b5b04190bab332e8c17dcc92c391"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00146.png",
+        "split": "validation",
+        "hashes": [
+          "5c3e21fff48e29001e6013fa004109bf59fd39387d2d89d66b47ce24c570383c",
+          "bcd05c961f73dffd60eeddf0085445140b9860ba5d578842f33e4ee40fc8bbc8",
+          "e90c86900e28c6433d6b669eb3edd96997f38e6af45730a738cb2c1c576d4ee7"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00147.png",
+        "split": "validation",
+        "hashes": [
+          "52d7841b9e0cf67d747af33d42742055192e5e958dde9cdd56f45c55847f1afd",
+          "7b693d91d6a6565e8957be70cf50804c36d5ddd2f921c7505bb0e2d16594697f",
+          "8918c3e936a4e1391705fc5c25408ef039a1415b3e15d4ac6f02b874ad0cb745"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00148.png",
+        "split": "validation",
+        "hashes": [
+          "8f45fd8cf649e91f07b32148bb8d4f9074972d2afac71dc41dced939a2d81c81",
+          "d65a391e03c7ddd63d9d816cc41a083f2fa2096f4a07a6874a9b31ccbdeeb3b0",
+          "e8674ca5d3cb50d3238d2d15c3f8ed6b420af58481106c2c6b90a113b377c44b"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00149.png",
+        "split": "validation",
+        "hashes": [
+          "2620dc4daac7f2e8976058f5523075ae3122c9016a8b0fc6e28b7b9b89773a79",
+          "512f7a5dca1ff5d4411b3ff36eef2b4a916d4c40c7a211b657b1c1f5162f2724",
+          "cce2d26dfe5183bb67432744021249b5c143f36d71b08824f5315942ff3fd1f5"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00150.png",
+        "split": "validation",
+        "hashes": [
+          "4a4089c8b04a04facaaa44cef49aeb2b2897fbaabfa221442ce50e7e67c521ab",
+          "7646c22227faa9915b4c1e5333778d70585423b7471defcaea2a8a26d518bc01",
+          "a000f9978590c63d84fee25229ee4d13d3c2801d7709fa67d5f955c5509a3db8"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00151.png",
+        "split": "validation",
+        "hashes": [
+          "31921c60b40812d2303e350f877f4ce485c5789429594a45fa01f650a30d6229",
+          "5cc85a9448c14c14ca9f1069ff7b0657e56a3faea5808b81dd170e6fefc67d50",
+          "fee842ea6e7a8ef3d06bc130a0060f1f488d0555f0ff69488391a15180c8f5c2"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00152.png",
+        "split": "validation",
+        "hashes": [
+          "089039ac4fa151ef5e1899de95ce54e95ea255a40befcad7d2a9b9e3b08f2518",
+          "caac676fa7d37f1cf88ec926d0b631370f40ee4945e01b869f6586d85e5f269b",
+          "ee2af54b972d0cb20f3404c134ce707e4ff524d217c0045dfa693e296d392f88"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00153.png",
+        "split": "validation",
+        "hashes": [
+          "875de71a2c80883bdc8d7fe411a1a0e4e796c76998e15b230430e869d44a1fa3",
+          "b1eec4b0939566dc892cddd86f2f367f87f78c7e32eb00aa2439998f9f693a44",
+          "c9ddbc8148cdcb3f950748ea3506c0a521d154124c58bb415d78d973b5b3d778"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00154.png",
+        "split": "validation",
+        "hashes": [
+          "69ffc144e8d95ece91b6207bc404210843157ace22ef7dc0566500c5c982117e",
+          "95b90d342ec61130ecfa885ba38d16847a026bff8b4f16f7271951c762747179",
+          "f2a7aac88c0f4823b391139b1e766b7b0a8554988f340d2b4c6dc309de2d5d33"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00155.png",
+        "split": "validation",
+        "hashes": [
+          "1752088c2e102820da6bc50136a0220aae708129af47677d6ca3648ba9f113fc",
+          "5bc137cfae5663da42908558caef6d6da91e4870768a7858957e968dad22f57f",
+          "d45578a9f007d71f48efe248a1d9cf604d7a133164086e9906495ba0f2829317"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00156.png",
+        "split": "validation",
+        "hashes": [
+          "3cb21f1a277e66bb9bab8c86105b50dbf512cb568a93d796a755af90ca56092a",
+          "d7dc243ffec62bb98eae384d60c9dfa629071c148a9657a99e1835ff533a4e24",
+          "fcaddef0d6042e78c5f9a60cd533d9cc6e38a7aef23abf8a3f4962ad6b0c3010"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00157.png",
+        "split": "validation",
+        "hashes": [
+          "0ffe0144c508b5eb0d43f75963804b5877bd6e62148f73845763daec86598958",
+          "698f6a4473d9a8dbcb08fd2b9f4e822ac139a81c78455de8d29b19b5d131439b",
+          "ad9f40ba73004739ba949bc63dc108e37b033c82d7ab72bf88c10a43e1e1d628"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00158.png",
+        "split": "validation",
+        "hashes": [
+          "5c16d7c75b16bca84ff70b694936ee5c4bdbf7db04b257b120e287ff4e4e6dbc",
+          "611b9bcbdc3b2a604401e106c43f448dc399c42bfa0e43c983eef98bb0a59596",
+          "7b51053e5a420e00b2d0495ec3cee8923d1de84ab5f4ffb241402df0b1261f23"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00159.png",
+        "split": "validation",
+        "hashes": [
+          "c2432c63a52c6e2ccc4487659b0b0928c1b7717c7fa39efaa0a5b4f8ab2e3734",
+          "d142fec008b3828ce8d07fc6a8b9d287986cf435de31c65e8fc74efb26728ede",
+          "f8c023f917e7d7bad2f03432772b15f3ccc7faaaf69f60611a1d0c5661c5d371"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00160.png",
+        "split": "validation",
+        "hashes": [
+          "15d164fd4cde7b089752ce8707c21209ee1500daaf92ee2bff745289dd149bd1",
+          "73589c71bb876507b52961b46ecbf7f884d8fab6929822cae3fc9c594e480aa3",
+          "e671c3e71386f51caae7f0dc55051ed79896567e1ccf34810fe784e60f8c679d"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00161.png",
+        "split": "validation",
+        "hashes": [
+          "0f427bc452d26ab58c0007abcd7742d3054a7f85d12ed093889d7497112b5e9e",
+          "87e5fa0fdb61261432be5ee02eceb1a0d9afc1d99fc469dd8b69a272c139fb81",
+          "b815ba4db74a5035784ee79b358aaf79af863ba394469a9840dbdfeb3d480b7e"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00162.png",
+        "split": "validation",
+        "hashes": [
+          "29a1a65910552343cdd8ab90b70aefd463859b9598fd0abb012c242788f367c0",
+          "b4d3b79b1b6755d9826985dbdf54abbd05cbc36540b217867ec66efb7fd84be8",
+          "ffe82d2928b942d216e09600597fb59d9bbfd75b44034a951c0e8478288adbfe"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00163.png",
+        "split": "validation",
+        "hashes": [
+          "2112e809dbd8b6305f47eb79f9a300fddb90786e95362ca01135bdae38fe3860",
+          "6b07f485edcd0631cb87c581b75ebfd4d21f5d3d199fabc54db974f281a76e2a",
+          "e89306e440ed5d5ad2b08659c3d3ca7e811b5bc3e57884c25f977d96dd58dcf9"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00164.png",
+        "split": "validation",
+        "hashes": [
+          "5ce9b09960d4edac860a6c1e0d37d6f5ec4f47ca19b9e95fa7e48f6c3416842c",
+          "af5382a0025a51df6fac1d3284be23bf5bf3053ad0216ec2faa537c5f299a0ce",
+          "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00165.png",
+        "split": "validation",
+        "hashes": [
+          "2c97efcc385141e55c77afcf239cf59639637e9155cacf5ac870c87d2a6de42e",
+          "3ce964fbfc28daa5ba60e1b5c1397691a07af86f0263db6926dc92e939a130be",
+          "d83f6dfc8e44b4da9b29a36ce4f15f09a618ac89f69b1d9298792acddd6ed579"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00166.png",
+        "split": "validation",
+        "hashes": [
+          "22a304b4f6cd9c4fcd1598801fb53a8de446142174d6503c1ac0d89358a6407b",
+          "49b9a47d0db6c0ec2e035529c3a961053beb61d4292dd32cb8172930e988eadc",
+          "a74ad1f00f8784951dee66becd0aafe4ba3fd972b071277edf1297d666b9e61e"
+        ],
+        "session_overlap": true
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00167.png",
+        "split": "validation",
+        "hashes": [
+          "1f685e20506c352ef99bf5bec8782f95cc2372df3ac172024b5eea22314c108c",
+          "793510923861706380cc98f061fa573abd62bc850e133de87e23b4254af05239",
+          "819962f3b3133de4c9991ea6b2d2ecea6d10625cc61175be110a104e819e726c"
+        ],
+        "session_overlap": true
+      }
+    ],
+    "near_duplicate_absence_proven": false
+  },
+  "frozen_manifest_sha256": "cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778",
+  "detector_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+  "surface_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+  "runtime": {
+    "detector": {
+      "requested_backend": "onnx_cpu",
+      "actual_backend": "onnx_cpu",
+      "role": "mode_b_detector",
+      "framework": "onnxruntime",
+      "framework_version": "1.31.0",
+      "actual_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cpu_fallback": false,
+      "precision": "fp32",
+      "classes": [
+        "red_cube",
+        "yellow_cube",
+        "blue_cube",
+        "eraser",
+        "small_canister",
+        "scissors"
+      ],
+      "trained_classes": [
+        "red_cube",
+        "yellow_cube",
+        "blue_cube",
+        "eraser",
+        "small_canister",
+        "scissors"
+      ],
+      "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+      "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+      "npu_execution_verified": false,
+      "hardware_acceptance": "PENDING",
+      "spatial_inference_policy": {
+        "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+        "minimum_tile_overlap": 0.25,
+        "classwise_merge_iou": 0.5,
+        "interior_edge_margin_raw_px": 2,
+        "max_tiles": 16,
+        "thresholds_unchanged": true
+      }
+    },
+    "surface": {
+      "actual_backend": "torch_cpu",
+      "requested_backend": "torch_cpu",
+      "framework": "torch",
+      "framework_version": "2.14.1+cpu",
+      "hip_version": null,
+      "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+      "device": "cpu",
+      "hardware_acceptance": "PENDING",
+      "cpu_fallback": false,
+      "spatial_surface_policy": {
+        "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+        "relative_shift": 0.04,
+        "shifts_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "uses_temporal_history": false,
+        "thresholds_unchanged": true
+      }
+    }
+  },
+  "AP_score_floor": 0.01,
+  "operational_detection_threshold": 0.4,
+  "detection": {
+    "definition": "COCO_STYLE_101_POINT_NO_CROWD_NO_AREA_SUBSETS_MAXDET100",
+    "IoU_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.8999999999999999,
+      0.95
+    ],
+    "per_class": {
+      "red_cube": {
+        "ground_truth_instances": 2,
+        "predictions": 20,
+        "AP50": 1.0,
+        "AP50_95": 0.9504950495049505,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 1.0,
+          "0.95": 0.504950495049505
+        }
+      },
+      "yellow_cube": {
+        "ground_truth_instances": 1,
+        "predictions": 16,
+        "AP50": 1.0,
+        "AP50_95": 0.9,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 1.0,
+          "0.95": 0.0
+        }
+      },
+      "blue_cube": {
+        "ground_truth_instances": 2,
+        "predictions": 3,
+        "AP50": 1.0,
+        "AP50_95": 0.9252475247524753,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 1.0,
+          "0.95": 0.2524752475247525
+        }
+      },
+      "eraser": {
+        "ground_truth_instances": 15,
+        "predictions": 32,
+        "AP50": 0.8527671997969029,
+        "AP50_95": 0.4132482863670982,
+        "AP_by_iou": {
+          "0.5": 0.8527671997969029,
+          "0.55": 0.7544173648134045,
+          "0.6": 0.6117542523483117,
+          "0.65": 0.6117542523483117,
+          "0.7": 0.3729119065752729,
+          "0.75": 0.3287953795379538,
+          "0.8": 0.24801980198019802,
+          "0.85": 0.15156765676567657,
+          "0.9": 0.1311881188118812,
+          "0.95": 0.06930693069306931
+        }
+      },
+      "small_canister": {
+        "ground_truth_instances": 9,
+        "predictions": 124,
+        "AP50": 0.7822902199722235,
+        "AP50_95": 0.4100107522064424,
+        "AP_by_iou": {
+          "0.5": 0.7822902199722235,
+          "0.55": 0.7476367546256888,
+          "0.6": 0.7476367546256888,
+          "0.65": 0.722010662604722,
+          "0.7": 0.5123127697385124,
+          "0.75": 0.5123127697385124,
+          "0.8": 0.0759075907590759,
+          "0.85": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0
+        }
+      },
+      "scissors": {
+        "ground_truth_instances": 19,
+        "predictions": 68,
+        "AP50": 0.6154215421542154,
+        "AP50_95": 0.3319229554534401,
+        "AP_by_iou": {
+          "0.5": 0.6154215421542154,
+          "0.55": 0.5855535553555355,
+          "0.6": 0.5855535553555355,
+          "0.65": 0.41071107110711075,
+          "0.7": 0.34342184218421845,
+          "0.75": 0.3145005290002684,
+          "0.8": 0.2707218090230076,
+          "0.85": 0.14354066985645933,
+          "0.9": 0.0498049804980498,
+          "0.95": 0.0
+        }
+      }
+    },
+    "mAP50": 0.8750798269872236,
+    "mAP50_95": 0.6551540947140677,
+    "absent_classes_excluded_from_mean": []
+  },
+  "segmentation": {
+    "task": "BINARY_VISIBLE_TOP_NOT_SIX_CLASS_SEMANTIC_SEGMENTATION",
+    "evaluation_roi": "GT_BOX_PLUS_18_PERCENT_PADDING",
+    "pipeline": "FROZEN_FIVE_CROP_PROBABILITY_MEAN_RAW_THRESHOLD_0_7",
+    "conditional_on_ground_truth_box": true,
+    "objects": 4,
+    "pooled_pixels": {
+      "TP_pixels": 1050710,
+      "FP_pixels": 115948,
+      "FN_pixels": 276401,
+      "TN_pixels": 5064104,
+      "foreground_IoU": 0.7281129877572573,
+      "background_IoU": 0.9280944965529805,
+      "binary_mIoU": 0.828103742155119
+    },
+    "per_object_class": {
+      "eraser": {
+        "TP_pixels": 1050710,
+        "FP_pixels": 115948,
+        "FN_pixels": 276401,
+        "TN_pixels": 5064104,
+        "foreground_IoU": 0.7281129877572573,
+        "background_IoU": 0.9280944965529805,
+        "binary_mIoU": 0.828103742155119
+      }
+    },
+    "macro_foreground_IoU_over_present_object_classes": 0.7281129877572573,
+    "per_object": [
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00080.png",
+        "class_name": "eraser",
+        "TP_pixels": 490765,
+        "FP_pixels": 10254,
+        "FN_pixels": 73177,
+        "TN_pixels": 1486219,
+        "foreground_IoU": 0.85469944060913,
+        "background_IoU": 0.9468473863600165,
+        "binary_mIoU": 0.9007734134845733
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00082.png",
+        "class_name": "eraser",
+        "TP_pixels": 288336,
+        "FP_pixels": 39108,
+        "FN_pixels": 191625,
+        "TN_pixels": 1834909,
+        "foreground_IoU": 0.555486842789687,
+        "background_IoU": 0.8882996182300709,
+        "binary_mIoU": 0.7218932305098789
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00083.png",
+        "class_name": "eraser",
+        "TP_pixels": 29162,
+        "FP_pixels": 1232,
+        "FN_pixels": 1722,
+        "TN_pixels": 73634,
+        "foreground_IoU": 0.9080209241499564,
+        "background_IoU": 0.9614299890322243,
+        "binary_mIoU": 0.9347254565910903
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00086.png",
+        "class_name": "eraser",
+        "TP_pixels": 242447,
+        "FP_pixels": 65354,
+        "FN_pixels": 9877,
+        "TN_pixels": 1669342,
+        "foreground_IoU": 0.76318473422774,
+        "background_IoU": 0.9568771269531283,
+        "binary_mIoU": 0.8600309305904341
+      }
+    ]
+  },
+  "end_to_end_shape_localization": {
+    "operational_thresholds_unchanged": true,
+    "objects": 4,
+    "available": 2,
+    "mean_mask_IoU_missing_as_zero": 0.36933695694023994,
+    "records": [
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00080.png",
+        "class_name": "eraser",
+        "status": "MULTIPLE_INSTANCES",
+        "available": false,
+        "bbox_match_at_IoU50": false,
+        "shape_mask_IoU_missing_as_zero": 0.0
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00082.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.5650520145514971
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00083.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9122958132094626
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00086.png",
+        "class_name": "eraser",
+        "status": "OVERLAP_OR_CLASS_AMBIGUITY",
+        "available": false,
+        "bbox_match_at_IoU50": false,
+        "shape_mask_IoU_missing_as_zero": 0.0
+      }
+    ]
+  },
+  "millimetre_accuracy_measured": false,
+  "physical_execution": false,
+  "path_submissions": 0,
+  "NPU_acceptance": "NOT_EVALUATED",
+  "ROCm_acceptance": "NOT_EVALUATED",
+  "evaluator_sha256": "0638a5f914b323532dabf93789e71797845da4f71182299d64446177b695383d",
+  "metrics_source_sha256": "be6d97baf48d121c727beacc7604d98df2355af9990e9ffcdb6cef16736edf0c"
+}

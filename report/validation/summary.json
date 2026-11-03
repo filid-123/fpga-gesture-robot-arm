@@ -174,7 +174,7 @@
     "fpga-artifact-check": "PASS",
     "robotics-metrics": "PASS"
   },
-  "metric_rows": 61,
+  "metric_rows": 69,
   "release_status": "USABLE_USER_ACCEPTED",
   "field_acceptance_evidence": "report/acceptance/board_test_20261101.json",
   "field_acceptance_source_commit": "633a4e1441ce9b54e95a25ea93b46b8fbc6329e0",
@@ -215,5 +215,7 @@
     "runtime_check_only": "SEALED_PACKAGE_INPUTS_PASS",
     "hardware_access": false
   },
-  "vision_ttl_evidence": "metrics/evidence/vision_ttl_20261103/summary.json"
+  "vision_ttl_evidence": "metrics/evidence/vision_ttl_20261103/summary.json",
+  "aipc_source_commit": "37931982cc60cbb740d0f81fdaa1fac0c04cecaa",
+  "team_original_license": "AGPL-3.0-only"
 }

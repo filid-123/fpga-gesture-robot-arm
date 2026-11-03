@@ -63,3 +63,5 @@
 用户确认目前只有赛事使用授权。整体开源许可证未选；Ultralytics/公开训练数据/模型/CAD等第三方再分发许可待确认，相关资产不随Git。原PS7 MIT/GPL声明保留并补许可文本。p4.1启动修复实物复测、AB真实闭环、正式AI质量、现场通信和FPGA量化贡献仍NOT_RUN，UART间歇问题OPEN。
 
 实际结果见 `report/validation/summary.json`、`report/provenance/` 与 `report/submission_status.md`。本次整理可回退到旧main历史或完整原ZIP，不混装不同ABI。
+
+Giao 的冻结 B 模式模型评测已收录。38 张开发验证图的 mAP@0.5:0.95 为 65.52%，GT 框内顶面二分类 mIoU 为 82.81%。历史单布局 20 帧分别为 83.28% 和 95.45%。两组均使用 CPU 离线评测和 AI 近似标注。原始图像与现有 B 模式权重由团队保管。

@@ -1,0 +1,10 @@
+{
+  "schema": "gesture.report.vision_evidence_index.v1",
+  "files_sha256": {
+    "final_development_validation/report.json": "95a235fab816d0f0e45441deccc484a8e36d5a793a1acbdf0b6db997081b4fb9",
+    "final_development_validation/predictions.json": "6f73637d2ae829ab3cd95557905047d7f3a581fe748db16a9eae0502f0652f0c",
+    "final_one_layout_check/report.json": "8d3377e0c50bc89cac942b9c78e3c9a42ee8afe8da5fc98276d54d4869bf2a78",
+    "final_one_layout_check/predictions.json": "55e55d943703b48f72b1a515806b2526c758d401dc275dd66b99e58bbb77cc2f",
+    "coco_reference.json": "fd33f09349601dbc9bb439e77bc34fcecc328f47e94081d271d8edd79d98b9a1"
+  }
+}

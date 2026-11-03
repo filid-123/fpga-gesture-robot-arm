@@ -1,0 +1,38 @@
+{
+  "method": "OFFICIAL_PYCOCOTOOLS_BBOX_REFERENCE_ON_IDENTICAL_SAVED_PREDICTIONS",
+  "results": [
+    {
+      "scope": "DEVELOPMENT_VALIDATION",
+      "pycocotools_version": "2.0.11",
+      "numpy_version": "2.5.4",
+      "bbox_area": "all",
+      "maxDets": 100,
+      "official_mAP50": 0.8750798269872235,
+      "official_mAP50_95": 0.6551540947140677,
+      "absolute_differences": {
+        "mAP50": 1.1102230246251565e-16,
+        "mAP50_95": 0.0
+      },
+      "tolerance": 1e-12,
+      "passed": true,
+      "source_predictions_sha256": "6f73637d2ae829ab3cd95557905047d7f3a581fe748db16a9eae0502f0652f0c"
+    },
+    {
+      "scope": "HISTORICAL_ONE_LAYOUT_FROZEN_CHECK",
+      "pycocotools_version": "2.0.11",
+      "numpy_version": "2.5.4",
+      "bbox_area": "all",
+      "maxDets": 100,
+      "official_mAP50": 1.0,
+      "official_mAP50_95": 0.8328236022131624,
+      "absolute_differences": {
+        "mAP50": 0.0,
+        "mAP50_95": 0.0
+      },
+      "tolerance": 1e-12,
+      "passed": true,
+      "source_predictions_sha256": "55e55d943703b48f72b1a515806b2526c758d401dc275dd66b99e58bbb77cc2f"
+    }
+  ],
+  "physical_execution": false
+}

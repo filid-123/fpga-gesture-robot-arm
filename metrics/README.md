@@ -28,3 +28,5 @@ py -3.12 -m unittest discover -s tests -v
 此前9帧证据继续保留：`logs/saved_frame_pipeline.csv`是暖态流水延迟；`logs/saved_frame_surface_inference.csv`包含首次分割调用，并拆分预处理/推理/后处理/总时间。它们来自原测试的不同调用位置，不能逐行相加当一次端到端流程。`conditions.json`只描述这9帧，不适用于本次六会话指标。
 
 9帧重算脚本仍为`skill/robotics-metrics/scripts/summarize.py`，实际输出见`report/validation/saved_frame_percentiles.json`和`saved_frame_surface_inference.json`。资源、时序和CDC是同次封存实现报告，本轮未重新实现。`project/metrics/metrics.csv`及封存原始材料保持原文。
+
+Giao 的冻结 B 模式模型评测已收录。38 张开发验证图的 mAP@0.5:0.95 为 65.52%，GT 框内顶面二分类 mIoU 为 82.81%。历史单布局 20 帧分别为 83.28% 和 95.45%。两组均使用 CPU 离线评测和 AI 近似标注。原始图像与现有 B 模式权重由团队保管。

@@ -1,0 +1,5645 @@
+[
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00009.png",
+    "image_sha256": "f91822db90fab04d151ad1ed75fdc56b63546e7fd6ad56d6e9e7552ef9277aec",
+    "objects": [
+      {
+        "class_name": "red_cube",
+        "bbox_xyxy_raw": [
+          523.0,
+          544.0,
+          749.0,
+          766.0
+        ]
+      },
+      {
+        "class_name": "blue_cube",
+        "bbox_xyxy_raw": [
+          695.0,
+          154.0,
+          920.0,
+          392.0
+        ]
+      },
+      {
+        "class_name": "yellow_cube",
+        "bbox_xyxy_raw": [
+          1008.0,
+          415.0,
+          1236.0,
+          645.0
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.957754373550415,
+        "bbox_xyxy_raw": [
+          999.2933142185211,
+          415.38061559200287,
+          1233.5095131397247,
+          639.9208742380142
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 3,
+        "detector_roi_xywh_raw": [
+          840,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.9500060081481934,
+        "bbox_xyxy_raw": [
+          520.4248523712158,
+          541.2199401855469,
+          751.8853282928467,
+          768.3888244628906
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 2,
+        "class_name": "blue_cube",
+        "confidence": 0.8861538171768188,
+        "bbox_xyxy_raw": [
+          687.4361264705658,
+          145.14615297317505,
+          924.3470442295074,
+          390.71549892425537
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.04722842574119568,
+        "bbox_xyxy_raw": [
+          1515.8573913574219,
+          8.894805908203125,
+          1917.4962615966797,
+          637.510986328125
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.025187969207763672,
+        "bbox_xyxy_raw": [
+          1617.649598121643,
+          621.301349401474,
+          1919.481282234192,
+          1080
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 3,
+        "detector_roi_xywh_raw": [
+          840,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.010882556438446045,
+        "bbox_xyxy_raw": [
+          0,
+          0,
+          556.599805355072,
+          159.72992420196533
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1080,
+          1080
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00015.png",
+    "image_sha256": "c7c32badbc0ebcf279bd84881c09dee03c27ca216e01cc65dffdafac39a6ecb1",
+    "objects": [
+      {
+        "class_name": "red_cube",
+        "bbox_xyxy_raw": [
+          1046.0,
+          377.0,
+          1226.0,
+          544.0
+        ]
+      },
+      {
+        "class_name": "blue_cube",
+        "bbox_xyxy_raw": [
+          780.0,
+          377.0,
+          944.0,
+          538.0
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.847976565361023,
+        "bbox_xyxy_raw": [
+          1045.142850279808,
+          379.93338882923126,
+          1223.0726677179337,
+          541.5779274702072
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 3,
+        "detector_roi_xywh_raw": [
+          840,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "blue_cube",
+        "confidence": 0.7120285034179688,
+        "bbox_xyxy_raw": [
+          779.5181626081467,
+          376.0977065563202,
+          946.1251527070999,
+          537.7999556064606
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          420,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.26266080141067505,
+        "bbox_xyxy_raw": [
+          1222.7040839195251,
+          2.4166595935821533,
+          1919.0226244926453,
+          308.13103437423706
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 3,
+        "detector_roi_xywh_raw": [
+          840,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.08767244219779968,
+        "bbox_xyxy_raw": [
+          542.0517539978027,
+          885.24986743927,
+          1361.7481327056885,
+          1077.105016708374
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          420,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "blue_cube",
+        "confidence": 0.06767827272415161,
+        "bbox_xyxy_raw": [
+          520.7296800613403,
+          341.56113266944885,
+          709.2620229721069,
+          506.3158857822418
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.05488848686218262,
+        "bbox_xyxy_raw": [
+          525.0041484832764,
+          343.0875492095947,
+          692.0042896270752,
+          499.5885372161865
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.04272684454917908,
+        "bbox_xyxy_raw": [
+          522.5289067626,
+          343.84347796440125,
+          696.6771474480629,
+          504.5907533168793
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          420,
+          0,
+          1080,
+          1080
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.03791242837905884,
+        "bbox_xyxy_raw": [
+          1507.5341033935547,
+          0,
+          1916.2799835205078,
+          312.2157669067383
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.029784739017486572,
+        "bbox_xyxy_raw": [
+          525.5069732666016,
+          338.36923599243164,
+          695.5567932128906,
+          502.99089431762695
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.023245662450790405,
+        "bbox_xyxy_raw": [
+          779.5490741729736,
+          374.7011661529541,
+          944.020414352417,
+          537.9818630218506
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00080.png",
+    "image_sha256": "026249344849e37e0444426fda96856d22c1a4ba25bcb1b1908c665b60a4a6b3",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          441.59999999999997,
+          600.0,
+          1876.8,
+          1137.6
+        ],
+        "top_polygon_raw": [
+          [
+            590.4,
+            643.1999999999999
+          ],
+          [
+            1771.2,
+            600.0
+          ],
+          [
+            1872.0,
+            1012.8
+          ],
+          [
+            460.79999999999995,
+            1099.2
+          ]
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.9764529466629028,
+        "bbox_xyxy_raw": [
+          770.3902587890625,
+          485.27215576171875,
+          1910.5497436523438,
+          1217.0231323242188
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          768,
+          0,
+          1536,
+          1536
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.9583339691162109,
+        "bbox_xyxy_raw": [
+          407.38055419921875,
+          596.7558746337891,
+          1522.0850830078125,
+          1210.936752319336
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1536,
+          1536
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00081.png",
+    "image_sha256": "35eb5e485a8c575c00f63c1609947580bfc211f2e94c53b7022de3590b5224f2",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          189.375,
+          174.3426183844011,
+          714.375,
+          515.5292479108634
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.19033530354499817,
+        "bbox_xyxy_raw": [
+          187.02596485614777,
+          165.67835637927055,
+          611.5090420246124,
+          539.0794376432896
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          673,
+          673
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.022436439990997314,
+        "bbox_xyxy_raw": [
+          0,
+          0,
+          110.3022649884224,
+          154.85412491858006
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          673,
+          673
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.013470858335494995,
+        "bbox_xyxy_raw": [
+          191.6349560022354,
+          151.95071690014075,
+          756.8859905004501,
+          528.4637811327106
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00082.png",
+    "image_sha256": "5a85146dfe89b10808154ccb9e852516747ac02dbd41b9a4eabd382c9c24cd54",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          749.6999999999999,
+          300.9,
+          1800.3,
+          1473.8999999999999
+        ],
+        "top_polygon_raw": [
+          [
+            749.6999999999999,
+            1111.8
+          ],
+          [
+            1489.1999999999998,
+            300.9
+          ],
+          [
+            1795.1999999999998,
+            586.5
+          ],
+          [
+            989.4,
+            1468.8
+          ]
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.5589639544487,
+        "bbox_xyxy_raw": [
+          45.309741497039795,
+          331.39564847946167,
+          2448,
+          2396.8094143867493
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.482428640127182,
+        "bbox_xyxy_raw": [
+          663.8811149597168,
+          401.25949001312256,
+          1656.6139726638794,
+          1507.3681468963623
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.20032617449760437,
+        "bbox_xyxy_raw": [
+          90.29191017150879,
+          286.392249584198,
+          2448,
+          2340.6063809394836
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.07376667857170105,
+        "bbox_xyxy_raw": [
+          563.5174713134766,
+          340.9410037994385,
+          2448,
+          1608.3017234802246
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.07137781381607056,
+        "bbox_xyxy_raw": [
+          0,
+          430.9288330078125,
+          1330.659899711609,
+          2216.8281383514404
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00083.png",
+    "image_sha256": "6aefd2420e253934d1515d5d44fdf4c6706598e6221d38886bbf61b6b17c04ce",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          209.33333333333331,
+          244.0,
+          520.0,
+          381.3333333333333
+        ],
+        "top_polygon_raw": [
+          [
+            213.33333333333331,
+            254.66666666666666
+          ],
+          [
+            493.3333333333333,
+            245.33333333333331
+          ],
+          [
+            516.0,
+            345.3333333333333
+          ],
+          [
+            216.0,
+            364.0
+          ]
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.9114664793014526,
+        "bbox_xyxy_raw": [
+          207.0183277130127,
+          242.79762268066406,
+          519.8517894744873,
+          390.41168212890625
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.012699663639068604,
+        "bbox_xyxy_raw": [
+          197.6506805419922,
+          240.51959991455078,
+          521.1811065673828,
+          384.0071105957031
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00084.png",
+    "image_sha256": "7393f950d252adfbf61126ce71498f04170e353472a4407f0510e376fe4f7756",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          35.41666666666667,
+          104.21686746987953,
+          464.58333333333337,
+          239.6987951807229
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.30608856678009033,
+        "bbox_xyxy_raw": [
+          29.826462268829346,
+          100.04161257124217,
+          470.5086946487427,
+          247.99563404665156
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.13561782240867615,
+        "bbox_xyxy_raw": [
+          37.14664435386658,
+          98.2261905670166,
+          269.48612809181213,
+          247.44934451580048
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          346,
+          346
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.015745729207992554,
+        "bbox_xyxy_raw": [
+          258.7944757938385,
+          65.02303338050842,
+          450.2472553253174,
+          253.71865510940552
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          154,
+          0,
+          346,
+          346
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.010878980159759521,
+        "bbox_xyxy_raw": [
+          127.5571962594986,
+          70.79946994781494,
+          321.05080711841583,
+          249.58696055412292
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          346,
+          346
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00085.png",
+    "image_sha256": "0b4bd6523a85f1154ec2a1f30db4fc8fc1e0154c0363b10133a7e99cd8fc38f5",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          109.49583333333334,
+          283.4254143646409,
+          895.8750000000001,
+          571.8232044198895
+        ]
+      },
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          656.975,
+          457.4585635359116,
+          1468.2395833333335,
+          770.7182320441989
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.8653885126113892,
+        "bbox_xyxy_raw": [
+          87.78153955936432,
+          138.68029117584229,
+          894.2088693380356,
+          693.8459515571594
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          900,
+          900
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.5972729921340942,
+        "bbox_xyxy_raw": [
+          70.40909072756767,
+          49.999640272071325,
+          2352.3802213966846,
+          786.0647685787221
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.5532667636871338,
+        "bbox_xyxy_raw": [
+          645.3561825156212,
+          362.32970637978667,
+          1468.5563658475876,
+          809.616638341716
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.3191729784011841,
+        "bbox_xyxy_raw": [
+          1491.8171241283417,
+          123.44431132078171,
+          2261.2809851169586,
+          424.43249970674515
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 4,
+        "detector_roi_xywh_raw": [
+          1489,
+          0,
+          900,
+          900
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.04518952965736389,
+        "bbox_xyxy_raw": [
+          739.157160282135,
+          252.13016867637634,
+          1333.6591324806213,
+          507.2759449481964
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          496,
+          0,
+          900,
+          900
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.027339071035385132,
+        "bbox_xyxy_raw": [
+          995.0044147968292,
+          120.74658572673798,
+          1501.8829636573792,
+          789.1730815172195
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 3,
+        "detector_roi_xywh_raw": [
+          993,
+          0,
+          900,
+          900
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.011120080947875977,
+        "bbox_xyxy_raw": [
+          833.3582508563995,
+          136.4571685000405,
+          2331.950383543968,
+          581.8215641950696
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00086.png",
+    "image_sha256": "023060fca8cc8de8e0d199d3729c267754fc15aa31802e7cef02c3d486a78083",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          837.8,
+          179.86666666666667,
+          2092.133333333333,
+          970.3333333333334
+        ],
+        "top_polygon_raw": [
+          [
+            837.8,
+            284.0
+          ],
+          [
+            1154.9333333333334,
+            179.86666666666667
+          ],
+          [
+            2087.4,
+            407.06666666666666
+          ],
+          [
+            1642.4666666666667,
+            629.5333333333333
+          ]
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.7706878185272217,
+        "bbox_xyxy_raw": [
+          790.024167060852,
+          120.96202754974365,
+          2147.8788537979126,
+          1013.8781189918518
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          568,
+          0,
+          1704,
+          1704
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6248838901519775,
+        "bbox_xyxy_raw": [
+          60.254825592041016,
+          126.89370346069336,
+          2204.4949645996094,
+          1627.476417541504
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.03509366512298584,
+        "bbox_xyxy_raw": [
+          2017.1847927570343,
+          285.51062965393066,
+          2271.581089735031,
+          754.1705131530762
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          568,
+          0,
+          1704,
+          1704
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00087.png",
+    "image_sha256": "e4e3f03d44c931a7ac690f3af436eb5c1b6e1b6bb020301d045d46c1becbdd15",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          418.75,
+          775.0,
+          2562.5,
+          1681.25
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.9286551475524902,
+        "bbox_xyxy_raw": [
+          383.41766595840454,
+          659.1882705688477,
+          2602.5935411453247,
+          1761.265754699707
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00088.png",
+    "image_sha256": "afd5b6918f3898340077208ef2a0c366f2fc1e413e0b9c84a5c50f4c0c51abb6",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          124.89583333333333,
+          90.43421052631578,
+          448.0208333333333,
+          258.7105263157894
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.8960782289505005,
+        "bbox_xyxy_raw": [
+          111.15456223487854,
+          88.02562798394098,
+          448.4128952026367,
+          264.0699349862558
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.3628734052181244,
+        "bbox_xyxy_raw": [
+          0,
+          0,
+          293.063285946846,
+          336.59094577365454
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.20073112845420837,
+        "bbox_xyxy_raw": [
+          114.91703152656555,
+          71.28903007507324,
+          345.2272574901581,
+          268.31311225891113
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          348,
+          348
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.08499982953071594,
+        "bbox_xyxy_raw": [
+          0.650108814239502,
+          5.770208358764648,
+          224.91163873672485,
+          327.84363985061646
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          348,
+          348
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.035809457302093506,
+        "bbox_xyxy_raw": [
+          0,
+          0,
+          27.725656807422638,
+          37.48112377524376
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          348,
+          348
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.023910045623779297,
+        "bbox_xyxy_raw": [
+          277.4844741821289,
+          0,
+          494.07827949523926,
+          69.22609305381775
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          202,
+          0,
+          348,
+          348
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.02090439200401306,
+        "bbox_xyxy_raw": [
+          48.16762059926987,
+          0,
+          528.4788265824318,
+          103.85681378399885
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.017649948596954346,
+        "bbox_xyxy_raw": [
+          287.13169246912,
+          0,
+          511.5212306380272,
+          63.823278215196396
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.0173184871673584,
+        "bbox_xyxy_raw": [
+          0,
+          0,
+          198.3252124786377,
+          171.07906329631805
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          348,
+          348
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00089.png",
+    "image_sha256": "81781ac02d00bfc48367e8534e5cf4ba9cfc14d64fb6d8bb3e952564879935b5",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          1223.6,
+          220.76576576576576,
+          3648.0,
+          1674.7747747747749
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.4217139184474945,
+        "bbox_xyxy_raw": [
+          1188.060294687748,
+          201.4089012145996,
+          1684.9929723143578,
+          1347.9851508140564
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1690,
+          1690
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.05607685446739197,
+        "bbox_xyxy_raw": [
+          0.7833915948867798,
+          0.07756352424621582,
+          963.8301396369934,
+          1411.9041430950165
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1690,
+          1690
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.04861384630203247,
+        "bbox_xyxy_raw": [
+          143.50581645965576,
+          0,
+          1367.546067237854,
+          1078.8482838869095
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          1690,
+          1690
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.03445425629615784,
+        "bbox_xyxy_raw": [
+          1136.8986854553223,
+          164.64713824952202,
+          3642.453380584717,
+          1683.206718863314
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.018593400716781616,
+        "bbox_xyxy_raw": [
+          0,
+          4.767069756230221,
+          641.835940361023,
+          1390.5550748285864
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.015459418296813965,
+        "bbox_xyxy_raw": [
+          2829.888422012329,
+          82.02810263331932,
+          3642.507848739624,
+          710.1385063461111
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00090.png",
+    "image_sha256": "ec2cf269eb4d1baad664d9df3a76d36ac79e4f826f347dea3e63bc158b7782ea",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          32.697916666666664,
+          27.352941176470587,
+          336.10416666666663,
+          285.6862745098039
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.9665534496307373,
+        "bbox_xyxy_raw": [
+          16.244259774684906,
+          14.983111502110273,
+          351.7986658215523,
+          293.69690572804416
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.09336316585540771,
+        "bbox_xyxy_raw": [
+          24.562467336654663,
+          100.0089955329895,
+          224.57114577293396,
+          309.56777572631836
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          310,
+          310
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00091.png",
+    "image_sha256": "b9ae6c3402db7a3caa9902969a3acf22a49b60f6f6ad542de9b080d4f3e401b5",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          2.6666666666666665,
+          33.3596214511041,
+          638.6666666666666,
+          408.32176656151415
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.9853938221931458,
+        "bbox_xyxy_raw": [
+          221.28019458055496,
+          17.24525374174118,
+          629.2103233933449,
+          369.53144109249115
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          217,
+          0,
+          423,
+          423
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.05008569359779358,
+        "bbox_xyxy_raw": [
+          0,
+          35.36578576804618,
+          428.88824462890625,
+          389.47217167058636
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.02214193344116211,
+        "bbox_xyxy_raw": [
+          227.3042048215866,
+          310.5454089939594,
+          522.8912460803986,
+          423
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          217,
+          0,
+          423,
+          423
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.010229289531707764,
+        "bbox_xyxy_raw": [
+          25.85651595890522,
+          171.41946959495544,
+          216.92097763717175,
+          402.4380826950073
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          423,
+          423
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00092.png",
+    "image_sha256": "06ac184a05d514a4568e8a611fabd8a87f4a857bf2904566b3276ec946bd9f6f",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          19.225,
+          9.611842105263158,
+          764.19375,
+          478.9901315789474
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.5921141505241394,
+        "bbox_xyxy_raw": [
+          4.0843517780303955,
+          54.879993391625675,
+          591.9390326738358,
+          471.8007908573857
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.41002222895622253,
+        "bbox_xyxy_raw": [
+          56.2684223651886,
+          21.087796058183837,
+          566.7451074123383,
+          463.3679476137515
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.3769091069698334,
+        "bbox_xyxy_raw": [
+          36.721568167209625,
+          112.46382462978363,
+          376.35460072755814,
+          452.75659334659576
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          487,
+          487
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.022390633821487427,
+        "bbox_xyxy_raw": [
+          171.7324884235859,
+          112.92692875862122,
+          323.39241430163383,
+          446.7210873365402
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          487,
+          487
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00093.png",
+    "image_sha256": "4d14de7033d63126bc33f93bb1d000c5c297763d09fb71cd4352e6cd5a052626",
+    "objects": [
+      {
+        "class_name": "eraser",
+        "bbox_xyxy_raw": [
+          47.4375,
+          65.95225464190982,
+          283.9375,
+          201.29177718832892
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.98653244972229,
+        "bbox_xyxy_raw": [
+          44.86249655485153,
+          65.85523037886738,
+          287.9467847943306,
+          201.8012409874456
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.032119929790496826,
+        "bbox_xyxy_raw": [
+          52.41129511594772,
+          46.856953620910645,
+          232.90632909536362,
+          210.02707588672638
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          259,
+          259
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01567244529724121,
+        "bbox_xyxy_raw": [
+          44.12184262275696,
+          64.68649742007256,
+          225.82057738304138,
+          201.4128239452839
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          259,
+          259
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00146.png",
+    "image_sha256": "5c3e21fff48e29001e6013fa004109bf59fd39387d2d89d66b47ce24c570383c",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          16.57,
+          73.11,
+          639.83,
+          479.26
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6761821508407593,
+        "bbox_xyxy_raw": [
+          14.50958251953125,
+          35.48820495605469,
+          640,
+          474.3696594238281
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.3454788029193878,
+        "bbox_xyxy_raw": [
+          431.1761665344238,
+          81.96009635925293,
+          572.5872611999512,
+          252.31075286865234
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.16722741723060608,
+        "bbox_xyxy_raw": [
+          334.74842071533203,
+          40.32546043395996,
+          455.4028511047363,
+          220.63742637634277
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.1266792118549347,
+        "bbox_xyxy_raw": [
+          431.78964138031006,
+          1.109762191772461,
+          639.8228311538696,
+          260.84815979003906
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.015455156564712524,
+        "bbox_xyxy_raw": [
+          0,
+          372.79260635375977,
+          293.16186904907227,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00147.png",
+    "image_sha256": "52d7841b9e0cf67d747af33d42742055192e5e958dde9cdd56f45c55847f1afd",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          0.0,
+          5.56,
+          640,
+          248.95
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6282103061676025,
+        "bbox_xyxy_raw": [
+          4.7223663330078125,
+          1.123291015625,
+          640,
+          397.6024359095166
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.02765074372291565,
+        "bbox_xyxy_raw": [
+          41.418396949768066,
+          239.092270731926,
+          330.9174208641052,
+          428
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.014503389596939087,
+        "bbox_xyxy_raw": [
+          228.60692977905273,
+          2.732264468544408,
+          640,
+          253.39221798188504
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00148.png",
+    "image_sha256": "d65a391e03c7ddd63d9d816cc41a083f2fa2096f4a07a6874a9b31ccbdeeb3b0",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          23.76,
+          159.62,
+          589.55,
+          534.31
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6513938307762146,
+        "bbox_xyxy_raw": [
+          15.321434497833252,
+          48.285802602767944,
+          596.7897505760193,
+          582.2871387004852
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00149.png",
+    "image_sha256": "512f7a5dca1ff5d4411b3ff36eef2b4a916d4c40c7a211b657b1c1f5162f2724",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          0.0,
+          171.08,
+          488.08,
+          417
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6247662901878357,
+        "bbox_xyxy_raw": [
+          0,
+          165.76511949550604,
+          513.6668395996094,
+          408.69622441822895
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.04011821746826172,
+        "bbox_xyxy_raw": [
+          0.9976603388786317,
+          0.42355638742446905,
+          411.78372699022293,
+          177.490992218256
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          417,
+          417
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00150.png",
+    "image_sha256": "7646c22227faa9915b4c1e5333778d70585423b7471defcaea2a8a26d518bc01",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          326.28,
+          0.0,
+          640,
+          480
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.5012061595916748,
+        "bbox_xyxy_raw": [
+          289.94354248046875,
+          0,
+          640,
+          478.9527130126953
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.3164791464805603,
+        "bbox_xyxy_raw": [
+          6.133289337158203,
+          4.869074821472168,
+          427.7552604675293,
+          478.36376667022705
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.07647642493247986,
+        "bbox_xyxy_raw": [
+          166.02542877197266,
+          0.5820178985595703,
+          563.3546257019043,
+          143.20409774780273
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06887134909629822,
+        "bbox_xyxy_raw": [
+          349.93261337280273,
+          169.07162189483643,
+          640,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.043752074241638184,
+        "bbox_xyxy_raw": [
+          152.11492538452148,
+          0,
+          470.0320816040039,
+          142.4360704421997
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03215205669403076,
+        "bbox_xyxy_raw": [
+          10.106363296508789,
+          183.68322372436523,
+          270.576753616333,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.013617724180221558,
+        "bbox_xyxy_raw": [
+          180.46472549438477,
+          0,
+          502.7672576904297,
+          147.3764991760254
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.012800395488739014,
+        "bbox_xyxy_raw": [
+          0.04167795181274414,
+          396.7542886734009,
+          41.555020809173584,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.012081891298294067,
+        "bbox_xyxy_raw": [
+          392.3984479904175,
+          374.75303649902344,
+          640,
+          479.29229736328125
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.01118701696395874,
+        "bbox_xyxy_raw": [
+          6.764345169067383,
+          139.977765083313,
+          293.2448959350586,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.010982215404510498,
+        "bbox_xyxy_raw": [
+          43.380396366119385,
+          3.143134117126465,
+          215.39294958114624,
+          201.51572227478027
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00151.png",
+    "image_sha256": "31921c60b40812d2303e350f877f4ce485c5789429594a45fa01f650a30d6229",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          82.89,
+          285.06,
+          312.89,
+          640
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.648357629776001,
+        "bbox_xyxy_raw": [
+          64.2800235748291,
+          269.8573303222656,
+          346.8593502044678,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.17908233404159546,
+        "bbox_xyxy_raw": [
+          303.27006340026855,
+          50.91971397399902,
+          427.2037982940674,
+          324.8660659790039
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.010831117630004883,
+        "bbox_xyxy_raw": [
+          315.62835693359375,
+          265.82048416137695,
+          415.7599639892578,
+          634.6270561218262
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00152.png",
+    "image_sha256": "ee2af54b972d0cb20f3404c134ce707e4ff524d217c0045dfa693e296d392f88",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          88.72,
+          0.0,
+          572.69,
+          480
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.739147424697876,
+        "bbox_xyxy_raw": [
+          73.53187561035156,
+          0,
+          528.5144805908203,
+          468.0684280395508
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.18564829230308533,
+        "bbox_xyxy_raw": [
+          600.0917053222656,
+          379.5936584472656,
+          640,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.13784661889076233,
+        "bbox_xyxy_raw": [
+          507.9779243469238,
+          121.45095825195312,
+          639.8266410827637,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.10349157452583313,
+        "bbox_xyxy_raw": [
+          43.880929946899414,
+          63.93073081970215,
+          103.68339538574219,
+          163.59742164611816
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.0714549720287323,
+        "bbox_xyxy_raw": [
+          601.2260866165161,
+          382.65398025512695,
+          640,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.05885612964630127,
+        "bbox_xyxy_raw": [
+          6.532926559448242,
+          163.2425308227539,
+          115.94851493835449,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.01924803853034973,
+        "bbox_xyxy_raw": [
+          473.0796241760254,
+          340.7478332519531,
+          639.6764755249023,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.016791611909866333,
+        "bbox_xyxy_raw": [
+          155.45348167419434,
+          235.2125358581543,
+          316.9823455810547,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00153.png",
+    "image_sha256": "b1eec4b0939566dc892cddd86f2f367f87f78c7e32eb00aa2439998f9f693a44",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          28.75,
+          21.85,
+          499.87,
+          469.31
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.6412222981452942,
+        "bbox_xyxy_raw": [
+          237.72244572639465,
+          396.73134326934814,
+          289.1725432872772,
+          449.94170665740967
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.4589560627937317,
+        "bbox_xyxy_raw": [
+          8.325090408325195,
+          3.718128204345703,
+          477.5457286834717,
+          379.3902397155762
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.385158509016037,
+        "bbox_xyxy_raw": [
+          418.45056533813477,
+          351.4228391647339,
+          466.14004135131836,
+          399.0932893753052
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.25954851508140564,
+        "bbox_xyxy_raw": [
+          281.7641067504883,
+          427.0271873474121,
+          328.6771869659424,
+          469.29759979248047
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.08724123239517212,
+        "bbox_xyxy_raw": [
+          516.8752336502075,
+          453.7515163421631,
+          563.4357786178589,
+          479.6417713165283
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.08315441012382507,
+        "bbox_xyxy_raw": [
+          483.9030170440674,
+          418.8459777832031,
+          533.8822269439697,
+          470.4139709472656
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.05520227551460266,
+        "bbox_xyxy_raw": [
+          477.53990173339844,
+          369.89562034606934,
+          522.8140449523926,
+          415.4468250274658
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.04364997148513794,
+        "bbox_xyxy_raw": [
+          273.51887226104736,
+          31.331777572631836,
+          349.356951713562,
+          111.59420013427734
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.026840418577194214,
+        "bbox_xyxy_raw": [
+          339.4934558868408,
+          457.2864532470703,
+          390.82764625549316,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.022817164659500122,
+        "bbox_xyxy_raw": [
+          341.3045406341553,
+          70.9447431564331,
+          376.4051151275635,
+          111.14949703216553
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.017889440059661865,
+        "bbox_xyxy_raw": [
+          149.37293529510498,
+          325.34847259521484,
+          192.78507709503174,
+          366.1257553100586
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.013634264469146729,
+        "bbox_xyxy_raw": [
+          9.426765441894531,
+          17.1634578704834,
+          277.4502372741699,
+          317.8543949127197
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.010322332382202148,
+        "bbox_xyxy_raw": [
+          369.836483001709,
+          457.28599548339844,
+          442.8595733642578,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00154.png",
+    "image_sha256": "69ffc144e8d95ece91b6207bc404210843157ace22ef7dc0566500c5c982117e",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          0.0,
+          0.0,
+          500,
+          273.47
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.22593560814857483,
+        "bbox_xyxy_raw": [
+          409.7406268119812,
+          265.67939668893814,
+          457.63446390628815,
+          310.19923835992813
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          125,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.12362447381019592,
+        "bbox_xyxy_raw": [
+          0,
+          0,
+          119.47561427950859,
+          159.97052192687988
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.030149996280670166,
+        "bbox_xyxy_raw": [
+          385.30493155121803,
+          2.0250678062438965,
+          499.9747537076473,
+          154.9380049109459
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          125,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.021043479442596436,
+        "bbox_xyxy_raw": [
+          32.40423649549484,
+          260.42693853378296,
+          66.51083752512932,
+          308.57692658901215
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.019631505012512207,
+        "bbox_xyxy_raw": [
+          128.52564081549644,
+          0,
+          500,
+          237.8963828086853
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          125,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01473170518875122,
+        "bbox_xyxy_raw": [
+          296.9486974179745,
+          334.5564901828766,
+          356.38007894158363,
+          375
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          125,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.013079792261123657,
+        "bbox_xyxy_raw": [
+          113.43380808830261,
+          323.01415503025055,
+          181.49730563163757,
+          367.68315732479095
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.011886954307556152,
+        "bbox_xyxy_raw": [
+          0,
+          287.66724094748497,
+          82.9369593411684,
+          375
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.011681705713272095,
+        "bbox_xyxy_raw": [
+          385.3064849972725,
+          335.911151021719,
+          475.0818982720375,
+          375
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          125,
+          0,
+          375,
+          375
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.010505378246307373,
+        "bbox_xyxy_raw": [
+          164.87646102905273,
+          0,
+          350.6027162075043,
+          63.248489052057266
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          375,
+          375
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00155.png",
+    "image_sha256": "d45578a9f007d71f48efe248a1d9cf604d7a133164086e9906495ba0f2829317",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          275.9,
+          190.36,
+          427.03999999999996,
+          639.27
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.3718162178993225,
+        "bbox_xyxy_raw": [
+          2.2981648445129395,
+          321.08198642730713,
+          227.69722676277163,
+          637.9954133033752
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          212,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.28802257776260376,
+        "bbox_xyxy_raw": [
+          166.18829345703125,
+          230.59278523921967,
+          428,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          212,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.0894029438495636,
+        "bbox_xyxy_raw": [
+          163.3293377161026,
+          281.66877567768097,
+          344.5648378133774,
+          575.3586863279343
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          212,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.029585421085357666,
+        "bbox_xyxy_raw": [
+          282.4196654558182,
+          385.9257026910782,
+          428,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          212,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.017009854316711426,
+        "bbox_xyxy_raw": [
+          6.119514688413743,
+          437.77090072631836,
+          393.66377552768637,
+          639.797306060791
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.015758603811264038,
+        "bbox_xyxy_raw": [
+          320.97164475917816,
+          239.3618507385254,
+          416.6831976175309,
+          489.8625841140747
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          212,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.013983160257339478,
+        "bbox_xyxy_raw": [
+          212.33238336217332,
+          408.2349395751953,
+          428,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.012970447540283203,
+        "bbox_xyxy_raw": [
+          197.49594879150393,
+          43.225096464157104,
+          413.18068122863775,
+          282.28531289100647
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          428,
+          428
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.012627184391021729,
+        "bbox_xyxy_raw": [
+          7.605582237243653,
+          333.6680270433426,
+          189.15305376052856,
+          603.3524903059006
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          212,
+          428,
+          428
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00156.png",
+    "image_sha256": "d7dc243ffec62bb98eae384d60c9dfa629071c148a9657a99e1835ff533a4e24",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          15.33,
+          193.4,
+          537.85,
+          436.12
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6713663935661316,
+        "bbox_xyxy_raw": [
+          11.560821533203125,
+          182.4910545349121,
+          542.3541259765625,
+          445.9140968322754
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.5249750018119812,
+        "bbox_xyxy_raw": [
+          417.6257801055908,
+          36.804487109184265,
+          462.3512935638428,
+          70.21932899951935
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.508550763130188,
+        "bbox_xyxy_raw": [
+          378.4327554702759,
+          0.6395477056503296,
+          427.8521490097046,
+          24.277365803718567
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.3253810405731201,
+        "bbox_xyxy_raw": [
+          367.0946216583252,
+          62.56460666656494,
+          406.1681270599365,
+          91.83760643005371
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.2781701683998108,
+        "bbox_xyxy_raw": [
+          177.44892120361328,
+          0.12783050537109375,
+          600.8255577087402,
+          197.05836296081543
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.10930657386779785,
+        "bbox_xyxy_raw": [
+          277.92627692222595,
+          39.17745351791382,
+          318.02350640296936,
+          69.57049369812012
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06734457612037659,
+        "bbox_xyxy_raw": [
+          318.00933361053467,
+          81.82083249092102,
+          355.804648399353,
+          112.94193148612976
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06688466668128967,
+        "bbox_xyxy_raw": [
+          233.64326000213623,
+          0.6457901000976562,
+          281.3360834121704,
+          24.851911067962646
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.05972006916999817,
+        "bbox_xyxy_raw": [
+          326.09456062316895,
+          15.146688222885132,
+          368.8028812408447,
+          47.598592042922974
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.011471778154373169,
+        "bbox_xyxy_raw": [
+          402.96215057373047,
+          104.2207682132721,
+          442.2502899169922,
+          133.80552649497986
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01141306757926941,
+        "bbox_xyxy_raw": [
+          190.3331732749939,
+          15.977747440338135,
+          229.98268842697144,
+          47.93224096298218
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.010567814111709595,
+        "bbox_xyxy_raw": [
+          475.3905487060547,
+          10.816807746887207,
+          517.9346466064453,
+          46.94671154022217
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00157.png",
+    "image_sha256": "ad9f40ba73004739ba949bc63dc108e37b033c82d7ab72bf88c10a43e1e1d628",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          114.22,
+          200.02,
+          640,
+          479.16999999999996
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.568124532699585,
+        "bbox_xyxy_raw": [
+          175.12444019317627,
+          183.72230529785156,
+          638.2821989059448,
+          479.57347869873047
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.07345005869865417,
+        "bbox_xyxy_raw": [
+          0.8138465881347656,
+          144.20711517333984,
+          340.7934379577637,
+          360.64624786376953
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.02279728651046753,
+        "bbox_xyxy_raw": [
+          3.1699562072753906,
+          268.93815994262695,
+          269.331579208374,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.01753374934196472,
+        "bbox_xyxy_raw": [
+          104.176025390625,
+          161.1281394958496,
+          516.8366241455078,
+          332.894229888916
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.01500043272972107,
+        "bbox_xyxy_raw": [
+          0,
+          30.04688262939453,
+          535.6656646728516,
+          208.46176147460938
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00158.png",
+    "image_sha256": "5c16d7c75b16bca84ff70b694936ee5c4bdbf7db04b257b120e287ff4e4e6dbc",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          0.49,
+          41.64,
+          618.91,
+          458.0
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.5781104564666748,
+        "bbox_xyxy_raw": [
+          31.9677734375,
+          0,
+          640,
+          479
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.07827913761138916,
+        "bbox_xyxy_raw": [
+          0.7196470499038697,
+          144.85256588459018,
+          276.2511066198349,
+          478.849766612053
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          479,
+          479
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.025444746017456055,
+        "bbox_xyxy_raw": [
+          0.32534864544868475,
+          0.7589041590690614,
+          186.2575100064278,
+          457.584033548832
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          479,
+          479
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.01919877529144287,
+        "bbox_xyxy_raw": [
+          0,
+          260.15962454295345,
+          290.47449111938477,
+          429.647039826794
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.014845937490463257,
+        "bbox_xyxy_raw": [
+          195.7492224574089,
+          0,
+          466.84962505102163,
+          344.6753342747689
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          161,
+          0,
+          479,
+          479
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00159.png",
+    "image_sha256": "d142fec008b3828ce8d07fc6a8b9d287986cf435de31c65e8fc74efb26728ede",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          33.8,
+          106.33,
+          381.54,
+          372.13
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.607232928276062,
+        "bbox_xyxy_raw": [
+          8.18511962890625,
+          20.811805725097656,
+          538.8076019287109,
+          418.76720428466797
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.5463259220123291,
+        "bbox_xyxy_raw": [
+          553.687014579773,
+          3.7164688110351562,
+          639.8846864700317,
+          127.78793334960938
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.034829527139663696,
+        "bbox_xyxy_raw": [
+          385.98304748535156,
+          374.3175458908081,
+          640,
+          480
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.025045692920684814,
+        "bbox_xyxy_raw": [
+          274.0983247756958,
+          111.48897171020508,
+          558.1816816329956,
+          357.88825035095215
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          160,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.024228841066360474,
+        "bbox_xyxy_raw": [
+          404.9128723144531,
+          373.6648750305176,
+          637.4715423583984,
+          478.7447929382324
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00160.png",
+    "image_sha256": "15d164fd4cde7b089752ce8707c21209ee1500daaf92ee2bff745289dd149bd1",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          52.57,
+          36.84,
+          459.75,
+          307.53999999999996
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.705812931060791,
+        "bbox_xyxy_raw": [
+          11.170491576194763,
+          0,
+          500,
+          371.6140389442444
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.02226191759109497,
+        "bbox_xyxy_raw": [
+          337.359294295311,
+          33.450935035943985,
+          500,
+          180.7720921933651
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          125,
+          0,
+          375,
+          375
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00161.png",
+    "image_sha256": "87e5fa0fdb61261432be5ee02eceb1a0d9afc1d99fc469dd8b69a272c139fb81",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          50.23,
+          100.12,
+          437.22,
+          312.31
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.7177228331565857,
+        "bbox_xyxy_raw": [
+          33.848583698272705,
+          88.47487717866898,
+          447.226345539093,
+          332.60416239500046
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00162.png",
+    "image_sha256": "ffe82d2928b942d216e09600597fb59d9bbfd75b44034a951c0e8478288adbfe",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          98.81,
+          311.05,
+          480,
+          482.0
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.6871278882026672,
+        "bbox_xyxy_raw": [
+          41.38099670410156,
+          123.98696899414062,
+          480,
+          499.5498275756836
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.05680292844772339,
+        "bbox_xyxy_raw": [
+          270.83593368530273,
+          282.490291595459,
+          480,
+          635.0061416625977
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.04068082571029663,
+        "bbox_xyxy_raw": [
+          0,
+          89.2605972290039,
+          91.83933734893799,
+          476.1156463623047
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.0259874165058136,
+        "bbox_xyxy_raw": [
+          276.82183742523193,
+          337.7868604660034,
+          479.97103214263916,
+          477.7993440628052
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00163.png",
+    "image_sha256": "e89306e440ed5d5ad2b08659c3d3ca7e811b5bc3e57884c25f977d96dd58dcf9",
+    "objects": [
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          48.54,
+          3.34,
+          391.78000000000003,
+          290.78999999999996
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.61263108253479,
+        "bbox_xyxy_raw": [
+          5.117988586425781,
+          0,
+          493.9264678955078,
+          445.0459124979548
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00164.png",
+    "image_sha256": "af5382a0025a51df6fac1d3284be23bf5bf3053ad0216ec2faa537c5f299a0ce",
+    "objects": [
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          76.55,
+          387.62,
+          121.97,
+          442.59000000000003
+        ]
+      },
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          246.95,
+          118.32,
+          291.75,
+          172.14999999999998
+        ]
+      },
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          353.51,
+          130.01,
+          389.62,
+          171.82
+        ]
+      },
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          222.01,
+          126.0,
+          254.38,
+          172.06
+        ]
+      },
+      {
+        "class_name": "scissors",
+        "bbox_xyxy_raw": [
+          170.75,
+          213.73,
+          190.92000000000002,
+          238.14
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.9348070025444031,
+        "bbox_xyxy_raw": [
+          69.5960807800293,
+          380.1150703430176,
+          125.5647087097168,
+          445.5120658874512
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.7687681317329407,
+        "bbox_xyxy_raw": [
+          352.7514123916626,
+          129.1087818145752,
+          393.73319149017334,
+          174.97758865356445
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.7357473373413086,
+        "bbox_xyxy_raw": [
+          244.9152946472168,
+          116.16662621498108,
+          296.2489128112793,
+          174.53012824058533
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.5797349214553833,
+        "bbox_xyxy_raw": [
+          279.8589897155762,
+          384.98722076416016,
+          327.5499153137207,
+          466.04503631591797
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.573731005191803,
+        "bbox_xyxy_raw": [
+          118.16667795181274,
+          201.54464602470398,
+          189.04041051864624,
+          282.0707619190216
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.5530157089233398,
+        "bbox_xyxy_raw": [
+          223.5964035987854,
+          122.93256282806396,
+          258.0621314048767,
+          173.69409084320068
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.542996883392334,
+        "bbox_xyxy_raw": [
+          117.4862015247345,
+          396.58451557159424,
+          156.9489562511444,
+          441.869158744812
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.5307756662368774,
+        "bbox_xyxy_raw": [
+          44.498629570007324,
+          194.6051025390625,
+          132.1510362625122,
+          281.70047760009766
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.48042333126068115,
+        "bbox_xyxy_raw": [
+          394.3997383117676,
+          129.93737697601318,
+          435.8821678161621,
+          173.45353603363037
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.3851185441017151,
+        "bbox_xyxy_raw": [
+          196.37438535690308,
+          125.62550067901611,
+          227.85157442092896,
+          174.23659801483154
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.19401314854621887,
+        "bbox_xyxy_raw": [
+          189.9604034423828,
+          119.31419849395752,
+          260.5793762207031,
+          174.59777355194092
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.1654232144355774,
+        "bbox_xyxy_raw": [
+          318.3150243759155,
+          142.02926874160767,
+          348.33513736724854,
+          174.76407766342163
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.14123883843421936,
+        "bbox_xyxy_raw": [
+          0,
+          219.3274974822998,
+          31.940536499023438,
+          282.3576068878174
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.13533565402030945,
+        "bbox_xyxy_raw": [
+          2.7708959579467773,
+          97.37695693969727,
+          51.765313148498535,
+          179.34131622314453
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.13458600640296936,
+        "bbox_xyxy_raw": [
+          0,
+          361.35552644729614,
+          17.60801374912262,
+          466.1738085746765
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.1310540735721588,
+        "bbox_xyxy_raw": [
+          21.01769506931305,
+          384.2367935180664,
+          79.09620702266693,
+          444.3540954589844
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.12714332342147827,
+        "bbox_xyxy_raw": [
+          280.11082649230957,
+          145.64284086227417,
+          309.7653865814209,
+          176.29159212112427
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.12460553646087646,
+        "bbox_xyxy_raw": [
+          419.2275810241699,
+          118.61431002616882,
+          475.68729400634766,
+          174.02310490608215
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.10304847359657288,
+        "bbox_xyxy_raw": [
+          379.30830001831055,
+          127.22559213638306,
+          414.17890548706055,
+          174.46017980575562
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.07578906416893005,
+        "bbox_xyxy_raw": [
+          195.85817098617554,
+          375.5828285217285,
+          240.83126306533813,
+          452.93230056762695
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06171995401382446,
+        "bbox_xyxy_raw": [
+          113.4393310546875,
+          322.87357807159424,
+          176.4441204071045,
+          368.49135875701904
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.05524289608001709,
+        "bbox_xyxy_raw": [
+          325.2654266357422,
+          123.36971282958984,
+          395.8946228027344,
+          178.57587814331055
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.050446778535842896,
+        "bbox_xyxy_raw": [
+          441.49224758148193,
+          551.7193603515625,
+          477.7370309829712,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.042605817317962646,
+        "bbox_xyxy_raw": [
+          261.86479568481445,
+          368.9441967010498,
+          480,
+          636.5268039703369
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.04041570425033569,
+        "bbox_xyxy_raw": [
+          337.5512409210205,
+          121.28130912780762,
+          368.1953716278076,
+          174.63958740234375
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03632861375808716,
+        "bbox_xyxy_raw": [
+          91.31282806396484,
+          191.90096855163574,
+          129.24209594726562,
+          283.01419258117676
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03506705164909363,
+        "bbox_xyxy_raw": [
+          51.001219749450684,
+          109.09324645996094,
+          123.43634128570557,
+          179.5191764831543
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.034438371658325195,
+        "bbox_xyxy_raw": [
+          81.09947204589844,
+          308.190279006958,
+          177.71648406982422,
+          371.9086742401123
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03263753652572632,
+        "bbox_xyxy_raw": [
+          0.05581319332122803,
+          322.6781940460205,
+          25.146567821502686,
+          461.45191192626953
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.028147131204605103,
+        "bbox_xyxy_raw": [
+          120.00778913497925,
+          327.68199920654297,
+          148.4667706489563,
+          369.4068145751953
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.026268690824508667,
+        "bbox_xyxy_raw": [
+          207.32288360595703,
+          115.23326873779297,
+          323.6869430541992,
+          178.67727279663086
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01902240514755249,
+        "bbox_xyxy_raw": [
+          293.8094472885132,
+          144.9220848083496,
+          328.49966526031494,
+          176.62891387939453
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01762104034423828,
+        "bbox_xyxy_raw": [
+          113.48795890808105,
+          107.99003601074219,
+          191.36029243469238,
+          180.55538177490234
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01697447896003723,
+        "bbox_xyxy_raw": [
+          133.11609506607056,
+          233.24703454971313,
+          178.3424735069275,
+          282.7586531639099
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.013028889894485474,
+        "bbox_xyxy_raw": [
+          45.1002037525177,
+          207.542724609375,
+          79.53851580619812,
+          285.7354545593262
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.012688249349594116,
+        "bbox_xyxy_raw": [
+          461.4781665802002,
+          526.0744094848633,
+          479.9231815338135,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.011927783489227295,
+        "bbox_xyxy_raw": [
+          40.963876247406006,
+          314.4944167137146,
+          76.14534616470337,
+          382.75943994522095
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.011329829692840576,
+        "bbox_xyxy_raw": [
+          82.53185749053955,
+          295.9275722503662,
+          109.57982540130615,
+          369.1115093231201
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.010332942008972168,
+        "bbox_xyxy_raw": [
+          371.9595193862915,
+          214.44489300251007,
+          414.5454168319702,
+          241.94522082805634
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.010249704122543335,
+        "bbox_xyxy_raw": [
+          19.17848825454712,
+          322.64001846313477,
+          90.4177737236023,
+          448.2505416870117
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.010092735290527344,
+        "bbox_xyxy_raw": [
+          0,
+          115.435870885849,
+          14.909473657608032,
+          182.34025597572327
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00165.png",
+    "image_sha256": "3ce964fbfc28daa5ba60e1b5c1397691a07af86f0263db6926dc92e939a130be",
+    "objects": [
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          416.99,
+          244.26,
+          463.39,
+          291.16999999999996
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.6217145919799805,
+        "bbox_xyxy_raw": [
+          65.76481103897095,
+          457.10397243499756,
+          99.73420858383179,
+          487.4652338027954
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.5798147320747375,
+        "bbox_xyxy_raw": [
+          3.071722984313965,
+          0.5621337890625,
+          479.40603733062744,
+          256.9029235839844
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.4037814140319824,
+        "bbox_xyxy_raw": [
+          454.57473278045654,
+          234.40518260002136,
+          479.9400758743286,
+          296.75682187080383
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.2097063660621643,
+        "bbox_xyxy_raw": [
+          428.1854438781738,
+          122.47730255126953,
+          469.1477394104004,
+          181.0737705230713
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.1997700035572052,
+        "bbox_xyxy_raw": [
+          58.90158534049988,
+          283.46129417419434,
+          127.32025265693665,
+          311.15954399108887
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.18888762593269348,
+        "bbox_xyxy_raw": [
+          408.06886196136475,
+          236.41011238098145,
+          476.0810708999634,
+          297.13303565979004
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.12308591604232788,
+        "bbox_xyxy_raw": [
+          0.6529045104980469,
+          426.0680961608887,
+          24.07938003540039,
+          510.70329666137695
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.1194148063659668,
+        "bbox_xyxy_raw": [
+          4.560796022415161,
+          248.61874103546143,
+          51.04503035545349,
+          310.93966007232666
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.1148749589920044,
+        "bbox_xyxy_raw": [
+          142.10423469543457,
+          563.7026834487915,
+          319.24235343933105,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06980985403060913,
+        "bbox_xyxy_raw": [
+          92.3263692855835,
+          281.4729905128479,
+          129.72527503967285,
+          311.53308629989624
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06417545676231384,
+        "bbox_xyxy_raw": [
+          218.705792427063,
+          15.269021987915039,
+          387.05344676971436,
+          254.3090057373047
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.05932915210723877,
+        "bbox_xyxy_raw": [
+          365.16088485717773,
+          237.4195384979248,
+          419.9416923522949,
+          296.53961658477783
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.04171678423881531,
+        "bbox_xyxy_raw": [
+          4.396875500679016,
+          213.56907486915588,
+          59.68251407146454,
+          254.29002165794373
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.038388997316360474,
+        "bbox_xyxy_raw": [
+          4.971420764923096,
+          204.48512136936188,
+          93.02035331726074,
+          257.21613824367523
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03352755308151245,
+        "bbox_xyxy_raw": [
+          3.9256668090820312,
+          173.63360404968262,
+          143.37693214416504,
+          260.0328063964844
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.030319392681121826,
+        "bbox_xyxy_raw": [
+          13.222553730010986,
+          169.19548153877258,
+          69.75019454956055,
+          202.47007966041565
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 3,
+        "class_name": "eraser",
+        "confidence": 0.026906847953796387,
+        "bbox_xyxy_raw": [
+          288.70983123779297,
+          368.3166170120239,
+          458.6524200439453,
+          487.13183879852295
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.024971306324005127,
+        "bbox_xyxy_raw": [
+          144.27047729492188,
+          569.2334175109863,
+          325.75931549072266,
+          640
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.019100308418273926,
+        "bbox_xyxy_raw": [
+          3.8282346725463867,
+          224.1725730895996,
+          77.91872978210449,
+          310.92516899108887
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.018577098846435547,
+        "bbox_xyxy_raw": [
+          290.8752965927124,
+          256.9859564304352,
+          362.14483737945557,
+          298.02024245262146
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.015953242778778076,
+        "bbox_xyxy_raw": [
+          301.4907646179199,
+          61.57548904418945,
+          480,
+          245.3230094909668
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.015113115310668945,
+        "bbox_xyxy_raw": [
+          272.70116806030273,
+          85.68989753723145,
+          387.71066665649414,
+          256.16786003112793
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01500663161277771,
+        "bbox_xyxy_raw": [
+          45.95526695251465,
+          253.3613121509552,
+          136.8976879119873,
+          312.6892077922821
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "red_cube",
+        "confidence": 0.011753380298614502,
+        "bbox_xyxy_raw": [
+          85.64317345619202,
+          348.3851432800293,
+          104.81864333152771,
+          372.37908363342285
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          160,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.011623799800872803,
+        "bbox_xyxy_raw": [
+          307.2444248199463,
+          332.58378982543945,
+          462.2654056549072,
+          422.09278106689453
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.010669946670532227,
+        "bbox_xyxy_raw": [
+          313.31823348999023,
+          237.67870903015137,
+          408.2915687561035,
+          296.7529773712158
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.010154247283935547,
+        "bbox_xyxy_raw": [
+          281.6626739501953,
+          1.9575977325439453,
+          479.6583366394043,
+          254.3880558013916
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          480,
+          480
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00166.png",
+    "image_sha256": "a74ad1f00f8784951dee66becd0aafe4ba3fd972b071277edf1297d666b9e61e",
+    "objects": [
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          210.76,
+          0.0,
+          250.48,
+          41.2
+        ]
+      },
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          253.31,
+          0.19,
+          290.63,
+          38.86
+        ]
+      },
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          295.31,
+          0.63,
+          330.95,
+          36.06
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.8453229665756226,
+        "bbox_xyxy_raw": [
+          293.47020399570465,
+          0.634852945804596,
+          335.30272829532623,
+          39.95138284564018
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          426,
+          426
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.8357526063919067,
+        "bbox_xyxy_raw": [
+          250.28834609687328,
+          0.315223753452301,
+          295.77584214508533,
+          42.08866184949875
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          214,
+          0,
+          426,
+          426
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.7876486778259277,
+        "bbox_xyxy_raw": [
+          207.1456985771656,
+          0,
+          253.26014444231987,
+          44.41553342342377
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          426,
+          426
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.7192807197570801,
+        "bbox_xyxy_raw": [
+          407.73218154907227,
+          31.256314341973,
+          473.35485458374023,
+          138.318547335538
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.6295520067214966,
+        "bbox_xyxy_raw": [
+          505.8943391442299,
+          240.89417266845703,
+          595.2020820975304,
+          316.74135732650757
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          214,
+          0,
+          426,
+          426
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.3839139938354492,
+        "bbox_xyxy_raw": [
+          474.0992836356163,
+          59.875272274017334,
+          630.7877956032753,
+          251.38736951351166
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          214,
+          0,
+          426,
+          426
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.07779669761657715,
+        "bbox_xyxy_raw": [
+          428.65081787109375,
+          124.66026198759107,
+          499.9908447265625,
+          191.95698457868917
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 1,
+        "class_name": "yellow_cube",
+        "confidence": 0.048418015241622925,
+        "bbox_xyxy_raw": [
+          143.09850105643272,
+          169.43893763422966,
+          186.2471343576908,
+          214.18007996678352
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          426,
+          426
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03265613317489624,
+        "bbox_xyxy_raw": [
+          339.85984802246094,
+          126.25918861008809,
+          445.63453674316406,
+          188.2623487455754
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.01980796456336975,
+        "bbox_xyxy_raw": [
+          235.0246426463127,
+          89.00570377707481,
+          417.4220264554024,
+          187.88854756951332
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          426,
+          426
+        ]
+      }
+    ]
+  },
+  {
+    "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00167.png",
+    "image_sha256": "793510923861706380cc98f061fa573abd62bc850e133de87e23b4254af05239",
+    "objects": [
+      {
+        "class_name": "small_canister",
+        "bbox_xyxy_raw": [
+          330.11,
+          339.56,
+          358.3,
+          372.08
+        ]
+      }
+    ],
+    "detections": [
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.13919109106063843,
+        "bbox_xyxy_raw": [
+          324.678847193718,
+          336.8673518300057,
+          362.2848212718964,
+          374.41014796495443
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.12697431445121765,
+        "bbox_xyxy_raw": [
+          310.0473776459694,
+          208.32074359059337,
+          356.35990053415304,
+          266.7976550757885
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.09863346815109253,
+        "bbox_xyxy_raw": [
+          54.54057604074479,
+          2.0737893879413605,
+          182.28115886449817,
+          209.60317477583888
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.09494742751121521,
+        "bbox_xyxy_raw": [
+          167.4296760559082,
+          335.4303741455078,
+          372.6496696472168,
+          550.0841522216797
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.06782039999961853,
+        "bbox_xyxy_raw": [
+          109.59596745669843,
+          11.455827951431276,
+          315.21176286041737,
+          269.61706578731537
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "scissors",
+        "confidence": 0.04353073239326477,
+        "bbox_xyxy_raw": [
+          165.2229118347168,
+          333.170223236084,
+          375.2887153625488,
+          555.3974342346191
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.03676009178161621,
+        "bbox_xyxy_raw": [
+          308.67181345820427,
+          473.3830699324608,
+          357.54937604069715,
+          550.5859592556953
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 2,
+        "detector_roi_xywh_raw": [
+          0,
+          215,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.02944624423980713,
+        "bbox_xyxy_raw": [
+          338.5501675307751,
+          208.46649110317233,
+          359.60501506924635,
+          266.9928252696991
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.02662593126296997,
+        "bbox_xyxy_raw": [
+          169.29447174072266,
+          415.90099334716797,
+          278.55213165283203,
+          545.5780410766602
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.022768735885620117,
+        "bbox_xyxy_raw": [
+          174.87398199737075,
+          6.871715933084489,
+          277.47619040310383,
+          200.80622881650928
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.01821655035018921,
+        "bbox_xyxy_raw": [
+          282.7460479736328,
+          48.33576202392578,
+          388.01856994628906,
+          203.5626220703125
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 0,
+        "detector_roi_xywh_raw": null
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.015521705150604248,
+        "bbox_xyxy_raw": [
+          211.69695109128955,
+          18.937069177627563,
+          298.05415719747543,
+          245.89534401893619
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.013582617044448853,
+        "bbox_xyxy_raw": [
+          310.5009213089943,
+          202.8707277029753,
+          338.16703408956533,
+          258.32516737282276
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "small_canister",
+        "confidence": 0.011149406433105469,
+        "bbox_xyxy_raw": [
+          353.88828516006475,
+          0,
+          381.6487848758698,
+          35.84580086171627
+        ],
+        "model_role": "mode_b_detector",
+        "trained": true,
+        "detector_pass_index": 1,
+        "detector_roi_xywh_raw": [
+          0,
+          0,
+          425,
+          425
+        ]
+      }
+    ]
+  }
+]

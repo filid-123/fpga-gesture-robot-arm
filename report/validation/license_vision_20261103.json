@@ -1,0 +1,36 @@
+{
+  "schema": "gesture.publication.license_vision_validation.v1",
+  "date": "2026-11-03",
+  "baseline_main": "3d15003911a570ea41182bc9cb45cfb5e18d07ca",
+  "source_archive_sha256": "c29a4f659c341646d2354006435401aa5458eb135630601a7b1077b9ba7b8adf",
+  "team_original_license": "AGPL-3.0-only",
+  "license_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+  "tests": {
+    "existing_release_tools": 42,
+    "vision_metrics": 10,
+    "failures": 0
+  },
+  "frozen_runtime_files_hash_verified": 19,
+  "offline_inference_images": 58,
+  "saved_vision_metrics_reproduced": true,
+  "previous_public_metrics_reproduced": true,
+  "official_coco_bbox_reference": "metrics/evidence/vision_20261103/coco_reference.json",
+  "independent_test_accepted": false,
+  "human_ground_truth_reviewed": false,
+  "hardware_access": false,
+  "visibility_changed": false,
+  "production_files_changed": false,
+  "full_repository_checker": "NOT_RUN_ON_SPARSE_WORKTREE",
+  "substitute_integrity_check": "Root files and staged tree manifest checked; project subtree identical to baseline Git tree",
+  "initial_check_limitations": [
+    "An old-public-metrics verification attempt initially lacked HWH and related sealed files in the sparse worktree; exact baseline blobs were restored and the verification then passed.",
+    "Full original-package reinstall, full physical checkout, hardware tests, HIP/NPU inference and new independent scene capture were not performed."
+  ],
+  "model_dataset_redistribution": "PARTIALLY_UNRESOLVED_SEE_LICENSE_AUDIT",
+  "original_project_subtree": "f04bcf84a99d759650c991beda027a5d2614e11b",
+  "whitespace_check": {
+    "authored_files": "PASS_WITH_CR_AT_EOL",
+    "upstream_snapshot_messages": 11,
+    "note": "Original upstream text snapshots retain whitespace to preserve their recorded SHA; no upstream bytes normalized."
+  }
+}

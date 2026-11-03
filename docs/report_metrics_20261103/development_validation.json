@@ -1,0 +1,1364 @@
+{
+  "schema": "gesture.report.vision_eval_set.v1",
+  "training_manifests": [
+    "handoff/detector_source_dataset.json",
+    "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json"
+  ],
+  "human_ground_truth_reviewed": false,
+  "label_provenance": "ASSISTANT_VISUAL_APPROXIMATE_BOXES_AND_VISIBLE_TOP_POLYGONS_NOT_HUMAN_METROLOGY",
+  "six_class_independent_test_accepted": false,
+  "scope": "DEVELOPMENT_VALIDATION",
+  "source_manifest": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json",
+  "source_manifest_sha256": "ea9d170080d30e2a6ca22c5cf9b3387b36f5f5d746dfcefe254aa34585246db9",
+  "independent_layouts": null,
+  "items": [
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00009.png",
+      "image_sha256": "f91822db90fab04d151ad1ed75fdc56b63546e7fd6ad56d6e9e7552ef9277aec",
+      "pixel_sha256": "1da1ea1481c390cec3ee5985e2a6fcc802584533239c65205b7cd21136ea1e90",
+      "image_size_wh": [
+        1920,
+        1080
+      ],
+      "objects": [
+        {
+          "class_name": "red_cube",
+          "bbox_xyxy_raw": [
+            523.0,
+            544.0,
+            749.0,
+            766.0
+          ]
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_xyxy_raw": [
+            695.0,
+            154.0,
+            920.0,
+            392.0
+          ]
+        },
+        {
+          "class_name": "yellow_cube",
+          "bbox_xyxy_raw": [
+            1008.0,
+            415.0,
+            1236.0,
+            645.0
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "old_validation_20261023_160205",
+      "source": {
+        "kind": "PROJECT_EXISTING_CUBE_DATA",
+        "manifest": "artifacts/multiobject/exposure_field_20261025_01/prepared/dataset.json",
+        "image_sha256": "f91822db90fab04d151ad1ed75fdc56b63546e7fd6ad56d6e9e7552ef9277aec"
+      },
+      "annotation_kind": "AI_VISUAL_REVIEWED_HISTORICAL_BOXES_NOT_HUMAN_GROUND_TRUTH"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00015.png",
+      "image_sha256": "c7c32badbc0ebcf279bd84881c09dee03c27ca216e01cc65dffdafac39a6ecb1",
+      "pixel_sha256": "be673302c9dc5227f2521148a02a14fac610b3cf5f0ec5544bc84819c933cdbf",
+      "image_size_wh": [
+        1920,
+        1080
+      ],
+      "objects": [
+        {
+          "class_name": "red_cube",
+          "bbox_xyxy_raw": [
+            1046.0,
+            377.0,
+            1226.0,
+            544.0
+          ]
+        },
+        {
+          "class_name": "blue_cube",
+          "bbox_xyxy_raw": [
+            780.0,
+            377.0,
+            944.0,
+            538.0
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "historical_20261022_three_blocks",
+      "source": {
+        "kind": "PROJECT_EXISTING_CUBE_DATA",
+        "manifest": "artifacts/multiobject/exposure_field_20261025_01/prepared/dataset.json",
+        "image_sha256": "c7c32badbc0ebcf279bd84881c09dee03c27ca216e01cc65dffdafac39a6ecb1"
+      },
+      "annotation_kind": "AI_VISUAL_REVIEWED_HISTORICAL_BOXES_NOT_HUMAN_GROUND_TRUTH"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00080.png",
+      "image_sha256": "026249344849e37e0444426fda96856d22c1a4ba25bcb1b1908c665b60a4a6b3",
+      "pixel_sha256": "92b2cad5885a4d2ecc0f3a946f7f90327d093f4c3eaaf8d1e45f10cb7964c557",
+      "image_size_wh": [
+        2304,
+        1536
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            441.59999999999997,
+            600.0,
+            1876.8,
+            1137.6
+          ],
+          "top_polygon_raw": [
+            [
+              590.4,
+              643.1999999999999
+            ],
+            [
+              1771.2,
+              600.0
+            ],
+            [
+              1872.0,
+              1012.8
+            ],
+            [
+              460.79999999999995,
+              1099.2
+            ]
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00001-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00001-18.jpg",
+        "path": "data/data_6/00001-18.jpg",
+        "image_sha256": "03c66a8bfd82b3642b07aaa0138149478388335a8be7949f5a07e7f909b418f3",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00081.png",
+      "image_sha256": "35eb5e485a8c575c00f63c1609947580bfc211f2e94c53b7022de3590b5224f2",
+      "pixel_sha256": "78c5d243c28f32c6a05438e952c235fc415549021a28eee656ebf18bafd9d66b",
+      "image_size_wh": [
+        900,
+        673
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            189.375,
+            174.3426183844011,
+            714.375,
+            515.5292479108634
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00004-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00004-18.jpg",
+        "path": "data/data_6/00004-18.jpg",
+        "image_sha256": "176806b1dca01d5c7a6b0b8d9482e28a45bf68a689b7e61f44af732439dacd1c",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00082.png",
+      "image_sha256": "5a85146dfe89b10808154ccb9e852516747ac02dbd41b9a4eabd382c9c24cd54",
+      "pixel_sha256": "214de4ddd947273ef880fcebd9249bb124851e72b26af98a0cdd1a4f1ee3da42",
+      "image_size_wh": [
+        2448,
+        2448
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            749.6999999999999,
+            300.9,
+            1800.3,
+            1473.8999999999999
+          ],
+          "top_polygon_raw": [
+            [
+              749.6999999999999,
+              1111.8
+            ],
+            [
+              1489.1999999999998,
+              300.9
+            ],
+            [
+              1795.1999999999998,
+              586.5
+            ],
+            [
+              989.4,
+              1468.8
+            ]
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00008-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00008-18.jpg",
+        "path": "data/data_6/00008-18.jpg",
+        "image_sha256": "6755118ded58c7f33449c208daf4ef725390c1486f957e7125995a1d7ce72134",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00083.png",
+      "image_sha256": "6aefd2420e253934d1515d5d44fdf4c6706598e6221d38886bbf61b6b17c04ce",
+      "pixel_sha256": "0afd9addf70df8a3d798ada77ab0ae5815e8401473ddc1acf95520a8e674661d",
+      "image_size_wh": [
+        640,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            209.33333333333331,
+            244.0,
+            520.0,
+            381.3333333333333
+          ],
+          "top_polygon_raw": [
+            [
+              213.33333333333331,
+              254.66666666666666
+            ],
+            [
+              493.3333333333333,
+              245.33333333333331
+            ],
+            [
+              516.0,
+              345.3333333333333
+            ],
+            [
+              216.0,
+              364.0
+            ]
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00013-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00013-18.jpg",
+        "path": "data/data_6/00013-18.jpg",
+        "image_sha256": "dee696d8f41d8766d0646b8e6bf20fa01f30cabfcea23a681f86ecf1fd08af44",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00084.png",
+      "image_sha256": "7393f950d252adfbf61126ce71498f04170e353472a4407f0510e376fe4f7756",
+      "pixel_sha256": "194cba5d2a9de2e80747716463310a99c4aa9583e879673a8138662351c4120e",
+      "image_size_wh": [
+        500,
+        346
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            35.41666666666667,
+            104.21686746987953,
+            464.58333333333337,
+            239.6987951807229
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00014-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00014-18.jpg",
+        "path": "data/data_6/00014-18.jpg",
+        "image_sha256": "97310972892b5e4ae8042f8fde12635ed9cd2639750adafb0d08b0a700de4cff",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00085.png",
+      "image_sha256": "0b4bd6523a85f1154ec2a1f30db4fc8fc1e0154c0363b10133a7e99cd8fc38f5",
+      "pixel_sha256": "f2dc6612f784136a0fa44b57dfd748e1f3aaf0704ff2b989dad01400be5dbdb0",
+      "image_size_wh": [
+        2389,
+        900
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            109.49583333333334,
+            283.4254143646409,
+            895.8750000000001,
+            571.8232044198895
+          ]
+        },
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            656.975,
+            457.4585635359116,
+            1468.2395833333335,
+            770.7182320441989
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00021-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00021-18.jpg",
+        "path": "data/data_6/00021-18.jpg",
+        "image_sha256": "2428922c776281daccd401245b21811b251aa25067b833561f980ba973c825ce",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00086.png",
+      "image_sha256": "023060fca8cc8de8e0d199d3729c267754fc15aa31802e7cef02c3d486a78083",
+      "pixel_sha256": "86bdbfd12b53e59358f5b225d55963b0ac66e8a819fab469bc00655b86bab2cd",
+      "image_size_wh": [
+        2272,
+        1704
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            837.8,
+            179.86666666666667,
+            2092.133333333333,
+            970.3333333333334
+          ],
+          "top_polygon_raw": [
+            [
+              837.8,
+              284.0
+            ],
+            [
+              1154.9333333333334,
+              179.86666666666667
+            ],
+            [
+              2087.4,
+              407.06666666666666
+            ],
+            [
+              1642.4666666666667,
+              629.5333333333333
+            ]
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00023-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00023-18.jpg",
+        "path": "data/data_6/00023-18.jpg",
+        "image_sha256": "2f8a1e454b6df525cff65893e562338410a5471c42896f5a5d180942be8bd7d8",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00087.png",
+      "image_sha256": "e4e3f03d44c931a7ac690f3af436eb5c1b6e1b6bb020301d045d46c1becbdd15",
+      "pixel_sha256": "5192d656c5c7e8c2c1886f8a75fcdc091b0bee657fcc291f0f4f37c9f45a4da5",
+      "image_size_wh": [
+        3000,
+        2250
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            418.75,
+            775.0,
+            2562.5,
+            1681.25
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00025-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00025-18.jpg",
+        "path": "data/data_6/00025-18.jpg",
+        "image_sha256": "9721dd19fd5f9a4f47f266e9f1dfaddc378148ab09b9ca4218e50f26af1286ec",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00088.png",
+      "image_sha256": "afd5b6918f3898340077208ef2a0c366f2fc1e413e0b9c84a5c50f4c0c51abb6",
+      "pixel_sha256": "be8f93edf43bc09c88fe761e67c8901a6cfc9e611daa6778a038037f4005f15e",
+      "image_size_wh": [
+        550,
+        348
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            124.89583333333333,
+            90.43421052631578,
+            448.0208333333333,
+            258.7105263157894
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00031-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00031-18.jpg",
+        "path": "data/data_6/00031-18.jpg",
+        "image_sha256": "d69bbf0c8e3a65743ecf2e6aa0c1251da26f1a1ce7f61d124bec7cdc90524327",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00089.png",
+      "image_sha256": "81781ac02d00bfc48367e8534e5cf4ba9cfc14d64fb6d8bb3e952564879935b5",
+      "pixel_sha256": "ce0f587aa166a235d1daf06538e6bad0a22b4f1c3d961ce4f6e6b5fad19d7bf4",
+      "image_size_wh": [
+        3648,
+        1690
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            1223.6,
+            220.76576576576576,
+            3648.0,
+            1674.7747747747749
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00033-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00033-18.jpg",
+        "path": "data/data_6/00033-18.jpg",
+        "image_sha256": "f1798f092fbed9a85da27419607503babff6c240d5fa8600d11dd2beeda8eba0",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00090.png",
+      "image_sha256": "ec2cf269eb4d1baad664d9df3a76d36ac79e4f826f347dea3e63bc158b7782ea",
+      "pixel_sha256": "f906b17c605ab4df260f14fca01cbc48fecbe2a6787997c4651bc3fb857395a4",
+      "image_size_wh": [
+        365,
+        310
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            32.697916666666664,
+            27.352941176470587,
+            336.10416666666663,
+            285.6862745098039
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00034-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00034-18.jpg",
+        "path": "data/data_6/00034-18.jpg",
+        "image_sha256": "70d79ab0c2cfc93a4c9400e383aec52f0106554947b9daf7d84c719b7b9bab88",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00091.png",
+      "image_sha256": "b9ae6c3402db7a3caa9902969a3acf22a49b60f6f6ad542de9b080d4f3e401b5",
+      "pixel_sha256": "54e626730d4115c0de546c6abd0962e0f27a38a4c848ae469e3ac8793519985f",
+      "image_size_wh": [
+        640,
+        423
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            2.6666666666666665,
+            33.3596214511041,
+            638.6666666666666,
+            408.32176656151415
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00037-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00037-18.jpg",
+        "path": "data/data_6/00037-18.jpg",
+        "image_sha256": "8734be08bff12b7d7cfe473d76cb9b83ac18e3eb858115b410a8bf2c2fbe363e",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00092.png",
+      "image_sha256": "06ac184a05d514a4568e8a611fabd8a87f4a857bf2904566b3276ec946bd9f6f",
+      "pixel_sha256": "d9e2d907b0afe9c1b1636565a533349939035977b30b61678d2b7e55b919b730",
+      "image_size_wh": [
+        769,
+        487
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            19.225,
+            9.611842105263158,
+            764.19375,
+            478.9901315789474
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00041-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00041-18.jpg",
+        "path": "data/data_6/00041-18.jpg",
+        "image_sha256": "7858c45ca110436ce5c3e7eadef1aa7c404a0f67ef0aa4a87178b7be3483abd5",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00093.png",
+      "image_sha256": "4d14de7033d63126bc33f93bb1d000c5c297763d09fb71cd4352e6cd5a052626",
+      "pixel_sha256": "0de695fc2aa134a1d88ce898bcc8ed35a319ca9e397f9ecb8fbba85854cb2f35",
+      "image_size_wh": [
+        330,
+        259
+      ],
+      "objects": [
+        {
+          "class_name": "eraser",
+          "bbox_xyxy_raw": [
+            47.4375,
+            65.95225464190982,
+            283.9375,
+            201.29177718832892
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "officehome_Real_World_00043-18.jpg",
+      "source": {
+        "kind": "OFFICE_HOME_PUBLIC",
+        "url": "https://hf-mirror.com/datasets/Voxel51/Office-Home/resolve/main/data/data_6/00043-18.jpg",
+        "path": "data/data_6/00043-18.jpg",
+        "image_sha256": "cb3cc1f86a00787b76bb759947b315e84325b5b04190bab332e8c17dcc92c391",
+        "source_license": "ACADEMIC_NONCOMMERCIAL_NOTICE"
+      },
+      "annotation_kind": "ASSISTANT_VISUAL_BOX_AND_SELECTED_TOP"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00146.png",
+      "image_sha256": "5c3e21fff48e29001e6013fa004109bf59fd39387d2d89d66b47ce24c570383c",
+      "pixel_sha256": "bcd05c961f73dffd60eeddf0085445140b9860ba5d578842f33e4ee40fc8bbc8",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            16.57,
+            73.11,
+            639.83,
+            479.26
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_244582",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 244582,
+        "url": "http://images.cocodataset.org/train2017/000000244582.jpg",
+        "image_sha256": "e90c86900e28c6433d6b669eb3edd96997f38e6af45730a738cb2c1c576d4ee7",
+        "annotation_ids": [
+          183426
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00147.png",
+      "image_sha256": "52d7841b9e0cf67d747af33d42742055192e5e958dde9cdd56f45c55847f1afd",
+      "pixel_sha256": "8918c3e936a4e1391705fc5c25408ef039a1415b3e15d4ac6f02b874ad0cb745",
+      "image_size_wh": [
+        640,
+        428
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            0.0,
+            5.56,
+            640,
+            248.95
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_348012",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 348012,
+        "url": "http://images.cocodataset.org/val2017/000000348012.jpg",
+        "image_sha256": "7b693d91d6a6565e8957be70cf50804c36d5ddd2f921c7505bb0e2d16594697f",
+        "annotation_ids": [
+          40789
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00148.png",
+      "image_sha256": "d65a391e03c7ddd63d9d816cc41a083f2fa2096f4a07a6874a9b31ccbdeeb3b0",
+      "pixel_sha256": "8f45fd8cf649e91f07b32148bb8d4f9074972d2afac71dc41dced939a2d81c81",
+      "image_size_wh": [
+        612,
+        612
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            23.76,
+            159.62,
+            589.55,
+            534.31
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_48601",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 48601,
+        "url": "http://images.cocodataset.org/train2017/000000048601.jpg",
+        "image_sha256": "e8674ca5d3cb50d3238d2d15c3f8ed6b420af58481106c2c6b90a113b377c44b",
+        "annotation_ids": [
+          142371
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00149.png",
+      "image_sha256": "512f7a5dca1ff5d4411b3ff36eef2b4a916d4c40c7a211b657b1c1f5162f2724",
+      "pixel_sha256": "cce2d26dfe5183bb67432744021249b5c143f36d71b08824f5315942ff3fd1f5",
+      "image_size_wh": [
+        640,
+        417
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            0.0,
+            171.08,
+            488.08,
+            417
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_379443",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 379443,
+        "url": "http://images.cocodataset.org/train2017/000000379443.jpg",
+        "image_sha256": "2620dc4daac7f2e8976058f5523075ae3122c9016a8b0fc6e28b7b9b89773a79",
+        "annotation_ids": [
+          71485
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00150.png",
+      "image_sha256": "7646c22227faa9915b4c1e5333778d70585423b7471defcaea2a8a26d518bc01",
+      "pixel_sha256": "a000f9978590c63d84fee25229ee4d13d3c2801d7709fa67d5f955c5509a3db8",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            326.28,
+            0.0,
+            640,
+            480
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_546826",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 546826,
+        "url": "http://images.cocodataset.org/val2017/000000546826.jpg",
+        "image_sha256": "4a4089c8b04a04facaaa44cef49aeb2b2897fbaabfa221442ce50e7e67c521ab",
+        "annotation_ids": [
+          32529
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00151.png",
+      "image_sha256": "31921c60b40812d2303e350f877f4ce485c5789429594a45fa01f650a30d6229",
+      "pixel_sha256": "5cc85a9448c14c14ca9f1069ff7b0657e56a3faea5808b81dd170e6fefc67d50",
+      "image_size_wh": [
+        480,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            82.89,
+            285.06,
+            312.89,
+            640
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_325944",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 325944,
+        "url": "http://images.cocodataset.org/train2017/000000325944.jpg",
+        "image_sha256": "fee842ea6e7a8ef3d06bc130a0060f1f488d0555f0ff69488391a15180c8f5c2",
+        "annotation_ids": [
+          230259
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00152.png",
+      "image_sha256": "ee2af54b972d0cb20f3404c134ce707e4ff524d217c0045dfa693e296d392f88",
+      "pixel_sha256": "caac676fa7d37f1cf88ec926d0b631370f40ee4945e01b869f6586d85e5f269b",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            88.72,
+            0.0,
+            572.69,
+            480
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_161008",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 161008,
+        "url": "http://images.cocodataset.org/val2017/000000161008.jpg",
+        "image_sha256": "089039ac4fa151ef5e1899de95ce54e95ea255a40befcad7d2a9b9e3b08f2518",
+        "annotation_ids": [
+          14720
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00153.png",
+      "image_sha256": "b1eec4b0939566dc892cddd86f2f367f87f78c7e32eb00aa2439998f9f693a44",
+      "pixel_sha256": "c9ddbc8148cdcb3f950748ea3506c0a521d154124c58bb415d78d973b5b3d778",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            28.75,
+            21.85,
+            499.87,
+            469.31
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_357501",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 357501,
+        "url": "http://images.cocodataset.org/val2017/000000357501.jpg",
+        "image_sha256": "875de71a2c80883bdc8d7fe411a1a0e4e796c76998e15b230430e869d44a1fa3",
+        "annotation_ids": [
+          1313
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00154.png",
+      "image_sha256": "69ffc144e8d95ece91b6207bc404210843157ace22ef7dc0566500c5c982117e",
+      "pixel_sha256": "95b90d342ec61130ecfa885ba38d16847a026bff8b4f16f7271951c762747179",
+      "image_size_wh": [
+        500,
+        375
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            0.0,
+            0.0,
+            500,
+            273.47
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_285864",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 285864,
+        "url": "http://images.cocodataset.org/train2017/000000285864.jpg",
+        "image_sha256": "f2a7aac88c0f4823b391139b1e766b7b0a8554988f340d2b4c6dc309de2d5d33",
+        "annotation_ids": [
+          222099
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00155.png",
+      "image_sha256": "d45578a9f007d71f48efe248a1d9cf604d7a133164086e9906495ba0f2829317",
+      "pixel_sha256": "5bc137cfae5663da42908558caef6d6da91e4870768a7858957e968dad22f57f",
+      "image_size_wh": [
+        428,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            275.9,
+            190.36,
+            427.03999999999996,
+            639.27
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_528119",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 528119,
+        "url": "http://images.cocodataset.org/train2017/000000528119.jpg",
+        "image_sha256": "1752088c2e102820da6bc50136a0220aae708129af47677d6ca3648ba9f113fc",
+        "annotation_ids": [
+          161593
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00156.png",
+      "image_sha256": "d7dc243ffec62bb98eae384d60c9dfa629071c148a9657a99e1835ff533a4e24",
+      "pixel_sha256": "fcaddef0d6042e78c5f9a60cd533d9cc6e38a7aef23abf8a3f4962ad6b0c3010",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            15.33,
+            193.4,
+            537.85,
+            436.12
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_368982",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 368982,
+        "url": "http://images.cocodataset.org/val2017/000000368982.jpg",
+        "image_sha256": "3cb21f1a277e66bb9bab8c86105b50dbf512cb568a93d796a755af90ca56092a",
+        "annotation_ids": [
+          49600
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00157.png",
+      "image_sha256": "ad9f40ba73004739ba949bc63dc108e37b033c82d7ab72bf88c10a43e1e1d628",
+      "pixel_sha256": "0ffe0144c508b5eb0d43f75963804b5877bd6e62148f73845763daec86598958",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            114.22,
+            200.02,
+            640,
+            479.16999999999996
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_239882",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 239882,
+        "url": "http://images.cocodataset.org/train2017/000000239882.jpg",
+        "image_sha256": "698f6a4473d9a8dbcb08fd2b9f4e822ac139a81c78455de8d29b19b5d131439b",
+        "annotation_ids": [
+          121888
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00158.png",
+      "image_sha256": "5c16d7c75b16bca84ff70b694936ee5c4bdbf7db04b257b120e287ff4e4e6dbc",
+      "pixel_sha256": "611b9bcbdc3b2a604401e106c43f448dc399c42bfa0e43c983eef98bb0a59596",
+      "image_size_wh": [
+        640,
+        479
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            0.49,
+            41.64,
+            618.91,
+            458.0
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_305014",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 305014,
+        "url": "http://images.cocodataset.org/train2017/000000305014.jpg",
+        "image_sha256": "7b51053e5a420e00b2d0495ec3cee8923d1de84ab5f4ffb241402df0b1261f23",
+        "annotation_ids": [
+          218506
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00159.png",
+      "image_sha256": "d142fec008b3828ce8d07fc6a8b9d287986cf435de31c65e8fc74efb26728ede",
+      "pixel_sha256": "f8c023f917e7d7bad2f03432772b15f3ccc7faaaf69f60611a1d0c5661c5d371",
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            33.8,
+            106.33,
+            381.54,
+            372.13
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_1674",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 1674,
+        "url": "http://images.cocodataset.org/train2017/000000001674.jpg",
+        "image_sha256": "c2432c63a52c6e2ccc4487659b0b0928c1b7717c7fa39efaa0a5b4f8ab2e3734",
+        "annotation_ids": [
+          175208
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00160.png",
+      "image_sha256": "15d164fd4cde7b089752ce8707c21209ee1500daaf92ee2bff745289dd149bd1",
+      "pixel_sha256": "73589c71bb876507b52961b46ecbf7f884d8fab6929822cae3fc9c594e480aa3",
+      "image_size_wh": [
+        500,
+        375
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            52.57,
+            36.84,
+            459.75,
+            307.53999999999996
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_351096",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 351096,
+        "url": "http://images.cocodataset.org/val2017/000000351096.jpg",
+        "image_sha256": "e671c3e71386f51caae7f0dc55051ed79896567e1ccf34810fe784e60f8c679d",
+        "annotation_ids": [
+          759
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00161.png",
+      "image_sha256": "87e5fa0fdb61261432be5ee02eceb1a0d9afc1d99fc469dd8b69a272c139fb81",
+      "pixel_sha256": "0f427bc452d26ab58c0007abcd7742d3054a7f85d12ed093889d7497112b5e9e",
+      "image_size_wh": [
+        500,
+        375
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            50.23,
+            100.12,
+            437.22,
+            312.31
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_342307",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 342307,
+        "url": "http://images.cocodataset.org/train2017/000000342307.jpg",
+        "image_sha256": "b815ba4db74a5035784ee79b358aaf79af863ba394469a9840dbdfeb3d480b7e",
+        "annotation_ids": [
+          221266
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00162.png",
+      "image_sha256": "ffe82d2928b942d216e09600597fb59d9bbfd75b44034a951c0e8478288adbfe",
+      "pixel_sha256": "b4d3b79b1b6755d9826985dbdf54abbd05cbc36540b217867ec66efb7fd84be8",
+      "image_size_wh": [
+        480,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            98.81,
+            311.05,
+            480,
+            482.0
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_311180",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 311180,
+        "url": "http://images.cocodataset.org/val2017/000000311180.jpg",
+        "image_sha256": "29a1a65910552343cdd8ab90b70aefd463859b9598fd0abb012c242788f367c0",
+        "annotation_ids": [
+          50311
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00163.png",
+      "image_sha256": "e89306e440ed5d5ad2b08659c3d3ca7e811b5bc3e57884c25f977d96dd58dcf9",
+      "pixel_sha256": "2112e809dbd8b6305f47eb79f9a300fddb90786e95362ca01135bdae38fe3860",
+      "image_size_wh": [
+        640,
+        478
+      ],
+      "objects": [
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            48.54,
+            3.34,
+            391.78000000000003,
+            290.78999999999996
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_282900",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 282900,
+        "url": "http://images.cocodataset.org/train2017/000000282900.jpg",
+        "image_sha256": "6b07f485edcd0631cb87c581b75ebfd4d21f5d3d199fabc54db974f281a76e2a",
+        "annotation_ids": [
+          173011
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00164.png",
+      "image_sha256": "af5382a0025a51df6fac1d3284be23bf5bf3053ad0216ec2faa537c5f299a0ce",
+      "pixel_sha256": "5ce9b09960d4edac860a6c1e0d37d6f5ec4f47ca19b9e95fa7e48f6c3416842c",
+      "image_size_wh": [
+        480,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            76.55,
+            387.62,
+            121.97,
+            442.59000000000003
+          ]
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            246.95,
+            118.32,
+            291.75,
+            172.14999999999998
+          ]
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            353.51,
+            130.01,
+            389.62,
+            171.82
+          ]
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            222.01,
+            126.0,
+            254.38,
+            172.06
+          ]
+        },
+        {
+          "class_name": "scissors",
+          "bbox_xyxy_raw": [
+            170.75,
+            213.73,
+            190.92000000000002,
+            238.14
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_40248",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 40248,
+        "url": "http://images.cocodataset.org/train2017/000000040248.jpg",
+        "image_sha256": "f42e2c658a0e0261a0475b0312f6771cc45380f9ff6756784eb6b9bb2ca169b9",
+        "annotation_ids": [
+          207384,
+          207385,
+          207386,
+          207381,
+          207361
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00165.png",
+      "image_sha256": "3ce964fbfc28daa5ba60e1b5c1397691a07af86f0263db6926dc92e939a130be",
+      "pixel_sha256": "d83f6dfc8e44b4da9b29a36ce4f15f09a618ac89f69b1d9298792acddd6ed579",
+      "image_size_wh": [
+        480,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            416.99,
+            244.26,
+            463.39,
+            291.16999999999996
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_529568",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 529568,
+        "url": "http://images.cocodataset.org/val2017/000000529568.jpg",
+        "image_sha256": "2c97efcc385141e55c77afcf239cf59639637e9155cacf5ac870c87d2a6de42e",
+        "annotation_ids": [
+          19627
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00166.png",
+      "image_sha256": "a74ad1f00f8784951dee66becd0aafe4ba3fd972b071277edf1297d666b9e61e",
+      "pixel_sha256": "49b9a47d0db6c0ec2e035529c3a961053beb61d4292dd32cb8172930e988eadc",
+      "image_size_wh": [
+        640,
+        426
+      ],
+      "objects": [
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            210.76,
+            0.0,
+            250.48,
+            41.2
+          ]
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            253.31,
+            0.19,
+            290.63,
+            38.86
+          ]
+        },
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            295.31,
+            0.63,
+            330.95,
+            36.06
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_191338",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 191338,
+        "url": "http://images.cocodataset.org/train2017/000000191338.jpg",
+        "image_sha256": "22a304b4f6cd9c4fcd1598801fb53a8de446142174d6503c1ac0d89358a6407b",
+        "annotation_ids": [
+          154825,
+          154824,
+          154823
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    },
+    {
+      "image": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/images/validation/item_00167.png",
+      "image_sha256": "793510923861706380cc98f061fa573abd62bc850e133de87e23b4254af05239",
+      "pixel_sha256": "819962f3b3133de4c9991ea6b2d2ecea6d10625cc61175be110a104e819e726c",
+      "image_size_wh": [
+        425,
+        640
+      ],
+      "objects": [
+        {
+          "class_name": "small_canister",
+          "bbox_xyxy_raw": [
+            330.11,
+            339.56,
+            358.3,
+            372.08
+          ]
+        }
+      ],
+      "split": "validation",
+      "session_id": "lvis_val_219118",
+      "source": {
+        "kind": "LVIS_V1_PUBLIC",
+        "image_id": 219118,
+        "url": "http://images.cocodataset.org/train2017/000000219118.jpg",
+        "image_sha256": "1f685e20506c352ef99bf5bec8782f95cc2372df3ac172024b5eea22314c108c",
+        "annotation_ids": [
+          172822
+        ]
+      },
+      "annotation_kind": "LVIS_FULL_INSTANCE_BOX_MASK_SELECTED_TOP_AI_VISUAL"
+    }
+  ]
+}

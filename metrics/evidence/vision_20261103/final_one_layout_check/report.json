@@ -1,0 +1,1434 @@
+{
+  "schema": "gesture.report.vision_metrics.v1",
+  "status": "COMPLETED",
+  "scope": "HISTORICAL_ONE_LAYOUT_FROZEN_CHECK",
+  "independent_layouts": 1,
+  "independent_test_accepted": false,
+  "label_provenance": "ASSISTANT_VISUAL_APPROXIMATE_BOXES_AND_VISIBLE_TOP_POLYGONS_NOT_HUMAN_METROLOGY",
+  "human_ground_truth_reviewed": false,
+  "evaluation_manifest_sha256": "95cc791966342640fc8fcbb834ee53c7a936cf11ab798eeec57f34c96c1b3539",
+  "images": 20,
+  "ground_truth_instances": 120,
+  "training_overlap_audit": {
+    "method": "EXACT_IMAGE_PIXEL_ANCESTRY_HASH_AND_SESSION",
+    "matches": [],
+    "near_duplicate_absence_proven": false
+  },
+  "frozen_manifest_sha256": "cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778",
+  "detector_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+  "surface_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+  "runtime": {
+    "detector": {
+      "requested_backend": "onnx_cpu",
+      "actual_backend": "onnx_cpu",
+      "role": "mode_b_detector",
+      "framework": "onnxruntime",
+      "framework_version": "1.31.0",
+      "actual_providers": [
+        "CPUExecutionProvider"
+      ],
+      "cpu_fallback": false,
+      "precision": "fp32",
+      "classes": [
+        "red_cube",
+        "yellow_cube",
+        "blue_cube",
+        "eraser",
+        "small_canister",
+        "scissors"
+      ],
+      "trained_classes": [
+        "red_cube",
+        "yellow_cube",
+        "blue_cube",
+        "eraser",
+        "small_canister",
+        "scissors"
+      ],
+      "model_sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce",
+      "package_sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9",
+      "npu_execution_verified": false,
+      "hardware_acceptance": "PENDING",
+      "spatial_inference_policy": {
+        "method": "FULL_FRAME_PLUS_OVERLAPPING_SQUARES_V1",
+        "minimum_tile_overlap": 0.25,
+        "classwise_merge_iou": 0.5,
+        "interior_edge_margin_raw_px": 2,
+        "max_tiles": 16,
+        "thresholds_unchanged": true
+      }
+    },
+    "surface": {
+      "actual_backend": "torch_cpu",
+      "requested_backend": "torch_cpu",
+      "framework": "torch",
+      "framework_version": "2.14.1+cpu",
+      "hip_version": null,
+      "model_sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93",
+      "device": "cpu",
+      "hardware_acceptance": "PENDING",
+      "cpu_fallback": false,
+      "spatial_surface_policy": {
+        "method": "FIVE_FIXED_SAME_FRAME_CROP_SHIFTS_EQUAL_PROBABILITY_MEAN",
+        "relative_shift": 0.04,
+        "shifts_xy": [
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "uses_temporal_history": false,
+        "thresholds_unchanged": true
+      }
+    }
+  },
+  "AP_score_floor": 0.01,
+  "operational_detection_threshold": 0.4,
+  "detection": {
+    "definition": "COCO_STYLE_101_POINT_NO_CROWD_NO_AREA_SUBSETS_MAXDET100",
+    "IoU_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.8999999999999999,
+      0.95
+    ],
+    "per_class": {
+      "red_cube": {
+        "ground_truth_instances": 20,
+        "predictions": 27,
+        "AP50": 1.0,
+        "AP50_95": 0.9928217821782178,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 1.0,
+          "0.95": 0.9282178217821783
+        }
+      },
+      "yellow_cube": {
+        "ground_truth_instances": 20,
+        "predictions": 52,
+        "AP50": 1.0,
+        "AP50_95": 0.8912211221122112,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 0.9089108910891088,
+          "0.95": 0.0033003300330033
+        }
+      },
+      "blue_cube": {
+        "ground_truth_instances": 20,
+        "predictions": 27,
+        "AP50": 1.0,
+        "AP50_95": 0.9310107260726073,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 1.0,
+          "0.95": 0.3101072607260726
+        }
+      },
+      "eraser": {
+        "ground_truth_instances": 20,
+        "predictions": 20,
+        "AP50": 1.0,
+        "AP50_95": 0.6914919433119782,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 0.778052805280528,
+          "0.85": 0.1333721607454863,
+          "0.9": 0.0034944670937682,
+          "0.95": 0.0
+        }
+      },
+      "small_canister": {
+        "ground_truth_instances": 20,
+        "predictions": 20,
+        "AP50": 1.0,
+        "AP50_95": 0.8,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 1.0,
+          "0.85": 1.0,
+          "0.9": 0.0,
+          "0.95": 0.0
+        }
+      },
+      "scissors": {
+        "ground_truth_instances": 20,
+        "predictions": 20,
+        "AP50": 1.0,
+        "AP50_95": 0.6903960396039605,
+        "AP_by_iou": {
+          "0.5": 1.0,
+          "0.55": 1.0,
+          "0.6": 1.0,
+          "0.65": 1.0,
+          "0.7": 1.0,
+          "0.75": 1.0,
+          "0.8": 0.903960396039604,
+          "0.85": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0
+        }
+      }
+    },
+    "mAP50": 1.0,
+    "mAP50_95": 0.8328236022131624,
+    "absent_classes_excluded_from_mean": []
+  },
+  "segmentation": {
+    "task": "BINARY_VISIBLE_TOP_NOT_SIX_CLASS_SEMANTIC_SEGMENTATION",
+    "evaluation_roi": "GT_BOX_PLUS_18_PERCENT_PADDING",
+    "pipeline": "FROZEN_FIVE_CROP_PROBABILITY_MEAN_RAW_THRESHOLD_0_7",
+    "conditional_on_ground_truth_box": true,
+    "objects": 60,
+    "pooled_pixels": {
+      "TP_pixels": 1067269,
+      "FP_pixels": 26857,
+      "FN_pixels": 45051,
+      "TN_pixels": 2503763,
+      "foreground_IoU": 0.9368772368121898,
+      "background_IoU": 0.9720818380918992,
+      "binary_mIoU": 0.9544795374520445
+    },
+    "per_object_class": {
+      "red_cube": {
+        "TP_pixels": 384761,
+        "FP_pixels": 1478,
+        "FN_pixels": 13859,
+        "TN_pixels": 584602,
+        "foreground_IoU": 0.9616668916115552,
+        "background_IoU": 0.9744357342996538,
+        "binary_mIoU": 0.9680513129556045
+      },
+      "eraser": {
+        "TP_pixels": 393703,
+        "FP_pixels": 24900,
+        "FN_pixels": 17977,
+        "TN_pixels": 1267420,
+        "foreground_IoU": 0.901788904668102,
+        "background_IoU": 0.9672768845536547,
+        "binary_mIoU": 0.9345328946108784
+      },
+      "small_canister": {
+        "TP_pixels": 288805,
+        "FP_pixels": 479,
+        "FN_pixels": 13215,
+        "TN_pixels": 651741,
+        "foreground_IoU": 0.9547304288609219,
+        "background_IoU": 0.9794209802610323,
+        "binary_mIoU": 0.967075704560977
+      }
+    },
+    "macro_foreground_IoU_over_present_object_classes": 0.939395408380193,
+    "per_object": [
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19307,
+        "FP_pixels": 53,
+        "FN_pixels": 624,
+        "TN_pixels": 29251,
+        "foreground_IoU": 0.9661228983186549,
+        "background_IoU": 0.9773790430366213,
+        "binary_mIoU": 0.9717509706776382
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19657,
+        "FP_pixels": 1099,
+        "FN_pixels": 927,
+        "TN_pixels": 63517,
+        "foreground_IoU": 0.9065627450076097,
+        "background_IoU": 0.9690889950109088,
+        "binary_mIoU": 0.9378258700092592
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14496,
+        "FP_pixels": 28,
+        "FN_pixels": 605,
+        "TN_pixels": 32583,
+        "foreground_IoU": 0.958159825500694,
+        "background_IoU": 0.9809429190751445,
+        "binary_mIoU": 0.9695513722879192
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19302,
+        "FP_pixels": 81,
+        "FN_pixels": 629,
+        "TN_pixels": 29223,
+        "foreground_IoU": 0.9645212872276634,
+        "background_IoU": 0.9762803594694819,
+        "binary_mIoU": 0.9704008233485726
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19707,
+        "FP_pixels": 1091,
+        "FN_pixels": 877,
+        "TN_pixels": 63525,
+        "foreground_IoU": 0.909204152249135,
+        "background_IoU": 0.9699509871283954,
+        "binary_mIoU": 0.9395775696887652
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14501,
+        "FP_pixels": 26,
+        "FN_pixels": 600,
+        "TN_pixels": 32585,
+        "foreground_IoU": 0.958617042374562,
+        "background_IoU": 0.981150823522327,
+        "binary_mIoU": 0.9698839329484445
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19228,
+        "FP_pixels": 70,
+        "FN_pixels": 703,
+        "TN_pixels": 29234,
+        "foreground_IoU": 0.9613519324033798,
+        "background_IoU": 0.9742393441530309,
+        "binary_mIoU": 0.9677956382782054
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19708,
+        "FP_pixels": 1003,
+        "FN_pixels": 876,
+        "TN_pixels": 63613,
+        "foreground_IoU": 0.9129568721915968,
+        "background_IoU": 0.9713094729127222,
+        "binary_mIoU": 0.9421331725521596
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14513,
+        "FP_pixels": 24,
+        "FN_pixels": 588,
+        "TN_pixels": 32587,
+        "foreground_IoU": 0.9595371900826446,
+        "background_IoU": 0.9815657098105365,
+        "binary_mIoU": 0.9705514499465906
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19245,
+        "FP_pixels": 87,
+        "FN_pixels": 686,
+        "TN_pixels": 29217,
+        "foreground_IoU": 0.9613847537216506,
+        "background_IoU": 0.9742247415805269,
+        "binary_mIoU": 0.9678047476510887
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19715,
+        "FP_pixels": 1070,
+        "FN_pixels": 869,
+        "TN_pixels": 63546,
+        "foreground_IoU": 0.9104553431236723,
+        "background_IoU": 0.9703901656867985,
+        "binary_mIoU": 0.9404227544052354
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14410,
+        "FP_pixels": 21,
+        "FN_pixels": 691,
+        "TN_pixels": 32590,
+        "foreground_IoU": 0.9529162809152228,
+        "background_IoU": 0.978619902708546,
+        "binary_mIoU": 0.9657680918118845
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19234,
+        "FP_pixels": 62,
+        "FN_pixels": 697,
+        "TN_pixels": 29242,
+        "foreground_IoU": 0.9620367128494973,
+        "background_IoU": 0.9747008433052231,
+        "binary_mIoU": 0.9683687780773602
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19708,
+        "FP_pixels": 1150,
+        "FN_pixels": 876,
+        "TN_pixels": 63466,
+        "foreground_IoU": 0.9067820005521303,
+        "background_IoU": 0.9690649239601783,
+        "binary_mIoU": 0.9379234622561543
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14445,
+        "FP_pixels": 23,
+        "FN_pixels": 656,
+        "TN_pixels": 32588,
+        "foreground_IoU": 0.9551044697170061,
+        "background_IoU": 0.9795893828719151,
+        "binary_mIoU": 0.9673469262944606
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19192,
+        "FP_pixels": 77,
+        "FN_pixels": 739,
+        "TN_pixels": 29227,
+        "foreground_IoU": 0.9592163134746101,
+        "background_IoU": 0.9728389308657591,
+        "binary_mIoU": 0.9660276221701847
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19679,
+        "FP_pixels": 1132,
+        "FN_pixels": 905,
+        "TN_pixels": 63484,
+        "foreground_IoU": 0.9061981948793516,
+        "background_IoU": 0.9689107309107003,
+        "binary_mIoU": 0.937554462895026
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14424,
+        "FP_pixels": 22,
+        "FN_pixels": 677,
+        "TN_pixels": 32589,
+        "foreground_IoU": 0.9537790121007736,
+        "background_IoU": 0.9790014419610671,
+        "binary_mIoU": 0.9663902270309204
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19205,
+        "FP_pixels": 87,
+        "FN_pixels": 726,
+        "TN_pixels": 29217,
+        "foreground_IoU": 0.9593865521031072,
+        "background_IoU": 0.9729270729270729,
+        "binary_mIoU": 0.9661568125150901
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19687,
+        "FP_pixels": 1169,
+        "FN_pixels": 897,
+        "TN_pixels": 63447,
+        "foreground_IoU": 0.905024594308831,
+        "background_IoU": 0.9684642742661762,
+        "binary_mIoU": 0.9367444342875035
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14451,
+        "FP_pixels": 22,
+        "FN_pixels": 650,
+        "TN_pixels": 32589,
+        "foreground_IoU": 0.9555643721483833,
+        "background_IoU": 0.9797961576621268,
+        "binary_mIoU": 0.967680264905255
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19196,
+        "FP_pixels": 69,
+        "FN_pixels": 735,
+        "TN_pixels": 29235,
+        "foreground_IoU": 0.9598,
+        "background_IoU": 0.9732347947668032,
+        "binary_mIoU": 0.9665173973834016
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19682,
+        "FP_pixels": 1192,
+        "FN_pixels": 902,
+        "TN_pixels": 63424,
+        "foreground_IoU": 0.9038390889052168,
+        "background_IoU": 0.9680393174394822,
+        "binary_mIoU": 0.9359392031723495
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14442,
+        "FP_pixels": 20,
+        "FN_pixels": 659,
+        "TN_pixels": 32591,
+        "foreground_IoU": 0.9550955624628,
+        "background_IoU": 0.9795912233243163,
+        "binary_mIoU": 0.9673433928935582
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19225,
+        "FP_pixels": 69,
+        "FN_pixels": 706,
+        "TN_pixels": 29235,
+        "foreground_IoU": 0.96125,
+        "background_IoU": 0.9741752749083639,
+        "binary_mIoU": 0.967712637454182
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19671,
+        "FP_pixels": 1283,
+        "FN_pixels": 913,
+        "TN_pixels": 63333,
+        "foreground_IoU": 0.8995747016051585,
+        "background_IoU": 0.9664881197637687,
+        "binary_mIoU": 0.9330314106844636
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14420,
+        "FP_pixels": 24,
+        "FN_pixels": 681,
+        "TN_pixels": 32587,
+        "foreground_IoU": 0.9533884297520662,
+        "background_IoU": 0.9788237414393849,
+        "binary_mIoU": 0.9661060855957255
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19282,
+        "FP_pixels": 64,
+        "FN_pixels": 649,
+        "TN_pixels": 29240,
+        "foreground_IoU": 0.9643410852713178,
+        "background_IoU": 0.9761960404633927,
+        "binary_mIoU": 0.9702685628673553
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19708,
+        "FP_pixels": 1286,
+        "FN_pixels": 876,
+        "TN_pixels": 63330,
+        "foreground_IoU": 0.9011431184270691,
+        "background_IoU": 0.966988334453063,
+        "binary_mIoU": 0.934065726440066
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14427,
+        "FP_pixels": 20,
+        "FN_pixels": 674,
+        "TN_pixels": 32591,
+        "foreground_IoU": 0.9541035645790622,
+        "background_IoU": 0.9791497671623854,
+        "binary_mIoU": 0.9666266658707239
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19219,
+        "FP_pixels": 90,
+        "FN_pixels": 712,
+        "TN_pixels": 29214,
+        "foreground_IoU": 0.9599420608361221,
+        "background_IoU": 0.9732809168443497,
+        "binary_mIoU": 0.966611488840236
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19677,
+        "FP_pixels": 1217,
+        "FN_pixels": 907,
+        "TN_pixels": 63399,
+        "foreground_IoU": 0.9025732764552085,
+        "background_IoU": 0.9675839018359965,
+        "binary_mIoU": 0.9350785891456025
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14423,
+        "FP_pixels": 23,
+        "FN_pixels": 678,
+        "TN_pixels": 32588,
+        "foreground_IoU": 0.9536498280878074,
+        "background_IoU": 0.9789419928504911,
+        "binary_mIoU": 0.9662959104691493
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19161,
+        "FP_pixels": 72,
+        "FN_pixels": 770,
+        "TN_pixels": 29232,
+        "foreground_IoU": 0.9579063140528921,
+        "background_IoU": 0.9720023940945668,
+        "binary_mIoU": 0.9649543540737294
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19674,
+        "FP_pixels": 1173,
+        "FN_pixels": 910,
+        "TN_pixels": 63443,
+        "foreground_IoU": 0.9042606977064853,
+        "background_IoU": 0.968211091780362,
+        "binary_mIoU": 0.9362358947434237
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14432,
+        "FP_pixels": 23,
+        "FN_pixels": 669,
+        "TN_pixels": 32588,
+        "foreground_IoU": 0.9542449087542978,
+        "background_IoU": 0.9792067307692308,
+        "binary_mIoU": 0.9667258197617643
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19229,
+        "FP_pixels": 86,
+        "FN_pixels": 702,
+        "TN_pixels": 29218,
+        "foreground_IoU": 0.9606334615576759,
+        "background_IoU": 0.9737385856162101,
+        "binary_mIoU": 0.967186023586943
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19683,
+        "FP_pixels": 1311,
+        "FN_pixels": 901,
+        "TN_pixels": 63305,
+        "foreground_IoU": 0.8989723681205755,
+        "background_IoU": 0.9662377703496803,
+        "binary_mIoU": 0.9326050692351279
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14412,
+        "FP_pixels": 23,
+        "FN_pixels": 689,
+        "TN_pixels": 32588,
+        "foreground_IoU": 0.9529225072732082,
+        "background_IoU": 0.9786186186186187,
+        "binary_mIoU": 0.9657705629459135
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19213,
+        "FP_pixels": 85,
+        "FN_pixels": 718,
+        "TN_pixels": 29219,
+        "foreground_IoU": 0.9598820943245404,
+        "background_IoU": 0.973252947838252,
+        "binary_mIoU": 0.9665675210813962
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19611,
+        "FP_pixels": 1227,
+        "FN_pixels": 973,
+        "TN_pixels": 63389,
+        "foreground_IoU": 0.8991334647654853,
+        "background_IoU": 0.9664577901782311,
+        "binary_mIoU": 0.9327956274718582
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14439,
+        "FP_pixels": 26,
+        "FN_pixels": 662,
+        "TN_pixels": 32585,
+        "foreground_IoU": 0.9545184107886561,
+        "background_IoU": 0.9793225738586843,
+        "binary_mIoU": 0.9669204923236702
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19286,
+        "FP_pixels": 43,
+        "FN_pixels": 645,
+        "TN_pixels": 29261,
+        "foreground_IoU": 0.9655552217883249,
+        "background_IoU": 0.9770276136098033,
+        "binary_mIoU": 0.9712914176990641
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19690,
+        "FP_pixels": 1363,
+        "FN_pixels": 894,
+        "TN_pixels": 63253,
+        "foreground_IoU": 0.8971613432359776,
+        "background_IoU": 0.9655472446954664,
+        "binary_mIoU": 0.931354293965722
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14454,
+        "FP_pixels": 27,
+        "FN_pixels": 647,
+        "TN_pixels": 32584,
+        "foreground_IoU": 0.9554468535166578,
+        "background_IoU": 0.9797341992903963,
+        "binary_mIoU": 0.967590526403527
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19315,
+        "FP_pixels": 56,
+        "FN_pixels": 616,
+        "TN_pixels": 29248,
+        "foreground_IoU": 0.9663781457947666,
+        "background_IoU": 0.9775401069518717,
+        "binary_mIoU": 0.9719591263733192
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19691,
+        "FP_pixels": 1484,
+        "FN_pixels": 893,
+        "TN_pixels": 63132,
+        "foreground_IoU": 0.8922874750770347,
+        "background_IoU": 0.9637149094017616,
+        "binary_mIoU": 0.9280011922393981
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14424,
+        "FP_pixels": 24,
+        "FN_pixels": 677,
+        "TN_pixels": 32587,
+        "foreground_IoU": 0.9536528925619835,
+        "background_IoU": 0.9789413602499399,
+        "binary_mIoU": 0.9662971264059617
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19160,
+        "FP_pixels": 98,
+        "FN_pixels": 771,
+        "TN_pixels": 29206,
+        "foreground_IoU": 0.956612911278646,
+        "background_IoU": 0.9711055694098089,
+        "binary_mIoU": 0.9638592403442274
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19649,
+        "FP_pixels": 1331,
+        "FN_pixels": 935,
+        "TN_pixels": 63285,
+        "foreground_IoU": 0.896600501939311,
+        "background_IoU": 0.9654314960870162,
+        "binary_mIoU": 0.9310159990131636
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14407,
+        "FP_pixels": 23,
+        "FN_pixels": 694,
+        "TN_pixels": 32588,
+        "foreground_IoU": 0.9525919069029357,
+        "background_IoU": 0.9784717009458039,
+        "binary_mIoU": 0.9655318039243699
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19236,
+        "FP_pixels": 82,
+        "FN_pixels": 695,
+        "TN_pixels": 29222,
+        "foreground_IoU": 0.9611752360965372,
+        "background_IoU": 0.9740991366378879,
+        "binary_mIoU": 0.9676371863672126
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19720,
+        "FP_pixels": 1357,
+        "FN_pixels": 864,
+        "TN_pixels": 63259,
+        "foreground_IoU": 0.8987739847773575,
+        "background_IoU": 0.9660812461820403,
+        "binary_mIoU": 0.9324276154796989
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14409,
+        "FP_pixels": 21,
+        "FN_pixels": 692,
+        "TN_pixels": 32590,
+        "foreground_IoU": 0.9528501520962835,
+        "background_IoU": 0.9785905173708075,
+        "binary_mIoU": 0.9657203347335455
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19277,
+        "FP_pixels": 74,
+        "FN_pixels": 654,
+        "TN_pixels": 29230,
+        "foreground_IoU": 0.9636090977255686,
+        "background_IoU": 0.9756993123706522,
+        "binary_mIoU": 0.9696542050481104
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19725,
+        "FP_pixels": 1477,
+        "FN_pixels": 859,
+        "TN_pixels": 63139,
+        "foreground_IoU": 0.8941117809709442,
+        "background_IoU": 0.9643222604047347,
+        "binary_mIoU": 0.9292170206878394
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14435,
+        "FP_pixels": 26,
+        "FN_pixels": 666,
+        "TN_pixels": 32585,
+        "foreground_IoU": 0.954253982944404,
+        "background_IoU": 0.9792048562069898,
+        "binary_mIoU": 0.9667294195756969
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+        "class_name": "red_cube",
+        "TP_pixels": 19249,
+        "FP_pixels": 73,
+        "FN_pixels": 682,
+        "TN_pixels": 29231,
+        "foreground_IoU": 0.962257548490302,
+        "background_IoU": 0.9748215834055892,
+        "binary_mIoU": 0.9685395659479457
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+        "class_name": "eraser",
+        "TP_pixels": 19661,
+        "FP_pixels": 1485,
+        "FN_pixels": 923,
+        "TN_pixels": 63131,
+        "foreground_IoU": 0.8908876704880149,
+        "background_IoU": 0.9632585178290789,
+        "binary_mIoU": 0.9270730941585469
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+        "class_name": "small_canister",
+        "TP_pixels": 14441,
+        "FP_pixels": 33,
+        "FN_pixels": 660,
+        "TN_pixels": 32578,
+        "foreground_IoU": 0.954209065679926,
+        "background_IoU": 0.9791710498632442,
+        "binary_mIoU": 0.9666900577715851
+      }
+    ]
+  },
+  "end_to_end_shape_localization": {
+    "operational_thresholds_unchanged": true,
+    "objects": 60,
+    "available": 60,
+    "mean_mask_IoU_missing_as_zero": 0.9401692925961872,
+    "records": [
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9451635560907085
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9413333333333334
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000000_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9578209705143461
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9480206713160403
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9211213146447559
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000001_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9562458691341705
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9485224022878932
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.90489090997049
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000002_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9574847923829675
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9448597661933671
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9191347270615563
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000003_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9526991267531093
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.948472229190708
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9367957831616616
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000004_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9565591113462047
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9451635560907085
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9287545344619105
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000005_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9553719008264463
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9509808840499724
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9163601161665054
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000006_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9546206257855394
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9411026940249837
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9243258915627718
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000007_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9515969053759175
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.948023279149107
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9315743693824297
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000008_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9533884297520662
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9447621914509332
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9331690345027545
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000009_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9534991400978966
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9448095930961818
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.913857315598549
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000010_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9525730916787934
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9480708444132256
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9190103411616893
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000011_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9554864739731463
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9477222556692755
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.924712477046487
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000012_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9541096343318125
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9507950042634298
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.896198618557697
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000013_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9543110288283523
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9448597661933671
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9168843734881471
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000014_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9547708787938901
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9477196327329286
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9183693231335335
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000015_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9565131187628049
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9437559580552908
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9026240757744165
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000016_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9519841269841269
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9444109973911299
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9267938413866563
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000017_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9543110288283523
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.948472229190708
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.8973826540467452
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000018_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9545093890505157
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+        "class_name": "red_cube",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9512317495358988
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+        "class_name": "eraser",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9080848596143624
+      },
+      {
+        "image": "artifacts/multiobject/eraser_top_repair_20261027/fresh_confirmation_capture/frame_000019_raw.png",
+        "class_name": "small_canister",
+        "status": "PIXEL_SURFACE_ONLY",
+        "available": true,
+        "bbox_match_at_IoU50": true,
+        "shape_mask_IoU_missing_as_zero": 0.9540047581284695
+      }
+    ]
+  },
+  "millimetre_accuracy_measured": false,
+  "physical_execution": false,
+  "path_submissions": 0,
+  "NPU_acceptance": "NOT_EVALUATED",
+  "ROCm_acceptance": "NOT_EVALUATED",
+  "evaluator_sha256": "0638a5f914b323532dabf93789e71797845da4f71182299d64446177b695383d",
+  "metrics_source_sha256": "be6d97baf48d121c727beacc7604d98df2355af9990e9ffcdb6cef16736edf0c"
+}

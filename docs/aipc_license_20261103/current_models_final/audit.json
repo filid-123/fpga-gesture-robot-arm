@@ -1,0 +1,192 @@
+{
+  "schema": "gesture.aipc.license_source_audit.v1",
+  "date": "2026-11-03",
+  "scope": "AI_PC_ONLY_NO_FPGA_OR_TEAMMATE_CLEARANCE",
+  "metadata_integrity_passed": true,
+  "redistribution_clearance_complete": false,
+  "license_granted_by_this_audit": false,
+  "frozen_manifest_sha256": "cf2c959aa9aae7660015a3769ff1edcd6ed4ca8e32dee0f8e3a4fbbb9cbc5778",
+  "frozen_files": [
+    {
+      "path": "model_package/mode_b/detector_background_v2/model.json",
+      "sha256": "cf97be7f3611da688bd5287ef59a796d19d782b85a25c725186937cd00027fe9"
+    },
+    {
+      "path": "config/ai_pc/mode_b_six_objects_v1.json",
+      "sha256": "038561eb1c4847ef444a6ae91f5de1a86c7d4f800560e71fce1e9f826416a031"
+    },
+    {
+      "path": "artifacts/multiobject/six_objects_field_20261027/reviewed_camera_adjusted_exposure_profile.json",
+      "sha256": "1a5da1c452a85f8331e33806f93a59d20d3be65355b88b8ed21a8f429447c252"
+    },
+    {
+      "path": "model_package/mode_b/detector_background_v2/model.onnx",
+      "sha256": "5999c0e1e2d2631cf68b086b1b667ec87eabbb5268b1d6550421371520308cce"
+    },
+    {
+      "path": "pc/mode_b/geometry.py",
+      "sha256": "9a614ff05e4a433151f4378449db9824a5ada47146120026a192b4ca192843ce"
+    },
+    {
+      "path": "pc/mode_b/perception.py",
+      "sha256": "1b1d02a27800568f53e6e332077710c2d9cc30bef09e020da6ac2e0a34259553"
+    },
+    {
+      "path": "pc/mode_b/profile.py",
+      "sha256": "36d77913ba860f63f1a90d2c39406686ee16232afedae8a6ac9b1ffeba0f492f"
+    },
+    {
+      "path": "pc/mode_b/tiled_detector.py",
+      "sha256": "151ad63c2be314eae58eae14cf30c1967c1d60f6e77be827390b84c69d461b7f"
+    },
+    {
+      "path": "pc/multiobject/pixel_top.py",
+      "sha256": "4eefdc1afad1e8326cc29ad65994ace37b493adcb140e736a27edc2043364795"
+    },
+    {
+      "path": "pc/multiobject/yolo.py",
+      "sha256": "323a600a9c09ce0ec3723fa9a0214493a93034f50fa6d52b440ddfd3bdcdc3b3"
+    },
+    {
+      "path": "pc/multiobject/surface.py",
+      "sha256": "5e61a048130855689886f471536ce629c42d7b038a4dcc18e93b5dbb2b792e5c"
+    },
+    {
+      "path": "artifacts/multiobject/six_objects_field_20261027/capture_camera_adjusted_check.py",
+      "sha256": "0f7efdc367c218c62b0ea91c2374625d453e77f63473f54cc10dc1c1e3dd5318"
+    },
+    {
+      "path": "artifacts/multiobject/recognition_refinement_20261027/evaluate_frozen_burst.py",
+      "sha256": "3d93696cc3cdf02ab463ffdcc40374b7f7b6412a8b9d100d6c687a044e8ec619"
+    },
+    {
+      "path": "model_package/mode_b/surface_eraser_repair_v1/model.json",
+      "sha256": "d71afc46ea197b0fdab77142c3a99d9acf4b73ca885f24dc949a9af13f957a8b"
+    },
+    {
+      "path": "model_package/mode_b/surface_eraser_repair_v1/weights.pt",
+      "sha256": "9143a31f4ced63410d1bb3b3367139eb48dda68551e0aedce12eceda9b5f8f93"
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json",
+      "sha256": "ea9d170080d30e2a6ca22c5cf9b3387b36f5f5d746dfcefe254aa34585246db9"
+    },
+    {
+      "path": "pc/mode_b/surface_ensemble.py",
+      "sha256": "13a81241ba13551d4530c826b3d185d4cb4c08903ee470720988ba46bbd7de34"
+    },
+    {
+      "path": "scripts/preview_mode_b.py",
+      "sha256": "9fab0626360482fa435b07e4dace3074da13d73d9ba6eff0cc9ac32d388cefd0"
+    },
+    {
+      "path": "artifacts/multiobject/eraser_top_repair_20261027/evaluate_frozen_burst.py",
+      "sha256": "cb2057210e63a8492eeb559c73cc21a63ebc9679ac12c6911fec24b98b028f43"
+    }
+  ],
+  "source_attribution_sha256": "71d9b061ddb9b63b36895ad23431a6cf42dc88613304421934c509ae3e024292",
+  "official_license_mapping_sha256": "01409a88bccbd57ed11964b9ac7b871b1ef25d7599b17cd695d837e68698a528",
+  "datasets": {
+    "detector": {
+      "manifest": "handoff/detector_source_dataset.json",
+      "sha256": "702877907b93b6d4326faf45c43ae30a0d92daffd060c3010f97ae3e59e388b0",
+      "items": 459,
+      "splits": {
+        "train": 421,
+        "validation": 38
+      },
+      "lvis_original_images": 74,
+      "lvis_license_id_counts": {
+        "1": 27,
+        "2": 14,
+        "3": 17,
+        "4": 11,
+        "5": 4,
+        "6": 1
+      },
+      "lvis_license_id_counts_by_split": {
+        "train": {
+          "1": 20,
+          "2": 10,
+          "3": 12,
+          "4": 7,
+          "5": 2,
+          "6": 1
+        },
+        "validation": {
+          "1": 7,
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 2
+        }
+      },
+      "lvis_noncommercial_image_count": 58,
+      "lvis_no_derivatives_image_count": 18,
+      "condition_counts_overlap": true,
+      "officehome_original_images": 32,
+      "officehome_original_splits": {
+        "train": 18,
+        "validation": 14
+      },
+      "officehome_original_or_direct_parent_derived_records": 60,
+      "officehome_original_train_with_top_polygon": 4,
+      "lvis_original_train_with_top_polygon": 1,
+      "surface_eligibility_note": "Train + explicit top polygon is sampler eligibility, not a count of actual stochastic draws; no image-free layers inferred",
+      "rights_clearance_from_metadata_alone": false
+    },
+    "surface": {
+      "manifest": "artifacts/multiobject/eraser_top_repair_20261027/dataset_v1/dataset.json",
+      "sha256": "ea9d170080d30e2a6ca22c5cf9b3387b36f5f5d746dfcefe254aa34585246db9",
+      "items": 483,
+      "splits": {
+        "train": 445,
+        "validation": 38
+      },
+      "lvis_original_images": 74,
+      "lvis_license_id_counts": {
+        "1": 27,
+        "2": 14,
+        "3": 17,
+        "4": 11,
+        "5": 4,
+        "6": 1
+      },
+      "lvis_license_id_counts_by_split": {
+        "train": {
+          "1": 20,
+          "2": 10,
+          "3": 12,
+          "4": 7,
+          "5": 2,
+          "6": 1
+        },
+        "validation": {
+          "1": 7,
+          "2": 4,
+          "3": 5,
+          "4": 4,
+          "5": 2
+        }
+      },
+      "lvis_noncommercial_image_count": 58,
+      "lvis_no_derivatives_image_count": 18,
+      "condition_counts_overlap": true,
+      "officehome_original_images": 32,
+      "officehome_original_splits": {
+        "train": 18,
+        "validation": 14
+      },
+      "officehome_original_or_direct_parent_derived_records": 60,
+      "officehome_original_train_with_top_polygon": 4,
+      "lvis_original_train_with_top_polygon": 1,
+      "surface_eligibility_note": "Train + explicit top polygon is sampler eligibility, not a count of actual stochastic draws; no image-free layers inferred",
+      "rights_clearance_from_metadata_alone": false
+    }
+  },
+  "model_weights_modified": false,
+  "training_started": false,
+  "physical_execution": false,
+  "visibility_changed": false,
+  "upstream_initializer_binary_identity_verified": false
+}
